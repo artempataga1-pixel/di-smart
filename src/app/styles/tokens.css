@@ -1,0 +1,38 @@
+@theme {
+  /* Светлая тёплая лавандовая тема — не чистый белый, не холодный серый */
+  --color-bg: #f8f6fb;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f1ecf8;
+  --color-line: #e4dcef;
+
+  --color-text: #1a1523;
+  --color-muted: #6d6478;
+
+  /* Приглушённая слива — основной акцент */
+  --color-accent: #9b7fc2;
+  --color-accent-ink: #6d4f96;
+  --color-accent-dark: #7f63a8;
+  --color-accent-soft: #f1ecf8;
+  --color-accent-glow: rgba(155, 127, 194, 0.45);
+
+  /* Тёмный ink с лиловым подтоном — футер */
+  --color-ink: #150f22;
+  --color-ink-soft: #221a35;
+  --color-on-ink: #f3edfb;
+  --color-on-ink-muted: rgba(243, 237, 251, 0.62);
+
+  --color-success: #4f9d6e;
+  --color-warning: #c98a3a;
+
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+
+  --shadow-card: 0 20px 50px rgba(43, 26, 64, 0.08), 0 2px 8px rgba(43, 26, 64, 0.05);
+  --shadow-card-hover: 0 24px 60px rgba(43, 26, 64, 0.12), 0 0 0 1px rgba(155, 127, 194, 0.18);
+  --shadow-accent-glow: 0 14px 32px rgba(155, 127, 194, 0.35);
+
+  --font-heading: var(--font-unbounded-var), sans-serif;
+  --font-body: var(--font-manrope-var), sans-serif;
+}

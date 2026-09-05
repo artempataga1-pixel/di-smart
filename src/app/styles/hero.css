@@ -1,0 +1,101 @@
+/* Hero — сцена "Луна": halo + пыль + диск с фазой + орбита + блики.
+   Все слои двигаются только transform/opacity — дёшево для GPU. */
+
+.moon-stage {
+  position: relative;
+  isolation: isolate;
+}
+
+.moon-halo {
+  position: absolute;
+  inset: -20%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--color-accent-glow) 0%,
+    rgba(155, 127, 194, 0.16) 38%,
+    rgba(155, 127, 194, 0) 70%
+  );
+  animation: moon-halo-breathe 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes moon-halo-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+.moon-dust circle {
+  animation: moon-dust-drift var(--dust-duration, 9s) ease-in-out infinite;
+  animation-delay: var(--dust-delay, 0s);
+  transform-origin: center;
+}
+
+@keyframes moon-dust-drift {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-14px);
+    opacity: 0.9;
+  }
+}
+
+.moon-flare {
+  animation: moon-flare-blink 4.5s ease-in-out infinite;
+  animation-delay: var(--flare-delay, 0s);
+  transform-origin: center;
+}
+
+@keyframes moon-flare-blink {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.05);
+  }
+}
+
+.moon-orbit-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 10px 2px var(--color-accent-glow);
+  offset-path: ellipse(46% 32% at 50% 50%);
+  animation: moon-orbit 16s linear infinite;
+}
+
+@keyframes moon-orbit {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moon-halo,
+  .moon-dust circle,
+  .moon-flare,
+  .moon-orbit-dot {
+    animation: none !important;
+  }
+}

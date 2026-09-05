@@ -1,0 +1,31 @@
+/* product — партиал стилей раздела */
+
+/* Command-кнопка «Купить»/«Под заказ»: объёмная skeuomorphic-раскладка,
+   адаптированная под строчный flex-1-слот рядом с кнопкой «Подробнее» */
+.btn-command {
+  background-color: var(--color-accent-dark);
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 45%),
+    linear-gradient(to top, rgba(21, 15, 34, 0.4), rgba(21, 15, 34, 0) 55%);
+  box-shadow:
+    inset -2px -4px 0 rgba(21, 15, 34, 0.35),
+    inset 2px 3px 0 rgba(255, 255, 255, 0.2),
+    0 2px 1px rgba(21, 15, 34, 0.2),
+    0 5px 10px -3px rgba(21, 15, 34, 0.4);
+  transition:
+    transform 0.12s ease-in-out,
+    box-shadow 0.12s ease-in-out,
+    background-color 0.12s ease-in-out;
+}
+
+.btn-command:hover {
+  background-color: var(--color-accent);
+}
+
+.btn-command:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow:
+    inset -1px -2px 0 rgba(21, 15, 34, 0.35),
+    inset 1px 2px 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 rgba(21, 15, 34, 0.3);
+}

@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+@import "./styles/layout.css";
+@import "./styles/hero.css";
+@import "./styles/catalog.css";
+@import "./styles/product.css";
+@import "./styles/cart.css";
+@import "./styles/services-contacts.css";
+@import "./styles/buttons.css";
+
+@media (hover: none) and (pointer: coarse) {
+  html {
+    scroll-behavior: smooth;
+    overflow-anchor: none;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-accent-glow);
+  color: var(--color-text);
+}
