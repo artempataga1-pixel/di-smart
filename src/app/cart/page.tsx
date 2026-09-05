@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { CheckoutForm } from "@/components/cart/CheckoutForm";
 import { OrderShowcase } from "@/components/cart/OrderShowcase";
 import { OrderVideoBackground } from "@/components/cart/OrderVideoBackground";
+import { SITE } from "@/constants/content/site";
 
-export const metadata: Metadata = { title: "Корзина — ЛУНА" };
+export const metadata: Metadata = { title: `Корзина — ${SITE.name}` };
 
 export default function CartPage() {
   return (

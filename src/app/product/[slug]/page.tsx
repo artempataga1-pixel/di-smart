@@ -8,6 +8,7 @@ import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { ALL_PRODUCTS, getProductBySlug, getRelatedProducts } from "@/constants/products";
 import { getCategoryBySlug } from "@/constants/content/categories";
+import { SITE } from "@/constants/content/site";
 
 export function generateStaticParams() {
   return ALL_PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -20,7 +21,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
-  return { title: product ? `${product.name} — ЛУНА` : "Товар — ЛУНА" };
+  return { title: product ? `${product.name} — ${SITE.name}` : `Товар — ${SITE.name}` };
 }
 
 export default async function ProductPage({

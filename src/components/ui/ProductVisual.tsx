@@ -25,14 +25,14 @@ const ICONS: Record<ProductIconKey, LucideIcon> = {
   charger: Plug,
 };
 
-/* Мягкие категориальные тона поверх общей лавандовой гаммы — товар из
-   каталога сразу читается по цвету плашки, не только по иконке. */
+/* Мягкие категориальные тона поверх дуотон-палитры (голубой → персиковый) —
+   товар из каталога сразу читается по цвету плашки, не только по иконке. */
 export const CATEGORY_GRADIENT: Record<CategorySlug, string> = {
-  smartphones: "from-[#efe7fa] to-[#e0d3f2]",
-  laptops: "from-[#eae4f7] to-[#d9cceb]",
-  tablets: "from-[#f0e9f9] to-[#e3d6f0]",
-  accessories: "from-[#f3ecf9] to-[#e6d9ef]",
-  dyson: "from-[#ece2f6] to-[#dbc8ec]",
+  smartphones: "from-[#eaf0fc] to-[#d6e2f5]",
+  laptops: "from-[#f1f0fa] to-[#e3e4f2]",
+  tablets: "from-[#f7eee8] to-[#f5dec9]",
+  accessories: "from-[#fcefe1] to-[#fbdfc2]",
+  dyson: "from-[#edeff6] to-[#dde3ef]",
 };
 
 interface ProductVisualProps {

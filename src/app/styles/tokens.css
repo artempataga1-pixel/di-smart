@@ -1,25 +1,29 @@
 @theme {
-  /* Светлая тёплая лавандовая тема — не чистый белый, не холодный серый */
-  --color-bg: #f8f6fb;
+  /* Светлая тема на основе дуотон-референса Di-SMART: голубой #C9D3EC → персиковый #FED7B8 */
+  --color-bg: #f8fafd;
   --color-surface: #ffffff;
-  --color-surface-soft: #f1ecf8;
-  --color-line: #e4dcef;
+  --color-surface-soft: #e4ebf7;
+  --color-line: #d3dcee;
 
-  --color-text: #1a1523;
-  --color-muted: #6d6478;
+  --color-text: #1c2333;
+  --color-muted: #667085;
 
-  /* Приглушённая слива — основной акцент */
-  --color-accent: #9b7fc2;
-  --color-accent-ink: #6d4f96;
-  --color-accent-dark: #7f63a8;
-  --color-accent-soft: #f1ecf8;
-  --color-accent-glow: rgba(155, 127, 194, 0.45);
+  /* Дуотон-референс — база палитры (фоны/градиенты секций), не акцент кнопок */
+  --color-duotone-blue: #c9d3ec;
+  --color-duotone-peach: #fed7b8;
 
-  /* Тёмный ink с лиловым подтоном — футер */
-  --color-ink: #150f22;
-  --color-ink-soft: #221a35;
-  --color-on-ink: #f3edfb;
-  --color-on-ink-muted: rgba(243, 237, 251, 0.62);
+  /* Тёплый персиковый акцент — производная от дуотона, затемнённая для контраста на кнопках/CTA */
+  --color-accent: #e8935c;
+  --color-accent-ink: #b85f30;
+  --color-accent-dark: #d97d46;
+  --color-accent-soft: #fbe3cc;
+  --color-accent-glow: rgba(232, 147, 92, 0.45);
+
+  /* Тёмный сине-графитовый ink — футер */
+  --color-ink: #101826;
+  --color-ink-soft: #1b2436;
+  --color-on-ink: #f3f6fc;
+  --color-on-ink-muted: rgba(243, 246, 252, 0.62);
 
   --color-success: #4f9d6e;
   --color-warning: #c98a3a;
@@ -29,9 +33,9 @@
   --radius-md: 16px;
   --radius-sm: 10px;
 
-  --shadow-card: 0 20px 50px rgba(43, 26, 64, 0.08), 0 2px 8px rgba(43, 26, 64, 0.05);
-  --shadow-card-hover: 0 24px 60px rgba(43, 26, 64, 0.12), 0 0 0 1px rgba(155, 127, 194, 0.18);
-  --shadow-accent-glow: 0 14px 32px rgba(155, 127, 194, 0.35);
+  --shadow-card: 0 20px 50px rgba(16, 24, 38, 0.08), 0 2px 8px rgba(16, 24, 38, 0.05);
+  --shadow-card-hover: 0 24px 60px rgba(16, 24, 38, 0.12), 0 0 0 1px rgba(232, 147, 92, 0.18);
+  --shadow-accent-glow: 0 14px 32px rgba(232, 147, 92, 0.35);
 
   --font-heading: var(--font-obrazec-var), sans-serif;
   --font-body: var(--font-comfortaa-var), sans-serif;

@@ -8,9 +8,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
 
-  const orderId = `LUNA-${Date.now()}`;
+  const orderId = `DISMART-${Date.now()}`;
   console.log(
-    "[luna-demo][order]",
+    "[di-smart-demo][order]",
     JSON.stringify({ ...body, orderId, ts: new Date().toISOString() })
   );
 

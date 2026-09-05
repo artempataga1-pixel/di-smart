@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { ContactInfoCard } from "@/components/contacts/ContactInfoCard";
-import { MapEmbed } from "@/components/contacts/MapEmbed";
 import { ContactsVideoBackground } from "@/components/contacts/ContactsVideoBackground";
+import { SITE } from "@/constants/content/site";
 
-export const metadata: Metadata = { title: "Контакты — ЛУНА" };
+export const metadata: Metadata = { title: `Контакты — ${SITE.name}` };
 
 export default function ContactsPage() {
   return (
@@ -15,9 +15,8 @@ export default function ContactsPage() {
           Контакты
         </h1>
 
-        <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_1.3fr]">
+        <div className="mt-8 max-w-md">
           <ContactInfoCard />
-          <MapEmbed />
         </div>
       </div>
     </div>

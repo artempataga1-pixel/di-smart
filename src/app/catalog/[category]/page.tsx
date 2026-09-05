@@ -6,6 +6,7 @@ import { CatalogView } from "@/components/catalog/CatalogView";
 import { CATEGORIES, getCategoryBySlug } from "@/constants/content/categories";
 import { getProductsByCategory } from "@/constants/products";
 import type { CategorySlug } from "@/types/product";
+import { SITE } from "@/constants/content/site";
 
 export function generateStaticParams() {
   return CATEGORIES.map((c) => ({ category: c.slug }));
@@ -18,7 +19,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { category: slug } = await params;
   const category = getCategoryBySlug(slug);
-  return { title: category ? `${category.title} — ЛУНА` : "Каталог — ЛУНА" };
+  return { title: category ? `${category.title} — ${SITE.name}` : `Каталог — ${SITE.name}` };
 }
 
 export default async function CategoryPage({

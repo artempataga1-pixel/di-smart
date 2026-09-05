@@ -31,7 +31,7 @@ export function CheckoutForm() {
       subtotal,
     };
 
-    let id = `LUNA-${Date.now()}`;
+    let id = `DISMART-${Date.now()}`;
     try {
       const res = await fetch("/api/order", {
         method: "POST",

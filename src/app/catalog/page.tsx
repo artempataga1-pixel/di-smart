@@ -3,8 +3,9 @@ import Link from "next/link";
 import { CatalogView } from "@/components/catalog/CatalogView";
 import { CATEGORIES } from "@/constants/content/categories";
 import { ALL_PRODUCTS } from "@/constants/products";
+import { SITE } from "@/constants/content/site";
 
-export const metadata: Metadata = { title: "Каталог — ЛУНА" };
+export const metadata: Metadata = { title: `Каталог — ${SITE.name}` };
 
 export default async function CatalogPage({
   searchParams,
