@@ -16,4 +16,6 @@ export const FOOTER_CATALOG_NAV: NavItem[] = [
 export const FOOTER_INFO_NAV: NavItem[] = [
   { label: "Каталог", href: "/catalog" },
   { label: "Контакты", href: "/contacts" },
+  { label: "Политика конфиденциальности", href: "/privacy" },
+  { label: "Публичная оферта", href: "/offer" },
 ];

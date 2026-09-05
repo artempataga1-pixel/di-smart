@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { CartProvider } from "@/lib/cart-context";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CookieBanner } from "@/components/layout/CookieBanner";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { SITE } from "@/constants/content/site";
 import "./globals.css";
@@ -48,6 +49,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <CartDrawer />
+          <CookieBanner />
         </CartProvider>
       </body>
     </html>
