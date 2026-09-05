@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Phone, ShoppingBag, Menu, User } from "lucide-react";
+import { Phone, ShoppingBag, Menu } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { MAIN_NAV } from "@/constants/content/nav";
 import { CATEGORIES } from "@/constants/content/categories";
@@ -93,14 +93,6 @@ export function Header() {
               <Phone className="size-4" />
               {SITE.phone}
             </a>
-
-            <Link
-              href="/account"
-              aria-label="Личный кабинет"
-              className="flex size-10 items-center justify-center rounded-full border border-[var(--color-line)] transition-colors hover:border-[var(--color-accent)]"
-            >
-              <User className="size-4.5" />
-            </Link>
 
             <button
               type="button"

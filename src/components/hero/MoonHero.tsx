@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { PersonScene } from "@/components/hero/PersonScene";
 import { PillCta } from "@/components/ui/PillCta";
 
 export function MoonHero() {
@@ -18,17 +16,11 @@ export function MoonHero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <PillCta href="/catalog">Смотреть каталог</PillCta>
-            <Link
-              href="/#services"
-              className="inline-flex items-center gap-2 rounded-full border border-[var(--color-line)] px-6 py-3.5 text-sm font-medium text-[var(--color-text)] transition-colors hover:border-[var(--color-accent)]"
-            >
-              Услуги и сервис
-            </Link>
           </div>
         </div>
 
         <div className="order-1 md:order-2">
-          <PersonScene />
+          {/* TODO: карусель флагманов — уровень 4 плана */}
         </div>
       </div>
     </section>

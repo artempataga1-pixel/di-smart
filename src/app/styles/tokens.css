@@ -33,6 +33,6 @@
   --shadow-card-hover: 0 24px 60px rgba(43, 26, 64, 0.12), 0 0 0 1px rgba(155, 127, 194, 0.18);
   --shadow-accent-glow: 0 14px 32px rgba(155, 127, 194, 0.35);
 
-  --font-heading: var(--font-unbounded-var), sans-serif;
-  --font-body: var(--font-manrope-var), sans-serif;
+  --font-heading: var(--font-obrazec-var), sans-serif;
+  --font-body: var(--font-comfortaa-var), sans-serif;
 }

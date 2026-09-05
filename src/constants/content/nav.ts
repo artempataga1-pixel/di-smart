@@ -2,7 +2,6 @@ import type { NavItem } from "@/types/content";
 
 export const MAIN_NAV: NavItem[] = [
   { label: "Каталог", href: "/catalog" },
-  { label: "Услуги", href: "/#services" },
   { label: "Контакты", href: "/contacts" },
 ];
 
@@ -16,6 +15,5 @@ export const FOOTER_CATALOG_NAV: NavItem[] = [
 
 export const FOOTER_INFO_NAV: NavItem[] = [
   { label: "Каталог", href: "/catalog" },
-  { label: "Услуги", href: "/#services" },
   { label: "Контакты", href: "/contacts" },
 ];
