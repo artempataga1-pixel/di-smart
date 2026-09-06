@@ -1,7 +1,7 @@
 export function formatPrice(value: number): string {
   return new Intl.NumberFormat("ru-RU", {
     maximumFractionDigits: 0,
-  }).format(value) + " ₽";
+  }).format(value) + " BYN";
 }
 
 export function pluralizeItems(count: number): string {

@@ -18,6 +18,10 @@ services:
     image: postgres:16-alpine
     restart: unless-stopped
     env_file: .env
+    ports:
+      # Только на localhost хоста — чтобы `npm run dev`/`prisma migrate` можно было
+      # гонять прямо на хосте без входа в контейнер (см. .env.example, DATABASE_URL).
+      - "127.0.0.1:5432:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
     healthcheck:

@@ -1,4 +1,4 @@
-import type { CategorySlug, Product } from "@/types/product";
+import type { CategorySlug, Product } from "@/types/legacy-product";
 import { SMARTPHONES } from "./smartphones";
 import { LAPTOPS } from "./laptops";
 import { TABLETS } from "./tablets";

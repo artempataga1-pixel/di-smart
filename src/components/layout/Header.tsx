@@ -6,13 +6,13 @@ import { useState } from "react";
 import { Phone, ShoppingBag, Menu } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { MAIN_NAV } from "@/constants/content/nav";
-import { CATEGORIES } from "@/constants/content/categories";
 import { SITE } from "@/constants/content/site";
 import { useCart } from "@/lib/cart-context";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { SearchField } from "@/components/ui/SearchField";
+import type { NavBrand } from "@/lib/catalog";
 
-export function Header() {
+export function Header({ navBrands }: { navBrands: NavBrand[] }) {
   const { itemCount, openDrawer } = useCart();
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -58,16 +58,23 @@ export function Header() {
                     {item.label}
                   </Link>
                   {catalogOpen && (
-                    <div className="absolute left-1/2 top-full w-56 -translate-x-1/2 pt-3">
-                      <div className="flex flex-col gap-1 rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-surface)] p-2 shadow-[var(--shadow-card)]">
-                        {CATEGORIES.map((cat) => (
-                          <Link
-                            key={cat.slug}
-                            href={`/catalog/${cat.slug}`}
-                            className="rounded-[var(--radius-sm)] px-3 py-2 text-sm text-[var(--color-text)] transition-colors hover:bg-[var(--color-surface-soft)] hover:text-[var(--color-accent-ink)]"
-                          >
-                            {cat.title}
-                          </Link>
+                    <div className="absolute left-1/2 top-full w-64 -translate-x-1/2 pt-3">
+                      <div className="flex flex-col gap-3 rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-surface)] p-3 shadow-[var(--shadow-card)]">
+                        {navBrands.map((brand) => (
+                          <div key={brand.slug}>
+                            <p className="px-3 pb-1 text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+                              {brand.name}
+                            </p>
+                            {brand.categories.map((cat) => (
+                              <Link
+                                key={cat.slug}
+                                href={`/catalog/${cat.slug}`}
+                                className="block rounded-[var(--radius-sm)] px-3 py-2 text-sm text-[var(--color-text)] transition-colors hover:bg-[var(--color-surface-soft)] hover:text-[var(--color-accent-ink)]"
+                              >
+                                {cat.name}
+                              </Link>
+                            ))}
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -121,7 +128,7 @@ export function Header() {
       </header>
 
       {mobileOpen && (
-        <MobileMenu onClose={() => setMobileOpen(false)} />
+        <MobileMenu navBrands={navBrands} onClose={() => setMobileOpen(false)} />
       )}
     </>
   );

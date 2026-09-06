@@ -11,7 +11,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import type { ProductIconKey, CategorySlug } from "@/types/product";
+import type { ProductIconKey, CategorySlug } from "@/types/legacy-product";
 
 const ICONS: Record<ProductIconKey, LucideIcon> = {
   smartphone: Smartphone,

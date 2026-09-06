@@ -1,12 +1,10 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { ProductCard } from "@/components/product-card/ProductCard";
-import { PhotoProductVisual } from "@/components/ui/visuals/PhotoProductVisual";
-import { getProductBySlug } from "@/constants/products";
-import { PopularProductsGrid } from "@/components/home/PopularProductsGrid";
+import { ProductGrid } from "@/components/catalog/ProductGrid";
+import { getPopularProducts } from "@/lib/catalog";
 
-export function PopularProducts() {
-  const headphones = getProductBySlug("airpods-pro-3");
-  const watch = getProductBySlug("apple-watch-series-11");
+export async function PopularProducts() {
+  const products = await getPopularProducts(6);
+  if (products.length === 0) return null;
 
   return (
     <div>
@@ -17,32 +15,7 @@ export function PopularProducts() {
         href="/catalog"
       />
       <div className="mt-8">
-        <PopularProductsGrid>
-          {headphones && (
-            <ProductCard
-              product={headphones}
-              visual={
-                <PhotoProductVisual
-                  src="https://iphoriya.ru/wp-content/uploads/airpods-pro-3.webp"
-                  alt={headphones.name}
-                  category={headphones.category}
-                />
-              }
-            />
-          )}
-          {watch && (
-            <ProductCard
-              product={watch}
-              visual={
-                <PhotoProductVisual
-                  src="https://iphoriya.ru/wp-content/uploads/apple-watch-series-11-42mm-silver-1.webp"
-                  alt={watch.name}
-                  category={watch.category}
-                />
-              }
-            />
-          )}
-        </PopularProductsGrid>
+        <ProductGrid products={products} />
       </div>
     </div>
   );

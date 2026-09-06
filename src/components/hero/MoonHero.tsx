@@ -1,6 +1,10 @@
 import { PillCta } from "@/components/ui/PillCta";
+import { HeroCarousel } from "@/components/hero/HeroCarousel";
+import { getFlagshipProducts } from "@/lib/catalog";
 
-export function MoonHero() {
+export async function MoonHero() {
+  const flagships = await getFlagshipProducts(2);
+
   return (
     <section className="relative overflow-hidden pb-16 pt-10 md:pb-24 md:pt-16">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 md:grid-cols-2 md:gap-6 md:px-6">
@@ -11,8 +15,8 @@ export function MoonHero() {
             выбранная с умом
           </h1>
           <p className="mt-5 max-w-md text-lg text-[var(--color-muted)]">
-            Apple, Samsung и Dyson в одном магазине. Продажа, экспертная
-            консультация, ремонт и гарантийное обслуживание в Ставрополе.
+            Apple, Samsung и аксессуары в одном магазине. Доставка по всей Беларуси,
+            гарантия 12 месяцев на каждое устройство.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <PillCta href="/catalog">Смотреть каталог</PillCta>
@@ -20,7 +24,7 @@ export function MoonHero() {
         </div>
 
         <div className="order-1 md:order-2">
-          {/* TODO: карусель флагманов — уровень 4 плана */}
+          <HeroCarousel products={flagships} />
         </div>
       </div>
     </section>

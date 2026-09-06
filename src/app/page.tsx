@@ -1,5 +1,7 @@
 import { MoonHero } from "@/components/hero/MoonHero";
 import { CategoryGrid } from "@/components/home/CategoryGrid";
+import { FlagshipProducts } from "@/components/home/FlagshipProducts";
+import { InfoTeasers } from "@/components/home/InfoTeasers";
 import { PopularProducts } from "@/components/home/PopularProducts";
 import { ContactTeaser } from "@/components/home/ContactTeaser";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
@@ -17,6 +19,14 @@ export default function HomePage() {
         <div className="mt-8">
           <CategoryGrid />
         </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6">
+        <FlagshipProducts />
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6">
+        <InfoTeasers />
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 md:px-6">

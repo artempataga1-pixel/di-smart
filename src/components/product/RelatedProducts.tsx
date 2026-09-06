@@ -1,8 +1,8 @@
-import type { Product } from "@/types/product";
+import type { CatalogCardData } from "@/lib/catalog";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
 
-export function RelatedProducts({ products }: { products: Product[] }) {
+export function RelatedProducts({ products }: { products: CatalogCardData[] }) {
   if (products.length === 0) return null;
 
   return (

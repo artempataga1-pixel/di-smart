@@ -3,14 +3,16 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { CatalogView } from "@/components/catalog/CatalogView";
-import { CATEGORIES, getCategoryBySlug } from "@/constants/content/categories";
-import { getProductsByCategory } from "@/constants/products";
-import type { CategorySlug } from "@/types/product";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import {
+  getCategoryBySlug,
+  getCatalogProducts,
+  parseCatalogSearchParams,
+  type CatalogSearchParams,
+} from "@/lib/catalog";
 import { SITE } from "@/constants/content/site";
 
-export function generateStaticParams() {
-  return CATEGORIES.map((c) => ({ category: c.slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -18,8 +20,8 @@ export async function generateMetadata({
   params: Promise<{ category: string }>;
 }): Promise<Metadata> {
   const { category: slug } = await params;
-  const category = getCategoryBySlug(slug);
-  return { title: category ? `${category.title} — ${SITE.name}` : `Каталог — ${SITE.name}` };
+  const category = await getCategoryBySlug(slug);
+  return { title: category ? `${category.name} — ${SITE.name}` : `Каталог — ${SITE.name}` };
 }
 
 export default async function CategoryPage({
@@ -27,17 +29,26 @@ export default async function CategoryPage({
   searchParams,
 }: {
   params: Promise<{ category: string }>;
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<CatalogSearchParams>;
 }) {
   const { category: slug } = await params;
-  const { q } = await searchParams;
-  const category = getCategoryBySlug(slug);
+  const sp = await searchParams;
+  const category = await getCategoryBySlug(slug);
   if (!category) notFound();
 
-  const products = getProductsByCategory(category.slug as CategorySlug);
+  const filters = parseCatalogSearchParams(sp, category.slug);
+  const result = await getCatalogProducts(filters);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
+      <Breadcrumbs
+        items={[
+          { label: "Главная", href: "/" },
+          { label: category.brandName, href: "/catalog" },
+          { label: category.name },
+        ]}
+      />
+
       <Link
         href="/catalog"
         className="mb-4 inline-flex items-center gap-1 text-sm text-[var(--color-muted)] hover:text-[var(--color-accent-ink)]"
@@ -46,12 +57,14 @@ export default async function CategoryPage({
         Весь каталог
       </Link>
       <h1 className="font-[family-name:var(--font-heading)] text-3xl font-semibold md:text-4xl">
-        {category.title}
+        {category.name}
       </h1>
-      <p className="mt-2 max-w-xl text-[var(--color-muted)]">{category.description}</p>
+      {category.description && (
+        <p className="mt-2 max-w-xl text-[var(--color-muted)]">{category.description}</p>
+      )}
 
       <div className="mt-8">
-        <CatalogView products={products} initialQuery={q} />
+        <CatalogView result={result} />
       </div>
     </div>
   );

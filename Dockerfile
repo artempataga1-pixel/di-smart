@@ -4,6 +4,9 @@ ARG NODE_VERSION=20-slim
 FROM node:${NODE_VERSION} AS dependencies
 WORKDIR /app
 COPY package.json package-lock.json ./
+# Схема нужна уже здесь: postinstall-скрипт запускает `prisma generate`,
+# а ему для генерации клиента (без подключения к БД) достаточно файла схемы.
+COPY prisma ./prisma
 RUN npm ci --no-audit --no-fund
 
 # --- Стадия 2: сборка ---

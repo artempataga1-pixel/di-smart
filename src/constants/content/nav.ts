@@ -2,19 +2,15 @@ import type { NavItem } from "@/types/content";
 
 export const MAIN_NAV: NavItem[] = [
   { label: "Каталог", href: "/catalog" },
+  { label: "Trade-in", href: "/trade-in" },
+  { label: "Доставка и гарантия", href: "/delivery" },
   { label: "Контакты", href: "/contacts" },
-];
-
-export const FOOTER_CATALOG_NAV: NavItem[] = [
-  { label: "Смартфоны", href: "/catalog/smartphones" },
-  { label: "Ноутбуки", href: "/catalog/laptops" },
-  { label: "Планшеты", href: "/catalog/tablets" },
-  { label: "Аксессуары", href: "/catalog/accessories" },
-  { label: "Dyson", href: "/catalog/dyson" },
 ];
 
 export const FOOTER_INFO_NAV: NavItem[] = [
   { label: "Каталог", href: "/catalog" },
+  { label: "Trade-in", href: "/trade-in" },
+  { label: "Доставка и гарантия", href: "/delivery" },
   { label: "Контакты", href: "/contacts" },
   { label: "Политика конфиденциальности", href: "/privacy" },
   { label: "Публичная оферта", href: "/offer" },

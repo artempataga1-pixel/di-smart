@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { ChevronLeft } from "lucide-react";
-import { ProductGallery } from "@/components/product/ProductGallery";
-import { ProductInfo } from "@/components/product/ProductInfo";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
-import { ALL_PRODUCTS, getProductBySlug, getRelatedProducts } from "@/constants/products";
-import { getCategoryBySlug } from "@/constants/content/categories";
+import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
 import { SITE } from "@/constants/content/site";
 
-export function generateStaticParams() {
-  return ALL_PRODUCTS.map((p) => ({ slug: p.slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -20,7 +15,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await getProductDetailBySlug(slug);
   return { title: product ? `${product.name} — ${SITE.name}` : `Товар — ${SITE.name}` };
 }
 
@@ -30,26 +25,23 @@ export default async function ProductPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await getProductDetailBySlug(slug);
   if (!product) notFound();
 
-  const category = getCategoryBySlug(product.category);
-  const related = getRelatedProducts(product);
+  const related = await getRelatedProducts(product.categorySlug, product.id);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
-      <Link
-        href={`/catalog/${product.category}`}
-        className="mb-6 inline-flex items-center gap-1 text-sm text-[var(--color-muted)] hover:text-[var(--color-accent-ink)]"
-      >
-        <ChevronLeft className="size-4" />
-        {category?.title ?? "Каталог"}
-      </Link>
+      <Breadcrumbs
+        items={[
+          { label: "Главная", href: "/" },
+          { label: product.brandName, href: "/catalog" },
+          { label: product.categoryName, href: `/catalog/${product.categorySlug}` },
+          { label: product.name },
+        ]}
+      />
 
-      <div className="grid gap-10 lg:grid-cols-2">
-        <ProductGallery product={product} />
-        <ProductInfo product={product} />
-      </div>
+      <ProductPurchasePanel product={product} />
 
       <div className="mt-10">
         <ProductSpecsTable specs={product.specs} description={product.description} />

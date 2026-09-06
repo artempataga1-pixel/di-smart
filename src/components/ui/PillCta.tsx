@@ -8,6 +8,8 @@ interface PillCtaProps {
   variant?: "primary" | "ghost";
   size?: "md" | "sm";
   className?: string;
+  target?: string;
+  rel?: string;
 }
 
 const VARIANT_CLASS: Record<NonNullable<PillCtaProps["variant"]>, string> = {
@@ -28,10 +30,14 @@ export function PillCta({
   variant = "primary",
   size = "md",
   className,
+  target,
+  rel,
 }: PillCtaProps) {
   return (
     <Link
       href={href}
+      target={target}
+      rel={rel}
       className={cn(
         "group inline-flex items-center rounded-full font-medium transition-colors",
         VARIANT_CLASS[variant],

@@ -1,4 +1,4 @@
-import type { Product } from "./product";
+import type { Product } from "./legacy-product";
 
 export interface CartItem {
   productId: string;

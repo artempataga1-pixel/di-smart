@@ -1,10 +1,10 @@
 "use client";
 
-import type { Product } from "@/types/product";
+import type { CatalogCardData } from "@/lib/catalog";
 import { ProductCard } from "@/components/product-card/ProductCard";
 import { useStaggerReveal } from "@/components/ui/useStaggerReveal";
 
-export function ProductGrid({ products }: { products: Product[] }) {
+export function ProductGrid({ products }: { products: CatalogCardData[] }) {
   const ref = useStaggerReveal<HTMLDivElement>({ count: products.length });
 
   if (products.length === 0) {

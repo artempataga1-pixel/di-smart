@@ -1,14 +1,30 @@
-import type { Product } from "@/types/product";
-import { ProductVisual } from "@/components/ui/ProductVisual";
+import type { ProductDetail } from "@/lib/catalog";
 import { Badge } from "@/components/ui/Badge";
+import { CatalogVisual } from "@/components/ui/visuals/CatalogVisual";
 
-export function ProductGallery({ product }: { product: Product }) {
+export function ProductGallery({
+  product,
+  imageUrl,
+}: {
+  product: ProductDetail;
+  imageUrl: string | null;
+}) {
   return (
     <div className="relative aspect-square overflow-hidden rounded-[var(--radius-xl)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
-      {product.badge && (
-        <Badge type={product.badge} className="absolute left-4 top-4 z-10" />
+      {product.isFlagship && (
+        <Badge tone="dark" className="absolute left-4 top-4 z-10">
+          Флагман
+        </Badge>
       )}
-      <ProductVisual icon={product.icon} category={product.category} size="lg" />
+      <CatalogVisual
+        imageUrl={imageUrl}
+        alt={product.name}
+        iconHint={`${product.categoryName} ${product.name}`}
+        gradientSeed={product.categorySlug}
+        size="lg"
+        imageFit="contain"
+        sizesAttr="(min-width: 1024px) 50vw, 100vw"
+      />
     </div>
   );
 }

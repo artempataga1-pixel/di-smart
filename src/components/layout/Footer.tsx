@@ -1,11 +1,18 @@
 import Link from "next/link";
 import { Phone, Clock } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
-import { FOOTER_CATALOG_NAV, FOOTER_INFO_NAV } from "@/constants/content/nav";
+import { FOOTER_INFO_NAV } from "@/constants/content/nav";
 import { SITE } from "@/constants/content/site";
 import { TelegramIcon, InstagramIcon } from "@/components/ui/SocialIcons";
+import type { NavBrand } from "@/lib/catalog";
 
-export function Footer() {
+const FOOTER_CATALOG_LIMIT = 6;
+
+export function Footer({ navBrands }: { navBrands: NavBrand[] }) {
+  const footerCatalogLinks = navBrands
+    .flatMap((brand) => brand.categories)
+    .slice(0, FOOTER_CATALOG_LIMIT);
+
   return (
     <footer className="border-t border-[var(--color-ink-soft)] bg-[var(--color-ink)] text-[var(--color-on-ink)]">
       <div className="mx-auto max-w-7xl px-4 py-14 md:px-6">
@@ -24,13 +31,13 @@ export function Footer() {
           <div>
             <p className="mb-3 text-sm font-medium text-[var(--color-on-ink)]">Каталог</p>
             <ul className="flex flex-col gap-2">
-              {FOOTER_CATALOG_NAV.map((item) => (
-                <li key={item.href}>
+              {footerCatalogLinks.map((cat) => (
+                <li key={cat.slug}>
                   <Link
-                    href={item.href}
+                    href={`/catalog/${cat.slug}`}
                     className="text-sm text-[var(--color-on-ink-muted)] hover:text-[var(--color-on-ink)]"
                   >
-                    {item.label}
+                    {cat.name}
                   </Link>
                 </li>
               ))}

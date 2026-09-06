@@ -3,10 +3,16 @@
 import Link from "next/link";
 import { X, Phone } from "lucide-react";
 import { MAIN_NAV } from "@/constants/content/nav";
-import { CATEGORIES } from "@/constants/content/categories";
 import { SITE } from "@/constants/content/site";
+import type { NavBrand } from "@/lib/catalog";
 
-export function MobileMenu({ onClose }: { onClose: () => void }) {
+export function MobileMenu({
+  navBrands,
+  onClose,
+}: {
+  navBrands: NavBrand[];
+  onClose: () => void;
+}) {
   return (
     <div className="fixed inset-0 z-50 flex flex-col bg-[var(--color-bg)] md:hidden">
       <div className="flex h-16 items-center justify-between border-b border-[var(--color-line)] px-4">
@@ -35,18 +41,22 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
           </Link>
         ))}
 
-        <p className="mt-4 px-3 text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
-          Категории
-        </p>
-        {CATEGORIES.map((cat) => (
-          <Link
-            key={cat.slug}
-            href={`/catalog/${cat.slug}`}
-            onClick={onClose}
-            className="rounded-[var(--radius-sm)] px-3 py-2.5 text-[var(--color-text)] hover:bg-[var(--color-surface-soft)]"
-          >
-            {cat.title}
-          </Link>
+        {navBrands.map((brand) => (
+          <div key={brand.slug}>
+            <p className="mt-4 px-3 text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+              {brand.name}
+            </p>
+            {brand.categories.map((cat) => (
+              <Link
+                key={cat.slug}
+                href={`/catalog/${cat.slug}`}
+                onClick={onClose}
+                className="block rounded-[var(--radius-sm)] px-3 py-2.5 text-[var(--color-text)] hover:bg-[var(--color-surface-soft)]"
+              >
+                {cat.name}
+              </Link>
+            ))}
+          </div>
         ))}
       </nav>
 

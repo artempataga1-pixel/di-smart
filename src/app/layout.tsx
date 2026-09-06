@@ -6,7 +6,18 @@ import { Footer } from "@/components/layout/Footer";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { SITE } from "@/constants/content/site";
+import { getNavBrands } from "@/lib/catalog";
 import "./globals.css";
+
+/* Шапка/футер теперь читают бренды и категории из БД (задача 27 — без
+ * хардкода категорий), а не только через fetch() — Next.js не отслеживает
+ * прямые вызовы Prisma как «динамические» автоматически, поэтому без явного
+ * force-dynamic в layout сборка (`next build` в CI, без поднятой БД)
+ * попыталась бы статически отрендерить и упала бы. force-dynamic в layout
+ * каскадно распространяется на все дочерние страницы (подтверждено по
+ * исходникам Next.js через Context7) — ни один Prisma-запрос не выполняется
+ * во время сборки, только при реальном запросе. */
+export const dynamic = "force-dynamic";
 
 const obrazec = localFont({
   src: "./fonts/Obrazec 2.0.otf",
@@ -36,18 +47,20 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navBrands = await getNavBrands();
+
   return (
     <html lang="ru" className={`${obrazec.variable} ${comfortaa.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased bg-[var(--color-bg)] text-[var(--color-text)]">
         <CartProvider>
-          <Header />
+          <Header navBrands={navBrands} />
           <main className="flex-1">{children}</main>
-          <Footer />
+          <Footer navBrands={navBrands} />
           <CartDrawer />
           <CookieBanner />
         </CartProvider>
