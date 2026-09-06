@@ -245,6 +245,7 @@ model OrderItem {
 
   productNameSnapshot  String
   variantLabelSnapshot String?
+  colorLabelSnapshot   String?
   priceUsdSnapshot     Decimal @db.Decimal(10, 2)
   priceBynSnapshot     Int
   quantity             Int
