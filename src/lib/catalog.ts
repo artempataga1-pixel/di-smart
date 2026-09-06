@@ -84,6 +84,7 @@ export interface CatalogCardData {
   isFlagship: boolean;
   availability: Availability;
   mainImageUrl: string | null;
+  defaultVariantId: string | null;
 }
 
 type ProductWithPricing = Prisma.ProductGetPayload<{
@@ -116,6 +117,7 @@ function toCard(product: ProductWithPricing, rate: number): CatalogCardData {
     isFlagship: product.isFlagship,
     availability: displayAvailability(product),
     mainImageUrl: product.images[0]?.url ?? null,
+    defaultVariantId: product.variants[0]?.id ?? null,
   };
 }
 

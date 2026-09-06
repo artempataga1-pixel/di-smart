@@ -8,10 +8,16 @@ import { CartSummary } from "@/components/cart/CartSummary";
 import { EmptyCartState } from "@/components/cart/EmptyCartState";
 
 export function CartDrawer() {
-  const { isDrawerOpen, closeDrawer, resolvedItems, itemCount, subtotal, clearCart } = useCart();
+  const { isDrawerOpen, closeDrawer, items, resolvedItems, isResolving, itemCount, subtotal, clearCart } =
+    useCart();
   const router = useRouter();
 
   if (!isDrawerOpen) return null;
+
+  const isEmpty = items.length === 0;
+  /* Пока идёт первый резолв при уже непустой сырой корзине (например, сразу
+   * после захода на сайт с сохранённой корзиной) — не мигаем EmptyCartState. */
+  const isLoadingFirstResolve = !isEmpty && isResolving && resolvedItems.length === 0;
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end">
@@ -37,13 +43,20 @@ export function CartDrawer() {
           </button>
         </div>
 
-        {resolvedItems.length === 0 ? (
+        {isEmpty ? (
           <EmptyCartState onNavigate={closeDrawer} />
+        ) : isLoadingFirstResolve ? (
+          <div className="flex flex-1 items-center justify-center text-sm text-[var(--color-muted)]">
+            Загружаем корзину…
+          </div>
         ) : (
           <>
             <div className="flex-1 divide-y divide-[var(--color-line)] overflow-y-auto px-5">
               {resolvedItems.map((item) => (
-                <CartItemRow key={item.product.id} item={item} />
+                <CartItemRow
+                  key={`${item.productId}-${item.variantId}-${item.colorValueId}`}
+                  item={item}
+                />
               ))}
             </div>
 

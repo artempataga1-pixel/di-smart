@@ -12,6 +12,7 @@ interface ProductInfoProps {
   priceByn: number;
   availability: Availability;
   needsSelection: boolean;
+  variantId: string | null;
   selected: Record<string, string>;
   onSelect: (attributeId: string, valueId: string) => void;
   isValueAvailable: (attributeId: string, valueId: string) => boolean;
@@ -24,6 +25,7 @@ export function ProductInfo({
   priceByn,
   availability,
   needsSelection,
+  variantId,
   selected,
   onSelect,
   isValueAvailable,
@@ -142,7 +144,9 @@ export function ProductInfo({
 
         <button
           type="button"
-          onClick={() => addItem(product.id, qty)}
+          onClick={() =>
+            addItem({ productId: product.id, variantId, colorValueId: selectedColorId ?? null, qty })
+          }
           disabled={!inStock || needsSelection}
           className="flex flex-1 items-center justify-center gap-2 rounded-full bg-[var(--color-accent)] px-6 py-3.5 text-sm font-medium text-white transition-colors hover:bg-[var(--color-accent-dark)] disabled:cursor-not-allowed disabled:opacity-50"
         >

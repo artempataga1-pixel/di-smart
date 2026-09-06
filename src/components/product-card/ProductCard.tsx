@@ -48,7 +48,9 @@ export function ProductCard({ product }: { product: CatalogCardData }) {
         <div className="mt-auto flex gap-2 pt-1">
           <button
             type="button"
-            onClick={() => addItem(product.id)}
+            onClick={() =>
+              addItem({ productId: product.id, variantId: product.defaultVariantId, colorValueId: null })
+            }
             disabled={!inStock}
             className="btn-command flex flex-1 items-center justify-center gap-1.5 rounded-[var(--radius-sm)] px-3 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-50"
           >

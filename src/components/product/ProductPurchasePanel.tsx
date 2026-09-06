@@ -51,6 +51,7 @@ export function ProductPurchasePanel({ product }: { product: ProductDetail }) {
         priceByn={priceByn}
         availability={availability}
         needsSelection={needsSelection}
+        variantId={matchedVariant?.id ?? null}
         selected={selected}
         onSelect={selectValue}
         isValueAvailable={checkAvailable}
