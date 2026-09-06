@@ -1,10 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
-import { CartProvider } from "@/lib/cart-context";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { CookieBanner } from "@/components/layout/CookieBanner";
-import { CartDrawer } from "@/components/cart/CartDrawer";
+import { ShopChrome } from "@/components/layout/ShopChrome";
 import { SITE } from "@/constants/content/site";
 import { getNavBrands } from "@/lib/catalog";
 import "./globals.css";
@@ -57,13 +53,7 @@ export default async function RootLayout({
   return (
     <html lang="ru" className={`${obrazec.variable} ${comfortaa.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased bg-[var(--color-bg)] text-[var(--color-text)]">
-        <CartProvider>
-          <Header navBrands={navBrands} />
-          <main className="flex-1">{children}</main>
-          <Footer navBrands={navBrands} />
-          <CartDrawer />
-          <CookieBanner />
-        </CartProvider>
+        <ShopChrome navBrands={navBrands}>{children}</ShopChrome>
       </body>
     </html>
   );

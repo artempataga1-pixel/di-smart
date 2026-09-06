@@ -88,7 +88,7 @@ function telegramResultResponse(order: OrderWithItems, log: TelegramDeliveryLog)
 }
 
 export async function POST(request: NextRequest) {
-  const ip = getClientIp(request);
+  const ip = getClientIp(request.headers);
   const rateLimit = checkRateLimit(`order:${ip}`, RATE_LIMIT);
   if (!rateLimit.allowed) {
     return NextResponse.json(

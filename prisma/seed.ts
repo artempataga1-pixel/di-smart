@@ -883,9 +883,18 @@ const BRANDS: BrandDef[] = [
 async function resetProductChildren(productId: string) {
   await prisma.productVariantOption.deleteMany({ where: { variant: { productId } } });
   await prisma.productVariant.deleteMany({ where: { productId } });
+  await prisma.productVariantAttribute.deleteMany({ where: { productId } });
   await prisma.productImage.deleteMany({ where: { productId } });
   await prisma.productColorValue.deleteMany({ where: { productId } });
   await prisma.productSpec.deleteMany({ where: { productId } });
+}
+
+async function markAttributeUsed(productId: string, attributeId: string) {
+  await prisma.productVariantAttribute.upsert({
+    where: { productId_attributeId: { productId, attributeId } },
+    update: {},
+    create: { productId, attributeId },
+  });
 }
 
 async function main() {
@@ -1061,6 +1070,8 @@ async function main() {
         // Варианты: точное совпадение набора атрибутов, комбинации создаются
         // явно (память × SIM только для iPhone), не декартовым произведением "на лету".
         if (def.memoryTiers && def.simOptions) {
+          await markAttributeUsed(product.id, attrMemory.id);
+          await markAttributeUsed(product.id, attrSim.id);
           let sortOrder = 0;
           for (const memTier of def.memoryTiers) {
             for (const simLabel of def.simOptions) {
@@ -1085,6 +1096,7 @@ async function main() {
             }
           }
         } else if (def.memoryTiers) {
+          await markAttributeUsed(product.id, attrMemory.id);
           let sortOrder = 0;
           for (const tier of def.memoryTiers) {
             const memValueId = memoryValueIds.get(tier.label)!;
@@ -1103,6 +1115,7 @@ async function main() {
             sortOrder += 1;
           }
         } else if (def.sizeTiers) {
+          await markAttributeUsed(product.id, attrSize.id);
           let sortOrder = 0;
           for (const tier of def.sizeTiers) {
             const sizeValueId = sizeValueIds.get(tier.label)!;
@@ -1120,6 +1133,7 @@ async function main() {
             sortOrder += 1;
           }
         } else if (def.lengthTiers) {
+          await markAttributeUsed(product.id, attrLength.id);
           let sortOrder = 0;
           for (const tier of def.lengthTiers) {
             const lengthValueId = lengthValueIds.get(tier.label)!;

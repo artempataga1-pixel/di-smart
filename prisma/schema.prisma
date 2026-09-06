@@ -64,6 +64,7 @@ model VariantAttribute {
   sortOrder Int                     @default(0)
   isColor   Boolean                 @default(false)
   values    VariantAttributeValue[]
+  products  ProductVariantAttribute[]
 
   createdAt DateTime @default(now())
 }
@@ -104,11 +105,12 @@ model Product {
   seoDescription   String?
   canonicalPath    String?
 
-  variants    ProductVariant[]
-  colorValues ProductColorValue[]
-  images      ProductImage[]
-  specs       ProductSpec[]
-  orderItems  OrderItem[]
+  variants          ProductVariant[]
+  colorValues       ProductColorValue[]
+  images            ProductImage[]
+  specs             ProductSpec[]
+  orderItems        OrderItem[]
+  variantAttributes ProductVariantAttribute[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -137,6 +139,21 @@ model ProductVariant {
   updatedAt DateTime @updatedAt
 
   @@index([productId])
+}
+
+/** Какие не-цветовые атрибуты вообще выбраны для этого товара в админке
+ * (чекбокс "использовать в этом товаре", задача 54) — независимо от того,
+ * создана ли уже хоть одна SKU-комбинация с этим атрибутом. Без этой
+ * таблицы не было бы способа отличить "атрибут ещё не задействован ни в
+ * одном варианте" от "атрибут вообще не предполагается для этого товара". */
+model ProductVariantAttribute {
+  product     Product          @relation(fields: [productId], references: [id], onDelete: Cascade)
+  productId   String
+  attribute   VariantAttribute @relation(fields: [attributeId], references: [id], onDelete: Cascade)
+  attributeId String
+
+  @@id([productId, attributeId])
+  @@index([attributeId])
 }
 
 /** Многие-ко-многим: какие значения не-цветовых атрибутов образуют вариант.

@@ -4,6 +4,16 @@ export function formatPrice(value: number): string {
   }).format(value) + " BYN";
 }
 
+export function formatDateTime(value: Date): string {
+  return new Intl.DateTimeFormat("ru-RU", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(value);
+}
+
 export function pluralizeItems(count: number): string {
   const mod10 = count % 10;
   const mod100 = count % 100;
