@@ -15,9 +15,17 @@ import type { NavBrand } from "@/lib/catalog";
  * layout — это избавляет от переноса всех страниц магазина в route group. */
 export function ShopChrome({
   navBrands,
+  analytics,
   children,
 }: {
   navBrands: NavBrand[];
+  /* Рендерится в RootLayout (Server Component) и прокидывается сюда, а не
+   * импортируется напрямую в этот "use client"-файл: YandexMetrika читает
+   * server-only env (`YANDEX_METRIKA_ID`, без NEXT_PUBLIC_-префикса) —
+   * прямой импорт в клиентский компонент превратил бы его в client-бандл,
+   * где этот env всегда undefined (та же ловушка RSC-границы, что и с
+   * Decimal-полями, см. заметку к задаче 24). */
+  analytics: React.ReactNode;
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
@@ -32,6 +40,7 @@ export function ShopChrome({
       <Footer navBrands={navBrands} />
       <CartDrawer />
       <CookieBanner />
+      {analytics}
     </CartProvider>
   );
 }

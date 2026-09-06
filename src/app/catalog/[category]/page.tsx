@@ -21,7 +21,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { category: slug } = await params;
   const category = await getCategoryBySlug(slug);
-  return { title: category ? `${category.name} — ${SITE.name}` : `Каталог — ${SITE.name}` };
+  if (!category) return { title: `Каталог — ${SITE.name}` };
+
+  const title = category.seoTitle || `${category.name} — ${SITE.name}`;
+  const description =
+    category.description ||
+    `${category.name} от ${category.brandName} в интернет-магазине ${SITE.name}: цены в BYN, доставка по Беларуси.`;
+  const url = `/catalog/${category.slug}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url },
+  };
 }
 
 export default async function CategoryPage({
@@ -57,7 +70,7 @@ export default async function CategoryPage({
         Весь каталог
       </Link>
       <h1 className="font-[family-name:var(--font-heading)] text-3xl font-semibold md:text-4xl">
-        {category.name}
+        {category.h1 || category.name}
       </h1>
       {category.description && (
         <p className="mt-2 max-w-xl text-[var(--color-muted)]">{category.description}</p>

@@ -14,7 +14,14 @@ import { SITE } from "@/constants/content/site";
  * от необходимости достучаться до БД во время `next build` в CI. */
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: `Каталог — ${SITE.name}` };
+const catalogDescription = `Каталог техники Apple, Samsung и аксессуаров в интернет-магазине ${SITE.name}. Цены в BYN, доставка по Беларуси.`;
+
+export const metadata: Metadata = {
+  title: `Каталог — ${SITE.name}`,
+  description: catalogDescription,
+  alternates: { canonical: "/catalog" },
+  openGraph: { title: `Каталог — ${SITE.name}`, description: catalogDescription, url: "/catalog" },
+};
 
 export default async function CatalogPage({
   searchParams,

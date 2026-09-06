@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { ShopChrome } from "@/components/layout/ShopChrome";
+import { YandexMetrika } from "@/components/analytics/YandexMetrika";
 import { SITE } from "@/constants/content/site";
 import { getNavBrands } from "@/lib/catalog";
 import "./globals.css";
@@ -37,10 +38,33 @@ export const viewport: Viewport = {
   themeColor: "#e8935c",
 };
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: `${SITE.name} — ${SITE.tagline}`,
   description: SITE.description,
+  /* Пока сайт не на боевом домене — намеренно закрыт от индексации (решение
+   * пользователя, задача 62). Снять перед реальным запуском. */
   robots: { index: false, follow: false },
+  openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    siteName: SITE.fullName,
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description: SITE.description,
+    url: "/",
+    /* Временный логотип-бейдж (см. заметку к задаче 12) — заменить на
+     * выделенную OG-картинку 1200×630, когда появится чистый лого/фото. */
+    images: ["/images/logo-badge-temp.png"],
+  },
+  /* Технически готово, реальные ID заказчик подставит в .env сам —
+   * задача 62. Пустая строка в env превращается в undefined, чтобы не
+   * рендерить пустые meta-теги верификации. */
+  verification: {
+    google: process.env.GSC_VERIFICATION || undefined,
+    yandex: process.env.YANDEX_VERIFICATION || undefined,
+  },
 };
 
 export default async function RootLayout({
@@ -53,7 +77,9 @@ export default async function RootLayout({
   return (
     <html lang="ru" className={`${obrazec.variable} ${comfortaa.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased bg-[var(--color-bg)] text-[var(--color-text)]">
-        <ShopChrome navBrands={navBrands}>{children}</ShopChrome>
+        <ShopChrome navBrands={navBrands} analytics={<YandexMetrika />}>
+          {children}
+        </ShopChrome>
       </body>
     </html>
   );

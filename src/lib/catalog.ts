@@ -39,6 +39,8 @@ export interface CategorySummary {
   slug: string;
   name: string;
   description: string | null;
+  seoTitle: string | null;
+  h1: string | null;
   brandSlug: string;
   brandName: string;
 }
@@ -53,6 +55,8 @@ export async function getAllCategories(): Promise<CategorySummary[]> {
     slug: c.slug,
     name: c.name,
     description: c.seoDescription,
+    seoTitle: c.seoTitle,
+    h1: c.h1,
     brandSlug: c.brand.slug,
     brandName: c.brand.name,
   }));
@@ -68,6 +72,8 @@ export async function getCategoryBySlug(slug: string): Promise<CategorySummary |
     slug: category.slug,
     name: category.name,
     description: category.seoDescription,
+    seoTitle: category.seoTitle,
+    h1: category.h1,
     brandSlug: category.brand.slug,
     brandName: category.brand.name,
   };
@@ -259,6 +265,9 @@ export interface ProductDetail {
   colors: ProductDetailColor[];
   attributes: ProductDetailAttribute[];
   variants: ProductDetailVariant[];
+  seoTitle: string | null;
+  seoDescription: string | null;
+  canonicalPath: string | null;
 }
 
 export async function getProductDetailBySlug(slug: string): Promise<ProductDetail | null> {
@@ -344,6 +353,9 @@ export async function getProductDetailBySlug(slug: string): Promise<ProductDetai
     colors,
     attributes,
     variants,
+    seoTitle: product.seoTitle,
+    seoDescription: product.seoDescription,
+    canonicalPath: product.canonicalPath,
   };
 }
 
