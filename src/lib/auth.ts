@@ -2,10 +2,9 @@
  * httpOnly cookie-сессия — без NextAuth, она не нужна для одного пользователя.
  *
  * HMAC через Web Crypto (`crypto.subtle`), не Node `crypto` — этот модуль
- * используется и в `middleware.ts` (Edge Runtime, там нет Node `crypto`), и в
- * обычных Server Actions/Route Handler'ах (Node Runtime). `crypto.subtle`
- * доступен в обеих средах, поэтому не нужно отдельно переводить middleware на
- * `runtime: "nodejs"`. */
+ * используется и в `src/proxy.ts` (в Next.js 16 Proxy по умолчанию работает на
+ * Node.js runtime, но `crypto.subtle` доступен и там, и в обычных Server
+ * Actions/Route Handler'ах — единая реализация без разветвления по рантайму). */
 
 export const SESSION_COOKIE_NAME = "di-smart-admin-session";
 export const SESSION_MAX_AGE_SECONDS = 60 * 60 * 24 * 7; // 7 дней

@@ -11,3 +11,13 @@ next-env.d.ts
 .github
 tmp
 npm-debug.log*
+# Данные, живущие в Docker-томах/bind-mount в рантайме — не должны попадать
+# в образ через COPY . . (иначе именованный volume при первом создании
+# "засеивается" содержимым образа, включая случайные тестовые файлы с хоста;
+# для backups это ещё и потенциальный слив дампов БД в артефакт сборки).
+public/uploads
+backups
+e2e
+playwright-report
+test-results
+blob-report

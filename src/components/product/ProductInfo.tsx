@@ -48,7 +48,9 @@ export function ProductInfo({
         </h1>
       </div>
 
-      <Price price={priceByn} size="lg" />
+      <div data-testid="product-price">
+        <Price price={priceByn} size="lg" />
+      </div>
 
       {product.shortDescription && (
         <p className="text-[var(--color-muted)]">{product.shortDescription}</p>

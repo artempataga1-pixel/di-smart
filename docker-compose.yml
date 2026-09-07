@@ -9,10 +9,28 @@ services:
     depends_on:
       db:
         condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
     ports:
       - "${APP_PORT:-3000}:3000"
     volumes:
       - uploads:/app/public/uploads
+
+  # Одноразовый контейнер: применяет накопленные миграции при каждом старте
+  # стека (`prisma migrate deploy`, не `migrate dev` — без интерактивных
+  # вопросов и без учёта drift, годится для CI/прод). Переиспользует стадию
+  # `dependencies` из Dockerfile — там уже есть Prisma CLI и schema.prisma,
+  # полная сборка Next.js (стадия `builder`) для этого не нужна.
+  migrate:
+    build:
+      context: .
+      target: dependencies
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["npx", "prisma", "migrate", "deploy"]
+    restart: "no"
 
   db:
     image: postgres:16-alpine

@@ -4,9 +4,9 @@ import { SESSION_COOKIE_NAME, verifySessionToken } from "@/lib/auth";
 /** Защищает все `/admin/**`, кроме `/admin/login` — без валидной подписанной
  * cookie-сессии редиректит на страницу логина. Server Actions админки постят
  * на тот же URL, с которого отрендерена форма (тот же `/admin/**` путь),
- * поэтому этот же middleware перехватывает и их — отдельная проверка сессии
+ * поэтому этот же proxy перехватывает и их — отдельная проверка сессии
  * внутри каждого Server Action не нужна. */
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   if (request.nextUrl.pathname === "/admin/login") {
     return NextResponse.next();
   }

@@ -11,5 +11,8 @@ next-env.d.ts
 tmp
 backups
 public/uploads
+playwright-report
+test-results
+blob-report
 
 .vercel
