@@ -21,7 +21,7 @@ export default async function AdminBrandsPage({
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="font-[family-name:var(--font-heading)] text-2xl font-semibold">Бренды</h1>
+      <h1 className="font-[family-name:var(--font-body)] text-2xl font-semibold">Бренды</h1>
 
       <AdminErrorBanner message={error} />
 

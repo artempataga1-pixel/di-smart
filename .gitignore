@@ -14,5 +14,4 @@ public/uploads
 playwright-report
 test-results
 blob-report
-
-.vercel
+.env*.local

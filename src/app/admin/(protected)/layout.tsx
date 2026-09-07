@@ -12,7 +12,7 @@ export default function AdminProtectedLayout({ children }: { children: ReactNode
   return (
     <div className="flex min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
       <aside className="flex w-64 shrink-0 flex-col border-r border-[var(--color-line)] bg-[var(--color-surface)] p-5">
-        <div className="mb-8 font-[family-name:var(--font-heading)] text-lg font-semibold">
+        <div className="mb-8 font-[family-name:var(--font-body)] text-lg font-semibold">
           Di-SMART <span className="text-[var(--color-accent)]">Admin</span>
         </div>
         <AdminNav />

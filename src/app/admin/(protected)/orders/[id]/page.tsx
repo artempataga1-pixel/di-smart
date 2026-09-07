@@ -35,7 +35,7 @@ export default async function AdminOrderDetailPage({
   return (
     <div className="flex max-w-3xl flex-col gap-6">
       <div>
-        <h1 className="font-[family-name:var(--font-heading)] text-2xl font-semibold">
+        <h1 className="font-[family-name:var(--font-body)] text-2xl font-semibold">
           Заказ от {formatDateTime(order.createdAt)}
         </h1>
         <p className="text-sm text-[var(--color-muted)]">ID: {order.id}</p>

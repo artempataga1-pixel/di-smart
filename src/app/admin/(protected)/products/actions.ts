@@ -118,3 +118,12 @@ export async function updateProductBasicAction(formData: FormData) {
   revalidatePath(`${LIST_PATH}/${id}`);
   redirect(`${LIST_PATH}/${id}`);
 }
+
+export async function deleteProductsAction(ids: string[]) {
+  await requireAdminSession();
+  if (ids.length === 0) return;
+
+  await prisma.product.deleteMany({ where: { id: { in: ids } } });
+
+  revalidatePath(LIST_PATH);
+}

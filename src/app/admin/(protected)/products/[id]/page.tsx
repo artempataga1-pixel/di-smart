@@ -102,7 +102,7 @@ export default async function EditProductPage({
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <h1 className="font-[family-name:var(--font-heading)] text-2xl font-semibold">{product.name}</h1>
+        <h1 className="font-[family-name:var(--font-body)] text-2xl font-semibold">{product.name}</h1>
         <p className="text-sm text-[var(--color-muted)]">
           {product.category.name} · slug: {product.slug}
         </p>

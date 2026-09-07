@@ -19,7 +19,7 @@ export default async function NewProductPage({
 
   return (
     <div className="flex max-w-3xl flex-col gap-6">
-      <h1 className="font-[family-name:var(--font-heading)] text-2xl font-semibold">Новый товар</h1>
+      <h1 className="font-[family-name:var(--font-body)] text-2xl font-semibold">Новый товар</h1>
 
       <AdminErrorBanner message={error} />
 

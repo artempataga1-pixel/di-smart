@@ -14,7 +14,7 @@ export default async function AdminDashboardPage() {
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="font-[family-name:var(--font-heading)] text-2xl font-semibold">Дашборд</h1>
+      <h1 className="font-[family-name:var(--font-body)] text-3xl font-semibold">Дашборд</h1>
 
       <div className="grid gap-4 sm:grid-cols-3">
         <StatCard label="Текущий курс" value={rate.toFixed(2)} hint="BYN за 1 USD" />

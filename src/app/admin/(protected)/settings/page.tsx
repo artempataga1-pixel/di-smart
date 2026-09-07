@@ -20,7 +20,7 @@ export default async function AdminSettingsPage({
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="font-[family-name:var(--font-heading)] text-2xl font-semibold">Настройки</h1>
+      <h1 className="font-[family-name:var(--font-body)] text-2xl font-semibold">Настройки</h1>
 
       <AdminErrorBanner message={error} />
 
