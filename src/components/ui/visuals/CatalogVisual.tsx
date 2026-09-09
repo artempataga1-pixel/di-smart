@@ -9,11 +9,11 @@ import { cn } from "@/lib/utils";
  * цвет считается детерминированным хешем строки-сида, иконка подбирается
  * эвристикой по ключевым словам с безопасным дефолтом для незнакомых. */
 const GRADIENTS = [
-  "from-[#eaf0fc] to-[#d6e2f5]",
-  "from-[#f1f0fa] to-[#e3e4f2]",
-  "from-[#f7eee8] to-[#f5dec9]",
-  "from-[#fcefe1] to-[#fbdfc2]",
-  "from-[#edeff6] to-[#dde3ef]",
+  "from-[#241c14] to-[#15100a]",
+  "from-[#2a1f13] to-[#17110a]",
+  "from-[#2e2015] to-[#1a130c]",
+  "from-[#251a10] to-[#140e08]",
+  "from-[#281d12] to-[#160f09]",
 ];
 
 function pickGradient(seed: string): string {
