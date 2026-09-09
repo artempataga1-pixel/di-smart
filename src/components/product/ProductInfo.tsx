@@ -123,7 +123,7 @@ export function ProductInfo({
         </div>
       ))}
 
-      <div className="flex items-center gap-3">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <div className="flex items-center gap-1 rounded-full border border-[var(--color-line)]">
           <button
             type="button"
@@ -155,6 +155,13 @@ export function ProductInfo({
           <ShoppingBag className="size-4" />
           {inStock ? "В корзину" : "Нет в наличии"}
         </button>
+
+        <a
+          href="#product-details"
+          className="flex items-center justify-center gap-1.5 rounded-full border border-[var(--color-line)] px-5 py-3.5 text-sm font-medium text-[var(--color-text)] transition-colors hover:border-[var(--color-accent)]"
+        >
+          Показать больше
+        </a>
       </div>
     </div>
   );
