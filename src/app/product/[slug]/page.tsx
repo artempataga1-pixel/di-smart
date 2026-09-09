@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { FlagshipProductPage } from "@/components/product/flagship/FlagshipProductPage";
 import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
 import { SITE } from "@/constants/content/site";
 
@@ -47,8 +48,6 @@ export default async function ProductPage({
   const product = await getProductDetailBySlug(slug);
   if (!product) notFound();
 
-  const related = await getRelatedProducts(product.categorySlug, product.id);
-
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
   const canonicalUrl = `${siteUrl}${product.canonicalPath || `/product/${product.slug}`}`;
   const productJsonLd = {
@@ -70,12 +69,27 @@ export default async function ProductPage({
     },
   };
 
+  const jsonLd = (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+    />
+  );
+
+  if (product.isFlagship) {
+    return (
+      <>
+        {jsonLd}
+        <FlagshipProductPage product={product} />
+      </>
+    );
+  }
+
+  const related = await getRelatedProducts(product.categorySlug, product.id);
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
-      />
+      {jsonLd}
       <Breadcrumbs
         items={[
           { label: "Главная", href: "/" },

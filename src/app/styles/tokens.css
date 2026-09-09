@@ -37,8 +37,8 @@
   --shadow-card-hover: 0 24px 60px rgba(16, 24, 38, 0.12), 0 0 0 1px rgba(232, 147, 92, 0.18);
   --shadow-accent-glow: 0 14px 32px rgba(232, 147, 92, 0.35);
 
-  --font-heading: var(--font-obrazec-var), sans-serif;
-  --font-body: var(--font-comfortaa-var), sans-serif;
+  --font-heading: var(--font-nunito-var), sans-serif;
+  --font-body: var(--font-nunito-sans-var), sans-serif;
 }
 
 /* .site-theme — тёмная айдентика витрины (референс "фон": градиент

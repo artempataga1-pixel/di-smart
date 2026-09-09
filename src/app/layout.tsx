@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
+import { Nunito, Nunito_Sans } from "next/font/google";
 import { ShopChrome } from "@/components/layout/ShopChrome";
 import { YandexMetrika } from "@/components/analytics/YandexMetrika";
 import { SITE } from "@/constants/content/site";
@@ -16,18 +16,17 @@ import "./globals.css";
  * во время сборки, только при реальном запросе. */
 export const dynamic = "force-dynamic";
 
-const obrazec = localFont({
-  src: "./fonts/Obrazec 2.0.otf",
-  variable: "--font-obrazec-var",
+const nunito = Nunito({
+  subsets: ["latin", "cyrillic"],
+  weight: "700",
+  variable: "--font-nunito-var",
   display: "swap",
 });
 
-const comfortaa = localFont({
-  src: [
-    { path: "./fonts/Comfortaa-Light.ttf", weight: "300", style: "normal" },
-    { path: "./fonts/Comfortaa-Regular.ttf", weight: "400", style: "normal" },
-  ],
-  variable: "--font-comfortaa-var",
+const nunitoSans = Nunito_Sans({
+  subsets: ["latin", "cyrillic"],
+  weight: "300",
+  variable: "--font-nunito-sans-var",
   display: "swap",
 });
 
@@ -75,7 +74,7 @@ export default async function RootLayout({
   const navBrands = await getNavBrands();
 
   return (
-    <html lang="ru" className={`${obrazec.variable} ${comfortaa.variable} h-full`}>
+    <html lang="ru" className={`${nunito.variable} ${nunitoSans.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased bg-[var(--color-bg)] text-[var(--color-text)]">
         <ShopChrome navBrands={navBrands} analytics={<YandexMetrika />}>
           {children}
