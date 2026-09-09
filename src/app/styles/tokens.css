@@ -46,6 +46,9 @@
    витрины в ShopChrome — админка продолжает жить на светлой палитре
    из @theme выше, её этот блок не касается. */
 .site-theme {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
   --color-bg: #060605;
   --color-surface: #15130f;
   --color-surface-soft: #201c16;

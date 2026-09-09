@@ -156,12 +156,14 @@ export function ProductInfo({
           {inStock ? "В корзину" : "Нет в наличии"}
         </button>
 
-        <a
-          href="#product-details"
-          className="flex items-center justify-center gap-1.5 rounded-full border border-[var(--color-line)] px-5 py-3.5 text-sm font-medium text-[var(--color-text)] transition-colors hover:border-[var(--color-accent)]"
-        >
-          Показать больше
-        </a>
+        {(product.description || product.specs.length > 0) && (
+          <a
+            href="#product-details"
+            className="flex items-center justify-center gap-1.5 rounded-full border border-[var(--color-line)] px-5 py-3.5 text-sm font-medium text-[var(--color-text)] transition-colors hover:border-[var(--color-accent)]"
+          >
+            Показать больше
+          </a>
+        )}
       </div>
     </div>
   );
