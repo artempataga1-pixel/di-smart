@@ -393,6 +393,43 @@ export async function getFlagshipProducts(limit = 2): Promise<CatalogCardData[]>
   return products.map((p) => toCard(p, rate));
 }
 
+export interface FlagshipShowcaseProduct {
+  id: string;
+  slug: string;
+  name: string;
+  priceByn: number;
+  availability: Availability;
+  images: { url: string; alt: string | null }[];
+}
+
+/** Для immersive-подачи флагманов на главной (FlagshipShowcase) — в отличие
+ * от getFlagshipProducts(), отдаёт ВСЕ фото товара (не только главное),
+ * упорядоченные как в админке. Без этого 3-картиночный сторителлинг
+ * невозможен. */
+export async function getFlagshipShowcaseProducts(limit = 2): Promise<FlagshipShowcaseProduct[]> {
+  const rate = await getCurrentRate();
+  const products = await prisma.product.findMany({
+    where: { isActive: true, isFlagship: true },
+    orderBy: { sortOrder: "asc" },
+    take: limit,
+    include: {
+      variants: { where: { isDefault: true } },
+      images: { orderBy: { sortOrder: "asc" } },
+    },
+  });
+  return products.map((p) => ({
+    id: p.id,
+    slug: p.slug,
+    name: p.name,
+    priceByn: usdToByn(
+      (p.variants[0] ? p.variants[0].priceUsd : p.basePriceUsd).toNumber(),
+      rate
+    ),
+    availability: p.variants[0] ? p.variants[0].availability : p.availability,
+    images: p.images.map((img) => ({ url: img.url, alt: img.alt })),
+  }));
+}
+
 export async function getPopularProducts(limit = 6): Promise<CatalogCardData[]> {
   const rate = await getCurrentRate();
   const products = await prisma.product.findMany({
