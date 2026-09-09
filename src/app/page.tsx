@@ -1,36 +1,24 @@
-import { MoonHero } from "@/components/hero/MoonHero";
-import { CategoryGrid } from "@/components/home/CategoryGrid";
-import { FlagshipProducts } from "@/components/home/FlagshipProducts";
-import { InfoTeasers } from "@/components/home/InfoTeasers";
-import { PopularProducts } from "@/components/home/PopularProducts";
+import { FlagshipShowcase } from "@/components/home/FlagshipShowcase";
+import { GroupingGrid } from "@/components/home/GroupingGrid";
 import { ContactTeaser } from "@/components/home/ContactTeaser";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getFlagshipShowcaseProducts } from "@/lib/catalog";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const flagships = await getFlagshipShowcaseProducts(2);
+
   return (
     <>
-      <MoonHero />
-
-      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
-        <RevealOnScroll>
-          <SectionHeading title="Категории" description="Выберите то, что вам нужно" />
-        </RevealOnScroll>
-        <div className="mt-8">
-          <CategoryGrid />
+      <section className="relative overflow-hidden pb-16 pt-10 md:pb-24 md:pt-16">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <FlagshipShowcase products={flagships} />
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 md:px-6">
-        <FlagshipProducts />
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6">
-        <InfoTeasers />
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-16 md:px-6">
-        <PopularProducts />
+        <RevealOnScroll>
+          <GroupingGrid />
+        </RevealOnScroll>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-20 pt-4 md:px-6">

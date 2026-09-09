@@ -430,21 +430,6 @@ export async function getFlagshipShowcaseProducts(limit = 2): Promise<FlagshipSh
   }));
 }
 
-export async function getPopularProducts(limit = 6): Promise<CatalogCardData[]> {
-  const rate = await getCurrentRate();
-  const products = await prisma.product.findMany({
-    where: { isActive: true, isFlagship: false },
-    orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
-    take: limit,
-    include: {
-      category: { include: { brand: true } },
-      variants: { where: { isDefault: true } },
-      images: { where: { isMain: true }, take: 1 },
-    },
-  });
-  return products.map((p) => toCard(p, rate));
-}
-
 export type CatalogSearchParams = Record<string, string | string[] | undefined>;
 
 const SORT_VALUES: CatalogSort[] = ["default", "price_asc", "price_desc", "new"];
