@@ -6,6 +6,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { CartDrawer } from "@/components/cart/CartDrawer";
+import { GradientBackdrop } from "@/components/ui/GradientBackdrop";
 import type { NavBrand } from "@/lib/catalog";
 
 /** Админка (`/admin/**`) — отдельный UI-каркас без общего Header/Footer
@@ -34,13 +35,18 @@ export function ShopChrome({
   }
 
   return (
-    <CartProvider>
-      <Header navBrands={navBrands} />
-      <main className="flex-1">{children}</main>
-      <Footer navBrands={navBrands} />
-      <CartDrawer />
-      <CookieBanner />
-      {analytics}
-    </CartProvider>
+    <div className="site-theme relative flex min-h-full flex-1 flex-col">
+      <GradientBackdrop />
+      <CartProvider>
+        <div className="relative z-10 flex min-h-full flex-1 flex-col">
+          <Header navBrands={navBrands} />
+          <main className="flex-1">{children}</main>
+          <Footer navBrands={navBrands} />
+          <CartDrawer />
+          <CookieBanner />
+          {analytics}
+        </div>
+      </CartProvider>
+    </div>
   );
 }

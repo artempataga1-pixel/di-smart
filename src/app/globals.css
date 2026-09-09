@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./styles/tokens.css";
+@import "./styles/gradient.css";
 @import "./styles/layout.css";
 @import "./styles/catalog.css";
 @import "./styles/product.css";
