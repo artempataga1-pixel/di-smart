@@ -4,7 +4,6 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
-import { FlagshipProductPage } from "@/components/product/flagship/FlagshipProductPage";
 import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
 import { SITE } from "@/constants/content/site";
 
@@ -76,15 +75,6 @@ export default async function ProductPage({
     />
   );
 
-  if (product.isFlagship) {
-    return (
-      <>
-        {jsonLd}
-        <FlagshipProductPage product={product} />
-      </>
-    );
-  }
-
   const related = await getRelatedProducts(product.categorySlug, product.id);
 
   return (
@@ -99,9 +89,11 @@ export default async function ProductPage({
         ]}
       />
 
-      <ProductPurchasePanel product={product} />
+      <div className="mt-6">
+        <ProductPurchasePanel product={product} />
+      </div>
 
-      <div className="mt-10">
+      <div id="product-details" className="mt-16 scroll-mt-24">
         <ProductSpecsTable specs={product.specs} description={product.description} />
       </div>
 
