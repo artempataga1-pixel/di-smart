@@ -44,7 +44,7 @@ export function ProductPurchasePanel({ product }: { product: ProductDetail }) {
   const galleryImageUrl = selectedColor?.imageUrl ?? product.mainImageUrl;
 
   return (
-    <div className="grid gap-10 lg:grid-cols-2">
+    <div className="grid gap-10 lg:grid-cols-[3fr_2fr]">
       <ProductGallery product={product} imageUrl={galleryImageUrl} />
       <ProductInfo
         product={product}
