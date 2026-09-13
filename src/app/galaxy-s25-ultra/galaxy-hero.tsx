@@ -2,10 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { chapters, highlights, finishes, narrativeSections } from "./galaxy-content";
+import { chapters, highlights, finishes, narrativeSections, accessories, lineupTiers } from "./galaxy-content";
 import { PhoneViewer } from "./phone-viewer";
 import { NarrativeSection } from "./narrative-section";
 import { GalaxyAiExperience } from "./galaxy-ai-experience";
+import { AccessoriesGrid } from "./accessories-grid";
+import { LineupPicker } from "./lineup-picker";
 import { media } from "./galaxy-media";
 import { HeroFilm } from "./hero-film";
 import { PillCta } from "@/components/ui/PillCta";
@@ -104,6 +106,16 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
 
       <section id="galaxy-ai" ref={registerSection("galaxy-ai")} className={styles.section}>
         <GalaxyAiExperience />
+      </section>
+
+      <section id="accessories" ref={registerSection("accessories")} className={styles.section}>
+        <h2 className={styles.sectionTitle}>Аксессуары</h2>
+        <AccessoriesGrid accessories={accessories} />
+      </section>
+
+      <section id="lineup" ref={registerSection("lineup")} className={styles.section}>
+        <h2 className={styles.sectionTitle}>Вся линейка Galaxy S25</h2>
+        <LineupPicker tiers={lineupTiers} />
       </section>
 
       <footer className={styles.footnote}>

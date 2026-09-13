@@ -143,6 +143,20 @@
   padding: 2rem clamp(1rem, 4vw, 3rem) 4rem;
 }
 
+.accessoryGrid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); margin-top: 1.5rem; }
+.accessoryCard { display: flex; flex-direction: column; gap: 0.4rem; padding: 1.25rem; border-radius: var(--radius-lg); border: 1px solid var(--color-line); background: var(--color-surface); }
+.accessoryName { font-weight: 600; }
+.accessoryShort { font-size: 0.85rem; color: var(--color-muted); }
+.accessoryLink { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--color-accent-ink); margin-top: 0.5rem; }
+
+.lineup { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 1.5rem; }
+.lineupCard { padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--color-line); background: var(--color-surface); }
+.lineupCardCurrent { border-color: var(--color-accent); background: var(--color-accent-soft); }
+.lineupName { font-weight: 700; font-size: 1.1rem; }
+.lineupShort { font-size: 0.85rem; color: var(--color-muted); margin: 0.4rem 0 0.9rem; }
+.lineupCurrentBadge { display: inline-flex; padding: 0.3rem 0.75rem; border-radius: 999px; background: var(--color-accent); color: #fff; font-size: 0.75rem; font-weight: 600; }
+.lineupLink { font-size: 0.85rem; color: var(--color-accent-ink); }
+
 @media (prefers-reduced-motion: reduce) {
   .stickyNavInner { scroll-behavior: auto; }
 }
