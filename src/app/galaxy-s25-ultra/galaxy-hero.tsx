@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { chapters, highlights, finishes } from "./galaxy-content";
+import { chapters, highlights, finishes, narrativeSections } from "./galaxy-content";
 import { PhoneViewer } from "./phone-viewer";
+import { NarrativeSection } from "./narrative-section";
 import { media } from "./galaxy-media";
 import { HeroFilm } from "./hero-film";
 import { PillCta } from "@/components/ui/PillCta";
@@ -95,6 +96,10 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
           <PillCta href={buyHref} size="sm">Купить</PillCta>
         </div>
       </section>
+
+      {narrativeSections.map((s) => (
+        <NarrativeSection key={s.id} data={s} sectionRef={registerSection(s.id)} />
+      ))}
 
       <footer className={styles.footnote}>
         <p>
