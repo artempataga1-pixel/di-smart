@@ -30,7 +30,6 @@ const TABS = [
 export function GalaxyAiExperience() {
   const [activeIndex, setActiveIndex] = useState(0);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
-  const active = TABS[activeIndex];
 
   function onKeyDown(e: React.KeyboardEvent) {
     if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
@@ -65,13 +64,22 @@ export function GalaxyAiExperience() {
           </button>
         ))}
       </div>
-      <div role="tabpanel" id={`panel-${active.id}`} aria-labelledby={`tab-${active.id}`} className={styles.panel}>
-        <div>
-          <h3 className={styles.panelTitle}>{active.title}</h3>
-          <p className={styles.panelBody}>{active.body}</p>
+      {TABS.map((tab, i) => (
+        <div
+          key={tab.id}
+          role="tabpanel"
+          id={`panel-${tab.id}`}
+          aria-labelledby={`tab-${tab.id}`}
+          hidden={i !== activeIndex}
+          className={styles.panel}
+        >
+          <div>
+            <h3 className={styles.panelTitle}>{tab.title}</h3>
+            <p className={styles.panelBody}>{tab.body}</p>
+          </div>
+          <MediaFrame asset={media.galaxyAiEdit} className={styles.panelMedia} />
         </div>
-        <MediaFrame asset={media.galaxyAiEdit} className={styles.panelMedia} />
-      </div>
+      ))}
     </div>
   );
 }
