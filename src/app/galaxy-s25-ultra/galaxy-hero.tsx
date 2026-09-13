@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { chapters, highlights } from "./galaxy-content";
+import { chapters, highlights, finishes } from "./galaxy-content";
+import { PhoneViewer } from "./phone-viewer";
 import { media } from "./galaxy-media";
 import { HeroFilm } from "./hero-film";
 import { PillCta } from "@/components/ui/PillCta";
@@ -82,6 +83,18 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
           </div>
         ))}
       </div>
+
+      <section id="design" ref={registerSection("design")} className={styles.section}>
+        <h2 className={styles.sectionTitle}>Титан снаружи, мощь внутри</h2>
+        <p className={styles.sectionBody}>
+          Корпус из титана и защита IP68 — Galaxy S25 Ultra выдерживает
+          повседневные нагрузки, сохраняя премиальный вид.
+        </p>
+        <PhoneViewer finishes={finishes} />
+        <div className="mt-6">
+          <PillCta href={buyHref} size="sm">Купить</PillCta>
+        </div>
+      </section>
 
       <footer className={styles.footnote}>
         <p>
