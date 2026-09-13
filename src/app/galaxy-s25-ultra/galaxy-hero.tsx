@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { chapters } from "./galaxy-content";
 import { media } from "./galaxy-media";
-import { MediaFrame } from "@/components/ui/MediaFrame";
+import { HeroFilm } from "./hero-film";
 import { PillCta } from "@/components/ui/PillCta";
 import { Price } from "@/components/ui/Price";
 import type { ProductDetail } from "@/lib/catalog";
@@ -56,7 +56,7 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
       </nav>
 
       <section id="hero" ref={registerSection("hero")} className={styles.hero}>
-        <MediaFrame asset={media.heroPoster} className="absolute inset-0" />
+        <HeroFilm poster={media.heroPoster} />
         <div className={styles.heroCopy}>
           <p className={styles.eyebrow}>Samsung Galaxy S25 Ultra</p>
           <h1 className={styles.heroTitle}>Титан. S Pen. 200 Мп.</h1>
