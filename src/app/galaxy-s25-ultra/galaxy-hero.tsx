@@ -2,11 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { chapters } from "./galaxy-content";
+import { chapters, highlights } from "./galaxy-content";
 import { media } from "./galaxy-media";
 import { HeroFilm } from "./hero-film";
 import { PillCta } from "@/components/ui/PillCta";
 import { Price } from "@/components/ui/Price";
+import { useStaggerReveal } from "@/components/ui/useStaggerReveal";
 import type { ProductDetail } from "@/lib/catalog";
 import styles from "./galaxy-hero.module.css";
 
@@ -35,6 +36,8 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
       else sectionRefs.current.delete(id);
     };
   }
+
+  const highlightsRef = useStaggerReveal<HTMLDivElement>({ count: highlights.length });
 
   const buyHref = product ? PRODUCT_HREF : "/catalog";
 
@@ -70,6 +73,15 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
           </div>
         </div>
       </section>
+
+      <div ref={highlightsRef} className={styles.highlightRail} aria-label="Ключевые особенности">
+        {highlights.map((h) => (
+          <div key={h.id} data-stagger-item className={styles.highlightCard}>
+            <p className={styles.highlightTitle}>{h.title}</p>
+            <p className={styles.highlightDetail}>{h.detail}</p>
+          </div>
+        ))}
+      </div>
 
       <footer className={styles.footnote}>
         <p>
