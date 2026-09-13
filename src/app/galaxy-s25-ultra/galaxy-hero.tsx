@@ -5,6 +5,7 @@ import Link from "next/link";
 import { chapters, highlights, finishes, narrativeSections } from "./galaxy-content";
 import { PhoneViewer } from "./phone-viewer";
 import { NarrativeSection } from "./narrative-section";
+import { GalaxyAiExperience } from "./galaxy-ai-experience";
 import { media } from "./galaxy-media";
 import { HeroFilm } from "./hero-film";
 import { PillCta } from "@/components/ui/PillCta";
@@ -100,6 +101,10 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
       {narrativeSections.map((s) => (
         <NarrativeSection key={s.id} data={s} sectionRef={registerSection(s.id)} />
       ))}
+
+      <section id="galaxy-ai" ref={registerSection("galaxy-ai")} className={styles.section}>
+        <GalaxyAiExperience />
+      </section>
 
       <footer className={styles.footnote}>
         <p>

@@ -1,0 +1,26 @@
+/* src/app/galaxy-s25-ultra/galaxy-ai-experience.module.css */
+.wrap { display: flex; flex-direction: column; gap: 1.5rem; }
+.tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.tab {
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+.tab[aria-selected="true"] {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+.panel {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .panel { grid-template-columns: 1fr 1fr; align-items: center; }
+}
+.panelTitle { font-size: clamp(1.35rem, 2.5vw, 1.75rem); font-weight: 700; margin-bottom: 0.5rem; }
+.panelBody { color: var(--color-muted); max-width: 48ch; }
+.panelMedia { aspect-ratio: 4 / 3; border-radius: var(--radius-lg); }
