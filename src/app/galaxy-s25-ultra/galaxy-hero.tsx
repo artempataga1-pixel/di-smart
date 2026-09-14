@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { chapters, highlights, finishes, narrativeSections, accessories, lineupTiers, questions } from "./galaxy-content";
 import { FaqAccordion } from "./faq-accordion";
@@ -36,12 +36,12 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
     return () => observer.disconnect();
   }, []);
 
-  function registerSection(id: string) {
+  const registerSection = useCallback((id: string) => {
     return (el: HTMLElement | null) => {
       if (el) sectionRefs.current.set(id, el);
       else sectionRefs.current.delete(id);
     };
-  }
+  }, []);
 
   const highlightsRef = useStaggerReveal<HTMLDivElement>({ count: highlights.length });
 

@@ -13,11 +13,12 @@ type PlayState = "paused" | "playing" | "ended" | "error";
 export function HeroFilm({ poster, videoSrc }: { poster: MediaAsset; videoSrc?: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [state, setState] = useState<PlayState>("paused");
-  const [reduceMotion, setReduceMotion] = useState(false);
+  const [reduceMotion, setReduceMotion] = useState(() =>
+    typeof window !== "undefined" ? window.matchMedia("(prefers-reduced-motion: reduce)").matches : false
+  );
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReduceMotion(mq.matches);
     const onChange = () => setReduceMotion(mq.matches);
     mq.addEventListener("change", onChange);
     return () => mq.removeEventListener("change", onChange);
