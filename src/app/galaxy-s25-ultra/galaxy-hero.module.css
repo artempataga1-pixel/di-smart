@@ -160,3 +160,8 @@
 @media (prefers-reduced-motion: reduce) {
   .stickyNavInner { scroll-behavior: auto; }
 }
+
+.faq { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem; max-width: 70ch; }
+.faqItem { padding: 1.1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-line); background: var(--color-surface); }
+.faqQuestion { cursor: pointer; font-weight: 600; }
+.faqAnswer { margin-top: 0.6rem; color: var(--color-muted); font-size: 0.9rem; }
