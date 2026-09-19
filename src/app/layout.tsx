@@ -71,7 +71,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navBrands = await getNavBrands();
+  // Промостраницы остаются доступными во время локальной работы с медиа,
+  // даже если каталоговая БД временно не запущена.
+  const navBrands = await getNavBrands().catch((error: unknown) => {
+    console.error("Navigation catalog is unavailable", error);
+    return [];
+  });
 
   return (
     <html lang="ru" className={`${nunito.variable} ${nunitoSans.variable} h-full`}>

@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { ShoppingBag } from "lucide-react";
+import { ArrowUpRight, ShoppingBag } from "lucide-react";
 import type { CatalogCardData } from "@/lib/catalog";
 import { Price } from "@/components/ui/Price";
-import { Badge } from "@/components/ui/Badge";
 import { CatalogVisual } from "@/components/ui/visuals/CatalogVisual";
 import { useCart } from "@/lib/cart-context";
+import {
+  isCatalogStudioImage,
+  shouldCoverCatalogCardImage,
+} from "@/constants/content/catalog-media";
 
 export function ProductCard({ product }: { product: CatalogCardData }) {
   const { addItem } = useCart();
@@ -15,53 +18,60 @@ export function ProductCard({ product }: { product: CatalogCardData }) {
   return (
     <div
       data-stagger-item
-      className="group flex flex-col overflow-hidden rounded-[6px_var(--radius-xl)_6px_var(--radius-xl)] border border-[var(--color-line)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] transition-shadow hover:shadow-[var(--shadow-card-hover)]"
+      className="group flex flex-col overflow-hidden rounded-[22px] border border-[#e8e8ed] bg-[var(--color-surface)] transition-[border-color,transform] duration-300 hover:-translate-y-1 hover:border-[#c7c7cc]"
     >
       <Link
-        href={`/product/${product.slug}`}
-        className="relative block aspect-square overflow-hidden bg-[var(--color-accent-soft)]"
+        href={product.canonicalPath || `/product/${product.slug}`}
+        className="relative block aspect-square overflow-hidden bg-[#f5f5f7]"
       >
-        {product.isFlagship && (
-          <Badge tone="dark" className="absolute left-3 top-3 z-10">
-            Флагман
-          </Badge>
-        )}
-        <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
-          <CatalogVisual
+        <div className="h-full w-full transition-transform duration-700 ease-out group-hover:scale-[1.025] motion-reduce:transform-none motion-reduce:transition-none">
+          {product.mainImageUrl ? <CatalogVisual
+            imageFit={
+              shouldCoverCatalogCardImage(product.mainImageUrl)
+                ? "cover"
+                : isCatalogStudioImage(product.mainImageUrl)
+                  ? "studio"
+                  : "contain"
+            }
+            sizesAttr="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
             imageUrl={product.mainImageUrl}
             alt={product.name}
             iconHint={`${product.categoryName} ${product.name}`}
             gradientSeed={product.categorySlug}
-          />
+          /> : <div className="flex h-full items-center justify-center text-sm text-[var(--color-muted)]">Фотография скоро появится</div>}
         </div>
       </Link>
 
-      <div className="flex flex-1 flex-col gap-3 p-4">
-        <Link href={`/product/${product.slug}`} className="min-h-11">
-          <h3 className="text-sm font-medium leading-snug text-[var(--color-text)] transition-colors hover:text-[var(--color-accent-ink)]">
+      <div className="flex flex-1 flex-col gap-3 p-5">
+        <div>
+          <p className="mb-1 text-sm text-[var(--color-muted)]">{product.brandName}</p>
+          <Link href={product.canonicalPath || `/product/${product.slug}`} className="block min-h-11">
+          <h3 className="text-[17px] font-semibold leading-snug tracking-[-0.015em] text-[var(--color-text)] transition-colors hover:text-[var(--color-accent-ink)]">
             {product.name}
           </h3>
-        </Link>
+          </Link>
+        </div>
 
         <Price price={product.priceByn} />
 
-        <div className="mt-auto flex gap-2 pt-1">
+        <div className="mt-auto grid grid-cols-[1fr_auto] gap-2 pt-2">
           <button
             type="button"
             onClick={() =>
               addItem({ productId: product.id, variantId: product.defaultVariantId, colorValueId: null })
             }
             disabled={!inStock}
-            className="btn-command flex flex-1 items-center justify-center gap-1.5 rounded-[var(--radius-sm)] px-3 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-50"
+            className="btn-command flex items-center justify-center gap-1.5 rounded-full px-4 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:opacity-50"
           >
             <ShoppingBag className="size-4" />
             {inStock ? "Купить" : "Нет в наличии"}
           </button>
           <Link
-            href={`/product/${product.slug}`}
-            className="flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--color-line)] px-3 py-2.5 text-sm font-medium text-[var(--color-text)] transition-colors hover:border-[var(--color-accent)]"
+            href={product.canonicalPath || `/product/${product.slug}`}
+            aria-label={`Подробнее о ${product.name}`}
+            className="flex size-10 items-center justify-center rounded-full border border-[var(--color-line)] text-[var(--color-text)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent-ink)]"
           >
-            Подробнее
+            <ArrowUpRight className="size-4" aria-hidden="true" />
           </Link>
         </div>
       </div>

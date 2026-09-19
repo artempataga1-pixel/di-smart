@@ -6,11 +6,19 @@ import { useCatalogUrl } from "@/components/catalog/useCatalogUrl";
 import { CatalogFilters } from "@/components/catalog/CatalogFilters";
 import { SortSelect } from "@/components/catalog/SortSelect";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
+import type { EditorialCatalogCardData } from "@/components/catalog/EditorialCatalogCard";
 import { Pagination } from "@/components/catalog/Pagination";
 import { SearchField } from "@/components/ui/SearchField";
+import { cn } from "@/lib/utils";
 
-export function CatalogView({ result }: { result: CatalogResult }) {
-  const { searchParams, setParams } = useCatalogUrl();
+export function CatalogView({
+  result,
+  editorialItem,
+}: {
+  result: CatalogResult;
+  editorialItem?: EditorialCatalogCardData | null;
+}) {
+  const { searchParams, setParams, isPending } = useCatalogUrl();
 
   const query = searchParams.get("q") ?? "";
   // Сброс локального черновика поиска при смене `q` извне (например, кнопкой
@@ -39,6 +47,7 @@ export function CatalogView({ result }: { result: CatalogResult }) {
     maxPrice < result.priceBoundsByn.max ||
     query.trim().length > 0 ||
     sort !== "default";
+  const showFilters = result.availableBrands.length > 1;
 
   return (
     <div className="flex flex-col gap-6">
@@ -53,8 +62,8 @@ export function CatalogView({ result }: { result: CatalogResult }) {
         <SortSelect value={sort} onChange={(value) => setParams({ sort: value === "default" ? null : value })} />
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
-        {result.availableBrands.length > 1 && (
+      <div className={showFilters ? "grid gap-8 lg:grid-cols-[260px_1fr]" : "grid gap-8"}>
+        {showFilters && (
           <CatalogFilters
             priceBounds={result.priceBoundsByn}
             maxPrice={maxPrice}
@@ -67,8 +76,14 @@ export function CatalogView({ result }: { result: CatalogResult }) {
           />
         )}
 
-        <div>
-          <ProductGrid products={result.items} />
+        <div
+          aria-busy={isPending}
+          className={cn(
+            "transition-opacity duration-200",
+            isPending && "pointer-events-none opacity-50"
+          )}
+        >
+          <ProductGrid products={result.items} editorialItem={editorialItem} />
           <Pagination
             page={result.page}
             totalPages={result.totalPages}

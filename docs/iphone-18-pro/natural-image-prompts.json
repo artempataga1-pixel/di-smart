@@ -1,0 +1,90 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "design-burgundy",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-1be0d6fe-1dc8-4088-828b-e6c5e38479d2.png",
+      "prompt": "Reference image is ONLY a geometry reference for the burgundy phone: preserve its proportions, wide rectangular camera island, precisely THREE lenses in the same triangular arrangement, sensor, flash and logo. Completely reshoot as a PHOTOREALISTIC real physical phone, not the shiny CGI material from reference. Fine matte glass back, believable satin metal edges, small natural imperfections and subtle fingerprints visible only on close inspection, restrained reflections. Neutral soft window light, realistic photographic exposure, no magenta rim glow, no bloom, no dramatic orange light, no artificial grain overlay. Landscape 3:2 photograph, no added text. Phone standing upright on real matte charcoal tabletop, centered and complete, rear three-quarter view similar to reference. Background dark charcoal seamless paper, visible soft contact shadow. 85mm f/8 product photograph from small real photography studio with one large diffused light source. Enough black negative space around the complete phone, no floating."
+    },
+    {
+      "id": "camera",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-d56e9b91-9033-4150-86f9-85035a44ae58.png",
+      "prompt": "Reference image is ONLY a geometry reference for the burgundy phone: preserve its proportions, wide rectangular camera island, precisely THREE lenses in the same triangular arrangement, sensor, flash and logo. Completely reshoot as a PHOTOREALISTIC real physical phone, not the shiny CGI material from reference. Fine matte glass back, believable satin metal edges, small natural imperfections and subtle fingerprints visible only on close inspection, restrained reflections. Neutral soft window light, realistic photographic exposure, no magenta rim glow, no bloom, no dramatic orange light, no artificial grain overlay. Landscape 3:2 photograph, no added text. Close macro photograph of upper back camera island, phone lying on charcoal desk, looking obliquely down. Lens glass has restrained real window reflection, dark almost black lenses without glowing purple centers, precise physical edges and subtle texture. 100mm f/8. Fill central two thirds with camera array, natural shadow, no impossible mirror finish."
+    },
+    {
+      "id": "battery",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-ae721516-62bf-4332-ba4d-adb5e9d4835f.png",
+      "prompt": "Reference image is ONLY a geometry reference for the burgundy phone: preserve its proportions, wide rectangular camera island, precisely THREE lenses in the same triangular arrangement, sensor, flash and logo. Completely reshoot as a PHOTOREALISTIC real physical phone, not the shiny CGI material from reference. Fine matte glass back, believable satin metal edges, small natural imperfections and subtle fingerprints visible only on close inspection, restrained reflections. Neutral soft window light, realistic photographic exposure, no magenta rim glow, no bloom, no dramatic orange light, no artificial grain overlay. Landscape 3:2 photograph, no added text. Phone lying back-up at a slight diagonal on a slightly worn dark wood cafe table beside a plain white cup of coffee. Everyday daytime cafe, overcast daylight from window, only a softly visible chair in background. Centered phone fully visible. Shot casually from seated eye height at 50mm f/5.6. No skyline, no luxury penthouse, no candles."
+    },
+    {
+      "id": "charging",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-b34dc816-1187-4a30-b20c-6c96fb84de07.png",
+      "prompt": "Reference image is ONLY a geometry reference for the burgundy phone: preserve its proportions, wide rectangular camera island, precisely THREE lenses in the same triangular arrangement, sensor, flash and logo. Completely reshoot as a PHOTOREALISTIC real physical phone, not the shiny CGI material from reference. Fine matte glass back, believable satin metal edges, small natural imperfections and subtle fingerprints visible only on close inspection, restrained reflections. Neutral soft window light, realistic photographic exposure, no magenta rim glow, no bloom, no dramatic orange light, no artificial grain overlay. Landscape 3:2 photograph, no added text. Phone lying back-up on a charcoal fabric bedside surface, plain small white circular magnetic charging puck attached beneath camera island, one realistically curved braided white cable exits toward lower right. View from above, natural morning window light, subtle fabric fibers and small contact shadows. No glowing light or oversized puck."
+    },
+    {
+      "id": "case",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-9d4b38ce-0b30-43a5-8858-0e035492ba13.png",
+      "prompt": "Reference image is ONLY a geometry reference for the burgundy phone: preserve its proportions, wide rectangular camera island, precisely THREE lenses in the same triangular arrangement, sensor, flash and logo. Completely reshoot as a PHOTOREALISTIC real physical phone, not the shiny CGI material from reference. Fine matte glass back, believable satin metal edges, small natural imperfections and subtle fingerprints visible only on close inspection, restrained reflections. Neutral soft window light, realistic photographic exposure, no magenta rim glow, no bloom, no dramatic orange light, no artificial grain overlay. Landscape 3:2 photograph, no added text. Real tabletop product photo of this phone in a dark burgundy soft-touch silicone protective case, centered upright at three-quarter rear angle on matte charcoal paper. Rounded case lip around camera cutout, fine matte material, neutral diffuse softbox light, grounded contact shadow, no leathery CGI texture. Entire phone visible."
+    },
+    {
+      "id": "experience",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-b34b3be0-87a9-4ec2-a502-efe099cf658e.png",
+      "prompt": "Reference image is ONLY a geometry reference for the burgundy phone: preserve its proportions, wide rectangular camera island, precisely THREE lenses in the same triangular arrangement, sensor, flash and logo. Completely reshoot as a PHOTOREALISTIC real physical phone, not the shiny CGI material from reference. Fine matte glass back, believable satin metal edges, small natural imperfections and subtle fingerprints visible only on close inspection, restrained reflections. Neutral soft window light, realistic photographic exposure, no magenta rim glow, no bloom, no dramatic orange light, no artificial grain overlay. Landscape 3:2 photograph, no added text. Front view of this burgundy phone standing on a real charcoal tabletop, completely visible centered. Flat glass display with quiet dark burgundy gradient wallpaper, tiny black camera pill at top, subdued real window reflection, slim physically believable side rails. No apps or text. Neutral diffuse soft light, contact shadow, 85mm f/8."
+    },
+    {
+      "id": "ecosystem",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-ca2c1b30-bfcf-421e-93d7-abc24bc40e4b.png",
+      "prompt": "Reference image is ONLY a geometry reference for the burgundy phone: preserve its proportions, wide rectangular camera island, precisely THREE lenses in the same triangular arrangement, sensor, flash and logo. Completely reshoot as a PHOTOREALISTIC real physical phone, not the shiny CGI material from reference. Fine matte glass back, believable satin metal edges, small natural imperfections and subtle fingerprints visible only on close inspection, restrained reflections. Neutral soft window light, realistic photographic exposure, no magenta rim glow, no bloom, no dramatic orange light, no artificial grain overlay. Landscape 3:2 photograph, no added text. An ordinary tidy work desk with this phone lying back-up in foreground, open silver laptop behind and a pair of white earbuds in open case nearby. Just these three objects, no tablet or watch. Matte charcoal desk, simple grey wall, diffuse daylight from side window. Laptop screen dark muted wallpaper, no apps or text. Natural practical arrangement, slight cable edge in background, real scale and contact shadows, 50mm f/5.6."
+    },
+    {
+      "id": "light",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-f5520263-3cce-4c8b-a4fd-32003502b2e9.png",
+      "prompt": "Photorealistic actual-camera photograph for a product website, 3:2 landscape. Believable unretouched editorial photo, ordinary physical light, neutral white balance, restrained natural colors, natural shadow rolloff, modest dynamic range. Real fine textures, no CGI, no 3D render look, no bloom, no dramatic rim lights, no orange/teal grading, no excessive bokeh, no synthetic glossy surfaces, no text or watermark. A candid head-and-shoulders portrait of a woman in her late twenties sitting at a small cafe window on an overcast afternoon. Plain dark burgundy wool sweater, relaxed distracted expression looking past camera. Visible pores, fine facial hairs, a few loose hair strands, slight under-eye shadows. 50mm f/4, softly recognizable ordinary cafe interior, no makeup-ad retouching. Centered face, composition works as portrait crop."
+    },
+    {
+      "id": "macro",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-a436ff48-6ba3-4527-a67b-8adcf774e6f3.png",
+      "prompt": "Photorealistic actual-camera photograph for a product website, 3:2 landscape. Believable unretouched editorial photo, ordinary physical light, neutral white balance, restrained natural colors, natural shadow rolloff, modest dynamic range. Real fine textures, no CGI, no 3D render look, no bloom, no dramatic rim lights, no orange/teal grading, no excessive bokeh, no synthetic glossy surfaces, no text or watermark. Close photograph of one slightly imperfect dark burgundy calla lily beside a window. Real petal veins, subtle uneven edges, one small water droplet, matte organic texture. Diffuse daylight, softly visible grey-green leaves behind, 100mm macro f/8, genuine limited depth of field rather than glowing velvet sculpture. Flower centered for portrait crop."
+    },
+    {
+      "id": "performance",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-2d22f4ba-83c1-4176-ae2d-2d5f818b38c4.png",
+      "prompt": "Photorealistic actual-camera photograph for a product website, 3:2 landscape. Believable unretouched editorial photo, ordinary physical light, neutral white balance, restrained natural colors, natural shadow rolloff, modest dynamic range. Real fine textures, no CGI, no 3D render look, no bloom, no dramatic rim lights, no orange/teal grading, no excessive bokeh, no synthetic glossy surfaces, no text or watermark. Real macro photograph of a small square unlabelled processor package on an actual densely populated dark smartphone circuit board on a repair technician's table. Tiny physically plausible capacitors and solder joints, flat silvery graphite chip package, diffuse neutral workbench light, 100mm macro f/8, gentle focus falloff. No luminous traces, no decorative symmetrical circuits, no gold pedestal, no diagrams or labels."
+    },
+    {
+      "id": "gaming",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-c2c9394e-c252-4e3c-bc3d-9f319c55f8c0.png",
+      "prompt": "Photorealistic actual-camera photograph for a product website, 3:2 landscape. Believable unretouched editorial photo, ordinary physical light, neutral white balance, restrained natural colors, natural shadow rolloff, modest dynamic range. Real fine textures, no CGI, no 3D render look, no bloom, no dramatic rim lights, no orange/teal grading, no excessive bokeh, no synthetic glossy surfaces, no text or watermark. Candid close photograph of a person relaxing on a charcoal fabric sofa holding a slim burgundy smartphone horizontally in both hands. Hands anatomically natural, thumbs partly over screen edges. Screen displays a modest realistic driving game with a grey road and one red car, no text. Screen visibly a glass screen with subdued window reflection and realistic brightness. Daylight from nearby window, ordinary living room, 50mm f/4. No cinematic fantasy scenery."
+    },
+    {
+      "id": "black",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-1adb25f6-55b0-4d32-9f5c-d645b6d58f79.png",
+      "prompt": "Edit the reference photograph. Change ONLY the phone body finish to matte graphite black. Preserve the exact camera, phone geometry, scale, position, contact shadow, charcoal tabletop and background, natural soft lighting, fine real material textures. Do not change photographic realism or make reflections glossy. Remove conspicuous fingerprints but retain subtle material imperfections. Landscape 3:2. No text."
+    },
+    {
+      "id": "silver",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-a28aac3d-1c3d-40a1-9d2a-d71ac6a6bab0.png",
+      "prompt": "Edit the reference photograph. Change ONLY the phone body finish to neutral satin silver. Preserve the exact camera, phone geometry, scale, position, contact shadow, charcoal tabletop and background, natural soft lighting, fine real material textures. Do not change photographic realism or make reflections glossy. Remove conspicuous fingerprints but retain subtle material imperfections. Landscape 3:2. No text."
+    },
+    {
+      "id": "glacier",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-0aed0e26-7ad3-4691-a9b8-bf3966ddded9.png",
+      "prompt": "Edit the reference photograph. Change ONLY the phone body finish to very pale desaturated ice blue. Preserve the exact camera, phone geometry, scale, position, contact shadow, charcoal tabletop and background, natural soft lighting, fine real material textures. Do not change photographic realism or make reflections glossy. Remove conspicuous fingerprints but retain subtle material imperfections. Landscape 3:2. No text."
+    },
+    {
+      "id": "controls",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-933c139f-f9ec-4aff-b6fe-e5f929a618ff.png",
+      "prompt": "Photorealistic natural travel photograph, landscape 3:2. Real ordinary daylight, restrained color, no cinematic grading, no CGI gloss, no fantasy architecture or terrain. Not an idealized travel poster. Candid over-the-shoulder photograph at the Svislach river embankment in Minsk, Belarus, looking toward Troitskoye Predmestye (Trinity Suburb). Recognizable continuous row of low pastel cream and pale pink houses with red tiled pitched roofs above sloping grassy riverbank, calm river foreground. A person's natural hands hold a burgundy modern smartphone vertically in foreground, screen shows same embankment and houses correctly, small white shutter button, black camera pill, no text. Slightly overcast September afternoon. 50mm f/5.6, hands and phone central, background still recognizable. Geographic accuracy, no Florentine dome, no mountains, no invented tall church towers."
+    },
+    {
+      "id": "landscape",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-49cff0b9-d01b-45e9-a30c-9a083ef85220.png",
+      "prompt": "Photorealistic natural travel photograph, landscape 3:2. Real ordinary daylight, restrained color, no cinematic grading, no CGI gloss, no fantasy architecture or terrain. Not an idealized travel poster. Realistic view of Jatiluwih rice terraces in Bali, Indonesia from a walking path: broad irregular green rice paddies stepping gently down foothills, irrigation channels and narrow earth paths, distant wooded hills softened by humid haze. One tiny farmer near center, everyday late morning under thin cloud, 35mm f/8. No extreme symmetrical bowl-shaped terraces, no golden fantasy mountain spires, no exotic invented temples."
+    },
+    {
+      "id": "cinema",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-6086a3fe-fdbd-40a8-902c-b57ae58255f0.png",
+      "prompt": "Photorealistic natural travel photograph, landscape 3:2. Real ordinary daylight, restrained color, no cinematic grading, no CGI gloss, no fantasy architecture or terrain. Not an idealized travel poster. Documentary photo of Sanur beach, Bali, Indonesia at early morning in soft neutral light. Shallow calm water, a few real traditional wooden jukung outrigger boats moored close to shore, pale slightly littered sand, distant low horizon in humid haze. One small local person walks along the waterline, no surfer, no storm waves, no dramatic cliffs or fantasy sunset. 35mm f/8, horizon straight, boats central."
+    }
+  ]
+}

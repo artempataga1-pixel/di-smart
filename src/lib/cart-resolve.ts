@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import { usdToByn } from "@/lib/pricing";
+import { getPreferredCatalogProductImage } from "@/constants/content/catalog-media";
 import type { Availability } from "@/types/cart";
 
 export interface RawCartItem {
@@ -120,7 +121,10 @@ export async function resolveCartLines(
       ? product.images.find((img) => img.colorValueId === raw.colorValueId)
       : undefined;
     const mainImage = product.images.find((img) => img.isMain) ?? product.images[0];
-    const imageUrl = colorImage?.url ?? mainImage?.url ?? null;
+    const imageUrl = getPreferredCatalogProductImage(
+      product.slug,
+      colorImage?.url ?? mainImage?.url
+    );
 
     lines.push({
       productId: product.id,

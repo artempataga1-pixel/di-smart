@@ -1,0 +1,17 @@
+[
+  {
+    "name": "action_button",
+    "prompt": "Precisely localize the supplied Apple product website image into Russian. Replace Silent with «Без звука», Wed Apr 1 with «Ср, 1 апреля». Keep 9:41. Preserve exact original phone geometry, materials, camera angle, photographs, black background and composition, aspect ratio 1440:760. Change ONLY the text as instructed with matching sharp Apple UI typography and perspective. No other changes. This is a localization edit, not a redesign.",
+    "output": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-d18ebf91-db09-48ee-92ac-73809ef42b5b.png"
+  },
+  {
+    "name": "size",
+    "prompt": "Precisely localize the supplied Apple product website image into Russian. Translate all interface text: Cancel→Отмена, Done→Готово, ADJUST→НАСТРОЙКИ, HIGHLIGHTS→СВЕТЛЫЕ УЧАСТКИ, VIDEO→ВИДЕО, PHOTO→ФОТО, Styles→Стили, Live→Live, Adjust→Правка, Crop→Обрезка, Tools→Инструменты. SIRI remains Siri. Preserve exact original phone geometry, materials, camera angle, photographs, black background and composition, aspect ratio 1440:760. Change ONLY the text as instructed with matching sharp Apple UI typography and perspective. No other changes. This is a localization edit, not a redesign.",
+    "output": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-c843a78b-81f5-44c8-934a-33811f9c34ab.png"
+  },
+  {
+    "name": "dynamic_island_endframe",
+    "prompt": "Precisely localize the supplied Apple product website image into Russian. Translate 300 FT to 100 м. Replace song title the bridge with «Мост», performer line with «Любимая музыка». Keep numeric time, icons and artwork. Preserve exact original phone geometry, materials, camera angle, photographs, black background and composition, aspect ratio 1440:760. Change ONLY the text as instructed with matching sharp Apple UI typography and perspective. No other changes. This is a localization edit, not a redesign.",
+    "output": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-a7f7eb91-d85e-4d9b-a29c-44f90d571041.png"
+  }
+]

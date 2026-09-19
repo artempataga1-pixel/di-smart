@@ -21,6 +21,8 @@ const COLORS: Record<string, string> = {
   "Сиреневый": "#b9a7d1",
   "Графитовый": "#4b4b4d",
   "Серебристый": "#d7d9dc",
+  "Бордовый": "#6f3542",
+  "Ледниковый": "#b9c8d5",
   "Полночный": "#12141c",
   "Золотой": "#cbb489",
 };
@@ -137,6 +139,25 @@ const BRANDS: BrandDef[] = [
             memoryTiers: mem(MEMORY_LABELS.slice(0, 4), [0, 100, 300, 500]),
             simOptions: SIM_LABELS,
             oosTierLabels: ["1 ТБ"],
+          },
+          {
+            slug: "iphone-18-pro",
+            name: "iPhone 18 Pro",
+            short: "Чип A20 Pro, система камер Pro и четыре цвета корпуса",
+            desc: "iPhone 18 Pro с дисплеем Super Retina XDR, чипом A20 Pro и тройной системой камер 48 Мп.",
+            basePriceUsd: 1299,
+            isFlagship: true,
+            mainImage: "/media/iphone-18-pro/images/natural/design-burgundy.webp",
+            specs: [
+              ["Экран", "6.3\" Super Retina XDR, ProMotion 120 Гц"],
+              ["Чип", "Apple A20 Pro"],
+              ["Камера", "Три камеры 48 Мп, зум оптического качества до 8×"],
+              ["Корпус", "Металл и Ceramic Shield"],
+              ["Разъём", "USB-C"],
+            ],
+            colors: ["Бордовый", "Ледниковый", "Серебристый", "Чёрный"],
+            memoryTiers: mem(MEMORY_LABELS.slice(0, 4), [0, 100, 300, 500]),
+            simOptions: SIM_LABELS,
           },
           {
             slug: "iphone-air",
@@ -483,7 +504,7 @@ const BRANDS: BrandDef[] = [
     categories: [
       {
         slug: "samsung-smartphones",
-        name: "Смартфоны",
+        name: "Samsung",
         seoTitle: "Смартфоны Samsung — купить в Минске | Di-SMART Electronics",
         seoDescription: "Samsung Galaxy S, Z Flip, Z Fold и A-серия с гарантией и доставкой.",
         products: [
@@ -686,6 +707,14 @@ const BRANDS: BrandDef[] = [
           },
         ],
       },
+    ],
+  },
+  {
+    slug: "xiaomi",
+    name: "Xiaomi",
+    categories: [
+      { slug: "xiaomi-smartphones", name: "Xiaomi", seoTitle: "Смартфоны Xiaomi — Di-SMART", seoDescription: "Смартфоны Xiaomi в Di-SMART.", products: [] },
+      { slug: "laptops", name: "Ноутбуки", seoTitle: "Ноутбуки Xiaomi Book и RedmiBook — Di-SMART", seoDescription: "Ноутбуки для работы, учёбы и творчества.", products: [] },
     ],
   },
   {

@@ -1,6 +1,11 @@
 /* src/app/galaxy-s25-ultra/phone-viewer.module.css */
 .viewer { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; margin-top: 2rem; }
-.stage { width: min(100%, 420px); aspect-ratio: 3 / 4; border-radius: var(--radius-xl); }
+.stageWrap { position: relative; width: min(100%, 420px); aspect-ratio: 3 / 4; }
+.stage { width: 100%; aspect-ratio: 3 / 4; border-radius: var(--radius-xl); }
+.stage3d { position: absolute; inset: 0; visibility: hidden; pointer-events: none; cursor: grab; border-radius: var(--radius-xl); touch-action: pan-y; }
+.stage3d[data-visible="true"] { visibility: visible; pointer-events: auto; }
+.stage3d:active { cursor: grabbing; }
+.stage3d canvas { display: block; touch-action: pan-y; }
 .swatches { display: flex; gap: 0.75rem; }
 .swatch {
   width: 32px;

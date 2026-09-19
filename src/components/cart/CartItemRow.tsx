@@ -6,6 +6,10 @@ import type { CartItemKey, ResolvedCartItem } from "@/types/cart";
 import { Price } from "@/components/ui/Price";
 import { CatalogVisual } from "@/components/ui/visuals/CatalogVisual";
 import { useCart } from "@/lib/cart-context";
+import {
+  isCatalogStudioImage,
+  shouldCoverCatalogCardImage,
+} from "@/constants/content/catalog-media";
 
 export function CartItemRow({ item }: { item: ResolvedCartItem }) {
   const { setQuantity, removeItem } = useCart();
@@ -25,6 +29,13 @@ export function CartItemRow({ item }: { item: ResolvedCartItem }) {
       >
         <CatalogVisual
           imageUrl={item.imageUrl}
+          imageFit={
+            shouldCoverCatalogCardImage(item.imageUrl)
+              ? "cover"
+              : isCatalogStudioImage(item.imageUrl)
+                ? "studio"
+                : "contain"
+          }
           alt={item.name}
           iconHint={item.name}
           gradientSeed={item.productId}

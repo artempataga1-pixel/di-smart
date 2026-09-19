@@ -1,0 +1,30 @@
+[
+  {
+    "name": "burgundy",
+    "prompt": "Edit the reference into a COMPLETE photorealistic iPhone lock screen texture, flat full bleed vertical 9:19.5. Preserve the woman, pose, background, photo realism and huge depth-effect 9:41 clock behind her head. Add authentic polished iOS system UI directly in the image, with crisp accurate native-looking shapes, not hand-drawn: exact Russian date \"Пн, 14 сентября\" centered at 8% height above the clock; white cellular signal bars, Wi-Fi and a filled battery neatly aligned in upper right at 4% height. At bottom left 13%,93% a translucent dark circular flashlight control with the proper small solid white flashlight icon; at bottom right 87%,93% matching circular camera control with a proper solid white camera icon. Thin white home gesture bar centered at 98% height. All controls have realistic iOS proportions and spacing. Do NOT add any phone bezel, perspective, hardware, black pill or Dynamic Island (the 3D model supplies that hardware separately). No new text, no notifications. Image is the entire finished display, no need for further overlays. High resolution, clean professional interface, preserve photographic identity.",
+    "mode": "builtin image_gen",
+    "asset": "public/media/iphone-18-pro/screens/burgundy-complete.webp",
+    "original": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-4807979b-199a-4d04-9ec3-e2c3413cfdf9.png"
+  },
+  {
+    "name": "glacier",
+    "prompt": "Edit the reference into a COMPLETE photorealistic iPhone lock screen texture, flat full bleed vertical 9:19.5. Preserve the woman, pose, background, photo realism and huge depth-effect 9:41 clock behind her head. Add authentic polished iOS system UI directly in the image, with crisp accurate native-looking shapes, not hand-drawn: exact Russian date \"Пн, 14 сентября\" centered at 8% height above the clock; white cellular signal bars, Wi-Fi and a filled battery neatly aligned in upper right at 4% height. At bottom left 13%,93% a translucent dark circular flashlight control with the proper small solid white flashlight icon; at bottom right 87%,93% matching circular camera control with a proper solid white camera icon. Thin white home gesture bar centered at 98% height. All controls have realistic iOS proportions and spacing. Do NOT add any phone bezel, perspective, hardware, black pill or Dynamic Island (the 3D model supplies that hardware separately). No new text, no notifications. Image is the entire finished display, no need for further overlays. High resolution, clean professional interface, preserve photographic identity.",
+    "mode": "builtin image_gen",
+    "asset": "public/media/iphone-18-pro/screens/glacier-complete.webp",
+    "original": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-97ca4f59-79be-4132-931d-e79a3e7c8e39.png"
+  },
+  {
+    "name": "silver",
+    "prompt": "Edit the reference into a COMPLETE photorealistic iPhone lock screen texture, flat full bleed vertical 9:19.5. Preserve the woman, pose, background, photo realism and huge depth-effect 9:41 clock behind her head. Add authentic polished iOS system UI directly in the image, with crisp accurate native-looking shapes, not hand-drawn: exact Russian date \"Пн, 14 сентября\" centered at 8% height above the clock; white cellular signal bars, Wi-Fi and a filled battery neatly aligned in upper right at 4% height. At bottom left 13%,93% a translucent dark circular flashlight control with the proper small solid white flashlight icon; at bottom right 87%,93% matching circular camera control with a proper solid white camera icon. Thin white home gesture bar centered at 98% height. All controls have realistic iOS proportions and spacing. Do NOT add any phone bezel, perspective, hardware, black pill or Dynamic Island (the 3D model supplies that hardware separately). No new text, no notifications. Image is the entire finished display, no need for further overlays. High resolution, clean professional interface, preserve photographic identity.",
+    "mode": "builtin image_gen",
+    "asset": "public/media/iphone-18-pro/screens/silver-complete.webp",
+    "original": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-fa949e4d-86ce-4e2a-b9e5-d8cdc355a2b3.png"
+  },
+  {
+    "name": "black",
+    "prompt": "Edit the reference into a COMPLETE photorealistic iPhone lock screen texture, flat full bleed vertical 9:19.5. Preserve the woman, pose, background, photo realism and huge depth-effect 9:41 clock behind her head. Add authentic polished iOS system UI directly in the image, with crisp accurate native-looking shapes, not hand-drawn: exact Russian date \"Пн, 14 сентября\" centered at 8% height above the clock; white cellular signal bars, Wi-Fi and a filled battery neatly aligned in upper right at 4% height. At bottom left 13%,93% a translucent dark circular flashlight control with the proper small solid white flashlight icon; at bottom right 87%,93% matching circular camera control with a proper solid white camera icon. Thin white home gesture bar centered at 98% height. All controls have realistic iOS proportions and spacing. Do NOT add any phone bezel, perspective, hardware, black pill or Dynamic Island (the 3D model supplies that hardware separately). No new text, no notifications. Image is the entire finished display, no need for further overlays. High resolution, clean professional interface, preserve photographic identity.",
+    "mode": "builtin image_gen",
+    "asset": "public/media/iphone-18-pro/screens/black-complete.webp",
+    "original": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-6ec9c2f9-93cd-4af7-a52e-04a1971dd334.png"
+  }
+]

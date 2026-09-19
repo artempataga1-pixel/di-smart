@@ -131,6 +131,21 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
           Актуальные характеристики и цена — на{" "}
           <Link href={buyHref}>странице товара</Link>.
         </p>
+        <p>
+          3D-модель: «Samsung Galaxy S25 Ultra» —{" "}
+          <a
+            href="https://sketchfab.com/3d-models/s-amsung-galaxy-s25-ultra-galaxy-9cdcd5cff5e9496e88820d306acf4455"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Roberto Domínguez
+          </a>
+          , лицензия{" "}
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">
+            CC BY 4.0
+          </a>
+          .
+        </p>
       </footer>
 
       <div className={styles.finalCta}>

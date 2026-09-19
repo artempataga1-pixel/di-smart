@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useTransition } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 /** Фильтры каталога живут в URL (searchParams), не в локальном состоянии —
@@ -10,6 +10,7 @@ export function useCatalogUrl() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [isPending, startTransition] = useTransition();
 
   const setParams = useCallback(
     (updates: Record<string, string | null>) => {
@@ -20,10 +21,12 @@ export function useCatalogUrl() {
       }
       if (!("page" in updates)) params.delete("page");
       const qs = params.toString();
-      router.push(qs ? `${pathname}?${qs}` : pathname);
+      startTransition(() => {
+        router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+      });
     },
-    [router, pathname, searchParams]
+    [router, pathname, searchParams, startTransition]
   );
 
-  return { searchParams, setParams };
+  return { searchParams, setParams, isPending };
 }

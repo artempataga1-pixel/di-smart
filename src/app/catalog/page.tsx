@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { CatalogView } from "@/components/catalog/CatalogView";
 import {
@@ -8,6 +9,7 @@ import {
   type CatalogSearchParams,
 } from "@/lib/catalog";
 import { SITE } from "@/constants/content/site";
+import { CATEGORY_ICON_BY_SLUG } from "@/constants/content/catalog-media";
 
 /* Курс валют и наличие товаров должны быть актуальны на каждый рендер
  * (не ISR/кеш) — страница всегда рендерится по запросу, это же избавляет
@@ -41,17 +43,28 @@ export default async function CatalogPage({
         Каталог
       </h1>
 
-      <div className="mt-6 flex flex-wrap gap-2">
+      <nav aria-label="Категории каталога" className="mt-7 flex flex-wrap gap-2.5">
         {categories.map((cat) => (
           <Link
             key={cat.slug}
             href={`/catalog/${cat.slug}`}
-            className="soft-btn rounded-full px-4 py-2 text-sm"
+            className="group inline-flex min-h-12 items-center gap-2 rounded-full border border-[#e8e8ed] bg-[#f5f5f7] py-1.5 pl-1.5 pr-4 text-sm font-medium transition-colors hover:border-[#c7c7cc] hover:bg-white"
           >
+            <span className="relative size-9 shrink-0 overflow-hidden rounded-full bg-white">
+              {CATEGORY_ICON_BY_SLUG[cat.slug] ? (
+                <Image
+                  src={CATEGORY_ICON_BY_SLUG[cat.slug]}
+                  alt=""
+                  fill
+                  sizes="36px"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105 motion-reduce:transition-none"
+                />
+              ) : null}
+            </span>
             {cat.name}
           </Link>
         ))}
-      </div>
+      </nav>
 
       <div className="mt-8">
         <CatalogView result={result} />

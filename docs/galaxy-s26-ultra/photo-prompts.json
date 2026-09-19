@@ -1,0 +1,55 @@
+{
+  "mode": "built-in image_gen; model selector unavailable",
+  "date": "2026-09-15",
+  "reference": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-9bdeca11-a997-48a3-a73a-81044e6871f7.png",
+  "assets": [
+    {
+      "name": "hero-photo",
+      "prompt": "Create one premium real product photograph for a WHITE Samsung Galaxy S26 Ultra website hero, landscape 16:9. Use the supplied image ONLY as reference for the device industrial design and camera layout; replace the CGI appearance completely with convincing real commercial photography. Two actual silver Galaxy S26 Ultra phones arranged naturally on a seamless pure white studio sweep: one rear view showing the vertical camera island with three large optically dark lenses, two smaller circular sensors to its right and LED, and one front view with pastel blue abstract Samsung wallpaper and tiny centered punch-hole. A slim matching S Pen lies beside them. Elegant slightly diagonal arrangement, both entire phones fit with 15% margin. Real satin metal grain, frosted back glass, optically deep black camera glass with small controlled reflections, crisp precise machining, soft natural contact shadows. Large diffused softbox, neutral daylight, realistic dynamic range, shot on medium-format camera, 85mm lens, focus-stacked product photograph. White background, no black field, no floating objects, no plastic CGI, no oversized reflections, no chrome eyeball lenses, no advertising copy or captions, no watermark. Photographic materials are the priority.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-9bdeca11-a997-48a3-a73a-81044e6871f7.png",
+      "output": "public/media/galaxy-s26-ultra/photos/hero-photo.webp"
+    },
+    {
+      "name": "camera-photo",
+      "prompt": "Create ONE photorealistic macro product photograph for the CAMERA section of a white Samsung Galaxy S26 Ultra webpage, landscape 4:3. Use the attached image as the exact device identity reference. Show only the upper rear corner of the same silver phone at a shallow three-quarter angle, three large lenses on the raised narrow vertical island, two smaller circles and tiny flash on the right. Fill the right 75% of the frame with the camera corner, leave some clean space on left. Precisely machined satin silver metal, subtle microscopic grain, real multi-layer black optical glass with small blue-violet coating reflections, lens barrels protrude naturally, glass surfaces are mostly dark and transparent, not chrome balls. Fine bevels, soft real shadows, brushed edge visible. Neutral white and very pale cool grey photographic studio background. Focus-stacked 100mm macro photograph, realistic materials and natural softbox reflection. No render look, no CGI, no exploded view, no labels, no invented lens text, no watermark. Product geometry must match reference.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-e827265c-f115-4071-bebc-1f815b9013c8.png",
+      "output": "public/media/galaxy-s26-ultra/photos/camera-photo.webp"
+    },
+    {
+      "name": "spen-photo",
+      "prompt": "Create ONE realistic editorial photograph illustrating Samsung Galaxy S26 Ultra S Pen, portrait 4:5. Same silver phone identity as attached product reference, but shown from screen side lying flat on a clean pale grey desk. A real person's right hand holds the thin silver S Pen in a plausible natural writing grip, its fine tip touching the display while drawing a simple architectural sketch with small legible Russian handwritten label 'Идея'. Phone screen has a minimal light notes interface, centered tiny punch-hole, thin flat bezels. Tight beautifully composed overhead three-quarter photograph of device and hand, phone fits fully, subtle cotton shirt cuff, no face needed. Real skin pores and creases, believable finger anatomy, ordinary window daylight, faint contact shadows, realistic display brightness, high-end commercial editorial photography but unretouched natural materials. Neutral whites, silver, pale blue accents. No 3D appearance, no decorative vector stand-in, no large overlay text, no watermark. Keep phone size and S Pen scale believable.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-88c37b95-3ec8-4725-8ba7-5280d5f848e1.png",
+      "output": "public/media/galaxy-s26-ultra/photos/spen-photo.webp"
+    },
+    {
+      "name": "display-photo",
+      "prompt": "Create ONE realistic editorial product photograph, portrait 4:5, illustrating private everyday use of a Samsung Galaxy S26 Ultra. Match the silver device in the attached reference, thin bezels, small centered punch hole, flat display. View over the shoulder of an adult in a bright minimalist cafe, only shoulder, hands and phone visible, no faces. Phone held vertically at a gentle angle, screen facing its owner, a clean understated Russian messaging interface with short legible message 'Буду через 10 минут'. Natural white daylight from cafe window, pale stone table softly out of focus, real skin and brushed silver edge details. Tight composition focused on the phone, realistic 50mm camera photograph, restrained highlights, natural shadows, plausible human hands, no floating phone. No holograms, no padlock overlays, no split screen before-after, no CGI, no watermark, no advertising text. This is lifestyle photography not a schematic of the privacy technology.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-09f78106-92c7-4301-9d1f-7441dd694a4c.png",
+      "output": "public/media/galaxy-s26-ultra/photos/display-photo.webp"
+    },
+    {
+      "name": "performance-photo",
+      "prompt": "Create ONE highly realistic premium commercial lifestyle photograph for a Samsung Galaxy S26 Ultra performance section, wide 16:9. Same silver phone as attached reference. Two adult hands naturally holding the phone in landscape orientation, captured close over a bright pale desk, thumbs on lower corners without blocking the central screen. Phone displays a sophisticated realistic racing game: a blue sports car on a coastal asphalt road with Mediterranean scenery, believable reflections on actual OLED display, small subtle game HUD without illegible text. Neutral daylight, a simple out-of-focus white background, fine skin creases, realistic scale, silver frame with precisely machined buttons visible. Cinematic composition but natural unretouched photography, shot at 1/250s f4 on 50mm lens. No floating chip, no exploded computer, no vector illustration, no neon rays, no lens flare, no synthetic plastic materials, no watermark, no advertising copy. Fit complete hands and device with safe margins.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-c86d48b5-5830-4fad-9b99-656144bccb18.png",
+      "output": "public/media/galaxy-s26-ultra/photos/performance-photo.webp"
+    },
+    {
+      "name": "ai-search-photo",
+      "prompt": "Generate ONE photorealistic lifestyle product photograph, landscape 4:3, for Samsung Galaxy S26 Ultra Circle to Search. Use attached reference as exact silver phone design reference. Close overhead oblique view of a real silver phone on a white linen tabletop beside understated sunglasses. A real adult hand touches the screen with one index finger; screen shows a photograph of an attractive sculptural white chair in a minimalist interior, a thin hand-drawn blue oval around the chair indicating selection, a small clean search panel with Russian word 'Найти' at bottom. Keep screen minimal with no gibberish. Phone centered, entire device visible at diagonal with room around it. Real daylight, soft shadows, detailed fabric weave, glass and natural skin. Beautiful quiet premium editorial photography, no CGI, no holographic elements, no advertising captions, no watermark.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-0f4eef94-f450-4259-b069-0ee8dd7ca375.png",
+      "output": "public/media/galaxy-s26-ultra/photos/ai-search-photo.webp"
+    },
+    {
+      "name": "ai-edit-photo",
+      "prompt": "Generate ONE photorealistic premium editorial product photograph, landscape 4:3, of Samsung Galaxy S26 Ultra used for photo editing. Same silver phone design as attached reference, thin bezels and tiny centered front camera. A real phone lying slightly diagonally on a clean pale stone desk in daylight, screen facing camera, no hands needed. Screen shows a vivid natural photograph of green Bali rice terraces in Jatiluwih with a small realistic photo editing interface at bottom, clear short Russian button 'Готово', subtle selection outline over a tiny distracting object near path, no giant fake AI graphics. A softly defocused green leaf at far edge connects to the photograph. Crisp genuine OLED glass, natural silver reflections, shallow realistic depth of field, real commercial camera photograph. Main visual is the physical phone and beautiful scene on its display. No 3D render style, no split montage, no watermark, no text outside screen.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-4fbdc703-22a1-4d9b-96dc-9d4fa7f318d1.png",
+      "output": "public/media/galaxy-s26-ultra/photos/ai-edit-photo.webp"
+    },
+    {
+      "name": "ai-day-photo",
+      "prompt": "Generate ONE photorealistic editorial product photograph, landscape 4:3, illustrating Samsung Galaxy S26 Ultra personal daily briefing. Same silver phone from attached reference standing in a modest white ceramic stand on a light desk beside a plain white espresso cup, gentle morning window light. A natural lived-in minimal workspace, subtle real shadows. Phone screen displays an elegantly spaced Russian daily briefing with only these legible texts: 'Доброе утро', '18°', 'Встреча в 11:00', with simple small weather icon and soft pale blue card. No extra paragraphs or gibberish. Thin flat bezels, tiny centered circular selfie cutout, genuine glass surface, silver buttons in profile, believable proportions. Portrait phone occupies center-right in the horizontal frame, plenty of breathing room, high-end 70mm lens editorial photo, real optical depth, no CGI plastic, no floating phone, no hologram, no watermark, no ad captions.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-822ed43b-529e-41a5-8535-11df4de0ce12.png",
+      "output": "public/media/galaxy-s26-ultra/photos/ai-day-photo.webp"
+    }
+  ]
+}

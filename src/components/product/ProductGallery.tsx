@@ -2,6 +2,12 @@ import Image from "next/image";
 import type { ProductDetail } from "@/lib/catalog";
 import { Badge } from "@/components/ui/Badge";
 import { CatalogVisual } from "@/components/ui/visuals/CatalogVisual";
+import {
+  getCatalogStudioAspect,
+  hasExplicitCatalogImageOverride,
+  isCatalogStudioImage,
+} from "@/constants/content/catalog-media";
+import { cn } from "@/lib/utils";
 
 /** Адаптивная подача фото: у большинства товаров в базе только 1 фото
  * (сидируется как mainImage) — для них крупный full-bleed hero. Мультифото
@@ -16,11 +22,25 @@ export function ProductGallery({
   product: ProductDetail;
   imageUrl: string | null;
 }) {
-  const secondary = product.images.filter((img) => img.url !== imageUrl).slice(0, 2);
+  const secondary = hasExplicitCatalogImageOverride(product.slug)
+    ? []
+    : product.images.filter((img) => img.url !== imageUrl).slice(0, 2);
+  const studioAspect = getCatalogStudioAspect(imageUrl);
+  const aspectClass = {
+    square: "aspect-square",
+    "landscape-4-3": "aspect-[4/3]",
+    "landscape-3-2": "aspect-[3/2]",
+    "landscape-16-9": "aspect-video",
+  }[studioAspect];
 
   if (secondary.length === 0) {
     return (
-      <div className="relative aspect-square overflow-hidden rounded-[var(--radius-xl)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
+      <div
+        className={cn(
+          "relative overflow-hidden rounded-[var(--radius-xl)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]",
+          aspectClass
+        )}
+      >
         {product.isFlagship && (
           <Badge tone="dark" className="absolute left-4 top-4 z-10">
             Флагман
@@ -32,7 +52,7 @@ export function ProductGallery({
           iconHint={`${product.categoryName} ${product.name}`}
           gradientSeed={product.categorySlug}
           size="lg"
-          imageFit="contain"
+          imageFit={isCatalogStudioImage(imageUrl) ? "studio" : "contain"}
           sizesAttr="(min-width: 1024px) 60vw, 100vw"
         />
       </div>
@@ -53,7 +73,7 @@ export function ProductGallery({
           iconHint={`${product.categoryName} ${product.name}`}
           gradientSeed={product.categorySlug}
           size="lg"
-          imageFit="contain"
+          imageFit={isCatalogStudioImage(imageUrl) ? "studio" : "contain"}
           sizesAttr="(min-width: 1024px) 40vw, 100vw"
         />
       </div>

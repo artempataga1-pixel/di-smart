@@ -1,0 +1,30 @@
+[
+  {
+    "name": "burgundy",
+    "prompt": "Use case: photorealistic-natural / lock screen artwork. Reference is the supplied iPhone screenshot, ONLY for the composition inside its screen. Create a new flat, front-facing, edge-to-edge iPhone wallpaper/lock-screen texture, vertical 9:19.5, approximately 1024x2220. NO phone hardware, bezel, perspective, black surrounding margins or Dynamic Island. Match the reference's art direction: warm muted cocoa architectural backdrop with a soft turquoise curved panel in lower half, natural direct late-afternoon light, an elegant adult woman with a DIFFERENT identity, age 27, dark chestnut hair swept back, natural warm olive skin with pores and tiny freckles, delicate gold earrings, ivory fine-knit top, arms resting naturally on bent knees, contemplative gaze slightly upwards to the left. Seated editorial fashion portrait framed from waist up, subject occupies lower 55% of wallpaper; head begins around 47% height. Anatomically exact hands, unretouched editorial photography, believable fabric, no airbrushing or CGI. In upper-middle background, huge extremely tall narrow thin numerals \"9:41\" in translucent pale blush, extending from 18% to 61% height and visually passing BEHIND the woman's head. The woman's face and hair occlude the bottom of the clock like iOS depth-effect. Clock exact \"9:41\", not 9:11. Top 12% of wallpaper must remain clean cocoa background for status UI. Do NOT add date, icons, buttons or other text: those are added in code. Preserve elegant negative space in upper half and a bright, legible portrait. This is a display texture, not a photograph of a phone.",
+    "mode": "builtin image_gen",
+    "original": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-fc29f1af-66ca-42b7-b1f4-f490e824e23b.png",
+    "asset": "public/media/iphone-18-pro/screens/burgundy-editorial.webp"
+  },
+  {
+    "name": "glacier",
+    "prompt": "Create a companion flat iPhone lock-screen wallpaper in the same luxury editorial photography series as the reference. Preserve the same adult woman identity, authentic pores and realistic anatomy, very tall slender exact time numerals \"9:41\" behind the subject, clock from 18% to 60% height, head beginning around 47% height and occluding lower clock. Vertical 9:19.5, approximately 1024x2220. Cool powder-blue architectural backdrop, warm natural skin, silver earrings, pale blue cotton shirt, seated with arms resting on knees and looking gently towards the right. Silver-blue translucent clock. Frame from waist up, woman fills lower half, clean negative space in top 12% for date and status added in code. Change pose subtly and naturally so this is a distinct photograph. No phone hardware, bezel, perspective, date, icons, buttons, additional text or watermark. Beautiful unretouched realistic editorial photography; not CGI, not beauty-filtered, no artificial glow. Full-bleed flat display texture.",
+    "mode": "builtin image_gen",
+    "original": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-e4ac7640-b2bb-419c-a789-9d89a78e985d.png",
+    "asset": "public/media/iphone-18-pro/screens/glacier-editorial.webp"
+  },
+  {
+    "name": "silver",
+    "prompt": "Create a companion flat iPhone lock-screen wallpaper in the same luxury editorial photography series as the reference. Preserve the same adult woman identity, authentic pores and realistic anatomy, very tall slender exact time numerals \"9:41\" behind the subject, clock from 18% to 60% height, head beginning around 47% height and occluding lower clock. Vertical 9:19.5, approximately 1024x2220. Warm light-grey concrete architectural backdrop, ivory linen shirt, pearl earrings, seated in side profile with arms relaxed on knees and looking left. Pale silver translucent clock. Soft directional daylight with natural gentle shadows. Frame from waist up, woman fills lower half, clean negative space in top 12% for date and status added in code. Change pose subtly and naturally so this is a distinct photograph. No phone hardware, bezel, perspective, date, icons, buttons, additional text or watermark. Beautiful unretouched realistic editorial photography; not CGI, not beauty-filtered, no artificial glow. Full-bleed flat display texture.",
+    "mode": "builtin image_gen",
+    "original": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-abd4d530-6bd5-4779-ab67-99f591ea7dd0.png",
+    "asset": "public/media/iphone-18-pro/screens/silver-editorial.webp"
+  },
+  {
+    "name": "black",
+    "prompt": "Create a companion flat iPhone lock-screen wallpaper in the same luxury editorial photography series as the reference. Preserve the same adult woman identity, authentic pores and realistic anatomy, very tall slender exact time numerals \"9:41\" behind the subject, clock from 18% to 60% height, head beginning around 47% height and occluding lower clock. Vertical 9:19.5, approximately 1024x2220. Black-and-white fashion photograph with charcoal architectural backdrop, black fine-knit shirt, discreet silver earrings, seated with folded arms on knees and eyes looking just past the camera. Silver translucent clock. Beautiful natural directional window light, rich greys, not crushed shadows. Frame from waist up, woman fills lower half, clean negative space in top 12% for date and status added in code. Change pose subtly and naturally so this is a distinct photograph. No phone hardware, bezel, perspective, date, icons, buttons, additional text or watermark. Beautiful unretouched realistic editorial photography; not CGI, not beauty-filtered, no artificial glow. Full-bleed flat display texture.",
+    "mode": "builtin image_gen",
+    "original": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-8c8b6b9d-e8d6-4ac2-9402-c634e6e77766.png",
+    "asset": "public/media/iphone-18-pro/screens/black-editorial.webp"
+  }
+]

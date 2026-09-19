@@ -1,0 +1,432 @@
+{
+  "materials": {
+    "DodbyqhrrBLNbcB": {
+      "clearcoat": 0.10000000149011612,
+      "clearcoatRoughness": 0.4000000059604645,
+      "diffuseColor": [
+        0.055813100188970566,
+        0.01839520037174225,
+        0.02147890068590641
+      ],
+      "metallic": 0.30000001192092896,
+      "roughness": 0.5
+    },
+    "bjwbzXNxYqKWocZ": {
+      "clearcoat": 0.25,
+      "clearcoatRoughness": 0.05000000074505806,
+      "diffuseColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "roughness": 1.0
+    },
+    "FGiOncfTbhplOxD": {
+      "diffuseColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "roughness": 1.0
+    },
+    "NJtxhMpxfaBshfC": {
+      "clearcoat": 0.0,
+      "clearcoatRoughness": 0.009999999776482582,
+      "diffuseColor": [
+        0.006391000002622604,
+        0.006391000002622604,
+        0.010022999718785286
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421
+    },
+    "rWTUuVcPAAIaxme": {
+      "clearcoat": 0.0,
+      "clearcoatRoughness": 0.0010000000474974513,
+      "ior": 1.5,
+      "opacity": 0.17499999701976776,
+      "roughness": 0.0010000000474974513
+    },
+    "DnIwCkKmEzIWdJQ": {
+      "metallic": 1.0
+    },
+    "vmHtEpzvjsKvWzR": {
+      "clearcoat": 0.0,
+      "clearcoatRoughness": 0.0010000000474974513,
+      "diffuseColor": [
+        0.046203698962926865,
+        0.009293979965150356,
+        0.01332509983330965
+      ],
+      "ior": 1.5,
+      "metallic": 0.5,
+      "opacity": 0.699999988079071,
+      "roughness": 0.10000000149011612
+    },
+    "NTEUvFZCGwiAbXI": {
+      "diffuseColor": [
+        0.0835350975394249,
+        0.0445558987557888,
+        0.04949279874563217
+      ],
+      "metallic": 1.0,
+      "roughness": 0.30000001192092896
+    },
+    "xTzzeALhtKGEYmp": {
+      "clearcoat": 0.25,
+      "clearcoatRoughness": 0.05000000074505806,
+      "diffuseColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "roughness": 1.0
+    },
+    "EHAmTpuIZfuQlCx": {
+      "clearcoat": 0.20000000298023224,
+      "clearcoatRoughness": 0.0,
+      "diffuseColor": [
+        0.6038269996643066,
+        0.5823590159416199,
+        0.525642991065979
+      ],
+      "metallic": 1.0,
+      "opacity": 0.20000000298023224,
+      "roughness": 0.10000000149011612
+    },
+    "VHayjpcemEFwuHx": {
+      "clearcoat": 0.20000000298023224,
+      "clearcoatRoughness": 0.33000001311302185,
+      "diffuseColor": [
+        0.3800559937953949,
+        0.23302200436592102,
+        0.25023800134658813
+      ],
+      "metallic": 0.0,
+      "opacity": 0.20000000298023224,
+      "roughness": 0.33000001311302185
+    },
+    "fREYAZareuwsSmV": {
+      "diffuseColor": [
+        0.4859110116958618,
+        0.473004013299942,
+        0.47492700815200806
+      ],
+      "metallic": 0.0,
+      "roughness": 0.4000000059604645
+    },
+    "vHOOXzHCgZxAnwZ": {
+      "clearcoat": 0.25,
+      "clearcoatRoughness": 0.05000000074505806,
+      "diffuseColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "opacity": 0.4000000059604645,
+      "roughness": 1.0
+    },
+    "CdskNDibuwmDHgp": {
+      "clearcoatRoughness": 0.10000000149011612,
+      "diffuseColor": [
+        0.032999999821186066,
+        0.032999999821186066,
+        0.032999999821186066
+      ],
+      "metallic": 0.0,
+      "roughness": 0.019999999552965164
+    },
+    "hGSiEINnkluBUrq": {
+      "clearcoat": 0.10000000149011612,
+      "clearcoatRoughness": 0.15000000596046448,
+      "diffuseColor": [
+        0.06101889908313751,
+        0.03311099857091904,
+        0.03666260093450546
+      ],
+      "metallic": 1.0
+    },
+    "nUqwlgVifodlmux": {
+      "diffuseColor": [
+        0.034988999366760254,
+        0.035005100071430206,
+        0.0348065011203289
+      ],
+      "metallic": 0.699999988079071,
+      "roughness": 0.05000000074505806
+    },
+    "crYYDRbonRWlXIT": {
+      "clearcoat": 0.0,
+      "diffuseColor": [
+        0.06372380256652832,
+        0.023136699572205544,
+        0.028846900910139084
+      ],
+      "ior": 1.5,
+      "metallic": 0.5,
+      "opacity": 1.0,
+      "roughness": 0.10000000149011612
+    },
+    "KxoFhEDBkxQgtjV": {
+      "diffuseColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421
+    },
+    "LcWrUUjMeaSXpwZ": {
+      "metallic": 0.0,
+      "roughness": 0.33000001311302185
+    },
+    "JledLPXRPXpnGDQ": {
+      "metallic": 1.0
+    },
+    "bKCxnOaKtDpUlmo": {
+      "diffuseColor": [
+        0.04600000008940697,
+        0.018400000408291817,
+        0.02299950085580349
+      ],
+      "roughness": 0.699999988079071
+    },
+    "nuwSyerWvJfhsMd": {
+      "diffuseColor": [
+        0.05581299960613251,
+        0.01839499920606613,
+        0.02147899940609932
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5
+    },
+    "vGiCsMiyNuPulXG": {
+      "diffuseColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "roughness": 1.0
+    },
+    "NZtZZWsItDhUsxA": {
+      "clearcoat": 0.5,
+      "clearcoatRoughness": 0.3499999940395355,
+      "diffuseColor": [
+        0.0063908901065588,
+        0.0063908901065588,
+        0.010022800415754318
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421
+    },
+    "IxiedJEUxrDhLIX": {
+      "diffuseColor": [
+        0.6535800099372864,
+        0.656000018119812,
+        0.6415680050849915
+      ],
+      "emissiveColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.5,
+      "opacity": 0.30000001192092896
+    },
+    "WElbLmMkunjUugH": {
+      "diffuseColor": [
+        0.11999999731779099,
+        0.029999999329447746,
+        0.04050000011920929
+      ],
+      "emissiveColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.8700000047683716
+    },
+    "yPeTOPaiWwFMSdb": {
+      "diffuseColor": [
+        0.07828830182552338,
+        0.042454998940229416,
+        0.048615600913763046
+      ],
+      "emissiveColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.2199999988079071
+    },
+    "ZKYcumThEAllgKc": {
+      "clearcoat": 0.10000000149011612,
+      "clearcoatRoughness": 0.4000000059604645,
+      "diffuseColor": [
+        0.055813100188970566,
+        0.01839520037174225,
+        0.02147890068590641
+      ],
+      "metallic": 0.30000001192092896,
+      "roughness": 0.5
+    },
+    "obqsXOwHbuntmdg": {
+      "clearcoat": 0.0,
+      "clearcoatRoughness": 0.009999999776482582,
+      "diffuseColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "opacity": 0.10000000149011612,
+      "roughness": 0.009999999776482582
+    },
+    "KSynYqGGNGMUJti": {
+      "clearcoat": 0.25,
+      "clearcoatRoughness": 0.05000000074505806,
+      "diffuseColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "roughness": 1.0
+    },
+    "mEyfsugDbInWtmQ": {
+      "diffuseColor": [
+        0.10000000149011612,
+        0.03999999910593033,
+        0.04699999839067459
+      ],
+      "metallic": 0.699999988079071,
+      "roughness": 0.15000000596046448
+    },
+    "VQDOOwQiAAkEseS": {
+      "metallic": 1.0
+    },
+    "vUgmkmbQjXTaqEc": {
+      "diffuseColor": [
+        0.0889815017580986,
+        0.04122279956936836,
+        0.04841160029172897
+      ],
+      "emissiveColor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.8700000047683716
+    },
+    "SEutxTyFlxVznkH": {
+      "diffuseColor": [
+        0.4480000138282776,
+        0.4480000138282776,
+        0.4480000138282776
+      ],
+      "metallic": 1.0,
+      "roughness": 0.6499999761581421
+    }
+  },
+  "bindings": {
+    "kDyuTBDouFtoKXh": "FGiOncfTbhplOxD",
+    "ezeCtoGqBgkuXkM": "mEyfsugDbInWtmQ",
+    "FzKsPaOIjOtYXyx": "VQDOOwQiAAkEseS",
+    "oXwhgMrETYHoWMi": "bjwbzXNxYqKWocZ",
+    "EHjrGDHNHzgNjtE": "KSynYqGGNGMUJti",
+    "AeQMeAEYCvoXiUK": "bjwbzXNxYqKWocZ",
+    "OqjdceRKCgCxebm": "CdskNDibuwmDHgp",
+    "ZdjEdUeNrJlHfPr": "FGiOncfTbhplOxD",
+    "nWyRniYpXOXakrY": "IxiedJEUxrDhLIX",
+    "OJBuOCGZCRKIKuX": "yPeTOPaiWwFMSdb",
+    "tSzbeyqDWPqajtE": "WElbLmMkunjUugH",
+    "lHgsWfYosJjEHHx": "IxiedJEUxrDhLIX",
+    "OKQXnqqXZBuUUit": "FGiOncfTbhplOxD",
+    "kVoChGBtLBcaCVZ": "bKCxnOaKtDpUlmo",
+    "AeBMJWvYROmIznQ": "SEutxTyFlxVznkH",
+    "jBMFTYJdkiLEILT": "bKCxnOaKtDpUlmo",
+    "CkWvqHNVFiGJvpB": "bKCxnOaKtDpUlmo",
+    "wnKKbrKJSeTpTMG": "SEutxTyFlxVznkH",
+    "gVjDdjCvpxUAQBO": "bKCxnOaKtDpUlmo",
+    "pJlLctaTZcBoLFq": "SEutxTyFlxVznkH",
+    "QpCUTBrfGeqSJlQ": "hGSiEINnkluBUrq",
+    "OLElVJaUyUAkJTK": "nuwSyerWvJfhsMd",
+    "eCqaCdRQIHdBJaT": "nuwSyerWvJfhsMd",
+    "XelLsxQxbVjyAEf": "hGSiEINnkluBUrq",
+    "PiNlHXRokKeMMue": "vUgmkmbQjXTaqEc",
+    "IhutpDtXiHOXZQQ": "vUgmkmbQjXTaqEc",
+    "MLXiLvzAcyadwsO": "vUgmkmbQjXTaqEc",
+    "tGmDwIVAJzsXtCr": "vUgmkmbQjXTaqEc",
+    "piknxdJPulwkZlx": "FGiOncfTbhplOxD",
+    "BBOLhsUzCqVnqIr": "vmHtEpzvjsKvWzR",
+    "RkmKFSzCSaemljP": "NTEUvFZCGwiAbXI",
+    "uzPNjLhCsKQHKkA": "crYYDRbonRWlXIT",
+    "vSUfuJuwHtQnJFM": "vUgmkmbQjXTaqEc",
+    "DpHZPtCoplKzsmn": "FGiOncfTbhplOxD",
+    "ziSfVvEMEmOVclg": "EHAmTpuIZfuQlCx",
+    "fTEcTQJusaOoXRx": "VHayjpcemEFwuHx",
+    "eMqbNZEirboZmlk": "LcWrUUjMeaSXpwZ",
+    "NHIflnmDqkYynWz": "fREYAZareuwsSmV",
+    "EkkhfjbCuDfHNoj": "rWTUuVcPAAIaxme",
+    "SFGqndkrQBwIqsK": "JledLPXRPXpnGDQ",
+    "twnDowasmaboaIw": "rWTUuVcPAAIaxme",
+    "lrbmLhLqYBEujEb": "FGiOncfTbhplOxD",
+    "aGDqlYEsfzCGKqA": "FGiOncfTbhplOxD",
+    "LkVIMuvQdyqClrs": "vUgmkmbQjXTaqEc",
+    "AJbyZDmDLCVrWvY": "NJtxhMpxfaBshfC",
+    "SboWNzLMbvpgfhq": "vGiCsMiyNuPulXG",
+    "kCScuTApzoGVQrQ": "nUqwlgVifodlmux",
+    "IRrnNxtKFHdCZWz": "obqsXOwHbuntmdg",
+    "MhOjqbUHUmMvuQZ": "vGiCsMiyNuPulXG",
+    "ZOyUqCZInmgVPJT": "NJtxhMpxfaBshfC",
+    "NCJXNMBvTtlngrK": "vGiCsMiyNuPulXG",
+    "vSGwOIJGGmxprMG": "NJtxhMpxfaBshfC",
+    "kmWuhWUqzImAxrd": "NJtxhMpxfaBshfC",
+    "JLuWQNyAHkVtjBj": "FGiOncfTbhplOxD",
+    "nEDDMHnyqrtPEeH": "rWTUuVcPAAIaxme",
+    "jqYpZXBXqpFfXIv": "vUgmkmbQjXTaqEc",
+    "KbKHXAvAItJHTWJ": "rWTUuVcPAAIaxme",
+    "bNGSbuRsrFArgfZ": "JledLPXRPXpnGDQ",
+    "KDDAcRirzifkXVk": "rWTUuVcPAAIaxme",
+    "aqqmNRByFAadgII": "NJtxhMpxfaBshfC",
+    "XGimAjnSRcJdhzQ": "nUqwlgVifodlmux",
+    "QGoqDZZgcXbKIbb": "obqsXOwHbuntmdg",
+    "SeCquheRYLOWcow": "FGiOncfTbhplOxD",
+    "gUmkfpgRxDiZbQL": "vGiCsMiyNuPulXG",
+    "SrhRNGHDcaZbSJB": "NZtZZWsItDhUsxA",
+    "tWocoRUXpgSskst": "NZtZZWsItDhUsxA",
+    "nwhqxPwnINKaYgS": "NZtZZWsItDhUsxA",
+    "rIsmoPBESVrDvLK": "NZtZZWsItDhUsxA",
+    "DOcguuJzxMtscKR": "NZtZZWsItDhUsxA",
+    "PoIelaJyAzUOVgJ": "NZtZZWsItDhUsxA",
+    "npyRsTTZwICTdtT": "FGiOncfTbhplOxD",
+    "LmzPJipNfQiEzkM": "NJtxhMpxfaBshfC",
+    "MXLDBLyKcQVjsCH": "vGiCsMiyNuPulXG",
+    "NWcSDiJMCdsakCS": "JledLPXRPXpnGDQ",
+    "CAVkFyQVOLxtcUA": "rWTUuVcPAAIaxme",
+    "KQCZKyqfViJAVro": "NJtxhMpxfaBshfC",
+    "hfcfioZGUeFTjpT": "rWTUuVcPAAIaxme",
+    "LHSuUSwohmsXVRt": "rWTUuVcPAAIaxme",
+    "whMdnAVdLqpcnOU": "FGiOncfTbhplOxD",
+    "gQUUHjPLYDkxyZj": "nUqwlgVifodlmux",
+    "NcBqtfiyUjLPtgA": "vUgmkmbQjXTaqEc",
+    "FeJMNHiDNDeGuaS": "obqsXOwHbuntmdg",
+    "KbhwcttHPyPcPky": "vGiCsMiyNuPulXG",
+    "FbSppUTjlJPBJxO": "DodbyqhrrBLNbcB",
+    "BmSvIMTLRwhIMei": "hGSiEINnkluBUrq",
+    "tOqBbRZfYgrynTi": "vUgmkmbQjXTaqEc",
+    "AMGhLuACKLHpcxk": "ZKYcumThEAllgKc",
+    "ajlSZFAJxVQUboJ": "xTzzeALhtKGEYmp",
+    "TbrMzrvsrKQFokG": "vHOOXzHCgZxAnwZ",
+    "dseYgUIxMhSrccR": "FGiOncfTbhplOxD",
+    "xiJLhZQDYgSRrJP": "KxoFhEDBkxQgtjV",
+    "TSnGjOfascDNZUr": "rWTUuVcPAAIaxme",
+    "KNduBXMjGgxuHKf": "rWTUuVcPAAIaxme",
+    "rDPYoDHxptvndJc": "DnIwCkKmEzIWdJQ"
+  }
+}

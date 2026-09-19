@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
@@ -9,6 +11,17 @@ import { SITE } from "@/constants/content/site";
 
 export const dynamic = "force-dynamic";
 
+async function RelatedProductsSection({
+  categorySlug,
+  productId,
+}: {
+  categorySlug: string;
+  productId: string;
+}) {
+  const products = await getRelatedProducts(categorySlug, productId);
+  return <RelatedProducts products={products} />;
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -16,6 +29,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const product = await getProductDetailBySlug(slug);
+  if (!product && slug === "galaxy-s26-ultra") return { title: `Samsung Galaxy S26 Ultra — ${SITE.name}`, robots: { index: false } };
   if (!product) return { title: `Товар — ${SITE.name}` };
 
   const title = product.seoTitle || `${product.name} — ${SITE.name}`;
@@ -45,6 +59,15 @@ export default async function ProductPage({
 }) {
   const { slug } = await params;
   const product = await getProductDetailBySlug(slug);
+  if (!product && slug === "galaxy-s26-ultra") {
+    return <section className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+      <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Galaxy S26 Ultra", href: "/galaxy-s26-ultra" }, { label: "Выбор конфигурации" }]} />
+      <h1 className="mt-10 text-3xl font-semibold md:text-5xl">Samsung Galaxy S26 Ultra</h1>
+      <p className="mt-6 text-lg">Конфигурации готовятся к добавлению.</p>
+      <p className="mt-3 max-w-xl text-neutral-500">Здесь появятся выбор памяти и цвета, актуальная цена и кнопка добавления в корзину.</p>
+      <Link className="mt-8 inline-block underline underline-offset-4" href="/galaxy-s26-ultra">Вернуться к обзору Galaxy</Link>
+    </section>;
+  }
   if (!product) notFound();
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
@@ -75,8 +98,6 @@ export default async function ProductPage({
     />
   );
 
-  const related = await getRelatedProducts(product.categorySlug, product.id);
-
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
       {jsonLd}
@@ -97,7 +118,9 @@ export default async function ProductPage({
         <ProductSpecsTable specs={product.specs} description={product.description} />
       </div>
 
-      <RelatedProducts products={related} />
+      <Suspense fallback={null}>
+        <RelatedProductsSection categorySlug={product.categorySlug} productId={product.id} />
+      </Suspense>
     </div>
   );
 }

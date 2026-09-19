@@ -66,7 +66,8 @@ interface CatalogVisualProps {
   gradientSeed: string;
   size?: "sm" | "md" | "lg";
   sizesAttr?: string;
-  imageFit?: "cover" | "contain";
+  /** `studio` показывает готовый каталожный кадр целиком, без crop и padding. */
+  imageFit?: "cover" | "contain" | "studio";
   className?: string;
 }
 
@@ -88,7 +89,13 @@ export function CatalogVisual({
           alt={alt}
           fill
           sizes={sizesAttr}
-          className={imageFit === "contain" ? "object-contain p-6" : "object-cover"}
+          className={
+            imageFit === "contain"
+              ? "object-contain p-6"
+              : imageFit === "studio"
+                ? "object-contain"
+                : "object-cover"
+          }
         />
       </div>
     );

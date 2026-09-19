@@ -150,3 +150,19 @@
     0 2px 0 0 #241f16,
     0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
+
+/* Flat storefront controls, matching the product campaign tiles. */
+.site-theme .search-pill,
+.site-theme .search-pill__body,
+.site-theme .search-pill__input,
+.site-theme .search-pill__input:focus { background: #f5f5f7; }
+.site-theme .search-pill__body::before,
+.site-theme .search-pill__body::after { display: none; }
+.site-theme .search-pill__input::placeholder { color: #6e6e73; }
+.site-theme .soft-btn,
+.site-theme .soft-btn:active { box-shadow: none; text-shadow: none; transform: none; }
+.site-theme .btn-command { background: var(--color-accent); box-shadow: none; }
+.site-theme :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

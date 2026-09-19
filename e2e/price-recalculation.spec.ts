@@ -35,7 +35,7 @@ test.describe("пересчёт цены USD → BYN", () => {
 
     await page.goto("/admin/login");
     await page.getByLabel("Логин").fill(process.env.ADMIN_LOGIN ?? "");
-    await page.getByLabel("Пароль").fill(process.env.ADMIN_PASSWORD ?? "");
+    await page.getByLabel("Пароль", { exact: true }).fill(process.env.ADMIN_PASSWORD ?? "");
     await page.getByRole("button", { name: "Войти" }).click();
     await page.waitForURL("**/admin");
 

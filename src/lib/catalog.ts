@@ -1,5 +1,10 @@
+import { cache } from "react";
 import { prisma } from "@/lib/prisma";
 import { getCurrentRate, usdToByn } from "@/lib/pricing";
+import {
+  getCatalogProductImage,
+  getPreferredCatalogProductImage,
+} from "@/constants/content/catalog-media";
 import type { Availability, Prisma } from "@/generated/prisma/client";
 
 export type { Availability };
@@ -62,10 +67,18 @@ export async function getAllCategories(): Promise<CategorySummary[]> {
   }));
 }
 
-export async function getCategoryBySlug(slug: string): Promise<CategorySummary | null> {
+export const getCategoryBySlug = cache(async (slug: string): Promise<CategorySummary | null> => {
   const category = await prisma.category.findUnique({
     where: { slug },
-    include: { brand: { select: { slug: true, name: true } } },
+    select: {
+      slug: true,
+      name: true,
+      isActive: true,
+      seoDescription: true,
+      seoTitle: true,
+      h1: true,
+      brand: { select: { slug: true, name: true } },
+    },
   });
   if (!category || !category.isActive) return null;
   return {
@@ -77,9 +90,10 @@ export async function getCategoryBySlug(slug: string): Promise<CategorySummary |
     brandSlug: category.brand.slug,
     brandName: category.brand.name,
   };
-}
+});
 
 export interface CatalogCardData {
+  canonicalPath?: string | null;
   id: string;
   slug: string;
   name: string;
@@ -113,6 +127,7 @@ function displayAvailability(product: ProductWithPricing): Availability {
 
 function toCard(product: ProductWithPricing, rate: number): CatalogCardData {
   return {
+    canonicalPath: product.canonicalPath,
     id: product.id,
     slug: product.slug,
     name: product.name,
@@ -122,7 +137,7 @@ function toCard(product: ProductWithPricing, rate: number): CatalogCardData {
     priceByn: usdToByn(displayPriceUsd(product), rate),
     isFlagship: product.isFlagship,
     availability: displayAvailability(product),
-    mainImageUrl: product.images[0]?.url ?? null,
+    mainImageUrl: getPreferredCatalogProductImage(product.slug, product.images[0]?.url),
     defaultVariantId: product.variants[0]?.id ?? null,
   };
 }
@@ -132,6 +147,7 @@ export type CatalogSort = "default" | "price_asc" | "price_desc" | "new";
 export interface CatalogQuery {
   categorySlug?: string;
   brandSlugs?: string[];
+  excludeProductSlugs?: string[];
   maxPriceByn?: number;
   query?: string;
   sort?: CatalogSort;
@@ -156,8 +172,6 @@ const PAGE_SIZE = 9;
  * пересчитываемое при сохранении товара/варианта в админке (уровень 7),
  * и вернуть фильтр/сортировку по цене в `where`/`orderBy` Prisma. */
 export async function getCatalogProducts(params: CatalogQuery): Promise<CatalogResult> {
-  const rate = await getCurrentRate();
-
   const categoryFilter: Prisma.CategoryWhereInput = {};
   if (params.categorySlug) categoryFilter.slug = params.categorySlug;
   if (params.brandSlugs && params.brandSlugs.length > 0) {
@@ -165,23 +179,29 @@ export async function getCatalogProducts(params: CatalogQuery): Promise<CatalogR
   }
 
   const where: Prisma.ProductWhereInput = { isActive: true };
+  if (params.excludeProductSlugs && params.excludeProductSlugs.length > 0) {
+    where.slug = { notIn: params.excludeProductSlugs };
+  }
   if (Object.keys(categoryFilter).length > 0) where.category = categoryFilter;
   if (params.query && params.query.trim()) {
     where.name = { contains: params.query.trim(), mode: "insensitive" };
   }
 
-  const products = await prisma.product.findMany({
-    where,
-    include: {
-      category: { include: { brand: true } },
-      variants: { where: { isDefault: true } },
-      images: { where: { isMain: true }, take: 1 },
-    },
-    orderBy:
-      params.sort === "new"
-        ? { createdAt: "desc" }
-        : [{ sortOrder: "asc" }, { createdAt: "desc" }],
-  });
+  const [rate, products] = await Promise.all([
+    getCurrentRate(),
+    prisma.product.findMany({
+      where,
+      include: {
+        category: { include: { brand: true } },
+        variants: { where: { isDefault: true } },
+        images: { where: { isMain: true }, take: 1 },
+      },
+      orderBy:
+        params.sort === "new"
+          ? { createdAt: "desc" }
+          : [{ sortOrder: "asc" }, { createdAt: "desc" }],
+    }),
+  ]);
 
   let cards = products.map((p) => toCard(p, rate));
 
@@ -211,6 +231,40 @@ export async function getCatalogProducts(params: CatalogQuery): Promise<CatalogR
   const items = cards.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   return { items, page, totalPages, total, priceBoundsByn, availableBrands };
+}
+
+/** Товар для отдельной витрины категории. Предпочитаем редакционный slug,
+ * а если такой модели ещё нет в продаже — берём отмеченный флагманом или
+ * первую модель по порядку каталога. */
+export async function getCategoryFeaturedProduct(
+  categorySlug: string,
+  preferredSlug?: string
+): Promise<CatalogCardData | null> {
+  const include = {
+    category: { include: { brand: true } },
+    variants: { where: { isDefault: true } },
+    images: { where: { isMain: true }, take: 1 },
+  } satisfies Prisma.ProductInclude;
+
+  const [rate, preferred] = await Promise.all([
+    getCurrentRate(),
+    preferredSlug
+      ? prisma.product.findFirst({
+          where: { isActive: true, slug: preferredSlug, category: { slug: categorySlug } },
+          include,
+        })
+      : Promise.resolve(null),
+  ]);
+
+  if (preferred) return toCard(preferred as ProductWithPricing, rate);
+
+  const fallback = await prisma.product.findFirst({
+    where: { isActive: true, category: { slug: categorySlug } },
+    orderBy: [{ isFlagship: "desc" }, { sortOrder: "asc" }, { createdAt: "desc" }],
+    include,
+  });
+
+  return fallback ? toCard(fallback as ProductWithPricing, rate) : null;
 }
 
 export interface ProductDetailAttributeValue {
@@ -270,22 +324,23 @@ export interface ProductDetail {
   canonicalPath: string | null;
 }
 
-export async function getProductDetailBySlug(slug: string): Promise<ProductDetail | null> {
-  const rate = await getCurrentRate();
-
-  const product = await prisma.product.findUnique({
-    where: { slug },
-    include: {
-      category: { include: { brand: true } },
-      specs: { orderBy: { sortOrder: "asc" } },
-      images: { orderBy: { sortOrder: "asc" } },
-      colorValues: { include: { attributeValue: true } },
-      variants: {
-        orderBy: { sortOrder: "asc" },
-        include: { options: { include: { attributeValue: { include: { attribute: true } } } } },
+export const getProductDetailBySlug = cache(async (slug: string): Promise<ProductDetail | null> => {
+  const [rate, product] = await Promise.all([
+    getCurrentRate(),
+    prisma.product.findUnique({
+      where: { slug },
+      include: {
+        category: { include: { brand: true } },
+        specs: { orderBy: { sortOrder: "asc" } },
+        images: { orderBy: { sortOrder: "asc" } },
+        colorValues: { include: { attributeValue: true } },
+        variants: {
+          orderBy: { sortOrder: "asc" },
+          include: { options: { include: { attributeValue: { include: { attribute: true } } } } },
+        },
       },
-    },
-  });
+    }),
+  ]);
   if (!product || !product.isActive) return null;
 
   const attributesById = new Map<string, ProductDetailAttribute>();
@@ -302,8 +357,14 @@ export async function getProductDetailBySlug(slug: string): Promise<ProductDetai
     }
   }
   const attributes = Array.from(attributesById.values());
+  const preferredValueOrder = ["128 ГБ", "256 ГБ", "512 ГБ", "1 ТБ", "2 ТБ", "SIM", "eSIM", "SIM + eSIM"];
   for (const attr of attributes) {
-    attr.values.sort((a, b) => a.value.localeCompare(b.value, "ru"));
+    attr.values.sort((a, b) => {
+      const aIndex = preferredValueOrder.indexOf(a.value);
+      const bIndex = preferredValueOrder.indexOf(b.value);
+      if (aIndex >= 0 && bIndex >= 0) return aIndex - bIndex;
+      return a.value.localeCompare(b.value, "ru");
+    });
   }
 
   const variants: ProductDetailVariant[] = product.variants.map((v) => ({
@@ -320,12 +381,17 @@ export async function getProductDetailBySlug(slug: string): Promise<ProductDetai
     colorValueId: img.colorValueId,
   }));
   const mainImage = product.images.find((i) => i.isMain) ?? product.images[0];
+  const fallbackImageUrl = getCatalogProductImage(product.slug);
+  const preferredMainImageUrl = getPreferredCatalogProductImage(product.slug, mainImage?.url);
 
   const colors: ProductDetailColor[] = product.colorValues.map((cv) => ({
     id: cv.id,
     name: cv.attributeValue.value,
     hex: cv.attributeValue.colorHex,
-    imageUrl: images.find((i) => i.colorValueId === cv.id)?.url ?? mainImage?.url ?? null,
+    imageUrl: getPreferredCatalogProductImage(
+      product.slug,
+      images.find((i) => i.colorValueId === cv.id)?.url ?? mainImage?.url
+    ) ?? fallbackImageUrl,
   }));
 
   const defaultVariant = variants.find((v) => v.isDefault) ?? variants[0];
@@ -349,7 +415,7 @@ export async function getProductDetailBySlug(slug: string): Promise<ProductDetai
     availability,
     specs: product.specs.map((s) => ({ name: s.name, value: s.value })),
     images,
-    mainImageUrl: mainImage?.url ?? null,
+    mainImageUrl: preferredMainImageUrl ?? fallbackImageUrl,
     colors,
     attributes,
     variants,
@@ -357,39 +423,43 @@ export async function getProductDetailBySlug(slug: string): Promise<ProductDetai
     seoDescription: product.seoDescription,
     canonicalPath: product.canonicalPath,
   };
-}
+});
 
 export async function getRelatedProducts(
   categorySlug: string,
   excludeProductId: string,
   limit = 4
 ): Promise<CatalogCardData[]> {
-  const rate = await getCurrentRate();
-  const products = await prisma.product.findMany({
-    where: { isActive: true, category: { slug: categorySlug }, id: { not: excludeProductId } },
-    orderBy: { sortOrder: "asc" },
-    take: limit,
-    include: {
-      category: { include: { brand: true } },
-      variants: { where: { isDefault: true } },
-      images: { where: { isMain: true }, take: 1 },
-    },
-  });
+  const [rate, products] = await Promise.all([
+    getCurrentRate(),
+    prisma.product.findMany({
+      where: { isActive: true, category: { slug: categorySlug }, id: { not: excludeProductId } },
+      orderBy: { sortOrder: "asc" },
+      take: limit,
+      include: {
+        category: { include: { brand: true } },
+        variants: { where: { isDefault: true } },
+        images: { where: { isMain: true }, take: 1 },
+      },
+    }),
+  ]);
   return products.map((p) => toCard(p, rate));
 }
 
 export async function getFlagshipProducts(limit = 2): Promise<CatalogCardData[]> {
-  const rate = await getCurrentRate();
-  const products = await prisma.product.findMany({
-    where: { isActive: true, isFlagship: true },
-    orderBy: { sortOrder: "asc" },
-    take: limit,
-    include: {
-      category: { include: { brand: true } },
-      variants: { where: { isDefault: true } },
-      images: { where: { isMain: true }, take: 1 },
-    },
-  });
+  const [rate, products] = await Promise.all([
+    getCurrentRate(),
+    prisma.product.findMany({
+      where: { isActive: true, isFlagship: true },
+      orderBy: { sortOrder: "asc" },
+      take: limit,
+      include: {
+        category: { include: { brand: true } },
+        variants: { where: { isDefault: true } },
+        images: { where: { isMain: true }, take: 1 },
+      },
+    }),
+  ]);
   return products.map((p) => toCard(p, rate));
 }
 
@@ -407,16 +477,18 @@ export interface FlagshipShowcaseProduct {
  * упорядоченные как в админке. Без этого 3-картиночный сторителлинг
  * невозможен. */
 export async function getFlagshipShowcaseProducts(limit = 2): Promise<FlagshipShowcaseProduct[]> {
-  const rate = await getCurrentRate();
-  const products = await prisma.product.findMany({
-    where: { isActive: true, isFlagship: true },
-    orderBy: { sortOrder: "asc" },
-    take: limit,
-    include: {
-      variants: { where: { isDefault: true } },
-      images: { orderBy: { sortOrder: "asc" } },
-    },
-  });
+  const [rate, products] = await Promise.all([
+    getCurrentRate(),
+    prisma.product.findMany({
+      where: { isActive: true, isFlagship: true },
+      orderBy: { sortOrder: "asc" },
+      take: limit,
+      include: {
+        variants: { where: { isDefault: true } },
+        images: { orderBy: { sortOrder: "asc" } },
+      },
+    }),
+  ]);
   return products.map((p) => ({
     id: p.id,
     slug: p.slug,

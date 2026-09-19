@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { flagshipCampaigns } from "@/constants/content/flagships";
 import { prisma } from "@/lib/prisma";
 
 /* Как и остальные страницы (layout.tsx, каталог) — читает Prisma напрямую,
@@ -8,6 +9,7 @@ export const dynamic = "force-dynamic";
 
 const STATIC_ROUTES: { path: string; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; priority: number }[] = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
+  ...flagshipCampaigns.map(item => ({ path: item.href, changeFrequency: "monthly" as const, priority: 0.8 })),
   { path: "/catalog", changeFrequency: "daily", priority: 0.9 },
   { path: "/trade-in", changeFrequency: "monthly", priority: 0.5 },
   { path: "/delivery", changeFrequency: "monthly", priority: 0.5 },

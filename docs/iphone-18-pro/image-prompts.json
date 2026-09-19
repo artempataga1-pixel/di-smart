@@ -1,0 +1,16 @@
+{
+  "mode": "built-in image_gen",
+  "note": "Exact prompts for the final two assets; earlier session art direction is recorded in README.",
+  "assets": [
+    {
+      "id": "controls",
+      "prompt": "Create a premium photoreal editorial photograph, landscape 3:2. Close over-shoulder view of anatomically correct adult hands holding a slim burgundy smartphone vertically, photographing an evening European city skyline from a rooftop. Screen shows same real skyline with simple white shutter circle, no text or lettering. Warm ivory city lights, dark wine sleeves, cinematic blue hour, refined restrained composition, centered phone and hands fully within central two thirds. No watermark.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-c6c7bdf6-20da-4d80-801a-96d659b7c27f.png"
+    },
+    {
+      "id": "gaming",
+      "prompt": "Create a premium photoreal editorial photograph, landscape 3:2. Anatomically correct adult hands holding a slim burgundy smartphone horizontally, screen facing viewer showing a richly detailed fantasy adventure game: tiny traveler amid monumental stone architecture and copper sunset sky. No words, no HUD, no logos. Dark quiet living room background, gentle burgundy and warm ivory rim lighting. Entire phone and hands visible centered, realistic proportions, crisp glass reflections, elegant luxury technology campaign. No watermark.",
+      "source": "/Users/artempataga/.codex/generated_images/01a08ee3-2f48-7442-8ac4-ecb66e5c779d/exec-22e3add5-fe16-47c4-8cc5-679d2056d7b9.png"
+    }
+  ]
+}

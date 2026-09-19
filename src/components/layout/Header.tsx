@@ -26,8 +26,8 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[var(--color-bg)]/80 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
+      <header className="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[var(--color-bg)]">
+        <div className="mx-auto flex h-[60px] max-w-[1600px] items-center justify-between gap-4 px-4 md:px-6">
           <div className="flex shrink-0 items-center gap-4">
             <Link href="/" className="shrink-0">
               <Logo />
@@ -38,16 +38,19 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
               onChange={setSearchQuery}
               onSubmit={handleSearchSubmit}
               placeholder="Поиск по товарам"
-              className="hidden w-48 lg:flex lg:w-64"
+              className="hidden w-44 2xl:flex"
             />
           </div>
 
-          <nav className="hidden items-center gap-7 md:flex">
+          <nav className="hidden items-center gap-5 xl:flex">
             {MAIN_NAV.map((item) =>
               item.label === "Каталог" ? (
                 <div
                   key={item.href}
                   className="relative"
+                  onFocus={() => setCatalogOpen(true)}
+                  onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setCatalogOpen(false); }}
+                  onKeyDown={(event) => { if (event.key === "Escape") setCatalogOpen(false); }}
                   onMouseEnter={() => setCatalogOpen(true)}
                   onMouseLeave={() => setCatalogOpen(false)}
                 >
@@ -95,7 +98,7 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
           <div className="flex items-center gap-3">
             <a
               href={SITE.phoneHref}
-              className="hidden items-center gap-2 text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-accent-ink)] lg:flex"
+              className="hidden items-center gap-2 text-sm font-medium text-[var(--color-text)] hover:text-[var(--color-accent-ink)] 2xl:flex"
             >
               <Phone className="size-4" />
               {SITE.phone}
@@ -119,7 +122,7 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
               type="button"
               onClick={() => setMobileOpen(true)}
               aria-label="Меню"
-              className="flex size-10 items-center justify-center rounded-full border border-[var(--color-line)] md:hidden"
+              className="flex size-10 items-center justify-center rounded-full border border-[var(--color-line)] xl:hidden"
             >
               <Menu className="size-4.5" />
             </button>
