@@ -23,26 +23,16 @@ export function PhoneViewer({selected,onSelect}:{selected:number;onSelect:(index
   const current=useRef(selected);
   const [active,setActive]=useState(0);
   const [expanded,setExpanded]=useState(false);
-  const [allow3D,setAllow3D]=useState<boolean|null>(null);
   const [status,setStatus]=useState<'loading'|'ready'|'failed'>('loading');
   useEffect(()=>{current.current=selected;engine.current?.setColor(finishes[selected].color,selected);},[selected]);
   useEffect(()=>{
-    const frame=requestAnimationFrame(()=>{
-      const device=navigator as Navigator&{deviceMemory?:number;connection?:{saveData?:boolean;effectiveType?:string}};
-      const constrained=Boolean(device.connection?.saveData||(device.connection?.effectiveType&&device.connection.effectiveType!=='4g')||(device.deviceMemory!==undefined&&device.deviceMemory<=4)||(device.hardwareConcurrency!==undefined&&device.hardwareConcurrency<=4)||matchMedia('(prefers-reduced-motion: reduce)').matches);
-      setAllow3D(!constrained);
-    });
-    return()=>cancelAnimationFrame(frame);
-  },[]);
-  useEffect(()=>{
     const host=container.current;if(!host)return;
-    if(allow3D!==true)return;
     let cancelled=false;let started=false;
     const observer=new IntersectionObserver(entries=>{if(started||!entries.some(e=>e.isIntersecting))return;started=true;observer.disconnect();
       void import('./phone-scene').then(({createPhoneScene})=>createPhoneScene(host,()=>{})).then(scene=>{if(cancelled){scene.dispose();return;}engine.current=scene;scene.setColor(finishes[current.current].color,current.current);setStatus('ready');}).catch(()=>{if(!cancelled)setStatus('failed');});
     },{rootMargin:'300px'});observer.observe(host);
     return()=>{cancelled=true;observer.disconnect();engine.current?.dispose();engine.current=null;};
-  },[allow3D]);
+  },[]);
   function choose(index:number) {
     setActive(index);setExpanded(active===index?!expanded:true);
     if(index!==active && matchMedia('(max-width:760px)').matches) requestAnimationFrame(()=>{
@@ -73,8 +63,7 @@ export function PhoneViewer({selected,onSelect}:{selected:number;onSelect:(index
       </div>
       {active!==0&&<div className={styles.feature} key={active}><Image src={`/media/iphone-18-pro/viewer/${details[active].image}.jpg`} alt={details[active].title} fill quality={95} loading="eager" sizes="(max-width:760px) 100vw, 1100px" /></div>}
       {active===0&&<div className={styles.modelTools}>
-        <span role="status">{status==='ready'?'Потяните, чтобы повернуть':status==='failed'?'Фотографии · 3D недоступно в этом браузере':allow3D===false?'Фото загружено · 3D доступно по запросу':'Загружаем 3D…'}</span>
-        {allow3D===false&&<button type="button" onClick={()=>setAllow3D(true)}>Включить 3D</button>}
+        <span role="status">{status==='ready'?'Потяните, чтобы повернуть':status==='failed'?'Фотографии · 3D недоступно в этом браузере':'Загружаем 3D…'}</span>
         {status==='ready'&&<div><button tabIndex={active===0?0:-1} onClick={()=>engine.current?.view(true)}>Спереди</button><button onClick={()=>engine.current?.view(false)}>Сзади</button><button aria-label="Приблизить модель" onClick={()=>engine.current?.zoom(.88)}><Plus size={16}/></button><button aria-label="Отдалить модель" onClick={()=>engine.current?.zoom(1.14)}><Minus size={16}/></button><button aria-label="Сбросить ракурс" onClick={()=>engine.current?.view(true)}><RotateCcw size={15}/></button></div>}
       </div>}
     </div>

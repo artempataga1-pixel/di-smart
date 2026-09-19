@@ -16,7 +16,7 @@ export function PromoTile({ title, subtitle, image, href, category = false, hero
       </div>
     </div>
     <Link href={href} className={styles.productImage} aria-label={`${category ? "Все модели" : "Подробнее"}: ${title}`} tabIndex={-1}>
-      {image ? <Image src={image} alt={title} fill sizes={hero ? "(min-width: 1024px) 900px, 100vw" : "(min-width: 768px) 50vw, 100vw"} className={styles.render} loading={hero ? "eager" : "lazy"} /> : <div className={styles.assetSlot}><span>Фотография скоро появится</span></div>}
+      {image ? <Image src={image} alt={title} fill sizes={hero ? "(min-width: 1024px) 900px, 100vw" : "(min-width: 768px) 50vw, 100vw"} className={styles.render} loading="eager" /> : <div className={styles.assetSlot}><span>Фотография скоро появится</span></div>}
     </Link>
   </article>;
 }

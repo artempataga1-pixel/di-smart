@@ -50,6 +50,12 @@ export function AdaptiveHeroVideo({
     const video = videoRef.current;
     if (!video) return;
 
+    // React's JSX `muted` prop doesn't reliably set the DOM property on
+    // <video> — without this, the browser treats it as unmuted and blocks
+    // autoplay, showing its own native play button instead.
+    video.muted = true;
+    video.defaultMuted = true;
+
     const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
     const connection = (navigator as NavigatorWithConnection).connection;
 
@@ -93,11 +99,24 @@ export function AdaptiveHeroVideo({
     connection?.addEventListener("change", syncPlayback);
     document.addEventListener("visibilitychange", syncPlayback);
 
+    // Safety net: if a browser blocks even muted autoplay outright (a
+    // manually-set "Never Auto-Play" preference, certain battery-saver
+    // modes), resume silently on the very first interaction with the page —
+    // no visible control of ours required.
+    const retry = () => { if (video.paused && visibleRef.current && allowedRef.current) void video.play().catch(() => {}); };
+    const interactionEvents = ["pointerdown", "touchstart", "keydown", "scroll", "wheel"] as const;
+    for (const type of interactionEvents) {
+      document.addEventListener(type, retry, { once: true, passive: true, capture: true });
+    }
+
     return () => {
       observer?.disconnect();
       reducedMotion.removeEventListener("change", syncPlayback);
       connection?.removeEventListener("change", syncPlayback);
       document.removeEventListener("visibilitychange", syncPlayback);
+      for (const type of interactionEvents) {
+        document.removeEventListener(type, retry, { capture: true });
+      }
       video.pause();
     };
   }, []);

@@ -18,3 +18,4 @@ blob-report
 .claude/worktrees/
 .DS_Store
 /output/
+.env*
