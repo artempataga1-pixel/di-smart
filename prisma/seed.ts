@@ -25,9 +25,16 @@ const COLORS: Record<string, string> = {
   "Ледниковый": "#b9c8d5",
   "Полночный": "#12141c",
   "Золотой": "#cbb489",
+  "Серебристая тень": "#9a9b9d",
+  "Кобальтовый фиолетовый": "#4c3f68",
+  "Космический чёрный": "#3b3c40",
+  "Натуральный титан": "#aaa49b",
+  "Чёрный титан": "#272829",
+  "Серый": "#9a9a9d",
+  "Дымчато-голубой": "#b9c8d5",
 };
 
-const MEMORY_LABELS = ["128 ГБ", "256 ГБ", "512 ГБ", "1 ТБ", "2 ТБ"];
+const MEMORY_LABELS = ["128 ГБ", "256 ГБ", "512 ГБ", "1 ТБ", "2 ТБ", "4 ТБ", "8 ТБ"];
 const SIM_LABELS = ["SIM", "eSIM", "SIM + eSIM"];
 const SIZE_LABELS = ["41 мм", "45 мм", "49 мм"];
 const LENGTH_LABELS = ["1 м", "2 м"];
@@ -157,6 +164,25 @@ const BRANDS: BrandDef[] = [
             ],
             colors: ["Бордовый", "Ледниковый", "Серебристый", "Чёрный"],
             memoryTiers: mem(MEMORY_LABELS.slice(0, 4), [0, 100, 300, 500]),
+            simOptions: SIM_LABELS,
+          },
+          {
+            slug: "iphone-18-pro-max",
+            name: "iPhone 18 Pro Max",
+            short: "iPhone 18 Pro с самым большим экраном и батареей",
+            desc: "iPhone 18 Pro Max — тот же чип A20 Pro и система камер Pro, но с дисплеем 6.9\" и рекордной для линейки автономностью.",
+            basePriceUsd: 1499,
+            isFlagship: true,
+            mainImage: "/media/iphone-18-pro/images/natural/design-burgundy.webp",
+            specs: [
+              ["Экран", "6.9\" Super Retina XDR, ProMotion 120 Гц"],
+              ["Чип", "Apple A20 Pro"],
+              ["Камера", "Три камеры 48 Мп, зум оптического качества до 8×"],
+              ["Корпус", "Металл и Ceramic Shield"],
+              ["Разъём", "USB-C"],
+            ],
+            colors: ["Бордовый", "Ледниковый", "Серебристый", "Чёрный"],
+            memoryTiers: mem(MEMORY_LABELS.slice(0, 5), [0, 100, 300, 500, 900]),
             simOptions: SIM_LABELS,
           },
           {
@@ -358,6 +384,23 @@ const BRANDS: BrandDef[] = [
             colors: ["Серебристый", "Графитовый"],
             memoryTiers: mem(["512 ГБ", "1 ТБ", "2 ТБ"], [0, 300, 700]),
           },
+          {
+            slug: "macbook-pro-16-m5-max",
+            name: "MacBook Pro 16\" M5 Max",
+            short: "Максимальная производительность Apple Silicon",
+            desc: "MacBook Pro 16\" на чипе M5 Max — 18-ядерный CPU, 40-ядерный GPU и до 128 ГБ памяти для самых тяжёлых задач.",
+            basePriceUsd: 3999,
+            isFlagship: true,
+            mainImage: "/media/macbook-pro-m5-max/hero-poster.webp",
+            specs: [
+              ["Экран", "16.2\" Liquid Retina XDR, 1600 нит HDR, ProMotion 120 Гц"],
+              ["Чип", "Apple M5 Max, 18-ядерный CPU, 40-ядерный GPU"],
+              ["Память", "До 128 ГБ единой памяти, пропускная способность 614 ГБ/с"],
+              ["Аккумулятор", "До 22 ч видео"],
+            ],
+            colors: ["Космический чёрный", "Серебристый"],
+            memoryTiers: mem(["1 ТБ", "2 ТБ", "4 ТБ", "8 ТБ"], [0, 500, 1500, 3500]),
+          },
         ],
       },
       {
@@ -417,6 +460,21 @@ const BRANDS: BrandDef[] = [
               ["Связь", "Спутниковая связь"],
             ],
             colors: ["Титан"],
+            sizeTiers: mem(["49 мм"], [0]),
+          },
+          {
+            slug: "apple-watch-ultra-4",
+            name: "Apple Watch Ultra 4",
+            short: "Титановый корпус 49 мм и автономность до 50 часов",
+            desc: "Apple Watch Ultra 4 — титан Grade 5, автономность до 50 часов и водонепроницаемость 40 метров для тех, кто идёт дальше.",
+            basePriceUsd: 849,
+            isFlagship: true,
+            specs: [
+              ["Корпус", "Титан Grade 5, 49 мм"],
+              ["Автономность", "До 50 ч в обычном режиме"],
+              ["Водонепроницаемость", "40 метров"],
+            ],
+            colors: ["Натуральный титан", "Чёрный титан"],
             sizeTiers: mem(["49 мм"], [0]),
           },
           {
@@ -551,6 +609,23 @@ const BRANDS: BrandDef[] = [
               ["Память", "256 ГБ – 1 ТБ"],
             ],
             colors: ["Чёрный", "Титан", "Синий"],
+            memoryTiers: mem(MEMORY_LABELS.slice(0, 4), [0, 100, 300, 500]),
+          },
+          {
+            slug: "galaxy-s26-ultra",
+            name: "Samsung Galaxy S26 Ultra",
+            short: "Galaxy AI, S Pen и камера 200 Мп в корпусе Armor Aluminium",
+            desc: "Galaxy S26 Ultra — Samsung отказалась от титана в пользу Armor Aluminium, сохранив камеру 200 Мп, встроенный S Pen и новые функции Galaxy AI.",
+            basePriceUsd: 1399,
+            isFlagship: true,
+            mainImage: "/media/galaxy-s26-ultra/photos/hero-photo.webp",
+            specs: [
+              ["Экран", "6.9\" Dynamic AMOLED 2X, 120 Гц"],
+              ["Процессор", "Snapdragon 8 Elite Gen 5 for Galaxy"],
+              ["Камера", "200 Мп основная камера, S Pen встроен"],
+              ["Корпус", "Armor Aluminium 2.0"],
+            ],
+            colors: ["Чёрный", "Серебристая тень", "Кобальтовый фиолетовый"],
             memoryTiers: mem(MEMORY_LABELS.slice(0, 4), [0, 100, 300, 500]),
           },
           {
@@ -713,8 +788,56 @@ const BRANDS: BrandDef[] = [
     slug: "xiaomi",
     name: "Xiaomi",
     categories: [
-      { slug: "xiaomi-smartphones", name: "Xiaomi", seoTitle: "Смартфоны Xiaomi — Di-SMART", seoDescription: "Смартфоны Xiaomi в Di-SMART.", products: [] },
-      { slug: "laptops", name: "Ноутбуки", seoTitle: "Ноутбуки Xiaomi Book и RedmiBook — Di-SMART", seoDescription: "Ноутбуки для работы, учёбы и творчества.", products: [] },
+      {
+        slug: "xiaomi-smartphones",
+        name: "Xiaomi",
+        seoTitle: "Смартфоны Xiaomi — Di-SMART",
+        seoDescription: "Смартфоны Xiaomi в Di-SMART.",
+        products: [
+          {
+            slug: "xiaomi-17-ultra",
+            name: "Xiaomi 17 Ultra",
+            short: "Камера Leica 200 Мп с переменной диафрагмой",
+            desc: "Xiaomi 17 Ultra — камера Leica Summilux 200 Мп с 1-дюймовым сенсором и переменной оптикой, экран до 3500 нит и зарядка 90 Вт.",
+            basePriceUsd: 1299,
+            isFlagship: true,
+            mainImage: "/media/xiaomi-17-ultra/hero-poster.webp",
+            specs: [
+              ["Экран", "6.9\" AMOLED, 1–120 Гц, до 3500 нит"],
+              ["Процессор", "Snapdragon 8 Elite Gen 5"],
+              ["Камера", "Leica 200 Мп, сенсор 1 дюйм, переменная диафрагма 75–120 мм"],
+              ["Зарядка", "90 Вт по кабелю, 50 Вт беспроводная"],
+            ],
+            colors: ["Чёрный", "Белый", "Зелёный"],
+            memoryTiers: mem(MEMORY_LABELS.slice(1, 4), [0, 150, 350]),
+          },
+        ],
+      },
+      {
+        slug: "laptops",
+        name: "Ноутбуки",
+        seoTitle: "Ноутбуки Xiaomi Book и RedmiBook — Di-SMART",
+        seoDescription: "Ноутбуки для работы, учёбы и творчества.",
+        products: [
+          {
+            slug: "xiaomi-book-pro-14",
+            name: "Xiaomi Book Pro 14",
+            short: "3.1K OLED 120 Гц на чипе Intel Core Ultra",
+            desc: "Xiaomi Book Pro 14 — экран 3.1K OLED 120 Гц, чип Intel Core Ultra X7 358H и до 32 ГБ памяти для работы и монтажа.",
+            basePriceUsd: 1499,
+            isFlagship: true,
+            mainImage: "/media/xiaomi-book-pro-14/hero-poster.jpg",
+            specs: [
+              ["Экран", "14.6\" 3.1K OLED, 120 Гц"],
+              ["Процессор", "Intel Core Ultra X7 358H"],
+              ["Память", "До 32 ГБ ОЗУ"],
+              ["Аккумулятор", "72 Вт·ч, зарядка 50 Вт"],
+            ],
+            colors: ["Серый", "Белый", "Дымчато-голубой", "Розовый"],
+            memoryTiers: mem(["512 ГБ", "1 ТБ"], [0, 250]),
+          },
+        ],
+      },
     ],
   },
   {

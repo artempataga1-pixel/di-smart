@@ -34,6 +34,7 @@ const CATALOG_IMAGE_BY_PRODUCT: Record<string, string> = {
   "watch-series-11-cellular": "watch-series-11-cellular.png",
   "watch-ultra-3": "watch-ultra-3-v2.png",
   "watch-hermes-series-11": "watch-hermes-series-11.png",
+  "apple-watch-ultra-4": "apple-watch-ultra-4.png",
 
   "airpods-4": "airpods-4.png",
   "airpods-4-anc": "airpods-4.png",

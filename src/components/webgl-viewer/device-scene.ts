@@ -82,25 +82,18 @@ export async function createDeviceScene(
   const environmentIntensity = config.environmentIntensity ?? 0.85;
   const key = config.keyLight ?? { intensity: 3.5, width: 1.6, height: 1.2, position: [-0.8, 1.8, 1.5] };
 
-  const device = navigator as Navigator & {
-    deviceMemory?: number;
-    connection?: { saveData?: boolean; effectiveType?: string };
-  };
-  const constrained = Boolean(
-    device.connection?.saveData ||
-    Boolean(device.connection?.effectiveType && device.connection.effectiveType !== '4g') ||
-    (device.deviceMemory !== undefined && device.deviceMemory <= 4) ||
-    (device.hardwareConcurrency !== undefined && device.hardwareConcurrency <= 4)
-  );
   const renderer = new THREE.WebGLRenderer({
-    antialias: !constrained,
+    antialias: true,
     alpha: true,
-    powerPreference: constrained ? 'low-power' : 'high-performance',
+    powerPreference: 'high-performance',
   });
-  // Не повышаем DPR искусственно: на слабом GPU supersampling был главным
-  // источником лишнего fill-rate и памяти. На быстрых экранах 1.5 достаточно
-  // для чёткой предметной модели, остальную детализацию даёт сам GLB.
-  renderer.setPixelRatio(Math.min(devicePixelRatio || 1, constrained ? 1 : 1.5));
+  // Cap at 2x even on 3x-DPR flagship screens (fill-rate/memory), but never
+  // drop below that — this is a single hero product model, not a busy scene,
+  // and a soft/aliased render reads as "bad quality" far more than the
+  // fill-rate cost reads as jank. `deviceMemory`/`hardwareConcurrency`/
+  // `connection.effectiveType` are unreliable proxies for GPU capability and
+  // were quietly halving sharpness on perfectly ordinary phones.
+  renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
   renderer.toneMapping = THREE.AgXToneMapping; renderer.toneMappingExposure = config.toneMappingExposure ?? 1;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   host.appendChild(renderer.domElement);

@@ -8,7 +8,7 @@ import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { FinishPicker } from "./finish-picker";
 import styles from "./page.module.css";
 
-const buyHref = "/catalog/watch";
+const buyHref = "/product/apple-watch-ultra-4";
 
 export function AppleWatchUltraPage() {
   const root = useRef<HTMLDivElement>(null);

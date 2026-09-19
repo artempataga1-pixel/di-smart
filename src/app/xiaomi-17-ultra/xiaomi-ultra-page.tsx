@@ -7,7 +7,7 @@ import { Aperture, ArrowUpRight, BatteryCharging, Cpu, Focus, ScanLine } from "l
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import styles from "./page.module.css";
 
-const buyHref = "/catalog/xiaomi-smartphones";
+const buyHref = "/product/xiaomi-17-ultra";
 const finishes = [
   { id: "black", name: "Black", image: "/media/xiaomi-17-ultra/color-black.jpg" },
   { id: "white", name: "White", image: "/media/xiaomi-17-ultra/color-white.jpg" },

@@ -7,7 +7,7 @@ import { ArrowUpRight, BatteryCharging, Cpu, Gauge, Move3D, Palette, ScanLine } 
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import styles from "./page.module.css";
 
-const buyHref = "/catalog/laptops";
+const buyHref = "/product/xiaomi-book-pro-14";
 const finishes = [
   { id: "gray", name: "Elegant Gray", image: "/media/xiaomi-book-pro-14/color-gray.jpg" },
   { id: "white", name: "White", image: "/media/xiaomi-book-pro-14/color-white.jpg" },

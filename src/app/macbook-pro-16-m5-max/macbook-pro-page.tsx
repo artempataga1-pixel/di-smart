@@ -8,7 +8,7 @@ import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { FinishPicker } from "./finish-picker";
 import styles from "./page.module.css";
 
-const buyHref = "/catalog/macbook";
+const buyHref = "/product/macbook-pro-16-m5-max";
 
 export function MacbookProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
   const root = useRef<HTMLDivElement>(null);
