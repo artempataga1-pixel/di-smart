@@ -134,24 +134,22 @@ export function IPhoneHero() {
           const siblings = frame.parentElement ? Array.from(frame.parentElement.children) : [];
           const index = siblings.indexOf(frame);
           const delay = innerWidth > 760 ? Math.max(0, index) * 90 : 0;
-          // A photo already fades in on its own once it loads (see ProductMedia) —
-          // fading the frame too would multiply two opacity ramps into a mushy,
-          // slower-looking reveal. Slide/scale the frame, let the photo's own
-          // fade carry the opacity.
-          const isMedia = frame.hasAttribute("data-media-id");
           frame.style.willChange = "transform, opacity";
           const animation = frame.animate([
-            { opacity: isMedia ? 1 : 0, transform: `translate3d(0, ${innerWidth > 760 ? 72 : 32}px, 0) scale(.97)` },
+            { opacity: 0, transform: `translate3d(0, ${innerWidth > 760 ? 72 : 32}px, 0) scale(.97)` },
             { opacity: 1, transform: "translate3d(0, 0, 0) scale(1)" },
           ], { duration: 1200, delay, easing: "cubic-bezier(.16, 1, .3, 1)", fill: "backwards" });
           animations.add(animation);
           animation.onfinish = () => { animations.delete(animation); frame.style.willChange = "auto"; };
         });
       }, { threshold: .08, rootMargin: "0px 0px -32px 0px" });
-      root.querySelectorAll<HTMLElement>("[data-media-id], [data-reveal]").forEach(frame => {
-        const id = frame.dataset.mediaId ?? "";
-        if (!id.startsWith("highlight-")) observer?.observe(frame);
-      });
+      // Photos are excluded here on purpose: they already fade in on their own
+      // once loaded (see ProductMedia's onLoad handler). Sliding/scaling the
+      // same rounded, overflow-hidden frame here as well would (a) double up
+      // with that fade into a mushy, slower-looking reveal, and (b) briefly
+      // show unrounded corners while the box is mid-scale — a real, visible
+      // rendering glitch on some GPUs, not just a stacking preference.
+      root.querySelectorAll<HTMLElement>("[data-reveal]").forEach(frame => observer?.observe(frame));
     };
     start();
     motion.addEventListener("change", start);
