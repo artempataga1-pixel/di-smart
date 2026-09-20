@@ -53,8 +53,8 @@ export function XiaomiUltraPage() {
       <main>
         <section className={styles.intro}>
           <p className={styles.eyebrow} data-reveal>Xiaomi 17 Ultra · Leica</p>
-          <h2 data-reveal>Свет.<br />Фокус. История.</h2>
-          <p className={styles.introLead} data-reveal>Камера, которая видит сцену до того, как она исчезнет. Оптика Leica, большой сенсор и настоящий оптический зум собраны в корпусе, который хочется держать в руках.</p>
+          <h2 data-reveal>Свет. Фокус.<br />Дальше — история.</h2>
+          <p className={styles.introLead} data-reveal>Камера, которая успевает поймать сцену за миг до того, как она исчезнет. Оптика Leica, крупный сенсор и оптический зум — настоящий, не программный — умещаются в корпусе, который удобно держать в руке.</p>
         </section>
 
         <section className={styles.metrics} aria-label="Ключевые характеристики камеры">
@@ -67,8 +67,8 @@ export function XiaomiUltraPage() {
           <div className={styles.sectionCopy} data-reveal>
             <Aperture size={28} />
             <p className={styles.eyebrow}>Leica Summilux</p>
-            <h2>Свет становится<br />материалом.</h2>
-            <p>Основная камера 50 Мп с сенсором оптического формата 1 дюйм сохраняет объём в тенях и фактуру в ярком свете. Диафрагма ƒ/1,67 помогает снимать выразительно даже после заката.</p>
+            <h2>Свет — уже<br />материал для кадра.</h2>
+            <p>50 Мп и сенсор формата 1 дюйм — это тени с объёмом и яркий свет без потери фактуры. А диафрагма ƒ/1,67 вытягивает кадр даже там, где солнце уже давно село.</p>
           </div>
           <figure className={styles.mediaFrame} data-reveal>
             <Image src="/media/xiaomi-17-ultra/camera.webp" alt="Камера Leica смартфона Xiaomi 17 Ultra крупным планом" fill sizes="(max-width: 900px) 100vw, 58vw" />
@@ -87,17 +87,17 @@ export function XiaomiUltraPage() {
             <span><b>75</b> мм<small>портрет</small></span>
             <span><b>100</b> мм<small>телефото</small></span>
           </div>
-          <p className={styles.focalText} data-reveal>Телемодуль Leica на 200 Мп физически меняет фокусное расстояние между 75 и 100 мм. Кадр остаётся оптическим, а перспектива — естественной.</p>
+          <p className={styles.focalText} data-reveal>200-мегапиксельный телемодуль Leica и правда двигает линзы — фокусное расстояние меняется физически, от 75 до 100 мм. Поэтому кадр остаётся оптическим, а перспектива — такой же, как видит глаз.</p>
         </section>
 
         <section className={styles.storyCard}>
           <figure className={styles.storyImage}>
-            <Image src="/media/xiaomi-17-ultra/night-real.jpg" alt="Съёмка вечернего города на белый Xiaomi 17 Ultra" fill sizes="(max-width: 900px) 100vw, 1280px" />
+            <Image src="/media/xiaomi-17-ultra/night-real.jpg" alt="Вечерний город, снятый на белый Xiaomi 17 Ultra" fill sizes="(max-width: 900px) 100vw, 1280px" />
           </figure>
           <div className={styles.storyCopy} data-reveal>
             <p className={styles.eyebrow}>Ночь без постановки</p>
-            <h2>Настоящий свет.<br />Настоящий момент.</h2>
-            <p>LOFIC HDR помогает удержать огни города, отражения и лицо в одном кадре. Без плоских теней и выбитого неба.</p>
+            <h2>Свет как есть.<br />Момент как был.</h2>
+            <p>LOFIC HDR держит в одном кадре огни города, отражения и лицо человека — без пересвеченного неба и плоских теней.</p>
           </div>
         </section>
 
@@ -105,7 +105,7 @@ export function XiaomiUltraPage() {
           <div className={styles.colorsHead} data-reveal>
             <p className={styles.eyebrow}>Три характера</p>
             <h2>Цвет задаёт тон.</h2>
-            <p>Чёрный, белый и Starlit Green. Матовая поверхность мягко рассеивает свет, а металлическое кольцо подчёркивает оптический блок.</p>
+            <p>Чёрный, белый, Starlit Green. Матовая поверхность гасит блики, а металлическое кольцо вокруг камер держит взгляд на объективах.</p>
           </div>
           <figure className={styles.colorsImage} data-reveal>
             {finishes.map((item) => (
@@ -148,7 +148,7 @@ export function XiaomiUltraPage() {
             <ScanLine size={28} />
             <p className={styles.eyebrow}>6,9″ HyperRGB</p>
             <h2>Экран, которому<br />можно доверять.</h2>
-            <p>Панель 2608 × 1200 с адаптивной частотой от 1 до 120 Гц показывает точные оттенки и остаётся читаемой при ярком солнце — пиковая яркость достигает 3500 нит.</p>
+            <p>Панель 2608 × 1200 с частотой от 1 до 120 Гц точно передаёт оттенки и не теряется на солнце — пиковая яркость доходит до 3500 нит.</p>
           </div>
         </section>
 
@@ -158,8 +158,8 @@ export function XiaomiUltraPage() {
             <h2>Снимает весь день.<br />Обрабатывает сразу.</h2>
           </div>
           <div className={styles.powerGrid}>
-            <article data-reveal><Cpu size={27} /><strong>Snapdragon 8 Elite Gen 5</strong><p>3-нм платформа для съёмки, монтажа и игр на максимальной скорости.</p></article>
-            <article data-reveal><BatteryCharging size={27} /><strong>6000 мА·ч</strong><p>90 Вт по кабелю и 50 Вт без проводов — чтобы меньше ждать и больше снимать.</p></article>
+            <article data-reveal><Cpu size={27} /><strong>Snapdragon 8 Elite Gen 5</strong><p>3-нм платформа тянет съёмку, монтаж и игры без просадок.</p></article>
+            <article data-reveal><BatteryCharging size={27} /><strong>6000 мА·ч</strong><p>90 Вт по кабелю, 50 Вт без проводов — заряд возвращается быстрее, чем успеваешь заскучать.</p></article>
           </div>
         </section>
 
@@ -171,8 +171,8 @@ export function XiaomiUltraPage() {
       </main>
 
       <footer className={styles.footnote}>
-        <p>Изображения созданы с помощью ИИ для визуальной презентации устройства. Внешний вид отдельных деталей и интерфейса может незначительно отличаться.</p>
-        <p>Характеристики указаны по глобальным данным Xiaomi для Xiaomi 17 Ultra. Комплектация, объём памяти и доступность цветов зависят от региона.</p>
+        <p>Изображения на странице сгенерированы нейросетью и служат для визуальной презентации устройства — некоторые детали и интерфейс могут немного отличаться от реальных.</p>
+        <p>Характеристики приведены по официальным глобальным данным Xiaomi для Xiaomi 17 Ultra — комплектация, объём памяти и доступные цвета могут отличаться в зависимости от региона.</p>
       </footer>
     </div>
   );

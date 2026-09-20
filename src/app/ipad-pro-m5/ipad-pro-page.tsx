@@ -51,8 +51,8 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
     <section id="design" className={styles.section}>
       <div className={styles.heading} data-reveal>
         <p>Дизайн</p>
-        <h2>Почти исчезает<br />в профиль.</h2>
-        <p className={styles.lead}>Цельный алюминиевый корпус толщиной 5,1 мм весит 579 г в версии Wi‑Fi. Большой экран остаётся лёгким спутником для работы вне стола.</p>
+        <h2>Тоньше,<br />чем кажется на фото.</h2>
+        <p className={styles.lead}>Корпус — цельный алюминий толщиной 5,1 мм. В версии Wi‑Fi iPad весит 579 г и не ощущается тяжёлым спутником, даже когда стола рядом нет, а экран при этом большой.</p>
       </div>
       <figure className={`${styles.imageFrame} ${styles.thinness}`} data-reveal>
         <Image src="/media/ipad-pro-m5/thinness.webp" alt="Тонкий серебристый корпус iPad Pro с разъёмом Thunderbolt" fill sizes="(max-width: 760px) 100vw, 1200px" />
@@ -63,8 +63,8 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
     <section className={`${styles.section} ${styles.viewerSection}`}>
       <div className={styles.heading} data-reveal>
         <p>Два точных оттенка</p>
-        <h2>Рассмотрите<br />со всех сторон.</h2>
-        <p className={styles.lead}>Silver мягко отражает свет. Space Black выглядит глубже и строже. Переключайте оттенки и сравнивайте фактуру корпуса в одном точном ракурсе.</p>
+        <h2>Крутите,<br />пока не разглядите.</h2>
+        <p className={styles.lead}>Silver ловит свет мягко, почти незаметно. Space Black выглядит глубже и строже — совсем другой характер. Переключайте оттенки прямо на экране и сравнивайте фактуру корпуса в одном ракурсе.</p>
       </div>
       <IpadViewer />
     </section>
@@ -72,8 +72,8 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
     <section id="display" className={`${styles.section} ${styles.darkSection}`}>
       <div className={styles.heading} data-reveal>
         <p>Ultra Retina XDR</p>
-        <h2>Чёрный остаётся<br />по-настоящему чёрным.</h2>
-        <p className={styles.lead}>Два OLED-слоя работают вместе: высокая яркость, точный контраст и ProMotion от 10 до 120 Гц для движения без рывков.</p>
+        <h2>Чёрный здесь —<br />действительно чёрный.</h2>
+        <p className={styles.lead}>Два слоя OLED работают в паре — отсюда высокая яркость и точный контраст. ProMotion переключается от 10 до 120 Гц, так что движение на экране не дёргается.</p>
       </div>
       <figure className={`${styles.imageFrame} ${styles.displayImage}`} data-reveal>
         <Image src="/media/ipad-pro-m5/display.webp" alt="Яркое абстрактное изображение на дисплее Ultra Retina XDR" fill sizes="(max-width: 760px) 100vw, 1200px" />
@@ -88,8 +88,8 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
     <section id="performance" className={`${styles.section} ${styles.performance}`}>
       <div className={styles.performanceCopy} data-reveal>
         <p>Производительность</p>
-        <h2>M5.<br />Идея не ждёт.</h2>
-        <p>Многослойный монтаж, сложная графика и локальные AI-задачи получают запас мощности, который раскрывается в профессиональных приложениях.</p>
+        <h2>M5.<br />Идея не успевает остыть.</h2>
+        <p>Многослойный монтаж, тяжёлая графика, AI-задачи прямо на устройстве — везде есть запас мощности, и профессиональные приложения умеют его раскрыть.</p>
         <ul>
           <li><Zap size={18} /> 10-ядерный GPU с Neural Accelerators</li>
           <li><Sparkles size={18} /> аппаратное ускорение трассировки лучей</li>
@@ -107,21 +107,21 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
       <div className={styles.pencilCopy} data-reveal>
         <Pencil size={28} />
         <p>Apple Pencil Pro</p>
-        <h2>Мысль становится линией.</h2>
-        <p>Рисуйте, делайте пометки и управляйте инструментами естественным движением руки. Apple Pencil Pro приобретается отдельно.</p>
+        <h2>Линия ложится там, где вы её ведёте.</h2>
+        <p>Рисуйте, делайте пометки, переключайте инструменты одним движением руки — без лишних меню. Apple Pencil Pro в коробку не входит, докупается отдельно.</p>
       </div>
     </section>
 
     <section className={styles.closing}>
       <p>iPad Pro 13″ · M5</p>
-      <h2>Ваше большое полотно.</h2>
+      <h2>Полотно теперь больше — рисуйте смелее.</h2>
       <Link className={styles.buy} href={productHref}>Выбрать iPad Pro <ArrowUpRight size={18} /></Link>
       <Link className={styles.categoryLink} href="/catalog/ipad">Смотреть все модели iPad</Link>
     </section>
 
     <footer className={styles.footnote}>
-      <p>Изображения созданы с помощью ИИ для визуальной презентации устройства и сценариев использования. Оттенок корпуса на экране может отличаться из-за освещения и настроек дисплея.</p>
-      <p>Официальные покрытия iPad Pro 13″ (M5): Silver и Space Black. Nano-texture доступна для конфигураций 1 ТБ и 2 ТБ. Apple Pencil Pro и Magic Keyboard приобретаются отдельно.</p>
+      <p>Изображения на странице сделаны с помощью ИИ — чтобы показать устройство и сценарии его использования. Оттенок корпуса на экране может отличаться из-за освещения и настроек дисплея.</p>
+      <p>У iPad Pro 13″ (M5) два официальных цвета — Silver и Space Black. Nano-texture есть только в конфигурациях на 1 ТБ и 2 ТБ. Apple Pencil Pro и Magic Keyboard в комплект не входят — докупаются отдельно.</p>
     </footer>
   </div>;
 }

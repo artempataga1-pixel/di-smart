@@ -49,8 +49,8 @@ export function GalaxyTabUltraPage() {
       <main>
         <section className={styles.intro}>
           <p className={styles.kicker} data-reveal>Galaxy Tab S11 Ultra</p>
-          <h2 data-reveal>Пространство<br />для большого.</h2>
-          <p className={styles.lead} data-reveal>Один экран для идеи, эскиза, монтажа и готовой работы. Самый большой Galaxy Tab объединяет тонкий корпус, точный S Pen и настольный режим DeX.</p>
+          <h2 data-reveal>14,6 дюйма.<br />И всё по делу.</h2>
+          <p className={styles.lead} data-reveal>Один экран на всё: идея, эскиз, монтаж, финальный кадр. У самого крупного Galaxy Tab при этом тонкий корпус, точный S Pen в комплекте и DeX — настоящий рабочий стол, когда он понадобится.</p>
         </section>
 
         <section className={styles.metrics} aria-label="Основные характеристики">
@@ -61,9 +61,9 @@ export function GalaxyTabUltraPage() {
 
         <section className={styles.designSection}>
           <div className={styles.copy} data-reveal>
-            <p className={styles.kicker}>Тонкий. И серьёзный.</p>
-            <h2>Почти исчезает<br />в профиле.</h2>
-            <p>Корпус из Armor Aluminum стал тоньше и легче, сохранив прочность. Камеры собраны в чистую линию, а новый S Pen ощущается в руке как привычный инструмент.</p>
+            <p className={styles.kicker}>Тоньше — и всё равно крепкий.</p>
+            <h2>Почти пропадает<br />в профиле.</h2>
+            <p>Armor Aluminum остался прочным, а корпус вокруг него стал тоньше и легче. Камеры выстроились в одну чистую линию, а новый S Pen ложится в руку как обычный карандаш — только точнее.</p>
           </div>
           <figure className={styles.designImage} data-reveal>
             {finishes.map((item) => (
@@ -101,8 +101,8 @@ export function GalaxyTabUltraPage() {
         <section className={styles.displaySection}>
           <div className={styles.displayCopy} data-reveal>
             <span>2960 × 1848</span>
-            <h2>Изображение<br />заполняет всё.</h2>
-            <p>Dynamic AMOLED 2X показывает глубокий чёрный, точные оттенки и плавное движение. Антибликовое покрытие помогает сохранить детали даже при ярком дневном свете.</p>
+            <h2>Изображению здесь<br />тесно не будет.</h2>
+            <p>Dynamic AMOLED 2X держит глубокий чёрный и точные оттенки, а движение остаётся плавным без размытий. Антибликовое покрытие не даёт солнцу украсть детали с экрана, даже если работаете на улице.</p>
           </div>
           <div className={styles.orbits} aria-hidden="true"><i /><i /><i /></div>
         </section>
@@ -113,9 +113,9 @@ export function GalaxyTabUltraPage() {
           </figure>
           <div className={styles.overlayCopy} data-reveal>
             <PenTool size={28} />
-            <p className={styles.kicker}>Новый S Pen в комплекте</p>
-            <h2>Мысль сразу<br />становится линией.</h2>
-            <p>Улучшенная форма помогает точнее вести штрих и дольше работать без усталости. Быстрые инструменты, заметки и AI-функции находятся рядом с кончиком пера.</p>
+            <p className={styles.kicker}>Новый S Pen — уже в коробке</p>
+            <h2>Провёл пером —<br />и вот уже линия.</h2>
+            <p>Форму пера доработали: штрих выходит точнее, а рука не устаёт даже после долгой сессии. Быстрые инструменты, заметки и AI-функции — прямо у кончика, тянуться никуда не нужно.</p>
           </div>
         </section>
 
@@ -123,8 +123,8 @@ export function GalaxyTabUltraPage() {
           <div className={styles.dexHead} data-reveal>
             <MonitorUp size={29} />
             <p className={styles.kicker}>Samsung DeX</p>
-            <h2>Планшет, когда удобно.<br />Рабочее место, когда нужно.</h2>
-            <p>Открывайте несколько окон, переносите материалы между приложениями и подключайте клавиатуру. Пространства достаточно для монтажа, созвона и заметок одновременно.</p>
+            <h2>Планшет — когда в дороге.<br />Стол — когда пора работать.</h2>
+            <p>Несколько окон открыты сразу, файлы перетаскиваются между приложениями, клавиатура подключается за секунду. Хватает места и на монтаж, и на созвон, и на заметки рядом с ними — параллельно, а не по очереди.</p>
           </div>
           <figure className={styles.dexImage} data-reveal>
             <Image src="/media/galaxy-tab-s11-ultra/dex-real.jpg" alt="Galaxy Tab S11 Ultra с клавиатурой в режиме Samsung DeX" fill sizes="(max-width: 900px) 100vw, 1240px" />
@@ -132,21 +132,21 @@ export function GalaxyTabUltraPage() {
         </section>
 
         <section className={styles.capabilities}>
-          <article data-reveal><BatteryCharging size={28} /><strong>11 600 мА·ч</strong><p>Запас энергии для долгой работы, фильмов и творчества вдали от розетки.</p></article>
-          <article data-reveal><ShieldCheck size={28} /><strong>IP68</strong><p>Планшет и S Pen защищены от пыли и воды для более спокойной работы вне дома.</p></article>
-          <article data-reveal><Wifi size={28} /><strong>Wi‑Fi 7</strong><p>Быстрая передача больших проектов и стабильная связь в совместимых сетях.</p></article>
+          <article data-reveal><BatteryCharging size={28} /><strong>11 600 мА·ч</strong><p>Хватает на весь день: фильм в дороге, монтаж вечером и ещё что-нибудь после — без поиска розетки.</p></article>
+          <article data-reveal><ShieldCheck size={28} /><strong>IP68</strong><p>Планшет и S Pen переживут пыль и случайный дождь.</p></article>
+          <article data-reveal><Wifi size={28} /><strong>Wi‑Fi 7</strong><p>Тяжёлые проекты передаются быстрее, а связь держится стабильнее — если сеть это поддерживает.</p></article>
         </section>
 
         <section className={styles.closing}>
           <p>Samsung Galaxy Tab S11 Ultra</p>
-          <h2>Больше экрана.<br />Больше вашего.</h2>
+          <h2>Экран больше.<br />И места для вас — тоже.</h2>
           <Link className={styles.buy} href={buyHref}>Выбрать Galaxy Tab S11 Ultra <ArrowUpRight size={18} /></Link>
         </section>
       </main>
 
       <footer className={styles.footnote}>
-        <p>Изображения созданы с помощью ИИ для визуальной презентации устройства и сценариев использования. Интерфейс, аксессуары и отдельные детали могут отличаться.</p>
-        <p>Характеристики сверены по глобальным данным Samsung. Доступность цветов, памяти, Wi‑Fi 7 и отдельных Galaxy AI-функций зависит от региона, сети и версии программного обеспечения.</p>
+        <p>Изображения на странице сделаны с помощью ИИ — чтобы показать устройство и сценарии его использования. Интерфейс, аксессуары и отдельные детали в реальности могут отличаться.</p>
+        <p>Характеристики сверены с официальными данными Samsung. Доступность цветов, объёма памяти, Wi‑Fi 7 и части функций Galaxy AI зависит от региона, сети и версии программного обеспечения.</p>
       </footer>
     </div>
   );
