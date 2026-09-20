@@ -37,18 +37,21 @@
 .sectionTop > span { font-size: 13px; color: var(--muted); padding-bottom: 7px; white-space: nowrap; }
 .sectionTop > a { color: var(--copper); display: inline-flex; gap: 8px; align-items: center; font-size: 14px; padding-bottom: 7px; }
 .highlights { background: #101012; padding-bottom: 90px; }
-.highlightRail { display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 8px 6px 16px; margin: -8px -6px -16px; }
+.highlightPin { position: relative; }
+.highlightSticky { display: flex; align-items: center; }
+.highlightRail { display: flex; width: 100%; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 8px 6px 16px; margin: -8px -6px -16px; }
 .highlightRail::-webkit-scrollbar { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .highlightSticky { position: sticky; top: 0; height: 100svh; overflow: hidden; }
+  .highlightRail { overflow: visible; scroll-snap-type: none; will-change: transform; }
+}
 .highlightCard { flex: 0 0 370px; min-height: 480px; border-radius: 26px; background: #000; padding: 32px; position: relative; overflow: hidden; scroll-snap-align: start; }
 .highlightCard > p { font-size: 14px; color: var(--muted); margin-bottom: 14px; }
 .highlightCard h3 { font-size: 28px; line-height: 1.13; max-width: 290px; }
 .highlightCard .mediaFrame { min-height: 240px; background: transparent; margin: 12px 0 0; border-radius: 0; aspect-ratio: auto; }
 .circleLink { width: 36px; height: 36px; background: #28282a; border-radius: 50%; display: grid; place-items: center; position: absolute; right: 25px; bottom: 25px; }
 .highlightCard:hover .circleLink { color: #111; background: var(--paper); }
-.railControls { display: flex; gap: 14px; justify-content: flex-end; margin-top: 35px; }
-.railControls button { width: 38px; height: 38px; border: none; border-radius: 50%; color: #eee; background: #303033; display: grid; place-items: center; cursor: pointer; }
-.railControls button:disabled { opacity: .3; cursor: default; }
-.kicker { font-size: 17px; font-weight: 650; letter-spacing: -.01em; color: #d2d2d7; margin-bottom: 24px !important; }
+.kicker { font-size: 17px; font-weight: 650; letter-spacing: -.01em; color: #d2d2d7; margin-bottom: 32px !important; }
 .sectionHeading { text-align: center; max-width: 1100px; margin: 0 auto 70px; }
 .lead { font-size: clamp(21px, 2.2vw, 28px); line-height: 1.45; letter-spacing: -.026em; color: var(--muted); max-width: 770px; margin: 64px auto 0 !important; font-weight: 500; }
 .lead strong { color: var(--paper); font-weight: inherit; }
@@ -154,7 +157,7 @@
   .highlightCard { flex-basis: 310px; min-height: 420px; padding: 27px; }
   .highlightCard h3 { font-size: 26px; }
   .highlightCard .mediaFrame { min-height: 200px; }
-  .kicker { font-size: 18px; margin-bottom: 23px !important; }
+  .kicker { font-size: 18px; margin-bottom: 28px !important; }
   .sectionHeading { margin-bottom: 45px; }
   .page h2 { font-size: clamp(38px, 7.7vw, 58px); letter-spacing: -.045em; }
   .lead { margin-top: 42px !important; font-size: 22px; line-height: 1.4; }
@@ -218,7 +221,11 @@
 
 /* Final media treatment: full scene cards, controlled crops and calm black stages. */
 .mediaFrame { position: relative; overflow: hidden; isolation: isolate; background: #000; }
-.editorialImage { display: block; }
+.editorialImage { display: block; opacity: 0; transition: opacity 600ms ease; }
+.imageLoaded { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .editorialImage { transition: none; opacity: 1; }
+}
 .highlightCard { min-height: 530px; isolation: isolate; }
 .highlightCard > p, .highlightCard > h3 { position: relative; z-index: 2; }
 .highlightCard > p { color: #d7cac4; }
@@ -247,7 +254,7 @@
 /* Large photographic surfaces and a staggered editorial gallery. */
 .section > .mediaFrame,
 .design > .mediaFrame,
-.charging .mediaFrame { border-radius: clamp(28px, 3.5vw, 52px); }
+.charging .mediaFrame { border-radius: clamp(32px, 4.5vw, 64px); }
 .mediaFrame { transform-origin: 50% 70%; }
 .cameraGrid { gap: 24px; padding-bottom: 80px; }
 .cameraGrid > article:nth-child(2) { padding-top: 40px; }
@@ -293,10 +300,10 @@
 
 .cameraStory { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr); gap: clamp(48px, 7vw, 96px); margin-top: 96px; }
 .cameraSticky { position: relative; }
-.cameraStage { position: sticky; top: calc(50svh - min(34svh, 340px)); height: min(68svh, 680px); overflow: hidden; border-radius: clamp(26px, 3vw, 44px); background: #08080a; isolation: isolate; }
-.cameraSlide { position: absolute; inset: 0; opacity: 0; transform: scale(1.025); transition: opacity 700ms ease, transform 1100ms cubic-bezier(.16,1,.3,1); }
+.cameraStage { position: sticky; top: calc(50svh - min(34svh, 340px)); height: min(68svh, 680px); overflow: hidden; border-radius: clamp(26px, 3vw, 44px); background: #08080a; isolation: isolate; transform: translateZ(0); }
+.cameraSlide { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; opacity: 0; transform: scale(1.025); transition: opacity 700ms ease, transform 1100ms cubic-bezier(.16,1,.3,1); }
 .cameraSlideActive { opacity: 1; transform: scale(1); }
-.cameraSlide .mediaFrame { width: 100%; height: 100%; aspect-ratio: auto; border-radius: 0; }
+.cameraSlide .mediaFrame { width: 100%; height: 100%; aspect-ratio: auto; border-radius: inherit; }
 .cameraSlide .editorialImage { object-fit: cover !important; }
 .cameraGlow { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(125deg, rgba(255,255,255,.08), transparent 24%, transparent 72%, rgba(106,35,50,.14)); mix-blend-mode: screen; }
 .cameraCounter { position: absolute; z-index: 3; right: 24px; bottom: 22px; padding: 8px 11px; border-radius: 999px; background: #09090bbd; backdrop-filter: blur(12px); color: #f5f5f7; font-size: 11px; font-variant-numeric: tabular-nums; }

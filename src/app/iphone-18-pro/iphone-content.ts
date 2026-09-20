@@ -1,20 +1,20 @@
 export const highlights = [
-  { title: "Титан, стекло и точная геометрия.", category: "Корпус", target: "design", slot: "highlight-design" },
-  { title: "Три камеры. Один уверенный кадр.", category: "Камера", target: "cameras", slot: "highlight-camera" },
-  { title: "A20 Pro. Быстрее идеи.", category: "Производительность", target: "performance", slot: "highlight-performance" },
-  { title: "Заряда хватает на длинный день.", category: "Автономность", target: "battery", slot: "highlight-battery" },
+  { title: "Титан, стекло и выверенная геометрия корпуса.", category: "Корпус", target: "design", slot: "highlight-design" },
+  { title: "Три камеры ради одного точного кадра.", category: "Камера", target: "cameras", slot: "highlight-camera" },
+  { title: "Быстрее, чем успевает мысль.", category: "Производительность", target: "performance", slot: "highlight-performance" },
+  { title: "Автономности хватает на долгий день без розетки.", category: "Автономность", target: "battery", slot: "highlight-battery" },
 ];
 
 export const finishes = [
-  { name: "Бордовый", english: "Burgundy", color: "#71414c", copy: "Глубокий оттенок с тёплым характером. Для тех, кто любит выразительные детали." },
-  { name: "Ледниковый", english: "Glacier", color: "#bcc9d3", copy: "Светлый, прохладный тон. Сдержанный акцент в повседневном образе." },
-  { name: "Серебристый", english: "Silver", color: "#d3d0cb", copy: "Чистая классика. Оттенок, который легко сочетается с вашим стилем." },
-  { name: "Чёрный", english: "Black", color: "#353535", copy: "Лаконичный и глубокий. Всё внимание — форме и деталям." },
+  { name: "Бордовый", english: "Burgundy", color: "#71414c", copy: "Глубокий, тёплый оттенок для тех, кто не боится выразительных деталей." },
+  { name: "Ледниковый", english: "Glacier", color: "#bcc9d3", copy: "Светлый и прохладный — сдержанный акцент на каждый день." },
+  { name: "Серебристый", english: "Silver", color: "#d3d0cb", copy: "Классика, которая обходится без компромиссов и подходит к чему угодно." },
+  { name: "Чёрный", english: "Black", color: "#353535", copy: "Строгий и глубокий — здесь ничего не отвлекает от формы." },
 ];
 
 export const cameraDetails = [
   { title: "Свет решает.", text: "Мягкое утро, контровой луч, вечерний город. Камера держит тон кожи и объём даже в сложном свете.", slot: "camera-light" },
-  { title: "Подойдите ближе. Не сходя с места.", text: "Оптический зум оставляет в кадре главное — без ощущения, что качество пришлось принести в жертву.", slot: "camera-zoom" },
+  { title: "Подойдите ближе, не сходя с места.", text: "Оптический зум оставляет в кадре главное — без ощущения, что качество пришлось принести в жертву.", slot: "camera-zoom" },
   { title: "Детали, которые обычно теряются.", text: "Фактура ткани, капля воды, тонкая линия металла — резкость остаётся там, где вы её поставили.", slot: "camera-macro" },
 ];
 
