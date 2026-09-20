@@ -220,8 +220,9 @@
 @media (max-width: 760px) { .page [id] { scroll-margin-top: 180px; } }
 
 /* Final media treatment: full scene cards, controlled crops and calm black stages. */
-.mediaFrame { position: relative; overflow: hidden; isolation: isolate; background: #000; }
+.mediaFrame { position: relative; overflow: hidden; isolation: isolate; background: #000; transform: translateZ(0); }
 .editorialImage { display: block; opacity: 0; transition: opacity 600ms ease; }
+.editorialImage:not(.imageLoaded) { will-change: opacity; }
 .imageLoaded { opacity: 1; }
 @media (prefers-reduced-motion: reduce) {
   .editorialImage { transition: none; opacity: 1; }
@@ -301,8 +302,8 @@
 .cameraStory { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr); gap: clamp(48px, 7vw, 96px); margin-top: 96px; }
 .cameraSticky { position: relative; }
 .cameraStage { position: sticky; top: calc(50svh - min(34svh, 340px)); height: min(68svh, 680px); overflow: hidden; border-radius: clamp(26px, 3vw, 44px); background: #08080a; isolation: isolate; transform: translateZ(0); }
-.cameraSlide { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; opacity: 0; transform: scale(1.025); transition: opacity 700ms ease, transform 1100ms cubic-bezier(.16,1,.3,1); }
-.cameraSlideActive { opacity: 1; transform: scale(1); }
+.cameraSlide { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; opacity: 0; transform: scale(1.025) translateZ(0); will-change: opacity, transform; transition: opacity 700ms ease, transform 1100ms cubic-bezier(.16,1,.3,1); }
+.cameraSlideActive { opacity: 1; transform: scale(1) translateZ(0); }
 .cameraSlide .mediaFrame { width: 100%; height: 100%; aspect-ratio: auto; border-radius: inherit; }
 .cameraSlide .editorialImage { object-fit: cover !important; }
 .cameraGlow { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(125deg, rgba(255,255,255,.08), transparent 24%, transparent 72%, rgba(106,35,50,.14)); mix-blend-mode: screen; }

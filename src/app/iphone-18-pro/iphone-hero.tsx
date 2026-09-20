@@ -74,6 +74,7 @@ export function IPhoneHero() {
     if (motion.matches) return;
 
     let maxTranslate = 0;
+    let lastProgress = -1;
     let ticking = false;
 
     const measure = () => {
@@ -87,7 +88,12 @@ export function IPhoneHero() {
     };
     const update = () => {
       ticking = false;
-      const progress = Math.min(Math.max(-pin.getBoundingClientRect().top, 0), maxTranslate);
+      const rect = pin.getBoundingClientRect();
+      // Nothing to do while the section is far outside the viewport — skip the write.
+      if (rect.bottom < -200 || rect.top > innerHeight + 200) return;
+      const progress = Math.min(Math.max(-rect.top, 0), maxTranslate);
+      if (progress === lastProgress) return;
+      lastProgress = progress;
       rail.style.transform = `translate3d(${-progress}px, 0, 0)`;
     };
     const onScroll = () => {
@@ -128,12 +134,18 @@ export function IPhoneHero() {
           const siblings = frame.parentElement ? Array.from(frame.parentElement.children) : [];
           const index = siblings.indexOf(frame);
           const delay = innerWidth > 760 ? Math.max(0, index) * 90 : 0;
+          // A photo already fades in on its own once it loads (see ProductMedia) —
+          // fading the frame too would multiply two opacity ramps into a mushy,
+          // slower-looking reveal. Slide/scale the frame, let the photo's own
+          // fade carry the opacity.
+          const isMedia = frame.hasAttribute("data-media-id");
+          frame.style.willChange = "transform, opacity";
           const animation = frame.animate([
-            { opacity: 0, transform: `translate3d(0, ${innerWidth > 760 ? 72 : 32}px, 0) scale(.97)` },
+            { opacity: isMedia ? 1 : 0, transform: `translate3d(0, ${innerWidth > 760 ? 72 : 32}px, 0) scale(.97)` },
             { opacity: 1, transform: "translate3d(0, 0, 0) scale(1)" },
           ], { duration: 1200, delay, easing: "cubic-bezier(.16, 1, .3, 1)", fill: "backwards" });
           animations.add(animation);
-          animation.onfinish = () => animations.delete(animation);
+          animation.onfinish = () => { animations.delete(animation); frame.style.willChange = "auto"; };
         });
       }, { threshold: .08, rootMargin: "0px 0px -32px 0px" });
       root.querySelectorAll<HTMLElement>("[data-media-id], [data-reveal]").forEach(frame => {
