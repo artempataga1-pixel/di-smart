@@ -28,7 +28,6 @@ export function AppleWatchUltraPage() {
 
   return <div ref={root} className={styles.page}>
     <header className={styles.hero}>
-      <Image className={styles.heroPoster} src="/media/apple-watch-ultra-4/hero-poster.webp" alt="Apple Watch Ultra 4 в корпусе из натурального титана" fill priority sizes="100vw" />
       <AdaptiveHeroVideo
         poster="/media/apple-watch-ultra-4/hero-poster.webp"
         aria-label="Видео Apple Watch Ultra 4"

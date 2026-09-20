@@ -95,8 +95,8 @@
 .page .visible { opacity: 1; transform: none; }
 
 @media (max-width: 860px) {
-  .hero { height: calc(100svh - 64px); min-height: 590px; }
-  .heroPoster, .heroMedia video { object-position: 62% center; }
+  .hero { height: 55svh; min-height: 410px; }
+  .heroPoster, .heroMedia video { object-fit: contain; object-position: center; }
   .heroBuy { bottom: 24px; min-width: 104px; }
   .stats { grid-template-columns: 1fr; padding-block: 42px; gap: 28px; }
   .section { padding: 72px 20px; }

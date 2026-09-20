@@ -27,7 +27,6 @@ export function AirpodsProPage() {
 
   return <div ref={root} className={styles.page}>
     <header className={styles.hero}>
-      <Image className={styles.heroPoster} src="/media/airpods-pro-3/hero-poster.webp" alt="AirPods Pro 3 и зарядный футляр" fill priority sizes="100vw" />
       <AdaptiveHeroVideo
         poster="/media/airpods-pro-3/hero-poster.webp"
         aria-label="Видео AirPods Pro 3"

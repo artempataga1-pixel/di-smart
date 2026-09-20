@@ -33,7 +33,6 @@ export function GalaxyTabUltraPage() {
   return (
     <div ref={root} className={styles.page}>
       <header className={styles.hero}>
-        <Image className={styles.heroPoster} src="/media/galaxy-tab-s11-ultra/hero-poster.jpg" alt="Samsung Galaxy Tab S11 Ultra с S Pen" fill priority sizes="100vw" />
         <AdaptiveHeroVideo
           poster="/media/galaxy-tab-s11-ultra/hero-poster.jpg"
           aria-label="Видео Samsung Galaxy Tab S11 Ultra"

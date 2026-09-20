@@ -28,7 +28,7 @@ export function MacbookProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
 
   return <div ref={root} className={styles.page}>
     <header className={styles.hero}>
-      <Image className={styles.heroPoster} src="/media/macbook-pro-m5-max/hero-poster.webp" alt="MacBook Pro 16 дюймов M5 Max в цвете Space Black" fill priority sizes="100vw" />
+      {!hasHeroVideo && <Image className={styles.heroPoster} src="/media/macbook-pro-m5-max/hero-poster.webp" alt="MacBook Pro 16 дюймов M5 Max в цвете Space Black" fill priority sizes="100vw" />}
       {hasHeroVideo && <AdaptiveHeroVideo
         poster="/media/macbook-pro-m5-max/hero-poster.webp"
         aria-label="Видео MacBook Pro 16 дюймов M5 Max"

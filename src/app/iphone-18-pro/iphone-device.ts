@@ -27,7 +27,7 @@ export const iphoneConfig: DeviceConfig = {
   initialRotation: [0, Math.PI, 0],
   cameraDistance: 7.8,
   environmentIntensity: 0.85,
-  keyLight: { intensity: 6, width: 1.6, height: 1.2, position: [-0.8, 1.8, 1.5] },
+  keyLight: { intensity: 8, width: 1.6, height: 1.2, position: [-0.8, 1.8, 1.5] },
 
   async loadAssets(): Promise<DeviceAssets> {
     const loaded = await Promise.allSettled([
@@ -66,8 +66,8 @@ export const iphoneConfig: DeviceConfig = {
     // dimmer than Glacier/Silver (1, 2) — on phone screens that read as
     // "barely visible". Keep them moodier than the light finishes, but not
     // this dark.
-    keyLight.intensity = [6, 15, 14, 5.5][index] ?? 3.5;
-    scene.environmentIntensity = [0.65, 0.85, 0.85, 0.7][index] ?? baseEnvIntensity;
+    keyLight.intensity = [8, 15, 14, 7.5][index] ?? 3.5;
+    scene.environmentIntensity = [0.85, 0.9, 0.9, 0.88][index] ?? baseEnvIntensity;
   },
 
   refine(model) {

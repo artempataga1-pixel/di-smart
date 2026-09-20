@@ -65,7 +65,7 @@
 .page :is(.alpineCopy,.oceanCopy).visible { transform:translateY(-50%); }
 @media (max-width:800px) {
   .hero { height:56svh; min-height:420px; aspect-ratio:auto; }
-  .heroPoster,.hero video { object-fit:cover; object-position:center; }
+  .heroPoster,.hero video { object-fit:contain; object-position:center; }
   .manifesto,.finishSection,.intelligence,.endurance { padding-left:20px; padding-right:20px; }
   .manifesto { padding-top:95px; }
   .vitals { grid-template-columns:1fr; padding:20px 20px 90px; gap:28px; }

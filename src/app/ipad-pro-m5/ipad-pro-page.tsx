@@ -29,7 +29,7 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
   return <div ref={root} className={styles.page}>
     <header className={styles.hero}>
       <div className={styles.heroMedia}>
-        <Image className={styles.heroPoster} src="/media/ipad-pro-m5/hero-poster.webp" alt="iPad Pro 13 дюймов в цвете Space Black" fill priority sizes="100vw" />
+        {!hasHeroVideo && <Image className={styles.heroPoster} src="/media/ipad-pro-m5/hero-poster.webp" alt="iPad Pro 13 дюймов в цвете Space Black" fill priority sizes="100vw" />}
         {hasHeroVideo && <AdaptiveHeroVideo
           poster="/media/ipad-pro-m5/hero-poster.webp"
           aria-label="Видео iPad Pro 13 дюймов"

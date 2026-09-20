@@ -35,7 +35,6 @@ export function XiaomiBookProPage() {
   return (
     <div ref={root} className={styles.page}>
       <header className={styles.hero}>
-        <Image className={styles.heroPoster} src="/media/xiaomi-book-pro-14/hero-poster.jpg" alt="Xiaomi Book Pro 14" fill priority sizes="100vw" />
         <AdaptiveHeroVideo
           poster="/media/xiaomi-book-pro-14/hero-poster.jpg"
           aria-label="Видео Xiaomi Book Pro 14"

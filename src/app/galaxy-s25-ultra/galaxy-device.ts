@@ -60,7 +60,7 @@ export const galaxyConfig: DeviceConfig = {
 
   tuneLighting(index, keyLight, scene, baseEnvIntensity) {
     // black / titanium / blue — dark finishes want a stronger key to keep edges readable.
-    keyLight.intensity = [5, 4, 4.5][index] ?? 4;
-    scene.environmentIntensity = [0.7, 0.9, 0.85][index] ?? baseEnvIntensity;
+    keyLight.intensity = [7, 5.5, 6][index] ?? 4;
+    scene.environmentIntensity = [0.88, 0.95, 0.92][index] ?? baseEnvIntensity;
   },
 };

@@ -34,7 +34,6 @@ export function XiaomiUltraPage() {
   return (
     <div ref={root} className={styles.page}>
       <header className={styles.hero}>
-        <Image className={styles.heroPoster} src="/media/xiaomi-17-ultra/hero-poster.webp" alt="Белый Xiaomi 17 Ultra" fill priority sizes="100vw" />
         <AdaptiveHeroVideo
           poster="/media/xiaomi-17-ultra/hero-poster.webp"
           aria-label="Xiaomi 17 Ultra крупным планом"
