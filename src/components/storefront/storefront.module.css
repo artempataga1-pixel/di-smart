@@ -9,6 +9,7 @@ video.heroMedia { position: absolute; inset: 0; }
 .scrollCue:hover { background: rgba(255,255,255,.14); border-color: #fff; }
 .section { padding: 100px 12px 0; scroll-margin-top: 60px; }
 .heading { padding: 0 4% 36px; }
+.headingCentered { text-align: center; }
 .heading h2, .catalogCta h2 { font-size: clamp(32px, 3.6vw, 54px); line-height: 1.1; font-weight: 600; letter-spacing: -.04em; }
 .heading p { margin-top: 14px; color: #6e6e73; font-size: 19px; }
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }

@@ -34,7 +34,7 @@ export default async function HomePage() {
   return <>
     <HeroVideo {...media} />
     {flagships.length > 0 && <section id="highlights" className={styles.section} aria-labelledby="flagships">
-      <div className={styles.heading}><h2 id="flagships">Флагманы.</h2><p>Познакомьтесь поближе.</p></div>
+      <div className={`${styles.heading} ${styles.headingCentered}`}><h2 id="flagships">Флагманы</h2><p>Познакомьтесь поближе.</p></div>
       <FlagshipStories products={flagships} />
     </section>}
     <section id={flagships.length ? "categories" : "highlights"} className={styles.section} aria-labelledby="devices">
