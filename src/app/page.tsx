@@ -39,9 +39,9 @@ export default async function HomePage() {
     </section>}
     <section id={flagships.length ? "categories" : "highlights"} className={styles.section} aria-labelledby="devices">
       <HomeCategoryAnchor />
-      <div className={styles.heading}><h2 id="devices">Категории.</h2><p>Для работы. Для творчества. Для себя.</p></div>
+      <div className={`${styles.heading} ${styles.headingCentered}`}><h2 id="devices">Категории</h2><p>Для работы. Для творчества. Для себя.</p></div>
       <div className={styles.grid}>{categories.map(category => <PromoTile key={category.slug} category title={category.name} subtitle={CATEGORY_TAGLINES[category.slug] ?? "Все модели категории — с ценами и наличием."} image={category.image ?? category.products.find(product => product.image)?.image ?? null} href={`/catalog/${category.slug}`} />)}</div>
     </section>
-    <section className={styles.catalogCta}><h2>Весь каталог.</h2><p>Все устройства, конфигурации и актуальные цены в одном месте.</p><Link className={styles.primary} href="/catalog">Смотреть все устройства</Link></section>
+    <section className={styles.catalogCta}><h2>Весь каталог</h2><p>Все устройства, конфигурации и актуальные цены в одном месте.</p><Link className={styles.primary} href="/catalog">Смотреть все устройства</Link></section>
   </>;
 }
