@@ -12,11 +12,11 @@ export default function NotFound() {
       </span>
       <div className="flex flex-col gap-2">
         <h1 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-[var(--color-text)] md:text-3xl">
-          Страница не найдена
+          Такой страницы уже нет
         </h1>
         <p className="text-[var(--color-muted)]">
-          Возможно, товар закончился или ссылка устарела. Загляните в каталог — там точно
-          что-нибудь найдётся.
+          Скорее всего, товар раскупили и карточку убрали — или ссылка успела устареть.
+          В каталоге точно есть на что посмотреть.
         </p>
       </div>
       <PillCta href="/catalog">Перейти в каталог</PillCta>
