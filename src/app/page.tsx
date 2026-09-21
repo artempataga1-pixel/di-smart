@@ -33,15 +33,15 @@ export default async function HomePage() {
   });
   return <>
     <HeroVideo {...media} />
-    {flagships.length > 0 && <section id="highlights" className={styles.section} aria-labelledby="flagships">
-      <div className={`${styles.heading} ${styles.headingCentered}`}><h2 id="flagships">Флагманы</h2><p>Познакомьтесь поближе.</p></div>
-      <FlagshipStories products={flagships} />
-    </section>}
-    <section id={flagships.length ? "categories" : "highlights"} className={styles.section} aria-labelledby="devices">
+    <section id="categories" className={styles.section} aria-labelledby="devices">
       <HomeCategoryAnchor />
       <div className={`${styles.heading} ${styles.headingCentered}`}><h2 id="devices">Категории</h2><p>Для работы, творчества и для себя</p></div>
       <div className={styles.grid}>{categories.map(category => <PromoTile key={category.slug} category title={category.name} subtitle={CATEGORY_TAGLINES[category.slug] ?? "Все модели категории — с ценами и наличием."} image={category.image ?? category.products.find(product => product.image)?.image ?? null} href={`/catalog/${category.slug}`} />)}</div>
     </section>
     <section className={styles.catalogCta}><h2>Весь каталог</h2><p>Все устройства, конфигурации и актуальные цены в одном месте.</p><Link className={styles.primary} href="/catalog">Смотреть все устройства</Link></section>
+    {flagships.length > 0 && <section id="flagships" className={styles.section} aria-labelledby="flagships-heading">
+      <div className={`${styles.heading} ${styles.headingCentered}`}><h2 id="flagships-heading">Флагманы</h2><p>Познакомьтесь поближе.</p></div>
+      <FlagshipStories products={flagships} />
+    </section>}
   </>;
 }

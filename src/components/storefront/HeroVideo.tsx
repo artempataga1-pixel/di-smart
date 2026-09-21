@@ -63,8 +63,8 @@ export function HeroVideo({ video, poster }: { video: string; poster: string }) 
     <div className={styles.heroCopy}>
       <h1 className="sr-only">Di-SMART — интернет-магазин электроники</h1>
       <p className={styles.heroMessage}>Ваше следующее любимое устройство.</p>
-      <a href="#highlights" className={styles.scrollCue} onClick={(event) => {
-        const target = document.getElementById("highlights");
+      <a href="#categories" className={styles.scrollCue} onClick={(event) => {
+        const target = document.getElementById("categories");
         if (!target) return;
         event.preventDefault();
         target.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
