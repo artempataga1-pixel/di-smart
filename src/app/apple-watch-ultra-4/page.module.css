@@ -9,29 +9,9 @@
 .heroBuy { position:absolute; z-index:2; left:50%; bottom:clamp(20px,4vw,48px); transform:translateX(-50%); }
 .heroBuy:hover { transform:translateX(-50%) translateY(-1px); }
 .srOnly { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-.manifesto { max-width:1180px; margin:auto; padding:clamp(110px,13vw,190px) 40px 80px; }
-.manifesto>p:first-child,.heading>p:first-child,.enduranceTitle>p { margin-bottom:22px; color:#73777e; font-size:17px; }
-.manifesto h2 { max-width:1100px; font-size:clamp(66px,10.2vw,148px); font-weight:690; }
-.manifestoLead { max-width:760px; margin-top:40px; color:var(--muted); font-size:clamp(20px,2.3vw,29px); line-height:1.45; }
-.vitals { max-width:1180px; margin:auto; padding:30px 40px 135px; display:grid; grid-template-columns:repeat(3,1fr); gap:34px; }
-.vitals div { padding-top:25px; border-top:1px solid #dfe1e4; }
-.vitals strong { display:block; font-size:clamp(36px,4.6vw,62px); letter-spacing:-.06em; }
-.vitals span { display:block; margin-top:12px; color:var(--muted); line-height:1.45; }
-.finishSection,.intelligence { max-width:1280px; margin:auto; padding:clamp(85px,9vw,130px) 40px; }
+.heading>p:first-child,.enduranceTitle>p { margin-bottom:22px; color:#73777e; font-size:17px; }
+.intelligence { max-width:1280px; margin:auto; padding:clamp(85px,9vw,130px) 40px; }
 .heading h2,.enduranceTitle h2 { max-width:1040px; font-size:clamp(54px,7.5vw,102px); font-weight:680; }
-.lead { max-width:760px; margin-top:30px; color:var(--muted); font-size:clamp(18px,2vw,24px); line-height:1.52; }
-.finishPicker { width:min(100%,1120px); margin:56px auto 0; border:1px solid #e7e8eb; border-radius:40px; background:#f4f5f6; overflow:hidden; box-shadow:0 32px 100px #18263f12; }
-.finishStage { position:relative; aspect-ratio:16/10; overflow:hidden; }
-.finishImage,.finishActive { object-fit:cover; transition:opacity .25s cubic-bezier(.2,.7,.2,1),transform .25s cubic-bezier(.16,1,.3,1); }
-.finishImage { opacity:0; transform:scale(1.015); }
-.finishActive { opacity:1; transform:scale(1); }
-.finishName { position:absolute; left:26px; bottom:23px; z-index:2; padding:9px 13px; border-radius:999px; background:#ffffffe0; color:#35373b; font-size:12px; font-weight:700; backdrop-filter:blur(14px); }
-.finishControls { min-height:96px; padding:18px 27px; display:flex; justify-content:space-between; align-items:center; gap:30px; background:#fff; border-top:1px solid #e9ebee; }
-.finishControls strong,.finishControls span { display:block; }
-.finishControls span { margin-top:5px; color:var(--muted); font-size:12px; }
-.swatches { display:flex; gap:16px; }
-.swatches button { width:36px; height:36px; border-radius:50%; border:5px solid #fff; box-shadow:0 0 0 1px #b9bdc4; }
-.swatches button[aria-checked="true"] { box-shadow:0 0 0 2px var(--orange),0 0 0 5px #fff; }
 .alpine,.ocean { position:relative; min-height:min(830px,88svh); margin:90px 22px; border-radius:46px; overflow:hidden; isolation:isolate; background:#17202b; color:#fff; }
 .alpine>img,.ocean>img { object-fit:cover; }
 .alpine::after,.ocean::after { content:""; position:absolute; inset:0; z-index:0; background:linear-gradient(90deg,#061120b8 0%,#06112036 43%,transparent 67%); }
@@ -66,12 +46,7 @@
 @media (max-width:800px) {
   .hero { height:56svh; min-height:420px; aspect-ratio:auto; }
   .heroPoster,.hero video { object-fit:contain; object-position:center; }
-  .manifesto,.finishSection,.intelligence,.endurance { padding-left:20px; padding-right:20px; }
-  .manifesto { padding-top:95px; }
-  .vitals { grid-template-columns:1fr; padding:20px 20px 90px; gap:28px; }
-  .finishPicker { margin-top:38px; border-radius:27px; }
-  .finishStage { aspect-ratio:1/1; }
-  .finishControls { padding:16px 18px; }
+  .intelligence,.endurance { padding-left:20px; padding-right:20px; }
   .alpine,.ocean { min-height:700px; margin:52px 10px; border-radius:30px; }
   .alpine>img { object-position:64% center; }
   .ocean>img { object-position:38% center; }
@@ -84,4 +59,4 @@
   .intelligenceGrid article { min-height:310px; padding:30px; }
   .footnote { padding:34px 20px 48px; }
 }
-@media (prefers-reduced-motion:reduce) { .page [data-reveal] { opacity:1; transform:none; transition:none; } .finishImage,.finishActive { transition:none; } }
+@media (prefers-reduced-motion:reduce) { .page [data-reveal] { opacity:1; transform:none; transition:none; } }

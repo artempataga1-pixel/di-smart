@@ -1,16 +1,32 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, BatteryCharging, HeartPulse, LocateFixed, Satellite, Waves } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
-import { FinishPicker } from "./finish-picker";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
+import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
+import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { scrollToId } from "@/lib/scroll";
+import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-const buyHref = "/product/apple-watch-ultra-4";
+function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
+  return (
+    <a
+      className={className}
+      href="#buy"
+      onClick={(event) => {
+        event.preventDefault();
+        scrollToId("buy");
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
-export function AppleWatchUltraPage() {
+export function AppleWatchUltraPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -37,28 +53,19 @@ export function AppleWatchUltraPage() {
         ]}
       />
       <h1 className={styles.srOnly}>Apple Watch Ultra 4</h1>
-      <Link className={`${styles.buy} ${styles.heroBuy}`} href={buyHref}>Купить</Link>
+      <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
     </header>
 
-    <section className={styles.manifesto}>
-      <p data-reveal>Apple Watch Ultra 4</p>
-      <h2 data-reveal>Дальше, чем обычно.<br />Дольше, чем ожидаете.</h2>
-      <p className={styles.manifestoLead} data-reveal>Титановый корпус, точная навигация и самый большой запас энергии среди всех Apple Watch. День с Ultra 4 не заканчивается за порогом офиса — если у вас были другие планы.</p>
-    </section>
-
-    <section className={styles.vitals} aria-label="Ключевые характеристики">
-      <div data-reveal><strong>50 часов</strong><span>работы в обычном режиме</span></div>
-      <div data-reveal><strong>49 мм</strong><span>титан Grade 5, цельный корпус</span></div>
-      <div data-reveal><strong>40 метров</strong><span>рекреационных погружений с WR100</span></div>
-    </section>
-
-    <section className={styles.finishSection}>
-      <div className={styles.heading} data-reveal>
-        <p>Два покрытия</p>
-        <h2>Характер один.<br />Оттенков — два.</h2>
-        <p className={styles.lead}>Натуральный титан не прячет текстуру металла — она видна на свету. Чёрное DLC-покрытие, наоборот, собирает корпус в единый плотный силуэт.</p>
+    <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+      <div className="mx-auto max-w-6xl">
+        <ProductPurchasePanel product={product} />
       </div>
-      <FinishPicker />
+    </section>
+
+    <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+      <div className="mx-auto max-w-6xl">
+        <ProductSpecsTable specs={product.specs} description={product.description} />
+      </div>
     </section>
 
     <section className={styles.alpine}>
@@ -109,7 +116,13 @@ export function AppleWatchUltraPage() {
     <section className={styles.closing}>
       <p>Apple Watch Ultra 4</p>
       <h2>Следующая точка<br />уже на карте.</h2>
-      <Link className={styles.buy} href={buyHref}>Выбрать Apple Watch Ultra 4 <ArrowUpRight size={18} /></Link>
+      <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
+    </section>
+
+    <section className="bg-white px-4 pb-20 md:px-6">
+      <div className="mx-auto max-w-6xl">
+        <RelatedProducts products={related} />
+      </div>
     </section>
 
     <footer className={styles.footnote}>

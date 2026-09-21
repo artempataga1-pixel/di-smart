@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
 import { AppleWatchUltraPage } from "./apple-watch-ultra-page";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Apple Watch Ultra 4 — Di-SMART",
@@ -12,6 +16,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
-  return <AppleWatchUltraPage />;
+export default async function Page() {
+  const product = await getProductDetailBySlug("apple-watch-ultra-4");
+  if (!product) notFound();
+  const related = await getRelatedProducts(product.categorySlug, product.id);
+  return <AppleWatchUltraPage product={product} related={related} />;
 }
