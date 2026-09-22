@@ -1,16 +1,40 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, Pencil, Sparkles, Zap } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
-import { IpadViewer } from "./ipad-viewer";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
+import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
+import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { scrollToId } from "@/lib/scroll";
+import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-const productHref = "/product/ipad-pro-13";
+function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
+  return (
+    <a
+      className={className}
+      href="#buy"
+      onClick={(event) => {
+        event.preventDefault();
+        scrollToId("buy");
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
-export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
+export function IpadProPage({
+  hasHeroVideo,
+  product,
+  related,
+}: {
+  hasHeroVideo: boolean;
+  product: ProductDetail;
+  related: CatalogCardData[];
+}) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -38,17 +62,23 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
       </div>
       <div className={styles.heroAction}>
         <h1 className={styles.srOnly}>iPad Pro 13″ с чипом M5</h1>
-        <Link className={`${styles.buy} ${styles.heroBuy}`} href={productHref}>Купить</Link>
+        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
       </div>
     </header>
 
-    <section className={styles.stats} aria-label="Главные характеристики">
-      <div><strong>5,1 мм</strong><span>толщина корпуса</span></div>
-      <div><strong>M5</strong><span>чип нового поколения</span></div>
-      <div><strong>13″</strong><span>Ultra Retina XDR</span></div>
+    <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+      <div className="mx-auto max-w-6xl">
+        <ProductPurchasePanel product={product} />
+      </div>
     </section>
 
-    <section id="design" className={styles.section}>
+    <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+      <div className="mx-auto max-w-6xl">
+        <ProductSpecsTable specs={product.specs} description={product.description} />
+      </div>
+    </section>
+
+    <section className={styles.section}>
       <div className={styles.heading} data-reveal>
         <p>Дизайн</p>
         <h2>Тоньше,<br />чем кажется на фото.</h2>
@@ -60,16 +90,7 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
       </figure>
     </section>
 
-    <section className={`${styles.section} ${styles.viewerSection}`}>
-      <div className={styles.heading} data-reveal>
-        <p>Два точных оттенка</p>
-        <h2>Крутите,<br />пока не разглядите.</h2>
-        <p className={styles.lead}>Silver ловит свет мягко, почти незаметно. Space Black выглядит глубже и строже — совсем другой характер. Переключайте оттенки прямо на экране и сравнивайте фактуру корпуса в одном ракурсе.</p>
-      </div>
-      <IpadViewer />
-    </section>
-
-    <section id="display" className={`${styles.section} ${styles.darkSection}`}>
+    <section className={`${styles.section} ${styles.darkSection}`}>
       <div className={styles.heading} data-reveal>
         <p>Ultra Retina XDR</p>
         <h2>Чёрный здесь —<br />действительно чёрный.</h2>
@@ -85,7 +106,7 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
       </dl>
     </section>
 
-    <section id="performance" className={`${styles.section} ${styles.performance}`}>
+    <section className={`${styles.section} ${styles.performance}`}>
       <div className={styles.performanceCopy} data-reveal>
         <p>Производительность</p>
         <h2>M5.<br />Идея не успевает остыть.</h2>
@@ -115,8 +136,13 @@ export function IpadProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
     <section className={styles.closing}>
       <p>iPad Pro 13″ · M5</p>
       <h2>Полотно теперь больше — рисуйте смелее.</h2>
-      <Link className={styles.buy} href={productHref}>Выбрать iPad Pro <ArrowUpRight size={18} /></Link>
-      <Link className={styles.categoryLink} href="/catalog/ipad">Смотреть все модели iPad</Link>
+      <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
+    </section>
+
+    <section className="bg-white px-4 pb-20 md:px-6">
+      <div className="mx-auto max-w-6xl">
+        <RelatedProducts products={related} />
+      </div>
     </section>
 
     <footer className={styles.footnote}>

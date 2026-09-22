@@ -1,21 +1,33 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { ArrowUpRight, BatteryCharging, MonitorUp, PenTool, ShieldCheck, Wifi } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
+import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
+import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { scrollToId } from "@/lib/scroll";
+import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-const buyHref = "/product/galaxy-tab-s11-ultra";
-const finishes = [
-  { id: "gray", name: "Серый", image: "/media/galaxy-tab-s11-ultra/design-gray.jpg" },
-  { id: "silver", name: "Серебристый", image: "/media/galaxy-tab-s11-ultra/design-silver.jpg" },
-] as const;
+function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
+  return (
+    <a
+      className={className}
+      href="#buy"
+      onClick={(event) => {
+        event.preventDefault();
+        scrollToId("buy");
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
-export function GalaxyTabUltraPage() {
+export function GalaxyTabUltraPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
   const root = useRef<HTMLDivElement>(null);
-  const [finish, setFinish] = useState<(typeof finishes)[number]>(finishes[0]);
 
   useEffect(() => {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -43,61 +55,22 @@ export function GalaxyTabUltraPage() {
           }}
         />
         <h1 className={styles.srOnly}>Samsung Galaxy Tab S11 Ultra</h1>
-        <Link className={`${styles.buy} ${styles.heroBuy}`} href={buyHref}>Купить</Link>
+        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
       </header>
 
+      <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+        <div className="mx-auto max-w-6xl">
+          <ProductPurchasePanel product={product} />
+        </div>
+      </section>
+
+      <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+        <div className="mx-auto max-w-6xl">
+          <ProductSpecsTable specs={product.specs} description={product.description} />
+        </div>
+      </section>
+
       <main>
-        <section className={styles.intro}>
-          <p className={styles.kicker} data-reveal>Galaxy Tab S11 Ultra</p>
-          <h2 data-reveal>14,6 дюйма.<br />И всё по делу.</h2>
-          <p className={styles.lead} data-reveal>Один экран на всё: идея, эскиз, монтаж, финальный кадр. У самого крупного Galaxy Tab при этом тонкий корпус, точный S Pen в комплекте и DeX — настоящий рабочий стол, когда он понадобится.</p>
-        </section>
-
-        <section className={styles.metrics} aria-label="Основные характеристики">
-          <article data-reveal><strong>14,6″</strong><span>Dynamic AMOLED 2X</span></article>
-          <article data-reveal><strong>5,1 мм</strong><span>толщина корпуса</span></article>
-          <article data-reveal><strong>692 г</strong><span>вес планшета</span></article>
-        </section>
-
-        <section className={styles.designSection}>
-          <div className={styles.copy} data-reveal>
-            <p className={styles.kicker}>Тоньше — и всё равно крепкий.</p>
-            <h2>Почти пропадает<br />в профиле.</h2>
-            <p>Armor Aluminum остался прочным, а корпус вокруг него стал тоньше и легче. Камеры выстроились в одну чистую линию, а новый S Pen ложится в руку как обычный карандаш — только точнее.</p>
-          </div>
-          <figure className={styles.designImage} data-reveal>
-            {finishes.map((item) => (
-              <Image
-                key={item.id}
-                src={item.image}
-                alt={`Samsung Galaxy Tab S11 Ultra, цвет ${item.name}`}
-                fill
-                sizes="(max-width: 900px) 100vw, 58vw"
-                aria-hidden={finish.id !== item.id}
-                className={`${styles.colorVariant} ${finish.id === item.id ? styles.colorVariantActive : ""}`}
-              />
-            ))}
-            <figcaption className={styles.finishPicker}>
-              <p>Цвет: <strong>{finish.name}</strong></p>
-              <div role="radiogroup" aria-label="Выберите цвет Galaxy Tab S11 Ultra">
-                {finishes.map((item) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    role="radio"
-                    aria-checked={finish.id === item.id}
-                    aria-label={`Цвет ${item.name}`}
-                    onClick={() => setFinish(item)}
-                  >
-                    <i className={styles[item.id]} />
-                    <span>{item.name}</span>
-                  </button>
-                ))}
-              </div>
-            </figcaption>
-          </figure>
-        </section>
-
         <section className={styles.displaySection}>
           <div className={styles.displayCopy} data-reveal>
             <span>2960 × 1848</span>
@@ -140,9 +113,15 @@ export function GalaxyTabUltraPage() {
         <section className={styles.closing}>
           <p>Samsung Galaxy Tab S11 Ultra</p>
           <h2>Экран больше.<br />И места для вас — тоже.</h2>
-          <Link className={styles.buy} href={buyHref}>Выбрать Galaxy Tab S11 Ultra <ArrowUpRight size={18} /></Link>
+          <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
         </section>
       </main>
+
+      <section className="bg-white px-4 pb-20 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <RelatedProducts products={related} />
+        </div>
+      </section>
 
       <footer className={styles.footnote}>
         <p>Изображения на странице сделаны с помощью ИИ — чтобы показать устройство и сценарии его использования. Интерфейс, аксессуары и отдельные детали в реальности могут отличаться.</p>

@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { access } from "node:fs/promises";
 import path from "node:path";
+import { notFound } from "next/navigation";
+import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
 import { MacbookProPage } from "./macbook-pro-page";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "MacBook Pro 16″ M5 Max — Di-SMART",
@@ -22,5 +26,10 @@ export default async function Page() {
   } catch {
     // Poster stays in place until the final hero film is supplied.
   }
-  return <MacbookProPage hasHeroVideo={hasHeroVideo} />;
+
+  const product = await getProductDetailBySlug("macbook-pro-16-m5-max");
+  if (!product) notFound();
+  const related = await getRelatedProducts(product.categorySlug, product.id);
+
+  return <MacbookProPage product={product} related={related} hasHeroVideo={hasHeroVideo} />;
 }

@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
 import { GalaxyTabUltraPage } from "./galaxy-tab-ultra-page";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Samsung Galaxy Tab S11 Ultra — пространство для большого",
@@ -11,6 +15,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
-  return <GalaxyTabUltraPage />;
+export default async function Page() {
+  const product = await getProductDetailBySlug("galaxy-tab-s11-ultra");
+  if (!product) notFound();
+  const related = await getRelatedProducts(product.categorySlug, product.id);
+  return <GalaxyTabUltraPage product={product} related={related} />;
 }

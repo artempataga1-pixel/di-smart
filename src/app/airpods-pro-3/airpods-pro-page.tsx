@@ -1,15 +1,32 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { Activity, ArrowUpRight, BatteryCharging, Languages, ShieldCheck, Volume2 } from "lucide-react";
+import { Activity, ArrowUpRight, BatteryCharging, Volume2 } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
+import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
+import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { scrollToId } from "@/lib/scroll";
+import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-const buyHref = "/product/airpods-pro-3";
+function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
+  return (
+    <a
+      className={className}
+      href="#buy"
+      onClick={(event) => {
+        event.preventDefault();
+        scrollToId("buy");
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
-export function AirpodsProPage() {
+export function AirpodsProPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,19 +53,19 @@ export function AirpodsProPage() {
         ]}
       />
       <h1 className={styles.srOnly}>AirPods Pro 3</h1>
-      <Link className={`${styles.buy} ${styles.heroBuy}`} href={buyHref}>Купить</Link>
+      <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
     </header>
 
-    <section className={styles.intro}>
-      <p data-reveal>AirPods Pro 3</p>
-      <h2 data-reveal>Шум — снаружи.<br />Музыка — с вами.</h2>
-      <p className={styles.introLead} data-reveal>Акустику пересобрали заново: тишина стала глубже, сцена — шире, а голос собеседника звучит будто рядом. И ещё одна новинка — AirPods Pro 3 впервые считают пульс прямо во время тренировки.</p>
+    <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+      <div className="mx-auto max-w-6xl">
+        <ProductPurchasePanel product={product} />
+      </div>
     </section>
 
-    <section className={styles.metrics} aria-label="Ключевые характеристики">
-      <div data-reveal><strong>до 2×</strong><span>тише благодаря новому шумоподавлению</span></div>
-      <div data-reveal><strong>8 часов</strong><span>музыки при включённом ANC</span></div>
-      <div data-reveal><strong>IP57</strong><span>не боятся пыли, пота и воды</span></div>
+    <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+      <div className="mx-auto max-w-6xl">
+        <ProductSpecsTable specs={product.specs} description={product.description} />
+      </div>
     </section>
 
     <section className={styles.design}>
@@ -71,12 +88,6 @@ export function AirpodsProPage() {
       <figure className={styles.lifestyleImage}><Image src="/media/airpods-pro-3/silence-natural.webp" alt="Мужчина слушает музыку в AirPods Pro 3 вечером на улице" fill sizes="(max-width: 850px) 100vw, 58vw" /></figure>
     </section>
 
-    <section className={styles.sound}>
-      <div className={styles.soundTitle} data-reveal><p>Персонализированный звук</p><h2>Куда голова —<br />туда и сцена.</h2></div>
-      <div className={styles.orbit} aria-hidden="true"><span /><span /><span /><i>H2</i></div>
-      <p className={styles.soundCopy} data-reveal>Адаптивный эквалайзер подстраивает звук под то, как наушники сидят именно у вас в ушах. Персональное пространственное аудио с отслеживанием положения головы держит сцену на месте — даже если вы повернулись к собеседнику.</p>
-    </section>
-
     <section className={styles.fitness}>
       <div className={styles.fitnessCopy} data-reveal>
         <Activity size={30} />
@@ -85,11 +96,6 @@ export function AirpodsProPage() {
         <span>Инфракрасный датчик снимает пульс прямо во время тренировки, без дополнительных ремней и часов. Fitness собирает всё в одном месте: больше 50 видов активности, калории, кольцо подвижности.</span>
       </div>
       <figure className={styles.lifestyleImage}><Image src="/media/airpods-pro-3/fitness-natural.webp" alt="Бегунья тренируется в AirPods Pro 3 у набережной" fill sizes="(max-width: 850px) 100vw, 58vw" /></figure>
-    </section>
-
-    <section className={styles.smartGrid}>
-      <article data-reveal><Languages size={30} /><h3>Перевод, а не пауза</h3><p>Live Translation переводит речь собеседника прямо в наушниках, так что разговор не превращается в переписку с телефоном в руках. Набор языков и стран пока ограничен и зависит от устройства.</p></article>
-      <article data-reveal><ShieldCheck size={30} /><h3>Слух под присмотром</h3><p>Защита слуха автоматически приглушает слишком громкий шум вокруг, а встроенная проверка слуха показывает, как вы слышите на самом деле.</p></article>
     </section>
 
     <section className={styles.charging}>
@@ -105,7 +111,13 @@ export function AirpodsProPage() {
     <section className={styles.closing}>
       <p>AirPods Pro 3</p>
       <h2>Тишина.<br />Ровно та, что нужна.</h2>
-      <Link className={styles.buy} href={buyHref}>Выбрать AirPods Pro 3 <ArrowUpRight size={18} /></Link>
+      <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
+    </section>
+
+    <section className="bg-white px-4 pb-20 md:px-6">
+      <div className="mx-auto max-w-6xl">
+        <RelatedProducts products={related} />
+      </div>
     </section>
 
     <footer className={styles.footnote}>

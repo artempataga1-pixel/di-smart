@@ -1,22 +1,33 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Aperture, ArrowUpRight, BatteryCharging, Cpu, Focus, ScanLine } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
+import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
+import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { scrollToId } from "@/lib/scroll";
+import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-const buyHref = "/product/xiaomi-17-ultra";
-const finishes = [
-  { id: "black", name: "Black", image: "/media/xiaomi-17-ultra/color-black.jpg" },
-  { id: "white", name: "White", image: "/media/xiaomi-17-ultra/color-white.jpg" },
-  { id: "green", name: "Starlit Green", image: "/media/xiaomi-17-ultra/color-green.jpg" },
-] as const;
+function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
+  return (
+    <a
+      className={className}
+      href="#buy"
+      onClick={(event) => {
+        event.preventDefault();
+        scrollToId("buy");
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
-export function XiaomiUltraPage() {
+export function XiaomiUltraPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
   const root = useRef<HTMLDivElement>(null);
-  const [finish, setFinish] = useState<(typeof finishes)[number]>(finishes[1]);
 
   useEffect(() => {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -47,22 +58,22 @@ export function XiaomiUltraPage() {
           }}
         />
         <h1 className={styles.srOnly}>Xiaomi 17 Ultra</h1>
-        <Link className={`${styles.buy} ${styles.heroBuy}`} href={buyHref}>Купить</Link>
+        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
       </header>
 
+      <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+        <div className="mx-auto max-w-6xl">
+          <ProductPurchasePanel product={product} />
+        </div>
+      </section>
+
+      <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+        <div className="mx-auto max-w-6xl">
+          <ProductSpecsTable specs={product.specs} description={product.description} />
+        </div>
+      </section>
+
       <main>
-        <section className={styles.intro}>
-          <p className={styles.eyebrow} data-reveal>Xiaomi 17 Ultra · Leica</p>
-          <h2 data-reveal>Свет. Фокус.<br />Дальше — история.</h2>
-          <p className={styles.introLead} data-reveal>Камера, которая успевает поймать сцену за миг до того, как она исчезнет. Оптика Leica, крупный сенсор и оптический зум — настоящий, не программный — умещаются в корпусе, который удобно держать в руке.</p>
-        </section>
-
-        <section className={styles.metrics} aria-label="Ключевые характеристики камеры">
-          <article data-reveal><strong>1″</strong><span>сенсор основной камеры Leica</span></article>
-          <article data-reveal><strong>200 Мп</strong><span>телекамера с крупным сенсором</span></article>
-          <article data-reveal><strong>75–100 мм</strong><span>непрерывный оптический зум</span></article>
-        </section>
-
         <section className={styles.cameraSection}>
           <div className={styles.sectionCopy} data-reveal>
             <Aperture size={28} />
@@ -88,56 +99,6 @@ export function XiaomiUltraPage() {
             <span><b>100</b> мм<small>телефото</small></span>
           </div>
           <p className={styles.focalText} data-reveal>200-мегапиксельный телемодуль Leica и правда двигает линзы — фокусное расстояние меняется физически, от 75 до 100 мм. Поэтому кадр остаётся оптическим, а перспектива — такой же, как видит глаз.</p>
-        </section>
-
-        <section className={styles.storyCard}>
-          <figure className={styles.storyImage}>
-            <Image src="/media/xiaomi-17-ultra/night-real.jpg" alt="Вечерний город, снятый на белый Xiaomi 17 Ultra" fill sizes="(max-width: 900px) 100vw, 1280px" />
-          </figure>
-          <div className={styles.storyCopy} data-reveal>
-            <p className={styles.eyebrow}>Ночь без постановки</p>
-            <h2>Свет как есть.<br />Момент как был.</h2>
-            <p>LOFIC HDR держит в одном кадре огни города, отражения и лицо человека — без пересвеченного неба и плоских теней.</p>
-          </div>
-        </section>
-
-        <section className={styles.colorsSection}>
-          <div className={styles.colorsHead} data-reveal>
-            <p className={styles.eyebrow}>Три характера</p>
-            <h2>Цвет задаёт тон.</h2>
-            <p>Чёрный, белый, Starlit Green. Матовая поверхность гасит блики, а металлическое кольцо вокруг камер держит взгляд на объективах.</p>
-          </div>
-          <figure className={styles.colorsImage} data-reveal>
-            {finishes.map((item) => (
-              <Image
-                key={item.id}
-                src={item.image}
-                alt={`Xiaomi 17 Ultra в цвете ${item.name}`}
-                fill
-                sizes="(max-width: 900px) 100vw, 850px"
-                aria-hidden={finish.id !== item.id}
-                className={`${styles.colorVariant} ${finish.id === item.id ? styles.colorVariantActive : ""}`}
-              />
-            ))}
-            <figcaption className={styles.colorControls}>
-              <p className={styles.selectedFinish}>Цвет: <strong>{finish.name}</strong></p>
-              <div className={styles.swatches} role="radiogroup" aria-label="Выберите цвет корпуса">
-                {finishes.map((item) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    role="radio"
-                    aria-checked={finish.id === item.id}
-                    aria-label={`Цвет ${item.name}`}
-                    onClick={() => setFinish(item)}
-                  >
-                    <i className={styles[item.id]} />
-                    <span>{item.name}</span>
-                  </button>
-                ))}
-              </div>
-            </figcaption>
-          </figure>
         </section>
 
         <section className={styles.displaySection}>
@@ -166,9 +127,15 @@ export function XiaomiUltraPage() {
         <section className={styles.closing}>
           <p>Xiaomi 17 Ultra</p>
           <h2>Ваша история.<br />В полном свете.</h2>
-          <Link className={styles.buy} href={buyHref}>Выбрать Xiaomi 17 Ultra <ArrowUpRight size={18} /></Link>
+          <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
         </section>
       </main>
+
+      <section className="bg-white px-4 pb-20 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <RelatedProducts products={related} />
+        </div>
+      </section>
 
       <footer className={styles.footnote}>
         <p>Изображения на странице сгенерированы нейросетью и служат для визуальной презентации устройства — некоторые детали и интерфейс могут немного отличаться от реальных.</p>

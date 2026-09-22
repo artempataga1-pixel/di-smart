@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
 import { XiaomiUltraPage } from "./xiaomi-ultra-page";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Xiaomi 17 Ultra — флагманская камера Leica",
@@ -11,6 +15,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
-  return <XiaomiUltraPage />;
+export default async function Page() {
+  const product = await getProductDetailBySlug("xiaomi-17-ultra");
+  if (!product) notFound();
+  const related = await getRelatedProducts(product.categorySlug, product.id);
+  return <XiaomiUltraPage product={product} related={related} />;
 }

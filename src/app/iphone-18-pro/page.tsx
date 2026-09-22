@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
 import { IPhoneHero } from "./iphone-hero";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "iPhone 18 Pro — Di-SMART",
@@ -11,6 +15,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function IPhone18ProPage() {
-  return <IPhoneHero />;
+export default async function IPhone18ProPage() {
+  const product = await getProductDetailBySlug("iphone-18-pro");
+  if (!product) notFound();
+  const related = await getRelatedProducts(product.categorySlug, product.id);
+  return <IPhoneHero product={product} related={related} />;
 }

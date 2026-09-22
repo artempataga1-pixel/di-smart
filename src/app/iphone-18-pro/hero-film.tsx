@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
+import { scrollToId } from "@/lib/scroll";
 import styles from "./hero-film.module.css";
 
 const media = "/media/iphone-18-pro";
@@ -30,8 +30,17 @@ export function HeroFilm() {
         />
       </div>
       <div className={styles.controls}>
-        <a href="#highlights">Рассмотреть ближе <ArrowDown size={16} aria-hidden="true" /></a>
-        <Link href="/product/iphone-18-pro" className={styles.buyCta}>Выбрать iPhone <ArrowRight size={15} aria-hidden="true" /></Link>
+        <a href="#design" onClick={(event) => { event.preventDefault(); scrollToId("design"); }}>Рассмотреть ближе <ArrowDown size={16} aria-hidden="true" /></a>
+        <a
+          href="#buy"
+          className={styles.buyCta}
+          onClick={(event) => {
+            event.preventDefault();
+            scrollToId("buy");
+          }}
+        >
+          Выбрать iPhone <ArrowRight size={15} aria-hidden="true" />
+        </a>
         {failed && <p role="status">Видео не загрузилось</p>}
       </div>
     </section>

@@ -1,16 +1,32 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, BatteryCharging, Cpu, Database, Film } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
-import { FinishPicker } from "./finish-picker";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
+import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
+import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { scrollToId } from "@/lib/scroll";
+import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-const buyHref = "/product/macbook-pro-16-m5-max";
+function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
+  return (
+    <a
+      className={className}
+      href="#buy"
+      onClick={(event) => {
+        event.preventDefault();
+        scrollToId("buy");
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
-export function MacbookProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
+export function MacbookProPage({ product, related, hasHeroVideo }: { product: ProductDetail; related: CatalogCardData[]; hasHeroVideo: boolean }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,19 +51,19 @@ export function MacbookProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
         sources={[{ src: "/media/macbook-pro-m5-max/hero.mp4", type: "video/mp4" }]}
       />}
       <h1 className={styles.srOnly}>MacBook Pro 16″ с M5 Max</h1>
-      <Link className={`${styles.button} ${styles.heroButton}`} href={buyHref}>Купить</Link>
+      <BuyAnchor className={`${styles.button} ${styles.heroButton}`}>Выбрать конфигурацию</BuyAnchor>
     </header>
 
-    <section className={styles.intro}>
-      <p data-reveal>MacBook Pro 16″ · M5 Max</p>
-      <h2 data-reveal>Большие проекты.<br /><span>Без мелкого шрифта.</span></h2>
-      <p className={styles.introLead} data-reveal>Монтажная шкала, код, 3D-сцена и локальные AI-модели получают экран и мощность, которых им давно не хватало.</p>
+    <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+      <div className="mx-auto max-w-6xl">
+        <ProductPurchasePanel product={product} />
+      </div>
     </section>
 
-    <section className={styles.metrics} aria-label="Главные характеристики">
-      <div data-reveal><strong>614 ГБ/с</strong><span>пропускная способность памяти</span></div>
-      <div data-reveal><strong>до 128 ГБ</strong><span>объединённой памяти</span></div>
-      <div data-reveal><strong>до 8 ТБ</strong><span>SSD для больших проектов</span></div>
+    <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+      <div className="mx-auto max-w-6xl">
+        <ProductSpecsTable specs={product.specs} description={product.description} />
+      </div>
     </section>
 
     <section className={styles.section}>
@@ -93,15 +109,6 @@ export function MacbookProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
       </div>
     </section>
 
-    <section className={`${styles.section} ${styles.finishSection}`}>
-      <div className={styles.heading} data-reveal>
-        <p>Два профессиональных оттенка</p>
-        <h2>Выберите свой<br />рабочий свет.</h2>
-        <p className={styles.lead}>Space Black уходит в глубокий графит. Silver подчёркивает геометрию корпуса. Композиция не меняется — сравнивайте именно материал.</p>
-      </div>
-      <FinishPicker />
-    </section>
-
     <section className={styles.battery}>
       <BatteryCharging size={34} />
       <p>До 22 часов воспроизведения видео</p>
@@ -112,7 +119,13 @@ export function MacbookProPage({ hasHeroVideo }: { hasHeroVideo: boolean }) {
     <section className={styles.closing}>
       <p>MacBook Pro 16″ · M5 Max</p>
       <h2>Большая работа.<br />Теперь мобильная.</h2>
-      <Link className={styles.button} href={buyHref}>Выбрать конфигурацию <ArrowUpRight size={18} /></Link>
+      <BuyAnchor className={styles.button}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
+    </section>
+
+    <section className="bg-white px-4 pb-20 md:px-6">
+      <div className="mx-auto max-w-6xl">
+        <RelatedProducts products={related} />
+      </div>
     </section>
 
     <footer className={styles.footnote}>

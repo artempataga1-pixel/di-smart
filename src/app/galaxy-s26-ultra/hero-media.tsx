@@ -1,8 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { AdaptiveHeroVideo } from '@/components/media/AdaptiveHeroVideo';
+import { scrollToId } from '@/lib/scroll';
 import styles from './page.module.css';
 
 // The supplied hero film plays independently of page scrolling.
@@ -44,6 +44,6 @@ export function HeroMedia({
         onPlaying={() => setVisible(true)}
         onError={() => setFailed(true)} />
     </>}
-    <Link className={`${styles.buy} ${styles.filmBuy}`} href="/product/galaxy-s26-ultra">Выбрать свой Galaxy</Link>
+    <a className={`${styles.buy} ${styles.filmBuy}`} href="#buy" onClick={event => { event.preventDefault(); scrollToId('buy'); }}>Выбрать свой Galaxy</a>
   </div>;
 }

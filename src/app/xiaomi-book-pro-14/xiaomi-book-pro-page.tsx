@@ -1,23 +1,33 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, BatteryCharging, Cpu, Gauge, Move3D, Palette, ScanLine } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { ArrowUpRight, Cpu, Move3D, ScanLine } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
+import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
+import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { scrollToId } from "@/lib/scroll";
+import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-const buyHref = "/product/xiaomi-book-pro-14";
-const finishes = [
-  { id: "gray", name: "Elegant Gray", image: "/media/xiaomi-book-pro-14/color-gray.jpg" },
-  { id: "white", name: "White", image: "/media/xiaomi-book-pro-14/color-white.jpg" },
-  { id: "blue", name: "Soft Fog Blue", image: "/media/xiaomi-book-pro-14/color-blue.jpg" },
-  { id: "pink", name: "Soft Light Pink", image: "/media/xiaomi-book-pro-14/color-pink.jpg" },
-] as const;
+function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
+  return (
+    <a
+      className={className}
+      href="#buy"
+      onClick={(event) => {
+        event.preventDefault();
+        scrollToId("buy");
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
-export function XiaomiBookProPage() {
+export function XiaomiBookProPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
   const root = useRef<HTMLDivElement>(null);
-  const [finish, setFinish] = useState<(typeof finishes)[number]>(finishes[2]);
 
   useEffect(() => {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -45,54 +55,22 @@ export function XiaomiBookProPage() {
           }}
         />
         <h1 className={styles.srOnly}>Xiaomi Book Pro 14</h1>
-        <Link className={`${styles.buy} ${styles.heroBuy}`} href={buyHref}>Купить</Link>
+        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
       </header>
 
+      <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+        <div className="mx-auto max-w-6xl">
+          <ProductPurchasePanel product={product} />
+        </div>
+      </section>
+
+      <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+        <div className="mx-auto max-w-6xl">
+          <ProductSpecsTable specs={product.specs} description={product.description} />
+        </div>
+      </section>
+
       <main>
-        <section className={styles.intro}>
-          <p className={styles.kicker} data-reveal>Xiaomi Book Pro 14</p>
-          <h2 data-reveal>Легче, чем кажется.<br />Сильнее, чем ждёшь.</h2>
-          <p className={styles.lead} data-reveal>Экран для профессиональной работы, серьёзная мощность и корпус чуть тяжелее килограмма. Такой ноутбук берёшь с собой, не задумываясь, стоит ли.</p>
-        </section>
-
-        <section className={styles.metrics} aria-label="Ключевые характеристики">
-          <article data-reveal><strong>1,08 кг</strong><span>вес ноутбука</span></article>
-          <article data-reveal><strong>14,95 мм</strong><span>толщина корпуса</span></article>
-          <article data-reveal><strong>до 50 Вт</strong><span>стабильной мощности</span></article>
-        </section>
-
-        <section className={styles.colorsSection}>
-          <div className={styles.colorsHead} data-reveal>
-            <Palette size={28} />
-            <p className={styles.kicker}>Четыре отделки</p>
-            <h2>Рабочий инструмент.<br />С вашим характером.</h2>
-            <p>Магниевый корпус с бархатистой текстурой гасит блики и почти ничего не весит сам по себе. Выбирайте оттенок — кадр на фото остаётся тем же.</p>
-          </div>
-          <figure className={styles.colorStage} data-reveal>
-            {finishes.map((item) => (
-              <Image
-                key={item.id}
-                src={item.image}
-                alt={`Xiaomi Book Pro 14, цвет ${item.name}`}
-                fill
-                sizes="(max-width: 900px) 100vw, 1050px"
-                aria-hidden={finish.id !== item.id}
-                className={`${styles.colorVariant} ${finish.id === item.id ? styles.colorVariantActive : ""}`}
-              />
-            ))}
-            <figcaption className={styles.finishPicker}>
-              <p>Цвет: <strong>{finish.name}</strong></p>
-              <div role="radiogroup" aria-label="Выберите цвет Xiaomi Book Pro 14">
-                {finishes.map((item) => (
-                  <button key={item.id} type="button" role="radio" aria-checked={finish.id === item.id} aria-label={`Цвет ${item.name}`} onClick={() => setFinish(item)}>
-                    <i className={styles[item.id]} /><span>{item.name}</span>
-                  </button>
-                ))}
-              </div>
-            </figcaption>
-          </figure>
-        </section>
-
         <section className={styles.displaySection}>
           <div className={styles.displayCopy} data-reveal>
             <ScanLine size={29} />
@@ -127,18 +105,18 @@ export function XiaomiBookProPage() {
           </figure>
         </section>
 
-        <section className={styles.capabilities}>
-          <article data-reveal><Gauge size={28} /><strong>50 Вт</strong><p>Мощность не проседает даже через час работы под нагрузкой.</p></article>
-          <article data-reveal><BatteryCharging size={28} /><strong>72 Вт·ч</strong><p>Заряда хватает на рабочий день, дорогу до дома и вечерний сериал.</p></article>
-          <article data-reveal><ScanLine size={28} /><strong>129 см²</strong><p>Тачпад просторный: место для точных жестов есть, палец не упирается в край.</p></article>
-        </section>
-
         <section className={styles.closing}>
           <p>Xiaomi Book Pro 14</p>
           <h2>Весит меньше.<br />Может больше.</h2>
-          <Link className={styles.buy} href={buyHref}>Выбрать Xiaomi Book Pro 14 <ArrowUpRight size={18} /></Link>
+          <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
         </section>
       </main>
+
+      <section className="bg-white px-4 pb-20 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <RelatedProducts products={related} />
+        </div>
+      </section>
 
       <footer className={styles.footnote}>
         <p>Изображения на странице сгенерированы нейросетью — для визуальной презентации устройства и сценариев использования. Интерфейс, текстуры и отдельные детали могут немного отличаться от реальных.</p>
