@@ -66,7 +66,7 @@ export function MacbookProPage({ product, related, hasHeroVideo }: { product: Pr
       </div>
     </section>
 
-    <section className={styles.section}>
+    <section className={`${styles.section} ${styles.split}`}>
       <div className={styles.heading} data-reveal>
         <p>Корпус и подключения</p>
         <h2>Рабочая станция.<br />Закрывается одной рукой.</h2>
@@ -93,7 +93,7 @@ export function MacbookProPage({ product, related, hasHeroVideo }: { product: Pr
       </figure>
     </section>
 
-    <section className={`${styles.section} ${styles.displaySection}`}>
+    <section className={`${styles.section} ${styles.displaySection} ${styles.split}`}>
       <div className={styles.heading} data-reveal>
         <p>Liquid Retina XDR</p>
         <h2>16,2 дюйма.<br />Каждый — рабочий.</h2>

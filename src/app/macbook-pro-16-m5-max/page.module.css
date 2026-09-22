@@ -19,6 +19,9 @@
 .mediaFrame { position: relative; overflow: hidden; border-radius: 42px; margin-top: 58px; aspect-ratio: 16/9; }
 .mediaFrame img { object-fit: cover; }
 .designImage { background: #f7f5f2; }
+.split { display: grid; grid-template-columns: minmax(0,.85fr) minmax(380px,1.15fr); gap: clamp(40px,6vw,80px); align-items: center; }
+.split .mediaFrame { margin-top: 0; }
+.split .displayMetrics { grid-column: 1 / -1; }
 .performance { display: grid; grid-template-columns: minmax(0,.78fr) minmax(480px,1.22fr); gap: clamp(50px,7vw,100px); align-items: center; max-width: 1440px; }
 .performanceCopy > p:not(:first-child) { color: var(--muted); font-size: 18px; line-height: 1.58; margin-top: 30px; }
 .performanceCopy ul { margin-top: 34px; display: grid; gap: 16px; color: #3f4857; }
@@ -48,9 +51,9 @@
   .hero { height: 55svh; min-height: 410px; }
   .heroPoster, .hero video { object-fit: contain; object-position: center; }
   .section, .battery { padding-left: 20px; padding-right: 20px; }
-  .performance { grid-template-columns: 1fr; }
+  .performance, .split { grid-template-columns: 1fr; }
   .performanceImage { aspect-ratio: 4/3; border-radius: 27px; }
-  .mediaFrame { border-radius: 27px; margin-top: 40px; }
+  .mediaFrame, .split .mediaFrame { border-radius: 27px; margin-top: 40px; }
   .displayMetrics { grid-template-columns: 1fr; }
   .footnote { padding: 34px 20px 48px; }
 }
