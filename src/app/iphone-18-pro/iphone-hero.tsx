@@ -171,7 +171,6 @@ export function IPhoneHero({ product, related }: { product: ProductDetail; relat
           <ProductMedia id="chip-and-cooling" />
           <p className={styles.lead} data-reveal>Монтаж, графика и игры идут без единой запинки, будто между идеей и результатом вообще нет паузы.</p>
           <div className={styles.twoColumns}><article data-reveal><h3>Для работы.</h3><p>Сложные проекты открываются без лишнего ожидания.</p></article><article data-reveal><h3>Для игры.</h3><p>Высокая частота кадров и стабильная производительность.</p></article></div>
-          <ProductMedia id="performance-gaming" shape="cinema" />
         </section>
 
         <section className={styles.closer}>
