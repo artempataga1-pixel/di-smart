@@ -78,7 +78,7 @@ export function IpadProPage({
       </div>
     </section>
 
-    <section className={styles.section}>
+    <section className={`${styles.section} ${styles.split}`}>
       <div className={styles.heading} data-reveal>
         <p>Дизайн</p>
         <h2>Тоньше,<br />чем кажется на фото.</h2>
@@ -90,7 +90,7 @@ export function IpadProPage({
       </figure>
     </section>
 
-    <section className={`${styles.section} ${styles.darkSection}`}>
+    <section className={`${styles.section} ${styles.darkSection} ${styles.split}`}>
       <div className={styles.heading} data-reveal>
         <p>Ultra Retina XDR</p>
         <h2>Чёрный здесь —<br />действительно чёрный.</h2>

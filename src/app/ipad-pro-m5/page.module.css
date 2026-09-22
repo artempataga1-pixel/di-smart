@@ -36,6 +36,9 @@
 .lead { max-width: 680px; color: var(--muted); font-size: clamp(18px,2vw,23px); line-height: 1.5; margin-top: 30px; }
 .imageFrame { position: relative; overflow: hidden; border-radius: 42px; margin-top: 58px; }
 .imageFrame img { object-fit: cover; }
+.split { display: grid; grid-template-columns: minmax(0,.9fr) minmax(380px,1.1fr); gap: clamp(40px,6vw,70px); align-items: center; }
+.split .imageFrame { margin-top: 0; }
+.split .displayStats { grid-column: 1 / -1; }
 .thinness { aspect-ratio: 16 / 9; background: #f6faff; }
 .thinness figcaption { position: absolute; left: 7%; bottom: 9%; display: flex; align-items: baseline; gap: 12px; color: #151a22; }
 .thinness figcaption strong { font-size: clamp(60px,10vw,138px); letter-spacing: -.08em; line-height: .8; }
@@ -77,10 +80,11 @@
   .section { padding: 72px 20px; }
   .heading h2, .performance h2 { font-size: 46px; }
   .imageFrame { border-radius: 26px; margin-top: 38px; }
+  .split .imageFrame { margin-top: 38px; }
   .thinness { aspect-ratio: 4 / 3; }
   .displayImage { aspect-ratio: 4 / 3; }
   .displayStats { grid-template-columns: 1fr; gap: 26px; }
-  .performance, .pencilSection { grid-template-columns: 1fr; gap: 42px; }
+  .performance, .pencilSection, .split { grid-template-columns: 1fr; gap: 42px; }
   .performanceImage, .pencilImage { border-radius: 26px; aspect-ratio: 4 / 3; }
   .performanceImage img { object-position: 64% center; }
   .pencilImage img { object-position: 62% center; }
