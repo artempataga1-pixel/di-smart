@@ -151,7 +151,7 @@ export function IPhoneHero({ product, related }: { product: ProductDetail; relat
           </dl>
           <p className={styles.lead} data-reveal><strong>Три объектива оставляют вам выбор:</strong> работать со светом, расстоянием или самой маленькой деталью.</p>
           <CameraStory />
-          <div className={styles.editorial} data-reveal><h3>Кадр и контроль над ним —<br />всегда в ваших руках.</h3><p>Фокус, экспозиция и зум доступны сразу, без лишних касаний по меню — больше внимания достаётся самой сцене.</p></div>
+          <div className={styles.editorial} data-reveal><h3>Кадр и контроль над ним — всегда в ваших руках.</h3><p>Фокус, экспозиция и зум доступны сразу, без лишних касаний по меню — больше внимания достаётся самой сцене.</p></div>
           <ProductMedia id="camera-controls" />
         </section>
 
