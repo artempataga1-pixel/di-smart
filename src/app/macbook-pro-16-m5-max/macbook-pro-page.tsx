@@ -7,24 +7,9 @@ import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
-import { scrollToId } from "@/lib/scroll";
+import { BuyAnchor } from "@/components/storefront/BuyAnchor";
 import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
-
-function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
-  return (
-    <a
-      className={className}
-      href="#buy"
-      onClick={(event) => {
-        event.preventDefault();
-        scrollToId("buy");
-      }}
-    >
-      {children}
-    </a>
-  );
-}
 
 export function MacbookProPage({ product, related, hasHeroVideo }: { product: ProductDetail; related: CatalogCardData[]; hasHeroVideo: boolean }) {
   const root = useRef<HTMLDivElement>(null);
@@ -38,7 +23,10 @@ export function MacbookProPage({ product, related, hasHeroVideo }: { product: Pr
         observer.unobserve(entry.target);
       }
     }, { threshold: 0.12 });
-    root.current?.querySelectorAll("[data-reveal]").forEach(item => observer.observe(item));
+    root.current?.querySelectorAll("[data-reveal]").forEach(item => {
+      if (item.parentElement?.closest("[data-reveal]")) return;
+      observer.observe(item);
+    });
     return () => observer.disconnect();
   }, []);
 
@@ -60,7 +48,7 @@ export function MacbookProPage({ product, related, hasHeroVideo }: { product: Pr
       </div>
     </section>
 
-    <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+    <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
       <div className="mx-auto max-w-6xl">
         <ProductSpecsTable specs={product.specs} description={product.description} />
       </div>

@@ -8,15 +8,13 @@ import {HeroMedia} from './hero-media';
 import {ProductPurchasePanel} from '@/components/product/ProductPurchasePanel';
 import {ProductSpecsTable} from '@/components/product/ProductSpecsTable';
 import {RelatedProducts} from '@/components/product/RelatedProducts';
-import {scrollToId} from '@/lib/scroll';
+import {BuyAnchor} from '@/components/storefront/BuyAnchor';
 import type {CatalogCardData,ProductDetail} from '@/lib/catalog';
 import styles from './page.module.css';
 const stories=[{title:'Найдите. Просто обведите.',body:'Circle to Search помогает искать то, что привлекло ваше внимание, прямо на экране.',icon:ScanSearch},{title:'Опишите. И измените.',body:'Photo Assist помогает редактировать фотографии с помощью слов. От идеи до нового кадра — в привычной Галерее.',icon:Sparkles},{title:'Ваш день. Уже перед вами.',body:'Now Brief собирает персональные подсказки и напоминания, чтобы важное оставалось под рукой.',icon:Check}];
-function BuyAnchor({className,children}:{className:string;children:React.ReactNode}){
- return <a className={className} href="#buy" onClick={event=>{event.preventDefault();scrollToId('buy');}}>{children}</a>;
-}
-export function GalaxyPage({product,related}:{product:ProductDetail;related:CatalogCardData[]}){const root=useRef<HTMLDivElement>(null);const [ai,setAi]=useState(0);useEffect(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.animate([{opacity:.35,transform:'translateY(32px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.7,.2,1)'});observer.unobserve(e.target);}}),{threshold:.12});root.current?.querySelectorAll('[data-reveal]').forEach(e=>observer.observe(e));return()=>observer.disconnect();},[]);const ActiveIcon=stories[ai].icon;
+export function GalaxyPage({product,related}:{product:ProductDetail;related:CatalogCardData[]}){const root=useRef<HTMLDivElement>(null);const [ai,setAi]=useState(0);useEffect(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.animate([{opacity:.35,transform:'translateY(32px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.7,.2,1)'});observer.unobserve(e.target);}}),{threshold:.12});root.current?.querySelectorAll('[data-reveal]').forEach(e=>{if(e.parentElement?.closest('[data-reveal]'))return;observer.observe(e);});return()=>observer.disconnect();},[]);const ActiveIcon=stories[ai].icon;
  return <div ref={root} className={styles.page}>
+ <h1 className="sr-only">Samsung Galaxy S26 Ultra</h1>
  <HeroMedia/>
 
  <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
@@ -25,7 +23,7 @@ export function GalaxyPage({product,related}:{product:ProductDetail;related:Cata
    </div>
  </section>
 
- <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+ <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
    <div className="mx-auto max-w-6xl">
      <ProductSpecsTable specs={product.specs} description={product.description}/>
    </div>

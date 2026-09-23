@@ -10,23 +10,9 @@ import { PhoneViewer } from "./phone-viewer";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { BuyAnchor } from "@/components/storefront/BuyAnchor";
 import { scrollToId } from "@/lib/scroll";
 import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
-
-function BuyAnchor({ className, children }: { className: string; children: React.ReactNode }) {
-  return (
-    <a
-      className={className}
-      href="#buy"
-      onClick={(event) => {
-        event.preventDefault();
-        scrollToId("buy");
-      }}
-    >
-      {children}
-    </a>
-  );
-}
 
 /** Generated editorial imagery; all variants are local, responsive and lazy-loaded. */
 function ProductMedia({ id, shape = "wide" }: { id: string; shape?: "wide" | "portrait" | "cinema" }) {
@@ -116,7 +102,10 @@ export function IPhoneHero({ product, related }: { product: ProductDetail; relat
       // with that fade into a mushy, slower-looking reveal, and (b) briefly
       // show unrounded corners while the box is mid-scale — a real, visible
       // rendering glitch on some GPUs, not just a stacking preference.
-      root.querySelectorAll<HTMLElement>("[data-reveal]").forEach(frame => observer?.observe(frame));
+      root.querySelectorAll<HTMLElement>("[data-reveal]").forEach(frame => {
+        if (frame.parentElement?.closest("[data-reveal]")) return;
+        observer?.observe(frame);
+      });
     };
     start();
     motion.addEventListener("change", start);
@@ -137,7 +126,7 @@ export function IPhoneHero({ product, related }: { product: ProductDetail; relat
           </div>
         </section>
 
-        <section className="bg-white px-4 pb-16 md:px-6" data-reveal>
+        <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
           <div className="mx-auto max-w-6xl">
             <ProductSpecsTable specs={product.specs} description={product.description} />
           </div>
