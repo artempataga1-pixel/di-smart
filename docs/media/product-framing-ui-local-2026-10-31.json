@@ -1,0 +1,2814 @@
+{
+  "colorAudit": [
+    {
+      "model": "macbook-air-13-m5",
+      "viewport": 390,
+      "states": [
+        {
+          "color": "Небесно-голубой",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        },
+        {
+          "color": "Серебристый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        },
+        {
+          "color": "Звёздный",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        },
+        {
+          "color": "Полночный",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        }
+      ]
+    },
+    {
+      "model": "macbook-air-15-m5",
+      "viewport": 390,
+      "states": [
+        {
+          "color": "Небесно-голубой",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-sky-blue.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-starlight.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-midnight.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        },
+        {
+          "color": "Серебристый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-sky-blue.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-starlight.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-midnight.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        },
+        {
+          "color": "Звёздный",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-sky-blue.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-starlight.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-midnight.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        },
+        {
+          "color": "Полночный",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-sky-blue.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-starlight.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-midnight.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        }
+      ]
+    },
+    {
+      "model": "iphone-18-pro-max",
+      "viewport": 390,
+      "states": [
+        {
+          "color": "Бордовый",
+          "h": 423.5,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "1",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp",
+              "w": 940
+            }
+          ],
+          "overflow": false,
+          "ratio": "0.845324 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 447.375
+        },
+        {
+          "color": "Ледниковый",
+          "h": 423.5,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "1",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp",
+              "w": 940
+            }
+          ],
+          "overflow": false,
+          "ratio": "0.845324 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 447.375
+        },
+        {
+          "color": "Серебристый",
+          "h": 423.5,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "1",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp",
+              "w": 940
+            }
+          ],
+          "overflow": false,
+          "ratio": "0.845324 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 447.375
+        },
+        {
+          "color": "Чёрный",
+          "h": 423.5,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "1",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp",
+              "w": 940
+            }
+          ],
+          "overflow": false,
+          "ratio": "0.845324 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 447.375
+        }
+      ]
+    },
+    {
+      "model": "watch-series-11",
+      "viewport": 390,
+      "states": [
+        {
+          "color": "Космический серый / Black Sport Band",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Глянцевый чёрный / Black Sport Band",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Розово-золотой / Light Blush Sport Band",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Серебристый / Purple Fog Sport Band",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        }
+      ]
+    },
+    {
+      "model": "galaxy-tab-s10-fe",
+      "viewport": 390,
+      "states": [
+        {
+          "color": "Серый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/catalog/products/galaxy-tab-s10-fe.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fab7180694a7a2dbe72eb.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fb3dd4e37c97ed16b1eae.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        },
+        {
+          "color": "Серебристый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/catalog/products/galaxy-tab-s10-fe.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fab7180694a7a2dbe72eb.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fb3dd4e37c97ed16b1eae.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        },
+        {
+          "color": "Синий",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/catalog/products/galaxy-tab-s10-fe.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fab7180694a7a2dbe72eb.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fb3dd4e37c97ed16b1eae.webp&w=3840&q=90",
+              "w": 390
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 171
+        }
+      ]
+    },
+    {
+      "model": "airpods-max",
+      "viewport": 390,
+      "states": [
+        {
+          "color": "Серебристый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/catalog/products/airpods-max.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/midnight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/blue.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/pink.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/green.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Полночный",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/catalog/products/airpods-max.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/airpods-max/midnight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/blue.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/pink.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/green.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Синий",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/catalog/products/airpods-max.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/midnight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/airpods-max/blue.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/pink.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/green.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Розовый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/catalog/products/airpods-max.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/midnight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/blue.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/airpods-max/pink.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/green.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Зелёный",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/catalog/products/airpods-max.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/midnight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/blue.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/airpods-max/pink.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/airpods-max/green.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        }
+      ]
+    },
+    {
+      "model": "ipad-air-11",
+      "viewport": 390,
+      "states": [
+        {
+          "color": "Синий",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fae717a97b57b29ca477f.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/purple.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/starlight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/space-gray.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Фиолетовый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fae717a97b57b29ca477f.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/ipad-air-11/purple.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/starlight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/space-gray.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Звёздный",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fae717a97b57b29ca477f.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/purple.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/ipad-air-11/starlight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/space-gray.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Серый космос",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fae717a97b57b29ca477f.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/purple.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/ipad-air-11/starlight.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/ipad-air-11/space-gray.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        }
+      ]
+    },
+    {
+      "model": "iphone-17-pro",
+      "viewport": 390,
+      "states": [
+        {
+          "color": "Серебристый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/iphone-17-pro/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fc9b9ec53ff77d5ccdf19.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/iphone-17-pro/deep-blue.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Космический оранжевый",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/iphone-17-pro/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fc9b9ec53ff77d5ccdf19.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/iphone-17-pro/deep-blue.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        },
+        {
+          "color": "Тёмно-синий",
+          "h": 358,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/iphone-17-pro/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 390,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fc9b9ec53ff77d5ccdf19.webp&w=3840&q=90",
+              "w": 390
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/iphone-17-pro/deep-blue.webp",
+              "w": 1254
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 358,
+          "x": 16,
+          "y": 145
+        }
+      ]
+    },
+    {
+      "model": "macbook-air-13-m5",
+      "viewport": 1280,
+      "states": [
+        {
+          "color": "Небесно-голубой",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 0
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 0
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 0
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Серебристый",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Звёздный",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Полночный",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        }
+      ]
+    },
+    {
+      "model": "macbook-air-15-m5",
+      "viewport": 1280,
+      "states": [
+        {
+          "color": "Небесно-голубой",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-starlight.webp&w=3840&q=90",
+              "w": 0
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-midnight.webp&w=3840&q=90",
+              "w": 0
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Серебристый",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Звёздный",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Полночный",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair15-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        }
+      ]
+    },
+    {
+      "model": "watch-series-11",
+      "viewport": 1280,
+      "states": [
+        {
+          "color": "Космический серый / Black Sport Band",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 0
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 0
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 0
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 0,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 0
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Глянцевый чёрный / Black Sport Band",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Розово-золотой / Light Blush Sport Band",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Серебристый / Purple Fog Sport Band",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        }
+      ]
+    },
+    {
+      "model": "galaxy-s26-ultra",
+      "viewport": 1280,
+      "states": [
+        {
+          "color": "Чёрный",
+          "h": 444.79681396484375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 512,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "0",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+              "w": 1500
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "0",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+              "w": 1500
+            }
+          ],
+          "overflow": false,
+          "ratio": "1.5 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 692.8489379882812
+        },
+        {
+          "color": "Серебристая тень",
+          "h": 444.796875,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 512,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "1",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+              "w": 1500
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "0",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+              "w": 1500
+            }
+          ],
+          "overflow": false,
+          "ratio": "1.5 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 689.5704345703125
+        },
+        {
+          "color": "Кобальтовый фиолетовый",
+          "h": 444.796875,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 512,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "0",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+              "w": 1500
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "1",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+              "w": 1500
+            }
+          ],
+          "overflow": false,
+          "ratio": "1.5 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 689.5625
+        }
+      ]
+    },
+    {
+      "model": "iphone-18-pro-max",
+      "viewport": 1280,
+      "states": [
+        {
+          "color": "Бордовый",
+          "h": 789.2734375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "1",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp",
+              "w": 940
+            }
+          ],
+          "overflow": false,
+          "ratio": "0.845324 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 869
+        },
+        {
+          "color": "Ледниковый",
+          "h": 789.2734375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "1",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp",
+              "w": 940
+            }
+          ],
+          "overflow": false,
+          "ratio": "0.845324 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 869
+        },
+        {
+          "color": "Серебристый",
+          "h": 789.2734375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "1",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp",
+              "w": 940
+            }
+          ],
+          "overflow": false,
+          "ratio": "0.845324 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 869
+        },
+        {
+          "color": "Чёрный",
+          "h": 789.2734375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "0",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+              "w": 940
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1112,
+              "opacity": "1",
+              "src": "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp",
+              "w": 940
+            }
+          ],
+          "overflow": false,
+          "ratio": "0.845324 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 869
+        }
+      ]
+    },
+    {
+      "model": "galaxy-s26-ultra",
+      "viewport": 1280,
+      "states": [
+        {
+          "color": "Чёрный",
+          "h": 444.79681396484375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 512,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "0",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+              "w": 1500
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "0",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+              "w": 1500
+            }
+          ],
+          "overflow": false,
+          "ratio": "1.5 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 695.7153930664062
+        },
+        {
+          "color": "Серебристая тень",
+          "h": 444.796875,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 512,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "1",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+              "w": 1500
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "0",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+              "w": 1500
+            }
+          ],
+          "overflow": false,
+          "ratio": "1.5 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 689.7462158203125
+        },
+        {
+          "color": "Кобальтовый фиолетовый",
+          "h": 444.796875,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 512,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "0",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+              "w": 1500
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1000,
+              "opacity": "1",
+              "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+              "w": 1500
+            }
+          ],
+          "overflow": false,
+          "ratio": "1.5 / 1",
+          "w": 667.1953125,
+          "x": 64,
+          "y": 689.5625
+        }
+      ]
+    },
+    {
+      "model": "macbook-air-13-m5",
+      "viewport": 1280,
+      "states": [
+        {
+          "color": "Небесно-голубой",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Серебристый",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "1",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Звёздный",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Полночный",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-sky-blue.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 1254,
+              "opacity": "0",
+              "src": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+              "w": 1254
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-starlight.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fair13-midnight.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        }
+      ]
+    },
+    {
+      "model": "watch-series-11",
+      "viewport": 1280,
+      "states": [
+        {
+          "color": "Космический серый / Black Sport Band",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Глянцевый чёрный / Black Sport Band",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Розово-золотой / Light Blush Sport Band",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        },
+        {
+          "color": "Серебристый / Purple Fog Sport Band",
+          "h": 638.3984375,
+          "images": [
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "0",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=3840&q=90",
+              "w": 768
+            },
+            {
+              "duration": "0s",
+              "fit": "contain",
+              "h": 768,
+              "opacity": "1",
+              "src": "/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=3840&q=90",
+              "w": 768
+            }
+          ],
+          "overflow": false,
+          "ratio": "1 / 1",
+          "w": 638.3984375,
+          "x": 88,
+          "y": 161
+        }
+      ]
+    }
+  ],
+  "samsungMobile": [
+    {
+      "model": "galaxy-s26-ultra",
+      "color": "Чёрный",
+      "h": 238.6640625,
+      "images": [
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 260,
+          "opacity": "1",
+          "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+          "w": 390
+        },
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 1000,
+          "opacity": "0",
+          "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+          "w": 1500
+        },
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 1000,
+          "opacity": "0",
+          "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+          "w": 1500
+        }
+      ],
+      "overflow": false,
+      "ratio": "1.5 / 1",
+      "w": 358,
+      "x": 16,
+      "y": 336.375
+    },
+    {
+      "model": "galaxy-s26-ultra",
+      "color": "Серебристая тень",
+      "h": 238.6640625,
+      "images": [
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 260,
+          "opacity": "0",
+          "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+          "w": 390
+        },
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 1000,
+          "opacity": "1",
+          "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+          "w": 1500
+        },
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 1000,
+          "opacity": "0",
+          "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+          "w": 1500
+        }
+      ],
+      "overflow": false,
+      "ratio": "1.5 / 1",
+      "w": 358,
+      "x": 16,
+      "y": 336.375
+    },
+    {
+      "model": "galaxy-s26-ultra",
+      "color": "Кобальтовый фиолетовый",
+      "h": 238.6640625,
+      "images": [
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 260,
+          "opacity": "0",
+          "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+          "w": 390
+        },
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 1000,
+          "opacity": "0",
+          "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+          "w": 1500
+        },
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 1000,
+          "opacity": "1",
+          "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+          "w": 1500
+        }
+      ],
+      "overflow": false,
+      "ratio": "1.5 / 1",
+      "w": 358,
+      "x": 16,
+      "y": 336.375
+    },
+    {
+      "model": "galaxy-s26-ultra",
+      "color": "Чёрный",
+      "h": 238.6640625,
+      "images": [
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 260,
+          "opacity": "1",
+          "src": "/_next/image?url=%2Fmedia%2Fcolor-frame-fixed-2026-10-31%2Fs26-black.webp&w=3840&q=90",
+          "w": 390
+        },
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 1000,
+          "opacity": "0",
+          "src": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+          "w": 1500
+        },
+        {
+          "duration": "0s",
+          "fit": "contain",
+          "h": 1000,
+          "opacity": "0",
+          "src": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+          "w": 1500
+        }
+      ],
+      "overflow": false,
+      "ratio": "1.5 / 1",
+      "w": 358,
+      "x": 16,
+      "y": 336.375
+    }
+  ],
+  "notes": "First-entry reveal animations may translate the whole section briefly; frame width/height stays fixed. Cold image loads were revisited after loading."
+}

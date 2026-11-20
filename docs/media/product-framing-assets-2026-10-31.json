@@ -1,0 +1,108 @@
+{
+  "method": "built-in imagegen precise recolor; lossless WebP encoding",
+  "assets": [
+    {
+      "key": "s26-black",
+      "path": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-73f4ca32-4c8e-4143-b182-1c375e76289e.png",
+      "prompt": "Use case: precise-object-edit. Asset type: existing online store color variant. The attached image is the EDIT TARGET and exact composition master. Recolor ONLY the silver metal phone back and edges to neutral matte BLACK, including matching dark-black edge trim on the front phone. Keep the front screen wallpaper exactly unchanged grayscale, black lenses unchanged.\nCRITICAL FIX: This is an exact recolor, NOT a new composition. Copy input pixel positions, product outline, size, camera perspective, device spacing, shadows and reflections, background architecture/light beams, horizon and all image borders EXACTLY. Do NOT zoom, shrink, move, rotate, stretch, recrop, change the screen art, or move objects. Preserve canvas aspect ratio and full image. The purpose is that a customer changing color sees the device perfectly stationary at the same size. Background must remain identical. Match existing photographic sharpness. Output only the edited image.",
+      "source": "/private/tmp/di-smart-contacts-20261031/public/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+      "originalUrl": "/media/flagship-colors/galaxy-s26-ultra/black.webp",
+      "url": "/media/color-frame-fixed-2026-10-31/s26-black.webp",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "lossless": true,
+      "savedMaster": "docs/media/framing-masters-2026-10-31/s26-black.png"
+    },
+    {
+      "key": "air13-sky-blue",
+      "path": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-11a8d3a4-1d9e-4917-aad8-e0fad3fa6f6b.png",
+      "prompt": "Use case: precise-object-edit. Asset type: existing online store color variant. The attached image is the EDIT TARGET and exact composition master. Recolor ONLY the silver aluminium metal chassis on BOTH MacBook Air computers to Apple Sky Blue, a very pale cool silver-blue metallic finish. Keep black keyboard and exact blue screen wallpaper unchanged.\nCRITICAL FIX: This is an exact recolor, NOT a new composition. Copy input pixel positions, product outline, size, camera perspective, device spacing, shadows and reflections, background architecture/light beams, horizon and all image borders EXACTLY. Do NOT zoom, shrink, move, rotate, stretch, recrop, change the screen art, or move objects. Preserve canvas aspect ratio and full image. The purpose is that a customer changing color sees the device perfectly stationary at the same size. Background must remain identical. Match existing photographic sharpness. Output only the edited image.",
+      "source": "/private/tmp/di-smart-contacts-20261031/public/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+      "originalUrl": "/media/catalog/products/macbook-air-13-m5.webp",
+      "url": "/media/color-frame-fixed-2026-10-31/air13-sky-blue.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "lossless": true,
+      "savedMaster": "docs/media/framing-masters-2026-10-31/air13-sky-blue.png"
+    },
+    {
+      "key": "air13-starlight",
+      "path": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-e402a3dd-a088-4c13-bb14-a03288ceb23a.png",
+      "prompt": "Use case: precise-object-edit. Asset type: existing online store color variant. The attached image is the EDIT TARGET and exact composition master. Recolor ONLY the silver aluminium metal chassis on BOTH MacBook Air computers to Apple Starlight, a subtle pale warm champagne/off-white metallic finish, NOT saturated yellow or gold. Keep black keyboard and exact blue screen wallpaper unchanged.\nCRITICAL FIX: This is an exact recolor, NOT a new composition. Copy input pixel positions, product outline, size, camera perspective, device spacing, shadows and reflections, background architecture/light beams, horizon and all image borders EXACTLY. Do NOT zoom, shrink, move, rotate, stretch, recrop, change the screen art, or move objects. Preserve canvas aspect ratio and full image. The purpose is that a customer changing color sees the device perfectly stationary at the same size. Background must remain identical. Match existing photographic sharpness. Output only the edited image.",
+      "source": "/private/tmp/di-smart-contacts-20261031/public/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+      "originalUrl": "/media/apple-color-variants/macbook-air-13-m5/starlight.webp",
+      "url": "/media/color-frame-fixed-2026-10-31/air13-starlight.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "lossless": true,
+      "savedMaster": "docs/media/framing-masters-2026-10-31/air13-starlight.png"
+    },
+    {
+      "key": "air13-midnight",
+      "path": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-8f561f2f-6284-425c-96fd-1c5269d656ac.png",
+      "prompt": "Use case: precise-object-edit. Asset type: existing online store color variant. The attached image is the EDIT TARGET and exact composition master. Recolor ONLY the silver aluminium metal chassis on BOTH MacBook Air computers to Apple Midnight, a very dark navy-black metallic finish. Keep black keyboard and exact blue screen wallpaper unchanged.\nCRITICAL FIX: This is an exact recolor, NOT a new composition. Copy input pixel positions, product outline, size, camera perspective, device spacing, shadows and reflections, background architecture/light beams, horizon and all image borders EXACTLY. Do NOT zoom, shrink, move, rotate, stretch, recrop, change the screen art, or move objects. Preserve canvas aspect ratio and full image. The purpose is that a customer changing color sees the device perfectly stationary at the same size. Background must remain identical. Match existing photographic sharpness. Output only the edited image.",
+      "source": "/private/tmp/di-smart-contacts-20261031/public/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+      "originalUrl": "/media/apple-color-variants/macbook-air-13-m5/midnight.webp",
+      "url": "/media/color-frame-fixed-2026-10-31/air13-midnight.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "lossless": true,
+      "savedMaster": "docs/media/framing-masters-2026-10-31/air13-midnight.png"
+    },
+    {
+      "key": "air15-sky-blue",
+      "path": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-746d382b-6e7b-4578-a00e-615a43641b92.png",
+      "prompt": "Use case: precise-object-edit. Asset type: existing online store color variant. The attached image is the EDIT TARGET and exact composition master. Recolor ONLY the silver aluminium metal chassis on BOTH MacBook Air computers to Apple Sky Blue, a very pale cool silver-blue metallic finish. Keep black keyboard and exact blue screen wallpaper unchanged.\nCRITICAL FIX: This is an exact recolor, NOT a new composition. Copy input pixel positions, product outline, size, camera perspective, device spacing, shadows and reflections, background architecture/light beams, horizon and all image borders EXACTLY. Do NOT zoom, shrink, move, rotate, stretch, recrop, change the screen art, or move objects. Preserve canvas aspect ratio and full image. The purpose is that a customer changing color sees the device perfectly stationary at the same size. Background must remain identical. Match existing photographic sharpness. Output only the edited image.",
+      "source": "/private/tmp/di-smart-contacts-20261031/public/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+      "originalUrl": "/media/catalog/products/macbook-air-15-m5.webp",
+      "url": "/media/color-frame-fixed-2026-10-31/air15-sky-blue.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "lossless": true,
+      "savedMaster": "docs/media/framing-masters-2026-10-31/air15-sky-blue.png"
+    },
+    {
+      "key": "air15-starlight",
+      "path": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-2b324743-8c47-4420-8fce-0236a40a5436.png",
+      "prompt": "Use case: precise-object-edit. Asset type: existing online store color variant. The attached image is the EDIT TARGET and exact composition master. Recolor ONLY the silver aluminium metal chassis on BOTH MacBook Air computers to Apple Starlight, a subtle pale warm champagne/off-white metallic finish, NOT saturated yellow or gold. Keep black keyboard and exact blue screen wallpaper unchanged.\nCRITICAL FIX: This is an exact recolor, NOT a new composition. Copy input pixel positions, product outline, size, camera perspective, device spacing, shadows and reflections, background architecture/light beams, horizon and all image borders EXACTLY. Do NOT zoom, shrink, move, rotate, stretch, recrop, change the screen art, or move objects. Preserve canvas aspect ratio and full image. The purpose is that a customer changing color sees the device perfectly stationary at the same size. Background must remain identical. Match existing photographic sharpness. Output only the edited image.",
+      "source": "/private/tmp/di-smart-contacts-20261031/public/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+      "originalUrl": "/media/apple-color-variants/macbook-air-15-m5/starlight.webp",
+      "url": "/media/color-frame-fixed-2026-10-31/air15-starlight.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "lossless": true,
+      "savedMaster": "docs/media/framing-masters-2026-10-31/air15-starlight.png"
+    },
+    {
+      "key": "air15-midnight",
+      "path": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-40a947b0-7777-4da6-bb9c-e2be359a2b59.png",
+      "prompt": "Use case: precise-object-edit. Asset type: existing online store color variant. The attached image is the EDIT TARGET and exact composition master. Recolor ONLY the silver aluminium metal chassis on BOTH MacBook Air computers to Apple Midnight, a very dark navy-black metallic finish. Keep black keyboard and exact blue screen wallpaper unchanged.\nCRITICAL FIX: This is an exact recolor, NOT a new composition. Copy input pixel positions, product outline, size, camera perspective, device spacing, shadows and reflections, background architecture/light beams, horizon and all image borders EXACTLY. Do NOT zoom, shrink, move, rotate, stretch, recrop, change the screen art, or move objects. Preserve canvas aspect ratio and full image. The purpose is that a customer changing color sees the device perfectly stationary at the same size. Background must remain identical. Match existing photographic sharpness. Output only the edited image.",
+      "source": "/private/tmp/di-smart-contacts-20261031/public/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+      "originalUrl": "/media/apple-color-variants/macbook-air-15-m5/midnight.webp",
+      "url": "/media/color-frame-fixed-2026-10-31/air15-midnight.webp",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "lossless": true,
+      "savedMaster": "docs/media/framing-masters-2026-10-31/air15-midnight.png"
+    }
+  ],
+  "deployment": {
+    "id": "dpl_12jyE9UBwRNAsKvkUC1nnjSKVySF",
+    "url": "https://di-smart-gilt.vercel.app",
+    "state": "READY"
+  }
+}

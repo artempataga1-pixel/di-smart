@@ -1,0 +1,1035 @@
+{
+  "products": 103,
+  "results": [
+    {
+      "slug": "airpods-4",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "airpods-4-anc",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "airpods-5",
+      "ratio": 1,
+      "colors": 1,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "airpods-5-wireless",
+      "ratio": 1,
+      "colors": 1,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "airpods-max",
+      "ratio": 1,
+      "colors": 5,
+      "sourceCount": 5,
+      "sources": [
+        "/media/catalog/products/airpods-max.webp",
+        "/media/apple-color-variants/airpods-max/midnight.webp",
+        "/media/apple-color-variants/airpods-max/blue.webp",
+        "/media/apple-color-variants/airpods-max/pink.webp",
+        "/media/apple-color-variants/airpods-max/green.webp"
+      ]
+    },
+    {
+      "slug": "airpods-max-2",
+      "ratio": 1,
+      "colors": 5,
+      "sourceCount": 5,
+      "sources": [
+        "/media/apple-color-variants/airpods-max-2/midnight.webp",
+        "/media/catalog/products/airpods-max-2.webp",
+        "/media/apple-color-variants/airpods-max-2/blue.webp",
+        "/media/apple-color-variants/airpods-max-2/purple.webp",
+        "/media/apple-color-variants/airpods-max-2/orange.webp"
+      ]
+    },
+    {
+      "slug": "airpods-pro-2",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/catalog/products/airpods-pro-2.webp"
+      ]
+    },
+    {
+      "slug": "airpods-pro-3",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "apple-20w-adapter",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "apple-35w-dual-adapter",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "apple-magsafe-charger",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "apple-pencil-2",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "apple-pencil-pro",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "apple-pencil-usb-c",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "cable-braided-usbc",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "cable-usbc-jack",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "cable-usbc-lightning",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "cable-usbc-usbc",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "galaxy-a26-5g",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/catalog/products/galaxy-a26-5g.webp",
+        "/media/quality-2026-10-24/e5015a7fc7df11e59d8b.webp",
+        "/media/quality-2026-10-24/3623df5729949dd2eb3e.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-a56",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/4e0339c89b94a957becf.webp",
+        "/media/quality-2026-10-24/08bd6ceb08380e9204a3.webp",
+        "/media/quality-2026-10-24/1fa7b30e68c908b032cf.webp",
+        "/media/quality-2026-10-24/bd864d62c8fd165aa97d.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-book6",
+      "ratio": 1,
+      "colors": 1,
+      "sourceCount": 1,
+      "sources": [
+        "/media/catalog/products/galaxy-book6.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-book6-pro",
+      "ratio": 1,
+      "colors": 1,
+      "sourceCount": 1,
+      "sources": [
+        "/media/catalog/products/galaxy-book6-pro.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-book6-ultra",
+      "ratio": 1,
+      "colors": 1,
+      "sourceCount": 1,
+      "sources": [
+        "/media/catalog/products/galaxy-book6-ultra.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-buds3",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/quality-2026-10-24/0022e7279e61fc27c31e.webp",
+        "/media/quality-2026-10-24/f8d9b40cfa699610e266.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-buds3-fe",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/catalog/products/galaxy-buds3-fe.webp",
+        "/media/quality-2026-10-24/3afe3cd8e138ec1309cf.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-buds3-pro",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/quality-2026-10-24/708ae813154e76c82a54.webp",
+        "/media/quality-2026-10-24/25550a574735b29ee36a.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-buds4",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/quality-2026-10-24/bd19d55fd88e37a34108.webp",
+        "/media/catalog/products/galaxy-buds4.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-buds4-pro",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/quality-2026-10-24/3e7187b39269dea6a539.webp",
+        "/media/catalog/products/galaxy-buds4-pro.webp",
+        "/media/quality-2026-10-24/bbad5e1f7384f3994d77.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-s25",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/quality-2026-10-24/4036bea1f7f504881b0f.webp",
+        "/media/quality-2026-10-24/8247d214e4f54fd9c082.webp",
+        "/media/quality-2026-10-24/938153e2fe78be7d2d44.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-s25-case",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "galaxy-s25-plus",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/quality-2026-10-24/2e937b4e0de74b491243.webp",
+        "/media/quality-2026-10-24/87bc0e1386dd3dd496df.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-s25-ultra",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/2f3e013b15953019cd94.webp",
+        "/media/quality-2026-10-24/3dd0f9c509d0fd58fb42.webp",
+        "/media/quality-2026-10-24/c57830923693e2484661.webp",
+        "/media/quality-2026-10-24/942343aa8718047d240e.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-s26",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/abbbe71d24407c53d2fd.webp",
+        "/media/quality-2026-10-24/eb2f197911806918b31b.webp",
+        "/media/catalog/products/galaxy-s26.webp",
+        "/media/quality-2026-10-24/1f1e2985d90accddcdc7.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-s26-fe",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/quality-2026-10-24/7de5c570391e328c775a.webp",
+        "/media/quality-2026-10-24/5aef73aa8b5c8fb609f0.webp",
+        "/media/quality-2026-10-24/22fd52fe546c757c88ee.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-s26-plus",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/1865e1ab6222a07da4b1.webp",
+        "/media/quality-2026-10-24/91ecf1681eb74bf675a4.webp",
+        "/media/catalog/products/galaxy-s26-plus.webp",
+        "/media/quality-2026-10-24/1168e7636db7a021dde1.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-s26-ultra",
+      "ratio": 1.5,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/color-frame-fixed-2026-10-31/s26-black.webp",
+        "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+        "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-tab-a11",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/catalog/products/galaxy-tab-a11.webp",
+        "/media/quality-2026-10-24/b716e1881af70b32b532.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-tab-a11-plus",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/catalog/products/galaxy-tab-a11-plus.webp",
+        "/media/quality-2026-10-24/78168c4bac89c6ad5485.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-tab-s10-fe",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/catalog/products/galaxy-tab-s10-fe.webp",
+        "/media/quality-2026-10-24/ab7180694a7a2dbe72eb.webp",
+        "/media/quality-2026-10-24/b3dd4e37c97ed16b1eae.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-tab-s10-fe-plus",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/catalog/products/galaxy-tab-s10-fe-plus.webp",
+        "/media/quality-2026-10-24/c5ee71cd0293d1f6320c.webp",
+        "/media/quality-2026-10-24/6178154876520f91d188.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-tab-s10-lite",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/quality-2026-10-24/a68b5e22aec52b36465a.webp",
+        "/media/quality-2026-10-24/30cb7ed67609ceeb1d27.webp",
+        "/media/quality-2026-10-24/5d97b3113d578c7ac849.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-tab-s10-plus",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/quality-2026-10-24/f306921204f9dc26dd4c.webp",
+        "/media/quality-2026-10-24/9f409bc7db355ad231c3.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-tab-s11",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/quality-2026-10-24/be33720a3c5ffe9d0fbc.webp",
+        "/media/quality-2026-10-24/bd2bfd099de2ad649771.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-tab-s11-ultra",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/quality-2026-10-24/ad888f3f52abccfff3bc.webp",
+        "/media/quality-2026-10-24/345c856690771dc78451.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l320",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/a2a89ae07d5269b33ee0.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l325",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/a2a89ae07d5269b33ee0.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l330",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/5b6a559212e75b611a25.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l335",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/5b6a559212e75b611a25.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l340",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/6dc782a6481029b712ee.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l345",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/6dc782a6481029b712ee.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l350",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/ad572b4f292288bde5c6.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l355",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/ad572b4f292288bde5c6.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l500",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/ff67bd5d52d6ecaef87c.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l505",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/ff67bd5d52d6ecaef87c.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l705",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/d5c365c43c0fc78a2356.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-watch-l715",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        "/media/quality-2026-10-24/54400ac635feae16c996.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-z-flip7",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/25a5b415f86dfacda265.webp",
+        "/media/quality-2026-10-24/b134df6cbdf664fb0087.webp",
+        "/media/quality-2026-10-24/22a885ef43ab01e151d7.webp",
+        "/media/quality-2026-10-24/1a5452e04d62e54166d4.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-z-flip8",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/e160a28fc655c73848da.webp",
+        "/media/catalog/products/galaxy-z-flip8.webp",
+        "/media/quality-2026-10-24/5502d23bfb8ecead85b7.webp",
+        "/media/quality-2026-10-24/76bd8366ed6581947de3.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-z-fold7",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/25e5c444e59f83a73b56.webp",
+        "/media/quality-2026-10-24/8ba7e35ea0ff502b7b07.webp",
+        "/media/quality-2026-10-24/9353d895bc68974c1083.webp",
+        "/media/quality-2026-10-24/e842c1c8258bdaa2ea2e.webp"
+      ]
+    },
+    {
+      "slug": "galaxy-z-fold8",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/9c5970de0d884906b87d.webp",
+        "/media/catalog/products/galaxy-z-fold8.webp",
+        "/media/quality-2026-10-24/20c7ad2d458201502d81.webp",
+        "/media/quality-2026-10-24/a737ab881dbff7adf723.webp"
+      ]
+    },
+    {
+      "slug": "ipad-11",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/apple-color-variants/ipad-11/silver.webp",
+        "/media/quality-2026-10-24/ebd68b183c4442e44818.webp",
+        "/media/apple-color-variants/ipad-11/pink.webp",
+        "/media/apple-color-variants/ipad-11/yellow.webp"
+      ]
+    },
+    {
+      "slug": "ipad-air-11",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/ae717a97b57b29ca477f.webp",
+        "/media/apple-color-variants/ipad-air-11/purple.webp",
+        "/media/apple-color-variants/ipad-air-11/starlight.webp",
+        "/media/apple-color-variants/ipad-air-11/space-gray.webp"
+      ]
+    },
+    {
+      "slug": "ipad-air-13",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/1bd58066dd5afcdf9f22.webp",
+        "/media/apple-color-variants/ipad-air-13/purple.webp",
+        "/media/apple-color-variants/ipad-air-13/starlight.webp",
+        "/media/apple-color-variants/ipad-air-13/space-gray.webp"
+      ]
+    },
+    {
+      "slug": "ipad-folio-case",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "iphone-17",
+      "ratio": 1,
+      "colors": 5,
+      "sourceCount": 5,
+      "sources": [
+        "/media/apple-color-variants/iphone-17/black.webp",
+        "/media/apple-color-variants/iphone-17/white.webp",
+        "/media/quality-2026-10-24/02022a7866ce7e1edc1c.webp",
+        "/media/apple-color-variants/iphone-17/sage.webp",
+        "/media/apple-color-variants/iphone-17/lavender.webp"
+      ]
+    },
+    {
+      "slug": "iphone-17-pro",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/apple-color-variants/iphone-17-pro/silver.webp",
+        "/media/quality-2026-10-24/c9b9ec53ff77d5ccdf19.webp",
+        "/media/apple-color-variants/iphone-17-pro/deep-blue.webp"
+      ]
+    },
+    {
+      "slug": "iphone-17-pro-max",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/apple-color-variants/iphone-17-pro-max/silver.webp",
+        "/media/quality-2026-10-24/f872f8f3fb30d3c9058d.webp",
+        "/media/apple-color-variants/iphone-17-pro-max/deep-blue.webp"
+      ]
+    },
+    {
+      "slug": "iphone-17e",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 3,
+      "sources": [
+        "/media/apple-color-variants/iphone-17e/black.webp",
+        "/media/apple-color-variants/iphone-17e/white.webp",
+        "/media/catalog/products/iphone-17e.webp"
+      ]
+    },
+    {
+      "slug": "iphone-18-pro",
+      "ratio": 0.8453237410071942,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/catalog/apple-official-2026/iphone-18-pro-burgundy.webp",
+        "/media/catalog/apple-official-2026/iphone-18-pro-glacier.webp",
+        "/media/catalog/apple-official-2026/iphone-18-pro-silver.webp",
+        "/media/catalog/apple-official-2026/iphone-18-pro-black.webp"
+      ]
+    },
+    {
+      "slug": "iphone-18-pro-max",
+      "ratio": 0.8453237410071942,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+        "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+        "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+        "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp"
+      ]
+    },
+    {
+      "slug": "iphone-air",
+      "ratio": 0.8453237410071942,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/catalog/iphone-air-official-2026/spaceblack.webp",
+        "/media/catalog/iphone-air-official-2026/cloudwhite.webp",
+        "/media/catalog/iphone-air-official-2026/lightgold.webp",
+        "/media/catalog/iphone-air-official-2026/skyblue.webp"
+      ]
+    },
+    {
+      "slug": "iphone-clear-case",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "iphone-silicone-case",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "macbook-air-13-m5",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/color-frame-fixed-2026-10-31/air13-sky-blue.webp",
+        "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+        "/media/color-frame-fixed-2026-10-31/air13-starlight.webp",
+        "/media/color-frame-fixed-2026-10-31/air13-midnight.webp"
+      ]
+    },
+    {
+      "slug": "macbook-air-15-m5",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/color-frame-fixed-2026-10-31/air15-sky-blue.webp",
+        "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+        "/media/color-frame-fixed-2026-10-31/air15-starlight.webp",
+        "/media/color-frame-fixed-2026-10-31/air15-midnight.webp"
+      ]
+    },
+    {
+      "slug": "macbook-neo",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/catalog/products/macbook-neo-blush-2026-v2.webp",
+        "/media/catalog/products/macbook-neo-indigo-2026-v2.webp",
+        "/media/catalog/products/macbook-neo-citrus-2026-v2.webp",
+        "/media/quality-2026-10-24/6c8aecf7fee641b8d99f.webp"
+      ]
+    },
+    {
+      "slug": "macbook-sleeve",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-book-14-2026",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-book-16-2026",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-book-pro-14-2026",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-book-pro-16-2026",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-buds-8",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-buds-8-lite",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-buds-8-pro",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-note-15-5g",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-note-15-pro-5g",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-note-15-pro-plus-5g",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "redmi-pad-2-pro",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "s-pen-pro",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "samsung-25w-charger",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "samsung-45w-charger",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "samsung-cable-usbc-usbc",
+      "ratio": 1,
+      "colors": 0,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "watch-se-3",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 2,
+      "sources": [
+        "/media/quality-2026-10-24/e7b8cd693bb47fe12b03.webp",
+        "/media/quality-2026-10-24/19d8c95a7f79f1b5dd3a.webp"
+      ]
+    },
+    {
+      "slug": "watch-series-11",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 4,
+      "sources": [
+        "/media/quality-2026-10-24/acf5964caf1395623ec0.webp",
+        "/media/quality-2026-10-24/e0a19920483588575edb.webp",
+        "/media/quality-2026-10-24/7fb5745c9735bf9ffd9b.webp",
+        "/media/quality-2026-10-24/81bc89342621785c8bf1.webp"
+      ]
+    },
+    {
+      "slug": "watch-series-12",
+      "ratio": 1,
+      "colors": 5,
+      "sourceCount": 5,
+      "sources": [
+        "/media/apple-color-variants/watch-series-12/space-gray-blue-band.webp",
+        "/media/apple-color-variants/watch-series-12/black-black-band.webp",
+        "/media/apple-color-variants/watch-series-12/dark-bronze-olive-band.webp",
+        "/media/apple-color-variants/watch-series-12/light-gold-sand-band.webp",
+        "/media/apple-color-variants/watch-series-12/space-gray-black-band.webp"
+      ]
+    },
+    {
+      "slug": "xiaomi-17",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "xiaomi-17-ultra",
+      "ratio": 2.3333333333333335,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        "/media/xiaomi-17-ultra/hero-poster.webp"
+      ]
+    },
+    {
+      "slug": "xiaomi-17t",
+      "ratio": 1,
+      "colors": 4,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "xiaomi-17t-pro",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "xiaomi-book-pro-14",
+      "ratio": 2.3333333333333335,
+      "colors": 4,
+      "sourceCount": 1,
+      "sources": [
+        "/media/xiaomi-book-pro-14/hero-poster.jpg"
+      ]
+    },
+    {
+      "slug": "xiaomi-pad-8",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "xiaomi-pad-8-pro",
+      "ratio": 1,
+      "colors": 3,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    },
+    {
+      "slug": "xiaomi-pad-mini",
+      "ratio": 1,
+      "colors": 2,
+      "sourceCount": 1,
+      "sources": [
+        null
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "src": "/media/catalog/products/iphone-18-pro-card-studio-2026-v2.webp",
+    "measurements": [
+      {
+        "quality": 75,
+        "psnr": 41.3,
+        "bytes": 12285,
+        "width": 828,
+        "format": "image/avif"
+      },
+      {
+        "quality": 90,
+        "psnr": 43.19,
+        "bytes": 15394,
+        "width": 828,
+        "format": "image/avif"
+      }
+    ],
+    "preservesMoreDetail": true
+  },
+  {
+    "src": "/media/catalog/apple-watch-silicone-2026/series11-jet-black-fixed-2026-10-16.webp",
+    "measurements": [
+      {
+        "quality": 75,
+        "psnr": 41.6,
+        "bytes": 13647,
+        "width": 828,
+        "format": "image/avif"
+      },
+      {
+        "quality": 90,
+        "psnr": 43.6,
+        "bytes": 16820,
+        "width": 828,
+        "format": "image/avif"
+      }
+    ],
+    "preservesMoreDetail": true
+  },
+  {
+    "src": "/media/catalog/products/galaxy-tab-s11.webp",
+    "measurements": [
+      {
+        "quality": 75,
+        "psnr": 43.3,
+        "bytes": 10460,
+        "width": 828,
+        "format": "image/avif"
+      },
+      {
+        "quality": 90,
+        "psnr": 45.35,
+        "bytes": 12538,
+        "width": 828,
+        "format": "image/avif"
+      }
+    ],
+    "preservesMoreDetail": true
+  }
+]

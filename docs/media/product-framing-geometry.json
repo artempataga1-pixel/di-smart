@@ -1,0 +1,1296 @@
+[
+  {
+    "slug": "airpods-max",
+    "reference": "/media/catalog/products/airpods-max.webp",
+    "items": [
+      {
+        "color": "\u041f\u043e\u043b\u043d\u043e\u0447\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/airpods-max/midnight.webp",
+        "matches": 36,
+        "inliers": 23,
+        "scale": 1.00087,
+        "rotation": -0.02,
+        "tx": -0.2,
+        "ty": -0.4
+      },
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/apple-color-variants/airpods-max/blue.webp",
+        "matches": 59,
+        "inliers": 48,
+        "scale": 0.99868,
+        "rotation": 0.02,
+        "tx": 0.7,
+        "ty": 0.7
+      },
+      {
+        "color": "\u0420\u043e\u0437\u043e\u0432\u044b\u0439",
+        "url": "/media/apple-color-variants/airpods-max/pink.webp",
+        "matches": 99,
+        "inliers": 89,
+        "scale": 1.00017,
+        "rotation": -0.02,
+        "tx": -0.2,
+        "ty": 0.1
+      },
+      {
+        "color": "\u0417\u0435\u043b\u0451\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/airpods-max/green.webp",
+        "matches": 72,
+        "inliers": 56,
+        "scale": 0.99948,
+        "rotation": -0.03,
+        "tx": -0.0,
+        "ty": 0.7
+      }
+    ]
+  },
+  {
+    "slug": "airpods-max-2",
+    "reference": "/media/apple-color-variants/airpods-max-2/midnight.webp",
+    "items": [
+      {
+        "color": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439",
+        "url": "/media/catalog/products/airpods-max-2.webp",
+        "matches": 8,
+        "inliers": 7,
+        "scale": 0.99909,
+        "rotation": -0.09,
+        "tx": -0.4,
+        "ty": 1.2
+      },
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/apple-color-variants/airpods-max-2/blue.webp",
+        "matches": 27,
+        "inliers": 25,
+        "scale": 1.00034,
+        "rotation": -0.0,
+        "tx": -0.3,
+        "ty": -0.3
+      },
+      {
+        "color": "\u0424\u0438\u043e\u043b\u0435\u0442\u043e\u0432\u044b\u0439",
+        "url": "/media/apple-color-variants/airpods-max-2/purple.webp",
+        "matches": 44,
+        "inliers": 39,
+        "scale": 1.00007,
+        "rotation": -0.0,
+        "tx": -0.1,
+        "ty": -0.4
+      },
+      {
+        "color": "\u041a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043e\u0440\u0430\u043d\u0436\u0435\u0432\u044b\u0439",
+        "url": "/media/apple-color-variants/airpods-max-2/orange.webp",
+        "matches": 25,
+        "inliers": 21,
+        "scale": 0.99925,
+        "rotation": 0.01,
+        "tx": 0.4,
+        "ty": -0.0
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-a26-5g",
+    "reference": "/media/catalog/products/galaxy-a26-5g.webp",
+    "items": [
+      {
+        "color": "\u0411\u0435\u043b\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-a26-5g/white.webp",
+        "matches": 6,
+        "inliers": 4,
+        "scale": 0.9997,
+        "rotation": 0.06,
+        "tx": 0.1,
+        "ty": -0.1
+      },
+      {
+        "color": "\u0417\u0435\u043b\u0451\u043d\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-a26-5g/green.webp",
+        "matches": 13,
+        "inliers": 11,
+        "scale": 1.00021,
+        "rotation": -0.04,
+        "tx": -0.1,
+        "ty": 0.1
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-a56",
+    "reference": "/media/samsung-color-variants/galaxy-a56/graphite.webp",
+    "items": [
+      {
+        "color": "\u0421\u0432\u0435\u0442\u043b\u043e-\u0441\u0435\u0440\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-a56.webp",
+        "matches": 11,
+        "inliers": 9,
+        "scale": 1.00028,
+        "rotation": 0.02,
+        "tx": 0.2,
+        "ty": 0.2
+      },
+      {
+        "color": "\u041e\u043b\u0438\u0432\u043a\u043e\u0432\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-a56/olive.webp",
+        "matches": 17,
+        "inliers": 13,
+        "scale": 1.00028,
+        "rotation": 0.07,
+        "tx": 0.3,
+        "ty": -0.5
+      },
+      {
+        "color": "\u0420\u043e\u0437\u043e\u0432\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-a56/pink.webp",
+        "matches": 14,
+        "inliers": 9,
+        "scale": 0.99976,
+        "rotation": -0.02,
+        "tx": -0.1,
+        "ty": 0.6
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-buds3",
+    "reference": "/media/samsung-color-variants/galaxy-buds3/white.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-buds3.webp",
+        "matches": 24,
+        "inliers": 23,
+        "scale": 1.00105,
+        "rotation": 0.04,
+        "tx": 0.0,
+        "ty": -0.4
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-buds3-fe",
+    "reference": "/media/catalog/products/galaxy-buds3-fe.webp",
+    "items": [
+      {
+        "color": "\u0411\u0435\u043b\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-buds3-fe/white.webp",
+        "matches": 7,
+        "inliers": 3,
+        "scale": 1.00315,
+        "rotation": 0.06,
+        "tx": -1.2,
+        "ty": -2.5
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-buds3-pro",
+    "reference": "/media/samsung-color-variants/galaxy-buds3-pro/white.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-buds3-pro.webp",
+        "matches": 14,
+        "inliers": 12,
+        "scale": 1.00043,
+        "rotation": 0.05,
+        "tx": -0.2,
+        "ty": -0.2
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-buds4",
+    "reference": "/media/samsung-color-variants/galaxy-buds4/white.webp",
+    "items": [
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-buds4.webp",
+        "matches": 21,
+        "inliers": 20,
+        "scale": 1.0001,
+        "rotation": -0.01,
+        "tx": -0.4,
+        "ty": 0.2
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-buds4-pro",
+    "reference": "/media/samsung-color-variants/galaxy-buds4-pro/white.webp",
+    "items": [
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-buds4-pro.webp",
+        "matches": 22,
+        "inliers": 20,
+        "scale": 0.9999,
+        "rotation": 0.02,
+        "tx": -0.2,
+        "ty": -0.1
+      },
+      {
+        "color": "\u0420\u043e\u0437\u043e\u0432\u043e\u0435 \u0437\u043e\u043b\u043e\u0442\u043e",
+        "url": "/media/samsung-color-variants/galaxy-buds4-pro/pink-gold.webp",
+        "matches": 36,
+        "inliers": 35,
+        "scale": 0.9997,
+        "rotation": -0.01,
+        "tx": 0.0,
+        "ty": 0.1
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-s25",
+    "reference": "/media/samsung-color-variants/galaxy-s25/black.webp",
+    "items": [
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/samsung-color-variants/galaxy-s25/navy.webp",
+        "matches": 73,
+        "inliers": 62,
+        "scale": 1.00007,
+        "rotation": 0.03,
+        "tx": 0.3,
+        "ty": -0.4
+      },
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-s25.webp",
+        "matches": 48,
+        "inliers": 42,
+        "scale": 1.00107,
+        "rotation": -0.02,
+        "tx": -0.6,
+        "ty": -0.1
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-s25-plus",
+    "reference": "/media/samsung-color-variants/galaxy-s25-plus/black.webp",
+    "items": [
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/catalog/products/galaxy-s25-plus.webp",
+        "matches": 32,
+        "inliers": 24,
+        "scale": 0.99969,
+        "rotation": -0.03,
+        "tx": -0.5,
+        "ty": 0.6
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-s25-ultra",
+    "reference": "/media/samsung-color-variants/galaxy-s25-ultra/titanium-black.webp",
+    "items": [
+      {
+        "color": "\u0422\u0438\u0442\u0430\u043d\u043e\u0432\u044b\u0439 \u0441\u0435\u0440\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-s25-ultra/titanium-gray.webp",
+        "matches": 20,
+        "inliers": 14,
+        "scale": 0.99933,
+        "rotation": 0.05,
+        "tx": 0.3,
+        "ty": -0.2
+      },
+      {
+        "color": "\u0422\u0438\u0442\u0430\u043d\u043e\u0432\u044b\u0439 \u0441\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u043e-\u0433\u043e\u043b\u0443\u0431\u043e\u0439",
+        "url": "/media/samsung-color-variants/galaxy-s25-ultra/titanium-silverblue.webp",
+        "matches": 15,
+        "inliers": 11,
+        "scale": 0.99947,
+        "rotation": 0.03,
+        "tx": 0.5,
+        "ty": -0.3
+      },
+      {
+        "color": "\u0422\u0438\u0442\u0430\u043d\u043e\u0432\u044b\u0439 \u0431\u0435\u043b\u043e-\u0441\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-s25-ultra.webp",
+        "matches": 12,
+        "inliers": 10,
+        "scale": 0.9997,
+        "rotation": 0.01,
+        "tx": 0.0,
+        "ty": 0.2
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-s26",
+    "reference": "/media/samsung-color-variants/galaxy-s26/cobalt-violet.webp",
+    "items": [
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/samsung-color-variants/galaxy-s26/sky-blue.webp",
+        "matches": 28,
+        "inliers": 24,
+        "scale": 0.99974,
+        "rotation": 0.0,
+        "tx": 0.1,
+        "ty": 0.1
+      },
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-s26.webp",
+        "matches": 58,
+        "inliers": 48,
+        "scale": 0.99983,
+        "rotation": -0.03,
+        "tx": -0.2,
+        "ty": 0.3
+      },
+      {
+        "color": "\u0411\u0435\u043b\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-s26/white.webp",
+        "matches": 26,
+        "inliers": 21,
+        "scale": 0.99991,
+        "rotation": 0.01,
+        "tx": 0.2,
+        "ty": 0.0
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-s26-fe",
+    "reference": "/media/samsung-color-variants/galaxy-s26-fe/pistachio.webp",
+    "items": [
+      {
+        "color": "\u0413\u0440\u0430\u0444\u0438\u0442\u043e\u0432\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-s26-fe/graphite.webp",
+        "matches": 21,
+        "inliers": 19,
+        "scale": 0.9991,
+        "rotation": -0.03,
+        "tx": 0.1,
+        "ty": 0.6
+      },
+      {
+        "color": "\u0413\u043e\u043b\u0443\u0431\u0430\u044f \u044f\u0433\u043e\u0434\u0430",
+        "url": "/media/samsung-color-variants/galaxy-s26-fe/blueberry.webp",
+        "matches": 21,
+        "inliers": 14,
+        "scale": 1.00174,
+        "rotation": -0.06,
+        "tx": -1.1,
+        "ty": -0.4
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-s26-plus",
+    "reference": "/media/samsung-color-variants/galaxy-s26-plus/cobalt-violet.webp",
+    "items": [
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/samsung-color-variants/galaxy-s26-plus/sky-blue.webp",
+        "matches": 26,
+        "inliers": 18,
+        "scale": 0.99708,
+        "rotation": -0.26,
+        "tx": -2.0,
+        "ty": 3.2
+      },
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-s26-plus.webp",
+        "matches": 45,
+        "inliers": 39,
+        "scale": 1.00009,
+        "rotation": 0.02,
+        "tx": 0.3,
+        "ty": -0.2
+      },
+      {
+        "color": "\u0411\u0435\u043b\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-s26-plus/white.webp",
+        "matches": 15,
+        "inliers": 10,
+        "scale": 1.00056,
+        "rotation": -0.1,
+        "tx": -0.9,
+        "ty": 0.5
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-s26-ultra",
+    "reference": "/media/flagship-colors/galaxy-s26-ultra/black.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u0430\u044f \u0442\u0435\u043d\u044c",
+        "url": "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+        "matches": 11,
+        "inliers": 4,
+        "scale": 1.08387,
+        "rotation": -0.11,
+        "tx": -33.9,
+        "ty": -41.2
+      },
+      {
+        "color": "\u041a\u043e\u0431\u0430\u043b\u044c\u0442\u043e\u0432\u044b\u0439 \u0444\u0438\u043e\u043b\u0435\u0442\u043e\u0432\u044b\u0439",
+        "url": "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+        "matches": 12,
+        "inliers": 3,
+        "scale": 1.11569,
+        "rotation": -0.49,
+        "tx": -56.4,
+        "ty": -45.3
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-tab-a11",
+    "reference": "/media/catalog/products/galaxy-tab-a11.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-a11/silver.webp",
+        "matches": 12,
+        "inliers": 8,
+        "scale": 1.00642,
+        "rotation": -0.07,
+        "tx": -4.6,
+        "ty": -2.2
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-tab-a11-plus",
+    "reference": "/media/catalog/products/galaxy-tab-a11-plus.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-a11-plus/silver.webp",
+        "matches": 21,
+        "inliers": 18,
+        "scale": 0.99914,
+        "rotation": -0.02,
+        "tx": 0.3,
+        "ty": 0.3
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-tab-s10-fe",
+    "reference": "/media/catalog/products/galaxy-tab-s10-fe.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-s10-fe/silver.webp",
+        "matches": 11,
+        "inliers": 10,
+        "scale": 0.99757,
+        "rotation": 0.12,
+        "tx": 1.8,
+        "ty": 0.3
+      },
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-s10-fe/blue.webp",
+        "matches": 23,
+        "inliers": 13,
+        "scale": 0.99765,
+        "rotation": 0.02,
+        "tx": 1.4,
+        "ty": 1.1
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-tab-s10-fe-plus",
+    "reference": "/media/catalog/products/galaxy-tab-s10-fe-plus.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-s10-fe-plus/silver.webp",
+        "matches": 13,
+        "inliers": 12,
+        "scale": 0.99982,
+        "rotation": 0.05,
+        "tx": 0.7,
+        "ty": -0.3
+      },
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-s10-fe-plus/blue.webp",
+        "matches": 23,
+        "inliers": 18,
+        "scale": 1.00052,
+        "rotation": -0.01,
+        "tx": 0.1,
+        "ty": -0.1
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-tab-s10-lite",
+    "reference": "/media/samsung-color-variants/galaxy-tab-s10-lite/silver.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-s10-lite/gray.webp",
+        "matches": 25,
+        "inliers": 17,
+        "scale": 1.00077,
+        "rotation": 0.02,
+        "tx": -0.3,
+        "ty": -0.5
+      },
+      {
+        "color": "\u041a\u043e\u0440\u0430\u043b\u043b\u043e\u0432\u044b\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-s10-lite/coral-red.webp",
+        "matches": 32,
+        "inliers": 30,
+        "scale": 1.00007,
+        "rotation": -0.04,
+        "tx": -0.3,
+        "ty": -0.1
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-tab-s10-plus",
+    "reference": "/media/samsung-color-variants/galaxy-tab-s10-plus/silver.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-tab-s10-plus/gray.webp",
+        "matches": 21,
+        "inliers": 18,
+        "scale": 1.00071,
+        "rotation": 0.04,
+        "tx": -0.1,
+        "ty": 0.1
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-tab-s11",
+    "reference": "/media/samsung-color-variants/galaxy-tab-s11/silver.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-tab-s11.webp",
+        "matches": 24,
+        "inliers": 23,
+        "scale": 0.99921,
+        "rotation": -0.07,
+        "tx": -0.5,
+        "ty": 1.2
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-tab-s11-ultra",
+    "reference": "/media/samsung-color-variants/galaxy-tab-s11-ultra/silver.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-tab-s11-ultra.webp",
+        "matches": 7,
+        "inliers": 5,
+        "scale": 0.98966,
+        "rotation": 0.56,
+        "tx": 13.0,
+        "ty": 0.7
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-z-flip7",
+    "reference": "/media/catalog/products/galaxy-z-flip7.webp",
+    "items": [
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-flip7/black.webp",
+        "matches": 54,
+        "inliers": 46,
+        "scale": 1.00063,
+        "rotation": -0.03,
+        "tx": -0.6,
+        "ty": -0.2
+      },
+      {
+        "color": "\u041a\u043e\u0440\u0430\u043b\u043b\u043e\u0432\u043e-\u043a\u0440\u0430\u0441\u043d\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-flip7/coral-red.webp",
+        "matches": 58,
+        "inliers": 46,
+        "scale": 0.99983,
+        "rotation": -0.01,
+        "tx": 0.1,
+        "ty": 0.2
+      },
+      {
+        "color": "\u041c\u044f\u0442\u043d\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-flip7/mint.webp",
+        "matches": 33,
+        "inliers": 23,
+        "scale": 0.99928,
+        "rotation": -0.04,
+        "tx": 0.4,
+        "ty": 0.9
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-z-flip8",
+    "reference": "/media/samsung-color-variants/galaxy-z-flip8/pink.webp",
+    "items": [
+      {
+        "color": "\u0413\u0440\u0430\u0444\u0438\u0442\u043e\u0432\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-z-flip8.webp",
+        "matches": 33,
+        "inliers": 18,
+        "scale": 1.00135,
+        "rotation": 0.02,
+        "tx": -0.8,
+        "ty": -0.8
+      },
+      {
+        "color": "\u041a\u0440\u0435\u043c\u043e\u0432\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-flip8/cream.webp",
+        "matches": 63,
+        "inliers": 53,
+        "scale": 0.9991,
+        "rotation": -0.05,
+        "tx": -0.0,
+        "ty": 1.1
+      },
+      {
+        "color": "\u041c\u044f\u0442\u043d\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-flip8/mint.webp",
+        "matches": 61,
+        "inliers": 54,
+        "scale": 1.00043,
+        "rotation": -0.01,
+        "tx": -0.3,
+        "ty": 0.0
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-z-fold7",
+    "reference": "/media/samsung-color-variants/galaxy-z-fold7/blue-shadow.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u0430\u044f \u0442\u0435\u043d\u044c",
+        "url": "/media/catalog/products/galaxy-z-fold7.webp",
+        "matches": 22,
+        "inliers": 15,
+        "scale": 1.00026,
+        "rotation": -0.04,
+        "tx": -0.6,
+        "ty": 0.3
+      },
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-fold7/black.webp",
+        "matches": 44,
+        "inliers": 38,
+        "scale": 1.00002,
+        "rotation": 0.03,
+        "tx": -0.2,
+        "ty": -0.1
+      },
+      {
+        "color": "\u041c\u044f\u0442\u043d\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-fold7/mint.webp",
+        "matches": 19,
+        "inliers": 14,
+        "scale": 1.0005,
+        "rotation": -0.05,
+        "tx": -0.3,
+        "ty": -0.1
+      }
+    ]
+  },
+  {
+    "slug": "galaxy-z-fold8",
+    "reference": "/media/samsung-color-variants/galaxy-z-fold8/lavender.webp",
+    "items": [
+      {
+        "color": "\u0413\u0440\u0430\u0444\u0438\u0442\u043e\u0432\u044b\u0439",
+        "url": "/media/catalog/products/galaxy-z-fold8.webp",
+        "matches": 46,
+        "inliers": 33,
+        "scale": 1.00041,
+        "rotation": 0.07,
+        "tx": 0.3,
+        "ty": -0.5
+      },
+      {
+        "color": "\u041a\u0440\u0435\u043c\u043e\u0432\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-fold8/cream.webp",
+        "matches": 25,
+        "inliers": 19,
+        "scale": 0.99984,
+        "rotation": 0.02,
+        "tx": 0.0,
+        "ty": -0.2
+      },
+      {
+        "color": "\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u043e\u0432\u044b\u0439",
+        "url": "/media/samsung-color-variants/galaxy-z-fold8/pistachio.webp",
+        "matches": 44,
+        "inliers": 34,
+        "scale": 0.99996,
+        "rotation": -0.0,
+        "tx": 0.2,
+        "ty": 0.0
+      }
+    ]
+  },
+  {
+    "slug": "ipad-11",
+    "reference": "/media/apple-color-variants/ipad-11/silver.webp",
+    "items": [
+      {
+        "color": "\u0421\u0438\u043d\u0438\u0439",
+        "url": "/media/catalog/products/ipad-11.webp",
+        "matches": 22,
+        "inliers": 18,
+        "scale": 1.00065,
+        "rotation": 0.1,
+        "tx": 0.5,
+        "ty": -1.0
+      },
+      {
+        "color": "\u0420\u043e\u0437\u043e\u0432\u044b\u0439",
+        "url": "/media/apple-color-variants/ipad-11/pink.webp",
+        "matches": 21,
+        "inliers": 19,
+        "scale": 1.00101,
+        "rotation": 0.03,
+        "tx": -0.1,
+        "ty": -0.9
+      },
+      {
+        "color": "\u0416\u0451\u043b\u0442\u044b\u0439",
+        "url": "/media/apple-color-variants/ipad-11/yellow.webp",
+        "matches": 25,
+        "inliers": 23,
+        "scale": 1.00091,
+        "rotation": -0.0,
+        "tx": -0.3,
+        "ty": -0.7
+      }
+    ]
+  },
+  {
+    "slug": "ipad-air-11",
+    "reference": "/media/catalog/products/ipad-air-11.webp",
+    "items": [
+      {
+        "color": "\u0424\u0438\u043e\u043b\u0435\u0442\u043e\u0432\u044b\u0439",
+        "url": "/media/apple-color-variants/ipad-air-11/purple.webp",
+        "matches": 69,
+        "inliers": 54,
+        "scale": 0.99977,
+        "rotation": 0.01,
+        "tx": 0.2,
+        "ty": -0.1
+      },
+      {
+        "color": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/ipad-air-11/starlight.webp",
+        "matches": 65,
+        "inliers": 49,
+        "scale": 1.00016,
+        "rotation": -0.02,
+        "tx": -0.4,
+        "ty": 0.0
+      },
+      {
+        "color": "\u0421\u0435\u0440\u044b\u0439 \u043a\u043e\u0441\u043c\u043e\u0441",
+        "url": "/media/apple-color-variants/ipad-air-11/space-gray.webp",
+        "matches": 62,
+        "inliers": 48,
+        "scale": 0.9991,
+        "rotation": 0.0,
+        "tx": 0.3,
+        "ty": 0.2
+      }
+    ]
+  },
+  {
+    "slug": "ipad-air-13",
+    "reference": "/media/catalog/products/ipad-air-13.webp",
+    "items": [
+      {
+        "color": "\u0424\u0438\u043e\u043b\u0435\u0442\u043e\u0432\u044b\u0439",
+        "url": "/media/apple-color-variants/ipad-air-13/purple.webp",
+        "matches": 36,
+        "inliers": 32,
+        "scale": 1.00016,
+        "rotation": -0.02,
+        "tx": -0.1,
+        "ty": -0.3
+      },
+      {
+        "color": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/ipad-air-13/starlight.webp",
+        "matches": 45,
+        "inliers": 39,
+        "scale": 0.99978,
+        "rotation": 0.02,
+        "tx": 0.4,
+        "ty": -0.4
+      },
+      {
+        "color": "\u0421\u0435\u0440\u044b\u0439 \u043a\u043e\u0441\u043c\u043e\u0441",
+        "url": "/media/apple-color-variants/ipad-air-13/space-gray.webp",
+        "matches": 38,
+        "inliers": 31,
+        "scale": 1.0009,
+        "rotation": 0.02,
+        "tx": -0.2,
+        "ty": -0.8
+      }
+    ]
+  },
+  {
+    "slug": "iphone-17",
+    "reference": "/media/apple-color-variants/iphone-17/black.webp",
+    "items": [
+      {
+        "color": "\u0411\u0435\u043b\u044b\u0439",
+        "url": "/media/apple-color-variants/iphone-17/white.webp",
+        "matches": 18,
+        "inliers": 16,
+        "scale": 0.99907,
+        "rotation": 0.02,
+        "tx": 0.8,
+        "ty": 0.1
+      },
+      {
+        "color": "\u0414\u044b\u043c\u0447\u0430\u0442\u043e-\u0433\u043e\u043b\u0443\u0431\u043e\u0439",
+        "url": "/media/catalog/products/iphone-17.webp",
+        "matches": 18,
+        "inliers": 15,
+        "scale": 0.99915,
+        "rotation": -0.02,
+        "tx": 0.7,
+        "ty": 0.7
+      },
+      {
+        "color": "\u0428\u0430\u043b\u0444\u0435\u0439\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/iphone-17/sage.webp",
+        "matches": 23,
+        "inliers": 18,
+        "scale": 1.00032,
+        "rotation": 0.01,
+        "tx": 0.1,
+        "ty": -0.3
+      },
+      {
+        "color": "\u041b\u0430\u0432\u0430\u043d\u0434\u043e\u0432\u044b\u0439",
+        "url": "/media/apple-color-variants/iphone-17/lavender.webp",
+        "matches": 19,
+        "inliers": 19,
+        "scale": 0.99963,
+        "rotation": 0.0,
+        "tx": 0.3,
+        "ty": -0.1
+      }
+    ]
+  },
+  {
+    "slug": "iphone-17-pro",
+    "reference": "/media/apple-color-variants/iphone-17-pro/silver.webp",
+    "items": [
+      {
+        "color": "\u041a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043e\u0440\u0430\u043d\u0436\u0435\u0432\u044b\u0439",
+        "url": "/media/catalog/products/iphone-17-pro.webp",
+        "matches": 35,
+        "inliers": 30,
+        "scale": 0.99977,
+        "rotation": -0.0,
+        "tx": -0.1,
+        "ty": 0.2
+      },
+      {
+        "color": "\u0422\u0451\u043c\u043d\u043e-\u0441\u0438\u043d\u0438\u0439",
+        "url": "/media/apple-color-variants/iphone-17-pro/deep-blue.webp",
+        "matches": 26,
+        "inliers": 21,
+        "scale": 0.99744,
+        "rotation": -0.08,
+        "tx": 0.4,
+        "ty": 1.4
+      }
+    ]
+  },
+  {
+    "slug": "iphone-17-pro-max",
+    "reference": "/media/apple-color-variants/iphone-17-pro-max/silver.webp",
+    "items": [
+      {
+        "color": "\u041a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043e\u0440\u0430\u043d\u0436\u0435\u0432\u044b\u0439",
+        "url": "/media/catalog/products/iphone-17-pro-max.webp",
+        "matches": 46,
+        "inliers": 40,
+        "scale": 0.9999,
+        "rotation": 0.05,
+        "tx": 0.2,
+        "ty": -0.1
+      },
+      {
+        "color": "\u0422\u0451\u043c\u043d\u043e-\u0441\u0438\u043d\u0438\u0439",
+        "url": "/media/apple-color-variants/iphone-17-pro-max/deep-blue.webp",
+        "matches": 24,
+        "inliers": 20,
+        "scale": 1.00235,
+        "rotation": -0.02,
+        "tx": -1.5,
+        "ty": -0.3
+      }
+    ]
+  },
+  {
+    "slug": "iphone-17e",
+    "reference": "/media/apple-color-variants/iphone-17e/black.webp",
+    "items": [
+      {
+        "color": "\u0411\u0435\u043b\u044b\u0439",
+        "url": "/media/apple-color-variants/iphone-17e/white.webp",
+        "matches": 17,
+        "inliers": 14,
+        "scale": 0.99978,
+        "rotation": 0.04,
+        "tx": 0.1,
+        "ty": -0.4
+      },
+      {
+        "color": "\u041d\u0435\u0436\u043d\u043e-\u0440\u043e\u0437\u043e\u0432\u044b\u0439",
+        "url": "/media/catalog/products/iphone-17e.webp",
+        "matches": 15,
+        "inliers": 15,
+        "scale": 0.99977,
+        "rotation": 0.02,
+        "tx": 0.3,
+        "ty": 0.2
+      }
+    ]
+  },
+  {
+    "slug": "iphone-18-pro",
+    "reference": "/media/catalog/apple-official-2026/iphone-18-pro-burgundy.webp",
+    "items": [
+      {
+        "color": "\u041b\u0435\u0434\u043d\u0438\u043a\u043e\u0432\u044b\u0439",
+        "url": "/media/catalog/apple-official-2026/iphone-18-pro-glacier.webp",
+        "matches": 30,
+        "inliers": 23,
+        "scale": 1.00013,
+        "rotation": 0.0,
+        "tx": -0.1,
+        "ty": -0.0
+      },
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/catalog/apple-official-2026/iphone-18-pro-silver.webp",
+        "matches": 16,
+        "inliers": 11,
+        "scale": 1.00035,
+        "rotation": 0.0,
+        "tx": -0.1,
+        "ty": -0.1
+      },
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439",
+        "url": "/media/catalog/apple-official-2026/iphone-18-pro-black.webp",
+        "matches": 137,
+        "inliers": 118,
+        "scale": 0.99954,
+        "rotation": -0.01,
+        "tx": 0.0,
+        "ty": 0.2
+      }
+    ]
+  },
+  {
+    "slug": "iphone-18-pro-max",
+    "reference": "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp",
+    "items": [
+      {
+        "color": "\u041b\u0435\u0434\u043d\u0438\u043a\u043e\u0432\u044b\u0439",
+        "url": "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp",
+        "matches": 27,
+        "inliers": 26,
+        "scale": 1.00002,
+        "rotation": 0.0,
+        "tx": -0.0,
+        "ty": 0.0
+      },
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp",
+        "matches": 29,
+        "inliers": 24,
+        "scale": 0.99989,
+        "rotation": 0.01,
+        "tx": 0.2,
+        "ty": 0.1
+      },
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439",
+        "url": "/media/catalog/apple-official-2026/iphone-18-pro-max-black.webp",
+        "matches": 6,
+        "inliers": 2,
+        "scale": 1.97939,
+        "rotation": -58.5,
+        "tx": -297.4,
+        "ty": 899.8
+      }
+    ]
+  },
+  {
+    "slug": "iphone-air",
+    "reference": "/media/catalog/iphone-air-official-2026/spaceblack.webp",
+    "items": [
+      {
+        "color": "\u041e\u0431\u043b\u0430\u0447\u043d\u044b\u0439 \u0431\u0435\u043b\u044b\u0439",
+        "url": "/media/catalog/iphone-air-official-2026/cloudwhite.webp",
+        "matches": 23,
+        "inliers": 21,
+        "scale": 0.99887,
+        "rotation": -0.02,
+        "tx": 0.2,
+        "ty": 0.3
+      },
+      {
+        "color": "\u0421\u0432\u0435\u0442\u043b\u043e-\u0437\u043e\u043b\u043e\u0442\u043e\u0439",
+        "url": "/media/catalog/iphone-air-official-2026/lightgold.webp",
+        "matches": 22,
+        "inliers": 20,
+        "scale": 0.99988,
+        "rotation": -0.01,
+        "tx": -0.2,
+        "ty": 0.2
+      },
+      {
+        "color": "\u041d\u0435\u0431\u0435\u0441\u043d\u043e-\u0433\u043e\u043b\u0443\u0431\u043e\u0439",
+        "url": "/media/catalog/iphone-air-official-2026/skyblue.webp",
+        "matches": 28,
+        "inliers": 23,
+        "scale": 1.00001,
+        "rotation": -0.0,
+        "tx": -0.1,
+        "ty": 0.0
+      }
+    ]
+  },
+  {
+    "slug": "macbook-air-13-m5",
+    "reference": "/media/catalog/products/macbook-air-13-m5.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+        "matches": 102,
+        "inliers": 70,
+        "scale": 0.81367,
+        "rotation": -0.04,
+        "tx": 67.9,
+        "ty": 100.1
+      },
+      {
+        "color": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/macbook-air-13-m5/starlight.webp",
+        "matches": 91,
+        "inliers": 65,
+        "scale": 0.84778,
+        "rotation": -0.02,
+        "tx": 54.0,
+        "ty": 72.2
+      },
+      {
+        "color": "\u041f\u043e\u043b\u043d\u043e\u0447\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/macbook-air-13-m5/midnight.webp",
+        "matches": 83,
+        "inliers": 59,
+        "scale": 0.81947,
+        "rotation": -0.28,
+        "tx": 61.4,
+        "ty": 98.7
+      }
+    ]
+  },
+  {
+    "slug": "macbook-air-15-m5",
+    "reference": "/media/catalog/products/macbook-air-15-m5.webp",
+    "items": [
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+        "matches": 52,
+        "inliers": 31,
+        "scale": 0.82774,
+        "rotation": 0.39,
+        "tx": 57.2,
+        "ty": 75.6
+      },
+      {
+        "color": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/macbook-air-15-m5/starlight.webp",
+        "matches": 61,
+        "inliers": 34,
+        "scale": 0.83628,
+        "rotation": -0.18,
+        "tx": 55.0,
+        "ty": 77.3
+      },
+      {
+        "color": "\u041f\u043e\u043b\u043d\u043e\u0447\u043d\u044b\u0439",
+        "url": "/media/apple-color-variants/macbook-air-15-m5/midnight.webp",
+        "matches": 37,
+        "inliers": 12,
+        "scale": 0.8394,
+        "rotation": -0.74,
+        "tx": 49.1,
+        "ty": 80.3
+      }
+    ]
+  },
+  {
+    "slug": "macbook-neo",
+    "reference": "/media/catalog/products/macbook-neo-blush-2026-v2.webp",
+    "items": [
+      {
+        "color": "\u0418\u043d\u0434\u0438\u0433\u043e",
+        "url": "/media/catalog/products/macbook-neo-indigo-2026-v2.webp",
+        "matches": 18,
+        "inliers": 14,
+        "scale": 1.00125,
+        "rotation": 0.02,
+        "tx": -0.5,
+        "ty": -0.8
+      },
+      {
+        "color": "\u0426\u0438\u0442\u0440\u0443\u0441\u043e\u0432\u044b\u0439",
+        "url": "/media/catalog/products/macbook-neo-citrus-2026-v2.webp",
+        "matches": 37,
+        "inliers": 25,
+        "scale": 0.99972,
+        "rotation": 0.03,
+        "tx": 0.4,
+        "ty": 0.1
+      },
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439",
+        "url": "/media/catalog/products/macbook-neo-silver-2026-v2.webp",
+        "matches": 39,
+        "inliers": 30,
+        "scale": 1.00014,
+        "rotation": 0.01,
+        "tx": 0.3,
+        "ty": 0.0
+      }
+    ]
+  },
+  {
+    "slug": "watch-se-3",
+    "reference": "/media/catalog/apple-watch-silicone-2026/se3-midnight-fixed-2026-10-16.webp",
+    "items": [
+      {
+        "color": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439 / Starlight Sport Band",
+        "url": "/media/catalog/apple-watch-silicone-2026/se3-starlight-fixed-2026-10-16.webp",
+        "matches": 67,
+        "inliers": 61,
+        "scale": 0.99967,
+        "rotation": 0.11,
+        "tx": 0.9,
+        "ty": -0.3
+      }
+    ]
+  },
+  {
+    "slug": "watch-series-11",
+    "reference": "/media/catalog/apple-watch-silicone-2026/series11-space-gray-fixed-2026-10-16.webp",
+    "items": [
+      {
+        "color": "\u0413\u043b\u044f\u043d\u0446\u0435\u0432\u044b\u0439 \u0447\u0451\u0440\u043d\u044b\u0439 / Black Sport Band",
+        "url": "/media/catalog/apple-watch-silicone-2026/series11-jet-black-fixed-2026-10-16.webp",
+        "matches": 61,
+        "inliers": 52,
+        "scale": 1.00119,
+        "rotation": 0.06,
+        "tx": -0.1,
+        "ty": -1.0
+      },
+      {
+        "color": "\u0420\u043e\u0437\u043e\u0432\u043e-\u0437\u043e\u043b\u043e\u0442\u043e\u0439 / Light Blush Sport Band",
+        "url": "/media/catalog/apple-watch-silicone-2026/series11-rose-gold-fixed-2026-10-16.webp",
+        "matches": 37,
+        "inliers": 33,
+        "scale": 0.99864,
+        "rotation": -0.04,
+        "tx": 0.3,
+        "ty": 0.8
+      },
+      {
+        "color": "\u0421\u0435\u0440\u0435\u0431\u0440\u0438\u0441\u0442\u044b\u0439 / Purple Fog Sport Band",
+        "url": "/media/catalog/apple-watch-silicone-2026/series11-silver-fixed-2026-10-16.webp",
+        "matches": 66,
+        "inliers": 55,
+        "scale": 0.99925,
+        "rotation": 0.09,
+        "tx": 1.1,
+        "ty": -0.2
+      }
+    ]
+  },
+  {
+    "slug": "watch-series-12",
+    "reference": "/media/apple-color-variants/watch-series-12/space-gray-blue-band.webp",
+    "items": [
+      {
+        "color": "\u0427\u0451\u0440\u043d\u044b\u0439 / Black Sport Band",
+        "url": "/media/apple-color-variants/watch-series-12/black-black-band.webp",
+        "matches": 39,
+        "inliers": 34,
+        "scale": 1.00143,
+        "rotation": -0.02,
+        "tx": -0.8,
+        "ty": -0.4
+      },
+      {
+        "color": "\u0422\u0451\u043c\u043d\u0430\u044f \u0431\u0440\u043e\u043d\u0437\u0430 / Olive Sport Band",
+        "url": "/media/apple-color-variants/watch-series-12/dark-bronze-olive-band.webp",
+        "matches": 42,
+        "inliers": 35,
+        "scale": 0.99862,
+        "rotation": -0.03,
+        "tx": 0.5,
+        "ty": 0.5
+      },
+      {
+        "color": "\u0421\u0432\u0435\u0442\u043b\u043e-\u0437\u043e\u043b\u043e\u0442\u043e\u0439 / Sand Sport Band",
+        "url": "/media/apple-color-variants/watch-series-12/light-gold-sand-band.webp",
+        "matches": 15,
+        "inliers": 14,
+        "scale": 0.99887,
+        "rotation": 0.1,
+        "tx": 1.0,
+        "ty": -0.0
+      },
+      {
+        "color": "\u041a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0441\u0435\u0440\u044b\u0439 / Black Sport Band",
+        "url": "/media/apple-color-variants/watch-series-12/space-gray-black-band.webp",
+        "matches": 39,
+        "inliers": 27,
+        "scale": 1.00021,
+        "rotation": -0.04,
+        "tx": -0.5,
+        "ty": 0.4
+      }
+    ]
+  }
+]

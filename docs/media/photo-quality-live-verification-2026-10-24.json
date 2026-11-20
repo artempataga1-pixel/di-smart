@@ -1,0 +1,165 @@
+{
+  "deployment": "dpl_HPrEA7dRtfoQgwFnGzAywuVEQUTN",
+  "catalog": [
+    {
+      "loaded": true,
+      "name": "iPhone 18 Pro",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F8dadeaf32efe66620843.webp&w=828&q=90"
+    },
+    {
+      "loaded": true,
+      "name": "iPhone 18 Pro Max",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fdcd859c8769c7bca783c.webp&w=828&q=90"
+    },
+    {
+      "loaded": true,
+      "name": "iPhone Air",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Faff35998acb74c6c2266.webp&w=828&q=90"
+    },
+    {
+      "loaded": true,
+      "name": "Samsung Galaxy S26 Ultra",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F56512fe1ec46defada8f.webp&w=828&q=90"
+    },
+    {
+      "loaded": true,
+      "name": "Samsung Galaxy S26",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fcatalog%2Fproducts%2Fgalaxy-s26.webp&w=828&q=90"
+    },
+    {
+      "loaded": true,
+      "name": "Samsung Galaxy S26+",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fcatalog%2Fproducts%2Fgalaxy-s26-plus.webp&w=828&q=90"
+    },
+    {
+      "loaded": true,
+      "name": "Samsung Galaxy S26 FE",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7de5c570391e328c775a.webp&w=828&q=90"
+    },
+    {
+      "loaded": true,
+      "name": "Samsung Galaxy Tab S11 Ultra",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F345c856690771dc78451.webp&w=828&q=90"
+    },
+    {
+      "loaded": true,
+      "name": "Samsung Galaxy Tab S11",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fbd2bfd099de2ad649771.webp&w=828&q=90"
+    }
+  ],
+  "watch": [
+    {
+      "documentWidth": 1280,
+      "loaded": true,
+      "name": "Космический серый / Black Sport Band",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "transition": "0s",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=1920&q=90",
+      "viewport": 1280
+    },
+    {
+      "documentWidth": 1280,
+      "loaded": true,
+      "name": "Глянцевый чёрный / Black Sport Band",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "transition": "0s",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=1920&q=90",
+      "viewport": 1280
+    },
+    {
+      "documentWidth": 1280,
+      "loaded": true,
+      "name": "Розово-золотой / Light Blush Sport Band",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "transition": "0s",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=1920&q=90",
+      "viewport": 1280
+    },
+    {
+      "documentWidth": 1280,
+      "loaded": true,
+      "name": "Серебристый / Purple Fog Sport Band",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "transition": "0s",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=1920&q=90",
+      "viewport": 1280
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "name": "Космический серый / Black Sport Band",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "transition": "0s",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Facf5964caf1395623ec0.webp&w=640&q=90",
+      "viewport": 390
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "name": "Глянцевый чёрный / Black Sport Band",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "transition": "0s",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fe0a19920483588575edb.webp&w=640&q=90",
+      "viewport": 390
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "name": "Розово-золотой / Light Blush Sport Band",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "transition": "0s",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F7fb5745c9735bf9ffd9b.webp&w=640&q=90",
+      "viewport": 390
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "name": "Серебристый / Purple Fog Sport Band",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "transition": "0s",
+      "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2F81bc89342621785c8bf1.webp&w=640&q=90",
+      "viewport": 390
+    }
+  ],
+  "passed": true
+}

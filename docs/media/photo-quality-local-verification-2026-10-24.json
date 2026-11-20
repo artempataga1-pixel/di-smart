@@ -1,0 +1,60 @@
+[
+  {
+    "name": "phone",
+    "quality": 75,
+    "bytes": 17340,
+    "width": 828,
+    "height": 828,
+    "milliseconds": 19,
+    "format": "webp"
+  },
+  {
+    "name": "phone",
+    "quality": 90,
+    "bytes": 37028,
+    "width": 828,
+    "height": 828,
+    "milliseconds": 3,
+    "format": "webp"
+  },
+  {
+    "name": "watch",
+    "quality": 75,
+    "bytes": 29662,
+    "width": 1200,
+    "height": 1200,
+    "milliseconds": 91,
+    "format": "webp"
+  },
+  {
+    "name": "watch",
+    "quality": 90,
+    "bytes": 54844,
+    "width": 1200,
+    "height": 1200,
+    "milliseconds": 137,
+    "format": "webp"
+  },
+  {
+    "name": "tablet",
+    "quality": 75,
+    "bytes": 10728,
+    "width": 640,
+    "height": 640,
+    "milliseconds": 34,
+    "format": "webp"
+  },
+  {
+    "name": "tablet",
+    "quality": 90,
+    "bytes": 19862,
+    "width": 640,
+    "height": 640,
+    "milliseconds": 60,
+    "format": "webp"
+  },
+  {
+    "catalogUsesQuality90": true,
+    "usesLosslessMasters": true
+  }
+]
