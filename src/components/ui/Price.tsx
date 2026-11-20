@@ -18,7 +18,7 @@ export function Price({ price, oldPrice, size = "md", className }: PriceProps) {
   return (
     <span className={cn("inline-flex items-baseline gap-2", className)}>
       <span className={cn("font-semibold tabular-nums", sizeClasses[size])}>
-        {formatPrice(price)}
+        {price > 0 ? formatPrice(price) : "Цена по запросу"}
       </span>
       {oldPrice && oldPrice > price && (
         <span className="text-sm text-[var(--color-muted)] line-through tabular-nums">

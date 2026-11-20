@@ -1,0 +1,4603 @@
+{
+  "brands": [
+    {
+      "id": "brand-xiaomi-storefront",
+      "slug": "xiaomi",
+      "name": "Xiaomi",
+      "logoUrl": null,
+      "sortOrder": 2,
+      "isActive": true,
+      "createdAt": "2026-09-19T04:06:10.032Z",
+      "updatedAt": "2026-09-22T06:27:19.914Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "category-xiaomi-smartphones",
+      "slug": "xiaomi-smartphones",
+      "name": "Xiaomi",
+      "brandId": "brand-xiaomi-storefront",
+      "sortOrder": 0,
+      "isActive": true,
+      "seoTitle": "Смартфоны Xiaomi — Di-SMART",
+      "seoDescription": "Смартфоны Xiaomi в Di-SMART.",
+      "h1": "Xiaomi",
+      "createdAt": "2026-09-19T04:06:10.201Z",
+      "updatedAt": "2026-09-22T06:27:20.163Z"
+    },
+    {
+      "id": "category-xiaomi-laptops",
+      "slug": "laptops",
+      "name": "Ноутбуки",
+      "brandId": "brand-xiaomi-storefront",
+      "sortOrder": 1,
+      "isActive": true,
+      "seoTitle": "Ноутбуки Xiaomi Book и RedmiBook — Di-SMART",
+      "seoDescription": "Ноутбуки для работы, учёбы и творчества.",
+      "h1": "Ноутбуки",
+      "createdAt": "2026-09-19T04:06:10.370Z",
+      "updatedAt": "2026-09-22T06:27:26.463Z"
+    }
+  ],
+  "iphones": [
+    {
+      "id": "cmu7v90ud003tyuofh3emj74l",
+      "slug": "iphone-16e",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone 16e",
+      "shortDescription": "Доступный iPhone с чипом A18",
+      "description": "iPhone 16e — доступная точка входа в экосистему Apple с чипом A18 и Apple Intelligence.",
+      "isFlagship": false,
+      "isActive": false,
+      "basePriceUsd": "599",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-19T04:07:12.517Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmuh51kt40023ylof6zck89pv",
+          "productId": "cmu7v90ud003tyuofh3emj74l",
+          "priceUsd": "599",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-09-25T15:51:16.888Z",
+          "updatedAt": "2026-09-25T15:51:16.888Z",
+          "options": [
+            {
+              "variantId": "cmuh51kt40023ylof6zck89pv",
+              "attributeValueId": "cmu7v83fk0005yuof17yclhwv",
+              "attributeValue": {
+                "id": "cmu7v83fk0005yuof17yclhwv",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "128 ГБ",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.216Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuh51kt40023ylof6zck89pv",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuh51l320024ylofyruwaday",
+          "productId": "cmu7v90ud003tyuofh3emj74l",
+          "priceUsd": "599",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 1,
+          "createdAt": "2026-09-25T15:51:17.246Z",
+          "updatedAt": "2026-09-25T15:51:17.246Z",
+          "options": [
+            {
+              "variantId": "cmuh51l320024ylofyruwaday",
+              "attributeValueId": "cmu7v83fk0005yuof17yclhwv",
+              "attributeValue": {
+                "id": "cmu7v83fk0005yuof17yclhwv",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "128 ГБ",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.216Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuh51l320024ylofyruwaday",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuh51lcb0025ylofp2y9eq4r",
+          "productId": "cmu7v90ud003tyuofh3emj74l",
+          "priceUsd": "599",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 2,
+          "createdAt": "2026-09-25T15:51:17.579Z",
+          "updatedAt": "2026-09-25T15:51:17.579Z",
+          "options": [
+            {
+              "variantId": "cmuh51lcb0025ylofp2y9eq4r",
+              "attributeValueId": "cmu7v83fk0005yuof17yclhwv",
+              "attributeValue": {
+                "id": "cmu7v83fk0005yuof17yclhwv",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "128 ГБ",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.216Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuh51lcb0025ylofp2y9eq4r",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuh51llb0026ylofbyl8ix9t",
+          "productId": "cmu7v90ud003tyuofh3emj74l",
+          "priceUsd": "699",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 3,
+          "createdAt": "2026-09-25T15:51:17.903Z",
+          "updatedAt": "2026-09-25T15:51:17.903Z",
+          "options": [
+            {
+              "variantId": "cmuh51llb0026ylofbyl8ix9t",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuh51llb0026ylofbyl8ix9t",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuh51lub0027ylof5fhkjgyj",
+          "productId": "cmu7v90ud003tyuofh3emj74l",
+          "priceUsd": "699",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 4,
+          "createdAt": "2026-09-25T15:51:18.227Z",
+          "updatedAt": "2026-09-25T15:51:18.227Z",
+          "options": [
+            {
+              "variantId": "cmuh51lub0027ylof5fhkjgyj",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuh51lub0027ylof5fhkjgyj",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuh51m3k0028ylof0fmptovo",
+          "productId": "cmu7v90ud003tyuofh3emj74l",
+          "priceUsd": "699",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 5,
+          "createdAt": "2026-09-25T15:51:18.560Z",
+          "updatedAt": "2026-09-25T15:51:18.560Z",
+          "options": [
+            {
+              "variantId": "cmuh51m3k0028ylof0fmptovo",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuh51m3k0028ylof0fmptovo",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "colorValues": [
+        {
+          "id": "cmuh51jb50021yloftb53rtms",
+          "productId": "cmu7v90ud003tyuofh3emj74l",
+          "attributeValueId": "cmu7v855v000iyuofnxtpvaxp",
+          "attributeValue": {
+            "id": "cmu7v855v000iyuofnxtpvaxp",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Чёрный",
+            "sortOrder": 0,
+            "colorHex": "#1c1c1e",
+            "createdAt": "2026-09-19T04:06:31.459Z"
+          }
+        },
+        {
+          "id": "cmuh51jfu0022ylofauuf4bpj",
+          "productId": "cmu7v90ud003tyuofh3emj74l",
+          "attributeValueId": "cmu7v85ad000jyuofe65x7tjq",
+          "attributeValue": {
+            "id": "cmu7v85ad000jyuofe65x7tjq",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Белый",
+            "sortOrder": 1,
+            "colorHex": "#f5f5f0",
+            "createdAt": "2026-09-19T04:06:31.621Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmuc9wpt7001ho3of1fgl18dm",
+      "slug": "iphone-17e",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone 17e",
+      "shortDescription": "Актуальный доступный iPhone с Apple Intelligence",
+      "description": "iPhone 17e — младшая модель актуальной линейки с OLED-дисплеем, современным чипом Apple и поддержкой Apple Intelligence.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "699",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 4,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-22T06:08:37.291Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmugzxkj0003ozjofsn456741",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "priceUsd": "699",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-09-25T13:28:11.820Z",
+          "updatedAt": "2026-09-25T13:28:11.820Z",
+          "options": [
+            {
+              "variantId": "cmugzxkj0003ozjofsn456741",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxkj0003ozjofsn456741",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxksz003pzjofvswbjls2",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "priceUsd": "699",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 1,
+          "createdAt": "2026-09-25T13:28:12.179Z",
+          "updatedAt": "2026-09-25T13:28:12.179Z",
+          "options": [
+            {
+              "variantId": "cmugzxksz003pzjofvswbjls2",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxksz003pzjofvswbjls2",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxl27003qzjof3grtph03",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "priceUsd": "699",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 2,
+          "createdAt": "2026-09-25T13:28:12.511Z",
+          "updatedAt": "2026-09-25T13:28:12.511Z",
+          "options": [
+            {
+              "variantId": "cmugzxl27003qzjof3grtph03",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxl27003qzjof3grtph03",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": "apple-color-cmugzxj19003nzjofd6zl888q",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "url": "/media/catalog/products/iphone-17e.webp",
+          "alt": "iphone-17e, цвет Нежно-розовый",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": "cmugzxj19003nzjofd6zl888q",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzxis2003lzjofofmpe952",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "url": "/media/apple-color-variants/iphone-17e/black.webp",
+          "alt": "iphone-17e, цвет Чёрный",
+          "sortOrder": 1,
+          "isMain": false,
+          "colorValueId": "cmugzxis2003lzjofofmpe952",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzxiwo003mzjofml888yeu",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "url": "/media/apple-color-variants/iphone-17e/white.webp",
+          "alt": "iphone-17e, цвет Белый",
+          "sortOrder": 2,
+          "isMain": false,
+          "colorValueId": "cmugzxiwo003mzjofml888yeu",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        }
+      ],
+      "colorValues": [
+        {
+          "id": "cmugzxis2003lzjofofmpe952",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "attributeValueId": "cmu7v855v000iyuofnxtpvaxp",
+          "attributeValue": {
+            "id": "cmu7v855v000iyuofnxtpvaxp",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Чёрный",
+            "sortOrder": 0,
+            "colorHex": "#1c1c1e",
+            "createdAt": "2026-09-19T04:06:31.459Z"
+          }
+        },
+        {
+          "id": "cmugzxiwo003mzjofml888yeu",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "attributeValueId": "cmu7v85ad000jyuofe65x7tjq",
+          "attributeValue": {
+            "id": "cmu7v85ad000jyuofe65x7tjq",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Белый",
+            "sortOrder": 1,
+            "colorHex": "#f5f5f0",
+            "createdAt": "2026-09-19T04:06:31.621Z"
+          }
+        },
+        {
+          "id": "cmugzxj19003nzjofd6zl888q",
+          "productId": "cmuc9wpt7001ho3of1fgl18dm",
+          "attributeValueId": "cmugzmlfb001cboofs5xg4drf",
+          "attributeValue": {
+            "id": "cmugzmlfb001cboofs5xg4drf",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Нежно-розовый",
+            "sortOrder": 29,
+            "colorHex": "#f3d9dc",
+            "createdAt": "2026-09-25T13:19:39.768Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmu7v87gz000yyuoff82d3ncl",
+      "slug": "iphone-17",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone 17",
+      "shortDescription": "Чип A19, яркий Super Retina XDR, улучшенная камера",
+      "description": "iPhone 17 сочетает мощный чип A19, яркий дисплей Super Retina XDR и улучшенную систему камер — оптимальный выбор для повседневных задач.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "899",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-19T04:06:34.451Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmugzx0pc001uzjofyzdmr14j",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "priceUsd": "899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-09-25T13:27:46.128Z",
+          "updatedAt": "2026-09-25T13:27:46.128Z",
+          "options": [
+            {
+              "variantId": "cmugzx0pc001uzjofyzdmr14j",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx0pc001uzjofyzdmr14j",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx0za001vzjofi8kk5fmr",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "priceUsd": "899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 1,
+          "createdAt": "2026-09-25T13:27:46.486Z",
+          "updatedAt": "2026-09-25T13:27:46.486Z",
+          "options": [
+            {
+              "variantId": "cmugzx0za001vzjofi8kk5fmr",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx0za001vzjofi8kk5fmr",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx18k001wzjofohhp9iz4",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "priceUsd": "899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 2,
+          "createdAt": "2026-09-25T13:27:46.820Z",
+          "updatedAt": "2026-09-25T13:27:46.820Z",
+          "options": [
+            {
+              "variantId": "cmugzx18k001wzjofohhp9iz4",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx18k001wzjofohhp9iz4",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx1ij001xzjofa43rk73a",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 3,
+          "createdAt": "2026-09-25T13:27:47.179Z",
+          "updatedAt": "2026-09-25T13:27:47.179Z",
+          "options": [
+            {
+              "variantId": "cmugzx1ij001xzjofa43rk73a",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx1ij001xzjofa43rk73a",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx1sh001yzjof8j1ufanf",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 4,
+          "createdAt": "2026-09-25T13:27:47.537Z",
+          "updatedAt": "2026-09-25T13:27:47.537Z",
+          "options": [
+            {
+              "variantId": "cmugzx1sh001yzjof8j1ufanf",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx1sh001yzjof8j1ufanf",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx21q001zzjofew5adiqb",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 5,
+          "createdAt": "2026-09-25T13:27:47.870Z",
+          "updatedAt": "2026-09-25T13:27:47.870Z",
+          "options": [
+            {
+              "variantId": "cmugzx21q001zzjofew5adiqb",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx21q001zzjofew5adiqb",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": "apple-color-cmugzwyyj001rzjofygqwhx1r",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "url": "/media/catalog/products/iphone-17.webp",
+          "alt": "iphone-17, цвет Дымчато-голубой",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": "cmugzwyyj001rzjofygqwhx1r",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzwyoq001pzjofkwlq15yo",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "url": "/media/apple-color-variants/iphone-17/black.webp",
+          "alt": "iphone-17, цвет Чёрный",
+          "sortOrder": 1,
+          "isMain": false,
+          "colorValueId": "cmugzwyoq001pzjofkwlq15yo",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzwytd001qzjoff4n0q6lr",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "url": "/media/apple-color-variants/iphone-17/white.webp",
+          "alt": "iphone-17, цвет Белый",
+          "sortOrder": 2,
+          "isMain": false,
+          "colorValueId": "cmugzwytd001qzjoff4n0q6lr",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzwz34001szjof1pyxubv5",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "url": "/media/apple-color-variants/iphone-17/sage.webp",
+          "alt": "iphone-17, цвет Шалфейный",
+          "sortOrder": 3,
+          "isMain": false,
+          "colorValueId": "cmugzwz34001szjof1pyxubv5",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzwz7q001tzjof49wnz6a8",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "url": "/media/apple-color-variants/iphone-17/lavender.webp",
+          "alt": "iphone-17, цвет Лавандовый",
+          "sortOrder": 4,
+          "isMain": false,
+          "colorValueId": "cmugzwz7q001tzjof49wnz6a8",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        }
+      ],
+      "colorValues": [
+        {
+          "id": "cmugzwyoq001pzjofkwlq15yo",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "attributeValueId": "cmu7v855v000iyuofnxtpvaxp",
+          "attributeValue": {
+            "id": "cmu7v855v000iyuofnxtpvaxp",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Чёрный",
+            "sortOrder": 0,
+            "colorHex": "#1c1c1e",
+            "createdAt": "2026-09-19T04:06:31.459Z"
+          }
+        },
+        {
+          "id": "cmugzwytd001qzjoff4n0q6lr",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "attributeValueId": "cmu7v85ad000jyuofe65x7tjq",
+          "attributeValue": {
+            "id": "cmu7v85ad000jyuofe65x7tjq",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Белый",
+            "sortOrder": 1,
+            "colorHex": "#f5f5f0",
+            "createdAt": "2026-09-19T04:06:31.621Z"
+          }
+        },
+        {
+          "id": "cmugzwyyj001rzjofygqwhx1r",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "attributeValueId": "cmu7xry54000y8bofa8rs0zsf",
+          "attributeValue": {
+            "id": "cmu7xry54000y8bofa8rs0zsf",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Дымчато-голубой",
+            "sortOrder": 19,
+            "colorHex": "#b9c8d5",
+            "createdAt": "2026-09-19T05:17:54.712Z"
+          }
+        },
+        {
+          "id": "cmugzwz34001szjof1pyxubv5",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "attributeValueId": "cmugzml0u0019boofhiekg18p",
+          "attributeValue": {
+            "id": "cmugzml0u0019boofhiekg18p",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Шалфейный",
+            "sortOrder": 26,
+            "colorHex": "#a8b2a1",
+            "createdAt": "2026-09-25T13:19:39.246Z"
+          }
+        },
+        {
+          "id": "cmugzwz7q001tzjof49wnz6a8",
+          "productId": "cmu7v87gz000yyuoff82d3ncl",
+          "attributeValueId": "cmuc9wgay0013o3ofdzo06b3j",
+          "attributeValue": {
+            "id": "cmuc9wgay0013o3ofdzo06b3j",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Лавандовый",
+            "sortOrder": 20,
+            "colorHex": "#c7b9df",
+            "createdAt": "2026-09-22T06:08:24.970Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmu7v8czc001hyuofkc306uj9",
+      "slug": "iphone-17-pro",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone 17 Pro",
+      "shortDescription": "Алюминиевый корпус, чип A19 Pro, профессиональная камера",
+      "description": "iPhone 17 Pro — алюминиевый корпус, чип A19 Pro и три камеры Fusion по 48 Мп с оптическим зумом 4×.",
+      "isFlagship": true,
+      "isActive": true,
+      "basePriceUsd": "999",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 1,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-19T04:06:41.592Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmugzx5fj002bzjoff3dfa5nc",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "999",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-09-25T13:27:52.255Z",
+          "updatedAt": "2026-09-25T13:27:52.255Z",
+          "options": [
+            {
+              "variantId": "cmugzx5fj002bzjoff3dfa5nc",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx5fj002bzjoff3dfa5nc",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx5or002czjofvyw2isl7",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "999",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 1,
+          "createdAt": "2026-09-25T13:27:52.587Z",
+          "updatedAt": "2026-09-25T13:27:52.587Z",
+          "options": [
+            {
+              "variantId": "cmugzx5or002czjofvyw2isl7",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx5or002czjofvyw2isl7",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx5yn002dzjofhj5x3ljb",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "999",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 2,
+          "createdAt": "2026-09-25T13:27:52.943Z",
+          "updatedAt": "2026-09-25T13:27:52.943Z",
+          "options": [
+            {
+              "variantId": "cmugzx5yn002dzjofhj5x3ljb",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx5yn002dzjofhj5x3ljb",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx68l002ezjof480uiklg",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 3,
+          "createdAt": "2026-09-25T13:27:53.301Z",
+          "updatedAt": "2026-09-25T13:27:53.301Z",
+          "options": [
+            {
+              "variantId": "cmugzx68l002ezjof480uiklg",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx68l002ezjof480uiklg",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx6hs002fzjofhcav9npt",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 4,
+          "createdAt": "2026-09-25T13:27:53.632Z",
+          "updatedAt": "2026-09-25T13:27:53.632Z",
+          "options": [
+            {
+              "variantId": "cmugzx6hs002fzjofhcav9npt",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx6hs002fzjofhcav9npt",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx6rr002gzjofx48qsz49",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 5,
+          "createdAt": "2026-09-25T13:27:53.991Z",
+          "updatedAt": "2026-09-25T13:27:53.991Z",
+          "options": [
+            {
+              "variantId": "cmugzx6rr002gzjofx48qsz49",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx6rr002gzjofx48qsz49",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx71u002hzjofhbh5tupq",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 6,
+          "createdAt": "2026-09-25T13:27:54.354Z",
+          "updatedAt": "2026-09-25T13:27:54.354Z",
+          "options": [
+            {
+              "variantId": "cmugzx71u002hzjofhbh5tupq",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx71u002hzjofhbh5tupq",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx7b7002izjof39g7imp4",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 7,
+          "createdAt": "2026-09-25T13:27:54.691Z",
+          "updatedAt": "2026-09-25T13:27:54.691Z",
+          "options": [
+            {
+              "variantId": "cmugzx7b7002izjof39g7imp4",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx7b7002izjof39g7imp4",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzx7kz002jzjofpbkl6tsb",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 8,
+          "createdAt": "2026-09-25T13:27:55.043Z",
+          "updatedAt": "2026-09-25T13:27:55.043Z",
+          "options": [
+            {
+              "variantId": "cmugzx7kz002jzjofpbkl6tsb",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzx7kz002jzjofpbkl6tsb",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": "apple-color-cmugzx3ji0029zjof0716sami",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "url": "/media/catalog/products/iphone-17-pro.webp",
+          "alt": "iphone-17-pro, цвет Космический оранжевый",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": "cmugzx3ji0029zjof0716sami",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzx3o3002azjof5tf73x7o",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "url": "/media/apple-color-variants/iphone-17-pro/deep-blue.webp",
+          "alt": "iphone-17-pro, цвет Тёмно-синий",
+          "sortOrder": 1,
+          "isMain": false,
+          "colorValueId": "cmugzx3o3002azjof5tf73x7o",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzx3ew0028zjofcphxwb1b",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "url": "/media/apple-color-variants/iphone-17-pro/silver.webp",
+          "alt": "iphone-17-pro, цвет Серебристый",
+          "sortOrder": 2,
+          "isMain": false,
+          "colorValueId": "cmugzx3ew0028zjofcphxwb1b",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        }
+      ],
+      "colorValues": [
+        {
+          "id": "cmugzx3ew0028zjofcphxwb1b",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "attributeValueId": "cmu7v8693000qyuofv3wgjpcl",
+          "attributeValue": {
+            "id": "cmu7v8693000qyuofv3wgjpcl",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Серебристый",
+            "sortOrder": 8,
+            "colorHex": "#d7d9dc",
+            "createdAt": "2026-09-19T04:06:32.871Z"
+          }
+        },
+        {
+          "id": "cmugzx3ji0029zjof0716sami",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "attributeValueId": "cmugzml6g001abooflrptabiy",
+          "attributeValue": {
+            "id": "cmugzml6g001abooflrptabiy",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Космический оранжевый",
+            "sortOrder": 27,
+            "colorHex": "#d96d3c",
+            "createdAt": "2026-09-25T13:19:39.448Z"
+          }
+        },
+        {
+          "id": "cmugzx3o3002azjof5tf73x7o",
+          "productId": "cmu7v8czc001hyuofkc306uj9",
+          "attributeValueId": "cmugzmlaw001bboofun17utrr",
+          "attributeValue": {
+            "id": "cmugzmlaw001bboofun17utrr",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Тёмно-синий",
+            "sortOrder": 28,
+            "colorHex": "#253d5c",
+            "createdAt": "2026-09-25T13:19:39.608Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmu7v8j1r0024yuof3cydoyk9",
+      "slug": "iphone-17-pro-max",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone 17 Pro Max",
+      "shortDescription": "Флагман года: самый большой экран и лучшая камера Apple",
+      "description": "iPhone 17 Pro Max — вершина линейки: самый большой Super Retina XDR ProMotion дисплей, чип A19 Pro и профессиональная тройная камера.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "1199",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 2,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-19T04:06:49.455Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmugzxcb5002zzjofujwh57r9",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1499",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 6,
+          "createdAt": "2026-09-25T13:28:01.169Z",
+          "updatedAt": "2026-09-29T07:26:20.575Z",
+          "options": [
+            {
+              "variantId": "cmugzxcb5002zzjofujwh57r9",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxcb5002zzjofujwh57r9",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxaov002tzjofjr7r6o9j",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1199",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-09-25T13:27:59.071Z",
+          "updatedAt": "2026-09-25T13:27:59.071Z",
+          "options": [
+            {
+              "variantId": "cmugzxaov002tzjofjr7r6o9j",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxaov002tzjofjr7r6o9j",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxay2002uzjof4yfq5009",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1199",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 1,
+          "createdAt": "2026-09-25T13:27:59.402Z",
+          "updatedAt": "2026-09-25T13:27:59.402Z",
+          "options": [
+            {
+              "variantId": "cmugzxay2002uzjof4yfq5009",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxay2002uzjof4yfq5009",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxb7x002vzjofngstbyiw",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1199",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 2,
+          "createdAt": "2026-09-25T13:27:59.757Z",
+          "updatedAt": "2026-09-25T13:27:59.757Z",
+          "options": [
+            {
+              "variantId": "cmugzxb7x002vzjofngstbyiw",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxb7x002vzjofngstbyiw",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxbhy002wzjof1lhuqoo3",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 3,
+          "createdAt": "2026-09-25T13:28:00.118Z",
+          "updatedAt": "2026-09-25T13:28:00.118Z",
+          "options": [
+            {
+              "variantId": "cmugzxbhy002wzjof1lhuqoo3",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxbhy002wzjof1lhuqoo3",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxbr7002xzjof9a355cmq",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 4,
+          "createdAt": "2026-09-25T13:28:00.451Z",
+          "updatedAt": "2026-09-25T13:28:00.451Z",
+          "options": [
+            {
+              "variantId": "cmugzxbr7002xzjof9a355cmq",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxbr7002xzjof9a355cmq",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxc16002yzjofc8rddfp4",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 5,
+          "createdAt": "2026-09-25T13:28:00.810Z",
+          "updatedAt": "2026-09-25T13:28:00.810Z",
+          "options": [
+            {
+              "variantId": "cmugzxc16002yzjofc8rddfp4",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxc16002yzjofc8rddfp4",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxcke0030zjofy67se34g",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1499",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 7,
+          "createdAt": "2026-09-25T13:28:01.502Z",
+          "updatedAt": "2026-09-29T07:26:20.575Z",
+          "options": [
+            {
+              "variantId": "cmugzxcke0030zjofy67se34g",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxcke0030zjofy67se34g",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxcua0031zjofx8b7aug2",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "priceUsd": "1499",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 8,
+          "createdAt": "2026-09-25T13:28:01.858Z",
+          "updatedAt": "2026-09-29T07:26:20.575Z",
+          "options": [
+            {
+              "variantId": "cmugzxcua0031zjofx8b7aug2",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxcua0031zjofx8b7aug2",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": "apple-color-cmugzx92s002rzjofbbrvy2dh",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "url": "/media/catalog/products/iphone-17-pro-max.webp",
+          "alt": "iphone-17-pro-max, цвет Космический оранжевый",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": "cmugzx92s002rzjofbbrvy2dh",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzx97d002szjof53wbuj3o",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "url": "/media/apple-color-variants/iphone-17-pro-max/deep-blue.webp",
+          "alt": "iphone-17-pro-max, цвет Тёмно-синий",
+          "sortOrder": 1,
+          "isMain": false,
+          "colorValueId": "cmugzx97d002szjof53wbuj3o",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmugzx8xa002qzjofam64o04u",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "url": "/media/apple-color-variants/iphone-17-pro-max/silver.webp",
+          "alt": "iphone-17-pro-max, цвет Серебристый",
+          "sortOrder": 2,
+          "isMain": false,
+          "colorValueId": "cmugzx8xa002qzjofam64o04u",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        }
+      ],
+      "colorValues": [
+        {
+          "id": "cmugzx8xa002qzjofam64o04u",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "attributeValueId": "cmu7v8693000qyuofv3wgjpcl",
+          "attributeValue": {
+            "id": "cmu7v8693000qyuofv3wgjpcl",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Серебристый",
+            "sortOrder": 8,
+            "colorHex": "#d7d9dc",
+            "createdAt": "2026-09-19T04:06:32.871Z"
+          }
+        },
+        {
+          "id": "cmugzx92s002rzjofbbrvy2dh",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "attributeValueId": "cmugzml6g001abooflrptabiy",
+          "attributeValue": {
+            "id": "cmugzml6g001abooflrptabiy",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Космический оранжевый",
+            "sortOrder": 27,
+            "colorHex": "#d96d3c",
+            "createdAt": "2026-09-25T13:19:39.448Z"
+          }
+        },
+        {
+          "id": "cmugzx97d002szjof53wbuj3o",
+          "productId": "cmu7v8j1r0024yuof3cydoyk9",
+          "attributeValueId": "cmugzmlaw001bboofun17utrr",
+          "attributeValue": {
+            "id": "cmugzmlaw001bboofun17utrr",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Тёмно-синий",
+            "sortOrder": 28,
+            "colorHex": "#253d5c",
+            "createdAt": "2026-09-25T13:19:39.608Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmu7v8p9m002qyuofcj4rn9f6",
+      "slug": "iphone-18-pro",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone 18 Pro",
+      "shortDescription": "Чип A20 Pro, система камер Pro и четыре цвета корпуса",
+      "description": "iPhone 18 Pro с дисплеем Super Retina XDR, чипом A20 Pro и тройной системой камер 48 Мп.",
+      "isFlagship": true,
+      "isActive": true,
+      "basePriceUsd": "1199",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 3,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-19T04:06:57.514Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmu7xzw1y0037tmof61ycj0k8",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1199",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 3,
+          "createdAt": "2026-09-19T05:24:05.254Z",
+          "updatedAt": "2026-09-19T05:24:05.254Z",
+          "options": [
+            {
+              "variantId": "cmu7xzw1y0037tmof61ycj0k8",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzw1y0037tmof61ycj0k8",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7xzwbe0038tmofxov4efry",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1199",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 4,
+          "createdAt": "2026-09-19T05:24:05.594Z",
+          "updatedAt": "2026-09-19T05:24:05.594Z",
+          "options": [
+            {
+              "variantId": "cmu7xzwbe0038tmofxov4efry",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzwbe0038tmofxov4efry",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7xzwl20039tmofe3ureaca",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1199",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 5,
+          "createdAt": "2026-09-19T05:24:05.942Z",
+          "updatedAt": "2026-09-19T05:24:05.942Z",
+          "options": [
+            {
+              "variantId": "cmu7xzwl20039tmofe3ureaca",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzwl20039tmofe3ureaca",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7xzwv1003atmofplri4fxk",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1399",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 6,
+          "createdAt": "2026-09-19T05:24:06.301Z",
+          "updatedAt": "2026-09-19T05:24:06.301Z",
+          "options": [
+            {
+              "variantId": "cmu7xzwv1003atmofplri4fxk",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzwv1003atmofplri4fxk",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7xzx4h003btmof4b6jj0vl",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1399",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 7,
+          "createdAt": "2026-09-19T05:24:06.641Z",
+          "updatedAt": "2026-09-19T05:24:06.641Z",
+          "options": [
+            {
+              "variantId": "cmu7xzx4h003btmof4b6jj0vl",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzx4h003btmof4b6jj0vl",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7xzxe9003ctmof589c6svc",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1399",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 8,
+          "createdAt": "2026-09-19T05:24:06.993Z",
+          "updatedAt": "2026-09-19T05:24:06.993Z",
+          "options": [
+            {
+              "variantId": "cmu7xzxe9003ctmof589c6svc",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzxe9003ctmof589c6svc",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7xzxo6003dtmofde0l7dk5",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1799",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 9,
+          "createdAt": "2026-09-19T05:24:07.350Z",
+          "updatedAt": "2026-09-19T05:24:07.350Z",
+          "options": [
+            {
+              "variantId": "cmu7xzxo6003dtmofde0l7dk5",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzxo6003dtmofde0l7dk5",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7xzxxk003etmofc17brm6d",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1799",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 10,
+          "createdAt": "2026-09-19T05:24:07.688Z",
+          "updatedAt": "2026-09-19T05:24:07.688Z",
+          "options": [
+            {
+              "variantId": "cmu7xzxxk003etmofc17brm6d",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzxxk003etmofc17brm6d",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7xzy7f003ftmofbaz6ik8s",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "priceUsd": "1799",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 11,
+          "createdAt": "2026-09-19T05:24:08.043Z",
+          "updatedAt": "2026-09-19T05:24:08.043Z",
+          "options": [
+            {
+              "variantId": "cmu7xzy7f003ftmofbaz6ik8s",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7xzy7f003ftmofbaz6ik8s",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": "cmucjqte2000034of6n3mfz43",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "url": "/media/flagship-colors/iphone-18-pro/glacier.webp",
+          "alt": "iPhone 18 Pro, цвет Ледниковый",
+          "sortOrder": 1,
+          "isMain": false,
+          "colorValueId": "cmu7xztcl0030tmofex09wdqp",
+          "createdAt": "2026-09-22T10:43:58.154Z"
+        },
+        {
+          "id": "cmucjqtlq000134ofignzursa",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "url": "/media/flagship-colors/iphone-18-pro/silver.webp",
+          "alt": "iPhone 18 Pro, цвет Серебристый",
+          "sortOrder": 2,
+          "isMain": false,
+          "colorValueId": "cmu7xzthb0031tmofw49ad2ik",
+          "createdAt": "2026-09-22T10:43:58.430Z"
+        },
+        {
+          "id": "cmucjqtsd000234ofn2ukccyn",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "url": "/media/flagship-colors/iphone-18-pro/black.webp",
+          "alt": "iPhone 18 Pro, цвет Чёрный",
+          "sortOrder": 3,
+          "isMain": false,
+          "colorValueId": "cmu7xztmh0032tmofpql62wu2",
+          "createdAt": "2026-09-22T10:43:58.669Z"
+        },
+        {
+          "id": "cmu7xztr70033tmofzgsm8xx1",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "url": "/media/flagship-colors/iphone-18-pro/burgundy.webp",
+          "alt": "iPhone 18 Pro, цвет Бордовый",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": "cmu7xzt7v002ztmof5123pdnz",
+          "createdAt": "2026-09-19T05:24:02.275Z"
+        }
+      ],
+      "colorValues": [
+        {
+          "id": "cmu7xzt7v002ztmof5123pdnz",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "attributeValueId": "cmu7v86dm000ryuofdittvlk6",
+          "attributeValue": {
+            "id": "cmu7v86dm000ryuofdittvlk6",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Бордовый",
+            "sortOrder": 9,
+            "colorHex": "#6f3542",
+            "createdAt": "2026-09-19T04:06:33.034Z"
+          }
+        },
+        {
+          "id": "cmu7xztcl0030tmofex09wdqp",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "attributeValueId": "cmu7v86i5000syuofmloam3q1",
+          "attributeValue": {
+            "id": "cmu7v86i5000syuofmloam3q1",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Ледниковый",
+            "sortOrder": 10,
+            "colorHex": "#b9c8d5",
+            "createdAt": "2026-09-19T04:06:33.197Z"
+          }
+        },
+        {
+          "id": "cmu7xzthb0031tmofw49ad2ik",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "attributeValueId": "cmu7v8693000qyuofv3wgjpcl",
+          "attributeValue": {
+            "id": "cmu7v8693000qyuofv3wgjpcl",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Серебристый",
+            "sortOrder": 8,
+            "colorHex": "#d7d9dc",
+            "createdAt": "2026-09-19T04:06:32.871Z"
+          }
+        },
+        {
+          "id": "cmu7xztmh0032tmofpql62wu2",
+          "productId": "cmu7v8p9m002qyuofcj4rn9f6",
+          "attributeValueId": "cmu7v855v000iyuofnxtpvaxp",
+          "attributeValue": {
+            "id": "cmu7v855v000iyuofnxtpvaxp",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Чёрный",
+            "sortOrder": 0,
+            "colorHex": "#1c1c1e",
+            "createdAt": "2026-09-19T04:06:31.459Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmu7xsn86003g8bof4a87zshl",
+      "slug": "iphone-18-pro-max",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone 18 Pro Max",
+      "shortDescription": "iPhone 18 Pro с самым большим экраном и батареей",
+      "description": "iPhone 18 Pro Max — тот же чип A20 Pro и система камер Pro, но с дисплеем 6.9\" и рекордной для линейки автономностью.",
+      "isFlagship": true,
+      "isActive": true,
+      "basePriceUsd": "1299",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 4,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-19T05:18:27.222Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmu7y02du003utmofka0de5vt",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 3,
+          "createdAt": "2026-09-19T05:24:13.458Z",
+          "updatedAt": "2026-09-19T05:24:13.458Z",
+          "options": [
+            {
+              "variantId": "cmu7y02du003utmofka0de5vt",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y02du003utmofka0de5vt",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7y02nk003vtmof2pega6hk",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 4,
+          "createdAt": "2026-09-19T05:24:13.808Z",
+          "updatedAt": "2026-09-19T05:24:13.808Z",
+          "options": [
+            {
+              "variantId": "cmu7y02nk003vtmof2pega6hk",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y02nk003vtmof2pega6hk",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7y02xh003wtmof8knwca9m",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 5,
+          "createdAt": "2026-09-19T05:24:14.165Z",
+          "updatedAt": "2026-09-19T05:24:14.165Z",
+          "options": [
+            {
+              "variantId": "cmu7y02xh003wtmof8knwca9m",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y02xh003wtmof8knwca9m",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7y036v003xtmofa6h9huph",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1499",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 6,
+          "createdAt": "2026-09-19T05:24:14.503Z",
+          "updatedAt": "2026-09-19T05:24:14.503Z",
+          "options": [
+            {
+              "variantId": "cmu7y036v003xtmofa6h9huph",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y036v003xtmofa6h9huph",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7y03gp003ytmof5egm3ijv",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1499",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 7,
+          "createdAt": "2026-09-19T05:24:14.857Z",
+          "updatedAt": "2026-09-19T05:24:14.857Z",
+          "options": [
+            {
+              "variantId": "cmu7y03gp003ytmof5egm3ijv",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y03gp003ytmof5egm3ijv",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7y03qk003ztmof3ec8skn3",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1499",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 8,
+          "createdAt": "2026-09-19T05:24:15.212Z",
+          "updatedAt": "2026-09-19T05:24:15.212Z",
+          "options": [
+            {
+              "variantId": "cmu7y03qk003ztmof3ec8skn3",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y03qk003ztmof3ec8skn3",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7y04020040tmofacsj4apu",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 9,
+          "createdAt": "2026-09-19T05:24:15.554Z",
+          "updatedAt": "2026-09-19T05:24:15.554Z",
+          "options": [
+            {
+              "variantId": "cmu7y04020040tmofacsj4apu",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y04020040tmofacsj4apu",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7y049u0041tmof3p54x9nu",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 10,
+          "createdAt": "2026-09-19T05:24:15.906Z",
+          "updatedAt": "2026-09-19T05:24:15.906Z",
+          "options": [
+            {
+              "variantId": "cmu7y049u0041tmof3p54x9nu",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y049u0041tmof3p54x9nu",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmu7y04jq0042tmofkiekmtb7",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "priceUsd": "1899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 11,
+          "createdAt": "2026-09-19T05:24:16.262Z",
+          "updatedAt": "2026-09-19T05:24:16.262Z",
+          "options": [
+            {
+              "variantId": "cmu7y04jq0042tmofkiekmtb7",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmu7y04jq0042tmofkiekmtb7",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": "apple-color-cmu7xzztl003otmof5gmhphq7",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "url": "/media/catalog/products/iphone-18-pro-max.webp",
+          "alt": "iphone-18-pro-max, цвет Серебристый",
+          "sortOrder": 0,
+          "isMain": false,
+          "colorValueId": "cmu7xzztl003otmof5gmhphq7",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "cmu7y003g003qtmof2qoyj3rz",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "url": "/media/apple-color-variants/iphone-18-pro-max/burgundy.webp",
+          "alt": "iphone-18-pro-max, цвет Бордовый",
+          "sortOrder": 2,
+          "isMain": true,
+          "colorValueId": "cmu7xzzjs003mtmofy7kqqpg8",
+          "createdAt": "2026-09-19T05:24:10.492Z"
+        },
+        {
+          "id": "apple-color-cmu7xzzy9003ptmofsu4bnga2",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "url": "/media/apple-color-variants/iphone-18-pro-max/black.webp",
+          "alt": "iphone-18-pro-max, цвет Чёрный",
+          "sortOrder": 1,
+          "isMain": false,
+          "colorValueId": "cmu7xzzy9003ptmofsu4bnga2",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        },
+        {
+          "id": "apple-color-cmu7xzzow003ntmofldw3dijo",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "url": "/media/apple-color-variants/iphone-18-pro-max/glacier.webp",
+          "alt": "iphone-18-pro-max, цвет Ледниковый",
+          "sortOrder": 3,
+          "isMain": false,
+          "colorValueId": "cmu7xzzow003ntmofldw3dijo",
+          "createdAt": "2026-09-29T10:46:08.744Z"
+        }
+      ],
+      "colorValues": [
+        {
+          "id": "cmu7xzzjs003mtmofy7kqqpg8",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "attributeValueId": "cmu7v86dm000ryuofdittvlk6",
+          "attributeValue": {
+            "id": "cmu7v86dm000ryuofdittvlk6",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Бордовый",
+            "sortOrder": 9,
+            "colorHex": "#6f3542",
+            "createdAt": "2026-09-19T04:06:33.034Z"
+          }
+        },
+        {
+          "id": "cmu7xzzow003ntmofldw3dijo",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "attributeValueId": "cmu7v86i5000syuofmloam3q1",
+          "attributeValue": {
+            "id": "cmu7v86i5000syuofmloam3q1",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Ледниковый",
+            "sortOrder": 10,
+            "colorHex": "#b9c8d5",
+            "createdAt": "2026-09-19T04:06:33.197Z"
+          }
+        },
+        {
+          "id": "cmu7xzztl003otmof5gmhphq7",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "attributeValueId": "cmu7v8693000qyuofv3wgjpcl",
+          "attributeValue": {
+            "id": "cmu7v8693000qyuofv3wgjpcl",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Серебристый",
+            "sortOrder": 8,
+            "colorHex": "#d7d9dc",
+            "createdAt": "2026-09-19T04:06:32.871Z"
+          }
+        },
+        {
+          "id": "cmu7xzzy9003ptmofsu4bnga2",
+          "productId": "cmu7xsn86003g8bof4a87zshl",
+          "attributeValueId": "cmu7v855v000iyuofnxtpvaxp",
+          "attributeValue": {
+            "id": "cmu7v855v000iyuofnxtpvaxp",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Чёрный",
+            "sortOrder": 0,
+            "colorHex": "#1c1c1e",
+            "createdAt": "2026-09-19T04:06:31.459Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmuc9x3i6001xo3offoxpoo4k",
+      "slug": "iphone-duo",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone Duo",
+      "shortDescription": "Первый складной iPhone с двумя дисплеями",
+      "description": "iPhone Duo — анонсированная складная модель с внутренним дисплеем 7.6 дюйма и внешним экраном 5.4 дюйма. Apple откроет предзаказ 16 октября 2026 года; наличие у Di-SMART не подтверждено.",
+      "isFlagship": false,
+      "isActive": false,
+      "basePriceUsd": "1999",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "OUT_OF_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-22T06:08:55.038Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmuhwlsh4002m3mofub3upqaj",
+          "productId": "cmuc9x3i6001xo3offoxpoo4k",
+          "priceUsd": "2199",
+          "priceByn": null,
+          "sku": null,
+          "availability": "OUT_OF_STOCK",
+          "isDefault": false,
+          "sortOrder": 1,
+          "createdAt": "2026-09-26T04:42:49.576Z",
+          "updatedAt": "2026-09-26T04:42:49.576Z",
+          "options": [
+            {
+              "variantId": "cmuhwlsh4002m3mofub3upqaj",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlsh4002m3mofub3upqaj",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlsqi002n3mofdukerqvh",
+          "productId": "cmuc9x3i6001xo3offoxpoo4k",
+          "priceUsd": "2399",
+          "priceByn": null,
+          "sku": null,
+          "availability": "OUT_OF_STOCK",
+          "isDefault": false,
+          "sortOrder": 2,
+          "createdAt": "2026-09-26T04:42:49.914Z",
+          "updatedAt": "2026-09-26T04:42:49.914Z",
+          "options": [
+            {
+              "variantId": "cmuhwlsqi002n3mofdukerqvh",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlsqi002n3mofdukerqvh",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwls7h002l3moflusl9u86",
+          "productId": "cmuc9x3i6001xo3offoxpoo4k",
+          "priceUsd": "1999",
+          "priceByn": null,
+          "sku": null,
+          "availability": "OUT_OF_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-09-26T04:42:49.229Z",
+          "updatedAt": "2026-09-26T04:42:49.229Z",
+          "options": [
+            {
+              "variantId": "cmuhwls7h002l3moflusl9u86",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwls7h002l3moflusl9u86",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlt03002o3mofrcliz761",
+          "productId": "cmuc9x3i6001xo3offoxpoo4k",
+          "priceUsd": "2799",
+          "priceByn": null,
+          "sku": null,
+          "availability": "OUT_OF_STOCK",
+          "isDefault": false,
+          "sortOrder": 3,
+          "createdAt": "2026-09-26T04:42:50.259Z",
+          "updatedAt": "2026-09-26T04:42:50.259Z",
+          "options": [
+            {
+              "variantId": "cmuhwlt03002o3mofrcliz761",
+              "attributeValueId": "cmu7v83yc0009yuofkruj2n2v",
+              "attributeValue": {
+                "id": "cmu7v83yc0009yuofkruj2n2v",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "2 ТБ",
+                "sortOrder": 4,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.892Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlt03002o3mofrcliz761",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "colorValues": [
+        {
+          "id": "cmuhwlqnc002j3mofyelw1jjw",
+          "productId": "cmuc9x3i6001xo3offoxpoo4k",
+          "attributeValueId": "cmugzmlzo001gboofpkxuny0f",
+          "attributeValue": {
+            "id": "cmugzmlzo001gboofpkxuny0f",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Звёздный белый",
+            "sortOrder": 33,
+            "colorHex": "#e6e4df",
+            "createdAt": "2026-09-25T13:19:40.500Z"
+          }
+        },
+        {
+          "id": "cmuhwlqs8002k3mofg7wn5uig",
+          "productId": "cmuc9x3i6001xo3offoxpoo4k",
+          "attributeValueId": "cmugzmm45001hboofvjad21tk",
+          "attributeValue": {
+            "id": "cmugzmm45001hboofvjad21tk",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Ночное небо",
+            "sortOrder": 34,
+            "colorHex": "#272b35",
+            "createdAt": "2026-09-25T13:19:40.661Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmu7v95640045yuof2oexyz6h",
+      "slug": "iphone-16",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone 16",
+      "shortDescription": "Проверенный флагман прошлого поколения",
+      "description": "iPhone 16 — надёжный выбор прошлого поколения с чипом A18 и системой из двух камер.",
+      "isFlagship": false,
+      "isActive": false,
+      "basePriceUsd": "799",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 1,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-19T04:07:18.124Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmuhwlw9b002y3mofq0jow07h",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "799",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-09-26T04:42:54.479Z",
+          "updatedAt": "2026-09-26T04:42:54.479Z",
+          "options": [
+            {
+              "variantId": "cmuhwlw9b002y3mofq0jow07h",
+              "attributeValueId": "cmu7v83fk0005yuof17yclhwv",
+              "attributeValue": {
+                "id": "cmu7v83fk0005yuof17yclhwv",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "128 ГБ",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.216Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlw9b002y3mofq0jow07h",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlwio002z3mofsrg068n0",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "799",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 1,
+          "createdAt": "2026-09-26T04:42:54.816Z",
+          "updatedAt": "2026-09-26T04:42:54.816Z",
+          "options": [
+            {
+              "variantId": "cmuhwlwio002z3mofsrg068n0",
+              "attributeValueId": "cmu7v83fk0005yuof17yclhwv",
+              "attributeValue": {
+                "id": "cmu7v83fk0005yuof17yclhwv",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "128 ГБ",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.216Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlwio002z3mofsrg068n0",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlwrz00303mofph5exjrp",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "799",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 2,
+          "createdAt": "2026-09-26T04:42:55.151Z",
+          "updatedAt": "2026-09-26T04:42:55.151Z",
+          "options": [
+            {
+              "variantId": "cmuhwlwrz00303mofph5exjrp",
+              "attributeValueId": "cmu7v83fk0005yuof17yclhwv",
+              "attributeValue": {
+                "id": "cmu7v83fk0005yuof17yclhwv",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "128 ГБ",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.216Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlwrz00303mofph5exjrp",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlx1b00313mof5lifj66p",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 3,
+          "createdAt": "2026-09-26T04:42:55.487Z",
+          "updatedAt": "2026-09-26T04:42:55.487Z",
+          "options": [
+            {
+              "variantId": "cmuhwlx1b00313mof5lifj66p",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlx1b00313mof5lifj66p",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlxao00323mofmjfbuweq",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 4,
+          "createdAt": "2026-09-26T04:42:55.824Z",
+          "updatedAt": "2026-09-26T04:42:55.824Z",
+          "options": [
+            {
+              "variantId": "cmuhwlxao00323mofmjfbuweq",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlxao00323mofmjfbuweq",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlxk100333mofj0z2w3bz",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "899",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 5,
+          "createdAt": "2026-09-26T04:42:56.161Z",
+          "updatedAt": "2026-09-26T04:42:56.161Z",
+          "options": [
+            {
+              "variantId": "cmuhwlxk100333mofj0z2w3bz",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlxk100333mofj0z2w3bz",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlxtg00343mofhfy8gi1v",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 6,
+          "createdAt": "2026-09-26T04:42:56.500Z",
+          "updatedAt": "2026-09-26T04:42:56.500Z",
+          "options": [
+            {
+              "variantId": "cmuhwlxtg00343mofhfy8gi1v",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlxtg00343mofhfy8gi1v",
+              "attributeValueId": "cmu7v842t000ayuofw439hsft",
+              "attributeValue": {
+                "id": "cmu7v842t000ayuofw439hsft",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM",
+                "sortOrder": 0,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.053Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwly2u00353mofpx6mkdki",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 7,
+          "createdAt": "2026-09-26T04:42:56.838Z",
+          "updatedAt": "2026-09-26T04:42:56.838Z",
+          "options": [
+            {
+              "variantId": "cmuhwly2u00353mofpx6mkdki",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwly2u00353mofpx6mkdki",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmuhwlyc500363mof8rlx3ng1",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 8,
+          "createdAt": "2026-09-26T04:42:57.173Z",
+          "updatedAt": "2026-09-26T04:42:57.173Z",
+          "options": [
+            {
+              "variantId": "cmuhwlyc500363mof8rlx3ng1",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmuhwlyc500363mof8rlx3ng1",
+              "attributeValueId": "cmu7v84cs000cyuof39fgxnfp",
+              "attributeValue": {
+                "id": "cmu7v84cs000cyuof39fgxnfp",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "SIM + eSIM",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.412Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "colorValues": [
+        {
+          "id": "cmuhwlub0002t3moff9wm8sca",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "attributeValueId": "cmu7v855v000iyuofnxtpvaxp",
+          "attributeValue": {
+            "id": "cmu7v855v000iyuofnxtpvaxp",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Чёрный",
+            "sortOrder": 0,
+            "colorHex": "#1c1c1e",
+            "createdAt": "2026-09-19T04:06:31.459Z"
+          }
+        },
+        {
+          "id": "cmuhwlufp002u3mofn533fm7q",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "attributeValueId": "cmu7v85ad000jyuofe65x7tjq",
+          "attributeValue": {
+            "id": "cmu7v85ad000jyuofe65x7tjq",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Белый",
+            "sortOrder": 1,
+            "colorHex": "#f5f5f0",
+            "createdAt": "2026-09-19T04:06:31.621Z"
+          }
+        },
+        {
+          "id": "cmuhwluke002v3mof38die9ch",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "attributeValueId": "cmu7v85kh000lyuofxvlbx87j",
+          "attributeValue": {
+            "id": "cmu7v85kh000lyuofxvlbx87j",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Розовый",
+            "sortOrder": 3,
+            "colorHex": "#f4c2c2",
+            "createdAt": "2026-09-19T04:06:31.985Z"
+          }
+        },
+        {
+          "id": "cmuhwlup2002w3mof5tlc2ej5",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "attributeValueId": "cmuhwlm22001y3mofaiav8wsb",
+          "attributeValue": {
+            "id": "cmuhwlm22001y3mofaiav8wsb",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Бирюзовый",
+            "sortOrder": 50,
+            "colorHex": "#70aaa5",
+            "createdAt": "2026-09-26T04:42:41.258Z"
+          }
+        },
+        {
+          "id": "cmuhwlutq002x3mofofbs0dqn",
+          "productId": "cmu7v95640045yuof2oexyz6h",
+          "attributeValueId": "cmuhwllxb001x3mofvsphmabh",
+          "attributeValue": {
+            "id": "cmuhwllxb001x3mofvsphmabh",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Ультрамариновый",
+            "sortOrder": 49,
+            "colorHex": "#5867a6",
+            "createdAt": "2026-09-26T04:42:41.087Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmu7v8vl5003dyuofkgoo443o",
+      "slug": "iphone-air",
+      "categoryId": "cmu7v87bp000xyuofw8u98210",
+      "brandId": "cmu7v8774000wyuofln4kzx78",
+      "name": "iPhone Air",
+      "shortDescription": "Самый тонкий iPhone с чипом A19 Pro",
+      "description": "iPhone Air — тонкий титановый смартфон с чипом A19 Pro и дисплеем 6.5 дюйма.",
+      "isFlagship": false,
+      "isActive": false,
+      "basePriceUsd": "1099",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 3,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-09-19T04:07:05.705Z",
+      "updatedAt": "2026-09-29T07:26:20.575Z",
+      "variants": [
+        {
+          "id": "cmugzxgvs003dzjofwy8dj0q5",
+          "productId": "cmu7v8vl5003dyuofkgoo443o",
+          "priceUsd": "1099",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-09-25T13:28:07.096Z",
+          "updatedAt": "2026-09-25T13:28:07.096Z",
+          "options": [
+            {
+              "variantId": "cmugzxgvs003dzjofwy8dj0q5",
+              "attributeValueId": "cmu7v83k70006yuofippl002y",
+              "attributeValue": {
+                "id": "cmu7v83k70006yuofippl002y",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "256 ГБ",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.383Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxgvs003dzjofwy8dj0q5",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxh5u003ezjofqtr7wbp4",
+          "productId": "cmu7v8vl5003dyuofkgoo443o",
+          "priceUsd": "1299",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 1,
+          "createdAt": "2026-09-25T13:28:07.458Z",
+          "updatedAt": "2026-09-25T13:28:07.458Z",
+          "options": [
+            {
+              "variantId": "cmugzxh5u003ezjofqtr7wbp4",
+              "attributeValueId": "cmu7v83oq0007yuof8nmk6ryy",
+              "attributeValue": {
+                "id": "cmu7v83oq0007yuof8nmk6ryy",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "512 ГБ",
+                "sortOrder": 2,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.546Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxh5u003ezjofqtr7wbp4",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cmugzxhf6003fzjof3g9kyt6i",
+          "productId": "cmu7v8vl5003dyuofkgoo443o",
+          "priceUsd": "1499",
+          "priceByn": null,
+          "sku": null,
+          "availability": "IN_STOCK",
+          "isDefault": false,
+          "sortOrder": 2,
+          "createdAt": "2026-09-25T13:28:07.794Z",
+          "updatedAt": "2026-09-25T13:28:07.794Z",
+          "options": [
+            {
+              "variantId": "cmugzxhf6003fzjof3g9kyt6i",
+              "attributeValueId": "cmu7v83tt0008yuoffw11qcle",
+              "attributeValue": {
+                "id": "cmu7v83tt0008yuoffw11qcle",
+                "attributeId": "cmu7v80bu0000yuof6okkycxv",
+                "value": "1 ТБ",
+                "sortOrder": 3,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:29.729Z",
+                "attribute": {
+                  "id": "cmu7v80bu0000yuof6okkycxv",
+                  "name": "Память",
+                  "slug": "memory",
+                  "sortOrder": 1,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:25.196Z"
+                }
+              }
+            },
+            {
+              "variantId": "cmugzxhf6003fzjof3g9kyt6i",
+              "attributeValueId": "cmu7v848a000byuofz9ocx8rm",
+              "attributeValue": {
+                "id": "cmu7v848a000byuofz9ocx8rm",
+                "attributeId": "cmu7v80zu0001yuof1m7a3v2l",
+                "value": "eSIM",
+                "sortOrder": 1,
+                "colorHex": null,
+                "createdAt": "2026-09-19T04:06:30.250Z",
+                "attribute": {
+                  "id": "cmu7v80zu0001yuof1m7a3v2l",
+                  "name": "SIM",
+                  "slug": "sim",
+                  "sortOrder": 2,
+                  "isColor": false,
+                  "createdAt": "2026-09-19T04:06:26.058Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "colorValues": [
+        {
+          "id": "cmugzxezo0039zjof8x3xu7sp",
+          "productId": "cmu7v8vl5003dyuofkgoo443o",
+          "attributeValueId": "cmu7xrxlt000u8bof1gif01og",
+          "attributeValue": {
+            "id": "cmu7xrxlt000u8bof1gif01og",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Космический чёрный",
+            "sortOrder": 15,
+            "colorHex": "#3b3c40",
+            "createdAt": "2026-09-19T05:17:54.017Z"
+          }
+        },
+        {
+          "id": "cmugzxf53003azjof2t0fyk4s",
+          "productId": "cmu7v8vl5003dyuofkgoo443o",
+          "attributeValueId": "cmugzmlq3001eboofast3ou2m",
+          "attributeValue": {
+            "id": "cmugzmlq3001eboofast3ou2m",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Облачный белый",
+            "sortOrder": 31,
+            "colorHex": "#f0f0ec",
+            "createdAt": "2026-09-25T13:19:40.155Z"
+          }
+        },
+        {
+          "id": "cmugzxf9t003bzjofdr19qclx",
+          "productId": "cmu7v8vl5003dyuofkgoo443o",
+          "attributeValueId": "cmugzmluq001fboof9449go75",
+          "attributeValue": {
+            "id": "cmugzmluq001fboof9449go75",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Светло-золотой",
+            "sortOrder": 32,
+            "colorHex": "#ded6bd",
+            "createdAt": "2026-09-25T13:19:40.322Z"
+          }
+        },
+        {
+          "id": "cmugzxfef003czjof43byzke2",
+          "productId": "cmu7v8vl5003dyuofkgoo443o",
+          "attributeValueId": "cmugzmll2001dboof2yfzgrlz",
+          "attributeValue": {
+            "id": "cmugzmll2001dboof2yfzgrlz",
+            "attributeId": "cmu7v830i0004yuofcybyrxie",
+            "value": "Небесно-голубой",
+            "sortOrder": 30,
+            "colorHex": "#c5d5e4",
+            "createdAt": "2026-09-25T13:19:39.974Z"
+          }
+        }
+      ]
+    }
+  ]
+}

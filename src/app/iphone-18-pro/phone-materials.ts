@@ -5,7 +5,7 @@ import sourceData from './phone-material-data.json';
 type Surface = {diffuseColor?:number[];metallic?:number;roughness?:number;opacity?:number;clearcoat?:number;clearcoatRoughness?:number;ior?:number};
 const bindings:Record<string,string> = sourceData.bindings;
 const source:Record<string,Surface> = sourceData.materials;
-const finishes = ['#673c46','#b0bfdc','#f2f2ef','#454544'];
+const finishes = ['#673c46','#b0bfdc','#e1e5ea','#454544'];
 const lensCoatings = new Set(['rWTUuVcPAAIaxme','obqsXOwHbuntmdg']);
 const bodyPaint = new Set(['DodbyqhrrBLNbcB','vmHtEpzvjsKvWzR','NTEUvFZCGwiAbXI','hGSiEINnkluBUrq','crYYDRbonRWlXIT','bKCxnOaKtDpUlmo','nuwSyerWvJfhsMd','WElbLmMkunjUugH','ZKYcumThEAllgKc','vUgmkmbQjXTaqEc','mEyfsugDbInWtmQ']);
 

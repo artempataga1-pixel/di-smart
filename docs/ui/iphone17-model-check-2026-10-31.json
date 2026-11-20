@@ -1,0 +1,344 @@
+{
+  "modelChecks": [
+    {
+      "step": "initialPro",
+      "color": "Серебристый",
+      "image": "http://127.0.0.1:3031/media/apple-color-variants/iphone-17-pro/silver.webp",
+      "modelLinks": [
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 773.5
+        },
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 773.5
+        }
+      ],
+      "overflow": false,
+      "price": "3 097 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro"
+    },
+    {
+      "step": "configuredPro",
+      "color": "Космический оранжевый",
+      "image": "http://127.0.0.1:3031/_next/image?url=%2Fmedia%2Fquality-2026-10-24%2Fc9b9ec53ff77d5ccdf19.webp&w=3840&q=90",
+      "modelLinks": [
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 274
+        },
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 274
+        }
+      ],
+      "overflow": false,
+      "price": "3 407 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "512 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro"
+    },
+    {
+      "step": "switchedMax",
+      "color": "Серебристый",
+      "image": "http://127.0.0.1:3031/media/apple-color-variants/iphone-17-pro-max/silver.webp",
+      "modelLinks": [
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 381
+        },
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 381
+        }
+      ],
+      "overflow": false,
+      "price": "3 717 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro Max"
+    },
+    {
+      "step": "configuredMax",
+      "color": "Тёмно-синий",
+      "image": "http://127.0.0.1:3031/media/apple-color-variants/iphone-17-pro-max/deep-blue.webp",
+      "modelLinks": [
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 274
+        },
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 274
+        }
+      ],
+      "overflow": false,
+      "price": "4 027 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "512 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro Max"
+    },
+    {
+      "step": "backToPro",
+      "color": "Серебристый",
+      "image": "http://127.0.0.1:3031/media/apple-color-variants/iphone-17-pro/silver.webp",
+      "modelLinks": [
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 381
+        },
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 381
+        }
+      ],
+      "overflow": false,
+      "price": "3 097 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro"
+    }
+  ],
+  "sizeChecks": [
+    {
+      "width": 320,
+      "color": "Серебристый",
+      "image": "http://127.0.0.1:3031/media/apple-color-variants/iphone-17-pro/silver.webp",
+      "modelLinks": [
+        {
+          "active": "page",
+          "h": 102.5,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 139,
+          "y": 357
+        },
+        {
+          "active": null,
+          "h": 102.5,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 139,
+          "y": 357
+        }
+      ],
+      "overflow": false,
+      "price": "3 097 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro"
+    },
+    {
+      "width": 390,
+      "color": "Серебристый",
+      "image": "http://127.0.0.1:3031/media/apple-color-variants/iphone-17-pro/silver.webp",
+      "modelLinks": [
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 381
+        },
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 381
+        }
+      ],
+      "overflow": false,
+      "price": "3 097 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro"
+    },
+    {
+      "width": 1280,
+      "color": "Серебристый",
+      "image": "http://127.0.0.1:3031/media/apple-color-variants/iphone-17-pro/silver.webp",
+      "modelLinks": [
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 207.796875,
+          "y": 7
+        },
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 207.8046875,
+          "y": 7
+        }
+      ],
+      "overflow": false,
+      "price": "3 097 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro"
+    }
+  ],
+  "liveModelChecks": [
+    {
+      "step": "pro",
+      "color": "Серебристый",
+      "image": "https://di-smart-gilt.vercel.app/media/apple-color-variants/iphone-17-pro/silver.webp",
+      "modelLinks": [
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 773.5
+        },
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 773.5
+        }
+      ],
+      "overflow": false,
+      "price": "3 097 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro"
+    },
+    {
+      "step": "max",
+      "color": "Серебристый",
+      "image": "https://di-smart-gilt.vercel.app/media/apple-color-variants/iphone-17-pro-max/silver.webp",
+      "modelLinks": [
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 381
+        },
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 381
+        }
+      ],
+      "overflow": false,
+      "price": "3 717 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro Max"
+    },
+    {
+      "step": "back",
+      "color": "Серебристый",
+      "image": "https://di-smart-gilt.vercel.app/media/apple-color-variants/iphone-17-pro/silver.webp",
+      "modelLinks": [
+        {
+          "active": "page",
+          "h": 82,
+          "href": "/product/iphone-17-pro",
+          "name": "iPhone 17 ProЭкран 6,3″",
+          "w": 174,
+          "y": 381
+        },
+        {
+          "active": null,
+          "h": 82,
+          "href": "/product/iphone-17-pro-max",
+          "name": "iPhone 17 Pro MaxЭкран 6,9″",
+          "w": 174,
+          "y": 381
+        }
+      ],
+      "overflow": false,
+      "price": "3 097 BYNОриентировочная цена · уточните у менеджера",
+      "selection": [
+        "256 ГБ",
+        "eSIM"
+      ],
+      "title": "iPhone 17 Pro"
+    }
+  ],
+  "eslint": "passed",
+  "typescript": "passed",
+  "deployment": {
+    "id": "dpl_DNqSULqzB5xvTidDxViHMFTr2DWF",
+    "state": "READY"
+  }
+}

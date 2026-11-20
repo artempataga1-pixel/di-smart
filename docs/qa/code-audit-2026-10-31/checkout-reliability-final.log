@@ -1,0 +1,2 @@
+PASS: mobile cart recovery, actionable HTTP 400, stable key after network failure, expected total, success UI
+PASS: unavailable localStorage does not crash cart

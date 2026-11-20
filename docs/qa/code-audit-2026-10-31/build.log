@@ -1,0 +1,108 @@
+
+> di-smart-shop@0.1.0 build
+> npm run db:generate && next build
+
+
+> di-smart-shop@0.1.0 db:generate
+> node scripts/database/sync-mysql-schema.mjs && prisma generate
+
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma/schema.prisma.
+┌─────────────────────────────────────────────────────────┐
+│  Update available 7.10.0 -> 8.0.0-rc.29                 │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+✔ Generated Prisma Client (7.10.0) to ./src/generated/prisma in 76ms
+
+▲ Next.js 16.3.4 (Turbopack)
+- Environments: .env
+✓ Running next.config.ts took 60ms
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 5.3s
+  Running TypeScript ...
+  Finished TypeScript in 3.7s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/27) ...
+(node:11173) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:11179) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+
+To prepare for this change:
+- If you want the current behavior, explicitly use 'sslmode=verify-full'
+- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+
+See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  Generating static pages using 7 workers (6/27) 
+  Generating static pages using 7 workers (13/27) 
+  Generating static pages using 7 workers (20/27) 
+✓ Generating static pages using 7 workers (27/27) in 8.4s
+  Finalizing page optimization ...
+
+Route (app)                 Revalidate  Expire
+┌ ○ /                               5m      1y
+├ ○ /_not-found                     5m      1y
+├ ƒ /admin
+├ ƒ /admin/brands
+├ ƒ /admin/categories
+├ ○ /admin/login                    5m      1y
+├ ƒ /admin/orders
+├ ƒ /admin/orders/[id]
+├ ƒ /admin/products
+├ ƒ /admin/products/[id]
+├ ƒ /admin/products/new
+├ ƒ /admin/settings
+├ ○ /airpods-pro-3                  5m      1y
+├ ƒ /api/cart/resolve
+├ ƒ /api/health
+├ ƒ /api/order
+├ ○ /apple-icon.png
+├ ○ /apple-watch-ultra-4            5m      1y
+├ ƒ /cart
+├ ƒ /catalog
+├ ƒ /catalog/[category]
+├ ○ /contacts                       5m      1y
+├ ○ /cookies                        5m      1y
+├ ○ /delivery                       5m      1y
+├ ○ /galaxy-s25-ultra               5m      1y
+├ ○ /galaxy-s26-ultra               5m      1y
+├ ○ /galaxy-tab-s11-ultra           5m      1y
+├ ○ /icon.png
+├ ○ /ipad-pro-m5                    5m      1y
+├ ƒ /iphone-18-pro
+├ ○ /macbook-pro-16-m5-max          5m      1y
+├ ○ /offer                          5m      1y
+├ ○ /privacy                        5m      1y
+├ ƒ /product/[slug]
+├ ○ /robots.txt
+├ ƒ /sitemap.xml
+├ ○ /trade-in                       5m      1y
+├ ƒ /uploads/[...path]
+├ ○ /xiaomi-17-ultra                5m      1y
+└ ○ /xiaomi-book-pro-14             5m      1y
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

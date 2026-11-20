@@ -1,6 +1,7 @@
 export function formatPrice(value: number): string {
   return new Intl.NumberFormat("ru-RU", {
-    maximumFractionDigits: 0,
+    minimumFractionDigits: Number.isInteger(value) ? 0 : 2,
+    maximumFractionDigits: 2,
   }).format(value) + " BYN";
 }
 

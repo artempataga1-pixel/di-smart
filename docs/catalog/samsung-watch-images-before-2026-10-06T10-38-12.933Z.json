@@ -1,0 +1,992 @@
+{
+  "products": [
+    {
+      "id": "cmuqsvmoi0011xtofsn4apnw3",
+      "slug": "galaxy-watch-l320",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 8 40 мм (L320)",
+      "shortDescription": "40 мм · Bluetooth · SM-L320",
+      "description": "Samsung Galaxy Watch 8 40 мм (L320). 40 мм · Bluetooth · SM-L320.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:25.746Z",
+      "updatedAt": "2026-10-02T10:19:20.737Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsvnh40012xtoftf3yd94m",
+          "productId": "cmuqsvmoi0011xtofsn4apnw3",
+          "url": "/media/catalog/samsung-client/watch8-40.webp",
+          "alt": "Samsung Galaxy Watch 8 40 мм (L320)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:26.776Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsvo1l0014xtofhiblp0hm",
+          "productId": "cmuqsvmoi0011xtofsn4apnw3",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l320-L320-40",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:27.513Z",
+          "updatedAt": "2026-10-02T10:19:22.298Z",
+          "options": [
+            {
+              "variantId": "cmuqsvo1l0014xtofhiblp0hm",
+              "attributeValueId": "cmuqsvnrq0013xtofor1vg7zc"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqt9q2z000peiofs4hzzpdw",
+          "productId": "cmuqsvmoi0011xtofsn4apnw3",
+          "name": "Конфигурации поставки",
+          "value": "40 мм · Bluetooth · SM-L320",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsvmoi0011xtofsn4apnw3",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsvp3g0017xtofs4bvkftw",
+      "slug": "galaxy-watch-l325",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 8 40 мм LTE (L325)",
+      "shortDescription": "40 мм · LTE · SM-L325",
+      "description": "Samsung Galaxy Watch 8 40 мм LTE (L325). 40 мм · LTE · SM-L325.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:28.876Z",
+      "updatedAt": "2026-10-02T10:19:23.686Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsvpvy0018xtofx6tso6yv",
+          "productId": "cmuqsvp3g0017xtofs4bvkftw",
+          "url": "/media/catalog/samsung-client/watch8-40.webp",
+          "alt": "Samsung Galaxy Watch 8 40 мм LTE (L325)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:29.902Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsvqfe001axtofoyiwyl6j",
+          "productId": "cmuqsvp3g0017xtofs4bvkftw",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l325-L325-40",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:30.602Z",
+          "updatedAt": "2026-10-02T10:19:25.243Z",
+          "options": [
+            {
+              "variantId": "cmuqsvqfe001axtofoyiwyl6j",
+              "attributeValueId": "cmuqsvq600019xtof330aozme"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqt9scp000seiof0ovqam0g",
+          "productId": "cmuqsvp3g0017xtofs4bvkftw",
+          "name": "Конфигурации поставки",
+          "value": "40 мм · LTE · SM-L325",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsvp3g0017xtofs4bvkftw",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsvrhl001dxtofovvz2pbn",
+      "slug": "galaxy-watch-l330",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 8 44 мм (L330)",
+      "shortDescription": "44 мм · Bluetooth · SM-L330",
+      "description": "Samsung Galaxy Watch 8 44 мм (L330). 44 мм · Bluetooth · SM-L330.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:31.977Z",
+      "updatedAt": "2026-10-02T10:19:26.630Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsvs9y001extof8uxl7edd",
+          "productId": "cmuqsvrhl001dxtofovvz2pbn",
+          "url": "/media/catalog/samsung-client/watch8-44.webp",
+          "alt": "Samsung Galaxy Watch 8 44 мм (L330)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:32.998Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsvssz001gxtoftwn1a49f",
+          "productId": "cmuqsvrhl001dxtofovvz2pbn",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l330-L330-44",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:33.683Z",
+          "updatedAt": "2026-10-02T10:19:28.190Z",
+          "options": [
+            {
+              "variantId": "cmuqsvssz001gxtoftwn1a49f",
+              "attributeValueId": "cmuqsvsjj001fxtofgqrztrjo"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqt9umq000veiof8tmxoaw1",
+          "productId": "cmuqsvrhl001dxtofovvz2pbn",
+          "name": "Конфигурации поставки",
+          "value": "44 мм · Bluetooth · SM-L330",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsvrhl001dxtofovvz2pbn",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsvtux001jxtofcr7t0g4r",
+      "slug": "galaxy-watch-l335",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 8 44 мм LTE (L335)",
+      "shortDescription": "44 мм · LTE · SM-L335",
+      "description": "Samsung Galaxy Watch 8 44 мм LTE (L335). 44 мм · LTE · SM-L335.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:35.049Z",
+      "updatedAt": "2026-10-02T10:19:29.581Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsvund001kxtoffq5hzf0d",
+          "productId": "cmuqsvtux001jxtofcr7t0g4r",
+          "url": "/media/catalog/samsung-client/watch8-44.webp",
+          "alt": "Samsung Galaxy Watch 8 44 мм LTE (L335)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:36.073Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsvv6d001mxtof2geg4ty7",
+          "productId": "cmuqsvtux001jxtofcr7t0g4r",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l335-L335-44",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:36.757Z",
+          "updatedAt": "2026-10-02T10:19:31.143Z",
+          "options": [
+            {
+              "variantId": "cmuqsvv6d001mxtof2geg4ty7",
+              "attributeValueId": "cmuqsvuwu001lxtof11g0n354"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqt9wwo000yeiofoe77ebwu",
+          "productId": "cmuqsvtux001jxtofcr7t0g4r",
+          "name": "Конфигурации поставки",
+          "value": "44 мм · LTE · SM-L335",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsvtux001jxtofcr7t0g4r",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsw2ag0021xtofw59dhnr9",
+      "slug": "galaxy-watch-l340",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 9 40 мм (L340)",
+      "shortDescription": "40 мм · Bluetooth · SM-L340",
+      "description": "Samsung Galaxy Watch 9 40 мм (L340). 40 мм · Bluetooth · SM-L340.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:45.976Z",
+      "updatedAt": "2026-10-02T10:19:38.430Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsw3vt0022xtofrnpn227l",
+          "productId": "cmuqsw2ag0021xtofw59dhnr9",
+          "url": "/media/catalog/samsung-client/watch9-40.webp",
+          "alt": "Samsung Galaxy Watch 9 40 мм (L340)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:48.041Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsw4pj0024xtofwwo2nlb8",
+          "productId": "cmuqsw2ag0021xtofw59dhnr9",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l340-L340-40",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:49.111Z",
+          "updatedAt": "2026-10-02T10:19:39.989Z",
+          "options": [
+            {
+              "variantId": "cmuqsw4pj0024xtofwwo2nlb8",
+              "attributeValueId": "cmuqsw4ew0023xtofxsnnjlap"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqta3qc0017eiof5o2gnvr6",
+          "productId": "cmuqsw2ag0021xtofw59dhnr9",
+          "name": "Конфигурации поставки",
+          "value": "40 мм · Bluetooth · SM-L340",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsw2ag0021xtofw59dhnr9",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsw5vi0027xtofmtaia8ba",
+      "slug": "galaxy-watch-l345",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 9 40 мм LTE (L345)",
+      "shortDescription": "40 мм · LTE · SM-L345",
+      "description": "Samsung Galaxy Watch 9 40 мм LTE (L345). 40 мм · LTE · SM-L345.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:50.623Z",
+      "updatedAt": "2026-10-02T10:19:41.375Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsw6o30028xtofpugaqbcj",
+          "productId": "cmuqsw5vi0027xtofmtaia8ba",
+          "url": "/media/catalog/samsung-client/watch9-40.webp",
+          "alt": "Samsung Galaxy Watch 9 40 мм LTE (L345)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:51.651Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsw78k002axtof6fjqqf6c",
+          "productId": "cmuqsw5vi0027xtofmtaia8ba",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l345-L345-40",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:52.388Z",
+          "updatedAt": "2026-10-02T10:19:43.121Z",
+          "options": [
+            {
+              "variantId": "cmuqsw78k002axtof6fjqqf6c",
+              "attributeValueId": "cmuqsw6y60029xtofazmpvgsa"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqta65c001aeiofdp7tgfcu",
+          "productId": "cmuqsw5vi0027xtofmtaia8ba",
+          "name": "Конфигурации поставки",
+          "value": "40 мм · LTE · SM-L345",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsw5vi0027xtofmtaia8ba",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsw8f9002dxtofq9u2x03c",
+      "slug": "galaxy-watch-l350",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 9 44 мм (L350)",
+      "shortDescription": "44 мм · Bluetooth · SM-L350",
+      "description": "Samsung Galaxy Watch 9 44 мм (L350). 44 мм · Bluetooth · SM-L350.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:53.925Z",
+      "updatedAt": "2026-10-02T10:19:44.508Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsw9qd002extofuut1noy8",
+          "productId": "cmuqsw8f9002dxtofq9u2x03c",
+          "url": "/media/catalog/samsung-client/watch9-44.webp",
+          "alt": "Samsung Galaxy Watch 9 44 мм (L350)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:55.621Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqswa9m002gxtofj1csj1qs",
+          "productId": "cmuqsw8f9002dxtofq9u2x03c",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l350-L350-44",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:56.314Z",
+          "updatedAt": "2026-10-02T10:19:46.070Z",
+          "options": [
+            {
+              "variantId": "cmuqswa9m002gxtofj1csj1qs",
+              "attributeValueId": "cmuqswa01002fxtofa5yl1k3c"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqta8fa001deiofe8ek0bzq",
+          "productId": "cmuqsw8f9002dxtofq9u2x03c",
+          "name": "Конфигурации поставки",
+          "value": "44 мм · Bluetooth · SM-L350",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsw8f9002dxtofq9u2x03c",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqswben002jxtof7mabeh5t",
+      "slug": "galaxy-watch-l355",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 9 44 мм LTE (L355)",
+      "shortDescription": "44 мм · LTE · SM-L355",
+      "description": "Samsung Galaxy Watch 9 44 мм LTE (L355). 44 мм · LTE · SM-L355.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:57.791Z",
+      "updatedAt": "2026-10-02T10:19:47.455Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqswcgx002kxtofmdgmoxsn",
+          "productId": "cmuqswben002jxtof7mabeh5t",
+          "url": "/media/catalog/samsung-client/watch9-44.webp",
+          "alt": "Samsung Galaxy Watch 9 44 мм LTE (L355)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:59.169Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqswd00002mxtofz1qjxeyh",
+          "productId": "cmuqswben002jxtof7mabeh5t",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l355-L355-44",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:59.856Z",
+          "updatedAt": "2026-10-02T10:19:49.007Z",
+          "options": [
+            {
+              "variantId": "cmuqswd00002mxtofz1qjxeyh",
+              "attributeValueId": "cmuqswcqg002lxtofgse4bvro"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqtaaoz001geiofyhiewp72",
+          "productId": "cmuqswben002jxtof7mabeh5t",
+          "name": "Конфигурации поставки",
+          "value": "44 мм · LTE · SM-L355",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqswben002jxtof7mabeh5t",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsvw8e001pxtofle6193w8",
+      "slug": "galaxy-watch-l500",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 8 Classic 46 мм (L500)",
+      "shortDescription": "46 мм · Bluetooth · SM-L500",
+      "description": "Samsung Galaxy Watch 8 Classic 46 мм (L500). 46 мм · Bluetooth · SM-L500.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:38.126Z",
+      "updatedAt": "2026-10-02T10:19:32.532Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsvx0p001qxtofmfudtdv0",
+          "productId": "cmuqsvw8e001pxtofle6193w8",
+          "url": "/media/catalog/samsung-client/watch8-classic.webp",
+          "alt": "Samsung Galaxy Watch 8 Classic 46 мм (L500)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:39.145Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsvxs7001sxtofehkj5ylh",
+          "productId": "cmuqsvw8e001pxtofle6193w8",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l500-L500-46",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:40.135Z",
+          "updatedAt": "2026-10-02T10:19:34.096Z",
+          "options": [
+            {
+              "variantId": "cmuqsvxs7001sxtofehkj5ylh",
+              "attributeValueId": "cmuqsvxao001rxtof6b4xhlpl"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqt9z6p0011eiof4gv73cub",
+          "productId": "cmuqsvw8e001pxtofle6193w8",
+          "name": "Конфигурации поставки",
+          "value": "46 мм · Bluetooth · SM-L500",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsvw8e001pxtofle6193w8",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsvyyh001vxtof7zivewn3",
+      "slug": "galaxy-watch-l505",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch 8 Classic 46 мм LTE (L505)",
+      "shortDescription": "46 мм · LTE · SM-L505",
+      "description": "Samsung Galaxy Watch 8 Classic 46 мм LTE (L505). 46 мм · LTE · SM-L505.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:41.657Z",
+      "updatedAt": "2026-10-02T10:19:35.484Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsw02b001wxtofviccnceb",
+          "productId": "cmuqsvyyh001vxtof7zivewn3",
+          "url": "/media/catalog/samsung-client/watch8-classic.webp",
+          "alt": "Samsung Galaxy Watch 8 Classic 46 мм LTE (L505)",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:43.092Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsw0mz001yxtof5flktvuv",
+          "productId": "cmuqsvyyh001vxtof7zivewn3",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l505-L505-46",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:43.835Z",
+          "updatedAt": "2026-10-02T10:19:37.042Z",
+          "options": [
+            {
+              "variantId": "cmuqsw0mz001yxtof5flktvuv",
+              "attributeValueId": "cmuqsw0d1001xxtofk0zd3w0m"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqta1gh0014eiof15xhf2g6",
+          "productId": "cmuqsvyyh001vxtof7zivewn3",
+          "name": "Конфигурации поставки",
+          "value": "46 мм · LTE · SM-L505",
+          "sortOrder": 20
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsvyyh001vxtof7zivewn3",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsvkb6000txtof6vd2szcd",
+      "slug": "galaxy-watch-l705",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch Ultra 47 мм LTE (L705) — 2025",
+      "shortDescription": "47 мм · LTE · SM-L705",
+      "description": "Samsung Galaxy Watch Ultra 47 мм LTE (L705) — 2025. 47 мм · LTE · SM-L705.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:22.674Z",
+      "updatedAt": "2026-10-02T10:19:17.780Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsvl3k000uxtofsn7doweg",
+          "productId": "cmuqsvkb6000txtof6vd2szcd",
+          "url": "/media/catalog/samsung-client/watch-ultra-2025.webp",
+          "alt": "Samsung Galaxy Watch Ultra 47 мм LTE (L705) — 2025",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:23.696Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsvlml000wxtofmsdczmhi",
+          "productId": "cmuqsvkb6000txtof6vd2szcd",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l705-L705-47",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:24.381Z",
+          "updatedAt": "2026-10-02T10:19:19.345Z",
+          "options": [
+            {
+              "variantId": "cmuqsvlml000wxtofmsdczmhi",
+              "attributeValueId": "cmuqsvld3000vxtofnszs7hrp"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqt9nsz000keiofni9eer7g",
+          "productId": "cmuqsvkb6000txtof6vd2szcd",
+          "name": "Конфигурации поставки",
+          "value": "47 мм · LTE · SM-L705",
+          "sortOrder": 20
+        },
+        {
+          "id": "cmuqt9nsz000leiofn1ebfygt",
+          "productId": "cmuqsvkb6000txtof6vd2szcd",
+          "name": "Год версии",
+          "value": "2025",
+          "sortOrder": 21
+        },
+        {
+          "id": "cmuqt9nsz000meiofnmd6odaq",
+          "productId": "cmuqsvkb6000txtof6vd2szcd",
+          "name": "Название в прайсе",
+          "value": "Samsung Watch 7 Ultra 47 LTE L705 (2025)",
+          "sortOrder": 22
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsvkb6000txtof6vd2szcd",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    },
+    {
+      "id": "cmuqsvhwv000lxtofucx2ame4",
+      "slug": "galaxy-watch-l715",
+      "categoryId": "cmu7va3u30071yuofvowg2np1",
+      "brandId": "cmu7vamg3008kyuofuobeszeq",
+      "name": "Samsung Galaxy Watch Ultra 2 47 мм LTE (L715) — 2026",
+      "shortDescription": "47 мм · LTE · SM-L715",
+      "description": "Samsung Galaxy Watch Ultra 2 47 мм LTE (L715) — 2026. 47 мм · LTE · SM-L715.",
+      "isFlagship": false,
+      "isActive": true,
+      "basePriceUsd": "0",
+      "basePriceByn": null,
+      "priceKind": "MARKET_ESTIMATE",
+      "availability": "IN_STOCK",
+      "sortOrder": 0,
+      "seoTitle": null,
+      "seoDescription": null,
+      "canonicalPath": null,
+      "createdAt": "2026-10-02T10:08:19.567Z",
+      "updatedAt": "2026-10-02T10:19:14.827Z",
+      "brand": {
+        "id": "cmu7vamg3008kyuofuobeszeq",
+        "slug": "samsung",
+        "name": "Samsung",
+        "logoUrl": null,
+        "sortOrder": 1,
+        "isActive": true,
+        "createdAt": "2026-09-19T04:08:27.171Z",
+        "updatedAt": "2026-10-02T13:18:06.609Z"
+      },
+      "images": [
+        {
+          "id": "cmuqsviq0000mxtofpl3zpqjj",
+          "productId": "cmuqsvhwv000lxtofucx2ame4",
+          "url": "/media/catalog/samsung-client/watch-ultra-2.webp",
+          "alt": "Samsung Galaxy Watch Ultra 2 47 мм LTE (L715) — 2026",
+          "sortOrder": 0,
+          "isMain": true,
+          "colorValueId": null,
+          "createdAt": "2026-10-02T10:08:20.616Z"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cmuqsvj94000oxtofi2nqyvpe",
+          "productId": "cmuqsvhwv000lxtofucx2ame4",
+          "priceUsd": "0",
+          "priceByn": null,
+          "sku": "galaxy-watch-l715-L715-47",
+          "availability": "IN_STOCK",
+          "isDefault": true,
+          "sortOrder": 0,
+          "createdAt": "2026-10-02T10:08:21.304Z",
+          "updatedAt": "2026-10-02T10:19:16.391Z",
+          "options": [
+            {
+              "variantId": "cmuqsvj94000oxtofi2nqyvpe",
+              "attributeValueId": "cmuqsvizn000nxtofb1d2esbd"
+            }
+          ],
+          "colorOffers": []
+        }
+      ],
+      "colorValues": [],
+      "specs": [
+        {
+          "id": "cmuqt9liv000feiofig8cqn2v",
+          "productId": "cmuqsvhwv000lxtofucx2ame4",
+          "name": "Конфигурации поставки",
+          "value": "47 мм · LTE · SM-L715",
+          "sortOrder": 20
+        },
+        {
+          "id": "cmuqt9liv000geiof6e8venh0",
+          "productId": "cmuqsvhwv000lxtofucx2ame4",
+          "name": "Год версии",
+          "value": "2026",
+          "sortOrder": 21
+        },
+        {
+          "id": "cmuqt9liv000heioft18g88q1",
+          "productId": "cmuqsvhwv000lxtofucx2ame4",
+          "name": "Название в прайсе",
+          "value": "Samsung Watch 2 Ultra 47 LTE L715 (2026)",
+          "sortOrder": 22
+        }
+      ],
+      "variantAttributes": [
+        {
+          "productId": "cmuqsvhwv000lxtofucx2ame4",
+          "attributeId": "cmuqsv4ee0001xtoft408uuls"
+        }
+      ]
+    }
+  ]
+}

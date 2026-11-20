@@ -1,17 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, BatteryCharging, HeartPulse, LocateFixed, Satellite, Waves } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
 import { BuyAnchor } from "@/components/storefront/BuyAnchor";
-import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
+import type { CrossSellGroup, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-export function AppleWatchUltraPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
+export function AppleWatchUltraPage({ product, crossSell }: { product: ProductDetail; crossSell: CrossSellGroup[] }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export function AppleWatchUltraPage({ product, related }: { product: ProductDeta
         ]}
       />
       <h1 className={styles.srOnly}>Apple Watch Ultra 4</h1>
-      <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
+      <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`} hideInMobileHero>Выбрать конфигурацию</BuyAnchor>
     </header>
 
     <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
@@ -55,6 +55,12 @@ export function AppleWatchUltraPage({ product, related }: { product: ProductDeta
     <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
       <div className="mx-auto max-w-6xl">
         <ProductSpecsTable specs={product.specs} description={product.description} />
+      </div>
+    </section>
+
+    <section className="bg-white px-4 pb-20 md:px-6">
+      <div className="mx-auto max-w-6xl">
+        <CrossSellProducts groups={crossSell} />
       </div>
     </section>
 
@@ -109,14 +115,8 @@ export function AppleWatchUltraPage({ product, related }: { product: ProductDeta
       <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
     </section>
 
-    <section className="bg-white px-4 pb-20 md:px-6">
-      <div className="mx-auto max-w-6xl">
-        <RelatedProducts products={related} />
-      </div>
-    </section>
-
     <footer className={styles.footnote}>
-      <p>Изображения на странице сгенерированы нейросетью — чтобы показать устройство и типичные сценарии использования. Интерфейс, оттенки корпуса и детали ремешка у серийных часов могут немного отличаться.</p>
+      <p>Изображения на странице созданы нейросетью и показывают устройство в разных сценариях. Интерфейс, оттенки корпуса и детали ремешка у серийных часов могут немного отличаться.</p>
       <p>Характеристики выверены по официальным данным Apple для Apple Watch Ultra 4: корпус 49 мм из титана Grade 5, покрытия Natural и Black, до 50 часов работы в обычном режиме, рейтинг WR100 и рекреационные погружения до 40 метров. Спутниковые и медицинские функции доступны не во всех странах.</p>
     </footer>
   </div>;

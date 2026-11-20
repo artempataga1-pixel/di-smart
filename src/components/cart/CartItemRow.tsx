@@ -1,5 +1,6 @@
 "use client";
 
+import { productPath } from "@/lib/product-route";
 import Link from "next/link";
 import { Minus, Plus, X } from "lucide-react";
 import type { CartItemKey, ResolvedCartItem } from "@/types/cart";
@@ -8,7 +9,6 @@ import { CatalogVisual } from "@/components/ui/visuals/CatalogVisual";
 import { useCart } from "@/lib/cart-context";
 import {
   isCatalogStudioImage,
-  shouldCoverCatalogCardImage,
 } from "@/constants/content/catalog-media";
 
 export function CartItemRow({ item }: { item: ResolvedCartItem }) {
@@ -24,18 +24,12 @@ export function CartItemRow({ item }: { item: ResolvedCartItem }) {
   return (
     <div className="flex gap-3 py-4">
       <Link
-        href={`/product/${item.slug}`}
+        href={item.slug ? productPath(item.slug) : "/catalog"}
         className="relative size-20 shrink-0 overflow-hidden rounded-[var(--radius-sm)] bg-[var(--color-surface-soft)]"
       >
         <CatalogVisual
           imageUrl={item.imageUrl}
-          imageFit={
-            shouldCoverCatalogCardImage(item.imageUrl)
-              ? "cover"
-              : isCatalogStudioImage(item.imageUrl)
-                ? "studio"
-                : "contain"
-          }
+          imageFit={isCatalogStudioImage(item.imageUrl) ? "studio" : "contain"}
           alt={item.name}
           iconHint={item.name}
           gradientSeed={item.productId}
@@ -47,7 +41,7 @@ export function CartItemRow({ item }: { item: ResolvedCartItem }) {
         <div className="flex items-start justify-between gap-2">
           <div>
             <Link
-              href={`/product/${item.slug}`}
+              href={item.slug ? productPath(item.slug) : "/catalog"}
               className="text-sm font-medium leading-snug text-[var(--color-text)] hover:text-[var(--color-accent-ink)]"
             >
               {item.name}
@@ -84,6 +78,7 @@ export function CartItemRow({ item }: { item: ResolvedCartItem }) {
               type="button"
               onClick={() => setQuantity(itemKey, item.quantity + 1)}
               aria-label="Увеличить количество"
+              disabled={item.quantity >= 20}
               className="flex size-7 items-center justify-center text-[var(--color-text)]"
             >
               <Plus className="size-3.5" />

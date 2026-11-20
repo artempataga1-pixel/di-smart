@@ -1,17 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { useEffect, useRef } from "react";
 import { Activity, ArrowUpRight, BatteryCharging, Volume2 } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
 import { BuyAnchor } from "@/components/storefront/BuyAnchor";
-import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
+import type { CrossSellGroup, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-export function AirpodsProPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
+export function AirpodsProPage({ product, crossSell }: { product: ProductDetail; crossSell: CrossSellGroup[] }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export function AirpodsProPage({ product, related }: { product: ProductDetail; r
         ]}
       />
       <h1 className={styles.srOnly}>AirPods Pro 3</h1>
-      <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
+      <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`} hideInMobileHero>Выбрать конфигурацию</BuyAnchor>
     </header>
 
     <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
@@ -53,6 +53,12 @@ export function AirpodsProPage({ product, related }: { product: ProductDetail; r
     <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
       <div className="mx-auto max-w-6xl">
         <ProductSpecsTable specs={product.specs} description={product.description} />
+      </div>
+    </section>
+
+    <section className="bg-white px-4 pb-20 md:px-6">
+      <div className="mx-auto max-w-6xl">
+        <CrossSellProducts groups={crossSell} />
       </div>
     </section>
 
@@ -100,12 +106,6 @@ export function AirpodsProPage({ product, related }: { product: ProductDetail; r
       <p>AirPods Pro 3</p>
       <h2>Тишина.<br />Ровно та, что нужна.</h2>
       <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
-    </section>
-
-    <section className="bg-white px-4 pb-20 md:px-6">
-      <div className="mx-auto max-w-6xl">
-        <RelatedProducts products={related} />
-      </div>
     </section>
 
     <footer className={styles.footnote}>

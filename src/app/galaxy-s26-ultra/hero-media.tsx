@@ -1,4 +1,5 @@
 'use client';
+import Image from "@/components/ui/StoreImage";
 
 import { useEffect, useState } from 'react';
 import { AdaptiveHeroVideo } from '@/components/media/AdaptiveHeroVideo';
@@ -37,13 +38,13 @@ export function HeroMedia({
   return <div className={styles.heroFilm} data-media-slot="galaxy-hero-video">
     <picture className={styles.filmPoster}>
       <source media="(min-width: 900px)" srcSet="/media/galaxy-s26-ultra/video/poster-wide.webp" />
-      <img src={heroMedia.poster} alt="Galaxy S26 Ultra — вступительный фильм" width="1280" height="720" />
+      <Image src={heroMedia.poster} alt="Galaxy S26 Ultra — вступительный фильм" width="1280" height="720" fetchPriority="high" loading="eager" />
     </picture>
     {activeSrc && !failed && <>
       <AdaptiveHeroVideo key={activeSrc} sources={[{ src: activeSrc, type: 'video/mp4' }]} poster={heroMedia.poster} className={visible ? styles.filmReady : undefined}
         onPlaying={() => setVisible(true)}
         onError={() => setFailed(true)} />
     </>}
-    <a className={`${styles.buy} ${styles.filmBuy}`} href="#buy" onClick={event => { event.preventDefault(); scrollToId('buy'); }}>Выбрать свой Galaxy</a>
+    <a data-mobile-hero-cta="" className={`${styles.buy} ${styles.filmBuy}`} href="#buy" onClick={event => { event.preventDefault(); scrollToId('buy'); }}>Выбрать свой Galaxy</a>
   </div>;
 }

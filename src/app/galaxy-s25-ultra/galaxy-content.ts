@@ -19,13 +19,15 @@ export interface FaqItem { q: string; a: string }
 
 export const chapters: Chapter[] = [
   { id: "hero", label: "Обзор" },
+  { id: "buy", label: "Выбор" },
+  { id: "product-details", label: "Характеристики" },
+  { id: "accessories", label: "С этим покупают" },
   { id: "design", label: "Дизайн" },
   { id: "s-pen", label: "S Pen" },
   { id: "camera", label: "Камера" },
   { id: "performance", label: "Производительность" },
   { id: "battery", label: "Батарея" },
   { id: "galaxy-ai", label: "Galaxy AI" },
-  { id: "accessories", label: "Аксессуары" },
   { id: "lineup", label: "Линейка" },
   { id: "faq", label: "Вопросы" },
 ];

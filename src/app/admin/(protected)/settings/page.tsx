@@ -1,3 +1,4 @@
+import { SubmitButton } from "@/components/admin/SubmitButton";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { AdminErrorBanner } from "@/components/admin/AdminErrorBanner";
@@ -24,13 +25,13 @@ export default async function AdminSettingsPage({
 
       <AdminErrorBanner message={error} />
 
-      <section className="max-w-md rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-surface)] p-6">
+      <section className="min-w-0 max-w-md rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-surface)] p-5 sm:p-6">
         <h2 className="mb-1 text-lg font-medium">Курс валют</h2>
         <p className="mb-4 text-sm text-[var(--color-muted)]">
           Текущий: <strong>{current ? current.usdToByn.toString() : "—"} BYN</strong> за 1 USD
         </p>
-        <form action={updateExchangeRateAction} className="flex items-end gap-3">
-          <label className="flex flex-col gap-1.5 text-sm">
+        <form action={updateExchangeRateAction} className="flex flex-col gap-3 sm:flex-row sm:items-end">
+          <label className="flex min-w-0 flex-1 flex-col gap-1.5 text-sm">
             Новый курс (BYN за 1 USD)
             <input
               name="usdToByn"
@@ -39,15 +40,15 @@ export default async function AdminSettingsPage({
               min="0"
               required
               placeholder={current?.usdToByn.toString() ?? "3.10"}
-              className={inputClass}
+              className={`${inputClass} w-full min-w-0`}
             />
           </label>
-          <button
+          <SubmitButton
             type="submit"
-            className="rounded-[var(--radius-sm)] bg-[var(--color-accent)] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[var(--color-accent-dark)]"
+            className="min-h-11 rounded-[var(--radius-sm)] bg-[var(--color-accent)] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[var(--color-accent-dark)]"
           >
             Обновить
-          </button>
+          </SubmitButton>
         </form>
         <p className="mt-3 text-xs text-[var(--color-muted)]">
           Изменение немедленно пересчитывает цены на витрине — без пересборки.

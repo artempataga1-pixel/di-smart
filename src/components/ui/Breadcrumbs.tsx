@@ -26,7 +26,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
         className="mb-4 flex flex-wrap items-center gap-1.5 text-sm text-[var(--color-muted)]"
       >
         {items.map((item, i) => (
-          <span key={item.label} className="flex items-center gap-1.5">
+          <span key={`${i}:${item.href ?? item.label}`} className="flex items-center gap-1.5">
             {i > 0 && <ChevronRight className="size-3.5 shrink-0" aria-hidden />}
             {item.href ? (
               <Link href={item.href} className="hover:text-[var(--color-accent-ink)]">
@@ -40,7 +40,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
       </nav>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
     </>
   );

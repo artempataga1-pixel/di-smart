@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-10",
+  "production": "https://di-smart-gilt.vercel.app",
+  "deployment": "dpl_FRnWr44qjdB9kvCBy8ujNFf1t5aM",
+  "status": "READY",
+  "checks": {
+    "typescript": "passed",
+    "eslint": "passed",
+    "regressionTests": 2,
+    "productionBuild": "passed",
+    "catalogChooseLinks": 9,
+    "proMaxSelectOpensCorrectModel": true,
+    "cartRemainsEmpty": true,
+    "airImageClickOpensDetail": true,
+    "airSearchAlias": "iPhone 17 Air",
+    "airSelectedMemory": "512 ГБ",
+    "airSelectedColor": "Небесно-голубой",
+    "airSelectedPhoto": "/media/catalog/iphone-air-official-2026/skyblue.webp"
+  },
+  "air": {
+    "slug": "iphone-air",
+    "name": "iPhone Air",
+    "memory": [
+      "256 ГБ",
+      "512 ГБ",
+      "1 ТБ"
+    ],
+    "colors": 4,
+    "sim": "eSIM",
+    "existingPricesAndVariantIds": "preserved"
+  }
+}

@@ -1,4 +1,5 @@
 "use client";
+import Image from "@/components/ui/StoreImage";
 
 import { useState } from "react";
 import { ArrowDown, ArrowRight } from "lucide-react";
@@ -18,7 +19,7 @@ export function HeroFilm() {
       <div className={styles.scene}>
         <picture className={styles.poster}>
           <source media="(prefers-reduced-motion: reduce)" srcSet={`${media}/intro-end.jpg`} />
-          <img src={`${media}/intro-start.jpg`} width={1280} height={720} fetchPriority="high" alt="Бордовый iPhone перед металлической надписью iPhone 18 PRO" />
+          <Image src={`${media}/intro-start.jpg`} width={1280} height={720} fetchPriority="high" loading="eager" alt="Бордовый iPhone перед металлической надписью iPhone 18 PRO" />
         </picture>
         <AdaptiveHeroVideo
           sources={[{ src: `${media}/intro.mp4`, type: "video/mp4" }]}
@@ -34,6 +35,7 @@ export function HeroFilm() {
         <a
           href="#buy"
           className={styles.buyCta}
+          data-mobile-hero-cta=""
           onClick={(event) => {
             event.preventDefault();
             scrollToId("buy");

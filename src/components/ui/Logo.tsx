@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { cn } from "@/lib/utils";
 import { SITE } from "@/constants/content/site";
 

@@ -8,7 +8,7 @@ import { CartSummary } from "@/components/cart/CartSummary";
 import { EmptyCartState } from "@/components/cart/EmptyCartState";
 
 export function CartDrawer() {
-  const { isDrawerOpen, closeDrawer, items, resolvedItems, isResolving, itemCount, subtotal, clearCart } =
+  const { isDrawerOpen, closeDrawer, items, resolvedItems, isResolving, itemCount, subtotal, clearCart, resolveError, refreshCart } =
     useCart();
   const router = useRouter();
 
@@ -37,7 +37,7 @@ export function CartDrawer() {
             type="button"
             onClick={closeDrawer}
             aria-label="Закрыть"
-            className="flex size-9 items-center justify-center rounded-full hover:bg-[var(--color-surface-soft)]"
+            className="flex size-11 items-center justify-center rounded-full hover:bg-[var(--color-surface-soft)]"
           >
             <X className="size-4.5" />
           </button>
@@ -60,7 +60,8 @@ export function CartDrawer() {
               ))}
             </div>
 
-            <div className="border-t border-[var(--color-line)] p-5">
+            <div className="border-t border-[var(--color-line)] px-5 pb-[calc(1.25rem+env(safe-area-inset-bottom))] pt-5">
+              {resolveError && <p role="alert" className="mb-3 text-sm">{resolveError} <button type="button" onClick={refreshCart} className="underline">Повторить</button></p>}
               <CartSummary itemCount={itemCount} subtotal={subtotal} />
               <div className="mt-4 flex flex-col gap-2">
                 <button

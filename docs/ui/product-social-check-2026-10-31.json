@@ -1,0 +1,208 @@
+{
+  "localChecks": [
+    {
+      "links": [
+        {
+          "client": 91,
+          "h": 44,
+          "href": "https://t.me/dismart_by",
+          "scroll": 91,
+          "text": "Telegram",
+          "w": 90.6640625,
+          "x": 16,
+          "y": 1162
+        },
+        {
+          "client": 91,
+          "h": 44,
+          "href": "https://instagram.com/dismart.by",
+          "scroll": 91,
+          "text": "Instagram",
+          "w": 90.6640625,
+          "x": 114.6640625,
+          "y": 1162
+        },
+        {
+          "client": 91,
+          "h": 44,
+          "href": "viber://chat?number=%2B375445556665",
+          "scroll": 91,
+          "text": "Viber",
+          "w": 90.6640625,
+          "x": 213.328125,
+          "y": 1162
+        }
+      ],
+      "overflow": false,
+      "viewport": 320
+    },
+    {
+      "links": [
+        {
+          "client": 104,
+          "h": 44,
+          "href": "https://t.me/dismart_by",
+          "scroll": 104,
+          "text": "Telegram",
+          "w": 104,
+          "x": 16,
+          "y": 1182
+        },
+        {
+          "client": 104,
+          "h": 44,
+          "href": "https://instagram.com/dismart.by",
+          "scroll": 104,
+          "text": "Instagram",
+          "w": 104,
+          "x": 128,
+          "y": 1182
+        },
+        {
+          "client": 104,
+          "h": 44,
+          "href": "viber://chat?number=%2B375445556665",
+          "scroll": 104,
+          "text": "Viber",
+          "w": 104,
+          "x": 240,
+          "y": 1182
+        }
+      ],
+      "overflow": false,
+      "viewport": 360
+    },
+    {
+      "links": [
+        {
+          "client": 114,
+          "h": 44,
+          "href": "https://t.me/dismart_by",
+          "scroll": 114,
+          "text": "Telegram",
+          "w": 114,
+          "x": 16,
+          "y": 1212
+        },
+        {
+          "client": 114,
+          "h": 44,
+          "href": "https://instagram.com/dismart.by",
+          "scroll": 114,
+          "text": "Instagram",
+          "w": 114,
+          "x": 138,
+          "y": 1212
+        },
+        {
+          "client": 114,
+          "h": 44,
+          "href": "viber://chat?number=%2B375445556665",
+          "scroll": 114,
+          "text": "Viber",
+          "w": 114,
+          "x": 260,
+          "y": 1212
+        }
+      ],
+      "overflow": false,
+      "viewport": 390
+    },
+    {
+      "links": [
+        {
+          "client": 235,
+          "h": 44,
+          "href": "https://t.me/dismart_by",
+          "scroll": 235,
+          "text": "Telegram",
+          "w": 234.6640625,
+          "x": 24,
+          "y": 1578
+        },
+        {
+          "client": 235,
+          "h": 44,
+          "href": "https://instagram.com/dismart.by",
+          "scroll": 235,
+          "text": "Instagram",
+          "w": 234.6640625,
+          "x": 266.6640625,
+          "y": 1578
+        },
+        {
+          "client": 235,
+          "h": 44,
+          "href": "viber://chat?number=%2B375445556665",
+          "scroll": 235,
+          "text": "Viber",
+          "w": 234.671875,
+          "x": 509.328125,
+          "y": 1578
+        }
+      ],
+      "overflow": false,
+      "viewport": 768
+    },
+    {
+      "links": [
+        {
+          "client": 137,
+          "h": 44,
+          "href": "https://t.me/dismart_by",
+          "scroll": 137,
+          "text": "Telegram",
+          "w": 136.53125,
+          "x": 766.3984375,
+          "y": 838
+        },
+        {
+          "client": 137,
+          "h": 44,
+          "href": "https://instagram.com/dismart.by",
+          "scroll": 137,
+          "text": "Instagram",
+          "w": 136.53125,
+          "x": 910.9296875,
+          "y": 838
+        },
+        {
+          "client": 137,
+          "h": 44,
+          "href": "viber://chat?number=%2B375445556665",
+          "scroll": 137,
+          "text": "Viber",
+          "w": 136.5390625,
+          "x": 1055.4609375,
+          "y": 838
+        }
+      ],
+      "overflow": false,
+      "viewport": 1280
+    }
+  ],
+  "eslint": "passed",
+  "typescript": "passed",
+  "viberAppLaunch": "not tested; native app required",
+  "deployment": {
+    "id": "dpl_GEW4UcjjFG1VpGeTtDibTqCTypiL",
+    "state": "READY",
+    "url": "https://di-smart-gilt.vercel.app"
+  },
+  "liveChecks": {
+    "iphoneAir": {
+      "viewport": 390,
+      "sameRow": true,
+      "buttonWidth": 114,
+      "buttonHeight": 44,
+      "overflow": false
+    },
+    "iphone18Pro": {
+      "viewport": 390,
+      "sameRow": true,
+      "contactsHeadingPx": 16,
+      "overflow": false
+    }
+  },
+  "screenshot": "docs/ui/product-social-mobile-2026-10-31.png"
+}

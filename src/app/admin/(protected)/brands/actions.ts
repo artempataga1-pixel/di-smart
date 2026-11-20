@@ -1,7 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isUniqueConstraintError } from "@/lib/admin/errors";
 import { errorRedirectUrl, isValidSlug, parseIntField } from "@/lib/admin/form-helpers";
@@ -31,6 +31,7 @@ export async function createBrandAction(formData: FormData) {
   }
 
   revalidatePath(PATH);
+  revalidateTag("storefront-catalog", { expire: 0 });
   redirect(PATH);
 }
 
@@ -58,5 +59,6 @@ export async function updateBrandAction(formData: FormData) {
   }
 
   revalidatePath(PATH);
+  revalidateTag("storefront-catalog", { expire: 0 });
   redirect(PATH);
 }

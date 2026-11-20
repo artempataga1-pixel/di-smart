@@ -1,17 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, BatteryCharging, Cpu, Database, Film } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
 import { BuyAnchor } from "@/components/storefront/BuyAnchor";
-import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
+import type { CrossSellGroup, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-export function MacbookProPage({ product, related, hasHeroVideo }: { product: ProductDetail; related: CatalogCardData[]; hasHeroVideo: boolean }) {
+export function MacbookProPage({ product, crossSell, hasHeroVideo }: { product: ProductDetail; crossSell: CrossSellGroup[]; hasHeroVideo: boolean }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export function MacbookProPage({ product, related, hasHeroVideo }: { product: Pr
         sources={[{ src: "/media/macbook-pro-m5-max/hero.mp4", type: "video/mp4" }]}
       />}
       <h1 className={styles.srOnly}>MacBook Pro 16″ с M5 Max</h1>
-      <BuyAnchor className={`${styles.button} ${styles.heroButton}`}>Выбрать конфигурацию</BuyAnchor>
+      <BuyAnchor className={`${styles.button} ${styles.heroButton}`} hideInMobileHero>Выбрать конфигурацию</BuyAnchor>
     </header>
 
     <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
@@ -51,6 +51,12 @@ export function MacbookProPage({ product, related, hasHeroVideo }: { product: Pr
     <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
       <div className="mx-auto max-w-6xl">
         <ProductSpecsTable specs={product.specs} description={product.description} />
+      </div>
+    </section>
+
+    <section className="bg-white px-4 pb-20 md:px-6">
+      <div className="mx-auto max-w-6xl">
+        <CrossSellProducts groups={crossSell} />
       </div>
     </section>
 
@@ -108,12 +114,6 @@ export function MacbookProPage({ product, related, hasHeroVideo }: { product: Pr
       <p>MacBook Pro 16″ · M5 Max</p>
       <h2>Большая работа.<br />Теперь мобильная.</h2>
       <BuyAnchor className={styles.button}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
-    </section>
-
-    <section className="bg-white px-4 pb-20 md:px-6">
-      <div className="mx-auto max-w-6xl">
-        <RelatedProducts products={related} />
-      </div>
     </section>
 
     <footer className={styles.footnote}>

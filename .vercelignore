@@ -1,0 +1,19 @@
+каталог обнова/
+для каталога/
+docs/catalog/
+Изображение Codex 17 сент. 2026 г., 20_01_24.png
+.env
+.env.local
+.env.*.local
+.next-*/
+tmp/
+backups/
+output/
+playwright-report/
+test-results/
+blob-report/
+*.tsbuildinfo
+*.database-snapshot.json
+.claude/worktrees/
+docs/media/
+docs/ui/

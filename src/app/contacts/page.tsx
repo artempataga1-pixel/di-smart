@@ -3,7 +3,11 @@ import { ContactInfoCard } from "@/components/contacts/ContactInfoCard";
 import { ContactsVideoBackground } from "@/components/contacts/ContactsVideoBackground";
 import { SITE } from "@/constants/content/site";
 
-export const metadata: Metadata = { title: `Контакты — ${SITE.name}` };
+export const metadata: Metadata = {
+  title: `Контакты — ${SITE.name}`,
+  description: `Свяжитесь с интернет-магазином ${SITE.name}: телефон, Telegram и Instagram. Принимаем заказы на технику с доставкой по Беларуси.`,
+  alternates: { canonical: "/contacts" },
+};
 
 export default function ContactsPage() {
   return (

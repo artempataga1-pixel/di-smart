@@ -8,7 +8,6 @@ import {
 } from "react";
 
 interface NetworkInformation extends EventTarget {
-  effectiveType?: string;
   saveData?: boolean;
 }
 
@@ -59,10 +58,10 @@ export function AdaptiveHeroVideo({
     const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
     const connection = (navigator as NavigatorWithConnection).connection;
 
-    const mayPlay = () =>
-      !reducedMotion.matches &&
-      !connection?.saveData &&
-      (!connection?.effectiveType || connection.effectiveType === "4g");
+    // Не полагаемся на `effectiveType`: на части Android-браузеров он долго
+    // остаётся "3g" даже на хорошем Wi‑Fi и необоснованно блокирует фильм.
+    // Явные пользовательские настройки экономии трафика/движения уважаем.
+    const mayPlay = () => !reducedMotion.matches && !connection?.saveData;
 
     const syncPlayback = () => {
       allowedRef.current = mayPlay();
@@ -98,6 +97,7 @@ export function AdaptiveHeroVideo({
     reducedMotion.addEventListener("change", syncPlayback);
     connection?.addEventListener("change", syncPlayback);
     document.addEventListener("visibilitychange", syncPlayback);
+    window.addEventListener("online", syncPlayback);
 
     // Safety net: if a browser blocks even muted autoplay outright (a
     // manually-set "Never Auto-Play" preference, certain battery-saver
@@ -114,6 +114,7 @@ export function AdaptiveHeroVideo({
       reducedMotion.removeEventListener("change", syncPlayback);
       connection?.removeEventListener("change", syncPlayback);
       document.removeEventListener("visibilitychange", syncPlayback);
+      window.removeEventListener("online", syncPlayback);
       for (const type of interactionEvents) {
         document.removeEventListener(type, retry, { capture: true });
       }

@@ -1,16 +1,15 @@
-import Script from "next/script";
+"use client";
 
-/** Заготовка под Яндекс.Метрику (задача 63) — компонент готов, включается
- * простой переменной окружения `YANDEX_METRIKA_ID`, когда заказчик даст
- * реальный ID. Без ID ничего не рендерит. Google Analytics не подключаем —
- * не упоминается в ТЗ. */
-export function YandexMetrika() {
-  const id = process.env.YANDEX_METRIKA_ID;
-  if (!id) return null;
+import Script from "next/script";
+import { useAnalyticsConsent } from "@/components/layout/CookieBanner";
+
+/** Не загружаем сторонний скрипт до отдельного разрешения пользователя. */
+export function YandexMetrika({ id }: { id: string | undefined }) {
+  const allowed = useAnalyticsConsent();
+  if (!id || !allowed) return null;
 
   return (
-    <>
-      <Script id="yandex-metrika" strategy="afterInteractive">
+    <Script id="yandex-metrika" strategy="afterInteractive">
         {`
           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
           m[i].l=1*new Date();
@@ -19,23 +18,12 @@ export function YandexMetrika() {
           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
           ym(${JSON.stringify(id)}, "init", {
-            clickmap: true,
-            trackLinks: true,
+            clickmap: false,
+            trackLinks: false,
             accurateTrackBounce: true,
-            webvisor: true
+            webvisor: false
           });
         `}
-      </Script>
-      <noscript>
-        <div>
-          {/* eslint-disable-next-line @next/next/no-img-element -- это noscript-пиксель без JS, next/image здесь не сработает */}
-          <img
-            src={`https://mc.yandex.ru/watch/${id}`}
-            style={{ position: "absolute", left: "-9999px" }}
-            alt=""
-          />
-        </div>
-      </noscript>
-    </>
+    </Script>
   );
 }

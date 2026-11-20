@@ -55,12 +55,14 @@ export interface DeviceConfig {
   environmentIntensity?: number;
   /** AgX tone-mapping exposure. Default 1. Bump slightly (~1.1) for a brighter, punchier look. */
   toneMappingExposure?: number;
+  /** Optional exposure override for the compact mobile layout (max-width: 760px). */
+  mobileToneMappingExposure?: number;
   /** Camera distance on the Z axis. Default 7.8. */
   cameraDistance?: number;
   /** Expose the audit handle on the host element for debugging. Default false. */
   exposeAudit?: boolean;
   /** Optional per-finish lighting response (key light intensity, env intensity). */
-  tuneLighting?(index: number, keyLight: THREE.RectAreaLight, scene: THREE.Scene, baseEnvIntensity: number): void;
+  tuneLighting?(index: number, keyLight: THREE.RectAreaLight, scene: THREE.Scene, baseEnvIntensity: number, compactViewport: boolean): void;
 }
 
 export interface DeviceScene {
@@ -81,6 +83,7 @@ export async function createDeviceScene(
   const initialRotation = config.initialRotation ?? [0, Math.PI, 0];
   const environmentIntensity = config.environmentIntensity ?? 0.85;
   const key = config.keyLight ?? { intensity: 3.5, width: 1.6, height: 1.2, position: [-0.8, 1.8, 1.5] };
+  const compactViewport = matchMedia('(max-width: 760px)').matches;
 
   const renderer = new THREE.WebGLRenderer({
     antialias: true,
@@ -94,7 +97,10 @@ export async function createDeviceScene(
   // `connection.effectiveType` are unreliable proxies for GPU capability and
   // were quietly halving sharpness on perfectly ordinary phones.
   renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
-  renderer.toneMapping = THREE.AgXToneMapping; renderer.toneMappingExposure = config.toneMappingExposure ?? 1;
+  renderer.toneMapping = THREE.AgXToneMapping;
+  renderer.toneMappingExposure = compactViewport
+    ? config.mobileToneMappingExposure ?? config.toneMappingExposure ?? 1
+    : config.toneMappingExposure ?? 1;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   host.appendChild(renderer.domElement);
 
@@ -171,7 +177,7 @@ export async function createDeviceScene(
     surfaces = config.dress({
       model, screens,
       onFinishLighting: index => {
-        if (config.tuneLighting) config.tuneLighting(index, keyLight, scene, environmentIntensity);
+        if (config.tuneLighting) config.tuneLighting(index, keyLight, scene, environmentIntensity, compactViewport);
       },
     });
     surfaces.setFinish(0);

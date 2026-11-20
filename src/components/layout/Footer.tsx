@@ -3,7 +3,8 @@ import { Phone, Clock } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { FOOTER_INFO_NAV } from "@/constants/content/nav";
 import { SITE } from "@/constants/content/site";
-import { TelegramIcon, InstagramIcon } from "@/components/ui/SocialIcons";
+import { SocialLinks } from "@/components/ui/SocialLinks";
+import { CookiePreferencesButton } from "@/components/layout/CookieBanner";
 import type { NavBrand } from "@/lib/catalog";
 
 const FOOTER_CATALOG_LIMIT = 6;
@@ -32,9 +33,9 @@ export function Footer({ navBrands }: { navBrands: NavBrand[] }) {
             <p className="mb-3 text-sm font-medium text-[var(--color-on-ink)]">Каталог</p>
             <ul className="flex flex-col gap-2">
               {footerCatalogLinks.map((cat) => (
-                <li key={cat.slug}>
+                <li key={cat.href ?? cat.slug}>
                   <Link
-                    href={`/catalog/${cat.slug}`}
+                    href={cat.href ?? `/catalog/${cat.slug}`}
                     className="text-sm text-[var(--color-on-ink-muted)] hover:text-[var(--color-on-ink)]"
                   >
                     {cat.name}
@@ -69,25 +70,8 @@ export function Footer({ navBrands }: { navBrands: NavBrand[] }) {
               <Clock className="size-4 shrink-0" />
               {SITE.hours}
             </div>
-            <div className="mt-1 flex flex-wrap gap-2">
-              <a
-                href={SITE.telegramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-fit items-center gap-2 rounded-full border border-[var(--color-on-ink-muted)]/30 px-3 py-1.5 hover:border-[var(--color-accent)] hover:text-[var(--color-on-ink)]"
-              >
-                <TelegramIcon className="size-4 shrink-0" />
-                Telegram
-              </a>
-              <a
-                href={SITE.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-fit items-center gap-2 rounded-full border border-[var(--color-on-ink-muted)]/30 px-3 py-1.5 hover:border-[var(--color-accent)] hover:text-[var(--color-on-ink)]"
-              >
-                <InstagramIcon className="size-4 shrink-0" />
-                Instagram
-              </a>
+            <div className="mt-2">
+              <SocialLinks dark />
             </div>
           </div>
         </div>
@@ -95,6 +79,7 @@ export function Footer({ navBrands }: { navBrands: NavBrand[] }) {
         <div className="mt-10 flex flex-col gap-2 border-t border-[var(--color-on-ink-muted)]/15 pt-6 text-xs text-[var(--color-on-ink-muted)] md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {SITE.fullName}. Демо-версия сайта.</p>
           <p>Цены и наличие носят ознакомительный характер.</p>
+          <CookiePreferencesButton />
         </div>
       </div>
     </footer>

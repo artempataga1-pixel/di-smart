@@ -1,7 +1,8 @@
 "use client";
 
+import { productPath } from "@/lib/product-route";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { FlagshipShowcaseProduct } from "@/lib/catalog";
 import { Price } from "@/components/ui/Price";
@@ -38,10 +39,14 @@ export function FlagshipShowcase({ products }: { products: FlagshipShowcaseProdu
             {current.name}
           </h1>
           <div className="mt-5">
+            {current.priceIsFrom && <span className="mr-2 text-[var(--color-muted)]">от</span>}
             <Price price={current.priceByn} size="lg" />
+            {current.priceKind === "MARKET_ESTIMATE" && (
+              <p className="mt-1 text-sm text-[var(--color-muted)]">Ориентировочная цена · уточните у менеджера</p>
+            )}
           </div>
           <div className="mt-8">
-            <PillCta href={`/product/${current.slug}`}>Смотреть товар</PillCta>
+            <PillCta href={productPath(current.slug)}>Смотреть товар</PillCta>
           </div>
         </div>
 

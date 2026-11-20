@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-10-06T10:38:38.122Z",
+  "base": "https://di-smart-gilt.vercel.app",
+  "results": [
+    {
+      "image": "/media/catalog/samsung-watch-studio/watch8-44-2026-v2.webp",
+      "status": 200,
+      "bytes": 58858,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "image": "/media/catalog/samsung-watch-studio/watch8-40-2026-v2.webp",
+      "status": 200,
+      "bytes": 57408,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "image": "/media/catalog/samsung-watch-studio/watch8-classic-2026-v2.webp",
+      "status": 200,
+      "bytes": 145400,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "image": "/media/catalog/samsung-watch-studio/watch9-40-2026-v2.webp",
+      "status": 200,
+      "bytes": 67062,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "image": "/media/catalog/samsung-watch-studio/watch9-44-2026-v2.webp",
+      "status": 200,
+      "bytes": 67278,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "image": "/media/catalog/samsung-watch-studio/watch-ultra-2025-2026-v2.webp",
+      "status": 200,
+      "bytes": 118510,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "image": "/media/catalog/samsung-watch-studio/watch-ultra-2-2026-v2.webp",
+      "status": 200,
+      "bytes": 105822,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l320",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l325",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l330",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l335",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l340",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l345",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l350",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l355",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l500",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l505",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l705",
+      "status": 200,
+      "newImagePresent": true
+    },
+    {
+      "product": "https://di-smart-gilt.vercel.app/product/galaxy-watch-l715",
+      "status": 200,
+      "newImagePresent": true
+    }
+  ]
+}

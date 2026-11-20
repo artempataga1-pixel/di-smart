@@ -1,0 +1,8 @@
+{
+  "deployment": "dpl_2o1qqBzgx5RrF9DGH5v9ZAk8gsg5",
+  "state": "READY",
+  "label": "Смартфон",
+  "title": "Samsung Galaxy S26 Ultra",
+  "scope": "categorySlug=samsung-smartphones",
+  "eslint": "passed"
+}

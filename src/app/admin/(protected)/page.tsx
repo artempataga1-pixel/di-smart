@@ -14,13 +14,26 @@ export default async function AdminDashboardPage() {
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="font-[family-name:var(--font-body)] text-3xl font-semibold">Дашборд</h1>
+      <div>
+        <p className="mb-1 text-sm font-medium text-[var(--color-accent-ink)]">Панель управления</p>
+        <h1 className="font-[family-name:var(--font-body)] text-3xl font-semibold">Обзор магазина</h1>
+        <p className="mt-2 text-sm text-[var(--color-muted)]">Товары, заказы и курс валюты в одном месте.</p>
+      </div>
 
       <div className="grid gap-4 sm:grid-cols-3">
         <StatCard label="Текущий курс" value={rate.toFixed(2)} hint="BYN за 1 USD" />
         <StatCard label="Активных товаров" value={String(productCount)} />
         <StatCard label="Всего заказов" value={String(orderCount)} />
       </div>
+
+      <section className="grid gap-3 sm:grid-cols-2">
+        <Link href="/admin/products/new" className="flex items-center justify-between rounded-2xl border border-[var(--color-line)] bg-[var(--color-surface)] px-5 py-4 text-sm font-medium transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent-ink)]">
+          Добавить товар <span aria-hidden="true">↗</span>
+        </Link>
+        <Link href="/admin/settings" className="flex items-center justify-between rounded-2xl border border-[var(--color-line)] bg-[var(--color-surface)] px-5 py-4 text-sm font-medium transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent-ink)]">
+          Изменить настройки <span aria-hidden="true">↗</span>
+        </Link>
+      </section>
 
       <section>
         <div className="mb-3 flex items-center justify-between">
@@ -46,7 +59,7 @@ export default async function AdminDashboardPage() {
                   <td className="whitespace-nowrap px-4 py-3">{formatDateTime(o.createdAt)}</td>
                   <td className="px-4 py-3">{o.name}</td>
                   <td className="whitespace-nowrap px-4 py-3">{o.phone}</td>
-                  <td className="whitespace-nowrap px-4 py-3">{o.totalByn} BYN</td>
+                  <td className="whitespace-nowrap px-4 py-3">{o.totalByn.toString()} BYN</td>
                   <td className="px-4 py-3">
                     {o.telegramSentAt ? (
                       <span className="text-[var(--color-success)]">доставлено</span>
@@ -59,7 +72,7 @@ export default async function AdminDashboardPage() {
               {orders.length === 0 && (
                 <tr>
                   <td colSpan={5} className="px-4 py-6 text-center text-[var(--color-muted)]">
-                    Заказов пока нет
+                    Заказов пока нет. Они появятся здесь после оформления покупки.
                   </td>
                 </tr>
               )}

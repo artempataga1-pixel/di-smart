@@ -1,17 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, BatteryCharging, MonitorUp, PenTool, ShieldCheck, Wifi } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
 import { BuyAnchor } from "@/components/storefront/BuyAnchor";
-import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
+import type { CrossSellGroup, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-export function GalaxyTabUltraPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
+export function GalaxyTabUltraPage({ product, crossSell }: { product: ProductDetail; crossSell: CrossSellGroup[] }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export function GalaxyTabUltraPage({ product, related }: { product: ProductDetai
 
   return (
     <div ref={root} className={styles.page}>
-      <header className={styles.hero}>
+      <header className={styles.hero} data-mobile-hero="wide">
         <AdaptiveHeroVideo
           poster="/media/galaxy-tab-s11-ultra/hero-poster.jpg"
           aria-label="Видео Samsung Galaxy Tab S11 Ultra"
@@ -43,7 +43,7 @@ export function GalaxyTabUltraPage({ product, related }: { product: ProductDetai
           }}
         />
         <h1 className={styles.srOnly}>Samsung Galaxy Tab S11 Ultra</h1>
-        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
+        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`} hideInMobileHero>Выбрать конфигурацию</BuyAnchor>
       </header>
 
       <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
@@ -55,6 +55,12 @@ export function GalaxyTabUltraPage({ product, related }: { product: ProductDetai
       <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
         <div className="mx-auto max-w-6xl">
           <ProductSpecsTable specs={product.specs} description={product.description} />
+        </div>
+      </section>
+
+      <section className="bg-white px-4 pb-20 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <CrossSellProducts groups={crossSell} />
         </div>
       </section>
 
@@ -75,7 +81,7 @@ export function GalaxyTabUltraPage({ product, related }: { product: ProductDetai
           <div className={styles.overlayCopy} data-reveal>
             <PenTool size={28} />
             <p className={styles.kicker}>Новый S Pen — уже в коробке</p>
-            <h2>Провёл пером —<br />и вот уже линия.</h2>
+            <h2>Линия следует за каждым движением.</h2>
             <p>Форму пера доработали: штрих выходит точнее, а рука не устаёт даже после долгой сессии. Быстрые инструменты, заметки и AI-функции — прямо у кончика, тянуться никуда не нужно.</p>
           </div>
         </section>
@@ -85,7 +91,7 @@ export function GalaxyTabUltraPage({ product, related }: { product: ProductDetai
             <MonitorUp size={29} />
             <p className={styles.kicker}>Samsung DeX</p>
             <h2>Планшет — когда в дороге.<br />Стол — когда пора работать.</h2>
-            <p>Несколько окон открыты сразу, файлы перетаскиваются между приложениями, клавиатура подключается за секунду. Хватает места и на монтаж, и на созвон, и на заметки рядом с ними — параллельно, а не по очереди.</p>
+            <p>Несколько окон открыты сразу, файлы перетаскиваются между приложениями, клавиатура подключается за секунду. Монтаж, созвон и заметки помещаются рядом. Не нужно переключаться между ними.</p>
           </div>
           <figure className={styles.dexImage} data-reveal>
             <Image src="/media/galaxy-tab-s11-ultra/dex-real.jpg" alt="Galaxy Tab S11 Ultra с клавиатурой в режиме Samsung DeX" fill sizes="(max-width: 900px) 100vw, 1240px" />
@@ -104,12 +110,6 @@ export function GalaxyTabUltraPage({ product, related }: { product: ProductDetai
           <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
         </section>
       </main>
-
-      <section className="bg-white px-4 pb-20 md:px-6">
-        <div className="mx-auto max-w-6xl">
-          <RelatedProducts products={related} />
-        </div>
-      </section>
 
       <footer className={styles.footnote}>
         <p>Изображения на странице сделаны с помощью ИИ — чтобы показать устройство и сценарии его использования. Интерфейс, аксессуары и отдельные детали в реальности могут отличаться.</p>

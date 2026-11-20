@@ -1,3 +1,5 @@
+import { ImageFileInput } from "@/components/admin/ImageFileInput";
+import { SubmitButton } from "@/components/admin/SubmitButton";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
@@ -14,6 +16,7 @@ import {
   removeProductColorAction,
 } from "../variant-actions";
 import { createSkuAction, deleteSkuAction, updateSkuAction } from "../sku-actions";
+import { saveColorOfferAction } from "../color-offer-actions";
 import {
   deleteProductImageAction,
   setMainProductImageAction,
@@ -50,7 +53,7 @@ export default async function EditProductPage({
   const { id } = await params;
   const { error } = await searchParams;
 
-  const [product, categories, nonColorAttributes, colorAttributes] = await Promise.all([
+  const [product, categories, brands, nonColorAttributes, colorAttributes] = await Promise.all([
     prisma.product.findUnique({
       where: { id },
       include: {
@@ -60,7 +63,7 @@ export default async function EditProductPage({
           orderBy: { sortOrder: "asc" },
           include: { colorValue: { include: { attributeValue: true } } },
         },
-        colorValues: { include: { attributeValue: true } },
+        colorValues: { include: { attributeValue: true, offers: true } },
         variantAttributes: {
           include: { attribute: { include: { values: { orderBy: { sortOrder: "asc" } } } } },
         },
@@ -71,9 +74,9 @@ export default async function EditProductPage({
       },
     }),
     prisma.category.findMany({
-      orderBy: [{ brand: { sortOrder: "asc" } }, { sortOrder: "asc" }],
-      include: { brand: true },
+      orderBy: { name: "asc" },
     }),
+    prisma.brand.findMany({ where: { isActive: true }, orderBy: { sortOrder: "asc" } }),
     prisma.variantAttribute.findMany({
       where: { isColor: false },
       orderBy: { sortOrder: "asc" },
@@ -110,9 +113,9 @@ export default async function EditProductPage({
 
       <AdminErrorBanner message={error} />
 
-      <nav className="flex flex-wrap gap-2 text-sm">
+      <nav aria-label="Разделы товара" className="sticky top-0 z-20 -mx-4 flex gap-2 overflow-x-auto border-y border-[var(--color-line)] bg-[var(--color-bg)]/95 px-4 py-3 text-sm backdrop-blur-sm sm:mx-0 sm:rounded-xl sm:border">
         {TABS.map(([href, label]) => (
-          <a key={href} href={href} className="soft-btn rounded-full px-4 py-1.5">
+          <a key={href} href={href} className="shrink-0 rounded-full border border-[var(--color-line)] bg-[var(--color-surface)] px-4 py-2 text-[var(--color-accent-ink)] transition-colors hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-soft)]">
             {label}
           </a>
         ))}
@@ -124,14 +127,18 @@ export default async function EditProductPage({
         <form action={updateProductBasicAction} className="flex flex-col gap-6">
           <input type="hidden" name="id" value={product.id} />
           <ProductBasicFields
-            categories={categories.map((c) => ({ id: c.id, name: c.name, brandName: c.brand.name }))}
+            categories={categories.map((c) => ({ id: c.id, name: c.name }))}
+            brands={brands.map((brand) => ({ id: brand.id, name: brand.name }))}
             defaults={{
               name: product.name,
               slug: product.slug,
               categoryId: product.categoryId,
+              brandId: product.brandId,
               shortDescription: product.shortDescription ?? "",
               description: product.description ?? "",
               basePriceUsd: product.basePriceUsd.toString(),
+              basePriceByn: product.basePriceByn?.toString() ?? "",
+              priceKind: product.priceKind,
               availability: product.availability,
               isFlagship: product.isFlagship,
               isActive: product.isActive,
@@ -141,9 +148,9 @@ export default async function EditProductPage({
               canonicalPath: product.canonicalPath ?? "",
             }}
           />
-          <button type="submit" className={`${saveBtnClass} w-fit`}>
+          <SubmitButton type="submit" className={`${saveBtnClass} w-fit`}>
             Сохранить
-          </button>
+          </SubmitButton>
         </form>
       </section>
 
@@ -167,16 +174,16 @@ export default async function EditProductPage({
                 defaultValue={spec.sortOrder}
                 className={`${inputClass} w-16`}
               />
-              <button type="submit" className={ghostBtnClass}>
+              <SubmitButton type="submit" className={ghostBtnClass}>
                 Сохранить
-              </button>
-              <button
+              </SubmitButton>
+              <SubmitButton
                 type="submit"
                 formAction={deleteSpecAction}
                 className="text-sm text-[var(--color-warning)] hover:underline"
               >
                 Удалить
-              </button>
+              </SubmitButton>
             </form>
           ))}
           {product.specs.length === 0 && (
@@ -188,9 +195,9 @@ export default async function EditProductPage({
           <input type="hidden" name="productId" value={product.id} />
           <input name="name" required placeholder="Название" className={`${inputClass} w-48`} />
           <input name="value" required placeholder="Значение" className={`${inputClass} flex-1`} />
-          <button type="submit" className={ghostBtnClass}>
+          <SubmitButton type="submit" className={ghostBtnClass}>
             Добавить характеристику
-          </button>
+          </SubmitButton>
         </form>
       </section>
 
@@ -206,9 +213,9 @@ export default async function EditProductPage({
                 <form action={disableProductAttributeAction}>
                   <input type="hidden" name="productId" value={product.id} />
                   <input type="hidden" name="attributeId" value={attr.id} />
-                  <button type="submit" className="text-xs text-[var(--color-warning)] hover:underline">
+                  <SubmitButton type="submit" className="text-xs text-[var(--color-warning)] hover:underline">
                     Убрать из товара
-                  </button>
+                  </SubmitButton>
                 </form>
               </div>
               <div className="mt-2 flex flex-wrap gap-1.5">
@@ -225,9 +232,9 @@ export default async function EditProductPage({
                 <input type="hidden" name="productId" value={product.id} />
                 <input type="hidden" name="attributeId" value={attr.id} />
                 <input name="value" required placeholder="Новое значение" className={`${inputClass} w-40`} />
-                <button type="submit" className={ghostBtnClass}>
+                <SubmitButton type="submit" className={ghostBtnClass}>
                   + значение
-                </button>
+                </SubmitButton>
               </form>
             </div>
           ))}
@@ -239,9 +246,9 @@ export default async function EditProductPage({
                 <form key={attr.id} action={enableProductAttributeAction}>
                   <input type="hidden" name="productId" value={product.id} />
                   <input type="hidden" name="attributeId" value={attr.id} />
-                  <button type="submit" className={ghostBtnClass}>
+                  <SubmitButton type="submit" className={ghostBtnClass}>
                     {attr.name}
-                  </button>
+                  </SubmitButton>
                 </form>
               ))}
             </div>
@@ -264,9 +271,9 @@ export default async function EditProductPage({
               <input type="checkbox" name="isColor" className="size-4 accent-[var(--color-accent)]" />
               это атрибут-цвет
             </label>
-            <button type="submit" className={ghostBtnClass}>
+            <SubmitButton type="submit" className={ghostBtnClass}>
               Создать
-            </button>
+            </SubmitButton>
           </form>
         </details>
       </section>
@@ -275,7 +282,7 @@ export default async function EditProductPage({
       <section id="colors" className={cardClass}>
         <h2 className="mb-4 text-lg font-medium">Цвета</h2>
         <p className="mb-3 text-xs text-[var(--color-muted)]">
-          Цвет не влияет на цену — только на подбор фото товара.
+          Цвет влияет на фото. Если цена или наличие отличаются, задайте их для соответствующей конфигурации ниже.
         </p>
 
         <div className="flex flex-wrap gap-2">
@@ -291,9 +298,9 @@ export default async function EditProductPage({
                   />
                 )}
                 {cv.attributeValue.value}
-                <button type="submit" className="text-[var(--color-warning)]" aria-label="Удалить цвет">
+                <SubmitButton type="submit" className="text-[var(--color-warning)]" aria-label="Удалить цвет">
                   ×
-                </button>
+                </SubmitButton>
               </span>
             </form>
           ))}
@@ -301,6 +308,40 @@ export default async function EditProductPage({
             <p className="text-sm text-[var(--color-muted)]">Цвета не заданы</p>
           )}
         </div>
+
+        {product.colorValues.length > 0 && (
+          <details className="mt-5 border-t border-[var(--color-line)] pt-4">
+            <summary className="cursor-pointer text-sm font-medium text-[var(--color-accent-ink)]">
+              Цена и наличие по цветам · {product.colorValues.length * Math.max(product.variants.length, 1)} комбинаций
+            </summary>
+            <p className="mb-3 mt-3 text-xs text-[var(--color-muted)]">
+              Оставьте поля пустыми, чтобы наследовать цену и наличие конфигурации. Цена BYN имеет приоритет над USD.
+            </p>
+            <div className="flex flex-col gap-2 overflow-x-auto">
+              {product.colorValues.flatMap((cv) =>
+                (product.variants.length ? product.variants : [null]).map((variant) => {
+                  const offer = cv.offers.find((entry) => entry.variantId === (variant?.id ?? null));
+                  return (
+                    <form key={`${cv.id}:${variant?.id ?? "base"}`} action={saveColorOfferAction} className="grid min-w-[650px] grid-cols-[minmax(9rem,1fr)_minmax(10rem,1.4fr)_8rem_10rem_auto] items-center gap-2 text-sm">
+                      <input type="hidden" name="productId" value={product.id} />
+                      <input type="hidden" name="colorValueId" value={cv.id} />
+                      <input type="hidden" name="variantId" value={variant?.id ?? ""} />
+                      <span>{cv.attributeValue.value}</span>
+                      <span className="text-[var(--color-muted)]">{variant ? variant.options.map((o) => o.attributeValue.value).join(" / ") : "Базовая цена"}</span>
+                      <input name="priceByn" type="number" step="0.01" min="0.01" placeholder="По курсу" aria-label={`Цена ${cv.attributeValue.value} в BYN`} defaultValue={offer?.priceByn?.toString() ?? ""} className={inputClass} />
+                      <select name="availability" defaultValue={offer?.availability ?? ""} aria-label={`Наличие ${cv.attributeValue.value}`} className={inputClass}>
+                        <option value="">Как у SKU</option>
+                        <option value="IN_STOCK">В наличии</option>
+                        <option value="OUT_OF_STOCK">Нет в наличии</option>
+                      </select>
+                      <SubmitButton type="submit" className={ghostBtnClass}>Сохранить</SubmitButton>
+                    </form>
+                  );
+                })
+              )}
+            </div>
+          </details>
+        )}
 
         {availableColorValues.length > 0 && (
           <form action={addProductColorAction} className="mt-4 flex items-center gap-2">
@@ -315,9 +356,9 @@ export default async function EditProductPage({
                 </option>
               ))}
             </select>
-            <button type="submit" className={ghostBtnClass}>
+            <SubmitButton type="submit" className={ghostBtnClass}>
               Добавить цвет
-            </button>
+            </SubmitButton>
           </form>
         )}
 
@@ -343,9 +384,9 @@ export default async function EditProductPage({
               HEX
               <input name="colorHex" placeholder="#1a1a1a" className={`${inputClass} w-28`} />
             </label>
-            <button type="submit" className={ghostBtnClass}>
+            <SubmitButton type="submit" className={ghostBtnClass}>
               Создать
-            </button>
+            </SubmitButton>
           </form>
         </details>
       </section>
@@ -359,7 +400,7 @@ export default async function EditProductPage({
             <thead>
               <tr className="border-b border-[var(--color-line)] text-left text-[var(--color-muted)]">
                 <th className="py-2 pr-3 font-medium">Комбинация</th>
-                <th className="py-2 pr-3 font-medium">Цена USD</th>
+                <th className="py-2 pr-3 font-medium">Цена USD / BYN</th>
                 <th className="py-2 pr-3 font-medium">Наличие</th>
                 <th className="py-2 pr-3 font-medium">По умолчанию</th>
                 <th className="py-2 pr-3 font-medium">Порядок</th>
@@ -384,6 +425,16 @@ export default async function EditProductPage({
                         defaultValue={variant.priceUsd.toString()}
                         className={`${inputClass} w-28`}
                       />
+                      <input
+                        name="priceByn"
+                        type="number"
+                        step="0.01"
+                        min="0.01"
+                        placeholder="BYN по курсу"
+                        aria-label="Точная цена SKU в BYN"
+                        defaultValue={variant.priceByn?.toString() ?? ""}
+                        className={`${inputClass} w-32`}
+                      />
                       <select name="availability" defaultValue={variant.availability} className={inputClass}>
                         <option value="IN_STOCK">В наличии</option>
                         <option value="OUT_OF_STOCK">Нет в наличии</option>
@@ -400,16 +451,16 @@ export default async function EditProductPage({
                         defaultValue={variant.sortOrder}
                         className={`${inputClass} w-16`}
                       />
-                      <button type="submit" className={ghostBtnClass}>
+                      <SubmitButton type="submit" className={ghostBtnClass}>
                         Сохранить
-                      </button>
-                      <button
+                      </SubmitButton>
+                      <SubmitButton
                         type="submit"
                         formAction={deleteSkuAction}
                         className="text-sm text-[var(--color-warning)] hover:underline"
                       >
                         Удалить
-                      </button>
+                      </SubmitButton>
                     </form>
                   </td>
                 </tr>
@@ -452,6 +503,10 @@ export default async function EditProductPage({
               <input name="priceUsd" type="number" step="0.01" min="0" required className={`${inputClass} w-28`} />
             </label>
             <label className="flex flex-col gap-1 text-sm">
+              Точная цена BYN
+              <input name="priceByn" type="number" step="0.01" min="0.01" placeholder="По курсу" className={`${inputClass} w-32`} />
+            </label>
+            <label className="flex flex-col gap-1 text-sm">
               Наличие
               <select name="availability" defaultValue="IN_STOCK" className={inputClass}>
                 <option value="IN_STOCK">В наличии</option>
@@ -462,9 +517,9 @@ export default async function EditProductPage({
               <input type="checkbox" name="isDefault" className="size-4 accent-[var(--color-accent)]" />
               по умолчанию
             </label>
-            <button type="submit" className={saveBtnClass}>
+            <SubmitButton type="submit" className={saveBtnClass}>
               Добавить комбинацию
-            </button>
+            </SubmitButton>
           </form>
         ) : (
           <p className="mt-4 border-t border-[var(--color-line)] pt-4 text-sm text-[var(--color-muted)]">
@@ -482,7 +537,7 @@ export default async function EditProductPage({
             <div key={image.id} className="flex flex-col gap-2">
               <div className="relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-bg)]">
                 {/* eslint-disable-next-line @next/next/no-img-element -- локальный файл на диске, не оптимизируется через next/image в админке */}
-                <img src={image.url} alt={image.alt ?? product.name} className="size-full object-cover" />
+                <img src={image.url} alt={image.alt ?? product.name} className="size-full object-contain" />
                 {image.isMain && (
                   <span className="absolute left-1.5 top-1.5 rounded-full bg-[var(--color-accent)] px-2 py-0.5 text-[10px] text-white">
                     главное
@@ -497,17 +552,17 @@ export default async function EditProductPage({
                   <form action={setMainProductImageAction}>
                     <input type="hidden" name="id" value={image.id} />
                     <input type="hidden" name="productId" value={product.id} />
-                    <button type="submit" className="text-xs hover:underline">
+                    <SubmitButton type="submit" className="text-xs hover:underline">
                       Сделать главным
-                    </button>
+                    </SubmitButton>
                   </form>
                 )}
                 <form action={deleteProductImageAction}>
                   <input type="hidden" name="id" value={image.id} />
                   <input type="hidden" name="productId" value={product.id} />
-                  <button type="submit" className="text-xs text-[var(--color-warning)] hover:underline">
+                  <SubmitButton type="submit" className="text-xs text-[var(--color-warning)] hover:underline">
                     Удалить
-                  </button>
+                  </SubmitButton>
                 </form>
               </div>
             </div>
@@ -524,7 +579,7 @@ export default async function EditProductPage({
           <input type="hidden" name="productId" value={product.id} />
           <label className="flex flex-col gap-1 text-sm">
             Файл
-            <input type="file" name="file" accept="image/*" required className={inputClass} />
+            <ImageFileInput className={inputClass} />
           </label>
           {product.colorValues.length > 0 && (
             <label className="flex flex-col gap-1 text-sm">
@@ -539,10 +594,10 @@ export default async function EditProductPage({
               </select>
             </label>
           )}
-          <button type="submit" className={saveBtnClass}>
+          <SubmitButton type="submit" className={saveBtnClass}>
             Загрузить
-          </button>
-          <span className="text-xs text-[var(--color-muted)]">До 10 фото, конвертируются в WebP</span>
+          </SubmitButton>
+          <span className="text-xs text-[var(--color-muted)]">До 10 фото, каждое до 8 МБ и 40 Мп. Оригиналы сохраняются без сжатия</span>
         </form>
       </section>
     </div>

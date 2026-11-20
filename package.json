@@ -4,26 +4,38 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run db:generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "postinstall": "prisma generate",
+    "postinstall": "node scripts/database/sync-mysql-schema.mjs && prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "prisma db seed",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "catalog:audit": "node scripts/quality/check-catalog.mjs",
+    "catalog:sync:samsung": "node --import tsx scripts/catalog/sync-client-samsung-assortment.ts",
+    "catalog:sync:samsung-colors": "node --import tsx scripts/catalog/sync-samsung-color-images.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser:reliability": "node scripts/quality/check-reliability.cjs",
+    "test:browser:mysql": "node --import tsx scripts/quality/check-mysql-site.ts",
+    "db:generate": "node scripts/database/sync-mysql-schema.mjs && prisma generate",
+    "db:deploy": "prisma migrate deploy",
+    "db:export": "tsx scripts/database/transfer.ts export",
+    "db:import": "tsx scripts/database/transfer.ts import",
+    "db:verify:mysql": "node --import tsx scripts/database/verify.ts"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
-    "@prisma/adapter-pg": "^7.10.0",
-    "@prisma/client": "7.10.0",
+    "@prisma/adapter-mariadb": "7.10.1",
+    "@prisma/adapter-pg": "7.10.1",
+    "@prisma/client": "7.10.1",
     "dotenv": "^17.4.2",
     "gsap": "^3.15.0",
     "lucide-react": "^1.22.0",
-    "next": "^16.2.11",
+    "next": "16.4.3",
     "pg": "^8.23.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "sharp": "^0.35.4",
+    "sharp": "0.35.5",
     "three": "^0.186.0"
   },
   "devDependencies": {
@@ -35,10 +47,13 @@
     "@types/react-dom": "^19",
     "@types/three": "^0.186.0",
     "eslint": "^9",
-    "eslint-config-next": "16.2.9",
-    "prisma": "7.10.0",
+    "eslint-config-next": "16.4.3",
+    "prisma": "7.10.1",
     "tailwindcss": "^4",
     "tsx": "^4.23.13",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

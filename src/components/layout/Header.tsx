@@ -29,7 +29,7 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
       <header className="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[var(--color-bg)]">
         <div className="mx-auto flex h-[60px] max-w-[1600px] items-center justify-between gap-4 px-4 md:px-6">
           <div className="flex shrink-0 items-center gap-4">
-            <Link href="/" className="shrink-0">
+            <Link href="/" prefetch className="shrink-0">
               <Logo />
             </Link>
 
@@ -56,6 +56,7 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
                 >
                   <Link
                     href={item.href}
+                    prefetch
                     className="text-sm font-medium text-[var(--color-text)] transition-colors hover:text-[var(--color-accent-ink)]"
                   >
                     {item.label}
@@ -64,20 +65,21 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
                     <div className="absolute left-1/2 top-full w-64 -translate-x-1/2 pt-3">
                       <div className="flex flex-col gap-3 rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-surface)] p-3 shadow-[var(--shadow-card)]">
                         {navBrands.map((brand) => (
-                          <div key={brand.slug}>
-                            <p className="px-3 pb-1 text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+                          <details key={brand.slug} className="group">
+                            <summary className="cursor-pointer px-3 py-2 text-sm font-semibold">
                               {brand.name}
-                            </p>
+                            </summary>
                             {brand.categories.map((cat) => (
                               <Link
-                                key={cat.slug}
-                                href={`/catalog/${cat.slug}`}
+                                key={cat.href ?? cat.slug}
+                                href={cat.href ?? `/catalog/${cat.slug}`}
+                                prefetch
                                 className="block rounded-[var(--radius-sm)] px-3 py-2 text-sm text-[var(--color-text)] transition-colors hover:bg-[var(--color-surface-soft)] hover:text-[var(--color-accent-ink)]"
                               >
                                 {cat.name}
                               </Link>
                             ))}
-                          </div>
+                          </details>
                         ))}
                       </div>
                     </div>
@@ -87,6 +89,7 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
                 <Link
                   key={item.href}
                   href={item.href}
+                  prefetch
                   className="text-sm font-medium text-[var(--color-text)] transition-colors hover:text-[var(--color-accent-ink)]"
                 >
                   {item.label}
@@ -108,7 +111,7 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
               type="button"
               onClick={openDrawer}
               aria-label="Корзина"
-              className="relative flex size-10 items-center justify-center rounded-full border border-[var(--color-line)] transition-colors hover:border-[var(--color-accent)]"
+              className="relative flex size-11 items-center justify-center rounded-full border border-[var(--color-line)] transition-colors hover:border-[var(--color-accent)]"
             >
               <ShoppingBag className="size-4.5" />
               {itemCount > 0 && (
@@ -122,7 +125,7 @@ export function Header({ navBrands }: { navBrands: NavBrand[] }) {
               type="button"
               onClick={() => setMobileOpen(true)}
               aria-label="Меню"
-              className="flex size-10 items-center justify-center rounded-full border border-[var(--color-line)] xl:hidden"
+              className="flex size-11 items-center justify-center rounded-full border border-[var(--color-line)] xl:hidden"
             >
               <Menu className="size-4.5" />
             </button>

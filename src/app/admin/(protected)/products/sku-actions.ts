@@ -1,11 +1,16 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isForeignKeyConstraintError } from "@/lib/admin/errors";
-import { errorRedirectUrl, parseIntField, parsePositiveDecimalField } from "@/lib/admin/form-helpers";
+import { errorRedirectUrl, parseIntField, parseOptionalBynPrice, parsePositiveDecimalField } from "@/lib/admin/form-helpers";
 import { requireAdminSession } from "@/lib/admin/require-session";
+
+function revalidateProduct(productId: string) {
+  revalidatePath(`/admin/products/${productId}`);
+  revalidateTag("storefront-catalog", { expire: 0 });
+}
 
 function skuPath(productId: string): string {
   return `/admin/products/${productId}#sku`;
@@ -18,6 +23,7 @@ export async function createSkuAction(formData: FormData) {
   await requireAdminSession();
   const productId = String(formData.get("productId") ?? "");
   const priceUsd = parsePositiveDecimalField(formData.get("priceUsd"));
+  const priceByn = parseOptionalBynPrice(formData.get("priceByn"));
   const availability = formData.get("availability") === "OUT_OF_STOCK" ? "OUT_OF_STOCK" : "IN_STOCK";
   const isDefault = formData.get("isDefault") === "on";
   const sortOrder = parseIntField(formData.get("sortOrder"));
@@ -32,7 +38,7 @@ export async function createSkuAction(formData: FormData) {
     optionValueIds.push(valueId);
   }
 
-  if (priceUsd === null || optionValueIds.length === 0) {
+  if (priceUsd === null || priceByn === undefined || optionValueIds.length === 0) {
     redirect(errorRedirectUrl(`/admin/products/${productId}`, "Укажите цену — и хотя бы один атрибут должен быть отмечен «используется в товаре»") + "#sku");
   }
 
@@ -47,6 +53,7 @@ export async function createSkuAction(formData: FormData) {
         data: {
           productId,
           priceUsd: priceUsd!,
+          priceByn,
           availability,
           isDefault,
           sortOrder,
@@ -61,7 +68,7 @@ export async function createSkuAction(formData: FormData) {
     throw e;
   }
 
-  revalidatePath(`/admin/products/${productId}`);
+  revalidateProduct(productId);
   redirect(skuPath(productId));
 }
 
@@ -70,10 +77,14 @@ export async function updateSkuAction(formData: FormData) {
   const id = String(formData.get("id") ?? "");
   const productId = String(formData.get("productId") ?? "");
   const priceUsd = parsePositiveDecimalField(formData.get("priceUsd"));
+  const priceByn = parseOptionalBynPrice(formData.get("priceByn"));
   const availability = formData.get("availability") === "OUT_OF_STOCK" ? "OUT_OF_STOCK" : "IN_STOCK";
   const isDefault = formData.get("isDefault") === "on";
   const sortOrder = parseIntField(formData.get("sortOrder"));
 
+  if (priceByn === undefined) {
+    redirect(errorRedirectUrl(`/admin/products/${productId}`, "Цена BYN должна быть больше нуля, максимум с двумя знаками после запятой") + "#sku");
+  }
   if (id && priceUsd !== null) {
     await prisma.$transaction(async (tx) => {
       if (isDefault) {
@@ -81,10 +92,10 @@ export async function updateSkuAction(formData: FormData) {
       }
       await tx.productVariant.update({
         where: { id },
-        data: { priceUsd, availability, isDefault, sortOrder },
+        data: { priceUsd, priceByn, availability, isDefault, sortOrder },
       });
     });
-    revalidatePath(`/admin/products/${productId}`);
+    revalidateProduct(productId);
   }
 
   redirect(skuPath(productId));
@@ -99,7 +110,7 @@ export async function deleteSkuAction(formData: FormData) {
     await prisma.productVariant.delete({ where: { id } }).catch((e) => {
       console.error("[admin] failed to delete SKU variant", e);
     });
-    revalidatePath(`/admin/products/${productId}`);
+    revalidateProduct(productId);
   }
 
   redirect(skuPath(productId));

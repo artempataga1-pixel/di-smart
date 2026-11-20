@@ -1,0 +1,32 @@
+{
+  "deployment": "dpl_zdpPry91d1szju9E8vcZTmZvF7Na",
+  "state": "READY",
+  "eslint": "passed",
+  "mobile": {
+    "links": [
+      {
+        "color": "rgb(34, 158, 217)",
+        "height": 44,
+        "name": "Telegram",
+        "width": 114,
+        "y": 1212
+      },
+      {
+        "color": "rgb(228, 0, 164)",
+        "height": 44,
+        "name": "Instagram",
+        "width": 114,
+        "y": 1212
+      },
+      {
+        "color": "rgb(169, 112, 214)",
+        "height": 44,
+        "name": "Viber",
+        "width": 114,
+        "y": 1212
+      }
+    ],
+    "overflow": false,
+    "top": 1063
+  }
+}

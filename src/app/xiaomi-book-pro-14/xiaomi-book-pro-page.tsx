@@ -1,17 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, Cpu, Move3D, ScanLine } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
 import { BuyAnchor } from "@/components/storefront/BuyAnchor";
-import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
+import type { CrossSellGroup, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-export function XiaomiBookProPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
+export function XiaomiBookProPage({ product, crossSell }: { product: ProductDetail; crossSell: CrossSellGroup[] }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export function XiaomiBookProPage({ product, related }: { product: ProductDetail
 
   return (
     <div ref={root} className={styles.page}>
-      <header className={styles.hero}>
+      <header className={styles.hero} data-mobile-hero="wide">
         <AdaptiveHeroVideo
           poster="/media/xiaomi-book-pro-14/hero-poster.jpg"
           aria-label="Видео Xiaomi Book Pro 14"
@@ -43,7 +43,7 @@ export function XiaomiBookProPage({ product, related }: { product: ProductDetail
           }}
         />
         <h1 className={styles.srOnly}>Xiaomi Book Pro 14</h1>
-        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
+        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`} hideInMobileHero>Выбрать конфигурацию</BuyAnchor>
       </header>
 
       <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
@@ -55,6 +55,12 @@ export function XiaomiBookProPage({ product, related }: { product: ProductDetail
       <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
         <div className="mx-auto max-w-6xl">
           <ProductSpecsTable specs={product.specs} description={product.description} />
+        </div>
+      </section>
+
+      <section className="bg-white px-4 pb-20 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <CrossSellProducts groups={crossSell} />
         </div>
       </section>
 
@@ -100,14 +106,8 @@ export function XiaomiBookProPage({ product, related }: { product: ProductDetail
         </section>
       </main>
 
-      <section className="bg-white px-4 pb-20 md:px-6">
-        <div className="mx-auto max-w-6xl">
-          <RelatedProducts products={related} />
-        </div>
-      </section>
-
       <footer className={styles.footnote}>
-        <p>Изображения на странице сгенерированы нейросетью — для визуальной презентации устройства и сценариев использования. Интерфейс, текстуры и отдельные детали могут немного отличаться от реальных.</p>
+        <p>Изображения на странице созданы нейросетью и показывают устройство в разных сценариях. Интерфейс, текстуры и отдельные детали могут немного отличаться от реальных.</p>
         <p>Характеристики приведены для Xiaomi Book Pro 14 поколения 2026 года — процессор, объём памяти, накопитель, цвет и наличие сенсорного OLED-экрана зависят от конкретной конфигурации и региона продаж.</p>
       </footer>
     </div>

@@ -1,0 +1,14 @@
+{
+  "deployment": {
+    "id": "dpl_GzFtTjiovoNGXffp3tYzaNKHqC9h",
+    "state": "READY"
+  },
+  "eslint": "passed",
+  "typescript": "passed",
+  "mobile": {
+    "cards": 8,
+    "catalogSearchFields": 0,
+    "overflow": false,
+    "sort": "default"
+  }
+}

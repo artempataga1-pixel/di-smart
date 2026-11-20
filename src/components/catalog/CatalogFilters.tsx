@@ -30,7 +30,7 @@ export function CatalogFilters({
   const brandNameBySlug = new Map(availableBrands.map((b) => [b.slug, b.name]));
 
   return (
-    <aside className="flex flex-col gap-7 rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-surface)] p-5 lg:sticky lg:top-24 lg:h-fit">
+    <aside className="flex min-w-0 flex-col gap-7 rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-surface)] p-5 lg:sticky lg:top-24 lg:h-fit">
       <div className="flex items-center justify-between">
         <p className="font-medium text-[var(--color-text)]">Фильтры</p>
         {hasActiveFilters && (

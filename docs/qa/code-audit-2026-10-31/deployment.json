@@ -1,0 +1,18 @@
+{
+  "id": "dpl_2eSq1mtgx6fKdKmZrUVmTxVemgCV",
+  "state": "READY",
+  "url": "https://di-smart-gilt.vercel.app",
+  "next": "16.4.3",
+  "prisma": "7.10.1",
+  "sharp": "0.35.5",
+  "lintErrors": 0,
+  "typeErrors": 0,
+  "unitTestsPassed": 7,
+  "productionVulnerabilities": 0,
+  "devModerateAuditEntries": 16,
+  "localCheckoutRecovery": "passed",
+  "publicCartColorAndQuantity": "passed",
+  "realOrdersCreated": 0,
+  "telegramMessagesSent": 0,
+  "openIssue": "Persistent storage required for admin image uploads on Vercel"
+}

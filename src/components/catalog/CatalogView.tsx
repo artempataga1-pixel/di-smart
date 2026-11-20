@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import type { CatalogResult, CatalogSort } from "@/lib/catalog";
 import { useCatalogUrl } from "@/components/catalog/useCatalogUrl";
 import { CatalogFilters } from "@/components/catalog/CatalogFilters";
@@ -8,7 +7,6 @@ import { SortSelect } from "@/components/catalog/SortSelect";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
 import type { EditorialCatalogCardData } from "@/components/catalog/EditorialCatalogCard";
 import { Pagination } from "@/components/catalog/Pagination";
-import { SearchField } from "@/components/ui/SearchField";
 import { cn } from "@/lib/utils";
 
 export function CatalogView({
@@ -21,15 +19,6 @@ export function CatalogView({
   const { searchParams, setParams, isPending } = useCatalogUrl();
 
   const query = searchParams.get("q") ?? "";
-  // Сброс локального черновика поиска при смене `q` извне (например, кнопкой
-  // "Сбросить") — без эффекта, паттерн React "adjusting state on prop change".
-  const [queryDraft, setQueryDraft] = useState(query);
-  const [syncedQuery, setSyncedQuery] = useState(query);
-  if (query !== syncedQuery) {
-    setSyncedQuery(query);
-    setQueryDraft(query);
-  }
-
   const selectedBrands = (searchParams.get("brand") ?? "").split(",").filter(Boolean);
   const maxPriceParam = searchParams.get("maxPrice");
   const maxPrice = maxPriceParam ? Number(maxPriceParam) : result.priceBoundsByn.max;
@@ -51,18 +40,11 @@ export function CatalogView({
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex flex-wrap items-center gap-3">
-        <SearchField
-          value={queryDraft}
-          onChange={setQueryDraft}
-          onSubmit={(value) => setParams({ q: value.trim() || null })}
-          placeholder="Найти товар по названию"
-          className="max-w-md flex-1"
-        />
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
         <SortSelect value={sort} onChange={(value) => setParams({ sort: value === "default" ? null : value })} />
       </div>
 
-      <div className={showFilters ? "grid gap-8 lg:grid-cols-[260px_1fr]" : "grid gap-8"}>
+      <div className={showFilters ? "grid min-w-0 gap-6 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-8" : "grid min-w-0 gap-6 lg:gap-8"}>
         {showFilters && (
           <CatalogFilters
             priceBounds={result.priceBoundsByn}
@@ -79,7 +61,7 @@ export function CatalogView({
         <div
           aria-busy={isPending}
           className={cn(
-            "transition-opacity duration-200",
+            "min-w-0 transition-opacity duration-200",
             isPending && "pointer-events-none opacity-50"
           )}
         >
@@ -87,7 +69,6 @@ export function CatalogView({
           <Pagination
             page={result.page}
             totalPages={result.totalPages}
-            onChange={(page) => setParams({ page: String(page) })}
           />
         </div>
       </div>

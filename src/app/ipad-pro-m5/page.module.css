@@ -74,8 +74,8 @@
 .page .visible { opacity: 1; transform: none; }
 
 @media (max-width: 860px) {
-  .hero { height: 55svh; min-height: 410px; }
-  .heroPoster, .heroMedia video { object-fit: contain; object-position: center; }
+  .hero { height: auto; min-height: 0; aspect-ratio: 16 / 9; }
+  .heroPoster, .heroMedia video { object-fit: cover; object-position: center; }
   .heroBuy { bottom: 24px; min-width: 104px; }
   .section { padding: 72px 20px; }
   .heading h2, .performance h2 { font-size: 46px; }

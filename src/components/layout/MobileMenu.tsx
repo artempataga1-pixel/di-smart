@@ -4,6 +4,7 @@ import Link from "next/link";
 import { X, Phone } from "lucide-react";
 import { MAIN_NAV } from "@/constants/content/nav";
 import { SITE } from "@/constants/content/site";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import type { NavBrand } from "@/lib/catalog";
 
 export function MobileMenu({
@@ -14,7 +15,7 @@ export function MobileMenu({
   onClose: () => void;
 }) {
   return (
-    <div className="fixed inset-0 z-50 flex flex-col bg-[var(--color-bg)] md:hidden">
+    <div className="fixed inset-0 z-50 flex flex-col bg-[var(--color-bg)] xl:hidden">
       <div className="flex h-16 items-center justify-between border-b border-[var(--color-line)] px-4">
         <span className="font-[family-name:var(--font-heading)] text-lg font-semibold">
           Меню
@@ -23,7 +24,7 @@ export function MobileMenu({
           type="button"
           onClick={onClose}
           aria-label="Закрыть меню"
-          className="flex size-10 items-center justify-center rounded-full border border-[var(--color-line)]"
+          className="flex size-11 items-center justify-center rounded-full border border-[var(--color-line)]"
         >
           <X className="size-5" />
         </button>
@@ -34,6 +35,7 @@ export function MobileMenu({
           <Link
             key={item.href}
             href={item.href}
+            prefetch
             onClick={onClose}
             className="rounded-[var(--radius-sm)] px-3 py-3 text-lg font-medium text-[var(--color-text)] hover:bg-[var(--color-surface-soft)]"
           >
@@ -42,31 +44,36 @@ export function MobileMenu({
         ))}
 
         {navBrands.map((brand) => (
-          <div key={brand.slug}>
-            <p className="mt-4 px-3 text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+          <details key={brand.slug} className="group">
+            <summary className="cursor-pointer px-3 py-3 text-lg font-semibold">
               {brand.name}
-            </p>
+            </summary>
             {brand.categories.map((cat) => (
               <Link
-                key={cat.slug}
-                href={`/catalog/${cat.slug}`}
+                key={cat.href ?? cat.slug}
+                href={cat.href ?? `/catalog/${cat.slug}`}
+                prefetch
                 onClick={onClose}
                 className="block rounded-[var(--radius-sm)] px-3 py-2.5 text-[var(--color-text)] hover:bg-[var(--color-surface-soft)]"
               >
                 {cat.name}
               </Link>
             ))}
-          </div>
+          </details>
         ))}
       </nav>
 
-      <a
-        href={SITE.phoneHref}
-        className="flex items-center justify-center gap-2 border-t border-[var(--color-line)] p-4 text-lg font-semibold text-[var(--color-accent-ink)]"
-      >
-        <Phone className="size-5" />
-        {SITE.phone}
-      </a>
+      <div className="border-t border-[var(--color-line)] bg-[var(--color-bg)] px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3">
+        <p className="mb-2 text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">Напишите нам</p>
+        <SocialLinks />
+        <a
+          href={SITE.phoneHref}
+          className="mt-3 flex min-h-11 items-center gap-2 text-sm font-semibold text-[var(--color-accent-ink)]"
+        >
+          <Phone className="size-4" />
+          {SITE.phone}
+        </a>
+      </div>
     </div>
   );
 }

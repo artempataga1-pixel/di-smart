@@ -1,17 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { useEffect, useRef } from "react";
 import { Aperture, ArrowUpRight, BatteryCharging, Cpu, Focus, ScanLine } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
 import { BuyAnchor } from "@/components/storefront/BuyAnchor";
-import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
+import type { CrossSellGroup, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
-export function XiaomiUltraPage({ product, related }: { product: ProductDetail; related: CatalogCardData[] }) {
+export function XiaomiUltraPage({ product, crossSell }: { product: ProductDetail; crossSell: CrossSellGroup[] }) {
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export function XiaomiUltraPage({ product, related }: { product: ProductDetail; 
 
   return (
     <div ref={root} className={styles.page}>
-      <header className={styles.hero}>
+      <header className={styles.hero} data-mobile-hero="wide">
         <AdaptiveHeroVideo
           poster="/media/xiaomi-17-ultra/hero-poster.webp"
           aria-label="Xiaomi 17 Ultra крупным планом"
@@ -46,7 +46,7 @@ export function XiaomiUltraPage({ product, related }: { product: ProductDetail; 
           }}
         />
         <h1 className={styles.srOnly}>Xiaomi 17 Ultra</h1>
-        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
+        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`} hideInMobileHero>Выбрать конфигурацию</BuyAnchor>
       </header>
 
       <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
@@ -59,6 +59,10 @@ export function XiaomiUltraPage({ product, related }: { product: ProductDetail; 
         <div className="mx-auto max-w-6xl">
           <ProductSpecsTable specs={product.specs} description={product.description} />
         </div>
+      </section>
+
+      <section className="bg-white px-4 pb-16 md:px-6">
+        <div className="mx-auto max-w-6xl"><CrossSellProducts groups={crossSell} /></div>
       </section>
 
       <main>
@@ -86,7 +90,7 @@ export function XiaomiUltraPage({ product, related }: { product: ProductDetail; 
             <span><b>75</b> мм<small>портрет</small></span>
             <span><b>100</b> мм<small>телефото</small></span>
           </div>
-          <p className={styles.focalText} data-reveal>200-мегапиксельный телемодуль Leica и правда двигает линзы — фокусное расстояние меняется физически, от 75 до 100 мм. Поэтому кадр остаётся оптическим, а перспектива — такой же, как видит глаз.</p>
+          <p className={styles.focalText} data-reveal>В телемодуле Leica линзы перемещаются физически. Фокусное расстояние меняется от 75 до 100 мм, поэтому оптическое качество сохраняется и при приближении.</p>
         </section>
 
         <section className={styles.displaySection}>
@@ -119,11 +123,6 @@ export function XiaomiUltraPage({ product, related }: { product: ProductDetail; 
         </section>
       </main>
 
-      <section className="bg-white px-4 pb-20 md:px-6">
-        <div className="mx-auto max-w-6xl">
-          <RelatedProducts products={related} />
-        </div>
-      </section>
 
       <footer className={styles.footnote}>
         <p>Изображения на странице сгенерированы нейросетью и служат для визуальной презентации устройства — некоторые детали и интерфейс могут немного отличаться от реальных.</p>

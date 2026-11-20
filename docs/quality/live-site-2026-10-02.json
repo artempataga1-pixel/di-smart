@@ -1,0 +1,981 @@
+{
+  "base": "https://di-smart-gilt.vercel.app",
+  "startedAt": "2026-10-02T14:07:24.516Z",
+  "pages": [
+    {
+      "mode": "desktop-chrome",
+      "route": "/",
+      "ttfbMs": 574,
+      "domReadyMs": 1249,
+      "lcpMs": 1404,
+      "longTasks": [
+        71
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/storefront/hero.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 4.995337
+        }
+      ],
+      "resources": [
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/storefront/hero.mp4",
+          "bytes": 6209659
+        }
+      ]
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/catalog",
+      "ttfbMs": 115,
+      "domReadyMs": 342,
+      "lcpMs": 572,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/catalog/samsung-tablets",
+      "ttfbMs": 101,
+      "domReadyMs": 348,
+      "lcpMs": 472,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/iphone-18-pro",
+      "ttfbMs": 102,
+      "domReadyMs": 790,
+      "lcpMs": 912,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/iphone-18-pro/intro.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 0.470576
+        }
+      ],
+      "resources": []
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/galaxy-s26-ultra",
+      "ttfbMs": 125,
+      "domReadyMs": 523,
+      "lcpMs": 1428,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero-wide.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 1.19757
+        }
+      ],
+      "resources": []
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/galaxy-tab-s11-ultra",
+      "ttfbMs": 101,
+      "domReadyMs": 257,
+      "lcpMs": 444,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/galaxy-tab-s11-ultra/hero.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 1.364176
+        }
+      ],
+      "resources": []
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/product/galaxy-tab-s10-lite",
+      "ttfbMs": 110,
+      "domReadyMs": 352,
+      "lcpMs": 508,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/product/galaxy-tab-s11",
+      "ttfbMs": 102,
+      "domReadyMs": 361,
+      "lcpMs": 524,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/cart",
+      "ttfbMs": 101,
+      "domReadyMs": 371,
+      "lcpMs": 720,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "desktop-chrome",
+      "route": "/contacts",
+      "ttfbMs": 102,
+      "domReadyMs": 2034,
+      "lcpMs": 2072,
+      "longTasks": [],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/",
+      "ttfbMs": 419,
+      "domReadyMs": 1031,
+      "lcpMs": 1132,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/storefront/hero.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 2.166704
+        }
+      ],
+      "resources": [
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/storefront/hero.mp4",
+          "bytes": 6209659
+        }
+      ]
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/catalog",
+      "ttfbMs": 90,
+      "domReadyMs": 320,
+      "lcpMs": 352,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/catalog/samsung-tablets",
+      "ttfbMs": 91,
+      "domReadyMs": 54424,
+      "lcpMs": 54556,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/iphone-18-pro",
+      "ttfbMs": 91,
+      "domReadyMs": 381,
+      "lcpMs": 1176,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/iphone-18-pro/intro.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 0.908656
+        }
+      ],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/galaxy-s26-ultra",
+      "ttfbMs": 199,
+      "domReadyMs": 1434,
+      "lcpMs": 23380,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 1.616724
+        }
+      ],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/galaxy-tab-s11-ultra",
+      "ttfbMs": 91,
+      "domReadyMs": 147,
+      "lcpMs": 460,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/galaxy-tab-s11-ultra/hero.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 1.127163
+        }
+      ],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/product/galaxy-tab-s10-lite",
+      "ttfbMs": 91,
+      "domReadyMs": 305,
+      "lcpMs": 444,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/product/galaxy-tab-s11",
+      "ttfbMs": 90,
+      "domReadyMs": 399,
+      "lcpMs": 692,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/cart",
+      "ttfbMs": 122,
+      "domReadyMs": 357,
+      "lcpMs": 488,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "android-chrome",
+      "route": "/contacts",
+      "ttfbMs": 128,
+      "domReadyMs": 145,
+      "lcpMs": 160,
+      "longTasks": [],
+      "width": 393,
+      "scrollWidth": 393,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/",
+      "ttfbMs": 410,
+      "domReadyMs": 916,
+      "lcpMs": 1284,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/storefront/hero.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 1.4844400000007623
+        }
+      ],
+      "resources": [
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/storefront/hero.mp4",
+          "bytes": 6213250
+        }
+      ]
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/catalog",
+      "ttfbMs": 100,
+      "domReadyMs": 390,
+      "lcpMs": 435,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/catalog/samsung-tablets",
+      "ttfbMs": 120,
+      "domReadyMs": 388,
+      "lcpMs": 668,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/iphone-18-pro",
+      "ttfbMs": 98,
+      "domReadyMs": 642,
+      "lcpMs": 736,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/iphone-18-pro/intro.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 0.9975791243339309
+        }
+      ],
+      "resources": []
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/galaxy-s26-ultra",
+      "ttfbMs": 169,
+      "domReadyMs": 382,
+      "lcpMs": 452,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 1.6754681246676268
+        }
+      ],
+      "resources": [
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "bytes": 2435445
+        }
+      ]
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/galaxy-tab-s11-ultra",
+      "ttfbMs": 171,
+      "domReadyMs": 383,
+      "lcpMs": 480,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [
+        {
+          "src": "https://di-smart-gilt.vercel.app/media/galaxy-tab-s11-ultra/hero.mp4",
+          "readyState": 4,
+          "error": null,
+          "paused": false,
+          "currentTime": 1.0066720833342468
+        }
+      ],
+      "resources": []
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/product/galaxy-tab-s10-lite",
+      "ttfbMs": 351,
+      "domReadyMs": 1198,
+      "lcpMs": 1544,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/product/galaxy-tab-s11",
+      "ttfbMs": 118,
+      "domReadyMs": 429,
+      "lcpMs": 916,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/cart",
+      "ttfbMs": 186,
+      "domReadyMs": 400,
+      "lcpMs": 812,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    },
+    {
+      "mode": "iphone-safari",
+      "route": "/contacts",
+      "ttfbMs": 186,
+      "domReadyMs": 628,
+      "lcpMs": 682,
+      "longTasks": [],
+      "width": 390,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "video": [],
+      "resources": []
+    }
+  ],
+  "errors": [
+    {
+      "mode": "iphone-safari",
+      "route": "/product/galaxy-tab-s11",
+      "error": "/di-smart-gilt.vercel.app/api/cart/resolve due to access control checks."
+    }
+  ],
+  "httpErrors": [],
+  "media": [
+    {
+      "mode": "desktop-chrome",
+      "check": "3D viewer",
+      "status": "Потяните, чтобы повернуть",
+      "canvas": 1
+    },
+    {
+      "mode": "android-chrome",
+      "check": "3D viewer",
+      "status": "Потяните, чтобы повернуть",
+      "canvas": 1
+    },
+    {
+      "mode": "iphone-safari",
+      "check": "3D viewer",
+      "status": "Потяните, чтобы повернуть",
+      "canvas": 1
+    }
+  ],
+  "checks": [
+    {
+      "mode": "desktop-chrome",
+      "check": "home animation frames",
+      "maxFrameMs": 17,
+      "framesOver50ms": 0
+    },
+    {
+      "mode": "desktop-chrome",
+      "check": "live cart: selected configuration/colour, add, quantity, remove",
+      "passed": true
+    },
+    {
+      "mode": "android-chrome",
+      "check": "home animation frames",
+      "maxFrameMs": 17,
+      "framesOver50ms": 0
+    },
+    {
+      "mode": "android-chrome",
+      "check": "live cart: selected configuration/colour, add, quantity, remove",
+      "passed": true
+    },
+    {
+      "mode": "iphone-safari",
+      "check": "home animation frames",
+      "maxFrameMs": 18,
+      "framesOver50ms": 0
+    },
+    {
+      "mode": "iphone-safari",
+      "check": "live cart: selected configuration/colour, add, quantity, remove",
+      "passed": true
+    },
+    {
+      "check": "health",
+      "status": 200
+    }
+  ],
+  "limitations": [],
+  "finishedAt": "2026-10-02T14:25:58.222Z",
+  "adminChecks": [
+    {
+      "section": "Товары",
+      "elapsedMs": 1140
+    },
+    {
+      "section": "Категории",
+      "elapsedMs": 569
+    },
+    {
+      "section": "Бренды",
+      "elapsedMs": 815
+    },
+    {
+      "section": "Заказы",
+      "elapsedMs": 450
+    },
+    {
+      "section": "Настройки",
+      "elapsedMs": 525
+    }
+  ],
+  "adminAccess": "Existing authenticated in-app browser session; read-only navigation; no secret export",
+  "catalogRepeat": [
+    {
+      "nav": [
+        {
+          "ttfb": 466.1000000014901,
+          "dom": 1029.1000000014901,
+          "load": 1260.699999999255
+        }
+      ],
+      "slow": []
+    },
+    {
+      "nav": [
+        {
+          "ttfb": 341.4000000022352,
+          "dom": 1998.1000000014901,
+          "load": 2144.400000002235
+        }
+      ],
+      "slow": []
+    },
+    {
+      "nav": [
+        {
+          "ttfb": 573.4000000022352,
+          "dom": 1075.5,
+          "load": 1854.800000000745
+        }
+      ],
+      "slow": []
+    }
+  ],
+  "samsungHeroRepeat": [
+    {
+      "navigation": [
+        {
+          "ttfb": 828,
+          "dom": 9981
+        }
+      ],
+      "slow": [
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/media/168379a6fd47fb8f-s.p.0zuh0rldbtgbv.woff2",
+          "duration": 1562,
+          "bytes": 7200
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/media/d5d3e08cdd448970-s.p.3mlkhla2hbaey.woff2",
+          "duration": 6101,
+          "bytes": 13824
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fimages%2Flogo-badge-temp.png&w=64&q=75",
+          "duration": 7151,
+          "bytes": 761
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/media/eb57a940321caca3-s.p.1w39l2t1rvj7u.woff2",
+          "duration": 7674,
+          "bytes": 8472
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/flagship-colors/galaxy-s26-ultra/black.webp",
+          "duration": 2414,
+          "bytes": 39744
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/0s38n_vqxcqgk.css",
+          "duration": 2416,
+          "bytes": 703
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/2bnl6lzowpj_2.css",
+          "duration": 2417,
+          "bytes": 4000
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/3eqoiznk56ds_.css",
+          "duration": 7948,
+          "bytes": 14067
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/36k8in9a291ok.js",
+          "duration": 3328,
+          "bytes": 2463
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/turbopack-2r7pymvyd-a4l.js",
+          "duration": 2417,
+          "bytes": 4530
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/3erbbraq3cdfd.js",
+          "duration": 5748,
+          "bytes": 72812
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/2tegluoxg9ia3.js",
+          "duration": 6623,
+          "bytes": 9075
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/23m24u2rpna6j.js",
+          "duration": 7151,
+          "bytes": 36456
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/0q2cczd65q0-v.js",
+          "duration": 7150,
+          "bytes": 8951
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/0bbskwzos-l1x.js",
+          "duration": 3984,
+          "bytes": 10608
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/2corl6wyj4669.js",
+          "duration": 4525,
+          "bytes": 3804
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/43b1u0b7wagow.js",
+          "duration": 5580,
+          "bytes": 696
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/26g58lt4ii412.js",
+          "duration": 5582,
+          "bytes": 11163
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/0njbdswqd2zxm.js",
+          "duration": 7650,
+          "bytes": 13970
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/0z9qwl1odgxfs.js",
+          "duration": 7947,
+          "bytes": 814
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+          "duration": 3444,
+          "bytes": 47794
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+          "duration": 5580,
+          "bytes": 47976
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "duration": 1594,
+          "bytes": 0
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/cookies?_rsc=OtfZ6eAK__iJFSNu",
+          "duration": 19264,
+          "bytes": 3785
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/26n4tfg588c4v.css",
+          "duration": 19256,
+          "bytes": 2222
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/?_rsc=THk4xwGmiYFa6ZUI",
+          "duration": 19280,
+          "bytes": 6068
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "duration": 18716,
+          "bytes": 35572
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/3nrlgequawlx8.js",
+          "duration": 13373,
+          "bytes": 961
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "duration": 13331,
+          "bytes": 0
+        }
+      ],
+      "video": [
+        {
+          "readyState": 4,
+          "error": null,
+          "currentTime": 3.948569
+        }
+      ],
+      "poster": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/poster.webp",
+      "errors": []
+    },
+    {
+      "navigation": [
+        {
+          "ttfb": 416,
+          "dom": 1278
+        }
+      ],
+      "slow": [
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fimages%2Flogo-badge-temp.png&w=64&q=75",
+          "duration": 2159,
+          "bytes": 761
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/0njbdswqd2zxm.js",
+          "duration": 1775,
+          "bytes": 13970
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/0bbskwzos-l1x.js",
+          "duration": 1894,
+          "bytes": 10608
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/2tegluoxg9ia3.js",
+          "duration": 2158,
+          "bytes": 9075
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/0z9qwl1odgxfs.js",
+          "duration": 1894,
+          "bytes": 814
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+          "duration": 1636,
+          "bytes": 47976
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fcatalog%2Fproducts%2Fgalaxy-buds4-pro.webp&w=640&q=75",
+          "duration": 1507,
+          "bytes": 9922
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/image?url=%2Fmedia%2Fcatalog%2Fproducts%2Fsamsung-45w-charger.webp&w=640&q=75",
+          "duration": 1516,
+          "bytes": 7600
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/?_rsc=VFvtNAwC3CvN8PIS",
+          "duration": 3111,
+          "bytes": 883
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/cookies?_rsc=OtfZ6eAK__iJFSNu",
+          "duration": 2959,
+          "bytes": 3785
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "duration": 2931,
+          "bytes": 35572
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/?_rsc=THk4xwGmiYFa6ZUI",
+          "duration": 3999,
+          "bytes": 6053
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "duration": 3937,
+          "bytes": 0
+        }
+      ],
+      "video": [
+        {
+          "readyState": 4,
+          "error": null,
+          "currentTime": 3.578386
+        }
+      ],
+      "poster": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/poster.webp",
+      "errors": []
+    },
+    {
+      "navigation": [
+        {
+          "ttfb": 434,
+          "dom": 1049
+        }
+      ],
+      "slow": [
+        {
+          "url": "https://di-smart-gilt.vercel.app/catalog/iphone?_rsc=VFvtNAwC3CvN8PIS",
+          "duration": 1741,
+          "bytes": 176
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/catalog/ipad?_rsc=VFvtNAwC3CvN8PIS",
+          "duration": 1743,
+          "bytes": 174
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/catalog/macbook?_rsc=VFvtNAwC3CvN8PIS",
+          "duration": 1751,
+          "bytes": 177
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/_next/static/immutable/chunks/26n4tfg588c4v.css",
+          "duration": 1568,
+          "bytes": 2222
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/cookies?_rsc=VFvtNAwC3CvN8PIS",
+          "duration": 1565,
+          "bytes": 893
+        },
+        {
+          "url": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/hero.mp4",
+          "duration": 1556,
+          "bytes": 35572
+        }
+      ],
+      "video": [
+        {
+          "readyState": 4,
+          "error": null,
+          "currentTime": 0.566945
+        }
+      ],
+      "poster": "https://di-smart-gilt.vercel.app/media/galaxy-s26-ultra/video/poster.webp",
+      "errors": []
+    }
+  ],
+  "slowMobile": {
+    "profile": "Android emulation, CPU 4x slowdown, 1.6 Mbps down, latency 150 ms",
+    "ttfbMs": 409,
+    "domReadyMs": 1968,
+    "lcpMs": 2088,
+    "longTasks": [
+      249,
+      166,
+      107
+    ],
+    "maxLongTaskMs": 249,
+    "visibleContent": true,
+    "overflow": false,
+    "video": [
+      {
+        "readyState": 3,
+        "error": null,
+        "paused": false
+      }
+    ],
+    "errors": []
+  },
+  "mockedCheckout": "Passed: recovery from HTTP 503, HTTP 400, network failure, stable retry key, UI success; no live orders or Telegram notifications sent",
+  "observations": [
+    "One Safari access-control error during immediate test-induced hard navigation; three complete normal UI cart flows passed with zero errors.",
+    "Intermittent network delivery delays observed: Android catalog DOM 54.4s once, catalog repeats 1.0/2.0/1.1s; S26 assets occasionally several seconds. No observed JS long tasks explain these network delays."
+  ],
+  "safariCartRepeat": [
+    {
+      "run": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "run": 2,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "run": 3,
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

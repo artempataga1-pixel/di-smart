@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-16",
+  "tool": "built-in image_gen",
+  "invariant": "One immutable master composition per model; color changes only; no new camera or pose.",
+  "assets": [
+    {
+      "key": "series11-jet-black",
+      "master": "public/media/catalog/apple-watch-silicone-2026/series11-space-gray-v3.webp",
+      "output": "public/media/catalog/apple-watch-silicone-2026/series11-jet-black-fixed-2026-10-16.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: ecommerce product COLOR SWATCH, strict fixed camera.\nInput image 1 is the EDIT TARGET AND IMMUTABLE MASTER COMPOSITION. Input image 2 is a COLOR SAMPLE ONLY, never a pose or geometry reference.\nThis is a local recoloring operation, NOT a new product photograph and NOT a new composition. Change ONLY the medium-gray ALUMINUM CASE, its crown and side button to Jet Black polished glossy deep neutral black, following the COLOR ONLY of image 2. Keep the exact same silhouette and all boundaries of image 1, and keep the current matte charcoal-black silicone band exactly unchanged. The watch display must remain the identical BLUE luminous 10:09 face of image 1; do not copy the white face from image 2.\nMandatory invariants: keep image 1's exact square canvas dimensions, background pixels, all diagonal light stripes and tabletop reflection in place; exact camera angle, watch rotation, apparent size, width, height, center position, perspective, band loop shape, negative spaces, holes, metal pin, crown location, side button location, glass perimeter, and every display pixel. The case and band must remain at the very same pixel coordinates as image 1. Do not enlarge, shrink, stretch, tilt, translate, crop, change framing, or regenerate the watch. Keep the display identical to image 1 and untouched; change only the specified material colors. Same pin-and-tuck smooth silicone Sport Band. Preserve realistic shading and surface details. No text outside display, no border, no additional object. Return one square edited image.",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 72270
+    },
+    {
+      "key": "series11-rose-gold",
+      "master": "public/media/catalog/apple-watch-silicone-2026/series11-space-gray-v3.webp",
+      "output": "public/media/catalog/apple-watch-silicone-2026/series11-rose-gold-fixed-2026-10-16.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: ecommerce product COLOR SWATCH, strict fixed camera.\nInput image 1 is the EDIT TARGET AND IMMUTABLE MASTER COMPOSITION. Input image 2 is a COLOR SAMPLE ONLY, never a pose or geometry reference.\nThis is a local recoloring operation, NOT a new product photograph and NOT a new composition. Change ONLY the medium-gray ALUMINUM CASE, crown and side button to soft rose-gold, and the silicone band to very pale warm pink almost ivory Light Blush, following the COLOR ONLY of image 2. Do NOT make it yellow gold. Keep the exact same silhouette and all boundaries of image 1. The watch display must remain the identical BLUE luminous 10:09 face of image 1; do not copy the pink face from image 2.\nMandatory invariants: keep image 1's exact square canvas dimensions, background pixels, all diagonal light stripes and tabletop reflection in place; exact camera angle, watch rotation, apparent size, width, height, center position, perspective, band loop shape, negative spaces, holes, metal pin, crown location, side button location, glass perimeter, and every display pixel. The case and band must remain at the very same pixel coordinates as image 1. Do not enlarge, shrink, stretch, tilt, translate, crop, change framing, or regenerate the watch. Keep the display identical to image 1 and untouched; change only the specified material colors. Same pin-and-tuck smooth silicone Sport Band. Preserve realistic shading and surface details. No text outside display, no border, no additional object. Return one square edited image.",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 70880
+    },
+    {
+      "key": "series11-silver",
+      "master": "public/media/catalog/apple-watch-silicone-2026/series11-space-gray-v3.webp",
+      "output": "public/media/catalog/apple-watch-silicone-2026/series11-silver-fixed-2026-10-16.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: ecommerce product COLOR SWATCH, strict fixed camera.\nInput image 1 is the EDIT TARGET AND IMMUTABLE MASTER COMPOSITION. Input image 2 is a COLOR SAMPLE ONLY, never a pose or geometry reference.\nThis is a local recoloring operation, NOT a new product photograph and NOT a new composition. Change ONLY the medium-gray ALUMINUM CASE, crown and side button to cool neutral silver, and the silicone band to muted dusty gray-lavender Purple Fog, following the COLOR ONLY of image 2. Keep the exact same silhouette and all boundaries of image 1. The watch display must remain the identical BLUE luminous 10:09 face of image 1; do not copy the green face from image 2.\nMandatory invariants: keep image 1's exact square canvas dimensions, background pixels, all diagonal light stripes and tabletop reflection in place; exact camera angle, watch rotation, apparent size, width, height, center position, perspective, band loop shape, negative spaces, holes, metal pin, crown location, side button location, glass perimeter, and every display pixel. The case and band must remain at the very same pixel coordinates as image 1. Do not enlarge, shrink, stretch, tilt, translate, crop, change framing, or regenerate the watch. Keep the display identical to image 1 and untouched; change only the specified material colors. Same pin-and-tuck smooth silicone Sport Band. Preserve realistic shading and surface details. No text outside display, no border, no additional object. Return one square edited image.",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 69220
+    },
+    {
+      "key": "se3-starlight",
+      "master": "public/media/catalog/apple-watch-silicone-2026/se3-midnight-v3.webp",
+      "output": "public/media/catalog/apple-watch-silicone-2026/se3-starlight-fixed-2026-10-16.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: ecommerce product COLOR SWATCH, strict fixed camera.\nInput image 1 is the EDIT TARGET AND IMMUTABLE MASTER COMPOSITION. Input image 2 is a COLOR SAMPLE ONLY, never a pose or geometry reference.\nThis is a local recoloring operation, NOT a new product photograph and NOT a new composition. Change ONLY the dark Midnight ALUMINUM CASE, crown and side button to light champagne Starlight (subtle warm beige metal, NOT yellow gold), and the silicone band to warm ivory off-white Starlight, following the COLOR ONLY of image 2. Keep the exact same silhouette and all boundaries of image 1. The watch display must remain the identical BLUE two-tone 10:09 face of image 1; do not copy the red face from image 2.\nMandatory invariants: keep image 1's exact square canvas dimensions, background pixels, all diagonal light stripes and tabletop reflection in place; exact camera angle, watch rotation, apparent size, width, height, center position, perspective, band loop shape, negative spaces, holes, metal pin, crown location, side button location, glass perimeter, and every display pixel. The case and band must remain at the very same pixel coordinates as image 1. Do not enlarge, shrink, stretch, tilt, translate, crop, change framing, or regenerate the watch. Keep the display identical to image 1 and untouched; change only the specified material colors. Same pin-and-tuck smooth silicone Sport Band. Preserve realistic shading and surface details. No text outside display, no border, no additional object. Return one square edited image.",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 65682
+    },
+    {
+      "key": "series11-space-gray",
+      "master": true,
+      "output": "public/media/catalog/apple-watch-silicone-2026/series11-space-gray-fixed-2026-10-16.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 61894
+    },
+    {
+      "key": "se3-midnight",
+      "master": true,
+      "output": "public/media/catalog/apple-watch-silicone-2026/se3-midnight-fixed-2026-10-16.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 61782
+    }
+  ],
+  "measurements": [
+    {
+      "key": "series11-jet-black",
+      "canvas": [
+        1254,
+        1254
+      ],
+      "scaleRatio": 0.99921,
+      "rotationDegrees": 0.0996,
+      "translationPx": [
+        1.49,
+        -0.66
+      ],
+      "screenFeatureMatches": 34,
+      "inliers": 25
+    },
+    {
+      "key": "series11-rose-gold",
+      "canvas": [
+        1254,
+        1254
+      ],
+      "scaleRatio": 0.99736,
+      "rotationDegrees": 0.011,
+      "translationPx": [
+        1.48,
+        1.21
+      ],
+      "screenFeatureMatches": 41,
+      "inliers": 32
+    },
+    {
+      "key": "series11-silver",
+      "canvas": [
+        1254,
+        1254
+      ],
+      "scaleRatio": 0.99783,
+      "rotationDegrees": 0.0657,
+      "translationPx": [
+        1.49,
+        0.58
+      ],
+      "screenFeatureMatches": 41,
+      "inliers": 31
+    },
+    {
+      "key": "se3-starlight",
+      "canvas": [
+        1254,
+        1254
+      ],
+      "scaleRatio": 1.00005,
+      "rotationDegrees": 0.018,
+      "translationPx": [
+        0.26,
+        -0.16
+      ],
+      "screenFeatureMatches": 78,
+      "inliers": 66
+    }
+  ]
+}

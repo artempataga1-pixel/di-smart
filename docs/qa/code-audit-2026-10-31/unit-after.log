@@ -1,0 +1,15 @@
+✔ cart keeps the selected iPhone finish instead of the burgundy default (1.095417ms)
+✔ cart keeps the selected MacBook Neo finish instead of the silver default (0.12125ms)
+✔ a product without a colour photo still uses its reviewed main image (0.237125ms)
+✔ campaigns stay in the first-page list without dropping or duplicating products (0.744208ms)
+✔ client Samsung assortment contains exactly 24 models and 43 supplied configurations (0.898125ms)
+✔ additional tablets retain the exact fourteen configurations and colours supplied by the client (0.142458ms)
+✔ iPhone legacy SIM-only SKU is unavailable while supported SKUs retain their identity (0.429834ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 165.009084

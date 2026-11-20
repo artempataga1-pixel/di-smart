@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: `Trade-in — ${SITE.name}`,
   description:
     "Обменяйте старое устройство Apple или Samsung на новое со скидкой — оценка проводится индивидуально менеджером.",
+  alternates: { canonical: "/trade-in" },
 };
 
 export default function TradeInPage() {

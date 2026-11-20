@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+import Image from '@/components/ui/StoreImage';
 import { useEffect, useRef, useState } from 'react';
 import { Plus, Minus, ChevronUp, ChevronDown, RotateCcw } from 'lucide-react';
 import type { createPhoneScene } from './phone-scene';
@@ -59,9 +59,9 @@ export function PhoneViewer({selected,onSelect}:{selected:number;onSelect:(index
           const actions:Record<string,()=>void>={ArrowLeft:()=>engine.current?.rotate(-.15,0),ArrowRight:()=>engine.current?.rotate(.15,0),ArrowUp:()=>engine.current?.rotate(0,-.12),ArrowDown:()=>engine.current?.rotate(0,.12),Home:()=>engine.current?.view(true)};
           if(actions[event.key]){event.preventDefault();actions[event.key]();}
         }}/>
-        {status!=='ready'&&<Image className={styles.poster} src={`/media/iphone-18-pro/viewer/color_${finishes[selected].english.toLowerCase()}.jpg`} alt={`iPhone 18 Pro, ${finishes[selected].name}`} fill quality={88} sizes="(max-width:760px) 100vw, 900px"/>}
+        {status!=='ready'&&<Image className={styles.poster} src={`/media/iphone-18-pro/viewer/color_${finishes[selected].english.toLowerCase()}.jpg`} alt={`iPhone 18 Pro, ${finishes[selected].name}`} fill sizes="(max-width:760px) 100vw, 900px"/>}
       </div>
-      {active!==0&&<div className={styles.feature} key={active}><Image src={`/media/iphone-18-pro/viewer/${details[active].image}.jpg`} alt={details[active].title} fill quality={95} loading="eager" sizes="(max-width:760px) 100vw, 1100px" /></div>}
+      {active!==0&&<div className={styles.feature} key={active}><Image src={`/media/iphone-18-pro/viewer/${details[active].image}.jpg`} alt={details[active].title} fill loading="eager" sizes="(max-width:760px) 100vw, 1100px" /></div>}
       {active===0&&<div className={styles.modelTools}>
         <span role="status">{status==='ready'?'Потяните, чтобы повернуть':status==='failed'?'Фотографии · 3D недоступно в этом браузере':'Загружаем 3D…'}</span>
         {status==='ready'&&<div><button tabIndex={active===0?0:-1} onClick={()=>engine.current?.view(true)}>Спереди</button><button onClick={()=>engine.current?.view(false)}>Сзади</button><button aria-label="Приблизить модель" onClick={()=>engine.current?.zoom(.88)}><Plus size={16}/></button><button aria-label="Отдалить модель" onClick={()=>engine.current?.zoom(1.14)}><Minus size={16}/></button><button aria-label="Сбросить ракурс" onClick={()=>engine.current?.view(true)}><RotateCcw size={15}/></button></div>}

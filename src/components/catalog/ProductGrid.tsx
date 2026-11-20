@@ -26,7 +26,7 @@ export function ProductGrid({
   }
 
   return (
-    <div ref={ref} className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div ref={ref} className="grid min-w-0 grid-cols-2 gap-x-2.5 gap-y-3 sm:gap-5 lg:grid-cols-3">
       {editorialItem && <EditorialCatalogCard item={editorialItem} />}
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />

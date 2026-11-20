@@ -48,8 +48,8 @@
 .page [data-reveal].visible { opacity:1; transform:none; }
 .page .chargingCopy.visible { transform:translateY(-50%); }
 @media(max-width:850px){
-  .hero { height:56svh; min-height:420px; aspect-ratio:auto; }
-  .heroPoster,.hero video { object-fit:contain; object-position:center; }
+  .hero { height:auto; min-height:0; aspect-ratio:1470/630; }
+  .heroPoster,.hero video { object-fit:cover; object-position:center; }
   .design { padding-left:20px; padding-right:20px; grid-template-columns:1fr; }
   .designImage { aspect-ratio:1/1; border-radius:28px; }
   .charging { min-height:710px; margin:52px 10px; border-radius:30px; }

@@ -1,0 +1,114 @@
+{
+  "id": "cmu7v8vl5003dyuofkgoo443o",
+  "slug": "iphone-air",
+  "categoryId": "cmu7v87bp000xyuofw8u98210",
+  "brandId": "cmu7v8774000wyuofln4kzx78",
+  "name": "iPhone Air",
+  "shortDescription": "Самый тонкий iPhone с чипом A19 Pro",
+  "description": "iPhone Air — тонкий титановый смартфон с чипом A19 Pro и дисплеем 6.5 дюйма.",
+  "isFlagship": false,
+  "isActive": false,
+  "basePriceUsd": "1099",
+  "basePriceByn": null,
+  "priceKind": "MARKET_ESTIMATE",
+  "availability": "IN_STOCK",
+  "sortOrder": 3,
+  "seoTitle": null,
+  "seoDescription": null,
+  "canonicalPath": null,
+  "createdAt": "2026-09-19T04:07:05.705Z",
+  "updatedAt": "2026-09-29T07:26:20.575Z",
+  "images": [],
+  "variants": [
+    {
+      "id": "cmugzxh5u003ezjofqtr7wbp4",
+      "productId": "cmu7v8vl5003dyuofkgoo443o",
+      "priceUsd": "1299",
+      "priceByn": null,
+      "sku": null,
+      "availability": "IN_STOCK",
+      "isDefault": false,
+      "sortOrder": 1,
+      "createdAt": "2026-09-25T13:28:07.458Z",
+      "updatedAt": "2026-10-07T10:24:17.322Z"
+    },
+    {
+      "id": "cmugzxhf6003fzjof3g9kyt6i",
+      "productId": "cmu7v8vl5003dyuofkgoo443o",
+      "priceUsd": "1499",
+      "priceByn": null,
+      "sku": null,
+      "availability": "IN_STOCK",
+      "isDefault": false,
+      "sortOrder": 2,
+      "createdAt": "2026-09-25T13:28:07.794Z",
+      "updatedAt": "2026-10-07T10:24:17.322Z"
+    },
+    {
+      "id": "cmugzxgvs003dzjofwy8dj0q5",
+      "productId": "cmu7v8vl5003dyuofkgoo443o",
+      "priceUsd": "1099",
+      "priceByn": null,
+      "sku": null,
+      "availability": "IN_STOCK",
+      "isDefault": true,
+      "sortOrder": 0,
+      "createdAt": "2026-09-25T13:28:07.096Z",
+      "updatedAt": "2026-10-07T10:24:17.524Z"
+    }
+  ],
+  "colorValues": [
+    {
+      "id": "cmugzxezo0039zjof8x3xu7sp",
+      "productId": "cmu7v8vl5003dyuofkgoo443o",
+      "attributeValueId": "cmu7xrxlt000u8bof1gif01og",
+      "attributeValue": {
+        "id": "cmu7xrxlt000u8bof1gif01og",
+        "attributeId": "cmu7v830i0004yuofcybyrxie",
+        "value": "Космический чёрный",
+        "sortOrder": 15,
+        "colorHex": "#3b3c40",
+        "createdAt": "2026-09-19T05:17:54.017Z"
+      }
+    },
+    {
+      "id": "cmugzxf53003azjof2t0fyk4s",
+      "productId": "cmu7v8vl5003dyuofkgoo443o",
+      "attributeValueId": "cmugzmlq3001eboofast3ou2m",
+      "attributeValue": {
+        "id": "cmugzmlq3001eboofast3ou2m",
+        "attributeId": "cmu7v830i0004yuofcybyrxie",
+        "value": "Облачный белый",
+        "sortOrder": 31,
+        "colorHex": "#f0f0ec",
+        "createdAt": "2026-09-25T13:19:40.155Z"
+      }
+    },
+    {
+      "id": "cmugzxf9t003bzjofdr19qclx",
+      "productId": "cmu7v8vl5003dyuofkgoo443o",
+      "attributeValueId": "cmugzmluq001fboof9449go75",
+      "attributeValue": {
+        "id": "cmugzmluq001fboof9449go75",
+        "attributeId": "cmu7v830i0004yuofcybyrxie",
+        "value": "Светло-золотой",
+        "sortOrder": 32,
+        "colorHex": "#ded6bd",
+        "createdAt": "2026-09-25T13:19:40.322Z"
+      }
+    },
+    {
+      "id": "cmugzxfef003czjof43byzke2",
+      "productId": "cmu7v8vl5003dyuofkgoo443o",
+      "attributeValueId": "cmugzmll2001dboof2yfzgrlz",
+      "attributeValue": {
+        "id": "cmugzmll2001dboof2yfzgrlz",
+        "attributeId": "cmu7v830i0004yuofcybyrxie",
+        "value": "Небесно-голубой",
+        "sortOrder": 30,
+        "colorHex": "#c5d5e4",
+        "createdAt": "2026-09-25T13:19:39.974Z"
+      }
+    }
+  ]
+}

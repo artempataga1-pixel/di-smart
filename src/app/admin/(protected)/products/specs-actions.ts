@@ -1,11 +1,16 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isForeignKeyConstraintError } from "@/lib/admin/errors";
 import { errorRedirectUrl, parseIntField } from "@/lib/admin/form-helpers";
 import { requireAdminSession } from "@/lib/admin/require-session";
+
+function revalidateProduct(productId: string) {
+  revalidatePath(`/admin/products/${productId}`);
+  revalidateTag("storefront-catalog", { expire: 0 });
+}
 
 function productPath(productId: string): string {
   return `/admin/products/${productId}#specs`;
@@ -27,7 +32,7 @@ export async function addSpecAction(formData: FormData) {
       }
       throw e;
     }
-    revalidatePath(`/admin/products/${productId}`);
+    revalidateProduct(productId);
   }
 
   redirect(productPath(productId));
@@ -45,7 +50,7 @@ export async function updateSpecAction(formData: FormData) {
     await prisma.productSpec.update({ where: { id }, data: { name, value, sortOrder } }).catch((e) => {
       console.error("[admin] failed to update spec", e);
     });
-    revalidatePath(`/admin/products/${productId}`);
+    revalidateProduct(productId);
   }
 
   redirect(productPath(productId));
@@ -60,7 +65,7 @@ export async function deleteSpecAction(formData: FormData) {
     await prisma.productSpec.delete({ where: { id } }).catch((e) => {
       console.error("[admin] failed to delete spec", e);
     });
-    revalidatePath(`/admin/products/${productId}`);
+    revalidateProduct(productId);
   }
 
   redirect(productPath(productId));

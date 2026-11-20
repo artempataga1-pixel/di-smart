@@ -1,10 +1,13 @@
 import "dotenv/config";
 import { defineConfig } from "prisma/config";
+import { databaseProvider } from "./src/lib/database-provider";
+
+const mysql = databaseProvider() === "mysql";
 
 export default defineConfig({
-  schema: "prisma/schema.prisma",
+  schema: mysql ? "prisma/mysql/schema.prisma" : "prisma/schema.prisma",
   migrations: {
-    path: "prisma/migrations",
+    path: mysql ? "prisma/mysql/migrations" : "prisma/migrations",
     seed: "tsx prisma/seed.ts",
   },
   datasource: {

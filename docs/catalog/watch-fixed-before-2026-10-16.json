@@ -1,0 +1,276 @@
+[
+  {
+    "id": "cmu7va3yn0072yuofy7d5drps",
+    "slug": "watch-se-3",
+    "categoryId": "cmu7va3u30071yuofvowg2np1",
+    "brandId": "cmu7v8774000wyuofln4kzx78",
+    "name": "Apple Watch SE 3",
+    "shortDescription": "Доступные умные часы с ключевыми функциями здоровья",
+    "description": "Apple Watch SE 3 — доступный вход в экосистему Apple Watch с отслеживанием сна, тренировок и уведомлениями.",
+    "isFlagship": false,
+    "isActive": true,
+    "basePriceUsd": "249",
+    "basePriceByn": null,
+    "priceKind": "MARKET_ESTIMATE",
+    "availability": "IN_STOCK",
+    "sortOrder": 0,
+    "seoTitle": null,
+    "seoDescription": null,
+    "canonicalPath": null,
+    "createdAt": "2026-09-19T04:08:03.215Z",
+    "updatedAt": "2026-09-29T07:26:20.575Z",
+    "images": [
+      {
+        "id": "apple-color-cmugzxrt40048zjof5ulvpizb",
+        "productId": "cmu7va3yn0072yuofy7d5drps",
+        "url": "/media/catalog/apple-watch-silicone-2026/se3-midnight-v3.webp",
+        "alt": "Apple Watch — Midnight / Midnight Sport Band, силиконовый ремешок",
+        "sortOrder": 1,
+        "isMain": false,
+        "colorValueId": "cmugzxrt40048zjof5ulvpizb",
+        "createdAt": "2026-09-29T10:46:08.744Z"
+      },
+      {
+        "id": "apple-color-cmugzxrxp0049zjof2arny7ok",
+        "productId": "cmu7va3yn0072yuofy7d5drps",
+        "url": "/media/catalog/apple-watch-silicone-2026/se3-starlight-v3.webp",
+        "alt": "Apple Watch — Starlight / Starlight Sport Band, силиконовый ремешок",
+        "sortOrder": 0,
+        "isMain": true,
+        "colorValueId": "cmugzxrxp0049zjof2arny7ok",
+        "createdAt": "2026-09-29T10:46:08.744Z"
+      }
+    ],
+    "variants": [
+      {
+        "id": "cmugzxsqw004azjoftr4c93re",
+        "productId": "cmu7va3yn0072yuofy7d5drps",
+        "priceUsd": "249",
+        "priceByn": null,
+        "sku": null,
+        "availability": "IN_STOCK",
+        "isDefault": true,
+        "sortOrder": 0,
+        "createdAt": "2026-09-25T13:28:22.472Z",
+        "updatedAt": "2026-09-25T13:28:22.472Z",
+        "options": [
+          {
+            "variantId": "cmugzxsqw004azjoftr4c93re",
+            "attributeValueId": "cmuc9w8hg000ao3of5k1swp76"
+          }
+        ],
+        "colorOffers": []
+      },
+      {
+        "id": "cmugzxt0u004bzjofl1z61j0m",
+        "productId": "cmu7va3yn0072yuofy7d5drps",
+        "priceUsd": "279",
+        "priceByn": null,
+        "sku": null,
+        "availability": "IN_STOCK",
+        "isDefault": false,
+        "sortOrder": 1,
+        "createdAt": "2026-09-25T13:28:22.830Z",
+        "updatedAt": "2026-09-25T13:28:22.830Z",
+        "options": [
+          {
+            "variantId": "cmugzxt0u004bzjofl1z61j0m",
+            "attributeValueId": "cmuc9w9jy000do3ofxl2l0xv7"
+          }
+        ],
+        "colorOffers": []
+      }
+    ],
+    "colorValues": [
+      {
+        "id": "cmugzxrt40048zjof5ulvpizb",
+        "productId": "cmu7va3yn0072yuofy7d5drps",
+        "attributeValueId": "5ab83c42-9a59-4f95-a49e-47083c22a861",
+        "attributeValue": {
+          "id": "5ab83c42-9a59-4f95-a49e-47083c22a861",
+          "attributeId": "cmu7v830i0004yuofcybyrxie",
+          "value": "Полночный / Midnight Sport Band",
+          "sortOrder": 0,
+          "colorHex": "#12141c",
+          "createdAt": "2026-09-29T07:26:20.575Z"
+        },
+        "offers": []
+      },
+      {
+        "id": "cmugzxrxp0049zjof2arny7ok",
+        "productId": "cmu7va3yn0072yuofy7d5drps",
+        "attributeValueId": "3440c8f9-e4ab-4f1f-8259-aa3143de2030",
+        "attributeValue": {
+          "id": "3440c8f9-e4ab-4f1f-8259-aa3143de2030",
+          "attributeId": "cmu7v830i0004yuofcybyrxie",
+          "value": "Звёздный / Starlight Sport Band",
+          "sortOrder": 1,
+          "colorHex": "#e7ded0",
+          "createdAt": "2026-09-29T07:26:20.575Z"
+        },
+        "offers": []
+      }
+    ]
+  },
+  {
+    "id": "cmu7va6e00078yuofm7bf81yj",
+    "slug": "watch-series-11",
+    "categoryId": "cmu7va3u30071yuofvowg2np1",
+    "brandId": "cmu7v8774000wyuofln4kzx78",
+    "name": "Apple Watch Series 11",
+    "shortDescription": "Флагманская линейка Apple Watch",
+    "description": "Apple Watch Series 11 — датчик температуры, пульсоксиметр и рекордная автономность.",
+    "isFlagship": false,
+    "isActive": true,
+    "basePriceUsd": "399",
+    "basePriceByn": null,
+    "priceKind": "MARKET_ESTIMATE",
+    "availability": "IN_STOCK",
+    "sortOrder": 0,
+    "seoTitle": null,
+    "seoDescription": null,
+    "canonicalPath": null,
+    "createdAt": "2026-09-19T04:08:06.360Z",
+    "updatedAt": "2026-09-29T07:26:20.575Z",
+    "images": [
+      {
+        "id": "apple-color-cmuhwm9s900433mofym8uhy7z",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "url": "/media/catalog/apple-watch-silicone-2026/series11-space-gray-v3.webp",
+        "alt": "Apple Watch — Space Gray / Black Sport Band, силиконовый ремешок",
+        "sortOrder": 1,
+        "isMain": false,
+        "colorValueId": "cmuhwm9s900433mofym8uhy7z",
+        "createdAt": "2026-09-29T10:46:08.744Z"
+      },
+      {
+        "id": "apple-color-cmuhwm9nj00423mof7t2qm13q",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "url": "/media/catalog/apple-watch-silicone-2026/series11-silver-v3.webp",
+        "alt": "Apple Watch — Silver / Purple Fog Sport Band, силиконовый ремешок",
+        "sortOrder": 0,
+        "isMain": true,
+        "colorValueId": "cmuhwm9nj00423mof7t2qm13q",
+        "createdAt": "2026-09-29T10:46:08.744Z"
+      },
+      {
+        "id": "apple-color-cmuhwm9iu00413mofp49hy2es",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "url": "/media/catalog/apple-watch-silicone-2026/series11-rose-gold-v3.webp",
+        "alt": "Apple Watch — Rose Gold / Light Blush Sport Band, силиконовый ремешок",
+        "sortOrder": 3,
+        "isMain": false,
+        "colorValueId": "cmuhwm9iu00413mofp49hy2es",
+        "createdAt": "2026-09-29T10:46:08.744Z"
+      },
+      {
+        "id": "apple-color-cmuhwm9e500403mofma6mangt",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "url": "/media/catalog/apple-watch-silicone-2026/series11-jet-black-v3.webp",
+        "alt": "Apple Watch — Jet Black / Black Sport Band, силиконовый ремешок",
+        "sortOrder": 2,
+        "isMain": false,
+        "colorValueId": "cmuhwm9e500403mofma6mangt",
+        "createdAt": "2026-09-29T10:46:08.744Z"
+      }
+    ],
+    "variants": [
+      {
+        "id": "cmuhwmak500443mofox2bfxzx",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "priceUsd": "399",
+        "priceByn": null,
+        "sku": null,
+        "availability": "IN_STOCK",
+        "isDefault": true,
+        "sortOrder": 0,
+        "createdAt": "2026-09-26T04:43:13.013Z",
+        "updatedAt": "2026-09-26T04:43:13.013Z",
+        "options": [
+          {
+            "variantId": "cmuhwmak500443mofox2bfxzx",
+            "attributeValueId": "cmuc9w9aq000co3ofvd8bintx"
+          }
+        ],
+        "colorOffers": []
+      },
+      {
+        "id": "cmuhwmatl00453mof4ekje72n",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "priceUsd": "429",
+        "priceByn": null,
+        "sku": null,
+        "availability": "IN_STOCK",
+        "isDefault": false,
+        "sortOrder": 1,
+        "createdAt": "2026-09-26T04:43:13.353Z",
+        "updatedAt": "2026-09-26T04:43:13.353Z",
+        "options": [
+          {
+            "variantId": "cmuhwmatl00453mof4ekje72n",
+            "attributeValueId": "cmuc9w9zk000fo3of9wyzrob4"
+          }
+        ],
+        "colorOffers": []
+      }
+    ],
+    "colorValues": [
+      {
+        "id": "cmuhwm9s900433mofym8uhy7z",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "attributeValueId": "251ab8e1-0ba5-43b6-ac12-d6ec7e5fe35d",
+        "attributeValue": {
+          "id": "251ab8e1-0ba5-43b6-ac12-d6ec7e5fe35d",
+          "attributeId": "cmu7v830i0004yuofcybyrxie",
+          "value": "Космический серый / Black Sport Band",
+          "sortOrder": 0,
+          "colorHex": "#5a5b60",
+          "createdAt": "2026-09-29T07:26:20.575Z"
+        },
+        "offers": []
+      },
+      {
+        "id": "cmuhwm9e500403mofma6mangt",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "attributeValueId": "d5e51c95-eec0-4c6b-ba63-7b9b911dbd6a",
+        "attributeValue": {
+          "id": "d5e51c95-eec0-4c6b-ba63-7b9b911dbd6a",
+          "attributeId": "cmu7v830i0004yuofcybyrxie",
+          "value": "Глянцевый чёрный / Black Sport Band",
+          "sortOrder": 1,
+          "colorHex": "#151619",
+          "createdAt": "2026-09-29T07:26:20.575Z"
+        },
+        "offers": []
+      },
+      {
+        "id": "cmuhwm9iu00413mofp49hy2es",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "attributeValueId": "19b9525a-d0dd-460c-8e09-809534099cf4",
+        "attributeValue": {
+          "id": "19b9525a-d0dd-460c-8e09-809534099cf4",
+          "attributeId": "cmu7v830i0004yuofcybyrxie",
+          "value": "Розово-золотой / Light Blush Sport Band",
+          "sortOrder": 2,
+          "colorHex": "#b98b78",
+          "createdAt": "2026-09-29T07:26:20.575Z"
+        },
+        "offers": []
+      },
+      {
+        "id": "cmuhwm9nj00423mof7t2qm13q",
+        "productId": "cmu7va6e00078yuofm7bf81yj",
+        "attributeValueId": "4f285044-81ad-4b0e-961d-ba84541473fa",
+        "attributeValue": {
+          "id": "4f285044-81ad-4b0e-961d-ba84541473fa",
+          "attributeId": "cmu7v830i0004yuofcybyrxie",
+          "value": "Серебристый / Purple Fog Sport Band",
+          "sortOrder": 3,
+          "colorHex": "#d7d9dc",
+          "createdAt": "2026-09-29T07:26:20.575Z"
+        },
+        "offers": []
+      }
+    ]
+  }
+]

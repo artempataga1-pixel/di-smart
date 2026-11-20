@@ -7,6 +7,7 @@ export function CategoryCard({ category }: { category: CategorySummary }) {
   return (
     <Link
       href={`/catalog/${category.slug}`}
+      prefetch
       data-stagger-item
       className="group flex flex-col overflow-hidden rounded-[6px_var(--radius-xl)_6px_var(--radius-xl)] border border-[var(--color-line)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] transition-[box-shadow,transform] duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card-hover)]"
     >

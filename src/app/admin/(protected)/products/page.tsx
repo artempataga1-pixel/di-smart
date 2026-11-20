@@ -12,16 +12,17 @@ export default async function AdminProductsPage({
 }) {
   const { error } = await searchParams;
   const products = await prisma.product.findMany({
-    orderBy: [{ category: { brand: { sortOrder: "asc" } } }, { sortOrder: "asc" }],
-    include: { category: { include: { brand: true } } },
+    orderBy: [{ brand: { sortOrder: "asc" } }, { category: { sortOrder: "asc" } }, { sortOrder: "asc" }],
+    include: { category: true, brand: true },
   });
 
   const rows = products.map((product) => ({
     id: product.id,
     name: product.name,
-    brandName: product.category.brand.name,
+    brandName: product.brand.name,
     categoryName: product.category.name,
     priceUsd: product.basePriceUsd.toString(),
+    priceByn: product.basePriceByn?.toString() ?? null,
     availability: product.availability,
     isFlagship: product.isFlagship,
     isActive: product.isActive,

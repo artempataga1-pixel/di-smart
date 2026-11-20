@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { Price } from "@/components/ui/Price";
 import { PillCta } from "@/components/ui/PillCta";
 
@@ -26,13 +26,13 @@ export function CategoryFlagshipHero({
       aria-labelledby="category-flagship-title"
       className="grid overflow-hidden rounded-[28px] border border-[#e5e5ea] bg-[#f5f5f7] md:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)]"
     >
-      <div className="flex flex-col justify-center px-6 py-8 sm:px-9 md:min-h-[360px] md:px-11 md:py-10">
+      <div className="flex flex-col justify-center px-5 py-6 sm:px-9 sm:py-8 md:min-h-[360px] md:px-11 md:py-10">
         <p className="w-fit rounded-full border border-[#dedee3] bg-white px-3 py-1.5 text-sm font-medium text-[#515158]">
           {isEditorial ? "Флагман категории" : `Главная модель · ${categoryName}`}
         </p>
         <h1
           id="category-flagship-title"
-          className="mt-5 max-w-[12ch] font-[family-name:var(--font-heading)] text-[clamp(2.25rem,4.4vw,3.75rem)] font-semibold leading-[0.98] tracking-[-0.045em] text-[var(--color-text)]"
+          className="mt-4 max-w-[12ch] font-[family-name:var(--font-heading)] text-[clamp(1.9rem,4.4vw,3.75rem)] font-semibold leading-[1.04] tracking-[-0.045em] text-[var(--color-text)] sm:mt-5 sm:leading-[0.98]"
         >
           {name}
         </h1>
@@ -45,7 +45,7 @@ export function CategoryFlagshipHero({
         </div>
       </div>
 
-      <div className="relative min-h-[260px] overflow-hidden border-t border-[#e5e5ea] bg-white/45 sm:min-h-[340px] md:min-h-[360px] md:border-l md:border-t-0">
+      <div className="relative min-h-[210px] overflow-hidden border-t border-[#e5e5ea] bg-white/45 sm:min-h-[340px] md:min-h-[360px] md:border-l md:border-t-0">
         {image ? (
           <Image
             src={image}

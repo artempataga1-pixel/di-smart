@@ -1,24 +1,24 @@
+import { productPath, DEDICATED_PRODUCT_PATHS } from "@/lib/product-route";
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { IPhone17ModelSelector } from "@/components/product/IPhone17ModelSelector";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
-import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
+import { getCrossSellProducts, getProductDetailBySlug } from "@/lib/catalog";
 import { SITE } from "@/constants/content/site";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
-async function RelatedProductsSection({
-  categorySlug,
-  productId,
+async function CrossSellSection({
+  product,
 }: {
-  categorySlug: string;
-  productId: string;
+  product: { slug: string; categorySlug: string; brandSlug: string };
 }) {
-  const products = await getRelatedProducts(categorySlug, productId);
-  return <RelatedProducts products={products} />;
+  const crossSell = await getCrossSellProducts(product);
+  return <CrossSellProducts groups={crossSell} />;
 }
 
 export async function generateMetadata({
@@ -27,15 +27,16 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  if (DEDICATED_PRODUCT_PATHS[slug]) permanentRedirect(DEDICATED_PRODUCT_PATHS[slug]);
   const product = await getProductDetailBySlug(slug);
   if (!product) return { title: `Товар — ${SITE.name}` };
 
-  const title = product.seoTitle || `${product.name} — ${SITE.name}`;
+  const title = product.seoTitle || `${product.name}: цена и наличие в Минске — ${SITE.name}`;
   const description =
     product.seoDescription ||
     product.shortDescription ||
     `Купить ${product.name} в интернет-магазине ${SITE.name}: цена ${product.basePriceByn} BYN, доставка по Беларуси.`;
-  const url = product.canonicalPath || `/product/${product.slug}`;
+  const url = productPath(product.slug, product.canonicalPath);
 
   return {
     title,
@@ -56,19 +57,23 @@ export default async function ProductPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  if (DEDICATED_PRODUCT_PATHS[slug]) permanentRedirect(DEDICATED_PRODUCT_PATHS[slug]);
   const product = await getProductDetailBySlug(slug);
   if (!product) notFound();
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  const canonicalUrl = `${siteUrl}${product.canonicalPath || `/product/${product.slug}`}`;
+  const canonicalUrl = new URL(productPath(product.slug, product.canonicalPath), siteUrl).toString();
+  const imageUrl = product.mainImageUrl
+    ? new URL(product.mainImageUrl, siteUrl).toString()
+    : undefined;
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
     description: product.shortDescription || product.description || undefined,
-    image: product.mainImageUrl ? [`${siteUrl}${product.mainImageUrl}`] : undefined,
+    image: imageUrl ? [imageUrl] : undefined,
     brand: { "@type": "Brand", name: product.brandName },
-    offers: {
+    offers: product.basePriceByn > 0 && product.variants.every(variant => variant.priceByn > 0) ? {
       "@type": "Offer",
       url: canonicalUrl,
       priceCurrency: "BYN",
@@ -77,13 +82,13 @@ export default async function ProductPage({
         product.availability === "IN_STOCK"
           ? "https://schema.org/InStock"
           : "https://schema.org/OutOfStock",
-    },
+    } : undefined,
   };
 
   const jsonLd = (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd).replace(/</g, "\\u003c") }}
     />
   );
 
@@ -100,16 +105,22 @@ export default async function ProductPage({
       />
 
       <div className="mt-6">
-        <ProductPurchasePanel product={product} />
+        <ProductPurchasePanel
+          key={product.id}
+          product={product}
+          modelSelector={<IPhone17ModelSelector slug={product.slug} />}
+        />
       </div>
 
-      <div id="product-details" className="mt-16 scroll-mt-24">
+      <div id="product-details" className="mt-10 scroll-mt-24">
         <ProductSpecsTable specs={product.specs} description={product.description} />
       </div>
 
-      <Suspense fallback={null}>
-        <RelatedProductsSection categorySlug={product.categorySlug} productId={product.id} />
-      </Suspense>
+      <div className="mt-12">
+        <Suspense fallback={null}>
+          <CrossSellSection product={product} />
+        </Suspense>
+      </div>
     </div>
   );
 }

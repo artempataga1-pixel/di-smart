@@ -2,24 +2,24 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { chapters, highlights, finishes, narrativeSections, accessories, lineupTiers, questions } from "./galaxy-content";
+import { chapters, highlights, finishes, narrativeSections, lineupTiers, questions } from "./galaxy-content";
 import { FaqAccordion } from "./faq-accordion";
 import { PhoneViewer } from "./phone-viewer";
 import { NarrativeSection } from "./narrative-section";
 import { GalaxyAiExperience } from "./galaxy-ai-experience";
-import { AccessoriesGrid } from "./accessories-grid";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
+import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
+import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
 import { LineupPicker } from "./lineup-picker";
 import { media } from "./galaxy-media";
 import { HeroFilm } from "./hero-film";
 import { PillCta } from "@/components/ui/PillCta";
 import { Price } from "@/components/ui/Price";
 import { useStaggerReveal } from "@/components/ui/useStaggerReveal";
-import type { ProductDetail } from "@/lib/catalog";
+import type { CrossSellGroup, ProductDetail } from "@/lib/catalog";
 import styles from "./galaxy-hero.module.css";
 
-const PRODUCT_HREF = "/product/galaxy-s25-ultra";
-
-export function GalaxyHero({ product }: { product: ProductDetail | null }) {
+export function GalaxyHero({ product, crossSell }: { product: ProductDetail | null; crossSell: CrossSellGroup[] }) {
   const [activeChapter, setActiveChapter] = useState(chapters[0].id);
   const sectionRefs = useRef(new Map<string, HTMLElement>());
 
@@ -45,7 +45,7 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
 
   const highlightsRef = useStaggerReveal<HTMLDivElement>({ count: highlights.length });
 
-  const buyHref = product ? PRODUCT_HREF : "/catalog";
+  const buyHref = product ? "#buy" : "/catalog";
 
   return (
     <div className={styles.page}>
@@ -89,6 +89,24 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
         ))}
       </div>
 
+      {product && <section id="buy" ref={registerSection("buy")} className="scroll-mt-24 bg-white px-4 pb-10 pt-14 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <ProductPurchasePanel product={product} />
+        </div>
+      </section>}
+
+      {product && <section id="product-details" ref={registerSection("product-details")} className="scroll-mt-24 bg-white px-4 pb-16 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <ProductSpecsTable specs={product.specs} description={product.description} />
+        </div>
+      </section>}
+
+      <section id="accessories" ref={registerSection("accessories")} className="scroll-mt-24 bg-white px-4 pb-16 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <CrossSellProducts groups={crossSell} />
+        </div>
+      </section>
+
       <section id="design" ref={registerSection("design")} className={styles.section}>
         <h2 className={styles.sectionTitle}>Титан снаружи, мощь внутри</h2>
         <p className={styles.sectionBody}>
@@ -107,11 +125,6 @@ export function GalaxyHero({ product }: { product: ProductDetail | null }) {
 
       <section id="galaxy-ai" ref={registerSection("galaxy-ai")} className={styles.section}>
         <GalaxyAiExperience />
-      </section>
-
-      <section id="accessories" ref={registerSection("accessories")} className={styles.section}>
-        <h2 className={styles.sectionTitle}>Аксессуары</h2>
-        <AccessoriesGrid accessories={accessories} />
       </section>
 
       <section id="lineup" ref={registerSection("lineup")} className={styles.section}>

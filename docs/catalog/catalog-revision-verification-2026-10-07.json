@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-07T10:25:05.501Z",
+  "iphonePages": 6,
+  "legacySimBlockedInCart": true,
+  "allowedEsimAcceptedInCart": true,
+  "xiaomiHidden": true,
+  "laptopsHidden": true,
+  "macbookRetained": true,
+  "officialColorPhotos": 8,
+  "catalogPages": 6,
+  "deployment": "dpl_6jxseeSEjasAtyhW7wcbgmfo68iW",
+  "desktopAndMobileNavigationChecked": true,
+  "brandSpecificWatchLinksChecked": true,
+  "proMaxHasSeparateOfficialPhotos": true,
+  "colorSwitchChecked": true,
+  "iphoneCrossSell": [
+    "Apple 20W USB-C Power Adapter",
+    "iPad Air 11 M4",
+    "AirPods Pro 3",
+    "Apple MagSafe Charger"
+  ],
+  "independentBackup": "/Users/artempataga/.codex/backups/di-smart-catalog-revision-2026-10-07.tar.gz"
+}

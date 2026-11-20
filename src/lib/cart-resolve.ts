@@ -1,33 +1,11 @@
+import { isStorefrontVariantAllowed } from "./storefront-variants";
 import { prisma } from "@/lib/prisma";
-import { usdToByn } from "@/lib/pricing";
-import { getPreferredCatalogProductImage } from "@/constants/content/catalog-media";
+import { resolveBynPrice } from "@/lib/pricing";
+import { getCartProductImage } from "@/constants/content/catalog-media";
 import type { Availability } from "@/types/cart";
 
-export interface RawCartItem {
-  productId: string;
-  variantId: string | null;
-  colorValueId: string | null;
-  qty: number;
-}
-
-/** Верхний предел количества одной позиции — разумный запас для реального
- * покупателя, отсекающий испорченные/подделанные значения (Infinity, дробные
- * qty и т.п.), которые иначе дошли бы до Int-полей БД и уронили бы запрос. */
-const MAX_ITEM_QTY = 20;
-
-export function isRawCartItem(v: unknown): v is RawCartItem {
-  if (!v || typeof v !== "object") return false;
-  const item = v as Record<string, unknown>;
-  return (
-    typeof item.productId === "string" &&
-    (item.variantId === null || typeof item.variantId === "string") &&
-    (item.colorValueId === null || typeof item.colorValueId === "string") &&
-    typeof item.qty === "number" &&
-    Number.isInteger(item.qty) &&
-    item.qty > 0 &&
-    item.qty <= MAX_ITEM_QTY
-  );
-}
+import type { RawCartItem } from "./cart-validation";
+export { isRawCartItem, type RawCartItem } from "./cart-validation";
 
 /** Строка корзины, дополненная структурированными парами атрибутов
  * (имя атрибута + значение) — нужны для сообщения в Telegram и снимка
@@ -52,7 +30,7 @@ export interface ResolvedCartLine {
 /** Резолв корзины: один batch-запрос по уникальным productId, не по одному
  * товару за раз. Если вариант строки пропал — строка помечается
  * OUT_OF_STOCK (цена товара по умолчанию), не выбрасывается. Если пропал
- * сам товар — строка тихо выбрасывается из ответа.
+ * сам товар — остаётся недоступная строка, которую покупатель может удалить.
  *
  * `rate` — обязательный параметр, получается вызывающим кодом РОВНО ОДИН
  * РАЗ на весь запрос: используется и для priceByn каждой строки, и (в
@@ -68,10 +46,15 @@ export async function resolveCartLines(
   const productIds = Array.from(new Set(rawItems.map((i) => i.productId)));
 
   const products = await prisma.product.findMany({
-    where: { id: { in: productIds }, isActive: true },
+    where: {
+      id: { in: productIds },
+      isActive: true,
+      category: { isActive: true },
+      brand: { isActive: true },
+    },
     include: {
       images: { orderBy: { sortOrder: "asc" } },
-      colorValues: { include: { attributeValue: true } },
+      colorValues: { include: { attributeValue: true, offers: true } },
       variants: {
         include: {
           options: { include: { attributeValue: { include: { attribute: true } } } },
@@ -85,10 +68,16 @@ export async function resolveCartLines(
 
   for (const raw of rawItems) {
     const product = productById.get(raw.productId);
-    if (!product) continue;
+    if (!product) {
+      lines.push({ productId: raw.productId, variantId: raw.variantId, colorValueId: raw.colorValueId,
+        quantity: raw.qty, slug: "", name: "Товар больше недоступен", variantLabel: null,
+        variantAttributePairs: [], colorName: null, priceUsd: 0, priceByn: 0,
+        imageUrl: null, availability: "OUT_OF_STOCK" });
+      continue;
+    }
 
-    const variant = raw.variantId ? product.variants.find((v) => v.id === raw.variantId) : undefined;
-    const variantMissing = Boolean(raw.variantId) && !variant;
+    const variant = raw.variantId ? product.variants.find((v) => v.id === raw.variantId && isStorefrontVariantAllowed(product.slug, v.options)) : undefined;
+    const variantMissing = (Boolean(raw.variantId) && !variant) || (!raw.variantId && product.variants.length > 0);
 
     const priceUsd = variant ? variant.priceUsd.toNumber() : product.basePriceUsd.toNumber();
     const availability: Availability = variantMissing
@@ -116,16 +105,21 @@ export async function resolveCartLines(
       ? product.colorValues.find((cv) => cv.id === raw.colorValueId)
       : undefined;
     const colorName = colorValue ? colorValue.attributeValue.value : null;
+    const colorOffer = variantMissing ? undefined : colorValue?.offers.find((offer) => offer.variantId === (variant?.id ?? null));
 
     const colorImage = raw.colorValueId
       ? product.images.find((img) => img.colorValueId === raw.colorValueId)
       : undefined;
     const mainImage = product.images.find((img) => img.isMain) ?? product.images[0];
-    const imageUrl = getPreferredCatalogProductImage(
+    const imageUrl = getCartProductImage(
       product.slug,
-      colorImage?.url ?? mainImage?.url
+      colorImage?.url,
+      mainImage?.url
     );
 
+    const resolvedPrice = colorOffer?.priceByn?.toNumber() ?? (variant
+      ? resolveBynPrice(variant.priceByn, priceUsd, rate)
+      : resolveBynPrice(product.basePriceByn, priceUsd, rate));
     lines.push({
       productId: product.id,
       variantId: raw.variantId,
@@ -137,9 +131,10 @@ export async function resolveCartLines(
       variantAttributePairs,
       colorName,
       priceUsd,
-      priceByn: usdToByn(priceUsd, rate),
+      priceByn: resolvedPrice,
       imageUrl,
-      availability,
+      availability: resolvedPrice <= 0 || (raw.colorValueId && !colorValue) || (!raw.colorValueId && product.colorValues.length > 0)
+        ? "OUT_OF_STOCK" : availability === "OUT_OF_STOCK" ? availability : colorOffer?.availability ?? availability,
     });
   }
 

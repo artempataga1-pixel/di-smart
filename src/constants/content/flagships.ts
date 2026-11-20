@@ -7,6 +7,8 @@ export interface FlagshipCampaign {
   subtitle: string;
   href: string;
   image: string;
+  /** Квадратный каталоговый кадр для мобильной сетки «Флагманы». */
+  mobileImage?: string;
   /** Отдельный кадр для компактного флагманского блока страницы категории. */
   catalogImage?: string;
   width: number;
@@ -18,12 +20,12 @@ export interface FlagshipCampaign {
   source?: string;
 }
 
-export const flagshipCampaigns: FlagshipCampaign[] = [
+const editorialCampaigns: FlagshipCampaign[] = [
   { name: "iPhone 18 Pro", subtitle: "Искусство быть Pro.", slug: "iphone-18-pro", href: "/iphone-18-pro", category: "iphone", categoryName: "iPhone", width: 1280, height: 720, image: "/media/iphone-18-pro/intro-end.jpg" },
   { name: "Samsung Galaxy S26 Ultra", subtitle: "Galaxy AI и S Pen встроены — почерк переводится в текст, пока вы просто пишете.", slug: "galaxy-s26-ultra", href: "/galaxy-s26-ultra", category: "samsung-smartphones", categoryName: "Samsung", width: 1470, height: 630, image: "/media/galaxy-s26-ultra/video/poster-wide.webp" },
   {
     slug: "ipad-pro-m5", name: "iPad Pro 13″ · M5", href: "/ipad-pro-m5", category: "ipad", categoryName: "iPad",
-    subtitle: "Большие идеи. Одно касание.", image: "/media/ipad-pro-m5/hero-preview.webp", width: 1470, height: 630,
+    subtitle: "Большие идеи. Одно касание.", image: "/media/ipad-pro-m5/hero-preview.webp", mobileImage: "/media/catalog/products/ipad-pro-13.webp", width: 1470, height: 630,
     description: "Старший iPad Pro с чипом M5 и дисплеем Ultra Retina XDR — для рисунка, монтажа и работы в нескольких приложениях сразу.",
     features: [{ title: "M5", text: "Тянет то, для чего раньше нужен был ноутбук: монтаж видео, рисование и десяток открытых приложений сразу." }, { title: "Ultra Retina XDR", text: "13 дюймов и запас яркости, чтобы видеть детали в тенях при цветокоррекции." }, { title: "Apple Pencil Pro", text: "Чувствует наклон и силу нажима — годится для рисования, а не только для галочек в чек-листах. Приобретается отдельно." }],
     source: "https://www.apple.com/ipad-pro/",
@@ -58,7 +60,7 @@ export const flagshipCampaigns: FlagshipCampaign[] = [
   },
   {
     slug: "xiaomi-book-pro-14", name: "Xiaomi Book Pro 14", href: "/xiaomi-book-pro-14", category: "laptops", categoryName: "Ноутбуки",
-    subtitle: "Рабочий день. В лёгком формате.", image: "/media/xiaomi-book-pro-14/hero-poster.jpg", width: 1470, height: 630,
+    subtitle: "Рабочий день. В лёгком формате.", image: "/media/xiaomi-book-pro-14/hero-poster.jpg", mobileImage: "/media/catalog/products/xiaomi-book-pro-14.webp", width: 1470, height: 630,
     description: "Xiaomi Book Pro 14 — наш выбор флагмана среди ноутбуков: компактный корпус для работы и повседневных задач.",
     features: [{ title: "Pro-серия", text: "Старшая линейка ноутбуков Xiaomi — для тех, кому мало базовой модели." }, { title: "14 дюймов", text: "Помещается в дневной рюкзак рядом с зарядкой и не тянет плечо в метро." }, { title: "Конфигурации", text: "Точный процессор, память и раскладку клавиатуры добавим, как только подтвердим поставку — обещаем не молчать." }],
     source: "https://www.mi.com/prod/xiaomi-book-pro-14",
@@ -71,3 +73,8 @@ export const flagshipCampaigns: FlagshipCampaign[] = [
     source: "https://www.samsung.com/us/tablets/galaxy-tab-s11/",
   },
 ];
+
+// Эти редакционные страницы остаются в коде, но не рекламируются, пока
+// соответствующих моделей нет в подтверждённом ассортименте магазина.
+const inactiveAppleCampaigns = new Set(["ipad-pro-m5", "macbook-pro-16-m5-max", "apple-watch-ultra-4"]);
+export const flagshipCampaigns = editorialCampaigns.filter((campaign) => !inactiveAppleCampaigns.has(campaign.slug));

@@ -1,24 +1,24 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/ui/StoreImage";
 import { useEffect, useRef } from "react";
 import { ArrowUpRight, Pencil, Sparkles, Zap } from "lucide-react";
 import { AdaptiveHeroVideo } from "@/components/media/AdaptiveHeroVideo";
 import { ProductPurchasePanel } from "@/components/product/ProductPurchasePanel";
 import { ProductSpecsTable } from "@/components/product/ProductSpecsTable";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
+import { CrossSellProducts } from "@/components/product/CrossSellProducts";
 import { BuyAnchor } from "@/components/storefront/BuyAnchor";
-import type { CatalogCardData, ProductDetail } from "@/lib/catalog";
+import type { CrossSellGroup, ProductDetail } from "@/lib/catalog";
 import styles from "./page.module.css";
 
 export function IpadProPage({
   hasHeroVideo,
   product,
-  related,
+  crossSell,
 }: {
   hasHeroVideo: boolean;
   product: ProductDetail;
-  related: CatalogCardData[];
+  crossSell: CrossSellGroup[];
 }) {
   const root = useRef<HTMLDivElement>(null);
 
@@ -50,7 +50,7 @@ export function IpadProPage({
       </div>
       <div className={styles.heroAction}>
         <h1 className={styles.srOnly}>iPad Pro 13″ с чипом M5</h1>
-        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`}>Выбрать конфигурацию</BuyAnchor>
+        <BuyAnchor className={`${styles.buy} ${styles.heroBuy}`} hideInMobileHero>Выбрать конфигурацию</BuyAnchor>
       </div>
     </header>
 
@@ -63,6 +63,12 @@ export function IpadProPage({
     <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
       <div className="mx-auto max-w-6xl">
         <ProductSpecsTable specs={product.specs} description={product.description} />
+      </div>
+    </section>
+
+    <section className="bg-white px-4 pb-20 md:px-6">
+      <div className="mx-auto max-w-6xl">
+        <CrossSellProducts groups={crossSell} />
       </div>
     </section>
 
@@ -81,8 +87,8 @@ export function IpadProPage({
     <section className={`${styles.section} ${styles.darkSection} ${styles.split}`}>
       <div className={styles.heading} data-reveal>
         <p>Ultra Retina XDR</p>
-        <h2>Чёрный здесь —<br />действительно чёрный.</h2>
-        <p className={styles.lead}>Два слоя OLED работают в паре — отсюда высокая яркость и точный контраст. ProMotion переключается от 10 до 120 Гц, так что движение на экране не дёргается.</p>
+        <h2>Чёрный. Действительно чёрный.</h2>
+        <p className={styles.lead}>Два слоя OLED дают высокую яркость и точный контраст. ProMotion переключается от 10 до 120 Гц, так что движение на экране не дёргается.</p>
       </div>
       <figure className={`${styles.imageFrame} ${styles.displayImage}`} data-reveal>
         <Image src="/media/ipad-pro-m5/display.webp" alt="Яркое абстрактное изображение на дисплее Ultra Retina XDR" fill sizes="(max-width: 760px) 100vw, 1200px" />
@@ -123,14 +129,8 @@ export function IpadProPage({
 
     <section className={styles.closing}>
       <p>iPad Pro 13″ · M5</p>
-      <h2>Полотно теперь больше — рисуйте смелее.</h2>
+      <h2>Больше места для рисунка.</h2>
       <BuyAnchor className={styles.buy}>Выбрать конфигурацию <ArrowUpRight size={18} /></BuyAnchor>
-    </section>
-
-    <section className="bg-white px-4 pb-20 md:px-6">
-      <div className="mx-auto max-w-6xl">
-        <RelatedProducts products={related} />
-      </div>
     </section>
 
     <footer className={styles.footnote}>

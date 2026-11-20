@@ -10,10 +10,10 @@ import { refineCameraOptics } from './phone-optics';
 const studio: StudioSpec = {
   background: [0.075, 0.075, 0.08],
   softboxes: [
-    { width: 2.4, height: 6, position: [-4, 1, 3], intensity: 12, color: 0xfff7f4 },
+    { width: 2.4, height: 6, position: [-4, 1, 3], intensity: 12, color: 0xffffff },
     { width: 1, height: 6, position: [4, 1.5, 1.5], intensity: 7 },
     { width: 4, height: 1, position: [0, 5, 1], intensity: 5 },
-    { width: 1.5, height: 6, position: [1, 1, -5], intensity: 5, color: 0xeef2ff },
+    { width: 1.5, height: 6, position: [1, 1, -5], intensity: 5, color: 0xf4f6fa },
     { width: 1.5, height: 6, position: [-4, -0.2, -2], intensity: 4 },
     { width: 5, height: 4, position: [0, -3, 5], intensity: 0.8 },
     { width: 4, height: 4, position: [0, 3, 7], intensity: 1.3 },
@@ -27,6 +27,7 @@ export const iphoneConfig: DeviceConfig = {
   initialRotation: [0, Math.PI, 0],
   cameraDistance: 7.8,
   environmentIntensity: 0.85,
+  mobileToneMappingExposure: 1.32,
   keyLight: { intensity: 8, width: 1.6, height: 1.2, position: [-0.8, 1.8, 1.5] },
 
   async loadAssets(): Promise<DeviceAssets> {
@@ -61,13 +62,16 @@ export const iphoneConfig: DeviceConfig = {
     return dressPhone(ctx.model, ctx.screens, ctx.onFinishLighting);
   },
 
-  tuneLighting(index, keyLight, scene, baseEnvIntensity) {
-    // Burgundy (0) and Black (3) are darker finishes and were tuned much
-    // dimmer than Glacier/Silver (1, 2) — on phone screens that read as
-    // "barely visible". Keep them moodier than the light finishes, but not
-    // this dark.
-    keyLight.intensity = [8, 15, 14, 7.5][index] ?? 3.5;
-    scene.environmentIntensity = [0.85, 0.9, 0.9, 0.88][index] ?? baseEnvIntensity;
+  tuneLighting(index, keyLight, scene, baseEnvIntensity, compactViewport) {
+    const keyIntensity = compactViewport
+      ? [22, 20, 19, 20]
+      : [8, 15, 14, 7.5];
+    const environment = compactViewport
+      ? [1.45, 1.2, 1.2, 1.4]
+      : [0.85, 0.9, 0.9, 0.88];
+
+    keyLight.intensity = keyIntensity[index] ?? 3.5;
+    scene.environmentIntensity = environment[index] ?? baseEnvIntensity;
   },
 
   refine(model) {

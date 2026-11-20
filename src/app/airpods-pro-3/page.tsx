@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
+import { getCrossSellProducts, getProductDetailBySlug } from "@/lib/catalog";
 import { AirpodsProPage } from "./airpods-pro-page";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "AirPods Pro 3 — Di-SMART",
@@ -19,6 +19,6 @@ export const metadata: Metadata = {
 export default async function Page() {
   const product = await getProductDetailBySlug("airpods-pro-3");
   if (!product) notFound();
-  const related = await getRelatedProducts(product.categorySlug, product.id);
-  return <AirpodsProPage product={product} related={related} />;
+  const crossSell = await getCrossSellProducts(product);
+  return <AirpodsProPage product={product} crossSell={crossSell} />;
 }

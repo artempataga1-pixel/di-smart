@@ -1,6 +1,12 @@
+import { productPath } from "@/lib/product-route";
 import "server-only";
 import { cache } from "react";
+import { unstable_cache } from "next/cache";
 import { flagshipCampaigns } from "@/constants/content/flagships";
+import {
+  getPreferredCatalogProductImage,
+  isCatalogStudioImage,
+} from "@/constants/content/catalog-media";
 import { prisma } from "@/lib/prisma";
 
 /**
@@ -9,16 +15,17 @@ import { prisma } from "@/lib/prisma";
  * Неизвестная новая категория получит штатный пустой asset-slot, а не 404.
  */
 const CATEGORY_IMAGES: Readonly<Record<string, string>> = {
+  "apple-devices": "/media/storefront/categories/apple-devices.webp",
   airpods: "/media/storefront/categories/airpods.webp",
   cables: "/media/storefront/categories/cables.webp",
   cases: "/media/storefront/categories/cases.webp",
   chargers: "/media/storefront/categories/chargers.webp",
   ipad: "/media/storefront/categories/ipad.webp",
-  iphone: "/media/storefront/categories/iphone.webp",
+  iphone: "/media/storefront/categories/iphone-2026.webp",
   laptops: "/media/storefront/categories/laptops.webp",
   macbook: "/media/storefront/categories/macbook.webp",
   "samsung-audio": "/media/storefront/categories/samsung-audio.webp",
-  "samsung-smartphones": "/media/galaxy-s26-ultra/photos/hero-photo.webp",
+  "samsung-smartphones": "/media/storefront/categories/samsung-family-2026.webp",
   "samsung-tablets": "/media/storefront/categories/samsung-tablets.webp",
   stylus: "/media/storefront/categories/stylus.webp",
   watch: "/media/storefront/categories/watch.webp",
@@ -27,7 +34,7 @@ const CATEGORY_IMAGES: Readonly<Record<string, string>> = {
 
 const FLAGSHIP_SLUGS = flagshipCampaigns.map((campaign) => campaign.slug);
 
-export const getStorefront = cache(async () => {
+const getStorefrontCached = unstable_cache(async () => {
   const categories = await prisma.category.findMany({
     where: { isActive: true, brand: { isActive: true } },
     orderBy: [{ brand: { sortOrder: "asc" } }, { sortOrder: "asc" }],
@@ -44,6 +51,11 @@ export const getStorefront = cache(async () => {
           shortDescription: true,
           isFlagship: true,
           canonicalPath: true,
+          images: {
+            where: { isMain: true },
+            take: 1,
+            select: { url: true },
+          },
         },
       },
     },
@@ -52,17 +64,25 @@ export const getStorefront = cache(async () => {
     slug: category.slug,
     name: category.name,
     image: CATEGORY_IMAGES[category.slug] ?? null,
-    products: category.products.map((product) => ({
-      id: product.id,
-      slug: product.slug,
-      name: product.name,
-      subtitle: product.shortDescription,
-      isFlagship: product.isFlagship,
-      href: product.canonicalPath || `/product/${product.slug}`,
-      image: null,
-    })),
+    products: category.products.map((product) => {
+      const catalogImage = getPreferredCatalogProductImage(product.slug, product.images[0]?.url);
+      return {
+        id: product.id,
+        slug: product.slug,
+        name: product.name,
+        subtitle: product.shortDescription,
+        isFlagship: product.isFlagship,
+        href: productPath(product.slug, product.canonicalPath),
+        image: isCatalogStudioImage(catalogImage) ? catalogImage : null,
+      };
+    }),
   }));
+}, ["storefront-home-v6"], {
+  revalidate: 300,
+  tags: ["storefront-catalog"],
 });
+
+export const getStorefront = cache(getStorefrontCached);
 
 export function getHeroMedia() {
   return {

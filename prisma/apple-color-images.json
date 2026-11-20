@@ -1,0 +1,91 @@
+{
+  "iphone-17e": {
+    "Нежно-розовый": "/media/catalog/products/iphone-17e.webp",
+    "Чёрный": "/media/apple-color-variants/iphone-17e/black.webp",
+    "Белый": "/media/apple-color-variants/iphone-17e/white.webp"
+  },
+  "iphone-17": {
+    "Дымчато-голубой": "/media/catalog/products/iphone-17.webp",
+    "Чёрный": "/media/apple-color-variants/iphone-17/black.webp",
+    "Белый": "/media/apple-color-variants/iphone-17/white.webp",
+    "Шалфейный": "/media/apple-color-variants/iphone-17/sage.webp",
+    "Лавандовый": "/media/apple-color-variants/iphone-17/lavender.webp"
+  },
+  "iphone-17-pro": {
+    "Космический оранжевый": "/media/catalog/products/iphone-17-pro.webp",
+    "Тёмно-синий": "/media/apple-color-variants/iphone-17-pro/deep-blue.webp",
+    "Серебристый": "/media/apple-color-variants/iphone-17-pro/silver.webp"
+  },
+  "iphone-17-pro-max": {
+    "Космический оранжевый": "/media/catalog/products/iphone-17-pro-max.webp",
+    "Тёмно-синий": "/media/apple-color-variants/iphone-17-pro-max/deep-blue.webp",
+    "Серебристый": "/media/apple-color-variants/iphone-17-pro-max/silver.webp"
+  },
+  "iphone-18-pro-max": {
+    "Серебристый": "/media/catalog/products/iphone-18-pro-max.webp",
+    "Чёрный": "/media/apple-color-variants/iphone-18-pro-max/black.webp",
+    "Бордовый": "/media/apple-color-variants/iphone-18-pro-max/burgundy.webp",
+    "Ледниковый": "/media/apple-color-variants/iphone-18-pro-max/glacier.webp"
+  },
+  "ipad-11": {
+    "Синий": "/media/catalog/products/ipad-11.webp",
+    "Розовый": "/media/apple-color-variants/ipad-11/pink.webp",
+    "Серебристый": "/media/apple-color-variants/ipad-11/silver.webp",
+    "Жёлтый": "/media/apple-color-variants/ipad-11/yellow.webp"
+  },
+  "ipad-air-11": {
+    "Синий": "/media/catalog/products/ipad-air-11.webp",
+    "Фиолетовый": "/media/apple-color-variants/ipad-air-11/purple.webp",
+    "Звёздный": "/media/apple-color-variants/ipad-air-11/starlight.webp",
+    "Серый космос": "/media/apple-color-variants/ipad-air-11/space-gray.webp"
+  },
+  "ipad-air-13": {
+    "Синий": "/media/catalog/products/ipad-air-13.webp",
+    "Фиолетовый": "/media/apple-color-variants/ipad-air-13/purple.webp",
+    "Звёздный": "/media/apple-color-variants/ipad-air-13/starlight.webp",
+    "Серый космос": "/media/apple-color-variants/ipad-air-13/space-gray.webp"
+  },
+  "macbook-air-13-m5": {
+    "Небесно-голубой": "/media/catalog/products/macbook-air-13-m5.webp",
+    "Полночный": "/media/apple-color-variants/macbook-air-13-m5/midnight.webp",
+    "Серебристый": "/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+    "Звёздный": "/media/apple-color-variants/macbook-air-13-m5/starlight.webp"
+  },
+  "macbook-air-15-m5": {
+    "Небесно-голубой": "/media/catalog/products/macbook-air-15-m5.webp",
+    "Полночный": "/media/apple-color-variants/macbook-air-15-m5/midnight.webp",
+    "Серебристый": "/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+    "Звёздный": "/media/apple-color-variants/macbook-air-15-m5/starlight.webp"
+  },
+  "watch-se-3": {
+    "Звёздный / Starlight Sport Band": "/media/catalog/products/watch-se-3.webp",
+    "Полночный / Midnight Sport Band": "/media/apple-color-variants/watch-se-3/midnight-midnight-band.webp"
+  },
+  "watch-series-11": {
+    "Серебристый / Pur Fog Sport Band": "/media/catalog/products/watch-series-11.webp",
+    "Космический серый / Black Sport Band": "/media/apple-color-variants/watch-series-11/space-gray-black-band.webp",
+    "Глянцевый чёрный / Black Sport Band": "/media/apple-color-variants/watch-series-11/jet-black-black-band.webp",
+    "Розово-золотой / Light Blush Sport Band": "/media/apple-color-variants/watch-series-11/rose-gold-light-blush-band.webp"
+  },
+  "watch-series-12": {
+    "Чёрный / Black Sport Band": "/media/apple-color-variants/watch-series-12/black-black-band.webp",
+    "Тёмная бронза / Olive Sport Band": "/media/apple-color-variants/watch-series-12/dark-bronze-olive-band.webp",
+    "Светло-золотой / Sand Sport Band": "/media/apple-color-variants/watch-series-12/light-gold-sand-band.webp",
+    "Космический серый / Black Sport Band": "/media/apple-color-variants/watch-series-12/space-gray-black-band.webp",
+    "Космический серый / Blue Sport Band": "/media/apple-color-variants/watch-series-12/space-gray-blue-band.webp"
+  },
+  "airpods-max": {
+    "Серебристый": "/media/catalog/products/airpods-max.webp",
+    "Зелёный": "/media/apple-color-variants/airpods-max/green.webp",
+    "Полночный": "/media/apple-color-variants/airpods-max/midnight.webp",
+    "Розовый": "/media/apple-color-variants/airpods-max/pink.webp",
+    "Синий": "/media/apple-color-variants/airpods-max/blue.webp"
+  },
+  "airpods-max-2": {
+    "Звёздный": "/media/catalog/products/airpods-max-2.webp",
+    "Полночный": "/media/apple-color-variants/airpods-max-2/midnight.webp",
+    "Фиолетовый": "/media/apple-color-variants/airpods-max-2/purple.webp",
+    "Синий": "/media/apple-color-variants/airpods-max-2/blue.webp",
+    "Космический оранжевый": "/media/apple-color-variants/airpods-max-2/orange.webp"
+  }
+}

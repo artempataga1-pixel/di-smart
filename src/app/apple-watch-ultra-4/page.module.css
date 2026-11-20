@@ -44,8 +44,8 @@
 .page [data-reveal].visible { opacity:1; transform:none; }
 .page :is(.alpineCopy,.oceanCopy).visible { transform:translateY(-50%); }
 @media (max-width:800px) {
-  .hero { height:56svh; min-height:420px; aspect-ratio:auto; }
-  .heroPoster,.hero video { object-fit:contain; object-position:center; }
+  .hero { height:auto; min-height:0; aspect-ratio:1470/630; }
+  .heroPoster,.hero video { object-fit:cover; object-position:center; }
   .intelligence,.endurance { padding-left:20px; padding-right:20px; }
   .alpine,.ocean { min-height:700px; margin:52px 10px; border-radius:30px; }
   .alpine>img { object-position:64% center; }

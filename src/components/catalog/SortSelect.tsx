@@ -21,7 +21,7 @@ export function SortSelect({
       value={value}
       onChange={(e) => onChange(e.target.value as CatalogSort)}
       aria-label="Сортировка"
-      className="rounded-full border border-[var(--color-line)] bg-[var(--color-surface)] px-4 py-2.5 text-sm text-[var(--color-text)] focus:border-[var(--color-accent)] focus:outline-none"
+      className="w-full rounded-full border border-[var(--color-line)] bg-[var(--color-surface)] px-4 py-2.5 text-sm text-[var(--color-text)] focus:border-[var(--color-accent)] focus:outline-none sm:w-auto"
     >
       {OPTIONS.map((option) => (
         <option key={option.value} value={option.value}>

@@ -36,6 +36,7 @@ export function PillCta({
   return (
     <Link
       href={href}
+      prefetch={href.startsWith("/")}
       target={target}
       rel={rel}
       className={cn(

@@ -1,0 +1,4075 @@
+{
+  "deployment": "dpl_HoCmhEv7mqHU247QdMNefxVCsDnV",
+  "recoveredAt": "2026-10-06T07:48:58.199Z",
+  "source": "Vercel original deployment files",
+  "total": 809,
+  "verified": 809,
+  "bytes": 205732617,
+  "errors": [],
+  "files": [
+    {
+      "path": "package.json",
+      "sha1": "7109996b3b17fb9e6bade07f1906bde1f9258f8e",
+      "bytes": 2020
+    },
+    {
+      "path": "postcss.config.mjs",
+      "sha1": "8f8be689e9af58f80351df6e6b551146822f42a4",
+      "bytes": 94
+    },
+    {
+      "path": ".vercelignore",
+      "sha1": "df868e0e1202bc93f812d1eb628d8c9b19eda538",
+      "bytes": 297
+    },
+    {
+      "path": "eslint.config.mjs",
+      "sha1": "6e852022c16c719551602a7fd3b0d64f4e380537",
+      "bytes": 474
+    },
+    {
+      "path": "next.config.ts",
+      "sha1": "7d1f69ca997dfbcddeb8c67393f6675f124ea710",
+      "bytes": 1786
+    },
+    {
+      "path": "prisma.config.ts",
+      "sha1": "afc62f647d20359e006512be099ae2d46a620513",
+      "bytes": 465
+    },
+    {
+      "path": "package-lock.json",
+      "sha1": "472ee294de6c5a52f90d9cc643733a7ef07fa704",
+      "bytes": 322394
+    },
+    {
+      "path": "prisma/apple-color-images.json",
+      "sha1": "4ffd0d026fa5b6c42db45fca0c6bfa047f3ff99e",
+      "bytes": 5629
+    },
+    {
+      "path": "prisma/client-samsung-assortment.ts",
+      "sha1": "7e89b145ae28a99bac6327a3c73932a3f03bb330",
+      "bytes": 5246
+    },
+    {
+      "path": "prisma/catalog-spec-additions.ts",
+      "sha1": "a907c219a95dc11795f64d4bd9208632f408a80f",
+      "bytes": 4277
+    },
+    {
+      "path": "prisma/migrations/20260906043335_init/migration.sql",
+      "sha1": "e0ff2c4624b0b1be82d1e94876ab3456ffc4eb9e",
+      "bytes": 9728
+    },
+    {
+      "path": "prisma/migrations/20260906103735_order_item_color_snapshot/migration.sql",
+      "sha1": "ccd1a7c30399c05dc771496f770691da26d7729c",
+      "bytes": 80
+    },
+    {
+      "path": "prisma/migrations/20260906151921_product_variant_attribute_selection/migration.sql",
+      "sha1": "1477a6bfbab51485ef5b7b7bd72cfc30aef32459",
+      "bytes": 743
+    },
+    {
+      "path": "prisma/migrations/20260915170000_xiaomi_categories/migration.sql",
+      "sha1": "3abbb3b6d021bf8853e9b74990c6349980466fa0",
+      "bytes": 1248
+    },
+    {
+      "path": "prisma/migrations/20260915171000_category_brand_order/migration.sql",
+      "sha1": "75dbafce375de3e3ea2c609b086430f49ea2a0b3",
+      "bytes": 204
+    },
+    {
+      "path": "prisma/migrations/20260922123000_product_brand/migration.sql",
+      "sha1": "8d3bf321eff6733eea07e090ae43376631260336",
+      "bytes": 765
+    },
+    {
+      "path": "prisma/migrations/migration_lock.toml",
+      "sha1": "7abbf1b5bc2ed90d381336ef493ef3a44c488e3d",
+      "bytes": 128
+    },
+    {
+      "path": "prisma/migrations/20260925120000_exact_byn_prices/migration.sql",
+      "sha1": "6c8928df1c682b61d4247fb19b2394fa171fa6f2",
+      "bytes": 1818
+    },
+    {
+      "path": "prisma/mysql/migrations/20261001060000_initial/migration.sql",
+      "sha1": "5326241fcee07a0d8de2de94eff101dd5ae4e1d7",
+      "bytes": 11622
+    },
+    {
+      "path": "prisma/migrations/20260929120000_order_legal_acknowledgment/migration.sql",
+      "sha1": "ebf7389d666b5a60d444dec10dce1494612ee53f",
+      "bytes": 60
+    },
+    {
+      "path": "prisma/mysql/migrations/migration_lock.toml",
+      "sha1": "a29a846d58564b5cbaafdeeefabbbb8323013345",
+      "bytes": 19
+    },
+    {
+      "path": "prisma/mysql/schema.prisma",
+      "sha1": "3cd722f0e29ec8e95c959b74498019ef9ed04bbc",
+      "bytes": 11396
+    },
+    {
+      "path": "prisma/samsung-color-images.json",
+      "sha1": "ccf0c05a1935db3da77d72c8db86f713936ec3b3",
+      "bytes": 7354
+    },
+    {
+      "path": "prisma/schema.prisma",
+      "sha1": "bd8656d51f9e585f40d56e0576e4266b7368fd94",
+      "bytes": 11164
+    },
+    {
+      "path": "prisma/sync-client-samsung.ts",
+      "sha1": "1a1fef6508b090975dc8d4142cd5d96a649d312f",
+      "bytes": 8751
+    },
+    {
+      "path": "prisma/sync-samsung-color-images.ts",
+      "sha1": "c2541ffb135129a79a2a75d68417ff8bbefd562d",
+      "bytes": 2532
+    },
+    {
+      "path": "prisma/seed.ts",
+      "sha1": "e49d9f946720bfb1855e4ee1bd7762788198056e",
+      "bytes": 132337
+    },
+    {
+      "path": "public/images/iphone.webp",
+      "sha1": "24856aecebe38e80805485bfd6377b0a39fd0a6e",
+      "bytes": 41988
+    },
+    {
+      "path": "public/images/logo-badge-temp.png",
+      "sha1": "dced08d5a016b9f586214c9987c37f9d9a83baf8",
+      "bytes": 85959
+    },
+    {
+      "path": "public/media/airpods-pro-3/charging.webp",
+      "sha1": "650467e4b4b0c997e510065513cbac1799dfb5da",
+      "bytes": 60494
+    },
+    {
+      "path": "public/media/airpods-pro-3/design.webp",
+      "sha1": "f6761368281a53e39f1b847f9b5c60e4ae58fbc5",
+      "bytes": 45278
+    },
+    {
+      "path": "public/media/airpods-pro-3/fitness-natural.webp",
+      "sha1": "1ed1f9f1a799d476a186df697edea91fe9fffaae",
+      "bytes": 186128
+    },
+    {
+      "path": "public/media/airpods-pro-3/hero-poster.webp",
+      "sha1": "bc2f9be780a564cf8d7e338f66929771a8f128d9",
+      "bytes": 35608
+    },
+    {
+      "path": "public/media/airpods-pro-3/silence-natural.webp",
+      "sha1": "3a635c6e71bbe4bdf36508f1f50bd7522af64fe3",
+      "bytes": 167706
+    },
+    {
+      "path": "public/media/apple-color-variants/airpods-max-2/blue.webp",
+      "sha1": "101c9271717dc7adb14aeef979c2c1bf33f40904",
+      "bytes": 201728
+    },
+    {
+      "path": "public/media/apple-color-variants/airpods-max-2/midnight.webp",
+      "sha1": "fd16c23bf885119362e7ed090c8ed005c7931936",
+      "bytes": 164748
+    },
+    {
+      "path": "public/media/apple-color-variants/airpods-max-2/orange.webp",
+      "sha1": "5655b3a78d016d1fe5c832e6d6a9c6ef8a0ecfbd",
+      "bytes": 225124
+    },
+    {
+      "path": "public/media/airpods-pro-3/hero.m4v",
+      "sha1": "7a14f37b9223b9a74a84a945d02ecf75d02e0990",
+      "bytes": 776953
+    },
+    {
+      "path": "public/media/apple-color-variants/airpods-max-2/purple.webp",
+      "sha1": "fa36684827759146c06e019c1f4d96a3bca182ce",
+      "bytes": 207550
+    },
+    {
+      "path": "public/media/airpods-pro-3/hero.mov",
+      "sha1": "474bd78564437b04b55edf7e511162650fa6d0e5",
+      "bytes": 777213
+    },
+    {
+      "path": "public/media/apple-color-variants/airpods-max/blue.webp",
+      "sha1": "b1bbdc2f6658660564fdf28f66a5ffee55d0d074",
+      "bytes": 219764
+    },
+    {
+      "path": "public/media/apple-color-variants/airpods-max/green.webp",
+      "sha1": "e9afd8291cc220883d46d7c8ca902ed012a877ac",
+      "bytes": 230794
+    },
+    {
+      "path": "public/media/apple-color-variants/airpods-max/midnight.webp",
+      "sha1": "3af4213cb9722ac1f2a3290da9b0b73bfa2187e4",
+      "bytes": 185018
+    },
+    {
+      "path": "public/media/apple-color-variants/airpods-max/pink.webp",
+      "sha1": "36dfadeb6ecd629b6373d1efa80b6738605be7fa",
+      "bytes": 209762
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-11/pink.webp",
+      "sha1": "6aa4dba5c9d17278d58a3ed820ccba4ef8258e8a",
+      "bytes": 82628
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-11/silver.webp",
+      "sha1": "429506bbd6873ae9eb116bcea10f07204f6bed47",
+      "bytes": 78294
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-11/yellow.webp",
+      "sha1": "21b1a2dab599b7174014912307b0c5ce519d6cce",
+      "bytes": 83440
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-air-11/purple.webp",
+      "sha1": "83b84cf3aaf397ec28eeca80a540a7433560e3b7",
+      "bytes": 116940
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-air-11/space-gray.webp",
+      "sha1": "5cee135553c42ceaf101ccb5b7ce9ede5b85c0c4",
+      "bytes": 116970
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-air-11/starlight.webp",
+      "sha1": "cffa29ad6c01e3d28693add397aef30ec95494aa",
+      "bytes": 113876
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-air-13/purple.webp",
+      "sha1": "3dc156c361d455b529be949516649c5fc3928176",
+      "bytes": 129266
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-air-13/space-gray.webp",
+      "sha1": "721607c03f712e2cab26d3be78888be32efc5f7b",
+      "bytes": 125116
+    },
+    {
+      "path": "public/media/apple-color-variants/ipad-air-13/starlight.webp",
+      "sha1": "1ceb579bccee8be62706a8203893781786a37c9b",
+      "bytes": 127304
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17-pro-max/silver.webp",
+      "sha1": "75b25ccc97ace18d51a5168a0a26f76284d33601",
+      "bytes": 95232
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17-pro-max/deep-blue.webp",
+      "sha1": "b9d8a6525a9f4c8256aa21757140451d823bcfbd",
+      "bytes": 100586
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17-pro/silver.webp",
+      "sha1": "d8a7a8f931fabfb90dc92a536b9f0b53c061eaae",
+      "bytes": 103972
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17-pro/deep-blue.webp",
+      "sha1": "fca4f7ab7e5bfacb4b5f38ea0a0bfb925bd6166a",
+      "bytes": 103566
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17/black.webp",
+      "sha1": "000f000e427f1b43bfa206b45b17818f436223af",
+      "bytes": 73596
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17/lavender.webp",
+      "sha1": "e8b201cfe413c05d8b49fe8c17434b8f8e38d949",
+      "bytes": 80142
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17/white.webp",
+      "sha1": "0a85b394cffc2e76d42c8f77fec9279b81864d64",
+      "bytes": 73692
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17/sage.webp",
+      "sha1": "3058af6ad82d69fea2bcc85aa7ea0020d2c37545",
+      "bytes": 77306
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17e/white.webp",
+      "sha1": "d03182d90dcf91421fa096dd91cde320463b6065",
+      "bytes": 80610
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-17e/black.webp",
+      "sha1": "473e129231b7bd640798b80c35696d321ad2b250",
+      "bytes": 85568
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-18-pro-max/black.webp",
+      "sha1": "aa0af053768a404b430bc076b65167a76b0174fd",
+      "bytes": 67380
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-18-pro-max/burgundy.webp",
+      "sha1": "c457458a8833d996021b8166f79cecc84875b5ca",
+      "bytes": 69438
+    },
+    {
+      "path": "public/media/apple-color-variants/macbook-air-13-m5/midnight.webp",
+      "sha1": "b8a41373e53036d09bf53e74d316616325304e0f",
+      "bytes": 147180
+    },
+    {
+      "path": "public/media/apple-color-variants/iphone-18-pro-max/glacier.webp",
+      "sha1": "4e7c15a11bdadb4929083dc22cabfb2222c90e86",
+      "bytes": 73162
+    },
+    {
+      "path": "public/media/apple-color-variants/macbook-air-13-m5/silver.webp",
+      "sha1": "b8bfa37697a278a0313b6879c0a5dad174547b60",
+      "bytes": 144836
+    },
+    {
+      "path": "public/media/apple-color-variants/macbook-air-13-m5/starlight.webp",
+      "sha1": "69ced9ddc6fd957023c17318ee5b13e60d0244d7",
+      "bytes": 143772
+    },
+    {
+      "path": "public/media/apple-color-variants/macbook-air-15-m5/midnight.webp",
+      "sha1": "43bb1ab0a5858ec6e524deab46b03ff8ffcf7015",
+      "bytes": 131388
+    },
+    {
+      "path": "public/media/apple-color-variants/macbook-air-15-m5/silver.webp",
+      "sha1": "1fb6220abfaaf8e5eb18697cf0dc776dd9e488c8",
+      "bytes": 132132
+    },
+    {
+      "path": "public/media/apple-color-variants/macbook-air-15-m5/starlight.webp",
+      "sha1": "ea25444332c595706ef11eba5ea9383f6f36256a",
+      "bytes": 132294
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-se-3/midnight-midnight-band.webp",
+      "sha1": "3f5e79aa6e9fdf3fd17de6f58768502de4522e01",
+      "bytes": 65660
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-series-11/jet-black-black-band.webp",
+      "sha1": "2a88ccac297441aa7ce1a556bd9ccf1d75bc5d18",
+      "bytes": 79378
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-series-11/rose-gold-light-blush-band.webp",
+      "sha1": "b69c800ccbe1809b7416c1c2ebfed83f64b673c9",
+      "bytes": 82638
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-series-11/space-gray-black-band.webp",
+      "sha1": "5b1039a8be7916693392f130598183f816404166",
+      "bytes": 83004
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-series-12/black-black-band.webp",
+      "sha1": "b754a3d045d7967b8b74073394a5033c6b9b7f9f",
+      "bytes": 101060
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-series-12/dark-bronze-olive-band.webp",
+      "sha1": "d787f6302717b5bb7fb2571fc08e3c8795d85d38",
+      "bytes": 100302
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-series-12/light-gold-sand-band.webp",
+      "sha1": "5dfe2b3a5692e9f91e0ecce57738c90d63757d37",
+      "bytes": 95322
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-series-12/space-gray-black-band.webp",
+      "sha1": "a27becbdbc704e3ab3cfe83df6ca7c045b2b0306",
+      "bytes": 97918
+    },
+    {
+      "path": "public/media/apple-watch-ultra-4/alpine.webp",
+      "sha1": "90ecea9133ae444cf6e408ae428822c703c9dbdc",
+      "bytes": 178500
+    },
+    {
+      "path": "public/media/apple-color-variants/watch-series-12/space-gray-blue-band.webp",
+      "sha1": "ada2da1cf8c89297578bff81ff2fc44145c4731d",
+      "bytes": 106256
+    },
+    {
+      "path": "public/media/apple-watch-ultra-4/finish-black.webp",
+      "sha1": "212cd8b929dce2f8648703d23ecb1ee7fb0990fb",
+      "bytes": 117610
+    },
+    {
+      "path": "public/media/apple-watch-ultra-4/finish-natural.webp",
+      "sha1": "18794d077936cb7388e34a68a63b87cb582b71d3",
+      "bytes": 118434
+    },
+    {
+      "path": "public/media/apple-watch-ultra-4/hero-poster.webp",
+      "sha1": "1150d52d4ed38958f1db1484be92403834bf8853",
+      "bytes": 74040
+    },
+    {
+      "path": "public/media/catalog/products/airpods-4.webp",
+      "sha1": "c0583734126e6d4f32e88d092c4a4ed9866c702f",
+      "bytes": 35060
+    },
+    {
+      "path": "public/media/catalog/products/airpods-5-wireless.webp",
+      "sha1": "5be60265e9b8a6779046036ea27191d44c612a40",
+      "bytes": 58406
+    },
+    {
+      "path": "public/media/apple-watch-ultra-4/ocean-diver.webp",
+      "sha1": "af22cde1e45d3e927a7c4a67d6922aadc71d2db2",
+      "bytes": 164788
+    },
+    {
+      "path": "public/media/catalog/products/airpods-5.webp",
+      "sha1": "cd759aa98a21b2ef45ca6bdfdc8432e5ee559b90",
+      "bytes": 52542
+    },
+    {
+      "path": "public/media/catalog/products/airpods-max-2.webp",
+      "sha1": "e46291010ea8e5ee130a0c823a68912357be9eff",
+      "bytes": 107704
+    },
+    {
+      "path": "public/media/catalog/products/airpods-max.webp",
+      "sha1": "6b8d8b6d57ea8bc365773bb6531d6db0f50c90cd",
+      "bytes": 149240
+    },
+    {
+      "path": "public/media/catalog/products/airpods-pro-2.webp",
+      "sha1": "5d3cbd23fc8be405aaebd4f27dd5b6b1a0c3b72b",
+      "bytes": 15368
+    },
+    {
+      "path": "public/media/apple-watch-ultra-4/hero.m4v",
+      "sha1": "0fbacaa3f47c88d3c25ab8aecc28c9cc79c77548",
+      "bytes": 1380859
+    },
+    {
+      "path": "public/media/catalog/products/airpods-pro-3.webp",
+      "sha1": "3762186bd797ee624d1307b9dd056ab2b7bd1c9c",
+      "bytes": 39246
+    },
+    {
+      "path": "public/media/catalog/products/apple-20w-adapter.webp",
+      "sha1": "c93c8a98827d2ab0f39fac785f9b570b24444d54",
+      "bytes": 3344
+    },
+    {
+      "path": "public/media/apple-watch-ultra-4/hero.mov",
+      "sha1": "1537f14881c2ae35efe8c7533ea45e40dda3c285",
+      "bytes": 1381119
+    },
+    {
+      "path": "public/media/catalog/products/airpods-4.png",
+      "sha1": "b4401043300424acf83119dfdcf3328e66400f65",
+      "bytes": 1322136
+    },
+    {
+      "path": "public/media/catalog/products/apple-35w-dual-adapter.webp",
+      "sha1": "60cb3ddb4fd11ef2d24d8a6a1e88749f85a0e62e",
+      "bytes": 30714
+    },
+    {
+      "path": "public/media/catalog/products/apple-magsafe-charger.webp",
+      "sha1": "408268ce47e0cf36746bee3563084f16e88736d7",
+      "bytes": 41430
+    },
+    {
+      "path": "public/media/catalog/products/airpods-pro-3.png",
+      "sha1": "e78347ef3f79d6b3fee995bc25f6491a0286ef82",
+      "bytes": 1335890
+    },
+    {
+      "path": "public/media/catalog/products/apple-20w-adapter-2026.png",
+      "sha1": "1a34ab76b359fbbeb69300ba379ae145240522e1",
+      "bytes": 1221224
+    },
+    {
+      "path": "public/media/catalog/products/apple-pencil-2.webp",
+      "sha1": "86ba28709e9326fb197053506485a5dab0504086",
+      "bytes": 11490
+    },
+    {
+      "path": "public/media/catalog/products/apple-pencil-pro.webp",
+      "sha1": "2230168cc691204b8ea489c8cb7590844fc3151f",
+      "bytes": 10854
+    },
+    {
+      "path": "public/media/catalog/products/airpods-max.png",
+      "sha1": "3c85e609f64a68dc6abbdf938062c2d9f6a269e8",
+      "bytes": 2183817
+    },
+    {
+      "path": "public/media/catalog/products/apple-35w-dual-adapter.png",
+      "sha1": "4aa91894dae24363c2b32370586669316bdd6aba",
+      "bytes": 1244793
+    },
+    {
+      "path": "public/media/catalog/products/apple-magsafe-charger.png",
+      "sha1": "6f0dc9cb170d14de30ecd4c978b970a390ebdd13",
+      "bytes": 1353769
+    },
+    {
+      "path": "public/media/catalog/products/apple-tv-4k-3-ethernet-128.webp",
+      "sha1": "6cf22019ceff5f162ed67219d0209ea3259841e3",
+      "bytes": 54830
+    },
+    {
+      "path": "public/media/catalog/products/apple-pencil-usb-c.webp",
+      "sha1": "d125b2739f168c4345c1fa8eda78a05f868a7c2e",
+      "bytes": 21940
+    },
+    {
+      "path": "public/media/catalog/products/apple-pencil-2.png",
+      "sha1": "6069866caed323d889576ea897e9927142b3d446",
+      "bytes": 1108850
+    },
+    {
+      "path": "public/media/catalog/products/apple-tv-4k-3-wifi-64.webp",
+      "sha1": "5de1695add0c298471ca9124047ce0a2efbb6afa",
+      "bytes": 54410
+    },
+    {
+      "path": "public/media/catalog/products/apple-vision-pro-m5.webp",
+      "sha1": "75ea39941e4af92ecc43f5d83469f45faba89ed7",
+      "bytes": 85916
+    },
+    {
+      "path": "public/media/catalog/products/apple-watch-ultra-4.webp",
+      "sha1": "65673a15afd8a9980ee12a88d2f498b3ae2f4143",
+      "bytes": 92738
+    },
+    {
+      "path": "public/media/catalog/products/apple-pencil-pro.png",
+      "sha1": "991d53c4f5a87823397aae3937a2b89626cb6ed0",
+      "bytes": 1138605
+    },
+    {
+      "path": "public/media/catalog/products/cable-usbc-jack.webp",
+      "sha1": "8a47623e993dada3fb33a2b25b5da4fe51e7faf5",
+      "bytes": 36484
+    },
+    {
+      "path": "public/media/catalog/products/cable-braided-usbc.webp",
+      "sha1": "efdf1e1d59a00ee728db97363332e0f599b2de7a",
+      "bytes": 107064
+    },
+    {
+      "path": "public/media/catalog/products/apple-pencil-usb-c.png",
+      "sha1": "c2f0d4f59266373570d93a272119e03cccc13ee2",
+      "bytes": 1207582
+    },
+    {
+      "path": "public/media/catalog/products/cable-usbc-lightning.webp",
+      "sha1": "f15a7bd28c28950d16d5d32596b43301cc14eac7",
+      "bytes": 67154
+    },
+    {
+      "path": "public/media/catalog/products/cable-usbc-usbc.webp",
+      "sha1": "8a5bae7f64c6d44d525951d349a9826def5da8f1",
+      "bytes": 69874
+    },
+    {
+      "path": "public/media/catalog/products/earpods-usb-c.webp",
+      "sha1": "c82ce1ff167029fa0ae4fd0b7041524edb116104",
+      "bytes": 53640
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-a26-5g.webp",
+      "sha1": "227cd0fb7d74202899a24684c1f63e7ce62e91e5",
+      "bytes": 55284
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-a56.webp",
+      "sha1": "0d232a491dfde22b34dd9c9bc733806bbef3cac7",
+      "bytes": 48530
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-book6-pro.webp",
+      "sha1": "48287a1034bc8e6c1d8975af308a63f31052b7ff",
+      "bytes": 84652
+    },
+    {
+      "path": "public/media/catalog/products/apple-watch-ultra-4.png",
+      "sha1": "61489cf24b3c4102ce74539f27d6e9616a6490ba",
+      "bytes": 1597963
+    },
+    {
+      "path": "public/media/catalog/products/cable-usbc-lightning.png",
+      "sha1": "9d3bbe43711f027b57472e8a7bcbaca06e61db2c",
+      "bytes": 1512877
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-book6-ultra.webp",
+      "sha1": "31e65f91aa2d2a6cf47bd7fda702e5e04d5b5c36",
+      "bytes": 96502
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-book6.webp",
+      "sha1": "0993febecda6635c9c4b3d04315bc4febabd9da7",
+      "bytes": 95690
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds-fe.webp",
+      "sha1": "6f5fe40dd03482e740c7f1a188e6f2b0aa86444f",
+      "bytes": 38148
+    },
+    {
+      "path": "public/media/catalog/products/cable-usbc-usbc.png",
+      "sha1": "422870c3a7afaa9dc9bfbbcb053ceaa59eefe1b2",
+      "bytes": 1469976
+    },
+    {
+      "path": "public/media/catalog/products/earpods-usb-c.png",
+      "sha1": "1710b66743bf22c5dbc03587f5fae63a2673e7b8",
+      "bytes": 1425944
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds3-fe.webp",
+      "sha1": "2ef4d03ee3c620c38f2359da306ab53459b9da57",
+      "bytes": 65442
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-a56.png",
+      "sha1": "2e992647321955af19a7ace404e6e5970beff6e7",
+      "bytes": 1290894
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds3-pro.webp",
+      "sha1": "4dff9b5bb2a37f0430cee43a07be4de6752a6754",
+      "bytes": 63248
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds3.webp",
+      "sha1": "9cfc0590e0a867c8db1d50a9c4ac2d5fcc725232",
+      "bytes": 61264
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds4.webp",
+      "sha1": "30f8b8dcfdd404667952a79ecd7edd6e07fdc69f",
+      "bytes": 81018
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds4-pro.webp",
+      "sha1": "bce4630321e8a74ef7dada172524b3f963bc217a",
+      "bytes": 72676
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s25-case.webp",
+      "sha1": "f36efde37fcdb1882aa049a52fdc89bacc3d785e",
+      "bytes": 39890
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s25-plus.webp",
+      "sha1": "fbe18919a482b164971d5e053dfe160bfd303c0f",
+      "bytes": 45556
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds-fe.png",
+      "sha1": "61e7d2bf068309382aa056592ab0db88b650ff2f",
+      "bytes": 1372288
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s25-ultra.webp",
+      "sha1": "11eb907363c20b2b2f4f917ae743876bf9b362d9",
+      "bytes": 45248
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds3-pro.png",
+      "sha1": "3fba34c2e07403711e9a1c778213a73826208747",
+      "bytes": 1550868
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-buds3.png",
+      "sha1": "cd8ce34ce00c554aed0d41f22e27894ff669123a",
+      "bytes": 1559041
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s25.webp",
+      "sha1": "c786a983c1267504969cfaf808a184257685de55",
+      "bytes": 58460
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s26-plus.webp",
+      "sha1": "d6ebbba97426b7a362c63c357b97bb0eff2ef5f4",
+      "bytes": 77420
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s26-fe.webp",
+      "sha1": "2c77ce13cefca1590743222f3054cd84b3e0fd32",
+      "bytes": 81878
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s25-case.png",
+      "sha1": "7be4e179445d796b4072bbabdfe61ab88f51bb9d",
+      "bytes": 1410068
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s25-plus.png",
+      "sha1": "37b47b53b1ff7a3a9b3941da344ec6c4ebc3bfb9",
+      "bytes": 1348157
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s26.webp",
+      "sha1": "57db5dce32f3e37f31deef01ab6fecc9b8876332",
+      "bytes": 70958
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-a10-plus.webp",
+      "sha1": "a999aba78d95252f4dff4434acf8105d66b390e3",
+      "bytes": 51612
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-a10.webp",
+      "sha1": "12a8171a7f156f533d9b73dabdd5cc18dc2b9c6c",
+      "bytes": 46042
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s25.png",
+      "sha1": "473b28d06b968763c2fa1cbd07a39b5b8f9b38fc",
+      "bytes": 1529575
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-a11-plus.webp",
+      "sha1": "625ef0435041b178ebd5fcaa46c37cc581c727c5",
+      "bytes": 65214
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-s25-ultra.png",
+      "sha1": "33d033e7eb8aa48a1cf7851f1804b52f6a8c16cb",
+      "bytes": 1524983
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-a11.webp",
+      "sha1": "2e4ed7ec99400bcc4b6858a3b04c9a36b6fd6108",
+      "bytes": 40434
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-s10-fe-plus.webp",
+      "sha1": "f915a9f59fb28795e705e571844a9f6346d05039",
+      "bytes": 70904
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-s11-ultra.webp",
+      "sha1": "10fc9dc9462093c836971dc3ec2cb943f644976e",
+      "bytes": 49028
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-s10-fe.webp",
+      "sha1": "1bff0cbf65cabcbcc93c52f061b4f1c5ccacd252",
+      "bytes": 67444
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-s11.webp",
+      "sha1": "9d8cbdee45a49495c7859f13a3f3e065967b931b",
+      "bytes": 49436
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-a10-plus.png",
+      "sha1": "6f623a1e695ea32c4c406de89ecde8e72b5cf0af",
+      "bytes": 1431779
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-z-flip7.webp",
+      "sha1": "132bee338f59c62c6705e7c29e773736d698c115",
+      "bytes": 63280
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-z-flip8.webp",
+      "sha1": "2cedd2ae00bb94c215825a88dd90f85e5a6c7c47",
+      "bytes": 81838
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-a10.png",
+      "sha1": "5e953bec626cbc20dada0068f28d51de09ca4957",
+      "bytes": 1520686
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-z-fold7.webp",
+      "sha1": "ef7f7d0364435af764637fc5664adc15bdd69adf",
+      "bytes": 35302
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-z-fold8.webp",
+      "sha1": "cb9cdf2eb4510b0f18aa243c1eb7a88e330ac78e",
+      "bytes": 59210
+    },
+    {
+      "path": "public/media/catalog/products/homepod-2.webp",
+      "sha1": "f104370c54653287ef4890d9b1721a9739ebf6dc",
+      "bytes": 212334
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-s11.png",
+      "sha1": "02993d0ee95a4c46a98d6d859def883df9e61a23",
+      "bytes": 1402372
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-tab-s11-ultra.png",
+      "sha1": "8f1095d5ccf17ad6389981ac92c6632e18ad070a",
+      "bytes": 1353984
+    },
+    {
+      "path": "public/media/catalog/products/ipad-11.webp",
+      "sha1": "9a22dfdd4e81e8857752cb7c6ca8356822b46af7",
+      "bytes": 51108
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-z-flip7.png",
+      "sha1": "5d0f1fff7ee79ca5f2cac39299e7a3a73abe7c2f",
+      "bytes": 1449205
+    },
+    {
+      "path": "public/media/catalog/products/ipad-air-11.webp",
+      "sha1": "3d98961f9b3664da8a993962bd4b24a4f9d23333",
+      "bytes": 74300
+    },
+    {
+      "path": "public/media/catalog/products/galaxy-z-fold7.png",
+      "sha1": "f783338595234ffb3df1796b892e5478d447090f",
+      "bytes": 1301490
+    },
+    {
+      "path": "public/media/catalog/products/ipad-air-13.webp",
+      "sha1": "dd0073e8bd3ef27b896821b816447d0b8f128f7f",
+      "bytes": 79590
+    },
+    {
+      "path": "public/media/catalog/products/ipad-folio-case.webp",
+      "sha1": "358e2487ac1696e814c9762172e5365588481e3f",
+      "bytes": 86920
+    },
+    {
+      "path": "public/media/catalog/products/ipad-mini.webp",
+      "sha1": "e0d29d4ca3cd52a852871309df170afcc38e0c97",
+      "bytes": 67736
+    },
+    {
+      "path": "public/media/catalog/products/ipad-pro-11.webp",
+      "sha1": "b3bbab55580a8f8deb6f010146a0dbd7d68353f7",
+      "bytes": 58416
+    },
+    {
+      "path": "public/media/catalog/products/ipad-11.png",
+      "sha1": "f2b9defc22c3775c15a6d2b7a70f3eade88a95bf",
+      "bytes": 1434150
+    },
+    {
+      "path": "public/media/catalog/products/ipad-pro-13.webp",
+      "sha1": "b3eee7fc598007f5af46f4532b814adbebb673dd",
+      "bytes": 71452
+    },
+    {
+      "path": "public/media/catalog/products/iphone-14.webp",
+      "sha1": "879d6f875100bc30c614f19e03b97d31d5d62837",
+      "bytes": 54120
+    },
+    {
+      "path": "public/media/catalog/products/ipad-air-11.png",
+      "sha1": "68d0e24bb162b1a91a65ff61aca6d5f8a8e81413",
+      "bytes": 1514817
+    },
+    {
+      "path": "public/media/catalog/products/iphone-15.webp",
+      "sha1": "f6c769f40e945296fe0f42d0868d047838e1cde1",
+      "bytes": 71486
+    },
+    {
+      "path": "public/media/catalog/products/ipad-air-13.png",
+      "sha1": "2a614dcc36c1b5a8ee3d0484164690a2301494b3",
+      "bytes": 1567408
+    },
+    {
+      "path": "public/media/catalog/products/iphone-16.webp",
+      "sha1": "504e0fc2c97b6674eb9ae80d6e6fbc6b7b08819b",
+      "bytes": 59842
+    },
+    {
+      "path": "public/media/catalog/products/ipad-pro-11.png",
+      "sha1": "f391af8b55a31f81ca7a510447b084dfc9beb080",
+      "bytes": 1492355
+    },
+    {
+      "path": "public/media/catalog/products/iphone-16e.webp",
+      "sha1": "936d3afc5eb1564eb6f8951ad2cbe2c055b87b54",
+      "bytes": 47636
+    },
+    {
+      "path": "public/media/catalog/products/ipad-pro-13.png",
+      "sha1": "4673fd269fe8c9b41c5901f65e1f79cd952f20d8",
+      "bytes": 1453053
+    },
+    {
+      "path": "public/media/catalog/products/iphone-14.png",
+      "sha1": "53d908ff6bfd55d571c49fca15bed01a66dbe972",
+      "bytes": 1351199
+    },
+    {
+      "path": "public/media/catalog/products/iphone-17-pro-max.webp",
+      "sha1": "71c70493255704cac8b797dba1257d61a1f2c3fb",
+      "bytes": 66596
+    },
+    {
+      "path": "public/media/catalog/products/iphone-17-pro.webp",
+      "sha1": "24ee87b701b5ba6d16576dc0a3fe52dc370be6bd",
+      "bytes": 73506
+    },
+    {
+      "path": "public/media/catalog/products/iphone-15.png",
+      "sha1": "bd4f867442edcc43776524bb42a1f65969b8df26",
+      "bytes": 1550926
+    },
+    {
+      "path": "public/media/catalog/products/iphone-17.webp",
+      "sha1": "9c0dc59bd5585bc4204633a44440121c6b106602",
+      "bytes": 46414
+    },
+    {
+      "path": "public/media/catalog/products/iphone-16e.png",
+      "sha1": "b7d092e8cecf2e7e6b63fe470d4d7bce641ed939",
+      "bytes": 1331904
+    },
+    {
+      "path": "public/media/catalog/products/iphone-16.png",
+      "sha1": "2f991afe4dff53c69f26cd7d3fe34183dcebb38b",
+      "bytes": 1427174
+    },
+    {
+      "path": "public/media/catalog/products/iphone-17e.webp",
+      "sha1": "cee53b7439d09d2f88a42ee5efa3b68f504c871f",
+      "bytes": 58426
+    },
+    {
+      "path": "public/media/catalog/products/iphone-18-pro-case.webp",
+      "sha1": "765e5a094bcf1192538daaa9e1b9f412d265ec80",
+      "bytes": 31808
+    },
+    {
+      "path": "public/media/catalog/products/iphone-silicone-case.webp",
+      "sha1": "765e5a094bcf1192538daaa9e1b9f412d265ec80",
+      "bytes": 31808
+    },
+    {
+      "path": "public/media/catalog/products/iphone-17-pro-max.png",
+      "sha1": "9f43430d9f45c0001051c86280c74caae3d229f8",
+      "bytes": 1449575
+    },
+    {
+      "path": "public/media/catalog/products/iphone-18-pro-max.webp",
+      "sha1": "c23ff58f89e1aa85518c2f8776a289a60c135bc0",
+      "bytes": 44990
+    },
+    {
+      "path": "public/media/catalog/products/iphone-17-pro.png",
+      "sha1": "d19e044519e328f6b8f0204075edbb40510b7d48",
+      "bytes": 1486046
+    },
+    {
+      "path": "public/media/catalog/products/iphone-17.png",
+      "sha1": "3a53690c80a2e9849658557b6d5a9745046fd2fd",
+      "bytes": 1392278
+    },
+    {
+      "path": "public/media/catalog/products/iphone-18-pro.webp",
+      "sha1": "aa3165b21f5c77b9c9665383e1296df7a123685b",
+      "bytes": 45174
+    },
+    {
+      "path": "public/media/catalog/products/iphone-air.webp",
+      "sha1": "b231e4c3dfbafeb671858db398ad62e908ce9d34",
+      "bytes": 55278
+    },
+    {
+      "path": "public/media/catalog/products/iphone-silicone-case.png",
+      "sha1": "d5b4505bcc7c5eae0d17e6a252defe867958d8b2",
+      "bytes": 1244895
+    },
+    {
+      "path": "public/media/catalog/products/iphone-18-pro-case.png",
+      "sha1": "d5b4505bcc7c5eae0d17e6a252defe867958d8b2",
+      "bytes": 1244895
+    },
+    {
+      "path": "public/media/catalog/products/iphone-clear-case.webp",
+      "sha1": "f4f35f51663fe073e441056ce5c6d204d5de8be1",
+      "bytes": 64004
+    },
+    {
+      "path": "public/media/catalog/products/iphone-duo.webp",
+      "sha1": "92ddab089ad01414714614dc6d58b340edf7cbc9",
+      "bytes": 105742
+    },
+    {
+      "path": "public/media/catalog/products/macbook-air-13-m4.webp",
+      "sha1": "8e48d0682c04a03977f1a7998f1f6b0126971bf7",
+      "bytes": 81328
+    },
+    {
+      "path": "public/media/catalog/products/macbook-air-13-m5.webp",
+      "sha1": "a066ab66d86a1ec75a37806faafaeb23518f80c2",
+      "bytes": 96516
+    },
+    {
+      "path": "public/media/catalog/products/macbook-air-15-m4.webp",
+      "sha1": "877ed7ffbd22187adc3f0c560d36171b778f287c",
+      "bytes": 71240
+    },
+    {
+      "path": "public/media/catalog/products/macbook-air-15-m5.webp",
+      "sha1": "8f7b511095ae90c4d092d8b866751763a27d9155",
+      "bytes": 104680
+    },
+    {
+      "path": "public/media/catalog/products/iphone-18-pro.png",
+      "sha1": "de4a9c3f3ac1701c02a899fc958e5bb44af0bbca",
+      "bytes": 1307912
+    },
+    {
+      "path": "public/media/catalog/products/iphone-air.png",
+      "sha1": "d16911d492e6ff544bbd0ffdbacb78d7f6d236eb",
+      "bytes": 1364556
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-blush.webp",
+      "sha1": "d8b98b1fa3f7271dccde6d237c0520e380df62b4",
+      "bytes": 137604
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-blush-2026-v2.webp",
+      "sha1": "d8b98b1fa3f7271dccde6d237c0520e380df62b4",
+      "bytes": 137604
+    },
+    {
+      "path": "public/media/catalog/products/iphone-clear-case.png",
+      "sha1": "a36020c3815a45ad4975ee23c239fa9df44f4422",
+      "bytes": 1416541
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-citrus-2026-v2.webp",
+      "sha1": "ff9c83da5d992f6dce0683ba648370346c7b0128",
+      "bytes": 145372
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-citrus.webp",
+      "sha1": "ff9c83da5d992f6dce0683ba648370346c7b0128",
+      "bytes": 145372
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-indigo.webp",
+      "sha1": "d367294bd771b39ad414897e961496ee3f9d42d1",
+      "bytes": 155320
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-indigo-2026-v2.webp",
+      "sha1": "d367294bd771b39ad414897e961496ee3f9d42d1",
+      "bytes": 155320
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-silver.webp",
+      "sha1": "36610459435a6d6506768dd9b1fb1552bd970bf5",
+      "bytes": 32516
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-silver-2026-v2.webp",
+      "sha1": "e25731b357008758739cfaae074e1b95b862f622",
+      "bytes": 153988
+    },
+    {
+      "path": "public/media/catalog/products/macbook-pro-14-m5-pro.webp",
+      "sha1": "9195f29ef26436b53e1d649093ded2a90715f81b",
+      "bytes": 68326
+    },
+    {
+      "path": "public/media/catalog/products/macbook-air-15-m4.png",
+      "sha1": "2a2ff587a0a9c772483eb77612bf0f67c2096bc6",
+      "bytes": 1497176
+    },
+    {
+      "path": "public/media/catalog/products/macbook-pro-14-m5.webp",
+      "sha1": "b21c068172a8ef10c2f6a7dc4d6ddf335c362f0f",
+      "bytes": 58512
+    },
+    {
+      "path": "public/media/catalog/products/macbook-neo-2026.png",
+      "sha1": "1d3968b92795869436f3ac90d9278033a688ad05",
+      "bytes": 1456253
+    },
+    {
+      "path": "public/media/catalog/products/macbook-pro-16-m5-max.webp",
+      "sha1": "f28ba5880a34417ad0fb2bf71f731e01188d4c35",
+      "bytes": 78868
+    },
+    {
+      "path": "public/media/catalog/products/macbook-sleeve.webp",
+      "sha1": "72d7d8be7f2b42e2dadd9c488f55054b413667b6",
+      "bytes": 46604
+    },
+    {
+      "path": "public/media/catalog/products/redmi-book-14-2026.webp",
+      "sha1": "0ec13277423ec840a9296b3261aa71cb1448a06b",
+      "bytes": 105176
+    },
+    {
+      "path": "public/media/catalog/products/redmi-book-16-2026.webp",
+      "sha1": "c353d9c6fcb2f84c79a4fbfcf298d6df49e1c5e5",
+      "bytes": 87274
+    },
+    {
+      "path": "public/media/catalog/products/redmi-book-pro-14-2026.webp",
+      "sha1": "835e1bf48a5f5b552b456e1d7acdf1cda6cc9f4e",
+      "bytes": 102408
+    },
+    {
+      "path": "public/media/catalog/products/redmi-buds-8-lite.webp",
+      "sha1": "b8a59b5d19f8dbcc1e6cd1ddc4e6ab573ad3c930",
+      "bytes": 53462
+    },
+    {
+      "path": "public/media/catalog/products/redmi-book-pro-16-2026.webp",
+      "sha1": "7af886509712560bfc5e62fa95a846ab7f51ed67",
+      "bytes": 101432
+    },
+    {
+      "path": "public/media/catalog/products/redmi-buds-8-pro.webp",
+      "sha1": "78b3bcddce9b2a85cc650ea9b19e214d0dd0532b",
+      "bytes": 77630
+    },
+    {
+      "path": "public/media/catalog/products/macbook-pro-14-m5-pro.png",
+      "sha1": "6bbc3d1c9a04abfe814676fb26e176baaf5e0104",
+      "bytes": 1515060
+    },
+    {
+      "path": "public/media/catalog/products/redmi-buds-8.webp",
+      "sha1": "4951eb796e609880ee1282df826efb528ab91d93",
+      "bytes": 74340
+    },
+    {
+      "path": "public/media/catalog/products/macbook-pro-14-m5.png",
+      "sha1": "cd5f903937a0c578a9b3ca0ba05b1d89deb45c3f",
+      "bytes": 1468856
+    },
+    {
+      "path": "public/media/catalog/products/redmi-note-15-5g.webp",
+      "sha1": "99e11e4494cb7a4da8eda5ca9707e1dd32acfee5",
+      "bytes": 74128
+    },
+    {
+      "path": "public/media/catalog/products/redmi-note-15-pro-5g.webp",
+      "sha1": "c586a7dda451cdaa30d501d433b35372280314ff",
+      "bytes": 83224
+    },
+    {
+      "path": "public/media/catalog/products/redmi-note-15-pro-plus-5g.webp",
+      "sha1": "e1b2dffa123fc31fe9c0441d32b3930e1bb1e915",
+      "bytes": 100256
+    },
+    {
+      "path": "public/media/catalog/products/redmi-pad-2-pro.webp",
+      "sha1": "b8cb04b668f275c6a2f8aca958db8894ac9244f9",
+      "bytes": 78940
+    },
+    {
+      "path": "public/media/catalog/products/s-pen-pro.webp",
+      "sha1": "8e758ecdff6afc3b699f5bb2e13423e86a0f2530",
+      "bytes": 64368
+    },
+    {
+      "path": "public/media/catalog/products/samsung-25w-charger.webp",
+      "sha1": "73d54e18636ad7524a9962ec47600e45532fc1fc",
+      "bytes": 47274
+    },
+    {
+      "path": "public/media/catalog/products/macbook-sleeve.png",
+      "sha1": "147450d4cc950a4ecac15556215233fd3a3cef30",
+      "bytes": 1585008
+    },
+    {
+      "path": "public/media/catalog/products/samsung-45w-charger.webp",
+      "sha1": "a1f6b589ea8c2dae19d6473ab7813e47611a3e88",
+      "bytes": 65264
+    },
+    {
+      "path": "public/media/catalog/products/samsung-cable-usbc-usbc.webp",
+      "sha1": "105c61d3a5425ce69fbc602f9656c858435d4067",
+      "bytes": 51824
+    },
+    {
+      "path": "public/media/catalog/products/watch-hermes-series-11.webp",
+      "sha1": "04722ca8f4535ee2a256d41a38844e3e306ded3f",
+      "bytes": 74832
+    },
+    {
+      "path": "public/media/catalog/products/watch-hermes-series-12.webp",
+      "sha1": "8864c15893fe44affe823449a4ae35c07de4de43",
+      "bytes": 122974
+    },
+    {
+      "path": "public/media/catalog/products/watch-se-3.webp",
+      "sha1": "da13058f79632359ebd2f35475c70fe597eb333e",
+      "bytes": 32600
+    },
+    {
+      "path": "public/media/catalog/products/s-pen-pro.png",
+      "sha1": "9ca258feb92255e894d55326349a6ce33de87bff",
+      "bytes": 1514967
+    },
+    {
+      "path": "public/media/catalog/products/watch-series-11-cellular.webp",
+      "sha1": "a65653ca5be330b3a144268452feaf9226193e37",
+      "bytes": 52312
+    },
+    {
+      "path": "public/media/catalog/products/samsung-45w-charger.png",
+      "sha1": "04d522d0ff207d658c4ee2db5efd61e8ec85ddf0",
+      "bytes": 1596123
+    },
+    {
+      "path": "public/media/catalog/products/samsung-25w-charger.png",
+      "sha1": "478d4e5108bb13cabbe7f52a5529898c372e8455",
+      "bytes": 1503334
+    },
+    {
+      "path": "public/media/catalog/products/watch-series-11.webp",
+      "sha1": "7c950a214d8d99559c8a547e0117b4b430053cc5",
+      "bytes": 43578
+    },
+    {
+      "path": "public/media/catalog/products/watch-hermes-series-11.png",
+      "sha1": "694d3ac7967443ba5369302eb81e010497dbf1eb",
+      "bytes": 1521664
+    },
+    {
+      "path": "public/media/catalog/products/watch-series-12-cellular.webp",
+      "sha1": "6afaf497ce9a269c18a9a274b4db9a8f34cdf2d1",
+      "bytes": 75602
+    },
+    {
+      "path": "public/media/catalog/products/watch-se-3.png",
+      "sha1": "40a96fbb093bc048cdb898c4d9689da9c6d68aa1",
+      "bytes": 1284049
+    },
+    {
+      "path": "public/media/catalog/products/watch-series-12.webp",
+      "sha1": "51caaa5eeeafd290672c585679a6b0562bf166cc",
+      "bytes": 137928
+    },
+    {
+      "path": "public/media/catalog/products/watch-series-11-cellular.png",
+      "sha1": "4d9dcf904a2226319fa68e62015d0ccafbb5f8f2",
+      "bytes": 1389898
+    },
+    {
+      "path": "public/media/catalog/products/watch-ultra-3-v2.webp",
+      "sha1": "9545f9a676c558af430f6fecc1ff0958f9efac80",
+      "bytes": 151314
+    },
+    {
+      "path": "public/media/catalog/products/watch-ultra-3.webp",
+      "sha1": "9545f9a676c558af430f6fecc1ff0958f9efac80",
+      "bytes": 151314
+    },
+    {
+      "path": "public/media/catalog/products/watch-series-11.png",
+      "sha1": "920eef3f60a94ed3da53562532c19a89da0d608f",
+      "bytes": 1362284
+    },
+    {
+      "path": "public/media/catalog/products/xiaomi-17-ultra.webp",
+      "sha1": "7a457908072b39ea99aead2ac1ef695da7672892",
+      "bytes": 95140
+    },
+    {
+      "path": "public/media/catalog/products/xiaomi-17.webp",
+      "sha1": "b33ccaf47e2fb282ef97a31074ed84deb7eeb42a",
+      "bytes": 71448
+    },
+    {
+      "path": "public/media/catalog/products/xiaomi-17t-pro.webp",
+      "sha1": "fadeca7af24be508c658cc3cc3708601e2a844df",
+      "bytes": 75778
+    },
+    {
+      "path": "public/media/catalog/products/xiaomi-book-pro-14.webp",
+      "sha1": "7c31e291d2073d5e9b4d882c8c3b20b93ab06631",
+      "bytes": 51580
+    },
+    {
+      "path": "public/media/catalog/products/xiaomi-17t.webp",
+      "sha1": "8e207f70d28d1667aef005e1e321da7dc46a9f9a",
+      "bytes": 70546
+    },
+    {
+      "path": "public/media/catalog/products/xiaomi-pad-8-pro.webp",
+      "sha1": "b763433ebcda9583ed5f2ad2b01902f603e8dec2",
+      "bytes": 67504
+    },
+    {
+      "path": "public/media/catalog/products/xiaomi-pad-8.webp",
+      "sha1": "ab8822cb894318760569b8bf6c2411249cfeec03",
+      "bytes": 45128
+    },
+    {
+      "path": "public/media/catalog/samsung-client/watch-ultra-2025.webp",
+      "sha1": "0fdf44a87cbdc0237bf266e1495c96a13a06e3f1",
+      "bytes": 19028
+    },
+    {
+      "path": "public/media/catalog/products/xiaomi-pad-mini.webp",
+      "sha1": "119ede4800b16de772e68c438cfe04381d4b7e85",
+      "bytes": 79640
+    },
+    {
+      "path": "public/media/catalog/samsung-client/watch-ultra-2.webp",
+      "sha1": "cfef60d0b2f88380ab0b77ef78c844d0e7de0ab8",
+      "bytes": 17810
+    },
+    {
+      "path": "public/media/catalog/samsung-client/watch8-40.webp",
+      "sha1": "b2d9a08bdfd2fa480c1e154af4ebd3c4f6fdfa55",
+      "bytes": 7578
+    },
+    {
+      "path": "public/media/catalog/samsung-client/watch8-44.webp",
+      "sha1": "c0e3308654b4b6ef8933e54fb87f71d476aa1a6f",
+      "bytes": 7854
+    },
+    {
+      "path": "public/media/catalog/samsung-client/watch9-40.webp",
+      "sha1": "947911cffe895c8d57e68eb3a0addeff70f1a8ef",
+      "bytes": 27772
+    },
+    {
+      "path": "public/media/catalog/samsung-client/watch8-classic.webp",
+      "sha1": "db8fd77e61a85c1322730d11fa6ef26576fd5e47",
+      "bytes": 15080
+    },
+    {
+      "path": "public/media/catalog/products/watch-ultra-3-v2.png",
+      "sha1": "2ceb5a8f0c6e0a75db4dec90ed73d744b734a224",
+      "bytes": 1887761
+    },
+    {
+      "path": "public/media/catalog/samsung-client/watch9-44.webp",
+      "sha1": "3637e1c9533038e997e2b45848c77ba6938cc1b9",
+      "bytes": 29732
+    },
+    {
+      "path": "public/media/catalog/products/watch-ultra-3.png",
+      "sha1": "2ceb5a8f0c6e0a75db4dec90ed73d744b734a224",
+      "bytes": 1887761
+    },
+    {
+      "path": "public/media/flagship-colors/galaxy-s26-ultra/black.webp",
+      "sha1": "2c693353e9417f9c21fc13c056dced9d82b9e120",
+      "bytes": 39744
+    },
+    {
+      "path": "public/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp",
+      "sha1": "a363bdbd8a8f40f56b7a8f956cc1c20638e9f012",
+      "bytes": 47976
+    },
+    {
+      "path": "public/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp",
+      "sha1": "6c4e96e948a7ace4edb7ae9d2c2d51e307e5173d",
+      "bytes": 47794
+    },
+    {
+      "path": "public/media/flagship-colors/iphone-18-pro/black.webp",
+      "sha1": "2c96d8d9375c1608b255b2b446a62279b1bebb61",
+      "bytes": 24220
+    },
+    {
+      "path": "public/media/flagship-colors/iphone-18-pro/burgundy.webp",
+      "sha1": "168bb55d383b61826b6d9f290357387dc7ec9d8a",
+      "bytes": 23216
+    },
+    {
+      "path": "public/media/flagship-colors/iphone-18-pro/glacier.webp",
+      "sha1": "0f09f740d944c76578c677f8b1dd420e59dd5b09",
+      "bytes": 25272
+    },
+    {
+      "path": "public/media/flagship-colors/iphone-18-pro/silver.webp",
+      "sha1": "939fda092a6d07dbb6a8adbb90e6424d1cf3e22a",
+      "bytes": 23530
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/photos/ai-day-photo.webp",
+      "sha1": "20efdae7936c4015876fd206a80282c48d688b38",
+      "bytes": 116706
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/photos/ai-edit-photo.webp",
+      "sha1": "3128ecd92b5e88f3cb1a09b7eabda2a14840a385",
+      "bytes": 257082
+    },
+    {
+      "path": "public/media/galaxy-s25-ultra/model/galaxy-geometry.glb",
+      "sha1": "d87f878b5438d14f53c31b317b35e71859995edf",
+      "bytes": 1727008
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/photos/camera-photo.webp",
+      "sha1": "df568836a50034f99a048d7d98a2631175755072",
+      "bytes": 142924
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/photos/ai-search-photo.webp",
+      "sha1": "4a41bd8d307da217e6659c02f22f9d4a799658b3",
+      "bytes": 462618
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/photos/display-photo.webp",
+      "sha1": "0ce7808dcbee6056c874f789d6c198c0a1159520",
+      "bytes": 124348
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/photos/hero-photo.webp",
+      "sha1": "df166b01834be2f6e38a64e4d4bd09bdaf09db42",
+      "bytes": 70876
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/photos/spen-photo.webp",
+      "sha1": "7f17b547954b2b477c40076385cd7ccb0e8643a0",
+      "bytes": 186092
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/photos/performance-photo.webp",
+      "sha1": "3d9152190d46a802755774d0b08617ef1683ff62",
+      "bytes": 215336
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/video/poster.webp",
+      "sha1": "a9434c7419da4aea6a8b8c44e0bf72e28463721d",
+      "bytes": 42988
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/video/poster-wide.webp",
+      "sha1": "ff215d66df0913e44295334cfa4f533410d0052e",
+      "bytes": 34238
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/hero.png",
+      "sha1": "3bdb31433b72091ecb7c394b9472794dcd049192",
+      "bytes": 1570153
+    },
+    {
+      "path": "public/media/galaxy-tab-s11-ultra/design-gray.jpg",
+      "sha1": "22ae797f8efad96c1f95651e84c11cc1227d8e1b",
+      "bytes": 222111
+    },
+    {
+      "path": "public/media/galaxy-tab-s11-ultra/design-silver.jpg",
+      "sha1": "54e54b7ceadcaae643e2418d731900763fb356aa",
+      "bytes": 225677
+    },
+    {
+      "path": "public/media/galaxy-tab-s11-ultra/create-real.jpg",
+      "sha1": "f766faa882d9d41fef35c02a4abb5923fce6db5b",
+      "bytes": 262335
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/camera.png",
+      "sha1": "c68aeb87a94bb7f901253c762a1c3655e334f266",
+      "bytes": 1956853
+    },
+    {
+      "path": "public/media/galaxy-tab-s11-ultra/hero-poster.jpg",
+      "sha1": "5922ceface6bd24728e42736c1f82877d409d869",
+      "bytes": 147985
+    },
+    {
+      "path": "public/media/ipad-pro-m5/color-silver-studio.webp",
+      "sha1": "f40f2da134c678b788f28b0f547306b7ecd51ff7",
+      "bytes": 173754
+    },
+    {
+      "path": "public/media/galaxy-tab-s11-ultra/dex-real.jpg",
+      "sha1": "6054f92c2e58e4cb8ad951b8958d5357fbbbb5e2",
+      "bytes": 241647
+    },
+    {
+      "path": "public/media/ipad-pro-m5/color-silver.webp",
+      "sha1": "f40f2da134c678b788f28b0f547306b7ecd51ff7",
+      "bytes": 173754
+    },
+    {
+      "path": "public/media/ipad-pro-m5/color-space-black-studio.webp",
+      "sha1": "833c0b806438d54643866a266cd36dab8c351e44",
+      "bytes": 126062
+    },
+    {
+      "path": "public/media/ipad-pro-m5/color-space-black.webp",
+      "sha1": "833c0b806438d54643866a266cd36dab8c351e44",
+      "bytes": 126062
+    },
+    {
+      "path": "public/media/ipad-pro-m5/display.webp",
+      "sha1": "11b3e2310c33b8662efab9097bf73c401d61a5eb",
+      "bytes": 126470
+    },
+    {
+      "path": "public/media/ipad-pro-m5/hero-poster.webp",
+      "sha1": "be9e16c626b0af6125b84713b84327d385d7a3d9",
+      "bytes": 64568
+    },
+    {
+      "path": "public/media/ipad-pro-m5/hero-preview.webp",
+      "sha1": "eaaa9df0183f8d1cda75d2ffe0f4a4b669d6b741",
+      "bytes": 41134
+    },
+    {
+      "path": "public/media/ipad-pro-m5/pencil.webp",
+      "sha1": "64d87e19aafbfc0077513136f68e6298c525d82a",
+      "bytes": 110058
+    },
+    {
+      "path": "public/media/ipad-pro-m5/performance.webp",
+      "sha1": "eff252f88efb06ac7c323b029d4b80f1f287e333",
+      "bytes": 116210
+    },
+    {
+      "path": "public/media/ipad-pro-m5/thinness.webp",
+      "sha1": "e4eb50b7763e31d8bb1b15d630ee7693cada7c15",
+      "bytes": 26764
+    },
+    {
+      "path": "public/media/iphone-18-pro/apple/a20-pro.webp",
+      "sha1": "a5bdca64f6b69767590dc7a036596e6ba0b24177",
+      "bytes": 66102
+    },
+    {
+      "path": "public/media/iphone-18-pro/apple/chip.jpg",
+      "sha1": "909ab5379703d2ee997df174d7c7a02ba78744bc",
+      "bytes": 5283
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/video/hero.mp4",
+      "sha1": "b32b63a664354161ea3d20f2f02417dac0564f92",
+      "bytes": 2525940
+    },
+    {
+      "path": "public/media/galaxy-tab-s11-ultra/hero.mp4",
+      "sha1": "bff5234d6b66b8646565b3b81e8eb1a78fe71703",
+      "bytes": 1499400
+    },
+    {
+      "path": "public/media/galaxy-s26-ultra/video/hero-wide.mp4",
+      "sha1": "76d46bbe5156439136c88c2d8a7ef43da01265dd",
+      "bytes": 2812008
+    },
+    {
+      "path": "public/media/iphone-18-pro/apple/siri-ru.webp",
+      "sha1": "04e8379c0254cf97dfd742a1d83d6631c4351e80",
+      "bytes": 135926
+    },
+    {
+      "path": "public/media/iphone-18-pro/apple/playground.jpg",
+      "sha1": "3158bc355e7aacc4df40c44f6f66b7828bc04f7a",
+      "bytes": 162465
+    },
+    {
+      "path": "public/media/iphone-18-pro/apple/siri.jpg",
+      "sha1": "55f4eae91fcf3b1b8b9781a59b10d42ddecd252d",
+      "bytes": 145235
+    },
+    {
+      "path": "public/media/iphone-18-pro/apple/iphone-geometry.glb",
+      "sha1": "2330fb94da0ee2799f64234b58bd4ce4f83ec3ca",
+      "bytes": 2156292
+    },
+    {
+      "path": "public/media/ipad-pro-m5/hero.mp4",
+      "sha1": "9ac2b7e48a33ef98102b9b0c21332f38dee2cd93",
+      "bytes": 1932846
+    },
+    {
+      "path": "public/media/iphone-18-pro/hero-mobile.mp4",
+      "sha1": "ec49eab87693599ec132874184f40edf076e24db",
+      "bytes": 623594
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/battery.webp",
+      "sha1": "ff26af2bec896e187f39c11d5ef9b30d2e69cadf",
+      "bytes": 121142
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/black.webp",
+      "sha1": "c65033faabf49d37639ecb4b30175038864d161a",
+      "bytes": 18424
+    },
+    {
+      "path": "public/media/iphone-18-pro/background.png",
+      "sha1": "aad5bc9f1d962ffe64eee41af788f47513c26c6a",
+      "bytes": 1102971
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/charging.webp",
+      "sha1": "8f3dac2816a704d187a32fe62c83c10c844a35af",
+      "bytes": 67990
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/camera.webp",
+      "sha1": "90a10289f4a7dd38055e272d1a9964cb5455b96b",
+      "bytes": 84906
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/case.webp",
+      "sha1": "61f7dad466910a4fb62f2b508123abc1cc3e6139",
+      "bytes": 96358
+    },
+    {
+      "path": "public/media/iphone-18-pro/hero.mp4",
+      "sha1": "ad0b77ab1e972a2c2bd55005e6209234e7efe4e8",
+      "bytes": 656671
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/controls.webp",
+      "sha1": "e9fcc803604bf385cdc48710fba343b54ad4664f",
+      "bytes": 103314
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/cinema.webp",
+      "sha1": "7a778d34994a0002a2ad50c97ee19dc05ebff5ec",
+      "bytes": 176952
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/design-burgundy.webp",
+      "sha1": "44f96f088ddde37c815b2d73a18064cf7c14a9d4",
+      "bytes": 27686
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/ecosystem.webp",
+      "sha1": "05f6add6d64c9f5a1d16739d3385744d51685afb",
+      "bytes": 84324
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/glacier.webp",
+      "sha1": "77b8f6f6e8a6db02eeb33428a40d4efc483f33f0",
+      "bytes": 22852
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/experience.webp",
+      "sha1": "90aca4d88393ae088b9ba6ae0a017242e0e812c2",
+      "bytes": 34392
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/gaming.webp",
+      "sha1": "748a2fff074b6b0843eefe8d0839ddb2e66393cf",
+      "bytes": 115976
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/landscape.webp",
+      "sha1": "1afca2218cd9be23bfaeece92df64d6b63db8ab3",
+      "bytes": 220922
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/light.webp",
+      "sha1": "ecad8c562ad1123340cd5d34b8b82c3c8c5a2fb5",
+      "bytes": 88334
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/macro.webp",
+      "sha1": "d26da3cd8e3f7bf85aaeb449525ebb4cd1a71f9f",
+      "bytes": 95124
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/battery.webp",
+      "sha1": "dc45d2a601c11799c312496ef171e8ca93568ecc",
+      "bytes": 184708
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/black.webp",
+      "sha1": "9f22ab45a25f2ed3a5d9482e371ec88f46e2f243",
+      "bytes": 37254
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/case.webp",
+      "sha1": "7cb7b74037e6c8d4a1b8baf804d0c17409eeae8c",
+      "bytes": 57810
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/camera.webp",
+      "sha1": "a17adc2af55049cdb9340d917a188a235f53fc6e",
+      "bytes": 176570
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/controls.webp",
+      "sha1": "816604f7d7d78417e5cfb3b8a3728c588763325e",
+      "bytes": 188828
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/design-burgundy.webp",
+      "sha1": "f48a3342cb2a7269d8b8a198c6c309ee94a0caac",
+      "bytes": 45482
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/cinema.webp",
+      "sha1": "e3b24c38f54a72f0cb41977052d05b1c82355447",
+      "bytes": 272400
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/charging.webp",
+      "sha1": "546be510be04fad03567c56dc31874364ec210d2",
+      "bytes": 419614
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/experience.webp",
+      "sha1": "9c35ba925fda16d942bc28b3bb6e29af04bb54b2",
+      "bytes": 69578
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/ecosystem.webp",
+      "sha1": "d85101067fe770b6a86904f58ee8180b74aa518c",
+      "bytes": 117606
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/gaming.webp",
+      "sha1": "0a88d50404cd55c5b77afa46d8dcecd8b03367be",
+      "bytes": 104852
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/glacier.webp",
+      "sha1": "8bf07cb40b80a4a761ad4a96efa540f5b01b925c",
+      "bytes": 42372
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/light.webp",
+      "sha1": "2ef46d4ee694b71dca1daff400cf56dffbc921a1",
+      "bytes": 118564
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/macro.webp",
+      "sha1": "080c5c5f3f382fd0a078751c46a16e6a49c32428",
+      "bytes": 80420
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/performance.webp",
+      "sha1": "da467a3390856dd3b769258e643842b7e4eb1e1c",
+      "bytes": 165452
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/portrait-minsk.webp",
+      "sha1": "b2b3e51b82089ac0edac0484cc6ae8224c1a867d",
+      "bytes": 89772
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/landscape.webp",
+      "sha1": "e61da1c53dc060c7523dcb2c308d31ca0be8bd7c",
+      "bytes": 456138
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/portrait-v3.webp",
+      "sha1": "774ba85622f1d092b4ace50f8e25c85e40d88145",
+      "bytes": 161572
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/natural/silver.webp",
+      "sha1": "3eaf3b395978661e9a34b647bf5b60d08c6ec8d2",
+      "bytes": 52074
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/silver.webp",
+      "sha1": "d9c65e894959d8b53f059583fc81c30f8ea10413",
+      "bytes": 21034
+    },
+    {
+      "path": "public/media/iphone-18-pro/images/performance.webp",
+      "sha1": "0dbada0a8dacf4d3904792468552cf3a4e5a3c4b",
+      "bytes": 157378
+    },
+    {
+      "path": "public/media/iphone-18-pro/intro-start.jpg",
+      "sha1": "0d1baadb25d243889e4d08572b4c9bd3bac9226e",
+      "bytes": 127584
+    },
+    {
+      "path": "public/media/iphone-18-pro/intro-end.jpg",
+      "sha1": "47103bafccaa763d76ee5148029930dd2b07f20f",
+      "bytes": 104689
+    },
+    {
+      "path": "public/media/iphone-18-pro/poster-mobile-start.jpg",
+      "sha1": "f144d8f86d056faad6800f03135dd665c6df59a6",
+      "bytes": 103058
+    },
+    {
+      "path": "public/media/iphone-18-pro/apple/iphone-web.usdz",
+      "sha1": "917b6fb91cfcd2c3c524960191fcebea7c377877",
+      "bytes": 6162477
+    },
+    {
+      "path": "public/media/iphone-18-pro/poster-mobile.jpg",
+      "sha1": "a6b3d470949afbc82ade9617ccb83f96e55dd1e5",
+      "bytes": 61674
+    },
+    {
+      "path": "public/media/iphone-18-pro/poster-start.jpg",
+      "sha1": "75e1d0b49b6fd0faca57fd32dd27451c027ebffb",
+      "bytes": 134267
+    },
+    {
+      "path": "public/media/iphone-18-pro/poster.jpg",
+      "sha1": "07dbc6ec37628e62c6f9a19e01d62904087b58c3",
+      "bytes": 107355
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/black-editorial.webp",
+      "sha1": "d84d6e90e0227036d98a81595042bcd52d86c1ab",
+      "bytes": 161192
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/black-complete.webp",
+      "sha1": "abfb9cf3dd7103e67564f153e4cad94977eb4a38",
+      "bytes": 198028
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/black-lockscreen-v2.webp",
+      "sha1": "d6489abec70bdae0980674a88d4fbd12c26db1c4",
+      "bytes": 240908
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/black-lockscreen.webp",
+      "sha1": "001c425faab71fd37b31555d0f21d52ba3919f35",
+      "bytes": 240994
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/burgundy-editorial.webp",
+      "sha1": "1f7530fdd5eace580c8bb5ec8e59acbae8dd08f1",
+      "bytes": 201882
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/burgundy-complete.webp",
+      "sha1": "2364ba48275990a9928a392367c36dadd389f54b",
+      "bytes": 252706
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/burgundy-lockscreen-v2.webp",
+      "sha1": "bbc788c1e513694d2adeed67c729f18807e6911a",
+      "bytes": 281096
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/burgundy-lockscreen.webp",
+      "sha1": "8a2f1148a5261a69d938d2fa05a3ad73fd5eb136",
+      "bytes": 291974
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/glacier-complete.webp",
+      "sha1": "e250f7563c6c298f6b18023791e0232d60f4b0d8",
+      "bytes": 279698
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/glacier-editorial.webp",
+      "sha1": "3ec0f4e8992b97e36353f49d763b589fc6c08ff2",
+      "bytes": 211116
+    },
+    {
+      "path": "public/media/iphone-18-pro/intro.mp4",
+      "sha1": "2099bee09ee66588b1aa5897a1e5a44c6a37a03c",
+      "bytes": 1847996
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/glacier-lockscreen-v2.webp",
+      "sha1": "e5d43f6ff316a9ae1cf789149d055df65b36ff4f",
+      "bytes": 296252
+    },
+    {
+      "path": "public/media/iphone-18-pro/apple/iphone.usdz",
+      "sha1": "02a832b2dc6b6a6eba83b781c56c377aae179853",
+      "bytes": 8802910
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/silver-editorial.webp",
+      "sha1": "cb95b7567d79613692f889e9cf32ea75c1d1f09f",
+      "bytes": 217982
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/glacier-lockscreen.webp",
+      "sha1": "f8763bcce138212ee275afac860f74a572b814ea",
+      "bytes": 308772
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/silver-complete.webp",
+      "sha1": "93b4cc62ba02def58ad2526a8a30ad4d90503dda",
+      "bytes": 251694
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/3d_viewer.jpg",
+      "sha1": "ae9ca4214a7fae3976727b34ee1fdbd7cb06e85c",
+      "bytes": 62667
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/silver-lockscreen-v2.webp",
+      "sha1": "7ba4a852c37976828124c8a87609613a031da302",
+      "bytes": 325642
+    },
+    {
+      "path": "public/media/iphone-18-pro/textures/optical-glass.webp",
+      "sha1": "e7cf2ff3a135b1a42f31aa86316ac0431374cd38",
+      "bytes": 178282
+    },
+    {
+      "path": "public/media/iphone-18-pro/screens/silver-lockscreen.webp",
+      "sha1": "d8f5c9cec84810bc3ac016b1656b395d20b370a2",
+      "bytes": 325654
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/action_button-ru.jpg",
+      "sha1": "7e241bb0f775a671539125382052475f5521ed73",
+      "bytes": 87726
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/action_button.jpg",
+      "sha1": "b703bfc032c56b151109605243d096e5d18c4daa",
+      "bytes": 84175
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/color_black.jpg",
+      "sha1": "1d2b51c6d1208eba28d3bc7b4174c311cc817de7",
+      "bytes": 63020
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/camera_control.jpg",
+      "sha1": "615340665dd35b466e8d62235a8a453d6a67c530",
+      "bytes": 131427
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/color_burgundy.jpg",
+      "sha1": "bf8b0abcccde4c3299528e6bb99bc1b9fe2940ee",
+      "bytes": 85763
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/color_glacier.jpg",
+      "sha1": "eda20cbb4307917f195c7ab6f4612c176d559cb6",
+      "bytes": 99542
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/color_silver.jpg",
+      "sha1": "e10256826889ab1e8df1d20d7a5eec192d67e88a",
+      "bytes": 91542
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/durability.jpg",
+      "sha1": "37541cd199d1a57bffd3d73cffd833e47c147333",
+      "bytes": 94465
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/dynamic_island_endframe-ru.jpg",
+      "sha1": "a9a755f97c7ec64ee2c74c01502fe8e235d3aa29",
+      "bytes": 92425
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/dynamic_island_endframe.jpg",
+      "sha1": "a0220911beab23ef8229c40773fbfea04f4ba7e3",
+      "bytes": 90311
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/loader.jpg",
+      "sha1": "863732c00a7d960909e52cd1fa81986d06e682a0",
+      "bytes": 16926
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/dynamic_island_startframe.jpg",
+      "sha1": "d17add3ddbc0c76befd628233af83d391282b255",
+      "bytes": 160804
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/size-ru.jpg",
+      "sha1": "58cfbd418b06492e57af5a8bb21bcd6f21b1e40e",
+      "bytes": 135088
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/size.jpg",
+      "sha1": "a4fcadfc886088ba6bc0e0ef0cdcf8c64b645af6",
+      "bytes": 135776
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/viewer_aperture_endframe.jpg",
+      "sha1": "3679edcb8f0731b4ae6641864406a12e7cd7d822",
+      "bytes": 83065
+    },
+    {
+      "path": "public/media/macbook-pro-m5-max/color-silver.webp",
+      "sha1": "16003ebd590dc1b57c67f514a1c7fceddbfe4ffb",
+      "bytes": 112372
+    },
+    {
+      "path": "public/media/iphone-18-pro/viewer/viewer_aperture_startframe.jpg",
+      "sha1": "408865af494b77b319b865c1a4acb112709e3648",
+      "bytes": 154754
+    },
+    {
+      "path": "public/media/macbook-pro-m5-max/color-space-black.webp",
+      "sha1": "d6f6b3f40a29874a0efe75b2838e5bc3c0fb6cf8",
+      "bytes": 122614
+    },
+    {
+      "path": "public/media/macbook-pro-m5-max/design.webp",
+      "sha1": "ff95a4073f2bb09d52e2baea335ef659577f5496",
+      "bytes": 58624
+    },
+    {
+      "path": "public/media/iphone-18-pro/source.mp4",
+      "sha1": "47831e565c0394b3967252cd8c507ffcc5470f04",
+      "bytes": 2159652
+    },
+    {
+      "path": "public/media/macbook-pro-m5-max/display.webp",
+      "sha1": "8c480d2b3134f1e2386db44510114b73cb6fff78",
+      "bytes": 196354
+    },
+    {
+      "path": "public/media/macbook-pro-m5-max/hero-preview.webp",
+      "sha1": "b18a9a545455099e7269b1661ca64d35182d6ffe",
+      "bytes": 49094
+    },
+    {
+      "path": "public/media/macbook-pro-m5-max/hero-poster.webp",
+      "sha1": "ce4e3951fe082d386c64818cdaf4cbb37fa8e62a",
+      "bytes": 142374
+    },
+    {
+      "path": "public/media/macbook-pro-m5-max/performance.webp",
+      "sha1": "ead4a6d22d93a6fdc258551861b56482d5e29818",
+      "bytes": 208416
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-a26-5g/green.webp",
+      "sha1": "b3ddc84614bc9c7fdc7791aa56da87099b29db77",
+      "bytes": 44812
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-a26-5g/white.webp",
+      "sha1": "98a4413180a77309a27bb344cad7d879c16e9df3",
+      "bytes": 42286
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-a56/graphite.webp",
+      "sha1": "1576f0b29a1d9fde58785e613e307eaf856b79b2",
+      "bytes": 44694
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-a56/olive.webp",
+      "sha1": "7f964cc68eff99c1dca40881415d52bbd7b547b1",
+      "bytes": 44142
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-buds3-fe/white.webp",
+      "sha1": "e9491fb0120964053dca6e007ce59def2cc7a05e",
+      "bytes": 48036
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-a56/pink.webp",
+      "sha1": "76c30e4bfedae869b9cc9965496321ae99980802",
+      "bytes": 45700
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-buds3-pro/white.webp",
+      "sha1": "2f7d616caf39f8d5a9e00c6de7d95276fb34f44a",
+      "bytes": 43228
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-buds3/white.webp",
+      "sha1": "29bff7d6c6734f98f6431be4fd232ac4a0983212",
+      "bytes": 44104
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-buds4-pro/pink-gold.webp",
+      "sha1": "730e9631e9a48a804ce9269f6eb9272c49996562",
+      "bytes": 61060
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-buds4-pro/white.webp",
+      "sha1": "3eac1998b5d8370bf0c69ba46b21f97f2b824358",
+      "bytes": 51476
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-buds4/white.webp",
+      "sha1": "ba0822c5980880bf0f9960ae65a8735359643a6f",
+      "bytes": 60038
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s25-plus/black.webp",
+      "sha1": "678a5531a6904eddd64cc5d8ce6774df79104d70",
+      "bytes": 38524
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s25-ultra/titanium-black.webp",
+      "sha1": "8976c0a48e73d39dca9ab2e8967f6fe9ca52e307",
+      "bytes": 36222
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s25-ultra/titanium-silverblue.webp",
+      "sha1": "12576780bb0eec4eb936afe65bbaf9935e3b44ce",
+      "bytes": 40294
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s25-ultra/titanium-gray.webp",
+      "sha1": "a00922c3dcf5ccfbce9f3745f5248adc484e03b1",
+      "bytes": 43892
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s25/black.webp",
+      "sha1": "141ec08a62bf84acdd52810c1ed7b7c7edf1471c",
+      "bytes": 46190
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26-fe/blueberry.webp",
+      "sha1": "de5352a4af7f504ae662e1ad371c612b4ac86635",
+      "bytes": 51888
+    },
+    {
+      "path": "public/media/macbook-pro-m5-max/hero.mp4",
+      "sha1": "f0f35d2b0655076fbde91e3238536c2d708593db",
+      "bytes": 1769528
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s25/navy.webp",
+      "sha1": "1aa78384a5bad0125138a84514dd140c91fbe09c",
+      "bytes": 47328
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26-fe/graphite.webp",
+      "sha1": "99500bf4e718ddd12df3d5b70b04ee215f80358a",
+      "bytes": 47882
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26-fe/pistachio.webp",
+      "sha1": "4d8de2bb39d0568fc25c8f94b1feb9ee1b621130",
+      "bytes": 51288
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26-plus/cobalt-violet.webp",
+      "sha1": "21ae4dea318ff2d78c2fdaef48834df788adde32",
+      "bytes": 59940
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26-plus/sky-blue.webp",
+      "sha1": "2e989b28db7cda54178b326cd97ae05456d702db",
+      "bytes": 56026
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26/cobalt-violet.webp",
+      "sha1": "66820e96e53a53e405f7671ffcbf9f916e91d4c9",
+      "bytes": 56340
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26-plus/white.webp",
+      "sha1": "d2563492c942483abe0686c0c8041b8e45de7e04",
+      "bytes": 51804
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26/white.webp",
+      "sha1": "f269b0e0cf12ebd958ff41b0844f5dc0b863739f",
+      "bytes": 51756
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-s26/sky-blue.webp",
+      "sha1": "0b536e6e49ace7dcc579613daecec4029ecb2c2e",
+      "bytes": 55322
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-a11-plus/silver.webp",
+      "sha1": "b081eb7397b3955d44dffd271cbdf275cad44b08",
+      "bytes": 52488
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-a11/silver.webp",
+      "sha1": "83bbb6c2988a1fb0f66537f39a71e6e4424e0ca2",
+      "bytes": 43000
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-fe-plus/blue.webp",
+      "sha1": "7b654427668d087802f5f4453dd0134cfa36164d",
+      "bytes": 54976
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-fe-plus/silver.webp",
+      "sha1": "5d93d0b343c7e0d7213fe688573a2340cff4b840",
+      "bytes": 53502
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-fe/blue.webp",
+      "sha1": "addb682ff3e92e04bb32a27372619573bba67464",
+      "bytes": 53612
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-fe/silver.webp",
+      "sha1": "2c394ed206ba3b7e5257db3a4fb808654f390b5f",
+      "bytes": 51832
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-lite/coral-red.webp",
+      "sha1": "ec3b36bd03ac8e934307322b8acf3bdde97de5cd",
+      "bytes": 62170
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-lite/gray.webp",
+      "sha1": "9ec0bee188e00173a3a7c89af29d9e01608ba6b9",
+      "bytes": 55808
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-lite/silver.webp",
+      "sha1": "a4b1a7776b1e10f088e29892d967d7300410ff6d",
+      "bytes": 55474
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-plus/gray.webp",
+      "sha1": "a05017187058835babe842a75a7a5acf3be822a2",
+      "bytes": 57500
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s11-ultra/silver.webp",
+      "sha1": "fad638e9003326ee45cebbf322e9abab79f65962",
+      "bytes": 42504
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s10-plus/silver.webp",
+      "sha1": "1cb223c7e7f15838359f3a78145007fcdf1e7df3",
+      "bytes": 57234
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-tab-s11/silver.webp",
+      "sha1": "44c5bba732e5f5ec2be8ef788dd17d23fef0a6b5",
+      "bytes": 42964
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-flip7/black.webp",
+      "sha1": "de7daa25aed53c55d0e8accb7501d8bc4947d60a",
+      "bytes": 53674
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-flip7/coral-red.webp",
+      "sha1": "2a97bff06a3a6148b4e40db27a5a25cacf5ad8a4",
+      "bytes": 62714
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-flip7/mint.webp",
+      "sha1": "b2b39bddf7870bdf77af975821f4bdb4ae1d2e73",
+      "bytes": 58406
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-flip8/cream.webp",
+      "sha1": "366eafeb9c64d75c6a66af441e5c1b311785d7ef",
+      "bytes": 69282
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-flip8/pink.webp",
+      "sha1": "ac30e9fec01f00c90e62f8c5e1e012cd46e64a4d",
+      "bytes": 69554
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-fold7/blue-shadow.webp",
+      "sha1": "557d20346a70a5b2dc3ed452df882e6d3fb0399a",
+      "bytes": 36500
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-fold7/black.webp",
+      "sha1": "fc58e3f82891a9490c120ec4521dda30650b8c6e",
+      "bytes": 30838
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-flip8/mint.webp",
+      "sha1": "9414debc688807cc061b8dadc38dd7f21528da89",
+      "bytes": 69118
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-fold7/mint.webp",
+      "sha1": "daf7fa2f31a790a4244271374d8390997dd881d1",
+      "bytes": 34872
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-fold8/cream.webp",
+      "sha1": "d7dd63cf5be0d2823b3c2567391aef2414b6dbdd",
+      "bytes": 50668
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-fold8/lavender.webp",
+      "sha1": "943263e75ec8ed32e0df7e06a31852942ae7bdd2",
+      "bytes": 51036
+    },
+    {
+      "path": "public/media/samsung-color-variants/galaxy-z-fold8/pistachio.webp",
+      "sha1": "695c8bbf6d01da6f194009f863cf5a0369b0168c",
+      "bytes": 48212
+    },
+    {
+      "path": "public/media/storefront/categories/airpods.webp",
+      "sha1": "b5bd4a5bd5b3655b083a9f4c0eff000f79837561",
+      "bytes": 85098
+    },
+    {
+      "path": "public/media/storefront/categories/apple-devices.webp",
+      "sha1": "91f5a0c061a3f6f68d949936bcb78abcf6110049",
+      "bytes": 87020
+    },
+    {
+      "path": "public/media/storefront/categories/cables.webp",
+      "sha1": "2254fa822b06072fa21ebc56aa6623b5d055da54",
+      "bytes": 92932
+    },
+    {
+      "path": "public/media/storefront/categories/cases.webp",
+      "sha1": "350c00cd86f369daa61bb2399f88a7ce7e3231f0",
+      "bytes": 210550
+    },
+    {
+      "path": "public/media/storefront/categories/chargers.webp",
+      "sha1": "80589113677951b5757f586e38710bbc6bfdb642",
+      "bytes": 71456
+    },
+    {
+      "path": "public/media/storefront/categories/ipad.webp",
+      "sha1": "c9ac8cf4c486f0e57305a6085e380447b40f118c",
+      "bytes": 72686
+    },
+    {
+      "path": "public/media/storefront/categories/iphone-2026.webp",
+      "sha1": "3e5b6d88727e4019c946b7de6ddb676309c3287d",
+      "bytes": 44932
+    },
+    {
+      "path": "public/media/storefront/categories/iphone.webp",
+      "sha1": "3ddd87b7b17d39fc03ae700c746c84773206a7ef",
+      "bytes": 59966
+    },
+    {
+      "path": "public/media/storefront/categories/laptops.webp",
+      "sha1": "4d4d0dc9f517b256da96575971e3685d21d5ce59",
+      "bytes": 79500
+    },
+    {
+      "path": "public/media/storefront/categories/masters/airpods.webp",
+      "sha1": "8e247908f479cbf4074379b03da7aeedfaa79d5d",
+      "bytes": 62970
+    },
+    {
+      "path": "public/media/storefront/categories/macbook.webp",
+      "sha1": "836683f3e69ba5062a073ca6d7686c0549177be0",
+      "bytes": 72870
+    },
+    {
+      "path": "public/media/storefront/categories/masters/cables.webp",
+      "sha1": "fbfc555bb889058b9911e1083b535c5b3a7d2949",
+      "bytes": 70918
+    },
+    {
+      "path": "public/media/storefront/categories/masters/chargers.webp",
+      "sha1": "8684c22bc688d8912627a4fdfb3c21e22848875e",
+      "bytes": 49412
+    },
+    {
+      "path": "public/media/storefront/categories/masters/cases.webp",
+      "sha1": "2cd1515d9e722c10ff7475f00e692d27e7355a71",
+      "bytes": 145762
+    },
+    {
+      "path": "public/media/storefront/categories/masters/ipad.webp",
+      "sha1": "dbccb6c1b24ca1f5207dffcbe867b9dfbb5e1021",
+      "bytes": 55946
+    },
+    {
+      "path": "public/media/storefront/categories/masters/airpods.png",
+      "sha1": "3bae76337a5b1e711e0d776cca35952d57b71698",
+      "bytes": 1690113
+    },
+    {
+      "path": "public/media/storefront/categories/masters/iphone.webp",
+      "sha1": "1082fdf4a835819da4ebaadee4a50da94bfece04",
+      "bytes": 44162
+    },
+    {
+      "path": "public/media/storefront/categories/masters/cables.png",
+      "sha1": "8ebb90cdffb102abfb8764117cf304667cc830ed",
+      "bytes": 1835537
+    },
+    {
+      "path": "public/media/storefront/categories/masters/chargers.png",
+      "sha1": "1aa9ee8248517745f5f9196faff685846286153f",
+      "bytes": 1780778
+    },
+    {
+      "path": "public/media/storefront/categories/masters/ipad.png",
+      "sha1": "e24086b037a1697ff2a95880daf304fb85213353",
+      "bytes": 1677601
+    },
+    {
+      "path": "public/media/storefront/categories/masters/macbook.webp",
+      "sha1": "7b89c1e042c1dfd8876e274c28086811ffcbace7",
+      "bytes": 56932
+    },
+    {
+      "path": "public/media/storefront/categories/masters/samsung-audio.webp",
+      "sha1": "63bdb186db34c9c0ac04eff60d8432a5a2a650e6",
+      "bytes": 61244
+    },
+    {
+      "path": "public/media/storefront/categories/masters/iphone.png",
+      "sha1": "9ce35e44980c26d2fd2948544045c03de515ca00",
+      "bytes": 1672468
+    },
+    {
+      "path": "public/media/storefront/categories/masters/samsung-smartphones.webp",
+      "sha1": "2cbdd712446c23ac708ee85f5c30564c14e099ae",
+      "bytes": 56298
+    },
+    {
+      "path": "public/media/storefront/categories/masters/cases.png",
+      "sha1": "4fc248fa4960fafb4d810d2a5bf67e5ce5fc4af3",
+      "bytes": 2384267
+    },
+    {
+      "path": "public/media/storefront/categories/masters/samsung-tablets.webp",
+      "sha1": "4eb70a2f1d0a35c4059b1bf398a021d638525861",
+      "bytes": 41166
+    },
+    {
+      "path": "public/media/storefront/categories/masters/macbook.png",
+      "sha1": "bc0809ee64f3fd77714728acee5ae5ff8b5d927c",
+      "bytes": 1542886
+    },
+    {
+      "path": "public/media/storefront/categories/masters/stylus.webp",
+      "sha1": "6348af3fa79c475b8e3a0d4a52db53a0c7bfee0a",
+      "bytes": 37830
+    },
+    {
+      "path": "public/media/storefront/categories/masters/watch.webp",
+      "sha1": "e1e45cedf8081511b51031f332888391a3a36281",
+      "bytes": 101922
+    },
+    {
+      "path": "public/media/storefront/categories/samsung-audio.webp",
+      "sha1": "9e29a91016a584545b1c0ce94c400041a4d52a09",
+      "bytes": 86062
+    },
+    {
+      "path": "public/media/storefront/categories/masters/samsung-audio.png",
+      "sha1": "5dbf5da1b24180fb98144ce3cb173a17a90abcb1",
+      "bytes": 1784734
+    },
+    {
+      "path": "public/media/storefront/categories/samsung-family-2026.webp",
+      "sha1": "dae9c97e622aac3204c61dccf3e19bb920f847fc",
+      "bytes": 59546
+    },
+    {
+      "path": "public/media/storefront/categories/masters/samsung-smartphones.png",
+      "sha1": "06d54a7f09a215ca3943f981e4f5d464a60c3973",
+      "bytes": 1576313
+    },
+    {
+      "path": "public/media/storefront/categories/samsung-smartphones.webp",
+      "sha1": "37cb272c1e0ebfd70da4f8856be3acbd9020e518",
+      "bytes": 72456
+    },
+    {
+      "path": "public/media/storefront/categories/masters/samsung-tablets.png",
+      "sha1": "63a0ed9a42a59bafd4ad74b0dbbb5be983da12f0",
+      "bytes": 1663158
+    },
+    {
+      "path": "public/media/storefront/categories/samsung-tablets.webp",
+      "sha1": "f27e9b2b2a2678d614fde46edf3d9e8fbeb2d0e9",
+      "bytes": 56078
+    },
+    {
+      "path": "public/media/storefront/categories/masters/stylus.png",
+      "sha1": "67c34c532432fc7bfbd430735d94982b33249a88",
+      "bytes": 1701375
+    },
+    {
+      "path": "public/media/storefront/categories/stylus.webp",
+      "sha1": "7a1497a6d3f05b6196776a32fc917b157ca0f2ab",
+      "bytes": 48254
+    },
+    {
+      "path": "public/media/storefront/categories/xiaomi-smartphones.webp",
+      "sha1": "ab5da1d3bebbe1a80d9eeead52dd59226d9b20d3",
+      "bytes": 119538
+    },
+    {
+      "path": "public/media/storefront/categories/watch.webp",
+      "sha1": "ba946665a4b886675f1c7ac78d59f8b70cf8013c",
+      "bytes": 129480
+    },
+    {
+      "path": "public/media/storefront/poster.webp",
+      "sha1": "742a019354965954524ec0900025a10c61944501",
+      "bytes": 29206
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/camera.webp",
+      "sha1": "c10f5555736f1c0591a070fd87d10c0b3de1df34",
+      "bytes": 272374
+    },
+    {
+      "path": "public/media/storefront/categories/masters/watch.png",
+      "sha1": "eb1aba02af50a4f4e21b381e0c283f7422e286f3",
+      "bytes": 1785989
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/color-black.jpg",
+      "sha1": "bae0bf40a8d5f5c447785126ae75a9ad39b5e4da",
+      "bytes": 310547
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/hero-poster.webp",
+      "sha1": "2f58d78f40b7bb2ebffe1103e51e619d4de3b164",
+      "bytes": 57252
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/color-green.jpg",
+      "sha1": "32e76bd08bd1c34b70cb977b9dc5384ea21d27ce",
+      "bytes": 342583
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/color-white.jpg",
+      "sha1": "444df09492b5f1ea542c596ff5201d595e306558",
+      "bytes": 329855
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/display.webp",
+      "sha1": "4cf277a87c3f89cd6b08e1a0215ad2e905391164",
+      "bytes": 227530
+    },
+    {
+      "path": "public/media/xiaomi-book-pro-14/color-gray.jpg",
+      "sha1": "ea1e2a64313ee906219d027408a91b7c66740d39",
+      "bytes": 223608
+    },
+    {
+      "path": "public/media/xiaomi-book-pro-14/color-blue.jpg",
+      "sha1": "57292a1f8ca7c11057e5567866bc9e39e10a280f",
+      "bytes": 215485
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/night-real.jpg",
+      "sha1": "d245c015d6f2a282a6c7733faf7c43feed77bffe",
+      "bytes": 563716
+    },
+    {
+      "path": "public/media/xiaomi-book-pro-14/color-white.jpg",
+      "sha1": "6ac3aaf4641b0b239a0f84be3dc76d6e7039194d",
+      "bytes": 201392
+    },
+    {
+      "path": "public/media/xiaomi-book-pro-14/color-pink.jpg",
+      "sha1": "0bbc20df12c32db7650cd4d082fd9f6d41f1d7c7",
+      "bytes": 215684
+    },
+    {
+      "path": "public/media/xiaomi-book-pro-14/hero-poster.jpg",
+      "sha1": "afb1b0708d6c1c203de0b1ff8b11ff4e11160c33",
+      "bytes": 154282
+    },
+    {
+      "path": "public/media/xiaomi-book-pro-14/performance-real.jpg",
+      "sha1": "4370679938f123e4ef8e47848e35f5af0cee8a3a",
+      "bytes": 227476
+    },
+    {
+      "path": "scripts/catalog/apply-market-estimates.mjs",
+      "sha1": "7eb0dd48961a77db28d31091ca522b6af4787b7c",
+      "bytes": 6492
+    },
+    {
+      "path": "public/media/xiaomi-book-pro-14/travel-real.jpg",
+      "sha1": "911638b845dd049ef225a5682c4f3304213087ad",
+      "bytes": 307152
+    },
+    {
+      "path": "scripts/catalog/apply-sep-26-manual-corrections.mjs",
+      "sha1": "a007c68452890889d72eb9ac26dd6223bcf213df",
+      "bytes": 5067
+    },
+    {
+      "path": "scripts/catalog/apply-verified-prices.mjs",
+      "sha1": "2bf89ea4ce54186c11c61ec5cb88101473d44ff2",
+      "bytes": 6494
+    },
+    {
+      "path": "scripts/catalog/backup-product-configurations.mjs",
+      "sha1": "dc148d6f7f0dbac11fd60d877b6fa764d8155c8d",
+      "bytes": 2481
+    },
+    {
+      "path": "scripts/catalog/enrich-specs.ts",
+      "sha1": "5e62f4950fd5ecc3c80ae362e978f1afd6e813d0",
+      "bytes": 2818
+    },
+    {
+      "path": "scripts/catalog/fix-flagship-storage.mjs",
+      "sha1": "7dd383d8ef82f33c418caa34ea4499316fcd0978",
+      "bytes": 5318
+    },
+    {
+      "path": "scripts/catalog/fix-xiaomi-17-ultra-storage.mjs",
+      "sha1": "81c7483ec524df9faadc213a57754d82a53f9e0d",
+      "bytes": 2450
+    },
+    {
+      "path": "scripts/catalog/hide-imageless-products.mjs",
+      "sha1": "fad2e08db0d1324d163bb362eb44237fff79e5d4",
+      "bytes": 2210
+    },
+    {
+      "path": "scripts/catalog/import-supplied-images.mjs",
+      "sha1": "766f8591fcd9a8abc7692f11096d80a873b29e7b",
+      "bytes": 2098
+    },
+    {
+      "path": "scripts/catalog/match-plan-current.json",
+      "sha1": "1cd7402ecbe6d635f3020415cf4910f8b6195350",
+      "bytes": 206283
+    },
+    {
+      "path": "scripts/catalog/merge-apple-devices.mjs",
+      "sha1": "37e7a6ad49a83582a7a6afb1606b6301e696f06b",
+      "bytes": 4788
+    },
+    {
+      "path": "public/media/xiaomi-book-pro-14/hero.mp4",
+      "sha1": "f0ea7fdd583c126c6e2a607dfc8e3078b6b51a64",
+      "bytes": 1611255
+    },
+    {
+      "path": "scripts/catalog/prepare-samsung-color-manifest.mjs",
+      "sha1": "ba67120c00367798768e5794a5be3e641f9f9be7",
+      "bytes": 3364
+    },
+    {
+      "path": "scripts/catalog/plan-source-matches.mjs",
+      "sha1": "968de5563898fcef2482ba45c3dd9ccace23f189",
+      "bytes": 13383
+    },
+    {
+      "path": "scripts/catalog/restore-photo-pending-products.mjs",
+      "sha1": "be4d6be054502729a6543378650743ec6a8b7ca6",
+      "bytes": 2748
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/hero.mov",
+      "sha1": "033fe4e6b9c200115a1d2f3662b544fdaa15245d",
+      "bytes": 2972871
+    },
+    {
+      "path": "scripts/catalog/save-samsung-color-render.mjs",
+      "sha1": "45703d1319c43ddf1b221cafabc6a215ab0fc4ca",
+      "bytes": 896
+    },
+    {
+      "path": "scripts/catalog/snapshot-di-smart.mjs",
+      "sha1": "095aa5de12f5d9ef7ccfc5ccf476438626b12c1a",
+      "bytes": 9591
+    },
+    {
+      "path": "public/media/xiaomi-17-ultra/hero.m4v",
+      "sha1": "d6a1d5b9b6c716885f73f744abc861fb86ee5bb3",
+      "bytes": 2972611
+    },
+    {
+      "path": "scripts/catalog/sync-client-apple-assortment.mjs",
+      "sha1": "7cf85e1846837e265701ed3abc08f3e558e52b28",
+      "bytes": 15252
+    },
+    {
+      "path": "scripts/catalog/sync-apple-color-images.mjs",
+      "sha1": "974b751ebfe21e248c3c93ae615fa5c21d624a7f",
+      "bytes": 5322
+    },
+    {
+      "path": "scripts/catalog/sync-macbook-neo-prices.mjs",
+      "sha1": "c7ca6ec04bff152bb4ad110616eafd7d072588f2",
+      "bytes": 4315
+    },
+    {
+      "path": "scripts/catalog/sync-macbook-neo-v2-images.mjs",
+      "sha1": "37f25d2b9dd7ed45fee83e6970c93304a6ff350d",
+      "bytes": 2321
+    },
+    {
+      "path": "scripts/catalog/sync-macbook-air-15-m5-prices.mjs",
+      "sha1": "b0607c0408467b0644c27023bf70a70bc475b322",
+      "bytes": 4990
+    },
+    {
+      "path": "scripts/catalog/sync-client-samsung-assortment.ts",
+      "sha1": "36d43bb38d9ea45649b683d0fc82774cc5e22722",
+      "bytes": 2243
+    },
+    {
+      "path": "scripts/catalog/sync-samsung-color-images.ts",
+      "sha1": "1ec32e68b50b88dd72c9c56374179889dd18f81a",
+      "bytes": 1803
+    },
+    {
+      "path": "scripts/catalog/update-macbook-neo-photo.mjs",
+      "sha1": "f8c64bc69319c2f75a8e959792f96d6409d7c78b",
+      "bytes": 1492
+    },
+    {
+      "path": "scripts/compose-iphone-hero.py",
+      "sha1": "ecf126e4893c7cecd55cddfdc72dc9a67ad6b2c7",
+      "bytes": 6532
+    },
+    {
+      "path": "scripts/database/sync-mysql-schema.mjs",
+      "sha1": "639e0d0f00656b79092fae78209d08277469c7a7",
+      "bytes": 950
+    },
+    {
+      "path": "scripts/database/transfer.ts",
+      "sha1": "dc0b481d149e52a04392ff95a2d8fa00481fe56d",
+      "bytes": 3852
+    },
+    {
+      "path": "scripts/database/verify.ts",
+      "sha1": "fdc0341e2680d749328f60818e6ec55209a1d37e",
+      "bytes": 2797
+    },
+    {
+      "path": "scripts/iphone-18-pro/bake-screens.cjs",
+      "sha1": "8438fec8ddf8a050642834d638b4585a220339b1",
+      "bytes": 3918
+    },
+    {
+      "path": "scripts/iphone-18-pro/export-geometry.py",
+      "sha1": "66f564a93fca1a962c5ff571bc53e5fa6a74e4fc",
+      "bytes": 4965
+    },
+    {
+      "path": "scripts/iphone-18-pro/extract-materials.py",
+      "sha1": "e42e8d787e3e3ff1ae86284f4f32a3ffef79442d",
+      "bytes": 1134
+    },
+    {
+      "path": "scripts/iphone-18-pro/verify-geometry.py",
+      "sha1": "1e4c8aee2e9fadb62b49ad9d3a732fb226cd781c",
+      "bytes": 1931
+    },
+    {
+      "path": "scripts/quality/check-catalog.mjs",
+      "sha1": "4f84f922fcf67e2470871a3226dab8b39e1d9b43",
+      "bytes": 4937
+    },
+    {
+      "path": "scripts/quality/check-reliability.cjs",
+      "sha1": "0118a56b27dcd4bd2057012e06e6b9bfed58dfc0",
+      "bytes": 3757
+    },
+    {
+      "path": "scripts/quality/check-samsung-additional-tablets.ts",
+      "sha1": "6b9b006014f7dedbf4fbecbe6bba55c52ec2f113",
+      "bytes": 7265
+    },
+    {
+      "path": "scripts/quality/check-mysql-site.ts",
+      "sha1": "58f6a50f91c3130aaca3bb6aeee70600c540b687",
+      "bytes": 10496
+    },
+    {
+      "path": "scripts/quality/check-samsung-assortment.ts",
+      "sha1": "08b15ed548773f54143a19ab7b5cf6cbc9b6fbf8",
+      "bytes": 6685
+    },
+    {
+      "path": "scripts/quality/check-samsung-color-images.ts",
+      "sha1": "5d41711b8092a0091088590357c7218b5928e961",
+      "bytes": 6707
+    },
+    {
+      "path": "src/app/admin/(protected)/categories/actions.ts",
+      "sha1": "718f93a00b2f158b02e36a1d82a6c6329daeaeec",
+      "bytes": 3278
+    },
+    {
+      "path": "src/app/admin/(protected)/brands/actions.ts",
+      "sha1": "2543c33cf807070c0cf7d17fbf0594117384b207",
+      "bytes": 2191
+    },
+    {
+      "path": "src/app/admin/(protected)/brands/page.tsx",
+      "sha1": "925c30f5c92881103e1972a07b77d855aa7852e1",
+      "bytes": 5245
+    },
+    {
+      "path": "src/app/admin/(protected)/categories/page.tsx",
+      "sha1": "623e4d76cc0c10857b6f3aa6de002e2397b364b4",
+      "bytes": 6828
+    },
+    {
+      "path": "src/app/admin/(protected)/error.tsx",
+      "sha1": "e4835f4aa6ba26a83edae3c3a7f75491b4009df9",
+      "bytes": 612
+    },
+    {
+      "path": "public/media/storefront/hero.mp4",
+      "sha1": "d06f38d3d4e1cfb22711e7aaa106dff70425857e",
+      "bytes": 6209659
+    },
+    {
+      "path": "src/app/admin/(protected)/orders/[id]/page.tsx",
+      "sha1": "aab713d9976a3db2aa48d79e064918e4f896fe09",
+      "bytes": 6493
+    },
+    {
+      "path": "src/app/admin/(protected)/layout.tsx",
+      "sha1": "98354472d49e360fe3924fc4156f2f3294765b2e",
+      "bytes": 3096
+    },
+    {
+      "path": "src/app/admin/(protected)/page.tsx",
+      "sha1": "ad2863d3eedf8cbc8622d3b764c063a98da13ec4",
+      "bytes": 4475
+    },
+    {
+      "path": "src/app/admin/(protected)/orders/page.tsx",
+      "sha1": "902c1bba5ff28e82d630da050469d08e5443060d",
+      "bytes": 3219
+    },
+    {
+      "path": "src/app/admin/(protected)/products/[id]/page.tsx",
+      "sha1": "ed9d62e77e90f5708c188326815ca25929b527b6",
+      "bytes": 29561
+    },
+    {
+      "path": "src/app/admin/(protected)/products/color-offer-actions.ts",
+      "sha1": "063cd7e3568f83377d36dad2b4b4f9df9f55be07",
+      "bytes": 2561
+    },
+    {
+      "path": "src/app/admin/(protected)/products/actions.ts",
+      "sha1": "91c9280c6814855e175a6fa4091a83f3df93ee1a",
+      "bytes": 6470
+    },
+    {
+      "path": "src/app/admin/(protected)/products/image-actions.ts",
+      "sha1": "1fcce33911621ffdfecc2475472e73e3112f6964",
+      "bytes": 6632
+    },
+    {
+      "path": "src/app/admin/(protected)/products/new/page.tsx",
+      "sha1": "2f51bcd2d7a9e2eda5403be9e383220e112b49c3",
+      "bytes": 2005
+    },
+    {
+      "path": "src/app/admin/(protected)/products/page.tsx",
+      "sha1": "ba95d9bc955441ef59eeb3b79113da9bcc5fec3d",
+      "bytes": 1211
+    },
+    {
+      "path": "src/app/admin/(protected)/products/sku-actions.ts",
+      "sha1": "52c81525747fe9592f0716ea856fbe652dbc80fc",
+      "bytes": 5130
+    },
+    {
+      "path": "src/app/admin/(protected)/products/specs-actions.ts",
+      "sha1": "c151a0d86a510f3703ba6b9587b32338a6068678",
+      "bytes": 2473
+    },
+    {
+      "path": "src/app/admin/(protected)/products/variant-actions.ts",
+      "sha1": "5907d34382e287a5207ae49216356244eda429bf",
+      "bytes": 7179
+    },
+    {
+      "path": "src/app/admin/(protected)/settings/actions.ts",
+      "sha1": "80c9f2b9bdf52dcb813f559e3cdd55b596ca5971",
+      "bytes": 1123
+    },
+    {
+      "path": "src/app/admin/login/layout.tsx",
+      "sha1": "665dcd19197ae578d47362b4096e3fd811dacff4",
+      "bytes": 342
+    },
+    {
+      "path": "src/app/admin/(protected)/settings/page.tsx",
+      "sha1": "813058b944cdc6d2363a123bf96ddffe409b14b4",
+      "bytes": 3740
+    },
+    {
+      "path": "src/app/admin/session-actions.ts",
+      "sha1": "cb1885fec6ae7f8a9b7e7edcdd75f21b876a342f",
+      "bytes": 2421
+    },
+    {
+      "path": "src/app/airpods-pro-3/airpods-pro-page.tsx",
+      "sha1": "9b0df7fcc62dc06acf7fa092ee2a0674922a7419",
+      "bytes": 7326
+    },
+    {
+      "path": "src/app/api/cart/resolve/route.ts",
+      "sha1": "3a8c8cc3ae996d28d377cb051226cde29330dea4",
+      "bytes": 2309
+    },
+    {
+      "path": "src/app/airpods-pro-3/page.tsx",
+      "sha1": "a4a50d0a36c70da6465bd258efc9342db095d821",
+      "bytes": 1051
+    },
+    {
+      "path": "src/app/admin/login/page.tsx",
+      "sha1": "b2d57162984b5e7f29762de47d0cb4fc4642646b",
+      "bytes": 4246
+    },
+    {
+      "path": "src/app/airpods-pro-3/page.module.css",
+      "sha1": "475684269d10c5ebecc9e1d71486aa546cb16d11",
+      "bytes": 6356
+    },
+    {
+      "path": "src/app/api/health/route.ts",
+      "sha1": "e6e47eefb9908eb567912971e66a0360f8660fe7",
+      "bytes": 328
+    },
+    {
+      "path": "src/app/api/order/route.ts",
+      "sha1": "1bc50563b9253e5501f126a029fbbf4bc2dc9cc0",
+      "bytes": 11974
+    },
+    {
+      "path": "src/app/apple-watch-ultra-4/apple-watch-ultra-page.tsx",
+      "sha1": "18cefd52bc5ad7469a42d20e4ffa3362f8d49bba",
+      "bytes": 7508
+    },
+    {
+      "path": "src/app/apple-watch-ultra-4/page.module.css",
+      "sha1": "f9be03d9bd1d13fe44735eb83b2b70f11ef556e9",
+      "bytes": 5833
+    },
+    {
+      "path": "src/app/apple-icon.png",
+      "sha1": "c6fc104306acbced79d57bf2bc4c1bdad1df54e8",
+      "bytes": 49376
+    },
+    {
+      "path": "src/app/apple-watch-ultra-4/page.tsx",
+      "sha1": "9ac62eed235c5ceb8f5a9353cd0f68e40787c59c",
+      "bytes": 1129
+    },
+    {
+      "path": "src/app/cart/page.tsx",
+      "sha1": "ef595cd474970735d3fe470188653679caac4079",
+      "bytes": 733
+    },
+    {
+      "path": "src/app/catalog/[category]/page.tsx",
+      "sha1": "b4fb654a4be39e1c20cf643cfceeefcdf9da6407",
+      "bytes": 7249
+    },
+    {
+      "path": "src/app/catalog/page.tsx",
+      "sha1": "64d7b2a3dc34587e62c3da9238712a947f9de1d6",
+      "bytes": 2752
+    },
+    {
+      "path": "src/app/cookies/page.tsx",
+      "sha1": "b6631bc4f954fcc1273cf26f5c740e84c1a2c574",
+      "bytes": 2688
+    },
+    {
+      "path": "src/app/delivery/page.tsx",
+      "sha1": "1160a2e71df8d350a8471a080e886433065beef8",
+      "bytes": 5158
+    },
+    {
+      "path": "src/app/contacts/page.tsx",
+      "sha1": "be18dc784201348580a78e929c083ee3febae12c",
+      "bytes": 1058
+    },
+    {
+      "path": "src/app/error.tsx",
+      "sha1": "0151315f4b8e8cdf7b4ced6b881c3129ff1bf0e0",
+      "bytes": 573
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/accessories-grid.tsx",
+      "sha1": "f8ea254bc2e49d81261366546a5f250b9fd4e7b3",
+      "bytes": 800
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/faq-accordion.tsx",
+      "sha1": "c893ee26cb748128a2300a549de442c94de5e40b",
+      "bytes": 463
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/galaxy-ai-experience.tsx",
+      "sha1": "9de9bf96979381e620bbfd83b64d7b282ae3c679",
+      "bytes": 3194
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/galaxy-content.ts",
+      "sha1": "dc4a9b814f1aee37292b9bb8631fba2239e9caf3",
+      "bytes": 7589
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/galaxy-ai-experience.module.css",
+      "sha1": "56d8a309fb4ae350f4d2f82837e9157a7482719c",
+      "bytes": 846
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/galaxy-device.ts",
+      "sha1": "19aa7d8ce9a0a9192f5b437c4eb1dbe857254cdd",
+      "bytes": 3349
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/galaxy-hero.module.css",
+      "sha1": "7a4d8867eb2ade11c21af2938bc0b921ac9e014d",
+      "bytes": 4904
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/galaxy-hero.tsx",
+      "sha1": "9bb39e58fec399c38ce802d5587f32eb7ec098df",
+      "bytes": 7215
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/galaxy-materials.ts",
+      "sha1": "2c0d9beec057b3b9ff19fa55d9e49543d192c64d",
+      "bytes": 10201
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/hero-film.module.css",
+      "sha1": "b7cc18b94207e7f54e7b979421c5629210a8d030",
+      "bytes": 420
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/galaxy-media.ts",
+      "sha1": "27ddec5850d21b528c2f5c2dfa1025226b98b545",
+      "bytes": 1163
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/lineup-picker.tsx",
+      "sha1": "17f4358dd0d6d80e65699b311d1c3013845142e4",
+      "bytes": 856
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/hero-film.tsx",
+      "sha1": "ff0a5d5365551a7a6d7608ae313d89cc1c4ddcfe",
+      "bytes": 3124
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/page.tsx",
+      "sha1": "c5a490cad96d49b266fe9d8212c1d951a64f2df3",
+      "bytes": 1067
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/narrative-section.tsx",
+      "sha1": "1ad17b0b4d0e7f51379998063f20c33e7e5a7214",
+      "bytes": 1041
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/phone-viewer.module.css",
+      "sha1": "43c9078ae71b29d3cdc45c3ca64a75ba15c40e1e",
+      "bytes": 1011
+    },
+    {
+      "path": "src/app/galaxy-s26-ultra/galaxy-page.tsx",
+      "sha1": "16a3393152102b9a4fefcf3c77dc8c46edcb5d9c",
+      "bytes": 7800
+    },
+    {
+      "path": "src/app/galaxy-s26-ultra/hero-media.tsx",
+      "sha1": "9dc539cea116f4063c029557eff6b1a0d692b2d9",
+      "bytes": 2249
+    },
+    {
+      "path": "src/app/galaxy-s25-ultra/phone-viewer.tsx",
+      "sha1": "a0954286b0fcd2a096ce90ca10f374aea571daaf",
+      "bytes": 3692
+    },
+    {
+      "path": "src/app/galaxy-s26-ultra/page.tsx",
+      "sha1": "a20a77cb4d5c1cb2f3b66cf1f04fdaf140bd31d1",
+      "bytes": 754
+    },
+    {
+      "path": "src/app/galaxy-s26-ultra/page.module.css",
+      "sha1": "f87228b8a658c828c36c6aacf0b02f581b1e2886",
+      "bytes": 12860
+    },
+    {
+      "path": "src/app/galaxy-s26-ultra/viewer.tsx",
+      "sha1": "99b7abd5701c57840ba58fb4986561e83ac10b5b",
+      "bytes": 4904
+    },
+    {
+      "path": "src/app/galaxy-tab-s11-ultra/galaxy-tab-ultra-page.tsx",
+      "sha1": "8c5f6e7057d7fbba45a583368528413b071ad91f",
+      "bytes": 7428
+    },
+    {
+      "path": "src/app/galaxy-tab-s11-ultra/page.module.css",
+      "sha1": "81756e894fab3af335c6c48bbe544b1ad66c5565",
+      "bytes": 6223
+    },
+    {
+      "path": "src/app/galaxy-tab-s11-ultra/page.tsx",
+      "sha1": "c6ae476883b97bf8a58dc2b95ec65b8da569e79b",
+      "bytes": 1100
+    },
+    {
+      "path": "src/app/icon.png",
+      "sha1": "7cdfcab8eea8665ac22919ca6c3265fe9bf6c750",
+      "bytes": 2596
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha1": "cf53e6e4a4d93eb9f43248ce2ee6a6fde9b936c2",
+      "bytes": 1969
+    },
+    {
+      "path": "src/app/ipad-pro-m5/ipad-pro-page.tsx",
+      "sha1": "11c34781f84b201a69d616e8c4dbd8e4a936aea3",
+      "bytes": 8000
+    },
+    {
+      "path": "src/app/ipad-pro-m5/page.module.css",
+      "sha1": "c34939ef29e2a54653b3febf2a7b739e5a3377be",
+      "bytes": 5994
+    },
+    {
+      "path": "src/app/ipad-pro-m5/page.tsx",
+      "sha1": "9caf6e923a44211d9e82d889f212ead3fb714e3c",
+      "bytes": 1396
+    },
+    {
+      "path": "src/app/iphone-18-pro/apple-experience.module.css",
+      "sha1": "8ac7dc7c685bd54004727018a87707e43431cf26",
+      "bytes": 4283
+    },
+    {
+      "path": "src/app/iphone-18-pro/apple-experience.tsx",
+      "sha1": "46febd34ad912aaa3953785112182ff74b2d3807",
+      "bytes": 4749
+    },
+    {
+      "path": "src/app/iphone-18-pro/hero-film.tsx",
+      "sha1": "3d515deb9f0eb08d0d4f158ba4fb5d1606c84abb",
+      "bytes": 2163
+    },
+    {
+      "path": "src/app/iphone-18-pro/iphone-content.ts",
+      "sha1": "b7e8edd1f47bd70460384408484aade72abb3330",
+      "bytes": 2977
+    },
+    {
+      "path": "src/app/iphone-18-pro/iphone-device.ts",
+      "sha1": "9b253d589fe2bb76380c9b96f921d26dbbc289bb",
+      "bytes": 3626
+    },
+    {
+      "path": "src/app/iphone-18-pro/hero-film.module.css",
+      "sha1": "44474f558a5eb6d540d1835bb2cd9eff45313fcb",
+      "bytes": 1735
+    },
+    {
+      "path": "src/app/iphone-18-pro/iphone-hero.module.css",
+      "sha1": "b0c9bb0db329971e672f1f5b2d36f4cd12e61cc2",
+      "bytes": 9377
+    },
+    {
+      "path": "src/app/iphone-18-pro/iphone-hero.tsx",
+      "sha1": "46d41b5a9804e4058dccef094041a864f253c1eb",
+      "bytes": 10969
+    },
+    {
+      "path": "src/app/iphone-18-pro/iphone-media.ts",
+      "sha1": "edfc1c3a8866c32677a36e11b98888773a9e1b38",
+      "bytes": 3121
+    },
+    {
+      "path": "src/app/iphone-18-pro/page.tsx",
+      "sha1": "62ead421d5a526c51b30cc5481a9ce8731ade366",
+      "bytes": 1513
+    },
+    {
+      "path": "src/app/iphone-18-pro/phone-material-data.json",
+      "sha1": "2ad087f9d10dd24c125d621ed2248158a9776395",
+      "bytes": 11639
+    },
+    {
+      "path": "src/app/iphone-18-pro/phone-materials.ts",
+      "sha1": "35040bad4a0f4ccd3b6fbcd3767d3e2db990d2e9",
+      "bytes": 9821
+    },
+    {
+      "path": "src/app/iphone-18-pro/phone-optics.ts",
+      "sha1": "ca069782d81844e709c83597ce63eeb6cebb83b3",
+      "bytes": 2343
+    },
+    {
+      "path": "src/app/iphone-18-pro/phone-scene.ts",
+      "sha1": "33961f27ba9cb6921e2d9e3330a1c099cb1b01a7",
+      "bytes": 529
+    },
+    {
+      "path": "src/app/iphone-18-pro/phone-screen.ts",
+      "sha1": "477aa7a10a4e0a7483164b0fcd09097c078f1b71",
+      "bytes": 822
+    },
+    {
+      "path": "src/app/iphone-18-pro/phone-viewer.module.css",
+      "sha1": "d6a3f97de7f261cac0719a5aefe665cd78bd29b8",
+      "bytes": 4093
+    },
+    {
+      "path": "src/app/iphone-18-pro/phone-viewer.tsx",
+      "sha1": "df898bdb75d666156a919687605a2d72ca0d681b",
+      "bytes": 7629
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha1": "bf986a53364b1ed0efedb5d2a07ab371786f24d7",
+      "bytes": 3795
+    },
+    {
+      "path": "src/app/loading.module.css",
+      "sha1": "32055454fd648e25951054ae35f8a39b72224aa9",
+      "bytes": 596
+    },
+    {
+      "path": "src/app/loading.tsx",
+      "sha1": "90669b1a681587a70946c059f9b05fb7f86cea94",
+      "bytes": 328
+    },
+    {
+      "path": "src/app/macbook-pro-16-m5-max/page.module.css",
+      "sha1": "040a074713628a5460e59763d5ea4ca509509479",
+      "bytes": 4966
+    },
+    {
+      "path": "src/app/macbook-pro-16-m5-max/macbook-pro-page.tsx",
+      "sha1": "d128adf03bdc269ab1b4727f1272defe958cfda2",
+      "bytes": 7285
+    },
+    {
+      "path": "src/app/macbook-pro-16-m5-max/page.tsx",
+      "sha1": "9523fefd5723c54c445d40e09a803828f80bbef6",
+      "bytes": 1440
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "sha1": "86d86b4365d33af227b3a00b27229b13b3b82534",
+      "bytes": 1212
+    },
+    {
+      "path": "src/app/offer/page.tsx",
+      "sha1": "0a8fffe26c90ae471be6952ebdda995cdd7bcf3b",
+      "bytes": 5612
+    },
+    {
+      "path": "src/app/offer/page 2.tsx",
+      "sha1": "68be449c7bfc4624d8264b21402efd4f11dd992a",
+      "bytes": 9021
+    },
+    {
+      "path": "src/app/page.tsx",
+      "sha1": "94d4a714aa7fe925a0e133aadc8519ed1eb48973",
+      "bytes": 3967
+    },
+    {
+      "path": "src/app/privacy/page 2.tsx",
+      "sha1": "c1ed3d46ede24adb666c0f239479f8e7c24d5577",
+      "bytes": 9417
+    },
+    {
+      "path": "src/app/product/[slug]/page.tsx",
+      "sha1": "de948dfb7178d7af869a2a5e3b0a96a6ebba0fa4",
+      "bytes": 4168
+    },
+    {
+      "path": "src/app/privacy/page.tsx",
+      "sha1": "b783df7fe9a204882504cc3b98b8121d1e5aeb35",
+      "bytes": 8327
+    },
+    {
+      "path": "src/app/robots.ts",
+      "sha1": "5da7123202ffd41445cf2c7b8ce40c5c7c962148",
+      "bytes": 568
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "sha1": "f4efc6d5367fd76dd0505a854bcdd5b06df5ce0d",
+      "bytes": 3274
+    },
+    {
+      "path": "src/app/styles/buttons.css",
+      "sha1": "1ece3a8525ccbceb9b87bdec645332106d133f0c",
+      "bytes": 5018
+    },
+    {
+      "path": "src/app/styles/catalog.css",
+      "sha1": "e3222029f16706e730a222669d414bafe9fd59d8",
+      "bytes": 61
+    },
+    {
+      "path": "src/app/styles/layout.css",
+      "sha1": "45baede6b23f8e377ce1342ba0b25261e52aa684",
+      "bytes": 60
+    },
+    {
+      "path": "src/app/styles/gradient.css",
+      "sha1": "002c82ba6c2127105bfe186386198ac3bcc05b44",
+      "bytes": 402
+    },
+    {
+      "path": "src/app/styles/services-contacts.css",
+      "sha1": "5c6956c0e8fe9611c209ed7346d56f5f460ef19a",
+      "bytes": 71
+    },
+    {
+      "path": "src/app/styles/product.css",
+      "sha1": "ec8ff024851148e18233f7e08274e4b8395b7a41",
+      "bytes": 1131
+    },
+    {
+      "path": "src/app/trade-in/page.tsx",
+      "sha1": "f94d75f8fea13078e6e4955576d88bfdf513b28f",
+      "bytes": 3094
+    },
+    {
+      "path": "src/app/styles/tokens.css",
+      "sha1": "1d72b9340c6a6a9e5a93cdcb5b1197f0819895df",
+      "bytes": 3353
+    },
+    {
+      "path": "src/app/uploads/[...path]/route.ts",
+      "sha1": "10caee1be08ee05107f5f049350507b8c65af15f",
+      "bytes": 3780
+    },
+    {
+      "path": "src/app/xiaomi-17-ultra/page.module.css",
+      "sha1": "8409bf7e8e14a149ae6ba02a3104f89166277568",
+      "bytes": 5544
+    },
+    {
+      "path": "src/app/xiaomi-17-ultra/xiaomi-ultra-page.tsx",
+      "sha1": "765322d9495d021af3202914ab8a230205d4035f",
+      "bytes": 7668
+    },
+    {
+      "path": "src/app/xiaomi-17-ultra/page.tsx",
+      "sha1": "e4b2e8b69cffb37aeda7408f855f537aab267b49",
+      "bytes": 1070
+    },
+    {
+      "path": "src/app/xiaomi-book-pro-14/page.module.css",
+      "sha1": "ca28be62534cb142b751ef575dfe31cb7f24d5b4",
+      "bytes": 5622
+    },
+    {
+      "path": "src/app/xiaomi-book-pro-14/page.tsx",
+      "sha1": "11bbbe806e1a06320e0ba180a8b40d6f0e569a92",
+      "bytes": 1077
+    },
+    {
+      "path": "src/app/xiaomi-book-pro-14/xiaomi-book-pro-page.tsx",
+      "sha1": "21cc898500ee20d246054ed12e2d0d30306f27e4",
+      "bytes": 6471
+    },
+    {
+      "path": "src/components/admin/AdminErrorBanner.tsx",
+      "sha1": "6a14df9dc3b9eb4fe14ffddb1c79ec8049e0f710",
+      "bytes": 337
+    },
+    {
+      "path": "src/components/admin/ProductBasicFields.tsx",
+      "sha1": "af8c8c7de7b59f9399929491261e33809ea4db6b",
+      "bytes": 7561
+    },
+    {
+      "path": "src/components/admin/AdminNav.tsx",
+      "sha1": "0d1b2375dce33595441cc06ddaea8457716dc15f",
+      "bytes": 1705
+    },
+    {
+      "path": "src/components/admin/ImageFileInput.tsx",
+      "sha1": "c80862d54421b4d4d6034e3f8e73bc25c91ff172",
+      "bytes": 512
+    },
+    {
+      "path": "src/components/admin/StatCard.tsx",
+      "sha1": "06882a47c0192f560e406ae29a9298253f8a68e9",
+      "bytes": 525
+    },
+    {
+      "path": "src/components/admin/ProductsManager.tsx",
+      "sha1": "cb08817040d0b9ae2a8149b912b7a02bd159a6ab",
+      "bytes": 13056
+    },
+    {
+      "path": "src/components/admin/SubmitButton.tsx",
+      "sha1": "5fed6cdb57338ae2f467ffe38f75e57c675afa66",
+      "bytes": 394
+    },
+    {
+      "path": "src/components/analytics/YandexMetrika.tsx",
+      "sha1": "c942036acf152e2c705adc3c79b40b1f12f968b2",
+      "bytes": 1140
+    },
+    {
+      "path": "src/components/cart/CartItemRow.tsx",
+      "sha1": "dd0318606a881b8bef48aec03da68344eb5f693c",
+      "bytes": 3550
+    },
+    {
+      "path": "src/components/cart/CartDrawer.tsx",
+      "sha1": "99ad8d3d0980ee2ce4164ee6987c0f44accb139e",
+      "bytes": 3823
+    },
+    {
+      "path": "src/components/cart/CartSummary.tsx",
+      "sha1": "54bbac090466c6e8be7374c89dd832c8832404c2",
+      "bytes": 525
+    },
+    {
+      "path": "src/components/cart/CheckoutForm.tsx",
+      "sha1": "9c54a1ae21ecfa9888b45c432382ba56acb333fe",
+      "bytes": 16627
+    },
+    {
+      "path": "src/components/cart/EmptyCartState.tsx",
+      "sha1": "52728d942a90a1efdcba2dba40674c5e9b6fd370",
+      "bytes": 1005
+    },
+    {
+      "path": "src/components/cart/OrderShowcase.tsx",
+      "sha1": "5ca05bb8361a32b52c2920e3eb4b877c1de4e9e2",
+      "bytes": 709
+    },
+    {
+      "path": "src/components/cart/OrderSuccess.tsx",
+      "sha1": "ec9f44f57e1d947bae98ee250cc224b94511f49f",
+      "bytes": 1401
+    },
+    {
+      "path": "src/components/catalog/CategoryFlagshipHero.tsx",
+      "sha1": "d6985b40b427ae53786d52360d71de0f0fca569b",
+      "bytes": 2513
+    },
+    {
+      "path": "src/components/catalog/CatalogFilters.tsx",
+      "sha1": "5407c75fe18d5d3f1f1c750e93228b39b98e2518",
+      "bytes": 1801
+    },
+    {
+      "path": "src/components/catalog/CatalogView.tsx",
+      "sha1": "7e6a6d7faaeafea12ded7029e9ffbd2d0032f759",
+      "bytes": 3728
+    },
+    {
+      "path": "src/components/catalog/CheckboxFilterGroup.tsx",
+      "sha1": "cef953994742129b2516376ab7ea3ea7da9ed8e5",
+      "bytes": 1080
+    },
+    {
+      "path": "src/components/catalog/EditorialCatalogCard.tsx",
+      "sha1": "f5b736b67adacdf89214150fb862043fee9d7540",
+      "bytes": 2171
+    },
+    {
+      "path": "src/components/catalog/PriceRangeSlider.tsx",
+      "sha1": "cee7b861b161b9040d490e1d6b1b078d436c8c4d",
+      "bytes": 1823
+    },
+    {
+      "path": "src/components/catalog/ProductGrid.tsx",
+      "sha1": "bbcae9cb3e289f01578e56fddc7ca613d640372c",
+      "bytes": 1224
+    },
+    {
+      "path": "src/components/catalog/Pagination.tsx",
+      "sha1": "3a5ab56313a86cca0d7c88643790c21208489e5b",
+      "bytes": 4316
+    },
+    {
+      "path": "src/components/catalog/SortSelect.tsx",
+      "sha1": "413a578e6470d05b65d591701a685380d8f882e3",
+      "bytes": 1026
+    },
+    {
+      "path": "src/components/catalog/useCatalogUrl.ts",
+      "sha1": "b3fc4ba80ddcb482accd4d3d2d515cb811f2a794",
+      "bytes": 1325
+    },
+    {
+      "path": "src/components/contacts/ContactInfoCard.tsx",
+      "sha1": "4c184d8ffe334fae4dfa21edb99dd50bca11da54",
+      "bytes": 1222
+    },
+    {
+      "path": "src/components/contacts/ContactsVideoBackground.tsx",
+      "sha1": "521fc7c81927e36fcf30958cfe0dd417329c725d",
+      "bytes": 298
+    },
+    {
+      "path": "src/components/home/CategoryCard.tsx",
+      "sha1": "44849b48b1bed83683371bd226b64e3a5fc78359",
+      "bytes": 1434
+    },
+    {
+      "path": "src/components/home/ContactTeaser.tsx",
+      "sha1": "7051d8bc7b2e6e997f3a11028f370154571568d5",
+      "bytes": 1666
+    },
+    {
+      "path": "src/components/home/FlagshipShowcase.tsx",
+      "sha1": "e3d37be2f98629ec0443e78fc7b529aec96d42fd",
+      "bytes": 5056
+    },
+    {
+      "path": "src/components/home/GroupingGrid.tsx",
+      "sha1": "3b9102e12e6c045b04af989c621a6ac8579ea262",
+      "bytes": 2585
+    },
+    {
+      "path": "src/components/home/HomeCategoryAnchor.tsx",
+      "sha1": "a9d230143e8df42d82ce517012803945f32f1cb7",
+      "bytes": 1033
+    },
+    {
+      "path": "src/components/home/IPhonePromo.tsx",
+      "sha1": "eb019add73a70ca626f4fdb29706768c74f5f1fc",
+      "bytes": 1478
+    },
+    {
+      "path": "src/components/layout/CookieBanner.tsx",
+      "sha1": "454c7abbf92ca229eea6e51ea37c1242897f5921",
+      "bytes": 4520
+    },
+    {
+      "path": "src/components/layout/Header.tsx",
+      "sha1": "7784d7f5e053392aa50a17b27e3912459a6e6c35",
+      "bytes": 5928
+    },
+    {
+      "path": "src/components/layout/Footer.tsx",
+      "sha1": "0bf3a4de359f0348237275498a18492e92ae4298",
+      "bytes": 3578
+    },
+    {
+      "path": "src/components/layout/MobileMenu.tsx",
+      "sha1": "f3ee0fe064c3303fb59f684ebe672fdebe8843ab",
+      "bytes": 2712
+    },
+    {
+      "path": "src/components/layout/ShopChrome.tsx",
+      "sha1": "e722fc358a16712b87f37715c07b1b9b0e511d64",
+      "bytes": 2296
+    },
+    {
+      "path": "src/components/media/AdaptiveHeroVideo.tsx",
+      "sha1": "972f143e4a641819233b8618b0ad024ff2aca508",
+      "bytes": 5270
+    },
+    {
+      "path": "src/components/product-card/ProductCard.tsx",
+      "sha1": "602bb49548c51d4840feea4491513a47d461ee23",
+      "bytes": 4662
+    },
+    {
+      "path": "src/components/product/ProductGallery.tsx",
+      "sha1": "5f0bf2cf4c8fc05aa37a73547ea986e1acf8bc51",
+      "bytes": 4517
+    },
+    {
+      "path": "src/components/product/CrossSellProducts.tsx",
+      "sha1": "9e754e7ce15eed16b1334e7e412f30d106d8aed6",
+      "bytes": 2816
+    },
+    {
+      "path": "src/components/product/ProductPurchasePanel.tsx",
+      "sha1": "047da38972dfad0d9232a17855a34ab912c8a8c8",
+      "bytes": 3491
+    },
+    {
+      "path": "src/components/product/ProductInfo.tsx",
+      "sha1": "24624c896f9299741c9d086c01edc529bf55f8f0",
+      "bytes": 8768
+    },
+    {
+      "path": "src/components/product/ProductSpecsTable.tsx",
+      "sha1": "16b07747d54a4a4359b99cd20628fb06d1b7fbaa",
+      "bytes": 1365
+    },
+    {
+      "path": "src/components/storefront/BuyAnchor.tsx",
+      "sha1": "0ad89b853bc67369a0d25d22d5cf09d3d23acd57",
+      "bytes": 631
+    },
+    {
+      "path": "src/components/storefront/FlagshipPage.tsx",
+      "sha1": "5883e66f8b11485fb6a80319bdeaa9396eae16af",
+      "bytes": 2849
+    },
+    {
+      "path": "src/components/storefront/FlagshipScroll.tsx",
+      "sha1": "6c0fae86aed9a84f2d344b0fc69df1e2fa36f2c8",
+      "bytes": 2300
+    },
+    {
+      "path": "src/components/storefront/FlagshipStories.tsx",
+      "sha1": "d9357c511612f32e8c4055c91fba506373e90ae6",
+      "bytes": 1734
+    },
+    {
+      "path": "src/components/storefront/HeroVideo.tsx",
+      "sha1": "cf069269cb718da09823713073819eaf61531f82",
+      "bytes": 1272
+    },
+    {
+      "path": "src/components/storefront/PromoTile.tsx",
+      "sha1": "9b49f5a52e13efe4fc1f976da8eed7c0fdf90b82",
+      "bytes": 1427
+    },
+    {
+      "path": "src/components/storefront/flagship-stories.module.css",
+      "sha1": "b499577af90ecb8373d454fdd11bfa47248d68d7",
+      "bytes": 2388
+    },
+    {
+      "path": "src/components/storefront/flagship-page.module.css",
+      "sha1": "e786be9e1b0d124ebb07f85d3fac0d21cba4f06b",
+      "bytes": 1947
+    },
+    {
+      "path": "src/components/storefront/storefront.module.css",
+      "sha1": "1ce260639640dc8ed75031169d983b8b710e5ccc",
+      "bytes": 5354
+    },
+    {
+      "path": "src/components/ui/Badge.tsx",
+      "sha1": "fbee4d53347ee5fd31334269d424be8c7de93f5e",
+      "bytes": 739
+    },
+    {
+      "path": "src/components/ui/Breadcrumbs.tsx",
+      "sha1": "48a7dd1c9d4c5538a08354207a5a78665948e982",
+      "bytes": 1440
+    },
+    {
+      "path": "src/components/ui/CopyViberNumber.tsx",
+      "sha1": "ef9250398bc175017504366382284cc767133e29",
+      "bytes": 2200
+    },
+    {
+      "path": "src/components/ui/MediaFrame.tsx",
+      "sha1": "c1b042b4f06d7a678db762236ef603a2c5b57149",
+      "bytes": 1677
+    },
+    {
+      "path": "src/components/ui/Logo.tsx",
+      "sha1": "25a74efe54f02a00b9263a01cb103ea57472984e",
+      "bytes": 1191
+    },
+    {
+      "path": "src/components/ui/PillCta.tsx",
+      "sha1": "f1a6f48499c7289448975a6b41d99d2147b5356b",
+      "bytes": 1369
+    },
+    {
+      "path": "src/components/ui/Price.tsx",
+      "sha1": "5acd03d998a918d8c1636599064d543275c9ddac",
+      "bytes": 822
+    },
+    {
+      "path": "src/components/ui/RevealOnScroll.tsx",
+      "sha1": "e399c61dee636c61bed010fde4808c5fd44daccd",
+      "bytes": 1767
+    },
+    {
+      "path": "src/components/ui/SectionHeading.tsx",
+      "sha1": "14c7159573cbfcb9b4f138623c5900004851a124",
+      "bytes": 1114
+    },
+    {
+      "path": "src/components/ui/SearchField.tsx",
+      "sha1": "71b4786e58086cd7c4f594221ab40d03b82755a2",
+      "bytes": 1395
+    },
+    {
+      "path": "src/components/ui/SocialIcons.tsx",
+      "sha1": "390367fbfd9404894e159f23c63e86adce464718",
+      "bytes": 1956
+    },
+    {
+      "path": "src/components/ui/SocialLinks.tsx",
+      "sha1": "b2a178f31b7e86945085b4f8097436f4c9b1de66",
+      "bytes": 1480
+    },
+    {
+      "path": "src/components/ui/useStaggerReveal.ts",
+      "sha1": "57305f9d5975337df6cc8f14f787461c94cdc84e",
+      "bytes": 2076
+    },
+    {
+      "path": "src/components/ui/visuals/CatalogVisual.tsx",
+      "sha1": "a0661d7b28678f3d0c387a947a59117427165156",
+      "bytes": 4713
+    },
+    {
+      "path": "src/components/webgl-viewer/device-scene.ts",
+      "sha1": "3b59061cfc610ec47cb61a91175093ba99264bbf",
+      "bytes": 11324
+    },
+    {
+      "path": "src/constants/content/catalog-media.ts",
+      "sha1": "08feedbdf65d68341343b04ab7f16a149af4a888",
+      "bytes": 9598
+    },
+    {
+      "path": "src/components/webgl-viewer/studio-environment.ts",
+      "sha1": "7e0906d7137a158aa04214969c3e0a88b3ceca90",
+      "bytes": 2086
+    },
+    {
+      "path": "src/components/webgl-viewer/satin-grain.ts",
+      "sha1": "3445ac02bc622f898ecb5eebd8200d920a0342a8",
+      "bytes": 2344
+    },
+    {
+      "path": "src/constants/content/flagships.ts",
+      "sha1": "d80ef26cab680d93830bb18f9c11f4f6e3feb29c",
+      "bytes": 10428
+    },
+    {
+      "path": "src/constants/content/nav.ts",
+      "sha1": "d8329dda15d21a9cb601b22c72f3b7e29c1daa02",
+      "bytes": 985
+    },
+    {
+      "path": "src/generated/prisma/browser.ts",
+      "sha1": "7c369f2795d5d4d70a72c0ef2a945a8194f33bf5",
+      "bytes": 4562
+    },
+    {
+      "path": "src/generated/prisma/client.ts",
+      "sha1": "14859d6db3f688027ff70e6e215e16ffddc52ff8",
+      "bytes": 5513
+    },
+    {
+      "path": "src/constants/content/site.ts",
+      "sha1": "2dfee6a9d5e1de37ce98ecafa248a06d51ee1011",
+      "bytes": 749
+    },
+    {
+      "path": "src/generated/prisma/commonInputTypes.ts",
+      "sha1": "8437e434d6424c784b9fb9b706f13bff3bcbab1c",
+      "bytes": 39835
+    },
+    {
+      "path": "src/generated/prisma/enums.ts",
+      "sha1": "fba61570856ce18520e0de58ebe1ae9352558a83",
+      "bytes": 793
+    },
+    {
+      "path": "src/generated/prisma/models.ts",
+      "sha1": "bb3eb612d733022f887cd3d4efe4125ce5c3c8a3",
+      "bytes": 975
+    },
+    {
+      "path": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
+      "sha1": "86553d18170924abef55647a65054c0e2f3da44b",
+      "bytes": 9243
+    },
+    {
+      "path": "src/generated/prisma/internal/class.ts",
+      "sha1": "4c88e15bbc83c61e9202d4128bee18cc2ccbc353",
+      "bytes": 104694
+    },
+    {
+      "path": "src/generated/prisma/internal/prismaNamespace.ts",
+      "sha1": "543b4a3d0320acaeda78bf6c23f3fd7667d52618",
+      "bytes": 75266
+    },
+    {
+      "path": "src/generated/prisma/models/Category.ts",
+      "sha1": "9c42e6719cd8977f7e8a80e7735017818be93ed6",
+      "bytes": 65267
+    },
+    {
+      "path": "src/generated/prisma/models/Brand.ts",
+      "sha1": "083a9c0dbb8dca42112e0033a61be847ad31d179",
+      "bytes": 55642
+    },
+    {
+      "path": "src/generated/prisma/models/ExchangeRate.ts",
+      "sha1": "a0213b3761648afc9b69b3820cc594a684f765ba",
+      "bytes": 42486
+    },
+    {
+      "path": "src/generated/prisma/models/Order.ts",
+      "sha1": "6c938280c7206294fedcd4b4ca0884e375ae057d",
+      "bytes": 57075
+    },
+    {
+      "path": "src/generated/prisma/models/OrderItem.ts",
+      "sha1": "764e56d56bcdf80c74768109d9911474678b202a",
+      "bytes": 82336
+    },
+    {
+      "path": "src/generated/prisma/models/ProductColorOffer.ts",
+      "sha1": "c87fc87a5a34c1d6ce97465487d10109f902afb4",
+      "bytes": 67812
+    },
+    {
+      "path": "src/generated/prisma/models/Product.ts",
+      "sha1": "4452b6dff6b35be5525cca00eecad3573184da4a",
+      "bytes": 148625
+    },
+    {
+      "path": "src/generated/prisma/models/ProductColorValue.ts",
+      "sha1": "4bd7231461ab17b8087863f68f3f25f2cd5bb278",
+      "bytes": 73330
+    },
+    {
+      "path": "src/generated/prisma/models/ProductImage.ts",
+      "sha1": "4a7b369f2cf4f6556d2e17f95664cb4f6102d64c",
+      "bytes": 66303
+    },
+    {
+      "path": "src/generated/prisma/models/ProductSpec.ts",
+      "sha1": "d732ed7e8b462b693210dbb077597f86566fc304",
+      "bytes": 51745
+    },
+    {
+      "path": "src/generated/prisma/models/ProductVariant.ts",
+      "sha1": "feb8575040a6f73845b27acfb8fab19b877036ae",
+      "bytes": 87776
+    },
+    {
+      "path": "src/generated/prisma/models/ProductVariantOption.ts",
+      "sha1": "7d92c0fb2d3f4859ef661970feb4e2f4d41a63df",
+      "bytes": 61632
+    },
+    {
+      "path": "src/generated/prisma/models/ProductVariantAttribute.ts",
+      "sha1": "cdae593148b01820d9bf91f042647bf497d9ff3f",
+      "bytes": 63179
+    },
+    {
+      "path": "src/generated/prisma/models/VariantAttribute.ts",
+      "sha1": "17b00a1ee0605ab25b5cbf16621531062d300438",
+      "bytes": 59520
+    },
+    {
+      "path": "src/lib/admin/errors.ts",
+      "sha1": "635587490b7c1aff1ace41c9ec018b1acde7a611",
+      "bytes": 697
+    },
+    {
+      "path": "src/lib/admin/form-helpers.ts",
+      "sha1": "396b5b64e0d1fefe58d954a274684d03930f1551",
+      "bytes": 2903
+    },
+    {
+      "path": "src/generated/prisma/models/VariantAttributeValue.ts",
+      "sha1": "05184d9c6afcb97c04d98b370734dcae4e64b5ee",
+      "bytes": 74680
+    },
+    {
+      "path": "src/lib/admin/image-upload.ts",
+      "sha1": "c4145f79a05347bece27ae056e6de43a4cda45ee",
+      "bytes": 1196
+    },
+    {
+      "path": "src/lib/admin/require-session.ts",
+      "sha1": "21c662129ec5ed2b75a556fb645e47c0ef60fba9",
+      "bytes": 1293
+    },
+    {
+      "path": "src/lib/auth.ts",
+      "sha1": "87043b949355c82b2ef19421344030912424e5c0",
+      "bytes": 4876
+    },
+    {
+      "path": "src/lib/cart-context.tsx",
+      "sha1": "628bb7070efdb939319d3b87967f5c79e29e8747",
+      "bytes": 8429
+    },
+    {
+      "path": "src/lib/cart-resolve.ts",
+      "sha1": "0f76470caff347de6c66c8f391e56e6ab4bab515",
+      "bytes": 5927
+    },
+    {
+      "path": "src/lib/cart-validation.ts",
+      "sha1": "cf8d9f57f69ba4f3d8fea1c69194c8740862f443",
+      "bytes": 964
+    },
+    {
+      "path": "src/lib/database-adapter.ts",
+      "sha1": "55fdd6bef0bda61ebffdacbfa9211ca3c7665096",
+      "bytes": 1593
+    },
+    {
+      "path": "src/lib/catalog.ts",
+      "sha1": "9b6bde2cad57b7f9ace86dcf9083a1ce067411ac",
+      "bytes": 28660
+    },
+    {
+      "path": "src/lib/database-provider.ts",
+      "sha1": "017415315a5eb32f5fbd9324cf9b6812d31e73dc",
+      "bytes": 727
+    },
+    {
+      "path": "src/lib/format.ts",
+      "sha1": "2dc1860c7b4bc3c2ff15e81a18d7f60c301208d9",
+      "bytes": 735
+    },
+    {
+      "path": "src/lib/gsap.ts",
+      "sha1": "dc31a838ac87765a083f4800edf05465af65633d",
+      "bytes": 521
+    },
+    {
+      "path": "src/lib/http-json.ts",
+      "sha1": "7fb4d6167dfaf3de4e04e6751d94f6e840faeeb1",
+      "bytes": 1724
+    },
+    {
+      "path": "src/lib/legal.ts",
+      "sha1": "3d32a4bd4b26ebb99a53831ede6e1b11648df09c",
+      "bytes": 413
+    },
+    {
+      "path": "src/lib/order-idempotency.ts",
+      "sha1": "fc7b7fd8802e0ead3bd2c7a62a04f746dbebcd56",
+      "bytes": 1105
+    },
+    {
+      "path": "src/lib/pricing.ts",
+      "sha1": "4afd8632a9081f86804ef3862a2bb5107418932b",
+      "bytes": 1682
+    },
+    {
+      "path": "src/lib/phone.ts",
+      "sha1": "eddfd35fbadb5a2af7bd522987559a6f5dc81fe7",
+      "bytes": 1449
+    },
+    {
+      "path": "src/lib/prisma.ts",
+      "sha1": "2de697b6a56d04fd695e264732cdcef25b730d2c",
+      "bytes": 649
+    },
+    {
+      "path": "src/lib/product-route.ts",
+      "sha1": "d346c87fed7a3f5f32125d97e2713896fef65043",
+      "bytes": 976
+    },
+    {
+      "path": "src/lib/rate-limit.ts",
+      "sha1": "fe935145aa3244588d9bb4e8b2569ace2c8b5a8f",
+      "bytes": 2243
+    },
+    {
+      "path": "src/lib/request-ip.ts",
+      "sha1": "0fe5fec3f2688331022ddf05b18388f232400ec1",
+      "bytes": 761
+    },
+    {
+      "path": "src/lib/scroll.ts",
+      "sha1": "b8a70c2db432395ed1ff4b6ed8c05bf8d8714f1a",
+      "bytes": 653
+    },
+    {
+      "path": "src/lib/storefront.ts",
+      "sha1": "0aaaaf115c717cb6f442fcbec40232e8fcf99983",
+      "bytes": 3521
+    },
+    {
+      "path": "src/lib/telegram.ts",
+      "sha1": "7bfbc052da5d561a7dcad162a265b57d75c83295",
+      "bytes": 6929
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "sha1": "29e4e49f3f896b27bcf85c2ce1c2270cef252501",
+      "bytes": 129
+    },
+    {
+      "path": "src/lib/useIsTouch.ts",
+      "sha1": "a33811214c79805722f75fdccc7358d0638df4f8",
+      "bytes": 953
+    },
+    {
+      "path": "src/lib/variant-matching.ts",
+      "sha1": "9bebfea08c741b5b6ae393987bd27e84fac4c21b",
+      "bytes": 1710
+    },
+    {
+      "path": "src/proxy.ts",
+      "sha1": "41cb1580c4069328fc9cee6b325c65eec6dd8886",
+      "bytes": 1531
+    },
+    {
+      "path": "src/types/cart.ts",
+      "sha1": "ad0f4fddddf73dbf4313d9620b2fb8d230c084b0",
+      "bytes": 1670
+    },
+    {
+      "path": "src/types/content.ts",
+      "sha1": "f975906a725ef0805d3a1e2a99ce8e80414e4c55",
+      "bytes": 302
+    },
+    {
+      "path": "tests/samsung-assortment.test.ts",
+      "sha1": "d4a77161b6a0febd331b434c72ab239982c77c6e",
+      "bytes": 3181
+    },
+    {
+      "path": "tsconfig.json",
+      "sha1": "b07dfda8c17606859bb9b0ebe6f928a57c268593",
+      "bytes": 718
+    }
+  ],
+  "verification": {
+    "sha1": "809/809 original deployment files match",
+    "typescript": "passed",
+    "catalogTests": "2 passed, 24 models / 43 configurations",
+    "build": {
+      "compile": "passed",
+      "typescript": "passed",
+      "prerender": "blocked: local DATABASE_URL missing, ECONNREFUSED"
+    },
+    "liveSite": {
+      "health": 200,
+      "samsungCatalog": 200
+    },
+    "deploymentModified": false,
+    "databaseModified": false
+  },
+  "backupPath": "/Users/artempataga/.codex/backups/di-smart-vercel-2026-10-06-verified.tar.gz",
+  "backupSha256": "04023964f082a79483e1f765b9bb42edd8cf6d7366025ca88aab9896ba4cafe0",
+  "backupVerifiedFiles": 809
+}

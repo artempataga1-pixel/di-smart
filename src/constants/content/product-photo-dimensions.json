@@ -1,0 +1,2594 @@
+{
+  "/media/airpods-pro-3/charging.webp": [
+    1600,
+    1000
+  ],
+  "/media/airpods-pro-3/design.webp": [
+    1600,
+    1000
+  ],
+  "/media/airpods-pro-3/fitness-natural.webp": [
+    1312,
+    1199
+  ],
+  "/media/airpods-pro-3/hero-poster.webp": [
+    1470,
+    630
+  ],
+  "/media/airpods-pro-3/silence-natural.webp": [
+    1312,
+    1199
+  ],
+  "/media/apple-color-variants/airpods-max/blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/airpods-max/green.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/airpods-max/midnight.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/airpods-max/pink.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/airpods-max-2/blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/airpods-max-2/midnight.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/airpods-max-2/orange.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/airpods-max-2/purple.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-11/pink.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-11/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-11/yellow.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-air-11/purple.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-air-11/space-gray.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-air-11/starlight.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-air-13/purple.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-air-13/space-gray.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/ipad-air-13/starlight.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17/black.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17/lavender.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17/sage.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17-pro/deep-blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17-pro/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17-pro-max/deep-blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17-pro-max/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17e/black.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-17e/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-18-pro-max/black.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-18-pro-max/burgundy.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/iphone-18-pro-max/glacier.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/macbook-air-13-m5/midnight.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/macbook-air-13-m5/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/macbook-air-13-m5/starlight.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/macbook-air-15-m5/midnight.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/macbook-air-15-m5/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/macbook-air-15-m5/starlight.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-se-3/midnight-midnight-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-series-11/jet-black-black-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-series-11/rose-gold-light-blush-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-series-11/space-gray-black-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-series-12/black-black-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-series-12/dark-bronze-olive-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-series-12/light-gold-sand-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-series-12/space-gray-black-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-color-variants/watch-series-12/space-gray-blue-band.webp": [
+    1254,
+    1254
+  ],
+  "/media/apple-watch-ultra-4/alpine.webp": [
+    1600,
+    1000
+  ],
+  "/media/apple-watch-ultra-4/finish-black.webp": [
+    1600,
+    1000
+  ],
+  "/media/apple-watch-ultra-4/finish-natural.webp": [
+    1600,
+    1000
+  ],
+  "/media/apple-watch-ultra-4/hero-poster.webp": [
+    1470,
+    630
+  ],
+  "/media/apple-watch-ultra-4/ocean-diver.webp": [
+    1584,
+    993
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-black.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-burgundy.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-glacier.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-max-black-full-v2.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-max-black.webp": [
+    1246,
+    518
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-max-burgundy.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-max-glacier.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-max-silver.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/apple-official-2026/iphone-18-pro-silver.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/apple-watch-silicone-2026/se3-midnight-fixed-2026-10-16.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/se3-midnight-v3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/se3-starlight-fixed-2026-10-16.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/se3-starlight-v3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/series11-jet-black-fixed-2026-10-16.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/series11-jet-black-v3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/series11-rose-gold-fixed-2026-10-16.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/series11-rose-gold-v3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/series11-silver-fixed-2026-10-16.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/series11-silver-v3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/series11-space-gray-fixed-2026-10-16.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/apple-watch-silicone-2026/series11-space-gray-v3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/iphone-air-official-2026/cloudwhite.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/iphone-air-official-2026/lightgold.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/iphone-air-official-2026/skyblue.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/iphone-air-official-2026/spaceblack.webp": [
+    940,
+    1112
+  ],
+  "/media/catalog/products/airpods-4.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/airpods-4.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/airpods-5-wireless.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/airpods-5.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/airpods-max-2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/airpods-max.png": [
+    1536,
+    1024
+  ],
+  "/media/catalog/products/airpods-max.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/airpods-pro-2.webp": [
+    1000,
+    1000
+  ],
+  "/media/catalog/products/airpods-pro-3.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/airpods-pro-3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-20w-adapter-2026.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-20w-adapter.webp": [
+    600,
+    600
+  ],
+  "/media/catalog/products/apple-35w-dual-adapter.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-35w-dual-adapter.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-magsafe-charger.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-magsafe-charger.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-pencil-2.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-pencil-2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-pencil-pro.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-pencil-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-pencil-usb-c.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-pencil-usb-c.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-tv-4k-3-ethernet-128.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-tv-4k-3-wifi-64.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-vision-pro-m5.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-watch-ultra-4.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/apple-watch-ultra-4.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/cable-braided-usbc.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/cable-usbc-jack.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/cable-usbc-lightning.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/cable-usbc-lightning.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/cable-usbc-usbc.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/cable-usbc-usbc.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/earpods-usb-c.png": [
+    1448,
+    1086
+  ],
+  "/media/catalog/products/earpods-usb-c.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-a26-5g.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-a56.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-a56.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-book6-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-book6-ultra.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-book6.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds-fe.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds-fe.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds3-fe.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds3-pro.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds3-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds3.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds4-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-buds4.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s25-case.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s25-case.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s25-plus.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s25-plus.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s25-ultra.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s25-ultra.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s25.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s25.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s26-fe.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s26-plus.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s26-ultra-card-studio-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-s26.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-a10-plus.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-a10-plus.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-a10.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-a10.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-a11-plus.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-a11.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-s10-fe-plus.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-s10-fe.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-s11-ultra.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-s11-ultra.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-s11.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-tab-s11.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-z-flip7.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-z-flip7.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-z-flip8.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-z-fold7.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-z-fold7.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/galaxy-z-fold8.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/homepod-2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-11.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-11.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-air-11.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-air-11.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-air-13.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-air-13.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-folio-case.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-mini.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-pro-11.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-pro-11.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-pro-13.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/ipad-pro-13.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-14.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-14.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-15.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-15.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-16.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-16.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-16e.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-16e.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-17-pro-max.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-17-pro-max.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-17-pro.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-17-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-17.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-17.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-17e.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-18-pro-card-studio-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-18-pro-case.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-18-pro-case.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-18-pro-max-card-studio-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-18-pro-max.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-18-pro.png": [
+    1672,
+    941
+  ],
+  "/media/catalog/products/iphone-18-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-air.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-air.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-clear-case.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-clear-case.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-duo.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-silicone-case.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/iphone-silicone-case.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-air-13-m4.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-air-13-m5.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-air-15-m4.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-air-15-m4.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-air-15-m5.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-2026.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-blush-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-blush.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-citrus-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-citrus.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-indigo-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-indigo.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-silver-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-neo-silver.webp": [
+    1400,
+    854
+  ],
+  "/media/catalog/products/macbook-pro-14-m5-pro.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-pro-14-m5-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-pro-14-m5.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-pro-14-m5.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-pro-16-m5-max.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/macbook-sleeve.png": [
+    1672,
+    941
+  ],
+  "/media/catalog/products/macbook-sleeve.webp": [
+    1400,
+    788
+  ],
+  "/media/catalog/products/redmi-book-14-2026.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-book-16-2026.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-book-pro-14-2026.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-book-pro-16-2026.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-buds-8-lite.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-buds-8-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-buds-8.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-note-15-5g.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-note-15-pro-5g.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-note-15-pro-plus-5g.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/redmi-pad-2-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/s-pen-pro.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/s-pen-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/samsung-25w-charger.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/samsung-25w-charger.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/samsung-45w-charger.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/samsung-45w-charger.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/samsung-cable-usbc-usbc.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-hermes-series-11.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-hermes-series-11.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-hermes-series-12.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-se-3.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-se-3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-series-11-cellular.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-series-11-cellular.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-series-11.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-series-11.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-series-12-cellular.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-series-12.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-ultra-3-v2.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-ultra-3-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-ultra-3.png": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/watch-ultra-3.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/xiaomi-17-ultra.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/xiaomi-17.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/xiaomi-17t-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/xiaomi-17t.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/xiaomi-book-pro-14.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/xiaomi-pad-8-pro.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/xiaomi-pad-8.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/products/xiaomi-pad-mini.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/samsung-client/watch-ultra-2.webp": [
+    300,
+    300
+  ],
+  "/media/catalog/samsung-client/watch-ultra-2025.webp": [
+    300,
+    300
+  ],
+  "/media/catalog/samsung-client/watch8-40.webp": [
+    300,
+    300
+  ],
+  "/media/catalog/samsung-client/watch8-44.webp": [
+    300,
+    300
+  ],
+  "/media/catalog/samsung-client/watch8-classic.webp": [
+    300,
+    300
+  ],
+  "/media/catalog/samsung-client/watch9-40.webp": [
+    700,
+    700
+  ],
+  "/media/catalog/samsung-client/watch9-44.webp": [
+    700,
+    700
+  ],
+  "/media/catalog/samsung-watch-studio/watch-ultra-2-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/samsung-watch-studio/watch-ultra-2025-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/samsung-watch-studio/watch8-40-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/samsung-watch-studio/watch8-44-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/samsung-watch-studio/watch8-classic-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/samsung-watch-studio/watch9-40-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/catalog/samsung-watch-studio/watch9-44-2026-v2.webp": [
+    1254,
+    1254
+  ],
+  "/media/color-frame-fixed-2026-10-31/air13-midnight.webp": [
+    1254,
+    1254
+  ],
+  "/media/color-frame-fixed-2026-10-31/air13-sky-blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/color-frame-fixed-2026-10-31/air13-starlight.webp": [
+    1254,
+    1254
+  ],
+  "/media/color-frame-fixed-2026-10-31/air15-midnight.webp": [
+    1254,
+    1254
+  ],
+  "/media/color-frame-fixed-2026-10-31/air15-sky-blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/color-frame-fixed-2026-10-31/air15-starlight.webp": [
+    1254,
+    1254
+  ],
+  "/media/color-frame-fixed-2026-10-31/s26-black.webp": [
+    1536,
+    1024
+  ],
+  "/media/flagship-colors/galaxy-s26-ultra/black.webp": [
+    1500,
+    1000
+  ],
+  "/media/flagship-colors/galaxy-s26-ultra/cobalt-violet.webp": [
+    1500,
+    1000
+  ],
+  "/media/flagship-colors/galaxy-s26-ultra/silver-shadow.webp": [
+    1500,
+    1000
+  ],
+  "/media/flagship-colors/iphone-18-pro/black.webp": [
+    1500,
+    1000
+  ],
+  "/media/flagship-colors/iphone-18-pro/burgundy.webp": [
+    1500,
+    1000
+  ],
+  "/media/flagship-colors/iphone-18-pro/glacier.webp": [
+    1500,
+    1000
+  ],
+  "/media/flagship-colors/iphone-18-pro/silver.webp": [
+    1500,
+    1000
+  ],
+  "/media/galaxy-s26-ultra/camera.png": [
+    2400,
+    1500
+  ],
+  "/media/galaxy-s26-ultra/hero.png": [
+    2400,
+    1500
+  ],
+  "/media/galaxy-s26-ultra/photos/ai-day-photo.webp": [
+    1448,
+    1086
+  ],
+  "/media/galaxy-s26-ultra/photos/ai-edit-photo.webp": [
+    1448,
+    1086
+  ],
+  "/media/galaxy-s26-ultra/photos/ai-search-photo.webp": [
+    1448,
+    1086
+  ],
+  "/media/galaxy-s26-ultra/photos/camera-photo.webp": [
+    1448,
+    1086
+  ],
+  "/media/galaxy-s26-ultra/photos/display-photo.webp": [
+    1122,
+    1402
+  ],
+  "/media/galaxy-s26-ultra/photos/hero-photo.webp": [
+    1672,
+    941
+  ],
+  "/media/galaxy-s26-ultra/photos/performance-photo.webp": [
+    1672,
+    941
+  ],
+  "/media/galaxy-s26-ultra/photos/spen-photo.webp": [
+    1122,
+    1402
+  ],
+  "/media/galaxy-s26-ultra/video/poster-wide.webp": [
+    1470,
+    630
+  ],
+  "/media/galaxy-s26-ultra/video/poster.webp": [
+    1280,
+    720
+  ],
+  "/media/galaxy-tab-s11-ultra/create-real.jpg": [
+    1586,
+    992
+  ],
+  "/media/galaxy-tab-s11-ultra/design-gray.jpg": [
+    1586,
+    992
+  ],
+  "/media/galaxy-tab-s11-ultra/design-silver.jpg": [
+    1586,
+    992
+  ],
+  "/media/galaxy-tab-s11-ultra/dex-real.jpg": [
+    1586,
+    992
+  ],
+  "/media/galaxy-tab-s11-ultra/hero-poster.jpg": [
+    1470,
+    630
+  ],
+  "/media/ipad-pro-m5/color-silver-studio.webp": [
+    1672,
+    941
+  ],
+  "/media/ipad-pro-m5/color-silver.webp": [
+    1672,
+    941
+  ],
+  "/media/ipad-pro-m5/color-space-black-studio.webp": [
+    1672,
+    941
+  ],
+  "/media/ipad-pro-m5/color-space-black.webp": [
+    1672,
+    941
+  ],
+  "/media/ipad-pro-m5/display.webp": [
+    1672,
+    941
+  ],
+  "/media/ipad-pro-m5/hero-poster.webp": [
+    1672,
+    941
+  ],
+  "/media/ipad-pro-m5/hero-preview.webp": [
+    1470,
+    630
+  ],
+  "/media/ipad-pro-m5/pencil.webp": [
+    1672,
+    941
+  ],
+  "/media/ipad-pro-m5/performance.webp": [
+    1672,
+    941
+  ],
+  "/media/ipad-pro-m5/thinness.webp": [
+    1672,
+    941
+  ],
+  "/media/iphone-18-pro/apple/a20-pro.webp": [
+    1120,
+    1098
+  ],
+  "/media/iphone-18-pro/apple/chip.jpg": [
+    148,
+    148
+  ],
+  "/media/iphone-18-pro/apple/playground.jpg": [
+    696,
+    452
+  ],
+  "/media/iphone-18-pro/apple/siri-ru.webp": [
+    1300,
+    1209
+  ],
+  "/media/iphone-18-pro/apple/siri.jpg": [
+    705,
+    656
+  ],
+  "/media/iphone-18-pro/background.png": [
+    1672,
+    941
+  ],
+  "/media/iphone-18-pro/images/battery.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/black.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/camera.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/case.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/charging.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/cinema.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/controls.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/design-burgundy.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/ecosystem.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/experience.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/gaming.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/glacier.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/landscape.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/light.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/macro.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/battery.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/black.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/camera.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/case.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/charging.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/cinema.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/controls.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/design-burgundy.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/ecosystem.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/experience.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/gaming.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/glacier.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/landscape.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/light.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/macro.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/performance.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/portrait-minsk.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/portrait-v3.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/natural/silver.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/performance.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/images/silver.webp": [
+    1536,
+    1024
+  ],
+  "/media/iphone-18-pro/intro-end.jpg": [
+    1280,
+    720
+  ],
+  "/media/iphone-18-pro/intro-start.jpg": [
+    1280,
+    720
+  ],
+  "/media/iphone-18-pro/poster-mobile-start.jpg": [
+    720,
+    900
+  ],
+  "/media/iphone-18-pro/poster-mobile.jpg": [
+    720,
+    900
+  ],
+  "/media/iphone-18-pro/poster-start.jpg": [
+    1280,
+    720
+  ],
+  "/media/iphone-18-pro/poster.jpg": [
+    1280,
+    720
+  ],
+  "/media/iphone-18-pro/screens/black-complete.webp": [
+    852,
+    1846
+  ],
+  "/media/iphone-18-pro/screens/black-editorial.webp": [
+    852,
+    1846
+  ],
+  "/media/iphone-18-pro/screens/black-lockscreen-v2.webp": [
+    1080,
+    2340
+  ],
+  "/media/iphone-18-pro/screens/black-lockscreen.webp": [
+    1080,
+    2340
+  ],
+  "/media/iphone-18-pro/screens/burgundy-complete.webp": [
+    852,
+    1846
+  ],
+  "/media/iphone-18-pro/screens/burgundy-editorial.webp": [
+    852,
+    1847
+  ],
+  "/media/iphone-18-pro/screens/burgundy-lockscreen-v2.webp": [
+    1080,
+    2340
+  ],
+  "/media/iphone-18-pro/screens/burgundy-lockscreen.webp": [
+    1080,
+    2340
+  ],
+  "/media/iphone-18-pro/screens/glacier-complete.webp": [
+    852,
+    1846
+  ],
+  "/media/iphone-18-pro/screens/glacier-editorial.webp": [
+    852,
+    1846
+  ],
+  "/media/iphone-18-pro/screens/glacier-lockscreen-v2.webp": [
+    1080,
+    2340
+  ],
+  "/media/iphone-18-pro/screens/glacier-lockscreen.webp": [
+    1080,
+    2340
+  ],
+  "/media/iphone-18-pro/screens/silver-complete.webp": [
+    852,
+    1846
+  ],
+  "/media/iphone-18-pro/screens/silver-editorial.webp": [
+    852,
+    1846
+  ],
+  "/media/iphone-18-pro/screens/silver-lockscreen-v2.webp": [
+    1080,
+    2340
+  ],
+  "/media/iphone-18-pro/screens/silver-lockscreen.webp": [
+    1080,
+    2340
+  ],
+  "/media/iphone-18-pro/textures/optical-glass.webp": [
+    1024,
+    1024
+  ],
+  "/media/iphone-18-pro/viewer/3d_viewer.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/action_button-ru.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/action_button.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/camera_control.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/color_black.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/color_burgundy.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/color_glacier.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/color_silver.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/durability.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/dynamic_island_endframe-ru.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/dynamic_island_endframe.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/dynamic_island_startframe.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/loader.jpg": [
+    232,
+    477
+  ],
+  "/media/iphone-18-pro/viewer/size-ru.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/size.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/viewer_aperture_endframe.jpg": [
+    1440,
+    760
+  ],
+  "/media/iphone-18-pro/viewer/viewer_aperture_startframe.jpg": [
+    1440,
+    760
+  ],
+  "/media/macbook-pro-m5-max/color-silver.webp": [
+    1672,
+    941
+  ],
+  "/media/macbook-pro-m5-max/color-space-black.webp": [
+    1672,
+    941
+  ],
+  "/media/macbook-pro-m5-max/design.webp": [
+    1672,
+    941
+  ],
+  "/media/macbook-pro-m5-max/display.webp": [
+    1672,
+    941
+  ],
+  "/media/macbook-pro-m5-max/hero-poster.webp": [
+    1672,
+    941
+  ],
+  "/media/macbook-pro-m5-max/hero-preview.webp": [
+    1470,
+    630
+  ],
+  "/media/macbook-pro-m5-max/performance.webp": [
+    1672,
+    941
+  ],
+  "/media/quality-2026-10-24/0022e7279e61fc27c31e.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/02022a7866ce7e1edc1c.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/02f7a0678d67dc38612f.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/08437c6ef59f8566a087.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/085926521066f98cd7e1.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/08bd6ceb08380e9204a3.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/09433af7e11f3ba37310.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/10ad2b570429420af41c.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/1168e7636db7a021dde1.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/1258a69fe45cc6d862fa.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/1865e1ab6222a07da4b1.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/19d8c95a7f79f1b5dd3a.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/1a5452e04d62e54166d4.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/1baedb695b2aaba4413f.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/1bd58066dd5afcdf9f22.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/1f1e2985d90accddcdc7.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/1fa7b30e68c908b032cf.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/20c7ad2d458201502d81.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/22a885ef43ab01e151d7.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/22b86592b2cdbeb724c4.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/22fd52fe546c757c88ee.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/239d15dbb059eb6a2a93.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/25550a574735b29ee36a.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/25a5b415f86dfacda265.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/25e5c444e59f83a73b56.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/262d3a6c7ed309975e17.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/28ec85b177d5aedd4aee.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/2e937b4e0de74b491243.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/2f3e013b15953019cd94.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/30cb7ed67609ceeb1d27.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/315d8cf840524912fb90.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/332d316b8a8a79144d78.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/345c856690771dc78451.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/35994c4ae6237bc7b5c0.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/3623df5729949dd2eb3e.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/3afe3cd8e138ec1309cf.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/3dd0f9c509d0fd58fb42.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/3dd1dc870da7b15ec8bd.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/3e7187b39269dea6a539.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/4036bea1f7f504881b0f.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/490cf79116dc12d31c5b.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/4e0339c89b94a957becf.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/51df2faf080d415f8d91.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/54400ac635feae16c996.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/5502d23bfb8ecead85b7.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/55d90602c50009304069.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/56512fe1ec46defada8f.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/5aef73aa8b5c8fb609f0.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/5b6a559212e75b611a25.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/5d97b3113d578c7ac849.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/6178154876520f91d188.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/64cb24c8902d0dcf1d06.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/66596adf5fc9d52430eb.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/67a5f0fb89ef22051952.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/6be20ace2d04b6e2ad58.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/6c8aecf7fee641b8d99f.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/6d0ade8bdd040eacc5aa.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/6dc782a6481029b712ee.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/708ae813154e76c82a54.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/76bd8366ed6581947de3.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/78168c4bac89c6ad5485.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/7a89ab2a9eeab0ed802e.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/7de5c570391e328c775a.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/7fb5745c9735bf9ffd9b.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/81827af2bf106a63f88a.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/81bc89342621785c8bf1.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/8247d214e4f54fd9c082.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/838c522642d831c3b740.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/85c16329e3bf3b9c78ba.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/87bc0e1386dd3dd496df.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/8b0548cec72b043b0391.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/8ba7e35ea0ff502b7b07.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/8dadeaf32efe66620843.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/8e28e1b0f2941358c220.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/913bbc43bc43a80696a7.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/91ecf1681eb74bf675a4.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/9353d895bc68974c1083.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/938153e2fe78be7d2d44.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/942343aa8718047d240e.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/9c5970de0d884906b87d.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/9d39223280a2e04b320e.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/9d46ef403ca6a1d7cef2.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/9f409bc7db355ad231c3.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/9f7291d621912cf6b6c1.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/9f98a77af1acb8a1e7bf.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/a05855715c69c26c2157.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/a2a89ae07d5269b33ee0.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/a68b5e22aec52b36465a.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/a737ab881dbff7adf723.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/ab7180694a7a2dbe72eb.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/abbbe71d24407c53d2fd.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/acf5964caf1395623ec0.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/ad572b4f292288bde5c6.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/ad888f3f52abccfff3bc.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/ae717a97b57b29ca477f.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/aff35998acb74c6c2266.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/b134df6cbdf664fb0087.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/b3dd4e37c97ed16b1eae.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/b716e1881af70b32b532.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/bbad5e1f7384f3994d77.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/bd19d55fd88e37a34108.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/bd2bfd099de2ad649771.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/bd864d62c8fd165aa97d.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/be33720a3c5ffe9d0fbc.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/c2c2b73dd8f3f1becbfe.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/c57830923693e2484661.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/c5ee71cd0293d1f6320c.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/c98718a510486dfae89d.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/c9b9ec53ff77d5ccdf19.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/cd21770becb0ba9a103f.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/cde69ffb5bd923a3a764.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/d454bf9d5e0df5814610.webp": [
+    1536,
+    1024
+  ],
+  "/media/quality-2026-10-24/d5c365c43c0fc78a2356.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/d862a2a147e76e99e614.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/d9e6afc196d2d01f6453.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/dcd859c8769c7bca783c.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/e0a19920483588575edb.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/e160a28fc655c73848da.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/e5015a7fc7df11e59d8b.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/e7b8cd693bb47fe12b03.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/e842c1c8258bdaa2ea2e.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/eb2f197911806918b31b.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/ebd68b183c4442e44818.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/ef3ded754b87f2d82b33.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/ef715c3c5b473807f58a.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/f306921204f9dc26dd4c.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/f6770b4c5b4d2ed07f2d.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/f6ab51aef0c2bbc34d5c.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/f872f8f3fb30d3c9058d.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/f8d9b40cfa699610e266.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/fb60ef020351b2b3e912.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/fd53730f640e6a896039.webp": [
+    1254,
+    1254
+  ],
+  "/media/quality-2026-10-24/ff67bd5d52d6ecaef87c.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-a26-5g/green.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-a26-5g/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-a56/graphite.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-a56/olive.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-a56/pink.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-buds3/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-buds3-fe/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-buds3-pro/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-buds4/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-buds4-pro/pink-gold.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-buds4-pro/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s25/black.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s25/navy.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s25-plus/black.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s25-ultra/titanium-black.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s25-ultra/titanium-gray.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s25-ultra/titanium-silverblue.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26/cobalt-violet.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26/sky-blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26-fe/blueberry.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26-fe/graphite.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26-fe/pistachio.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26-plus/cobalt-violet.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26-plus/sky-blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-s26-plus/white.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-a11/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-a11-plus/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-fe/blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-fe/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-fe-plus/blue.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-fe-plus/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-lite/coral-red.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-lite/gray.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-lite/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-plus/gray.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s10-plus/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s11/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-tab-s11-ultra/silver.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-flip7/black.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-flip7/coral-red.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-flip7/mint.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-flip8/cream.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-flip8/mint.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-flip8/pink.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-fold7/black.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-fold7/blue-shadow.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-fold7/mint.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-fold8/cream.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-fold8/lavender.webp": [
+    1254,
+    1254
+  ],
+  "/media/samsung-color-variants/galaxy-z-fold8/pistachio.webp": [
+    1254,
+    1254
+  ],
+  "/media/storefront/categories/airpods.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/apple-devices.webp": [
+    1448,
+    1086
+  ],
+  "/media/storefront/categories/cables.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/cases.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/chargers.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/ipad.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/iphone-2026.webp": [
+    1448,
+    1086
+  ],
+  "/media/storefront/categories/iphone.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/laptops.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/macbook.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/airpods.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/airpods.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/cables.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/cables.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/cases.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/cases.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/chargers.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/chargers.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/ipad.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/ipad.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/iphone.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/iphone.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/macbook.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/macbook.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/samsung-audio.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/samsung-audio.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/samsung-smartphones.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/samsung-smartphones.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/samsung-tablets.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/samsung-tablets.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/stylus.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/stylus.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/masters/watch.png": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/masters/watch.webp": [
+    1400,
+    933
+  ],
+  "/media/storefront/categories/samsung-audio.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/samsung-family-2026.webp": [
+    1683,
+    935
+  ],
+  "/media/storefront/categories/samsung-smartphones.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/samsung-tablets.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/stylus.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/watch.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/categories/xiaomi-smartphones.webp": [
+    1536,
+    1024
+  ],
+  "/media/storefront/poster.webp": [
+    1920,
+    824
+  ],
+  "/media/xiaomi-17-ultra/camera.webp": [
+    1600,
+    1000
+  ],
+  "/media/xiaomi-17-ultra/color-black.jpg": [
+    1086,
+    1448
+  ],
+  "/media/xiaomi-17-ultra/color-green.jpg": [
+    1024,
+    1536
+  ],
+  "/media/xiaomi-17-ultra/color-white.jpg": [
+    1122,
+    1402
+  ],
+  "/media/xiaomi-17-ultra/display.webp": [
+    1600,
+    1000
+  ],
+  "/media/xiaomi-17-ultra/hero-poster.webp": [
+    1470,
+    630
+  ],
+  "/media/xiaomi-17-ultra/night-real.jpg": [
+    1535,
+    1025
+  ],
+  "/media/xiaomi-book-pro-14/color-blue.jpg": [
+    1586,
+    992
+  ],
+  "/media/xiaomi-book-pro-14/color-gray.jpg": [
+    1586,
+    992
+  ],
+  "/media/xiaomi-book-pro-14/color-pink.jpg": [
+    1586,
+    992
+  ],
+  "/media/xiaomi-book-pro-14/color-white.jpg": [
+    1586,
+    992
+  ],
+  "/media/xiaomi-book-pro-14/hero-poster.jpg": [
+    1470,
+    630
+  ],
+  "/media/xiaomi-book-pro-14/performance-real.jpg": [
+    1586,
+    992
+  ],
+  "/media/xiaomi-book-pro-14/travel-real.jpg": [
+    1672,
+    941
+  ]
+}

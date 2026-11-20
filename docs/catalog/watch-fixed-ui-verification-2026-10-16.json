@@ -1,0 +1,182 @@
+{
+  "deployment": "dpl_4nMVs34rVGqFgwj7fjMFEKELMsok",
+  "checks": [
+    {
+      "loaded": true,
+      "model": "/product/watch-series-11",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "selected": "Космический серый / Black Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/series11-space-gray-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 1280
+    },
+    {
+      "loaded": true,
+      "model": "/product/watch-series-11",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "selected": "Глянцевый чёрный / Black Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/series11-jet-black-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 1280
+    },
+    {
+      "loaded": true,
+      "model": "/product/watch-series-11",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "selected": "Розово-золотой / Light Blush Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/series11-rose-gold-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 1280
+    },
+    {
+      "loaded": true,
+      "model": "/product/watch-series-11",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "selected": "Серебристый / Purple Fog Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/series11-silver-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 1280
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "model": "/product/watch-series-11",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "selected": "Космический серый / Black Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/series11-space-gray-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 390
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "model": "/product/watch-series-11",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "selected": "Глянцевый чёрный / Black Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/series11-jet-black-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 390
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "model": "/product/watch-series-11",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "selected": "Розово-золотой / Light Blush Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/series11-rose-gold-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 390
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "model": "/product/watch-series-11",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "selected": "Серебристый / Purple Fog Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/series11-silver-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 390
+    },
+    {
+      "documentWidth": 1280,
+      "loaded": true,
+      "model": "/product/watch-se-3",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "selected": "Полночный / Midnight Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/se3-midnight-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 1280
+    },
+    {
+      "documentWidth": 1280,
+      "loaded": true,
+      "model": "/product/watch-se-3",
+      "rect": {
+        "height": 638.3984375,
+        "width": 638.3984375,
+        "x": 88,
+        "y": 161
+      },
+      "selected": "Звёздный / Starlight Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/se3-starlight-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 1280
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "model": "/product/watch-se-3",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "selected": "Полночный / Midnight Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/se3-midnight-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 390
+    },
+    {
+      "documentWidth": 390,
+      "loaded": true,
+      "model": "/product/watch-se-3",
+      "rect": {
+        "height": 358,
+        "width": 358,
+        "x": 16,
+        "y": 145
+      },
+      "selected": "Звёздный / Starlight Sport Band",
+      "src": "/media/catalog/apple-watch-silicone-2026/se3-starlight-fixed-2026-10-16.webp",
+      "transition": "0s",
+      "viewport": 390
+    }
+  ],
+  "passed": true
+}

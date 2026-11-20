@@ -1,0 +1,42 @@
+.shell {
+  min-height: 72svh;
+  padding: clamp(24px, 5vw, 72px);
+  opacity: 0;
+  animation: reveal 180ms ease 140ms forwards;
+}
+
+.hero,
+.copy span {
+  background: #f2f4f7;
+}
+
+.hero {
+  width: min(100%, 1180px);
+  aspect-ratio: 16 / 7;
+  margin: 0 auto;
+  border-radius: 28px;
+}
+
+.copy {
+  display: grid;
+  gap: 12px;
+  width: min(72%, 620px);
+  margin: 28px auto 0;
+}
+
+.copy span {
+  height: 16px;
+  border-radius: 999px;
+}
+
+.copy span:last-child {
+  width: 64%;
+}
+
+@keyframes reveal {
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shell { animation: none; opacity: 1; }
+}

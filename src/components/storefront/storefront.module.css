@@ -3,10 +3,12 @@
 .heroMedia { width: 100%; height: 100%; object-fit: contain; }
 video.heroMedia { position: absolute; inset: 0; }
 .hero::after { content: ""; position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(0, 0, 0, .56)); pointer-events: none; }
-.heroCopy { position: absolute; z-index: 1; inset: auto 24px 26px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; font-family: var(--font-nunito-sans-var), sans-serif; }
-.heroMessage { margin: 0; font-size: clamp(18px, 2.5vw, 36px); line-height: 1.25; font-weight: 300; letter-spacing: -.015em; color: #fff; text-wrap: balance; }
-.scrollCue { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; padding: 8px 22px; border: 1px solid rgba(255,255,255,.85); border-radius: 999px; color: #fff; font-size: 15px; font-weight: 300; background: rgba(0,0,0,.08); }
-.scrollCue:hover { background: rgba(255,255,255,.14); border-color: #fff; }
+.heroCopy { position: absolute; z-index: 1; inset: auto 24px 28px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; font-family: var(--font-nunito-sans-var), sans-serif; }
+.heroMessage { max-width: 920px; margin: 0; font-size: clamp(20px, 2.6vw, 40px); line-height: 1.18; font-weight: 500; letter-spacing: -.025em; color: #fff; text-wrap: balance; text-shadow: 0 1px 18px rgba(0, 0, 0, .35); }
+.heroMessage span { display: block; }
+.heroSubline { margin-top: 5px; font-size: clamp(15px, 1.45vw, 21px); font-weight: 400; letter-spacing: -.01em; }
+.heroCta { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: 10px 24px; border: 1px solid rgba(255,255,255,.9); border-radius: 999px; color: #161617; font-size: 15px; font-weight: 600; background: rgba(255,255,255,.94); box-shadow: 0 8px 28px rgba(0,0,0,.16); transition: background .2s, transform .2s; }
+.heroCta:hover { background: #fff; transform: translateY(-1px); }
 .section { padding: 100px 12px 0; scroll-margin-top: 60px; }
 .heading { padding: 0 4% 36px; }
 .headingCentered { text-align: center; }
@@ -33,19 +35,44 @@ video.heroMedia { position: absolute; inset: 0; }
 .catalogCta { text-align: center; padding: 130px 24px; }
 .catalogCta p { margin: 20px auto 28px; font-size: 20px; color: #6e6e73; max-width: 500px; }
 @media (max-width: 767px) {
-  .heroCopy { inset: auto 16px 10px; gap: 6px; }
-  .heroMessage { font-size: clamp(16px, 3.8vw, 24px); }
-  .scrollCue { font-size: 13px; }
+  .heroCopy { inset: auto 16px 12px; gap: 0; }
+  .heroMessage { display: none; }
+  .heroCta { min-height: 44px; padding: 9px 22px; font-size: 14px; }
   .section { padding: 64px 8px 0; }
   .heading { padding: 0 16px 28px; }
-  .grid { grid-template-columns: 1fr; gap: 8px; }
-  .tile { min-height: 600px; }
-  .tileCopy { padding: 38px 20px 8px; }
-  .productImage { min-height: 350px; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .categoryTile { min-height: 0; border-radius: 18px; }
+  .categoryTile .productImage {
+    order: -1;
+    flex: none;
+    min-height: 0;
+    aspect-ratio: 1;
+    background: rgba(255, 255, 255, .45);
+  }
+  .categoryTile .render { padding: 8px; object-position: center; }
+  .categoryTile .tileCopy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 12px 10px 10px;
+  }
+  .categoryTile .tileCopy h3 {
+    display: -webkit-box;
+    min-height: 2.3em;
+    overflow: hidden;
+    font-size: clamp(15px, 4.2vw, 18px);
+    line-height: 1.15;
+    letter-spacing: -.025em;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .categoryTile .tileCopy p { display: none; }
+  .categoryTile .actions { flex: 1; align-items: flex-end; margin-top: 10px; }
+  .categoryTile .primary { width: 100%; min-height: 42px; padding: 8px; font-size: 13px; }
   .categoryHero { min-height: 600px; }
   .catalogCta { padding: 80px 24px; }
 }
-@media (prefers-reduced-motion: reduce) { .render, .primary, .secondary { transition: none; } .tile:hover .render { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .render, .primary, .secondary, .heroCta { transition: none; } .tile:hover .render { transform: none; } .heroCta:hover { transform: none; } }
 @media (min-width: 768px) {
   .grid > .tile:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .grid > .tile:last-child:nth-child(odd) .productImage { max-width: 1000px; align-self: center; }

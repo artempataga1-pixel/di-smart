@@ -15,7 +15,10 @@ interface SessionPayload {
 
 function getSecret(): string {
   const secret = process.env.SESSION_SECRET;
-  if (!secret) throw new Error("SESSION_SECRET не задан в .env");
+  if (!secret || (process.env.NODE_ENV === "production" &&
+    (secret === "change-me-to-a-long-random-string" || secret.length < 32))) {
+    throw new Error("SESSION_SECRET не задан или недостаточно надёжен");
+  }
   return secret;
 }
 
@@ -93,5 +96,10 @@ export function verifyCredentials(login: string, password: string): boolean {
   const expectedLogin = process.env.ADMIN_LOGIN;
   const expectedPassword = process.env.ADMIN_PASSWORD;
   if (!expectedLogin || !expectedPassword) return false;
+  const minPasswordLength = process.env.ADMIN_ALLOW_SHORT_PASSWORD === "true" ? 10 : 16;
+  if (process.env.NODE_ENV === "production" &&
+      (expectedLogin === "admin" || expectedPassword === "change-me" || expectedPassword.length < minPasswordLength)) {
+    return false;
+  }
   return timingSafeEqualString(login, expectedLogin) && timingSafeEqualString(password, expectedPassword);
 }

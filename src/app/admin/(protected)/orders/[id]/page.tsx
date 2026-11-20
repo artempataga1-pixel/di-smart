@@ -31,6 +31,8 @@ export default async function AdminOrderDetailPage({
   if (!order) notFound();
 
   const log = parseDeliveryLog(order.telegramDeliveryLog);
+  const acknowledgment = order.legalAcknowledgment && typeof order.legalAcknowledgment === "object" &&
+    !Array.isArray(order.legalAcknowledgment) ? order.legalAcknowledgment : null;
 
   return (
     <div className="flex max-w-3xl flex-col gap-6">
@@ -62,7 +64,7 @@ export default async function AdminOrderDetailPage({
         )}
         <div>
           <p className="text-xs text-[var(--color-muted)]">Сумма</p>
-          <p className="font-medium">{order.totalByn} BYN</p>
+          <p className="font-medium">{order.totalByn.toString()} BYN</p>
         </div>
         <div>
           <p className="text-xs text-[var(--color-muted)]">Курс на момент заказа</p>
@@ -88,12 +90,26 @@ export default async function AdminOrderDetailPage({
                 <td className="py-2 pr-3 text-[var(--color-muted)]">
                   {[item.variantLabelSnapshot, item.colorLabelSnapshot].filter(Boolean).join(" · ") || "—"}
                 </td>
-                <td className="whitespace-nowrap py-2 pr-3">{item.priceBynSnapshot} BYN</td>
+                <td className="whitespace-nowrap py-2 pr-3">{item.priceBynSnapshot.toString()} BYN</td>
                 <td className="py-2">{item.quantity}</td>
               </tr>
             ))}
           </tbody>
         </table>
+      </section>
+
+      <section className="rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-surface)] p-6">
+        <h2 className="mb-2 text-lg font-medium">Подтверждение документов</h2>
+        {acknowledgment && typeof acknowledgment.documentVersion === "string" &&
+         typeof acknowledgment.termsAcceptedAt === "string" &&
+         typeof acknowledgment.privacyAcknowledgedAt === "string" ? (
+          <p className="text-sm text-[var(--color-muted)]">
+            Условия заказа и политика обработки данных: редакция {acknowledgment.documentVersion},
+            подтверждены {formatDateTime(new Date(acknowledgment.termsAcceptedAt))}.
+          </p>
+        ) : (
+          <p className="text-sm text-[var(--color-muted)]">Для этой заявки подтверждение документов не сохранено.</p>
+        )}
       </section>
 
       <section className="rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-surface)] p-6">

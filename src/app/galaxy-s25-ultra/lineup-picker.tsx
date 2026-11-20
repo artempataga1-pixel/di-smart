@@ -1,3 +1,4 @@
+import { productPath } from "@/lib/product-route";
 import Link from "next/link";
 import type { LineupTier } from "./galaxy-content";
 import styles from "./galaxy-hero.module.css";
@@ -12,7 +13,7 @@ export function LineupPicker({ tiers }: { tiers: LineupTier[] }) {
           {t.current ? (
             <span className={styles.lineupCurrentBadge}>Вы здесь</span>
           ) : (
-            <Link href={`/product/${t.slug}`} className={styles.lineupLink}>
+            <Link href={productPath(t.slug)} className={styles.lineupLink}>
               Смотреть товар
             </Link>
           )}

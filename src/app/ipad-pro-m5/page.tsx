@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { access } from "node:fs/promises";
 import path from "node:path";
 import { notFound } from "next/navigation";
-import { getProductDetailBySlug, getRelatedProducts } from "@/lib/catalog";
+import { getCrossSellProducts, getProductDetailBySlug } from "@/lib/catalog";
 import { IpadProPage } from "./ipad-pro-page";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "iPad Pro 13″ M5 — Di-SMART",
@@ -28,6 +28,6 @@ export default async function Page() {
   }
   const product = await getProductDetailBySlug("ipad-pro-13");
   if (!product) notFound();
-  const related = await getRelatedProducts(product.categorySlug, product.id);
-  return <IpadProPage hasHeroVideo={hasHeroVideo} product={product} related={related} />;
+  const crossSell = await getCrossSellProducts(product);
+  return <IpadProPage hasHeroVideo={hasHeroVideo} product={product} crossSell={crossSell} />;
 }

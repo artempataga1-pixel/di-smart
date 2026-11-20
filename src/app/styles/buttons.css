@@ -161,6 +161,8 @@
 .site-theme .search-pill__input::placeholder { color: #6e6e73; }
 .site-theme .soft-btn,
 .site-theme .soft-btn:active { box-shadow: none; text-shadow: none; transform: none; }
+.admin-theme .soft-btn,
+.admin-theme .soft-btn:active { box-shadow: none; text-shadow: none; transform: none; }
 .site-theme .btn-command { background: var(--color-accent); box-shadow: none; }
 .site-theme :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) {

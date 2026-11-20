@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
-import { formatDateTime } from "@/lib/format";
+import { formatDateTime, formatPrice } from "@/lib/format";
 
 export const metadata: Metadata = { title: "Заказы — Di-SMART Admin" };
 
@@ -42,10 +42,14 @@ export default async function AdminOrdersPage() {
                 <td className="px-4 py-3">{order.name}</td>
                 <td className="whitespace-nowrap px-4 py-3">{order.phone}</td>
                 <td className="px-4 py-3">{order._count.items}</td>
-                <td className="whitespace-nowrap px-4 py-3">{order.totalByn} BYN</td>
+                <td className="whitespace-nowrap px-4 py-3">{formatPrice(order.totalByn.toNumber())}</td>
                 <td className="px-4 py-3">
                   {order.telegramSentAt ? (
                     <span className="text-[var(--color-success)]">доставлено</span>
+                  ) : order.telegramDeliveryLog && typeof order.telegramDeliveryLog === "object" &&
+                    "chatIdsConfigured" in order.telegramDeliveryLog &&
+                    order.telegramDeliveryLog.chatIdsConfigured === false ? (
+                    <span className="text-[var(--color-muted)]">не настроено</span>
                   ) : (
                     <span className="text-[var(--color-warning)]">не доставлено</span>
                   )}

@@ -2,10 +2,11 @@ import type { NavItem } from "@/types/content";
 
 export const MAIN_NAV: NavItem[] = [
   { label: "Каталог", href: "/catalog" },
-  { label: "iPhone 18 Pro", href: "/iphone-18-pro" },
-  { label: "Galaxy S26 Ultra", href: "/galaxy-s26-ultra" },
+  { label: "Apple", href: "/catalog?brand=apple" },
+  { label: "Samsung", href: "/catalog?brand=samsung" },
+  { label: "Аксессуары", href: "/catalog?group=accessories" },
   { label: "Trade-in", href: "/trade-in" },
-  { label: "Доставка и гарантия", href: "/delivery" },
+  { label: "Доставка", href: "/delivery" },
   { label: "Контакты", href: "/contacts" },
 ];
 
@@ -17,5 +18,6 @@ export const FOOTER_INFO_NAV: NavItem[] = [
   { label: "Доставка и гарантия", href: "/delivery" },
   { label: "Контакты", href: "/contacts" },
   { label: "Политика конфиденциальности", href: "/privacy" },
-  { label: "Публичная оферта", href: "/offer" },
+  { label: "Условия заказа", href: "/offer" },
+  { label: "Cookies и аналитика", href: "/cookies" },
 ];

@@ -1,6 +1,6 @@
 import { Phone, Clock } from "lucide-react";
 import { SITE } from "@/constants/content/site";
-import { TelegramIcon, InstagramIcon } from "@/components/ui/SocialIcons";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 
 export function ContactInfoCard() {
   return (
@@ -23,25 +23,9 @@ export function ContactInfoCard() {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2">
-        <a
-          href={SITE.telegramUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="soft-btn inline-flex w-fit items-center gap-2 rounded-full px-4 py-2.5 text-sm font-medium"
-        >
-          <TelegramIcon className="size-4 shrink-0" />
-          {SITE.telegramLabel}
-        </a>
-        <a
-          href={SITE.instagramUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="soft-btn inline-flex w-fit items-center gap-2 rounded-full px-4 py-2.5 text-sm font-medium"
-        >
-          <InstagramIcon className="size-4 shrink-0" />
-          {SITE.instagramLabel}
-        </a>
+      <div>
+        <p className="mb-3 text-sm font-medium text-[var(--color-text)]">Напишите нам</p>
+        <SocialLinks />
       </div>
     </div>
   );

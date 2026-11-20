@@ -1,11 +1,16 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isForeignKeyConstraintError, isUniqueConstraintError } from "@/lib/admin/errors";
 import { errorRedirectUrl, isValidSlug } from "@/lib/admin/form-helpers";
 import { requireAdminSession } from "@/lib/admin/require-session";
+
+function revalidateProduct(productId: string) {
+  revalidatePath(`/admin/products/${productId}`);
+  revalidateTag("storefront-catalog", { expire: 0 });
+}
 
 function variantsPath(productId: string): string {
   return `/admin/products/${productId}#variants`;
@@ -35,7 +40,7 @@ export async function enableProductAttributeAction(formData: FormData) {
       }
       throw e;
     }
-    revalidatePath(`/admin/products/${productId}`);
+    revalidateProduct(productId);
   }
 
   redirect(variantsPath(productId));
@@ -60,7 +65,7 @@ export async function disableProductAttributeAction(formData: FormData) {
   }
 
   await prisma.productVariantAttribute.deleteMany({ where: { productId, attributeId } });
-  revalidatePath(`/admin/products/${productId}`);
+  revalidateProduct(productId);
   redirect(variantsPath(productId));
 }
 
@@ -98,7 +103,7 @@ export async function createAttributeAction(formData: FormData) {
     throw e;
   }
 
-  revalidatePath(`/admin/products/${productId}`);
+  revalidateProduct(productId);
   redirect(variantsPath(productId));
 }
 
@@ -129,7 +134,7 @@ export async function createAttributeValueAction(formData: FormData) {
     throw e;
   }
 
-  revalidatePath(`/admin/products/${productId}`);
+  revalidateProduct(productId);
   redirect(variantsPath(productId));
 }
 
@@ -147,7 +152,7 @@ export async function addProductColorAction(formData: FormData) {
       }
       if (!isUniqueConstraintError(e)) throw e;
     }
-    revalidatePath(`/admin/products/${productId}`);
+    revalidateProduct(productId);
   }
 
   redirect(colorsPath(productId));
@@ -162,7 +167,7 @@ export async function removeProductColorAction(formData: FormData) {
     await prisma.productColorValue.delete({ where: { id } }).catch((e) => {
       console.error("[admin] failed to delete product color", e);
     });
-    revalidatePath(`/admin/products/${productId}`);
+    revalidateProduct(productId);
   }
 
   redirect(colorsPath(productId));

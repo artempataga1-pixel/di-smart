@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Image from '@/components/ui/StoreImage';
 import { useState } from 'react';
 import { Cloud, Gamepad2, Music2, ShieldCheck, Sparkles, Tv, WandSparkles } from 'lucide-react';
 import styles from './apple-experience.module.css';

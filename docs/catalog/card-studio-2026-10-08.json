@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-08",
+  "mode": "imagegen edit; catalog cards only",
+  "assets": [
+    {
+      "slug": "iphone-18-pro",
+      "prompt": "Use case: compositing. Asset: square product catalog image for Di-SMART electronics shop. Image 1 is the EXACT product to preserve: iPhone 18 Pro, burgundy, standard Pro size. Image 2 is ONLY the shop's studio style reference; do not use its phone design. Create one square 1:1 full-frame catalog photograph. Preserve both front and back devices from Image 1, their exact geometry, camera layout, buttons, logo, burgundy or black finish, and screen artwork. Keep the entire devices visible, including all four corners, with approximately 8% breathing space above and 10% below; phone pair occupies about 80–82% of frame height and 65–72% width. Make the phones prominently LARGE without clipping. Place them in the same white and pale cool-blue studio as Image 2: soft diagonal window light on an uninterrupted backdrop, clean glossy floor with a subtle reflection. Seamless consistent background right to all four edges, NO inserted inset picture, NO vertical sidebars, NO collage, NO black or transparent margins. Neutral daylight, realistic color. No text except existing device logos, no labels. Do not redesign the phones, do not add cameras or accessories. Match the photograph style of adjacent shop cards, not a promotional poster.",
+      "path": "public/media/catalog/products/iphone-18-pro-card-studio-2026-v2.webp"
+    },
+    {
+      "slug": "iphone-18-pro-max",
+      "prompt": "Use case: compositing. Asset: square product catalog image for Di-SMART electronics shop. Image 1 is the EXACT product to preserve: iPhone 18 Pro Max, burgundy, larger Pro Max size. Image 2 is ONLY the shop's studio style reference; do not use its phone design. Create one square 1:1 full-frame catalog photograph. Preserve both front and back devices from Image 1, their exact geometry, camera layout, buttons, logo, burgundy or black finish, and screen artwork. Keep the entire devices visible, including all four corners, with approximately 8% breathing space above and 10% below; phone pair occupies about 80–82% of frame height and 65–72% width. Make the phones prominently LARGE without clipping. Place them in the same white and pale cool-blue studio as Image 2: soft diagonal window light on an uninterrupted backdrop, clean glossy floor with a subtle reflection. Seamless consistent background right to all four edges, NO inserted inset picture, NO vertical sidebars, NO collage, NO black or transparent margins. Neutral daylight, realistic color. No text except existing device logos, no labels. Do not redesign the phones, do not add cameras or accessories. Match the photograph style of adjacent shop cards, not a promotional poster.",
+      "path": "public/media/catalog/products/iphone-18-pro-max-card-studio-2026-v2.webp"
+    },
+    {
+      "slug": "galaxy-s26-ultra",
+      "prompt": "Use case: compositing. Asset: square product catalog image for Di-SMART electronics shop. Image 1 is the EXACT product to preserve: Samsung Galaxy S26 Ultra, black. Image 2 is ONLY the shop's studio style reference; do not use its phone design. Create one square 1:1 full-frame catalog photograph. Preserve both front and back devices from Image 1, their exact geometry, camera layout, buttons, logo, burgundy or black finish, and screen artwork. Keep the entire devices visible, including all four corners, with approximately 8% breathing space above and 10% below; phone pair occupies about 80–82% of frame height and 65–72% width. Make the phones prominently LARGE without clipping. Place them in the same white and pale cool-blue studio as Image 2: soft diagonal window light on an uninterrupted backdrop, clean glossy floor with a subtle reflection. Seamless consistent background right to all four edges, NO inserted inset picture, NO vertical sidebars, NO collage, NO black or transparent margins. Neutral daylight, realistic color. No text except existing device logos, no labels. Do not redesign the phones, do not add cameras or accessories. Match the photograph style of adjacent shop cards, not a promotional poster.",
+      "path": "public/media/catalog/products/galaxy-s26-ultra-card-studio-2026-v2.webp"
+    }
+  ]
+}

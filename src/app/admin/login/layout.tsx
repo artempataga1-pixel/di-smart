@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function AdminLoginLayout({ children }: { children: ReactNode }) {
-  return children;
+  return <div className="admin-theme">{children}</div>;
 }

@@ -1,3 +1,4 @@
+import { SubmitButton } from "@/components/admin/SubmitButton";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { AdminErrorBanner } from "@/components/admin/AdminErrorBanner";
@@ -45,12 +46,12 @@ export default async function AdminBrandsPage({
               className={`${inputClass} w-24`}
             />
           </label>
-          <button
+          <SubmitButton
             type="submit"
             className="rounded-[var(--radius-sm)] bg-[var(--color-accent)] px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-[var(--color-accent-dark)]"
           >
             Добавить
-          </button>
+          </SubmitButton>
         </form>
       </section>
 
@@ -93,12 +94,12 @@ export default async function AdminBrandsPage({
                       активен
                     </label>
                     <span className="text-[var(--color-muted)]">{brand._count.categories}</span>
-                    <button
+                    <SubmitButton
                       type="submit"
                       className="ml-auto rounded-[var(--radius-sm)] border border-[var(--color-line)] px-4 py-1.5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent-ink)]"
                     >
                       Сохранить
-                    </button>
+                    </SubmitButton>
                   </form>
                 </td>
               </tr>

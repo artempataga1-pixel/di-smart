@@ -1,0 +1,50 @@
+{
+  "deployment": "dpl_77qt65wzVh9jvqPk6VMJhGyBVwbF",
+  "production": "https://di-smart-gilt.vercel.app",
+  "colorSwitches": [
+    {
+      "image": "/media/catalog/apple-watch-silicone-2026/se3-midnight-v3.webp",
+      "selected": "Полночный / Midnight Sport Band",
+      "slug": "/product/watch-se-3"
+    },
+    {
+      "image": "/media/catalog/apple-watch-silicone-2026/se3-starlight-v3.webp",
+      "selected": "Звёздный / Starlight Sport Band",
+      "slug": "/product/watch-se-3"
+    },
+    {
+      "fit": "contain",
+      "image": "/media/catalog/apple-watch-silicone-2026/series11-space-gray-v3.webp",
+      "loaded": true,
+      "selected": "Космический серый / Black Sport Band",
+      "slug": "/product/watch-series-11"
+    },
+    {
+      "fit": "contain",
+      "image": "/media/catalog/apple-watch-silicone-2026/series11-jet-black-v3.webp",
+      "loaded": true,
+      "selected": "Глянцевый чёрный / Black Sport Band",
+      "slug": "/product/watch-series-11"
+    },
+    {
+      "fit": "contain",
+      "image": "/media/catalog/apple-watch-silicone-2026/series11-rose-gold-v3.webp",
+      "loaded": true,
+      "selected": "Розово-золотой / Light Blush Sport Band",
+      "slug": "/product/watch-series-11"
+    },
+    {
+      "fit": "contain",
+      "image": "/media/catalog/apple-watch-silicone-2026/series11-silver-v3.webp",
+      "loaded": true,
+      "selected": "Серебристый / Purple Fog Sport Band",
+      "slug": "/product/watch-series-11"
+    }
+  ],
+  "mobile": {
+    "viewport": 390,
+    "document": 390,
+    "noHorizontalOverflow": true,
+    "allColorImagesLoaded": true
+  }
+}

@@ -37,6 +37,8 @@ export interface CartContextValue {
   items: CartItem[];
   resolvedItems: ResolvedCartItem[];
   isResolving: boolean;
+  resolveError: string | null;
+  refreshCart: () => void;
   itemCount: number;
   subtotal: number;
   isDrawerOpen: boolean;

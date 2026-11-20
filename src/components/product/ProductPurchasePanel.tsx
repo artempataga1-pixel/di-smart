@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import type { ProductDetail } from "@/lib/catalog";
 import { findExactVariant, isValueAvailable } from "@/lib/variant-matching";
 import { ProductGallery } from "@/components/product/ProductGallery";
@@ -9,7 +9,7 @@ import { ProductInfo } from "@/components/product/ProductInfo";
 /** Владеет состоянием выбора (атрибуты варианта + цвет) и синхронизирует
  * галерею с инфо-панелью — обе живут в одном клиентском компоненте, потому
  * что выбор цвета должен сразу менять фото в галерее слева. */
-export function ProductPurchasePanel({ product }: { product: ProductDetail }) {
+export function ProductPurchasePanel({ product, modelSelector }: { product: ProductDetail; modelSelector?: ReactNode }) {
   const defaultVariant = product.variants.find((v) => v.isDefault) ?? product.variants[0] ?? null;
 
   const initialSelected = useMemo(() => {
@@ -24,11 +24,21 @@ export function ProductPurchasePanel({ product }: { product: ProductDetail }) {
   }, []);
 
   const [selected, setSelected] = useState<Record<string, string>>(initialSelected);
-  const [selectedColorId, setSelectedColorId] = useState<string | undefined>(product.colors[0]?.id);
+  const [selectedColorId, setSelectedColorId] = useState<string | undefined>(
+    product.slug === "macbook-neo"
+      ? product.colors.find((color) => color.name === "Серебристый")?.id ?? product.colors[0]?.id
+      : product.colors[0]?.id
+  );
 
   const matchedVariant = product.variants.length > 0 ? findExactVariant(product.variants, selected) : null;
-  const priceByn = matchedVariant ? matchedVariant.priceByn : product.basePriceByn;
-  const availability = matchedVariant ? matchedVariant.availability : product.availability;
+  const colorOffer = product.colorOffers.find((offer) =>
+    offer.colorValueId === selectedColorId && offer.variantId === (matchedVariant?.id ?? null)
+  );
+  const priceByn = colorOffer?.priceByn ?? (matchedVariant ? matchedVariant.priceByn : product.basePriceByn);
+  const priceKind = colorOffer?.priceByn != null || matchedVariant?.priceVerified
+    ? "VERIFIED_SHOP"
+    : product.priceKind;
+  const availability = colorOffer?.availability ?? (matchedVariant ? matchedVariant.availability : product.availability);
   const needsSelection = product.attributes.length > 0 && !matchedVariant;
 
   function selectValue(attributeId: string, valueId: string) {
@@ -48,7 +58,9 @@ export function ProductPurchasePanel({ product }: { product: ProductDetail }) {
       <ProductGallery product={product} imageUrl={galleryImageUrl} />
       <ProductInfo
         product={product}
+        modelSelector={modelSelector}
         priceByn={priceByn}
+        priceKind={priceKind}
         availability={availability}
         needsSelection={needsSelection}
         variantId={matchedVariant?.id ?? null}

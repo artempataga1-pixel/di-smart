@@ -1,3 +1,4 @@
+import { productPath } from "@/lib/product-route";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { AccessoryRef } from "./galaxy-content";
@@ -7,7 +8,7 @@ export function AccessoriesGrid({ accessories }: { accessories: AccessoryRef[] }
   return (
     <div className={styles.accessoryGrid}>
       {accessories.map((a) => (
-        <Link key={a.slug} href={`/product/${a.slug}`} className={styles.accessoryCard}>
+        <Link key={a.slug} href={productPath(a.slug)} className={styles.accessoryCard}>
           <p className={styles.accessoryName}>{a.name}</p>
           <p className={styles.accessoryShort}>{a.short}</p>
           <span className={styles.accessoryLink}>

@@ -1,17 +1,17 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { randomUUID } from "node:crypto";
-import { mkdir, unlink } from "node:fs/promises";
+import { mkdir, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
-import sharp from "sharp";
+import { validateImageUpload, MAX_IMAGE_BYTES } from "@/lib/admin/image-upload";
 import { prisma } from "@/lib/prisma";
 import { errorRedirectUrl } from "@/lib/admin/form-helpers";
 import { requireAdminSession } from "@/lib/admin/require-session";
 
 const MAX_IMAGES_PER_PRODUCT = 10;
-const MAX_FILE_SIZE_BYTES = 8 * 1024 * 1024;
+const MAX_FILE_SIZE_BYTES = MAX_IMAGE_BYTES;
 /** productId приходит из скрытого поля формы, не из проверенного маршрута —
  * без этой проверки значение вроде "../../../../etc" ушло бы прямиком в
  * `path.join` ниже и позволило бы записать файл вне uploads/products/. */
@@ -68,26 +68,30 @@ export async function uploadProductImageAction(formData: FormData) {
   }
 
   const dir = productUploadDir(productId);
-  await mkdir(dir, { recursive: true });
-
   const buffer = Buffer.from(await image.arrayBuffer());
-  const filename = `${randomUUID()}.webp`;
-  await sharp(buffer)
-    .resize(1600, 1600, { fit: "inside", withoutEnlargement: true })
-    .webp({ quality: 82 })
-    .toFile(path.join(dir, filename));
-
-  await prisma.productImage.create({
-    data: {
-      productId,
-      url: `/uploads/products/${productId}/${filename}`,
-      colorValueId,
-      isMain: existingCount === 0,
-      sortOrder: existingCount,
-    },
-  });
+  let extension: string;
+  try {
+    extension = await validateImageUpload(buffer);
+  } catch {
+    redirect(errorRedirectUrl(photosPath(productId), "Не удалось прочитать фото. Выберите JPEG, PNG, WebP или AVIF до 8 МБ и 40 мегапикселей."));
+  }
+  const filename = `${randomUUID()}.${extension}`;
+  const destination = path.join(dir, filename);
+  try {
+    await mkdir(dir, { recursive: true });
+    await writeFile(destination, buffer, { flag: "wx" });
+    await prisma.productImage.create({
+      data: { productId, url: `/uploads/products/${productId}/${filename}`, colorValueId,
+        isMain: existingCount === 0, sortOrder: existingCount },
+    });
+  } catch (error) {
+    await unlink(destination).catch(() => {});
+    console.error("[admin] image upload failed", error);
+    redirect(errorRedirectUrl(photosPath(productId), "Не удалось сохранить фото. Повторите загрузку."));
+  }
 
   revalidatePath(`/admin/products/${productId}`);
+  revalidateTag("storefront-catalog", { expire: 0 });
   redirect(photosPath(productId));
 }
 
@@ -95,8 +99,11 @@ export async function deleteProductImageAction(formData: FormData) {
   await requireAdminSession();
   const id = String(formData.get("id") ?? "");
   const productId = String(formData.get("productId") ?? "");
+  if (!SAFE_ID_PATTERN.test(productId)) {
+    redirect(errorRedirectUrl("/admin/products", "Некорректный товар"));
+  }
 
-  const image = id ? await prisma.productImage.findUnique({ where: { id } }) : null;
+  const image = id ? await prisma.productImage.findFirst({ where: { id, productId } }) : null;
   if (image) {
     await prisma.productImage.delete({ where: { id } });
     try {
@@ -109,6 +116,7 @@ export async function deleteProductImageAction(formData: FormData) {
       if (next) await prisma.productImage.update({ where: { id: next.id }, data: { isMain: true } });
     }
     revalidatePath(`/admin/products/${productId}`);
+    revalidateTag("storefront-catalog", { expire: 0 });
   }
 
   redirect(photosPath(productId));
@@ -118,13 +126,19 @@ export async function setMainProductImageAction(formData: FormData) {
   await requireAdminSession();
   const id = String(formData.get("id") ?? "");
   const productId = String(formData.get("productId") ?? "");
+  if (!SAFE_ID_PATTERN.test(productId)) {
+    redirect(errorRedirectUrl("/admin/products", "Некорректный товар"));
+  }
 
   if (id) {
+    const image = await prisma.productImage.findFirst({ where: { id, productId }, select: { id: true } });
+    if (!image) redirect(errorRedirectUrl(photosPath(productId), "Фото не найдено"));
     await prisma.$transaction([
       prisma.productImage.updateMany({ where: { productId }, data: { isMain: false } }),
       prisma.productImage.update({ where: { id }, data: { isMain: true } }),
     ]);
     revalidatePath(`/admin/products/${productId}`);
+    revalidateTag("storefront-catalog", { expire: 0 });
   }
 
   redirect(photosPath(productId));

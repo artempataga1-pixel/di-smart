@@ -10,14 +10,13 @@ export default function AdminLoginPage() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[var(--color-bg)] px-4">
+    <div className="flex min-h-screen items-center justify-center bg-[var(--color-bg)] px-4 text-[var(--color-text)]">
       <form
         action={formAction}
-        className="w-full max-w-sm rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-surface)] p-8"
+        className="w-full max-w-sm rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-surface)] p-8 shadow-[var(--shadow-card)]"
       >
-        <h1 className="mb-1 font-[family-name:var(--font-body)] text-xl font-semibold">
-          Di-SMART Admin
-        </h1>
+        <span className="mb-5 flex size-10 items-center justify-center rounded-xl bg-[var(--color-accent)] text-base font-bold text-white">D</span>
+        <h1 className="mb-1 font-[family-name:var(--font-body)] text-xl font-semibold">Di-SMART <span className="text-[var(--color-accent-ink)]">Admin</span></h1>
         <p className="mb-6 text-sm text-[var(--color-muted)]">Вход в панель управления</p>
 
         <label className="mb-3 flex flex-col gap-1.5 text-sm">
@@ -45,7 +44,7 @@ export default function AdminLoginPage() {
               onClick={() => setShowPassword((v) => !v)}
               aria-label={showPassword ? "Скрыть пароль" : "Показать пароль"}
               tabIndex={-1}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--color-muted)] hover:text-[var(--color-fg)]"
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--color-muted)] hover:text-[var(--color-accent-ink)]"
             >
               {showPassword ? (
                 <svg

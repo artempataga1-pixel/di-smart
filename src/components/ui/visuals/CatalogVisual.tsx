@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { Smartphone, Laptop, Tablet, Watch, Headphones, Cable, Package } from "lucide-react";
+import Image from "@/components/ui/StoreImage";
+import { Smartphone, Laptop, Tablet, Watch, Headphones, Cable, Package, Glasses, Speaker, Tv } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 /* Реальных фото для большинства товаров пока нет (клиент подключит их через
@@ -34,6 +34,9 @@ const ICON_BY_KEY = {
   watch: Watch,
   headphones: Headphones,
   cable: Cable,
+  headset: Glasses,
+  speaker: Speaker,
+  television: Tv,
   default: Package,
 } as const;
 
@@ -46,6 +49,9 @@ const KEYWORD_PATTERNS: [RegExp, IconKey][] = [
   [/watch|часы/i, "watch"],
   [/airpods|buds|наушник/i, "headphones"],
   [/кабель|зарядн|адаптер|charger|cable/i, "cable"],
+  [/vision pro/i, "headset"],
+  [/homepod/i, "speaker"],
+  [/apple tv/i, "television"],
 ];
 
 function pickIconKey(hint: string): IconKey {

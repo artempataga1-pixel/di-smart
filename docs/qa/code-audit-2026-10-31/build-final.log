@@ -1,0 +1,80 @@
+
+> di-smart-shop@0.1.0 build
+> npm run db:generate && next build
+
+
+> di-smart-shop@0.1.0 db:generate
+> node scripts/database/sync-mysql-schema.mjs && prisma generate
+
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma/schema.prisma.
+
+✔ Generated Prisma Client (7.10.1) to ./src/generated/prisma in 69ms
+
+▲ Next.js 16.4.3 (Turbopack)
+- Environments: .env
+✓ Running next.config.ts took 67ms
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1218ms
+  Running TypeScript ...
+  Finished TypeScript in 3.9s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/27) ...
+  Generating static pages using 7 workers (6/27) 
+  Generating static pages using 7 workers (13/27) 
+  Generating static pages using 7 workers (20/27) 
+✓ Generating static pages using 7 workers (27/27) in 272ms
+  Finalizing page optimization ...
+
+Route (app)                 Revalidate  Expire
+┌ ○ /                               5m      1y
+├ ○ /_not-found                     5m      1y
+├ ƒ /admin
+├ ƒ /admin/brands
+├ ƒ /admin/categories
+├ ○ /admin/login                    5m      1y
+├ ƒ /admin/orders
+├ ƒ /admin/orders/[id]
+├ ƒ /admin/products
+├ ƒ /admin/products/[id]
+├ ƒ /admin/products/new
+├ ƒ /admin/settings
+├ ○ /airpods-pro-3                  5m      1y
+├ ƒ /api/cart/resolve
+├ ƒ /api/health
+├ ƒ /api/order
+├ ○ /apple-icon.png
+├ ○ /apple-watch-ultra-4            5m      1y
+├ ƒ /cart
+├ ƒ /catalog
+├ ƒ /catalog/[category]
+├ ○ /contacts                       5m      1y
+├ ○ /cookies                        5m      1y
+├ ○ /delivery                       5m      1y
+├ ○ /galaxy-s25-ultra               5m      1y
+├ ○ /galaxy-s26-ultra               5m      1y
+├ ○ /galaxy-tab-s11-ultra           5m      1y
+├ ○ /icon.png
+├ ○ /ipad-pro-m5                    5m      1y
+├ ƒ /iphone-18-pro
+├ ○ /macbook-pro-16-m5-max          5m      1y
+├ ○ /offer                          5m      1y
+├ ○ /privacy                        5m      1y
+├ ƒ /product/[slug]
+├ ○ /robots.txt
+├ ƒ /sitemap.xml
+├ ○ /trade-in                       5m      1y
+├ ƒ /uploads/[...path]
+├ ○ /xiaomi-17-ultra                5m      1y
+└ ○ /xiaomi-book-pro-14             5m      1y
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -6,15 +6,11 @@ import { SITE } from "@/constants/content/site";
 import { getNavBrands } from "@/lib/catalog";
 import "./globals.css";
 
-/* Шапка/футер теперь читают бренды и категории из БД (задача 27 — без
- * хардкода категорий), а не только через fetch() — Next.js не отслеживает
- * прямые вызовы Prisma как «динамические» автоматически, поэтому без явного
- * force-dynamic в layout сборка (`next build` в CI, без поднятой БД)
- * попыталась бы статически отрендерить и упала бы. force-dynamic в layout
- * каскадно распространяется на все дочерние страницы (подтверждено по
- * исходникам Next.js через Context7) — ни один Prisma-запрос не выполняется
- * во время сборки, только при реальном запросе. */
-export const dynamic = "force-dynamic";
+/* Навигационные данные уже кешируются в `getNavBrands`. Не делаем весь сайт
+ * force-dynamic: иначе даже полностью готовые промостраницы требуют серверный
+ * round-trip при каждом переходе. Обновление каталога остаётся свежим за счёт
+ * тега инвалидации и фоновой ревалидации раз в пять минут. */
+export const revalidate = 300;
 
 const nunito = Nunito({
   subsets: ["latin", "cyrillic"],
@@ -38,14 +34,18 @@ export const viewport: Viewport = {
 };
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteHostname = new URL(siteUrl).hostname;
+const indexingEnabled =
+  process.env.SEO_INDEXING_ENABLED === "true" &&
+  !["localhost", "127.0.0.1", "::1"].includes(siteHostname);
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: `${SITE.name} — ${SITE.tagline}`,
   description: SITE.description,
-  /* Пока сайт не на боевом домене — намеренно закрыт от индексации (решение
-   * пользователя, задача 62). Снять перед реальным запуском. */
-  robots: { index: false, follow: false },
+  /* Индексацию можно включить только явно и с настоящим доменом.
+   * До запуска сохраняем прежнее решение закрыть сайт от поиска. */
+  robots: { index: indexingEnabled, follow: indexingEnabled },
   openGraph: {
     type: "website",
     locale: "ru_RU",
@@ -81,7 +81,7 @@ export default async function RootLayout({
   return (
     <html lang="ru" className={`${nunito.variable} ${nunitoSans.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased bg-[var(--color-bg)] text-[var(--color-text)]">
-        <ShopChrome navBrands={navBrands} analytics={<YandexMetrika />}>
+        <ShopChrome navBrands={navBrands} analytics={<YandexMetrika id={process.env.YANDEX_METRIKA_ID} />}>
           {children}
         </ShopChrome>
       </body>

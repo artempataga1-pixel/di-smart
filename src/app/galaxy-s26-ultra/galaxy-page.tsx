@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+import Image from '@/components/ui/StoreImage';
 import Link from 'next/link';
 import {useEffect,useRef,useState} from 'react';
 import {ArrowUpRight,Check,PenLine,ScanSearch,ShieldCheck,Sparkles} from 'lucide-react';
@@ -7,12 +7,12 @@ import {Viewer} from './viewer';
 import {HeroMedia} from './hero-media';
 import {ProductPurchasePanel} from '@/components/product/ProductPurchasePanel';
 import {ProductSpecsTable} from '@/components/product/ProductSpecsTable';
-import {RelatedProducts} from '@/components/product/RelatedProducts';
+import {CrossSellProducts} from '@/components/product/CrossSellProducts';
 import {BuyAnchor} from '@/components/storefront/BuyAnchor';
-import type {CatalogCardData,ProductDetail} from '@/lib/catalog';
+import type {CrossSellGroup,ProductDetail} from '@/lib/catalog';
 import styles from './page.module.css';
 const stories=[{title:'Найдите. Просто обведите.',body:'Circle to Search помогает искать то, что привлекло ваше внимание, прямо на экране.',icon:ScanSearch},{title:'Опишите. И измените.',body:'Photo Assist помогает редактировать фотографии с помощью слов. От идеи до нового кадра — в привычной Галерее.',icon:Sparkles},{title:'Ваш день. Уже перед вами.',body:'Now Brief собирает персональные подсказки и напоминания, чтобы важное оставалось под рукой.',icon:Check}];
-export function GalaxyPage({product,related}:{product:ProductDetail;related:CatalogCardData[]}){const root=useRef<HTMLDivElement>(null);const [ai,setAi]=useState(0);useEffect(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.animate([{opacity:.35,transform:'translateY(32px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.7,.2,1)'});observer.unobserve(e.target);}}),{threshold:.12});root.current?.querySelectorAll('[data-reveal]').forEach(e=>{if(e.parentElement?.closest('[data-reveal]'))return;observer.observe(e);});return()=>observer.disconnect();},[]);const ActiveIcon=stories[ai].icon;
+export function GalaxyPage({product,crossSell}:{product:ProductDetail;crossSell:CrossSellGroup[]}){const root=useRef<HTMLDivElement>(null);const [ai,setAi]=useState(0);useEffect(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.animate([{opacity:.35,transform:'translateY(32px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.7,.2,1)'});observer.unobserve(e.target);}}),{threshold:.12});root.current?.querySelectorAll('[data-reveal]').forEach(e=>{if(e.parentElement?.closest('[data-reveal]'))return;observer.observe(e);});return()=>observer.disconnect();},[]);const ActiveIcon=stories[ai].icon;
  return <div ref={root} className={styles.page}>
  <h1 className="sr-only">Samsung Galaxy S26 Ultra</h1>
  <HeroMedia/>
@@ -29,6 +29,8 @@ export function GalaxyPage({product,related}:{product:ProductDetail;related:Cata
    </div>
  </section>
 
+ <section className="bg-white px-4 pb-16 md:px-6"><div className="mx-auto max-w-6xl"><CrossSellProducts groups={crossSell}/></div></section>
+
  <section id="design" className={styles.section}><div className={styles.heading} data-reveal><p>Дизайн</p><h2>Рассмотрите ближе.<br/>С любой стороны.</h2><p className={styles.description}>Чистые линии. Плавные грани. Выберите оттенок и поверните Galaxy так, как повернули бы его в руках.</p></div><Viewer/></section>
  <section id="camera" className={styles.section}><div className={styles.heading} data-reveal><p>Камера</p><h2>В кадре — всё,<br/>что вы почувствовали.</h2></div><div className={styles.cameraCard} data-reveal><div><h3>200 миллионов<br/>причин приблизить.</h3><p>Основная камера 200 Мп сохраняет мелкие детали. Более широкая диафрагма помогает снимать при слабом освещении, а Nightography Video — передавать настроение вечера.</p></div><div className={styles.cameraVisual}><Image src="/media/galaxy-s26-ultra/photos/camera-photo.webp" alt="Крупный план камер Galaxy S26 Ultra" fill sizes="(max-width: 700px) 100vw, 650px"/></div></div></section>
  <section className={`${styles.section} ${styles.duo}`}><article className={styles.penCard} data-reveal><PenLine size={30}/><h2>Мысль появилась.<br/>Сохраните её.</h2><p>S Pen — для набросков, заметок и точных штрихов. Ваш привычный жест становится частью цифрового мира.</p><div className={styles.detailPhoto}><Image src="/media/galaxy-s26-ultra/photos/spen-photo.webp" alt="Рука рисует архитектурный эскиз стилусом S Pen на Galaxy" fill sizes="(max-width: 760px) 100vw, 580px"/></div></article><article className={styles.privacyCard} data-reveal><ShieldCheck size={30}/><h2>Ваш экран.<br/>Только для вас.</h2><p>Privacy Display ограничивает видимость под боковыми углами. Личные сообщения остаются личными — даже когда вокруг люди.</p><div className={styles.detailPhoto}><Image src="/media/galaxy-s26-ultra/photos/display-photo.webp" alt="Galaxy в руках: личная переписка в светлом кафе" fill sizes="(max-width: 760px) 100vw, 580px"/></div></article></section>
@@ -36,11 +38,6 @@ export function GalaxyPage({product,related}:{product:ProductDetail;related:Cata
 
  <section className={styles.closing}><p>Samsung Galaxy S26 Ultra</p><h2>Ваш следующий Galaxy.</h2><BuyAnchor className={styles.buy}>Выбрать свой Galaxy <ArrowUpRight size={18}/></BuyAnchor><Link href="/trade-in">Обменять свой смартфон по Trade-in</Link></section>
 
- <section className="bg-white px-4 pb-20 md:px-6">
-   <div className="mx-auto max-w-6xl">
-     <RelatedProducts products={related}/>
-   </div>
- </section>
 
  <footer className={styles.footnote}><p>Изображения созданы с помощью ИИ для иллюстрации устройства и сценариев использования. Это не реальные снимки, сделанные камерой Galaxy. Оттенки и интерфейсы могут отличаться от устройства.</p><p>Характеристики и возможности: <a href="https://www.samsung.com/uk/smartphones/galaxy-s26-ultra/">Samsung Galaxy S26 Ultra</a>. Доступность Galaxy AI зависит от региона и условий сервиса.</p></footer>
  </div>;

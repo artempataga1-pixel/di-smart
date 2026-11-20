@@ -1,0 +1,164 @@
+{
+  "deployment": "dpl_2L9BU6YGzsgkcJgD3XwqaNrkuQsq",
+  "before": [
+    {
+      "lineHeight": "75.5744px",
+      "size": "72.32px",
+      "text": "Есть вопросы о товаре?"
+    },
+    {
+      "lineHeight": "75.5744px",
+      "size": "72.32px",
+      "text": "Описание"
+    },
+    {
+      "lineHeight": "75.5744px",
+      "size": "72.32px",
+      "text": "Характеристики"
+    },
+    {
+      "lineHeight": "75.5744px",
+      "size": "72.32px",
+      "text": "С этим покупают"
+    },
+    {
+      "lineHeight": "75.5744px",
+      "size": "72.32px",
+      "text": "Точный с любого угла."
+    }
+  ],
+  "after": [
+    {
+      "documentWidth": 1280,
+      "headings": [
+        {
+          "lineHeight": "24px",
+          "size": "16px",
+          "text": "Есть вопросы о товаре?"
+        },
+        {
+          "lineHeight": "24.75px",
+          "size": "18px",
+          "text": "Описание"
+        },
+        {
+          "lineHeight": "24.75px",
+          "size": "18px",
+          "text": "Характеристики"
+        },
+        {
+          "lineHeight": "30px",
+          "size": "24px",
+          "text": "С этим покупают"
+        },
+        {
+          "lineHeight": "75.5744px",
+          "size": "72.32px",
+          "text": "Точный с любого угла."
+        }
+      ],
+      "model": "pro",
+      "width": 1280
+    },
+    {
+      "documentWidth": 1280,
+      "headings": [
+        {
+          "lineHeight": "24px",
+          "size": "16px",
+          "text": "Есть вопросы о товаре?"
+        },
+        {
+          "lineHeight": "24.75px",
+          "size": "18px",
+          "text": "Описание"
+        },
+        {
+          "lineHeight": "24.75px",
+          "size": "18px",
+          "text": "Характеристики"
+        },
+        {
+          "lineHeight": "30px",
+          "size": "24px",
+          "text": "С этим покупают"
+        },
+        {
+          "lineHeight": "75.5744px",
+          "size": "72.32px",
+          "text": "Точный с любого угла."
+        }
+      ],
+      "model": "pro-max",
+      "title": "iPhone 18 Pro Max",
+      "width": 1280
+    },
+    {
+      "documentWidth": 390,
+      "headings": [
+        {
+          "lineHeight": "24px",
+          "size": "16px",
+          "text": "Есть вопросы о товаре?"
+        },
+        {
+          "lineHeight": "24.75px",
+          "size": "18px",
+          "text": "Описание"
+        },
+        {
+          "lineHeight": "24.75px",
+          "size": "18px",
+          "text": "Характеристики"
+        },
+        {
+          "lineHeight": "25px",
+          "size": "20px",
+          "text": "С этим покупают"
+        },
+        {
+          "lineHeight": "39.71px",
+          "size": "38px",
+          "text": "Точный с любого угла."
+        }
+      ],
+      "model": "pro-max",
+      "title": "iPhone 18 Pro Max",
+      "width": 390
+    },
+    {
+      "documentWidth": 390,
+      "headings": [
+        {
+          "lineHeight": "24px",
+          "size": "16px",
+          "text": "Есть вопросы о товаре?"
+        },
+        {
+          "lineHeight": "24.75px",
+          "size": "18px",
+          "text": "Описание"
+        },
+        {
+          "lineHeight": "24.75px",
+          "size": "18px",
+          "text": "Характеристики"
+        },
+        {
+          "lineHeight": "25px",
+          "size": "20px",
+          "text": "С этим покупают"
+        },
+        {
+          "lineHeight": "39.71px",
+          "size": "38px",
+          "text": "Точный с любого угла."
+        }
+      ],
+      "model": "pro",
+      "title": "iPhone 18 Pro",
+      "width": 390
+    }
+  ],
+  "passed": true
+}

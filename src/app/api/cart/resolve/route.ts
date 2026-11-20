@@ -3,12 +3,26 @@ import { getCurrentRate } from "@/lib/pricing";
 import { isRawCartItem, resolveCartLines, type RawCartItem } from "@/lib/cart-resolve";
 import type { ResolvedCartItem } from "@/types/cart";
 
-const MAX_CART_ITEMS = 50;
+import { MAX_CART_ITEMS } from "@/lib/cart-validation";
+import { readJsonObject, RequestBodyError } from "@/lib/http-json";
+import { checkRateLimit } from "@/lib/rate-limit";
+import { getClientIp } from "@/lib/request-ip";
 
-export async function POST(request: NextRequest) {
-  const body = await request.json().catch(() => null);
+async function resolve(request: NextRequest) {
+  const globalLimit = checkRateLimit("cart:global", { limit: 600, windowMs: 60_000 });
+  const ip = getClientIp(request.headers);
+  const localLimit = ip === "unknown" ? globalLimit : checkRateLimit(`cart:${ip}`, { limit: 60, windowMs: 60_000 });
+  if (!globalLimit.allowed || !localLimit.allowed) {
+    return NextResponse.json({ error: "rate_limited" }, { status: 429, headers: {
+      "Retry-After": String(Math.max(globalLimit.retryAfterSeconds, localLimit.retryAfterSeconds)),
+    } });
+  }
+  const body = await readJsonObject(request);
   const rawItemsInput: unknown[] = Array.isArray(body?.items) ? body.items : [];
-  const rawItems: RawCartItem[] = rawItemsInput.filter(isRawCartItem).slice(0, MAX_CART_ITEMS);
+  if (rawItemsInput.length > MAX_CART_ITEMS || !rawItemsInput.every(isRawCartItem)) {
+    return NextResponse.json({ error: "invalid_cart" }, { status: 400 });
+  }
+  const rawItems: RawCartItem[] = rawItemsInput;
 
   if (rawItems.length === 0) {
     return NextResponse.json({ items: [] });
@@ -32,4 +46,14 @@ export async function POST(request: NextRequest) {
   }));
 
   return NextResponse.json({ items });
+}
+
+export async function POST(request: NextRequest) {
+  try {
+    return await resolve(request);
+  } catch (error) {
+    if (error instanceof RequestBodyError) return NextResponse.json({ error: error.code }, { status: error.status });
+    console.error("[cart] resolve failed", error);
+    return NextResponse.json({ error: "service_unavailable" }, { status: 503 });
+  }
 }

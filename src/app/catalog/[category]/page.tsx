@@ -1,3 +1,4 @@
+import { productPath } from "@/lib/product-route";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -15,9 +16,10 @@ import {
 import { SITE } from "@/constants/content/site";
 import { flagshipCampaigns } from "@/constants/content/flagships";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 const CATALOG_ONLY_CATEGORIES = new Set([
+  "apple-devices",
   "samsung-audio",
   "chargers",
   "cables",
@@ -50,7 +52,7 @@ export async function generateMetadata({
   const title = category.seoTitle || `${category.name} — ${SITE.name}`;
   const description =
     category.description ||
-    `${category.name} от ${category.brandName} в интернет-магазине ${SITE.name}: цены в BYN, доставка по Беларуси.`;
+    `${category.name} в интернет-магазине ${SITE.name}: актуальные модели, цены в BYN и доставка по Беларуси.`;
   const url = `/catalog/${category.slug}`;
 
   return {
@@ -74,7 +76,8 @@ export default async function CategoryPage({
   if (!category) notFound();
 
   const filters = parseCatalogSearchParams(sp, category.slug);
-  const catalogOnly = CATALOG_ONLY_CATEGORIES.has(category.slug);
+  const categoryDisplayName = category.slug === "watch" && filters.brandSlugs?.[0] === "apple" ? "iWatch" : category.name;
+  const catalogOnly = CATALOG_ONLY_CATEGORIES.has(category.slug) || Boolean(filters.brandSlugs?.length);
   const flagship = catalogOnly
     ? undefined
     : flagshipCampaigns.find(item => item.category === category.slug);
@@ -89,25 +92,11 @@ export default async function CategoryPage({
     ? Promise.resolve(null)
     : getCategoryFeaturedProduct(category.slug, flagship?.slug);
 
-  /* При редакционном флагмане его slug известен заранее: featured и каталог
-   * можно читать параллельно. Если редакционного флагмана нет, исключаемый
-   * fallback становится известен только после featured-запроса. */
-  const resultPromise = catalogOnly || flagship
-    ? getCatalogProducts({
-        ...filters,
-        excludeProductSlugs: !hasRefinements && flagship ? [flagship.slug] : undefined,
-      })
-    : featuredPromise.then((featuredProduct) =>
-        getCatalogProducts({
-          ...filters,
-          excludeProductSlugs:
-            !hasRefinements && featuredProduct ? [featuredProduct.slug] : undefined,
-        })
-      );
+  // Баннер — дополнительная подача товара, а не замена его карточки в списке.
+  const resultPromise = getCatalogProducts(filters);
 
   const [featured, result] = await Promise.all([featuredPromise, resultPromise]);
   const flagshipIsProduct = Boolean(flagship && featured?.slug === flagship.slug);
-  const featuredSlug = flagship ? (flagshipIsProduct ? featured?.slug : undefined) : featured?.slug;
   const hero = flagship
     ? {
         name: flagship.name,
@@ -123,7 +112,7 @@ export default async function CategoryPage({
           subtitle:
             category.description || `Начните знакомство с категорией «${category.name}» с этой модели.`,
           image: featured.mainImageUrl,
-          href: featured.canonicalPath || `/product/${featured.slug}`,
+          href: productPath(featured.slug, featured.canonicalPath),
           priceByn: featured.priceByn,
           isEditorial: false,
         }
@@ -134,22 +123,19 @@ export default async function CategoryPage({
         subtitle: flagship.subtitle,
         image: flagship.catalogImage,
         href: flagship.href,
-        brandName: category.brandName,
+        brandName: category.brandName ?? "Di-SMART",
         categorySlug: category.slug,
       }
     : null;
-  const totalProducts =
-    result.total +
-    (featuredSlug && !hasRefinements ? 1 : 0) +
-    (editorialItem ? 1 : 0);
+  const totalProducts = result.total + (editorialItem ? 1 : 0);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
       <Breadcrumbs
         items={[
           { label: "Главная", href: "/#categories" },
-          { label: category.brandName, href: "/catalog" },
-          { label: category.name },
+          ...(category.brandName ? [{ label: category.brandName, href: "/catalog" }] : []),
+          { label: categoryDisplayName },
         ]}
       />
 
@@ -162,14 +148,16 @@ export default async function CategoryPage({
       </Link>
       <div className="mb-6 flex items-end justify-between gap-4">
         <div>
-          <p className="text-sm text-[var(--color-muted)]">{category.brandName}</p>
+          {category.brandName && (
+            <p className="text-sm text-[var(--color-muted)]">{category.brandName}</p>
+          )}
           {hero ? (
             <h2 className="mt-1 font-[family-name:var(--font-heading)] text-2xl font-semibold tracking-tight md:text-3xl">
-              {category.h1 || category.name}
+              {category.slug === "watch" ? categoryDisplayName : category.h1 || category.name}
             </h2>
           ) : (
             <h1 className="mt-1 font-[family-name:var(--font-heading)] text-3xl font-semibold tracking-tight md:text-4xl">
-              {category.h1 || category.name}
+              {category.slug === "watch" ? categoryDisplayName : category.h1 || category.name}
             </h1>
           )}
         </div>
@@ -185,7 +173,7 @@ export default async function CategoryPage({
           <div className="mb-7 flex items-end justify-between gap-4">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-                {hasRefinements ? "Модели категории" : "Другие модели"}
+                Все модели
               </h2>
               <p className="mt-1 text-sm text-[var(--color-muted)]">
                 Сравните конфигурации, цены и наличие.

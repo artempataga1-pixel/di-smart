@@ -1,0 +1,15 @@
+PASS: mobile cart recovery, actionable HTTP 400, stable key after network failure, expected total, success UI
+locator.waitFor: Error: strict mode violation: getByText('Корзина пуста', { exact: true }) resolved to 2 elements:
+    1) <p class="font-medium text-[var(--color-text)]">Корзина пуста</p> aka getByRole('main').getByText('Корзина пуста')
+    2) <p class="font-medium text-[var(--color-text)]">Корзина пуста</p> aka getByText('Корзина пуста').nth(1)
+
+Call log:
+  - waiting for getByText('Корзина пуста', { exact: true }) to be visible
+    - locator resolved to hidden <p class="font-medium text-[var(--color-text)]">Корзина пуста</p>
+
+    at /private/tmp/di-smart-contacts-20261031/scripts/quality/check-reliability.cjs:49:50 {
+  log: [
+    "  - waiting for getByText('Корзина пуста', { exact: true }) to be visible",
+    '    - locator resolved to hidden <p class="font-medium text-[var(--color-text)]">Корзина пуста</p>'
+  ]
+}

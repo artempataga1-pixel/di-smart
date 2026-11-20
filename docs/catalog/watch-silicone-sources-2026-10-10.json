@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-10",
+  "tool": "built-in image_gen",
+  "sources": [
+    {
+      "name": "Apple Watch Series 11 (Space Gray/Sport Band Black)",
+      "sourceUrl": "https://di-smart.by/product/apple-watch-series-11-space-gray-sport-band-black/",
+      "title": "Apple Watch Series 11 (Space Gray/Sport Band Black) купить в Минске – Di-smart",
+      "imageUrl": "https://di-smart.by/wp-content/uploads/2026/05/snimok-ekrana-2026-05-04-v-17.00.36.png",
+      "referencePath": "/private/tmp/di-smart-watch-colors-20261010/apple-watch-series-11-space-gray-sport-band-black.png"
+    },
+    {
+      "name": "Apple Watch SE3 (Midnight/силиконовый ремешок)",
+      "sourceUrl": "https://di-smart.by/product/apple-watch-se3-midnight-silikonovyj-remeshok/",
+      "title": "Apple Watch SE3 (Midnight/силиконовый ремешок) купить в Минске – Di-smart",
+      "imageUrl": "https://di-smart.by/wp-content/uploads/2025/10/img_9455-1-scaled.jpg",
+      "referencePath": "/private/tmp/di-smart-watch-colors-20261010/apple-watch-se3-midnight-silikonovyj-remeshok.jpg"
+    },
+    {
+      "name": "Apple Watch SE3 (Starlight/силиконовый ремешок)",
+      "sourceUrl": "https://di-smart.by/product/apple-watch-se3-starlight-tekstilnyj-remeshok-kopirovat/",
+      "title": "Apple Watch SE3 (Starlight/силиконовый ремешок) купить в Минске – Di-smart",
+      "imageUrl": "https://di-smart.by/wp-content/uploads/2025/10/img_9454-1-scaled.jpg",
+      "referencePath": "/private/tmp/di-smart-watch-colors-20261010/apple-watch-se3-starlight-tekstilnyj-remeshok-kopirovat.jpg"
+    },
+    {
+      "name": "Apple Watch Series 11 (Silver/Sport Band Pur Fog)",
+      "sourceUrl": "https://di-smart.by/product/apple-watch-series-11-silver-sport-band-starlight/",
+      "title": "Apple Watch Series 11 (Silver/Sport Band Pur Fog) купить в Минске – Di-smart",
+      "imageUrl": "https://di-smart.by/wp-content/uploads/2025/10/snimok-ekrana-2026-05-04-v-16.31.00.png",
+      "referencePath": "/private/tmp/di-smart-watch-colors-20261010/apple-watch-series-11-silver-sport-band-starlight.png"
+    },
+    {
+      "name": "Apple Watch Series 11 (Rose Gold /Sport Band Light Blush)",
+      "sourceUrl": "https://di-smart.by/product/apple-watch-series-11-rose-gold-sport-band-light-blush/",
+      "title": "Apple Watch Series 11 (Rose Gold /Sport Band Light Blush) купить в Минске – Di-smart",
+      "imageUrl": "https://di-smart.by/wp-content/uploads/2025/10/img_9457-1-scaled.jpg",
+      "referencePath": "/private/tmp/di-smart-watch-colors-20261010/apple-watch-series-11-rose-gold-sport-band-light-blush.jpg"
+    },
+    {
+      "name": "Apple Watch Series 11 (Jet Black/Sport Band Black)",
+      "sourceUrl": "https://di-smart.by/product/apple-watch-series-11-jet-black-sport-band-black-kopirovat/",
+      "title": "Apple Watch Series 11 (Jet Black/Sport Band Black) купить в Минске – Di-smart",
+      "imageUrl": "https://di-smart.by/wp-content/uploads/2025/10/img_9458-1-scaled.jpg",
+      "referencePath": "/private/tmp/di-smart-watch-colors-20261010/apple-watch-series-11-jet-black-sport-band-black-kopirovat.jpg"
+    }
+  ],
+  "assets": [
+    {
+      "key": "series11-space-gray",
+      "sourcePath": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-d53985f9-1f9c-4f60-8763-83aeb90a6d5f.png",
+      "prompt": "Use case: compositing. Create a square photorealistic ecommerce product photograph for Di-Smart, one watch only.\nInput image 1 is the authoritative PRODUCT and COLOR reference: preserve its watch identity, exact case shape and proportions, digital crown, side button, display design, case finish, strap shape, smooth silicone material, pin-and-tuck closure and real color pairing. Input image 2 is STYLE/COMPOSITION ONLY: use its pale icy-blue studio wall, soft diagonal window-light stripes, glossy white tabletop with subtle natural reflection and three-quarter upright watch composition. Do not copy the watch, case color, band color or analog face from image 2.\nSubject: Apple Watch Series 11, matte medium gray aluminum case and matte charcoal black smooth silicone Sport Band; blue luminous rounded numerals watch face exactly like reference 1.\nRecompose the watch from image 1 in a complete closed-band upright three-quarter view, crown on right, centered, 78-82 percent of square canvas height. The whole watch including top and bottom of band fits completely with at least 8 percent clear margin at top and bottom. Preserve source geometry and screen appearance. Crisp product details and naturally rounded glass, realistic soft shadows. Color-calibrated neutral product lighting: pale-blue background must NOT tint the product. Background reaches all edges. No frame, no border, no product text outside display, no logo overlay, no extra objects. No textile, mesh, woven, metal bracelet or buckle strap; smooth silicone Sport Band only.",
+      "output": "public/media/catalog/apple-watch-silicone-2026/series11-space-gray-v3.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 61894
+    },
+    {
+      "key": "se3-midnight",
+      "sourcePath": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-0911a0ca-575f-4daf-afde-64852ecf1925.png",
+      "prompt": "Use case: compositing. Create a square photorealistic ecommerce product photograph for Di-Smart, one watch only.\nInput image 1 is the authoritative PRODUCT and COLOR reference: preserve its watch identity, exact case shape and proportions, digital crown, side button, display design, case finish, strap shape, smooth silicone material, pin-and-tuck closure and real color pairing. Input image 2 is STYLE/COMPOSITION ONLY: use its pale icy-blue studio wall, soft diagonal window-light stripes, glossy white tabletop with subtle natural reflection and three-quarter upright watch composition. Do not copy the watch, case color, band color or analog face from image 2.\nSubject: Apple Watch SE3, matte very dark blue-black Midnight aluminum case, matching matte blue-black Midnight smooth silicone Sport Band, blue two-tone oversized 10:09 digital watch face exactly like reference 1.\nRecompose the watch from image 1 in a complete closed-band upright three-quarter view, crown on right, centered, 78-82 percent of square canvas height. The whole watch including top and bottom of band fits completely with at least 8 percent clear margin at top and bottom. Preserve source geometry and screen appearance. Crisp product details and naturally rounded glass, realistic soft shadows. Color-calibrated neutral product lighting: pale-blue background must NOT tint the product. Background reaches all edges. No frame, no border, no product text outside display, no logo overlay, no extra objects. No textile, mesh, woven, metal bracelet or buckle strap; smooth silicone Sport Band only.",
+      "output": "public/media/catalog/apple-watch-silicone-2026/se3-midnight-v3.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 61782
+    },
+    {
+      "key": "se3-starlight",
+      "sourcePath": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-7fba2848-58fe-4847-9c9c-ec6c4892eb15.png",
+      "prompt": "Use case: compositing. Create a square photorealistic ecommerce product photograph for Di-Smart, one watch only.\nInput image 1 is the authoritative PRODUCT and COLOR reference: preserve its watch identity, exact case shape and proportions, digital crown, side button, display design, case finish, strap shape, smooth silicone material, pin-and-tuck closure and real color pairing. Input image 2 is STYLE/COMPOSITION ONLY: use its pale icy-blue studio wall, soft diagonal window-light stripes, glossy white tabletop with subtle natural reflection and three-quarter upright watch composition. Do not copy the watch, case color, band color or analog face from image 2.\nSubject: Apple Watch SE3, pale warm champagne Starlight aluminum case and warm ivory off-white Starlight smooth silicone Sport Band. Keep subtle neutral warmth, not yellow or gold. Coral red and pale tan 10:09 digital watch face exactly like reference 1.\nRecompose the watch from image 1 in a complete closed-band upright three-quarter view, crown on right, centered, 78-82 percent of square canvas height. The whole watch including top and bottom of band fits completely with at least 8 percent clear margin at top and bottom. Preserve source geometry and screen appearance. Crisp product details and naturally rounded glass, realistic soft shadows. Color-calibrated neutral product lighting: pale-blue background must NOT tint the product. Background reaches all edges. No frame, no border, no product text outside display, no logo overlay, no extra objects. No textile, mesh, woven, metal bracelet or buckle strap; smooth silicone Sport Band only.",
+      "output": "public/media/catalog/apple-watch-silicone-2026/se3-starlight-v3.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 57284
+    },
+    {
+      "key": "series11-silver",
+      "sourcePath": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-f359b4cd-a492-4b9e-a350-93bec49c4018.png",
+      "prompt": "Use case: compositing. Create a square photorealistic ecommerce product photograph for Di-Smart, one watch only.\nInput image 1 is the authoritative PRODUCT and COLOR reference: preserve its watch identity, exact case shape and proportions, digital crown, side button, display design, case finish, strap shape, smooth silicone material, pin-and-tuck closure and real color pairing. Input image 2 is STYLE/COMPOSITION ONLY: use its pale icy-blue studio wall, soft diagonal window-light stripes, glossy white tabletop with subtle natural reflection and three-quarter upright watch composition. Do not copy the watch, case color, band color or analog face from image 2.\nSubject: Apple Watch Series 11, neutral cool silver aluminum case, muted medium dusty gray-lavender Purple Fog smooth silicone Sport Band (NOT white, NOT silver-gray, NOT bright purple). Preserve the precise band color from reference 1. Lime green luminous rounded numerals watch face exactly like reference 1.\nRecompose the watch from image 1 in a complete closed-band upright three-quarter view, crown on right, centered, 78-82 percent of square canvas height. The whole watch including top and bottom of band fits completely with at least 8 percent clear margin at top and bottom. Preserve source geometry and screen appearance. Crisp product details and naturally rounded glass, realistic soft shadows. Color-calibrated neutral product lighting: pale-blue background must NOT tint the product. Background reaches all edges. No frame, no border, no product text outside display, no logo overlay, no extra objects. No textile, mesh, woven, metal bracelet or buckle strap; smooth silicone Sport Band only.",
+      "output": "public/media/catalog/apple-watch-silicone-2026/series11-silver-v3.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 61904
+    },
+    {
+      "key": "series11-rose-gold",
+      "sourcePath": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-f2137154-37be-4b31-b503-ea9f43b8b8b0.png",
+      "prompt": "Use case: compositing. Create a square photorealistic ecommerce product photograph for Di-Smart, one watch only.\nInput image 1 is the authoritative PRODUCT and COLOR reference: preserve its watch identity, exact case shape and proportions, digital crown, side button, display design, case finish, strap shape, smooth silicone material, pin-and-tuck closure and real color pairing. Input image 2 is STYLE/COMPOSITION ONLY: use its pale icy-blue studio wall, soft diagonal window-light stripes, glossy white tabletop with subtle natural reflection and three-quarter upright watch composition. Do not copy the watch, case color, band color or analog face from image 2.\nSubject: Apple Watch Series 11, softly metallic pink rose-gold aluminum case and very pale warm pink almost ivory Light Blush smooth silicone Sport Band, magenta and peach luminous rounded numerals watch face exactly like reference 1. Not yellow gold.\nRecompose the watch from image 1 in a complete closed-band upright three-quarter view, crown on right, centered, 78-82 percent of square canvas height. The whole watch including top and bottom of band fits completely with at least 8 percent clear margin at top and bottom. Preserve source geometry and screen appearance. Crisp product details and naturally rounded glass, realistic soft shadows. Color-calibrated neutral product lighting: pale-blue background must NOT tint the product. Background reaches all edges. No frame, no border, no product text outside display, no logo overlay, no extra objects. No textile, mesh, woven, metal bracelet or buckle strap; smooth silicone Sport Band only.",
+      "output": "public/media/catalog/apple-watch-silicone-2026/series11-rose-gold-v3.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 64006
+    },
+    {
+      "key": "series11-jet-black",
+      "sourcePath": "/Users/artempataga/.codex/generated_images/01a0f137-885f-7c43-a4ee-c849a7b7eeb3/exec-09601af4-315a-4ff4-8005-6a713d6980b0.png",
+      "prompt": "Use case: compositing. Create a square photorealistic ecommerce product photograph for Di-Smart, one watch only.\nInput image 1 is the authoritative PRODUCT and COLOR reference: preserve its watch identity, exact case shape and proportions, digital crown, side button, display design, case finish, strap shape, smooth silicone material, pin-and-tuck closure and real color pairing. Input image 2 is STYLE/COMPOSITION ONLY: use its pale icy-blue studio wall, soft diagonal window-light stripes, glossy white tabletop with subtle natural reflection and three-quarter upright watch composition. Do not copy the watch, case color, band color or analog face from image 2.\nSubject: Apple Watch Series 11, polished glossy reflective deep black Jet Black case, matte charcoal black smooth silicone Sport Band. Neutral white/silver luminous rounded numerals watch face exactly like reference 1. Case must visibly glossy unlike matte space gray.\nRecompose the watch from image 1 in a complete closed-band upright three-quarter view, crown on right, centered, 78-82 percent of square canvas height. The whole watch including top and bottom of band fits completely with at least 8 percent clear margin at top and bottom. Preserve source geometry and screen appearance. Crisp product details and naturally rounded glass, realistic soft shadows. Color-calibrated neutral product lighting: pale-blue background must NOT tint the product. Background reaches all edges. No frame, no border, no product text outside display, no logo overlay, no extra objects. No textile, mesh, woven, metal bracelet or buckle strap; smooth silicone Sport Band only.",
+      "output": "public/media/catalog/apple-watch-silicone-2026/series11-jet-black-v3.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 63902
+    }
+  ]
+}

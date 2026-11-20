@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-10",
+  "production": "https://di-smart-gilt.vercel.app",
+  "deployment": "dpl_6qA43ysAAFsx1SKp5YuP5eNKTive",
+  "status": "READY",
+  "implementation": "Shared ProductInfo purchase panel, directly below cart controls",
+  "checks": {
+    "typescript": "passed",
+    "eslint": "passed",
+    "productionBuild": "passed",
+    "pages": [
+      "/product/iphone-air",
+      "/iphone-18-pro?model=pro-max",
+      "/galaxy-s26-ultra"
+    ],
+    "phoneHref": "tel:+375445556665",
+    "telegramHref": "https://t.me/dismart_by",
+    "instagramHref": "https://instagram.com/dismart.by",
+    "viberCopyConfirmation": "Скопировано",
+    "mobileViewport": 390,
+    "mobileDocumentWidth": 390
+  }
+}

@@ -1,7 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { isForeignKeyConstraintError, isUniqueConstraintError } from "@/lib/admin/errors";
 import { errorRedirectUrl, isValidSlug, parseIntField } from "@/lib/admin/form-helpers";
@@ -50,6 +50,7 @@ export async function createCategoryAction(formData: FormData) {
   }
 
   revalidatePath(PATH);
+  revalidateTag("storefront-catalog", { expire: 0 });
   redirect(PATH);
 }
 
@@ -93,5 +94,6 @@ export async function updateCategoryAction(formData: FormData) {
   }
 
   revalidatePath(PATH);
+  revalidateTag("storefront-catalog", { expire: 0 });
   redirect(PATH);
 }

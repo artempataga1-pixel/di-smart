@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-08",
+  "deployment": "dpl_ANhnskp6G5HA4fm6bzga1BgbnxK4",
+  "pages": [
+    {
+      "path": "/catalog/iphone",
+      "status": 200,
+      "campaignInGrid": "iPhone 18 Pro"
+    },
+    {
+      "path": "/catalog/samsung-smartphones",
+      "status": 200,
+      "campaignInGrid": "Samsung Galaxy S26 Ultra"
+    },
+    {
+      "path": "/catalog/samsung-tablets",
+      "status": 200,
+      "campaignInGrid": "Samsung Galaxy Tab S11 Ultra"
+    },
+    {
+      "path": "/catalog/airpods",
+      "status": 200,
+      "campaignInGrid": "AirPods Pro 3"
+    },
+    {
+      "path": "/catalog/ipad",
+      "status": 200
+    },
+    {
+      "path": "/catalog/macbook",
+      "status": 200
+    },
+    {
+      "path": "/catalog/watch?brand=apple",
+      "status": 200
+    },
+    {
+      "path": "/catalog/watch?brand=samsung",
+      "status": 200
+    }
+  ],
+  "fullBlackPortrait": {
+    "status": 200,
+    "width": 940,
+    "height": 1112
+  },
+  "neutralSilverSwatch": true,
+  "officialSilverPhotosRetained": true,
+  "neutral3dLighting": true,
+  "samsungMissingAssets": 0,
+  "samsungIncompleteColorSets": 0,
+  "unitTestsPassed": 2,
+  "browserDesktopAndMobile": true
+}

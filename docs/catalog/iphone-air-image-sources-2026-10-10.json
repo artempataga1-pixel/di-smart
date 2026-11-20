@@ -1,0 +1,37 @@
+{
+  "source": "https://www.apple.com/shop/buy-iphone/iphone-air",
+  "assets": [
+    {
+      "color": "spaceblack",
+      "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-spaceblack-202509?wid=940&hei=1112&fmt=png-alpha&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsT1EwWVYrK0M3QzlJTEFOMng5bDMrejN1UXliTFpDL21tQnFzeFc2TCs3QVgyaWxBVG1PRTU2YzhCN2c2emhzWG1EbG02UTA1WVduVEpGbUMyTTJuNVV2QklpRitnVTEwSUE3aENBT3VWNzk",
+      "path": "public/media/catalog/iphone-air-official-2026/spaceblack.webp",
+      "width": 940,
+      "height": 1112,
+      "bytes": 22440
+    },
+    {
+      "color": "cloudwhite",
+      "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-cloudwhite-202509?wid=940&hei=1112&fmt=png-alpha&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsTS8xdU11cWJCczZ1VVpEY09DWGZFdG9rUmM5L0VxemJPNnRHVmtSWFVtQVgyaWxBVG1PRTU2YzhCN2c2emhzWG1EbG02UTA1WVduVEpGbUMyTTJuNVZvSWRyb0g1dWM0TnhmcUpxVTA1bXc",
+      "path": "public/media/catalog/iphone-air-official-2026/cloudwhite.webp",
+      "width": 940,
+      "height": 1112,
+      "bytes": 24232
+    },
+    {
+      "color": "lightgold",
+      "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-lightgold-202509?wid=940&hei=1112&fmt=png-alpha&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsQ0FRNjA2a0FndFVGandMdTMzMTI3T0Nvd0w2dVF4Vk1peXVBQ1A5RnFJblQ5NVJ4OStiQklybHZqYkJwOUI0UWpLeDJBOVg1WWI4SnpydnJleTJOaVBPdXQzMlBmb1p0VFkzYVZUVnExVE4",
+      "path": "public/media/catalog/iphone-air-official-2026/lightgold.webp",
+      "width": 940,
+      "height": 1112,
+      "bytes": 26870
+    },
+    {
+      "color": "skyblue",
+      "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-skyblue-202509?wid=940&hei=1112&fmt=png-alpha&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsSTc3enVEMmlQcEEzL2lLSlkvSU10ZjhHWUFlMUJvbytPdDJaMXVCZ3hWK3RiU3ZsS20zTE4xZTVGRXpySFRUZnhKQnpOUmx4ZGN3eXhkWm5HTmRKRHZPNk91aGNwTzdaL0RpcGZCOEdDdXU",
+      "path": "public/media/catalog/iphone-air-official-2026/skyblue.webp",
+      "width": 940,
+      "height": 1112,
+      "bytes": 28010
+    }
+  ]
+}

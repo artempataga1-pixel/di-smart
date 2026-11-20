@@ -1,0 +1,28 @@
+{
+  "restoredKeys": [
+    "DATABASE_URL",
+    "DATABASE_PROVIDER",
+    "ADMIN_LOGIN",
+    "ADMIN_PASSWORD",
+    "SESSION_SECRET",
+    "NEXT_PUBLIC_SITE_URL",
+    "SEO_INDEXING_ENABLED",
+    "ORDER_INTAKE_ENABLED",
+    "ADMIN_ALLOW_SHORT_PASSWORD"
+  ],
+  "sources": {
+    "database": "Vercel Development settings",
+    "admin": "existing local credentials record",
+    "sessionSecret": "new local-only random value"
+  },
+  "productionChanged": false,
+  "telegramConfigured": false,
+  "sharedDatabase": true,
+  "localOrderIntakeEnabled": false,
+  "verification": {
+    "fullProductionBuild": "passed",
+    "localAdminCredentials": "passed",
+    "localSessionSignature": "passed"
+  },
+  "telegramRecoveredKeys": []
+}
