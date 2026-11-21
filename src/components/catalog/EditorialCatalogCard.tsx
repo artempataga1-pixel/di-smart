@@ -32,7 +32,7 @@ export function EditorialCatalogCard({ item }: { item: EditorialCatalogCardData 
 
       <div className="flex flex-1 flex-col gap-2 p-3 sm:gap-3 sm:p-5">
         <div>
-          <p className="mb-1 text-[11px] text-[var(--color-muted)] sm:text-sm">{item.brandName}</p>
+          <p className="mb-1 text-[13px] text-[var(--color-muted)] sm:text-sm">{item.brandName}</p>
           <Link href={item.href} className="block min-h-10 sm:min-h-11">
             <h3 className="text-[14px] font-semibold leading-[1.25] tracking-[-0.015em] text-[var(--color-text)] transition-colors hover:text-[var(--color-accent-ink)] sm:text-[17px] sm:leading-snug">
               {item.name}

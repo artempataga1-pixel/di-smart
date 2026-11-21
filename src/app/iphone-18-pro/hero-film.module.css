@@ -14,7 +14,7 @@
 @media (max-width: 760px) {
   .hero { min-height: 0; padding-top: 30px; }
   .scene { width: 100%; aspect-ratio: 16 / 9; }
-  .controls { padding: 15px 22px 22px; gap: 12px; font-size: 11px; }
+  .controls { padding: 15px 22px 22px; gap: 12px; font-size: 14px; }
   .controls a, .controls button { gap: 8px; min-height: 44px; }
   .controls .buyCta { min-height: 40px; padding-inline: 15px; }
 }

@@ -1,4 +1,8 @@
 @theme {
+  /* Самый мелкий текст витрины — 13px: подписи в 11–12px тяжело читать на iPhone. */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.125rem;
+
   /* Светлая тема на основе дуотон-референса Di-SMART: голубой #C9D3EC → персиковый #FED7B8 */
   --color-bg: #f8fafd;
   --color-surface: #ffffff;

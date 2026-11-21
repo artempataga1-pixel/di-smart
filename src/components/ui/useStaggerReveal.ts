@@ -13,9 +13,9 @@ interface UseStaggerRevealOptions {
  * от RevealOnScroll оборачивает не один блок, а стаггерит детей контейнера. */
 export function useStaggerReveal<T extends HTMLElement = HTMLDivElement>({
   count,
-  y = 24,
-  stagger = 0.06,
-  duration = 0.7,
+  y = 16,
+  stagger = 0.04,
+  duration = 0.45,
   ease = "power3.out",
 }: UseStaggerRevealOptions): RefObject<T | null> {
   const containerRef = useRef<T>(null);
@@ -39,13 +39,13 @@ export function useStaggerReveal<T extends HTMLElement = HTMLDivElement>({
             { opacity: 0, transform: `translate3d(0, ${y}px, 0)` },
             { opacity: 1, transform: "translate3d(0, 0, 0)" },
           ],
-          { duration: duration * 1000, delay: index * stagger * 1000, easing: ease === "power3.out" ? "cubic-bezier(.22,1,.36,1)" : ease, fill: "forwards" },
+          { duration: duration * 1000, delay: Math.min(index, 5) * stagger * 1000, easing: ease === "power3.out" ? "cubic-bezier(.22,1,.36,1)" : ease, fill: "forwards" },
         ).finished.finally(() => {
           item.style.removeProperty("opacity");
           item.style.removeProperty("transform");
         });
       });
-    }, { rootMargin: "0px 0px -15%" });
+    }, { rootMargin: "0px 0px 10% 0px" });
     observer.observe(container);
     return () => observer.disconnect();
   }, [count, y, stagger, duration, ease]);

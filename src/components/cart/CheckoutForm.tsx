@@ -7,6 +7,7 @@ import { formatBelarusPhone, isBelarusPhoneComplete } from "@/lib/phone";
 import { CartItemRow } from "@/components/cart/CartItemRow";
 import { CartSummary } from "@/components/cart/CartSummary";
 import { OrderSuccess } from "@/components/cart/OrderSuccess";
+import { SITE } from "@/constants/content/site";
 import { EmptyCartState } from "@/components/cart/EmptyCartState";
 import { LEGAL_DOCUMENT_VERSION } from "@/lib/legal";
 
@@ -308,6 +309,13 @@ export function CheckoutForm({ ordersEnabled }: { ordersEnabled: boolean }) {
         >
           {submitting ? "Отправляем…" : !ordersEnabled ? "Приём заявок пока закрыт" : pendingOrderId ? "Повторить попытку" : "Отправить заявку"}
         </button>
+
+        {ordersEnabled && (
+          <p className="text-sm text-[var(--color-text)]">
+            После отправки менеджер позвонит вам, чтобы подтвердить наличие, цену и доставку. Звоним {SITE.managerHours}.
+            Оплата на сайте не нужна.
+          </p>
+        )}
 
         <p className="text-xs text-[var(--color-muted)]">
           Это тестовая версия сайта. Указывайте только свои контактные данные:

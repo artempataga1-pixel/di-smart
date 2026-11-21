@@ -31,7 +31,7 @@ export function ProductCard({ product }: { product: CatalogCardData }) {
             gradientSeed={product.categorySlug}
           />
           {!product.mainImageUrl && (
-            <span className="absolute inset-x-2 bottom-3 text-center text-[11px] font-medium tracking-wide text-white/75 sm:text-xs">
+            <span className="absolute inset-x-2 bottom-3 text-center text-xs font-medium tracking-wide text-white/80">
               Фото скоро появится
             </span>
           )}
@@ -40,7 +40,7 @@ export function ProductCard({ product }: { product: CatalogCardData }) {
 
       <div className="flex flex-1 flex-col gap-2 p-3 sm:gap-3 sm:p-5">
         <div>
-          <p className="mb-1 text-[11px] text-[var(--color-muted)] sm:text-sm">{product.brandName}</p>
+          <p className="mb-1 text-[13px] text-[var(--color-muted)] sm:text-sm">{product.brandName}</p>
           <Link href={productPath(product.slug, product.canonicalPath)} prefetch className="block min-h-10 sm:min-h-11">
           <h3 className="text-[14px] font-semibold leading-[1.25] tracking-[-0.015em] text-[var(--color-text)] transition-colors hover:text-[var(--color-accent-ink)] sm:text-[17px] sm:leading-snug">
             {product.name}
@@ -51,7 +51,7 @@ export function ProductCard({ product }: { product: CatalogCardData }) {
         <div className="sm:hidden">{product.priceIsFrom && <span className="mr-1 text-xs text-[var(--color-muted)]">от</span>}<Price price={product.priceByn} size="sm" /></div>
         <div className="hidden sm:block">{product.priceIsFrom && <span className="mr-1 text-sm text-[var(--color-muted)]">от</span>}<Price price={product.priceByn} /></div>
         {product.priceByn > 0 && product.priceKind === "MARKET_ESTIMATE" && (
-          <p className="text-[11px] leading-tight text-[var(--color-muted)] sm:text-xs">Ориентировочная цена · уточните у менеджера</p>
+          <p className="text-xs leading-tight text-[var(--color-muted)]">Ориентировочная цена · уточните у менеджера</p>
         )}
 
         <div className="mt-auto grid grid-cols-1 gap-2 pt-1 sm:grid-cols-[1fr_auto] sm:pt-2">

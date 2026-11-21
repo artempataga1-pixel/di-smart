@@ -60,16 +60,19 @@ export function IPhoneHero({ pro, proMax, crossSell, initialModel = "pro" }: { p
           observer?.unobserve(frame);
           const siblings = frame.parentElement ? Array.from(frame.parentElement.children) : [];
           const index = siblings.indexOf(frame);
-          const delay = innerWidth > 760 ? Math.max(0, index) * 90 : 0;
+          const delay = innerWidth > 760 ? Math.max(0, index) * 60 : 0;
           frame.style.willChange = "transform, opacity";
+          // Короткая и неглубокая анимация: при быстрой прокрутке блок не
+          // успевает «висеть» бледным, а запуск чуть до входа в экран
+          // скрывает её начало от пользователя.
           const animation = frame.animate([
-            { opacity: 0, transform: `translate3d(0, ${innerWidth > 760 ? 72 : 32}px, 0) scale(.97)` },
+            { opacity: 0, transform: `translate3d(0, ${innerWidth > 760 ? 36 : 16}px, 0) scale(.985)` },
             { opacity: 1, transform: "translate3d(0, 0, 0) scale(1)" },
-          ], { duration: 1200, delay, easing: "cubic-bezier(.16, 1, .3, 1)", fill: "backwards" });
+          ], { duration: 600, delay, easing: "cubic-bezier(.16, 1, .3, 1)", fill: "backwards" });
           animations.add(animation);
           animation.onfinish = () => { animations.delete(animation); frame.style.willChange = "auto"; };
         });
-      }, { threshold: .08, rootMargin: "0px 0px -32px 0px" });
+      }, { threshold: 0, rootMargin: "0px 0px 12% 0px" });
       // Photos are excluded here on purpose: they already fade in on their own
       // once loaded (see ProductMedia's onLoad handler). Sliding/scaling the
       // same rounded, overflow-hidden frame here as well would (a) double up
@@ -94,7 +97,7 @@ export function IPhoneHero({ pro, proMax, crossSell, initialModel = "pro" }: { p
       <div>
         <HeroFilm />
 
-        <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+        <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20">
           <div className="mx-auto max-w-6xl">
             <ProductPurchasePanel
               key={product.id}
@@ -129,7 +132,7 @@ export function IPhoneHero({ pro, proMax, crossSell, initialModel = "pro" }: { p
           </div>
         </section>
 
-        <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
+        <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6">
           <div className="mx-auto max-w-6xl">
             <ProductSpecsTable specs={product.specs} description={product.description} />
           </div>

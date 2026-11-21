@@ -43,8 +43,8 @@
 .closing { padding:clamp(120px,14vw,200px) 30px; text-align:center; color:#fff; background:#07090d; }
 .closing>p { color:#9197a0; }
 .closing h2 { margin:18px auto 38px; font-size:clamp(60px,9.2vw,130px); font-weight:680; }
-.footnote { max-width:1180px; margin:auto; padding:38px 40px 56px; color:#868b93; font-size:11px; line-height:1.58; }
-.page [data-reveal] { opacity:0; transform:translateY(26px); transition:opacity .85s cubic-bezier(.2,.75,.2,1),transform .85s cubic-bezier(.2,.75,.2,1); }
+.footnote { max-width:1180px; margin:auto; padding:38px 40px 56px; color:#868b93; font-size:13px; line-height:1.58; }
+.page [data-reveal] { opacity:0; transform:translateY(16px); transition:opacity .5s cubic-bezier(.2,.75,.2,1),transform .5s cubic-bezier(.2,.75,.2,1); }
 .page [data-reveal].visible { opacity:1; transform:none; }
 .page .chargingCopy.visible { transform:translateY(-50%); }
 @media(max-width:850px){

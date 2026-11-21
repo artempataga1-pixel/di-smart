@@ -17,8 +17,8 @@ export function RevealOnScroll({
   children,
   className,
   delay = 0,
-  y = 40,
-  duration = 0.8,
+  y = 24,
+  duration = 0.5,
   blur = 8,
   ease = "power3.out",
 }: RevealOnScrollProps) {
@@ -44,7 +44,7 @@ export function RevealOnScroll({
         element.style.removeProperty("opacity");
         element.style.removeProperty("transform");
       });
-    }, { rootMargin: "0px 0px -15%" });
+    }, { rootMargin: "0px 0px 10% 0px" });
     observer.observe(element);
     return () => observer.disconnect();
   }, [delay, y, duration, blur, ease]);

@@ -35,7 +35,6 @@ export function HeroFilm() {
         <a
           href="#buy"
           className={styles.buyCta}
-          data-mobile-hero-cta=""
           onClick={(event) => {
             event.preventDefault();
             scrollToId("buy");

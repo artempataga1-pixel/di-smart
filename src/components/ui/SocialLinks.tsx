@@ -7,7 +7,17 @@ const channels = [
   { name: "Viber", href: SITE.viberUrl, Icon: ViberIcon, colorClass: "text-[#A970D6]" },
 ] as const;
 
-export function SocialLinks({ dark = false, singleRow = false }: { dark?: boolean; singleRow?: boolean }) {
+/** Ссылка на чат с уже набранным сообщением: Telegram понимает `?text=`,
+ * Viber — `&draft=`. Instagram готовый текст не поддерживает. */
+function withMessage(name: string, href: string, message?: string) {
+  if (!message) return href;
+  const text = encodeURIComponent(message);
+  if (name === "Telegram") return `${href}?text=${text}`;
+  if (name === "Viber") return `${href}&draft=${text}`;
+  return href;
+}
+
+export function SocialLinks({ dark = false, singleRow = false, message }: { dark?: boolean; singleRow?: boolean; message?: string }) {
   const layout = singleRow
     ? "min-w-0 justify-center gap-1.5 whitespace-nowrap px-1.5 text-[11px] min-[360px]:text-xs min-[390px]:text-sm"
     : "gap-2 px-4 text-sm";
@@ -16,7 +26,7 @@ export function SocialLinks({ dark = false, singleRow = false }: { dark?: boolea
       {channels.map(({ name, href, Icon, colorClass }) => (
         <a
           key={name}
-          href={href}
+          href={withMessage(name, href, message)}
           target={href.startsWith("https:") ? "_blank" : undefined}
           rel="noopener noreferrer"
           className={`${layout} ${dark

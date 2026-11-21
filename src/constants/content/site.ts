@@ -7,6 +7,8 @@ export const SITE = {
   phone: "+375 44 555 66 65",
   phoneHref: "tel:+375445556665",
   hours: "Приём заказов по телефону: ПН–ВС 09:00–21:00 · заказы через корзину — круглосуточно",
+  /** Когда менеджер перезванивает по заявкам — те же часы, что и `hours`. */
+  managerHours: "ежедневно с 9:00 до 21:00",
   telegramUrl: "https://t.me/dismart_by",
   viberUrl: "viber://chat?number=%2B375445556665",
   telegramLabel: "@dismart_by",

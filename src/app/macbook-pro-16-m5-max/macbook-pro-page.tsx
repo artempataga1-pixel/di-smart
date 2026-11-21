@@ -22,7 +22,7 @@ export function MacbookProPage({ product, crossSell, hasHeroVideo }: { product: 
         entry.target.classList.add(styles.visible);
         observer.unobserve(entry.target);
       }
-    }, { threshold: 0.12 });
+    }, { threshold: 0, rootMargin: "0px 0px 12% 0px" });
     root.current?.querySelectorAll("[data-reveal]").forEach(item => {
       if (item.parentElement?.closest("[data-reveal]")) return;
       observer.observe(item);
@@ -42,13 +42,13 @@ export function MacbookProPage({ product, crossSell, hasHeroVideo }: { product: 
       <BuyAnchor className={`${styles.button} ${styles.heroButton}`} hideInMobileHero>Выбрать конфигурацию</BuyAnchor>
     </header>
 
-    <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20" data-reveal>
+    <section id="buy" className="scroll-mt-20 bg-white px-4 pb-10 pt-14 md:px-6 md:pb-14 md:pt-20">
       <div className="mx-auto max-w-6xl">
         <ProductPurchasePanel product={product} />
       </div>
     </section>
 
-    <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6" data-reveal>
+    <section id="product-details" className="scroll-mt-20 bg-white px-4 pb-16 md:px-6">
       <div className="mx-auto max-w-6xl">
         <ProductSpecsTable specs={product.specs} description={product.description} />
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import { Minus, Plus, ShoppingBag } from "lucide-react";
 import type { Availability, ProductDetail } from "@/lib/catalog";
 import { Price } from "@/components/ui/Price";
@@ -8,6 +8,8 @@ import { useCart } from "@/lib/cart-context";
 import { cn } from "@/lib/utils";
 import { ProductContacts } from "@/components/product/ProductContacts";
 import { MAX_ITEM_QTY } from "@/lib/cart-validation";
+import { StickyBuyBar } from "@/components/product/StickyBuyBar";
+import { formatPrice } from "@/lib/format";
 
 interface ProductInfoProps {
   product: ProductDetail;
@@ -44,9 +46,23 @@ export function ProductInfo({
   const selectedColorName = product.colors.find((c) => c.id === selectedColorId)?.name;
   const isWatch = product.slug.startsWith("watch-");
   const colorLabel = isWatch ? "Корпус и ремешок" : "Цвет";
+  const rootRef = useRef<HTMLDivElement>(null);
+  const actionsRef = useRef<HTMLDivElement>(null);
+  const selectedSummary = [
+    ...product.attributes.map((attr) => attr.values.find((value) => value.id === selected[attr.id])?.value),
+    selectedColorName,
+  ].filter(Boolean).join(" · ");
+  const chatMessage = [
+    `Здравствуйте! Интересует ${product.name}`,
+    selectedSummary ? `, ${selectedSummary}` : "",
+    priceByn > 0 ? ` — ${formatPrice(priceByn)} на сайте` : "",
+    ". Есть в наличии?",
+  ].join("");
+  const addToCart = () => addItem({ productId: product.id, variantId, colorValueId: selectedColorId ?? null, qty });
+  const stickyAction = priceByn <= 0 ? "ask" : needsSelection ? "select" : inStock ? "buy" : "unavailable";
 
   return (
-    <div className="flex flex-col gap-5">
+    <div ref={rootRef} className="flex flex-col gap-5">
       <div>
         <p className="text-sm font-medium uppercase tracking-wide text-[var(--color-accent-ink)]">
           {product.categorySlug === "samsung-smartphones" ? "Смартфон" : product.brandName}
@@ -149,7 +165,7 @@ export function ProductInfo({
         </div>
       ))}
 
-      <div className="grid grid-cols-[auto_minmax(0,1fr)] gap-3">
+      <div ref={actionsRef} className="grid grid-cols-[auto_minmax(0,1fr)] gap-3">
         <div className="flex items-center gap-1 rounded-full border border-[var(--color-line)]">
           <button
             type="button"
@@ -177,9 +193,7 @@ export function ProductInfo({
           </a>
         ) : <button
           type="button"
-          onClick={() =>
-            addItem({ productId: product.id, variantId, colorValueId: selectedColorId ?? null, qty })
-          }
+          onClick={addToCart}
           disabled={!inStock || needsSelection}
           className="flex min-w-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[var(--color-accent)] px-4 py-3.5 text-sm font-medium text-white transition-colors hover:bg-[var(--color-accent-dark)] disabled:cursor-not-allowed disabled:opacity-50"
         >
@@ -187,8 +201,14 @@ export function ProductInfo({
           {inStock ? "В корзину" : "Нет в наличии"}
         </button>}
 
+        {priceByn > 0 && (
+          <p className="col-span-2 text-[13px] leading-snug text-[var(--color-muted)]">
+            Оплата на сайте не нужна: вы оставляете заявку, менеджер связывается с вами и согласует оплату и доставку.
+          </p>
+        )}
+
         <div className="col-span-2 mt-2 min-w-0">
-          <ProductContacts />
+          <ProductContacts message={chatMessage} />
         </div>
 
         {(product.description || product.specs.length > 0) && (
@@ -200,6 +220,16 @@ export function ProductInfo({
           </a>
         )}
       </div>
+
+      <StickyBuyBar
+        targetRef={actionsRef}
+        title={product.name}
+        summary={selectedSummary}
+        priceByn={priceByn}
+        action={stickyAction}
+        onBuy={addToCart}
+        onSelect={() => rootRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
+      />
     </div>
   );
 }

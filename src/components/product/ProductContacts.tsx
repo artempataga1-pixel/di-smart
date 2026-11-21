@@ -3,7 +3,7 @@ import { SITE } from "@/constants/content/site";
 import { SocialLinks } from "@/components/ui/SocialLinks";
 
 /** Shared by regular product pages and the flagship purchase panels. */
-export function ProductContacts() {
+export function ProductContacts({ message }: { message?: string }) {
   return (
     <section
       aria-label="Связаться по товару"
@@ -13,7 +13,7 @@ export function ProductContacts() {
         Есть вопросы о товаре?
       </h2>
       <p className="mt-1 text-sm text-[var(--color-muted)]">
-        Уточните наличие, комплектацию или доставку — позвоните или напишите нам.
+        Позвоните или напишите — в Telegram и Viber сообщение с выбранной моделью, памятью и цветом уже будет набрано.
       </p>
       <a
         href={SITE.phoneHref}
@@ -23,7 +23,7 @@ export function ProductContacts() {
         <Phone className="size-4 shrink-0" aria-hidden="true" />
         {SITE.phone}
       </a>
-      <SocialLinks singleRow />
+      <SocialLinks singleRow message={message} />
     </section>
   );
 }

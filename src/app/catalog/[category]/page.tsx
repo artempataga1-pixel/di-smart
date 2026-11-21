@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { CatalogView } from "@/components/catalog/CatalogView";
+import { IphoneChooser } from "@/components/catalog/IphoneChooser";
 import { CategoryFlagshipHero } from "@/components/catalog/CategoryFlagshipHero";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import {
@@ -76,7 +77,7 @@ export default async function CategoryPage({
   if (!category) notFound();
 
   const filters = parseCatalogSearchParams(sp, category.slug);
-  const categoryDisplayName = category.slug === "watch" && filters.brandSlugs?.[0] === "apple" ? "iWatch" : category.name;
+  const categoryDisplayName = category.slug === "watch" && filters.brandSlugs?.[0] === "apple" ? "Apple Watch" : category.name;
   const catalogOnly = CATALOG_ONLY_CATEGORIES.has(category.slug) || Boolean(filters.brandSlugs?.length);
   const flagship = catalogOnly
     ? undefined
@@ -167,6 +168,8 @@ export default async function CategoryPage({
       </div>
 
       {hero && <CategoryFlagshipHero categoryName={category.name} {...hero} />}
+
+      {category.slug === "iphone" && !hasRefinements && <IphoneChooser products={result.items} />}
 
       <div id="models" className={hero ? "mt-14 scroll-mt-24 md:mt-16" : "mt-8 scroll-mt-24"}>
         {hero && (
